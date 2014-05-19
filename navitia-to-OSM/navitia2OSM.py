@@ -18,7 +18,7 @@ from logging.handlers import RotatingFileHandler
 def Navitia_stop_points_nearby(longitude, latitude, distance) :
     """ recherche tous les stop_points à moins de [distance] mètres du point (longitude, latitude).
     """
-    appel_nav = requests.get("http://api.navitia.io/v1/coverage/paris/coords/"+ str(longitude) +';'+ str(latitude) +"/places_nearby?type[]=stop_point&distance=" + str(distance), headers={'Authorization': 'bc515937-aa79-4ebd-b0fb-314f9ede070b'})
+    appel_nav = requests.get("http://api.navitia.io/v1/coverage/paris/coords/"+ str(longitude) +';'+ str(latitude) +"/places_nearby?type[]=stop_point&distance=" + str(distance), headers={'Authorization': 'my-api-key'})
     data_nav = json.loads(appel_nav.content)
 
     if data_nav['pagination']['total_result'] == 0:

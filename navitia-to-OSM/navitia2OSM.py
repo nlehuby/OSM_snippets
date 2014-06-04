@@ -1,7 +1,7 @@
 ﻿#-------------------------------------------------------------------------------
 # Name:        navitia2OSM.py
 #
-# Author:      @nlehuby - noemie.lehuby(at)canaltp.fr
+# Author:      @nlehuby - noemie.lehuby(at)gmail.com
 #
 # Created:     04/04/2014
 # Licence:     WTFPL

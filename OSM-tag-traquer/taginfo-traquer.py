@@ -13,7 +13,7 @@ import requests
 import demjson
 import smtplib
 
-url = "http://taginfo.openstreetmap.fr/api/4/key/values?key=brewery:note"
+url = "http://taginfo.openstreetmap.org/api/4/key/values?key=brewery:note"
 appel_taginfo = requests.get(url)
 
 data_tag = demjson.decode(appel_taginfo.content)

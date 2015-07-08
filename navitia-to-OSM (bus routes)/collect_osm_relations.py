@@ -66,6 +66,7 @@ def analyse_relation_list(fichier_a_analyser):
         if resp.status_code != 200:
             print "KO"
             continue
+            relations_hors_sujet.append(int(elem))
         mon_json = resp.json()
         if 'elements' in mon_json:
             if len(mon_json['elements']) > 0 :
@@ -73,6 +74,7 @@ def analyse_relation_list(fichier_a_analyser):
             else :
                 print "KO"
                 continue
+                relations_hors_sujet.append(int(elem))
         if 'type' in ma_relation:
             if ma_relation['type'] == "route_master":
                 relations_lignes.append(int(elem)) 
@@ -112,11 +114,14 @@ def analyse_relation_list(fichier_a_analyser):
     persist_list_to_csv(routes_sans_name, "collecte/analyse/routes_sans_name.csv")
     persist_list_to_csv(routes_sans_ref, "collecte/analyse/routes_sans_ref.csv")
     persist_list_to_csv(relations_hors_sujet, "analyse/relations_hors_sujet.csv")
-    
-    listWriter = csv.DictWriter(open('collecte/relations_routes.csv', 'wb'), fieldnames=relations_routes[0].keys())
+ 
+    relations_routes_csv = []
     for a in relations_routes:
-        print a
-        listWriter.writerow(a) #TODO : encoding issues
+        relations_routes_csv.append([a['code'] + u"," + a['name'].decode('utf-8') + u',' + str(a['osm_id'])] )
+    mon_fichier = open("collecte/relations_routes.csv", "wb")
+    for elem in relations_routes_csv :
+        mon_fichier.write(elem[0].encode('utf-8') + '\n')
+    mon_fichier.close()
 
 if __name__ == '__main__':
     persist_list_to_csv(collect_relations_from_wiki(), "collecte/liste_relations.csv")

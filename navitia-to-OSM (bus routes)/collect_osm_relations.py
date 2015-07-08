@@ -13,7 +13,7 @@ import re
 import csv
 
 #paramétrage
-overpass_base_url = "http://www.overpass-api.de/api/interpreter"
+overpass_base_url = "http://api.openstreetmap.fr/oapi/interpreter"
 
 def collect_relations_from_wiki():
     """
@@ -65,10 +65,14 @@ def analyse_relation_list(fichier_a_analyser):
         resp = requests.get(overpass_base_url, params={'data': relation_param})
         if resp.status_code != 200:
             print "KO"
+            continue
         mon_json = resp.json()
         if 'elements' in mon_json:
             if len(mon_json['elements']) > 0 :
                 ma_relation = mon_json['elements'][0]['tags']
+            else :
+                print "KO"
+                continue
         if 'type' in ma_relation:
             if ma_relation['type'] == "route_master":
                 relations_lignes.append(int(elem)) 
@@ -112,7 +116,7 @@ def analyse_relation_list(fichier_a_analyser):
     listWriter = csv.DictWriter(open('collecte/relations_routes.csv', 'wb'), fieldnames=relations_routes[0].keys())
     for a in relations_routes:
         print a
-        listWriter.writerow(a)
+        listWriter.writerow(a) #TODO : encoding issues
 
 if __name__ == '__main__':
     persist_list_to_csv(collect_relations_from_wiki(), "collecte/liste_relations.csv")

@@ -50,28 +50,29 @@ def extract_nb_stop_from_navitia(route_extcode):
     """
     my_route= route_extcode
     appel_nav = requests.get(navitia_base_url + "/routes/" + my_route + "/stop_points", headers={'Authorization': navitia_API_key})
-    nb_result = appel_nav.json()['pagination']['total_result'] 
+    nb_result = appel_nav.json()['pagination']['total_result']
     return nb_result
 
 def extract_nb_stop_from_OSM(osm_id):
     """
     appelle Overpass et récupère le nombre de membres noeuds d'une relation donnée.
-    TODO : attention, cela compte les stop_position et pas uniquement les highway=bus_stop 
+    TODO : attention, cela compte les stop_position et pas uniquement les highway=bus_stop
     """
     relation_param = '[out:json][timeout:25];relation('+ osm_id+');node(r);out count;'
     resp = requests.get(overpass_base_url, params={'data': relation_param})
     if resp.status_code != 200:
         print "KO"
-    return resp.json()['elements'][0]['count']["nodes"] 
+        return 0
+    return resp.json()['elements'][0]['count']["nodes"]
 
 def extract_geojson_from_navitia(route_extcode):
     """
-    appelle navitia et construit un geojson de tous les arrêts d'une route donnée. 
+    appelle navitia et construit un geojson de tous les arrêts d'une route donnée.
     """
     my_route= route_extcode
-    
+
     nb_result = extract_nb_stop_from_navitia(my_route)
-    
+
     #print  str(nb_result) + " arrêts sur cette route."
 
     appel_nav = requests.get(navitia_base_url + "/routes/" + my_route + "/stop_points?count=" + str(nb_result), headers={'Authorization': navitia_API_key})
@@ -122,7 +123,7 @@ def send_to_html(navitia_route, OSM_relation, persist=True):
         return
     if not my_route_info :
         print "#### échec navitia : route ignorée"
-        return        
+        return
     navitia_nb_stops = str(extract_nb_stop_from_navitia(navitia_route))
     OSM_nb_stops = str(extract_nb_stop_from_OSM(OSM_relation))
     now = datetime.datetime.now()
@@ -138,8 +139,8 @@ def send_to_html(navitia_route, OSM_relation, persist=True):
     template = template.replace("%%OSM_relation_code%%", OSM_relation  )
     template = template.replace("%%OSM_relation_name%%", my_relation_info.encode('utf-8') )
     template = template.replace("%%OSM_nb_stops%%", OSM_nb_stops  )
-    template = template.replace("%%navitia_nb_stops%%", navitia_nb_stops  )   
-    template = template.replace("%%date_du_jour%%", now.strftime("%d/%m/%Y %H:%M")  )      
+    template = template.replace("%%navitia_nb_stops%%", navitia_nb_stops  )
+    template = template.replace("%%date_du_jour%%", now.strftime("%d/%m/%Y %H:%M")  )
 
     mon_fichier = open("rendu/" + OSM_relation + ".html", "wb")
     mon_fichier.write(template)
@@ -161,7 +162,7 @@ def comp(v1, v2):
         return 1
     else:
         return 0
-    
+
 def create_html_index_page():
     """
     crée la page d'index listant toutes les pages html des routes déjà créées et persistées'
@@ -171,7 +172,7 @@ def create_html_index_page():
     #récupération des infos à partir du csv
     mycsv_reader = csv.reader(open("rendu/liste_routes.csv", "rb"))
 
-    # retri du csv par code 
+    # retri du csv par code
     liste = list(mycsv_reader)
     liste.sort(cmp=comp)
 
@@ -181,13 +182,13 @@ def create_html_index_page():
             <tr>
                 <td> %%route_code%%
                 </td>
-                <td> 
+                <td>
                 <a href="%%relation_id%%.html">%%relation_name%%</a>
                 </td>
-                <td> 
+                <td>
                     %%OSM_nb_stops%%/%%navitia_nb_stops%%
                 </td>
-                <td> 
+                <td>
 
                     <progress value="%%OSM_nb_stops%%" max="%%navitia_nb_stops%%">état de la carto de la route</progress>
                 </td>
@@ -197,16 +198,16 @@ def create_html_index_page():
         liste_template = liste_template.replace("%%relation_id%%", route_info[0]  )
         liste_template = liste_template.replace("%%relation_name%%", route_info[1]  )
         liste_template = liste_template.replace("%%OSM_nb_stops%%", route_info[2]  )
-        liste_template = liste_template.replace("%%navitia_nb_stops%%", route_info[3]  )     
+        liste_template = liste_template.replace("%%navitia_nb_stops%%", route_info[3]  )
         template_table += liste_template
-    
+
     #ajout dans le template
     now = datetime.datetime.now()
     mon_fichier = open("rendu/assets/template_liste.html", "r")
     template = mon_fichier.read()
     mon_fichier.close()
     template = template.replace("%%tableau_des_routes%%", template_table  )
-    template = template.replace("%%date_du_jour%%", now.strftime("%d/%m/%Y %H:%M") )    
+    template = template.replace("%%date_du_jour%%", now.strftime("%d/%m/%Y %H:%M") )
     mon_fichier = open("rendu/index.html", "wb")
     mon_fichier.write(template)
     mon_fichier.close()
@@ -227,12 +228,12 @@ def render_all():
 
 if __name__ == '__main__':
     render_all()
-    
+
     #exemples
     #send_to_html('route:RTP:1250013','1257174') #bus 57, retour
     #send_to_html('route:RTP:1228417_R','1254000') #bus 68, aller
     #send_to_html('route:RTP:1227971_R','1250938') #bus 87, aller
     #send_to_html('route:RTP:1025341_R','306279') #bus 185, retour
     #send_to_html('route:RTP:1025341','3008944') #bus 185, aller
-    
+
     #create_html_index_page()

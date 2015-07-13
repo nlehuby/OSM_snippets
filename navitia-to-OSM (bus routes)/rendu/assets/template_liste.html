@@ -2,8 +2,50 @@
 <head>
   <title>OSM & navitia bus route comparing tools</title>
   <meta charset="utf-8" />
+    <link href="http://code.jquery.com/ui/1.11.3/themes/trontastic/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>      
   </head>
 <body>
+           <div>
+                <label for="autocomplete">&nbsp;Rechercher un parcours </label>
+                <input id="autocomplete" type="text">
+            </div> 
+<script type="text/javascript" language="javascript">
+
+
+$(document).ready(function() {
+  $.ajax({
+    type: "GET",
+    url: "liste_routes.csv",
+    dataType: "text",
+    success: function(data) {processData(data);}
+ });
+});
+
+var a = [];
+var b = []
+function processData(myTxt) {
+    var myLines = myTxt.split(/\r\n|\n/);
+    for (var i=0; i<myLines.length -1 ; i++) {
+          a.push(myLines[i]);
+        }
+    for (var i=0; i<a.length; i++) {
+          c = {}
+          asplit = a[i].split(",")
+          c['value'] = asplit[0]
+          c['label'] = asplit[1] + " ( "+ asplit[2] + " / "+ asplit[3] + " ) "
+          b.push(c);
+        }
+    $( "#autocomplete" ).autocomplete({
+        source: b,
+        select: function(event, ui){
+            document.getElementById("autocomplete").value = "";
+            window.open(ui.item.value +'.html');                             
+                    }        
+    });
+}
+</script>
 <table border=1>
 %%tableau_des_routes%%
 <tr> <td colspan=4>

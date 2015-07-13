@@ -42,7 +42,7 @@ def rapprochement_osm_navitia():
     """
     parcourt le fichier des relations osm et appelle navitia pour chaque, choisit une route pertinente, et loggue un tas de trucs
     """
-    ifile  = open('analyse/relations_routes.csv', "rb")
+    ifile  = open('collecte/relations_routes.csv', "rb")
     reader = csv.reader(ifile)
 
     routes_sans_ref = []

@@ -2,4 +2,8 @@
 *.pyc
 navitia-to-OSM (bus routes)/rendu/assets/auth.js
 navitia-to-OSM (bus routes)/params/__init__.py
-
+navitia-to-OSM (bus routes)/analyse/*
+navitia-to-OSM (bus routes)/collecte/*
+navitia-to-OSM (bus routes)/rapprochement/*
+navitia-to-OSM (bus routes)/rendu/*.html
+navitia-to-OSM (bus routes)/rendu/*.csv

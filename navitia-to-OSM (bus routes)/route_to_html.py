@@ -137,7 +137,6 @@ def send_to_html(navitia_route, OSM_relation, persist=True):
     template = template.replace("%%navitia_route_name%%", my_route_info['code'].encode('utf-8') + ' : ' + my_route_info['name'].encode('utf-8'))
     template = template.replace("%%navitia_route_geojson%%", extract_geojson_from_navitia(navitia_route))
     template = template.replace("%%OSM_relation_code%%", OSM_relation  )
-    template = template.replace("%%OSM_relation_name%%", my_relation_info.encode('utf-8') )
     template = template.replace("%%OSM_nb_stops%%", OSM_nb_stops  )
     template = template.replace("%%navitia_nb_stops%%", navitia_nb_stops  )
     template = template.replace("%%date_du_jour%%", now.strftime("%d/%m/%Y %H:%M")  )

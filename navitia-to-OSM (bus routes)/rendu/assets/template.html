@@ -30,16 +30,18 @@
 <body>
 <div id="info"> 
 <table>
+
 <tr>
     <td>
-        <div>navitia :  parcours <a href='http://api.navitia.io/v1/coverage/fr-idf/routes/%%navitia_route_extcode%%' target='_blank'> %%navitia_route_name%%</a>
+        <div>parcours navitia : <a href='http://api.navitia.io/v1/coverage/fr-idf/routes/%%navitia_route_extcode%%' target='_blank'> %%navitia_route_name%%</a>
         </div> 
     </td>
     <td rowspan=2>
         <progress value="%%OSM_nb_stops%%" max="%%navitia_nb_stops%%">Ã©tat de la carto de la route</progress> <br/> <small>mis Ã  jour le %%date_du_jour%%</small>
     </td>
 </tr>
-<tr><td><div>OSM :  parcours <a href='https://www.openstreetmap.org/relation/%%OSM_relation_code%%' target='_blank'> %%OSM_relation_name%%</a></div></td> </tr>
+<tr><td><div id="parcours_OSM">parcours OSM ... </div></td> </tr>
+
 </table>
 
 </div>
@@ -53,54 +55,7 @@
 		
 		var osm_relation_code = %%OSM_relation_code%%
 
-    //OverPassAPI layer
-    var relation_OSM = new L.OverPassLayer({
-	minzoom: 1,
-      query: 'http://overpass-api.de/api/interpreter?data=[out:json][timeout:25];relation('+osm_relation_code+');node(r);out;',
-      //query: 'http://overpass-api.de/api/interpreter?data=[out:json][timeout:25];relation["ref"="57"]["operator"="RATP"];node(r);out;',
-      callback: function(data) {
-        for(i=0;i<data.elements.length;i++) {
-          e = data.elements[i];
-
-          if (e.id in this.instance._ids) return;
-          this.instance._ids[e.id] = true;
-          var pos = new L.LatLng(e.lat, e.lon);
-          var popup = this.instance._poiInfo(e.tags,e.id);
-          popup += '<a href="#" onClick="remove_stop_from_relation(' + e.id + ','+ osm_relation_code +')"> Supprimer cet arrêt du parcours  </a>'
-
-		var myicon = L.icon({
-                  iconUrl: 'assets/blue_bus.png',
-              });
-              var marker = L.marker(pos, {icon: myicon}).bindPopup(popup);
-              this.instance.addLayer(marker);			  
-
-        }
-      },
-    });
-    /* OLD - TO DELETE
-    var bus_OSM = new L.OverPassLayer({
-      minzoom: 17,
-      query: 'http://overpass-api.de/api/interpreter?data=[out:json][timeout:25];node(BBOX)["highway"="bus_stop"];out;',
-
-      callback: function(data) {
-        for(i=0;i<data.elements.length;i++) {
-          e = data.elements[i];
-
-          if (e.id in this.instance._ids) return;
-          this.instance._ids[e.id] = true;
-          var pos = new L.LatLng(e.lat, e.lon);
-          var popup = this.instance._poiInfo(e.tags,e.id);
-          popup += '<a href="#" onClick="add_stop_to_relation(' + e.id + ','+ osm_relation_code +')"> Ajouter cet arrÃªt au parcours  </a>'
-
-		var myicon = L.icon({
-                  iconUrl: 'assets/red_bus.png',
-              });
-              var marker = L.marker(pos, {icon: myicon}).bindPopup(popup);
-              this.instance.addLayer(marker);			  
-
-        }
-      },
-    });*/
+    
 //navitia layer
   var latLongCollection = []; 
   var geojson =   [%%navitia_route_geojson%%];
@@ -126,14 +81,71 @@
 
 });
 
-//affichage des routes OSM
-url_op = 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:75];relation('+ osm_relation_code +');way(r);out body;>;out skel qt;'
-getJSON(url_op, function(data) {
 
-    // add to map
-    geo = osmtogeojson(data);
-    L.geoJson(geo).addTo(map);
-
+relation_OSM_url = 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];relation('+ osm_relation_code +');(._;>;);out;'
+getJSON(relation_OSM_url , function(data) {
+	 // récupération du nom
+	relation = data.elements.reverse()[0]
+	var route_name=document.getElementById("parcours_OSM");
+	route_name.innerHTML = "parcours OSM : <a  target='_blank' href='http://openstreetmap.org/relation/"+ relation['id'] +"'>" + relation['tags']['name'] + "</a>"
+	
+	//transformation en geosjon
+    geo = osmtogeojson(data);  
+   
+   // marqueur pour les éléments qu'on ne veut pas voir
+	var geojsonBlankMarkerOptions = {
+		radius: 8,
+		fillColor: "#ff7800",
+		color: "#000",
+		weight: 0,
+		opacity: 0,
+		fillOpacity: 0
+	};
+	// marqueur pour les stop_position
+	var geojsonMarkerOptions = {
+		radius: 10,
+		fillColor: "blue",
+		color: "blue",
+		weight: 1,
+		opacity: 1,
+		fillOpacity: 0.8
+	};
+	//fonction qui transforme les points du geojson en qqch d'affichable
+	function DisplayOSMBusStops(feature, latlng){
+		if (feature.properties['type'] == 'node') {
+			if (feature.properties['tags']['highway'] == 'bus_stop' ) {	
+			//console.log(feature.properties)
+		    var myicon = L.icon({
+                      iconUrl: 'assets/blue_bus.png',
+                  });
+			return L.marker(latlng, {icon: myicon})
+			}
+			else if (feature.properties['tags']['public_transport'] == 'stop_position') {return L.circleMarker(latlng, geojsonMarkerOptions)}
+			else { return L.circleMarker(latlng, geojsonBlankMarkerOptions)}
+		}
+	}
+    
+	//fonction qui affine les propriétés du geosjon
+    function onEachFeature(feature, layer) {
+		if (feature.properties['type'] == 'node') {
+			if (feature.properties['tags']['highway'] == 'bus_stop'|| feature.properties['tags']['public_transport'] == 'stop_position' ) {	
+				layer.bindPopup(feature.properties.tags.name + '<br><a href="http://www.openstreetmap.org/node/'+ feature.properties['id'] +'" target="_blank">Voir sur OSM</a>');
+			} 
+		}
+		if (feature.properties['type'] == 'way') {
+				layer.setStyle({"color": "blue"});
+		}
+    }
+    
+    //affichage du geojson
+    relation_OSM = L.geoJson(geo, {
+        onEachFeature: onEachFeature, 
+        pointToLayer : DisplayOSMBusStops
+    }).addTo(map);
+	
+}, function(status) {
+  console.log(status)
+  alert("Il y a eu un souci dans l'affichage des données osm");
 });
 
 var elements = []
@@ -159,19 +171,10 @@ function getJSON(url, successHandler, errorHandler){
   xhr.send();
 };  
   
-//affichage du tout
-    var baseMaps = {
-        "Mapnic": osm,
-    };
 
-    var overlayMaps = {
-        "OSM": relation_OSM,
-		"navitia":locations_navitia
-    };
-    map.addLayer(relation_OSM);
 	map.addLayer(locations_navitia);
 
-    L.control.layers(baseMaps, overlayMaps).addTo(map);
+   
 //centrage de la carte    
 map.fitBounds(latLongCollection) 
 

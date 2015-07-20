@@ -15,11 +15,12 @@ import csv
 #paramétrage
 overpass_base_url = "http://api.openstreetmap.fr/oapi/interpreter"
 
-def collect_relations_from_wiki():
+def collect_relations_from_wiki(wiki_url):
     """
     consulte la page de wiki sur les bus RATP et extrait tous les liens de relations OSM
     """
-    page = requests.get('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_RATP')
+    #page = requests.get('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_RATP')
+    page = requests.get(wiki_url)
     liste_relations = re.findall(r'href="//www.openstreetmap.org/relation/(\w+)"', page.text)
     liste_relations = list(set(liste_relations))
     return liste_relations
@@ -123,7 +124,8 @@ def analyse_relation_list(fichier_a_analyser):
         mon_fichier.write(elem[0].encode('utf-8') + '\n')
     mon_fichier.close()
 
-if __name__ == '__main__':
-    persist_list_to_csv(collect_relations_from_wiki(), "collecte/liste_relations.csv")
-    analyse_relation_list("collecte/liste_relations.csv")   
- 
+if __name__ == '__main__':  
+    noctiliens = collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Noctilien')
+    autres_bus = collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_RATP')
+    persist_list_to_csv(list(set(noctiliens + autres_bus)), "collecte/liste_relations.csv")
+    analyse_relation_list("collecte/liste_relations.csv") 

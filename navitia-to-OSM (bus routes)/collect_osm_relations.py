@@ -76,10 +76,8 @@ def analyse_relation_list(fichier_a_analyser):
                 print "KO"
                 continue
                 relations_hors_sujet.append(int(elem))
-        if 'type' in ma_relation:
-            if ma_relation['type'] == "route_master":
-                relations_lignes.append(int(elem)) 
-            elif ma_relation['type'] == "route":
+        if 'type' in ma_relation: 
+            if ma_relation['type'] == "route":
                 ma_route = {}
                 if not 'from' in ma_relation:
                     routes_sans_from.append(int(elem))
@@ -118,7 +116,7 @@ def analyse_relation_list(fichier_a_analyser):
  
     relations_routes_csv = []
     for a in relations_routes:
-        relations_routes_csv.append([a['code'] + u"," + a['name'].decode('utf-8') + u',' + str(a['osm_id'])] )
+        relations_routes_csv.append([str(a['osm_id']) + u',' + a['code'] + u"," + a['name'].decode('utf-8')] )
     mon_fichier = open("collecte/relations_routes.csv", "wb")
     for elem in relations_routes_csv :
         mon_fichier.write(elem[0].encode('utf-8') + '\n')

@@ -50,20 +50,22 @@ def rapprochement_osm_navitia():
     rapprochements = []
 
     for row in reader:
-        #print row
-        if row[0]:
-            print row[1]
-            resultat_navitia = pt_objects_by_code(row[0])
+        route_code = row[1]
+        route_name = row[2]
+        route_osm_id = row[0]
+        if route_code:
+            print route_name
+            resultat_navitia = pt_objects_by_code(route_code)
             print resultat_navitia
             if len(resultat_navitia[0]) != 0:
                 noms_potentiels = resultat_navitia[0]
-                ratio_noms_potentiels = [fuzz.partial_ratio(row[1], nom) for nom in noms_potentiels]
+                ratio_noms_potentiels = [fuzz.partial_ratio(route_name, nom) for nom in noms_potentiels]
                 print ratio_noms_potentiels
                 index_max = ratio_noms_potentiels.index(max(ratio_noms_potentiels)) #index du ratio le plus élevé
                 #print index_max
                 print resultat_navitia[0][index_max]
                 #TODO : récupérer aussi le code de ligne, et créer un index de confiance sur l'association osm navitia
-                rapprochements.append([row[2], resultat_navitia[1][index_max], row[1]]) ## en déduire le code externe 
+                rapprochements.append([route_osm_id, resultat_navitia[1][index_max], route_name]) ## en déduire le code externe 
             else :
                 routes_inconnues_navitia.append(row)           
         else :

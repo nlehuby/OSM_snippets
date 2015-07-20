@@ -83,6 +83,9 @@ def analyse_relation_list(fichier_a_analyser):
                     routes_sans_from.append(int(elem))
                 if not 'to' in ma_relation:
                     routes_sans_to.append(int(elem))
+                    ma_route['destination'] = ''
+                else :
+                    ma_route['destination'] = ma_relation['to'].encode('utf-8')                    
                 if not 'operator' in ma_relation:
                     routes_sans_operator.append(int(elem)) 
                 if not 'network' in ma_relation:
@@ -97,9 +100,16 @@ def analyse_relation_list(fichier_a_analyser):
                     routes_sans_ref.append(int(elem)) 
                 else :
                     ma_route['code'] = ma_relation['ref']
+                stop_count = 0
+                for a_member in mon_json['elements'][0]['members']:
+                    if a_member['type'] == 'node':
+                        stop_count += 1
+                ma_route['stop_count'] = stop_count
                 ma_route['osm_id'] = int(elem)
                 relations_routes.append(ma_route)
+                
                 print ma_route
+                
             else :
                 relations_hors_sujet.append(int(elem))
         else :
@@ -116,7 +126,7 @@ def analyse_relation_list(fichier_a_analyser):
  
     relations_routes_csv = []
     for a in relations_routes:
-        relations_routes_csv.append([str(a['osm_id']) + u',' + a['code'] + u"," + a['name'].decode('utf-8')] )
+        relations_routes_csv.append([str(a['osm_id']) + u',' + a['code'] + u"," + a['name'].decode('utf-8') + u"," + a['destination'].decode('utf-8') + u"," + str(a['stop_count']) ])
     mon_fichier = open("collecte/relations_routes.csv", "wb")
     for elem in relations_routes_csv :
         mon_fichier.write(elem[0].encode('utf-8') + '\n')
@@ -125,5 +135,6 @@ def analyse_relation_list(fichier_a_analyser):
 if __name__ == '__main__':  
     noctiliens = collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Noctilien')
     autres_bus = collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_RATP')
+    #autres_bus = [] #collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_RATP')
     persist_list_to_csv(list(set(noctiliens + autres_bus)), "collecte/liste_relations.csv")
     analyse_relation_list("collecte/liste_relations.csv") 

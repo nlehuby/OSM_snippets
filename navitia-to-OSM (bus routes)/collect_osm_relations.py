@@ -24,9 +24,9 @@ def collect_relations_from_wiki():
     liste_relations = list(set(liste_relations))
     return liste_relations
 
-def collect_relations_from_taginfo():
+def collect_relations_from_overpass():
     """
-    appelle l'API taginfo et extrait tous les id de relations RATP
+    appelle l'API overpass et extrait tous les id de relations qui vont bien
     """
     pass #TODO
 

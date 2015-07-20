@@ -111,18 +111,23 @@ def save_geojson_to_file(data) :
     file.close()
 
 
-def send_to_html(navitia_route, OSM_relation, persist=True):
+def send_to_html(route_info, persist=True):
     """
-    crée une page html listant les arrêts navitia et OSM d'une route
+    crée une page html listant les arrêts navitia et OSM d'un parcours
+    route_info = [code_OSM, code_navitia, nom_OSM] (TODO)
     Si persist = True, enregistre le nom de la route et les nombres d'arrêts pour générer une page indexant toutes les pages des routes
     """
-    my_relation_info = extract_name_from_OSM(OSM_relation)
+    OSM_relation = route_info[0]
+    navitia_route = route_info[1]
+    my_relation_info = route_info[2].decode('utf-8')
+    if my_relation_info == "":
+        my_relation_info = extract_name_from_OSM(OSM_relation)
     my_route_info = extract_name_from_navitia(navitia_route)
     if not my_relation_info :
-        print "#### échec OSM : route ignorée "
+        print "#### échec OSM : parcours ignoré "
         return
     if not my_route_info :
-        print "#### échec navitia : route ignorée"
+        print "#### échec navitia : parcours ignoré"
         return
     navitia_nb_stops = str(extract_nb_stop_from_navitia(navitia_route))
     OSM_nb_stops = str(extract_nb_stop_from_OSM(OSM_relation))
@@ -218,8 +223,9 @@ def render_all():
     """
     # /!\ ne pas oublier de vider le fichier temp de création de l'index : liste_routes.csv
     mycsv_reader = csv.reader(open("rapprochement/osm_navitia.csv", "rb"))
-    for une_route in mycsv_reader:
-        send_to_html(une_route[1], une_route[0])
+    for a_route in mycsv_reader:
+        current_route = [a_route[1], a_route[0]]
+        send_to_html(a_route)
 
     #créer l'index
     create_html_index_page()

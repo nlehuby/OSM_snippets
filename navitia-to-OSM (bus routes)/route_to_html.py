@@ -50,6 +50,9 @@ def extract_nb_stop_from_navitia(route_extcode):
     """
     my_route= route_extcode
     appel_nav = requests.get(navitia_base_url + "/routes/" + my_route + "/stop_points", headers={'Authorization': navitia_API_key})
+    if appel_nav.status_code != 200:
+        print "KO navitia " + my_route
+        return -1    
     nb_result = appel_nav.json()['pagination']['total_result']
     return nb_result
 
@@ -61,8 +64,8 @@ def extract_nb_stop_from_OSM(osm_id):
     relation_param = '[out:json][timeout:25];relation('+ osm_id+');node(r);out count;'
     resp = requests.get(overpass_base_url, params={'data': relation_param})
     if resp.status_code != 200:
-        print "KO"
-        return 0
+        print "KO OSM"
+        return None
     return resp.json()['elements'][0]['count']["nodes"]
 
 def extract_geojson_from_navitia(route_extcode):
@@ -109,31 +112,39 @@ def save_geojson_to_file(data) :
     file = open('route.geosjon', "w")
     file.write(data)
     file.close()
-
-
+  
+    
 def send_to_html(route_info, persist=True):
     """
     crée une page html listant les arrêts navitia et OSM d'un parcours
-    route_info = [code_OSM, code_navitia, nom_OSM] (TODO)
+    route_info = [code_OSM, code_navitia, nom_OSM]
     Si persist = True, enregistre le nom de la route et les nombres d'arrêts pour générer une page indexant toutes les pages des routes
     """
+    #OSM
     OSM_relation = route_info[0]
-    navitia_route = route_info[1]
     my_relation_info = route_info[2].decode('utf-8')
     if my_relation_info == "":
         my_relation_info = extract_name_from_OSM(OSM_relation)
-    my_route_info = extract_name_from_navitia(navitia_route)
     if not my_relation_info :
         print "#### échec OSM : parcours ignoré "
-        return
+        return 
+    OSM_nb_stops = str(extract_nb_stop_from_OSM(OSM_relation))
+    if not OSM_nb_stops :
+        print "#### échec OSM : parcours ignoré "
+        return          
+    #navitia
+    navitia_route = route_info[1]
+    my_route_info = extract_name_from_navitia(navitia_route)   
     if not my_route_info :
         print "#### échec navitia : parcours ignoré"
         return
     navitia_nb_stops = str(extract_nb_stop_from_navitia(navitia_route))
-    OSM_nb_stops = str(extract_nb_stop_from_OSM(OSM_relation))
-    now = datetime.datetime.now()
-
+    if navitia_nb_stops == "-1" :
+        print "#### échec navitia : parcours ignoré"
+        return    
+    
     ## result to HTML
+    now = datetime.datetime.now()
     mon_fichier = open("rendu/assets/template.html", "r")
     template = mon_fichier.read()
     mon_fichier.close()
@@ -222,10 +233,20 @@ def render_all():
     crée la page html de chaque route, puis la page html listant toutes les routes et leur état de complétion
     """
     # /!\ ne pas oublier de vider le fichier temp de création de l'index : liste_routes.csv
-    mycsv_reader = csv.reader(open("rapprochement/osm_navitia.csv", "rb"))
-    for a_route in mycsv_reader:
-        current_route = [a_route[1], a_route[0]]
-        send_to_html(a_route)
+    
+    osm_csv = csv.reader(open("collecte/relations_routes.csv", "rb"))
+    navitia_csv = list(csv.reader(open("rapprochement/osm_navitia.csv", "rb"))) 
+    for osm_route in osm_csv:
+        print osm_route[2]
+        rapp = [route for route in navitia_csv if route[0] == osm_route[0]] #rapprochement osm navitia
+        if rapp != []:
+            print rapp
+            current_route = [osm_route[0], rapp[0][1], osm_route[2]] #[code_OSM, code_navitia, nom_OSM]
+            send_to_html(current_route)
+
+        else:
+            print "pas de correspondance osm navitia trouvée"
+
 
     #créer l'index
     create_html_index_page()

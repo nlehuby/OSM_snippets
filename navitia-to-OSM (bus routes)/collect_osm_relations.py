@@ -25,11 +25,19 @@ def collect_relations_from_wiki(wiki_url):
     liste_relations = list(set(liste_relations))
     return liste_relations
 
-def collect_relations_from_overpass():
+def collect_relations_from_overpass(overpass_query):
     """
     appelle l'API overpass et extrait tous les id de relations qui vont bien
     """
-    pass #TODO
+    #[out:json][timeout:25];(relation["network"="Noctilien"]["route"="bus"(48.68098749511622,2.1258544921875,48.9220480811836,2.6126861572265625););out ids;
+    resp = requests.get(overpass_base_url, params={'data': overpass_query})
+    if resp.status_code != 200:
+        print "échec de l'appel overpass de collecte des relations"
+        return []
+    return [str(a_relation['id']) for a_relation in resp.json()['elements'] ]
+    
+        
+
 
 def persist_list_to_csv(liste, nom_fichier):
     """
@@ -132,7 +140,10 @@ def analyse_relation_list(fichier_a_analyser):
         mon_fichier.write(elem[0].encode('utf-8') + '\n')
     mon_fichier.close()
 
-if __name__ == '__main__':  
+if __name__ == '__main__': 
+     #noctiliens_ov = collect_relations_from_overpass('[out:json][timeout:25];(relation["network"="Noctilien"]["route"="bus"](48.68098749511622,2.1258544921875,48.9220480811836,2.6126861572265625););out ids;' )
+
+
     noctiliens = collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Noctilien')
     autres_bus = collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_RATP')
     #autres_bus = [] #collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_RATP')

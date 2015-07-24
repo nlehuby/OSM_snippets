@@ -39,7 +39,7 @@ def extract_name_from_navitia(route_extcode):
     appel_nav = requests.get(navitia_base_url + "/routes/" + my_route, headers={'Authorization': navitia_API_key})
     try:
         result_nav=appel_nav.json()['routes'][0]
-        return  {"code" : result_nav["line"]['code'], 'name' : result_nav["name"]}
+        return result_nav["name"].decode('utf-8')
     except :
         print "navitia - impossible de récupérer le nom de la route " + route_extcode
 
@@ -52,7 +52,7 @@ def extract_nb_stop_from_navitia(route_extcode):
     appel_nav = requests.get(navitia_base_url + "/routes/" + my_route + "/stop_points", headers={'Authorization': navitia_API_key})
     if appel_nav.status_code != 200:
         print "KO navitia " + my_route
-        return -1    
+        return None
     nb_result = appel_nav.json()['pagination']['total_result']
     return nb_result
 
@@ -117,32 +117,48 @@ def save_geojson_to_file(data) :
 def send_to_html(osm_info, navitia_info, persist=True):
     """
     crée une page html listant les arrêts navitia et OSM d'un parcours
-    osm_info = [code_OSM, junk, nom_OSM, junk, nb_arrêts_OSM]
-    navitia_info = [code_nav, nom_nav, nb_arrêts_nav]  #TODO
+    osm_info & navitia_info ~ {id : '', name : '', nb_stops : '', ref: '', junk : junk }
     seuls les codes sont obligatoires  
     Si persist = True, enregistre le nom de la route et les nombres d'arrêts pour générer une page indexant toutes les pages des routes
     """
     #OSM
-    OSM_id = osm_info[0]
-    OSM_name = osm_info[2].decode('utf-8')
-    if OSM_name == "":
+    OSM_id = osm_info['id']
+    if 'name' in osm_info :
+        OSM_name = osm_info['name'].decode('utf-8')
+    else :
         OSM_name = extract_name_from_OSM(OSM_id)
     if not OSM_name :
         print "#### échec OSM : parcours ignoré "
         return 
-    OSM_nb_stops = str(extract_nb_stop_from_OSM(OSM_id))
+    if 'nb_stops' in osm_info :
+        OSM_nb_stops = osm_info['nb_stops']
+    else :
+        OSM_nb_stops = extract_nb_stop_from_OSM(OSM_id)            
     if not OSM_nb_stops :
         print "#### échec OSM : parcours ignoré "
-        return          
+        return 
+    if 'ref' in osm_info :
+        OSM_ref = osm_info['ref']
+    else :
+        pass #TODO : récupérer le code la ligne            
+    if not OSM_ref :
+        print "#### pas de code de ligne"
+        OSM_ref = 'No code'                  
     #navitia
-    navitia_id = navitia_info[0]
-    navitia_name = extract_name_from_navitia(navitia_id)   
+    navitia_id = navitia_info['id']
+    if 'name' in navitia_info :
+        navitia_name = navitia_info['name'].decode('utf-8')
+    else :
+        navitia_name = extract_name_from_navitia(navitia_id)
     if not navitia_name :
-        print "#### échec navitia : parcours ignoré"
-        return
-    navitia_nb_stops = str(extract_nb_stop_from_navitia(navitia_id))
-    if navitia_nb_stops == "-1" :
-        print "#### échec navitia : parcours ignoré"
+        print "#### échec navitia : parcours ignoré "
+        return 
+    if 'nb_stops' in navitia_info :
+        navitia_nb_stops = navitia_info['nb_stops']
+    else :
+        navitia_nb_stops = extract_nb_stop_from_navitia(navitia_id)               
+    if not navitia_nb_stops :
+        print "#### échec navitia : parcours ignoré "
         return    
     
     ## result to HTML
@@ -152,11 +168,11 @@ def send_to_html(osm_info, navitia_info, persist=True):
     mon_fichier.close()
 
     template = template.replace("%%navitia_id_extcode%%", navitia_id  )
-    template = template.replace("%%navitia_id_name%%", navitia_name['code'].encode('utf-8') + ' : ' + navitia_name['name'].encode('utf-8'))
+    template = template.replace("%%navitia_id_name%%", navitia_name.encode("utf-8"))
     template = template.replace("%%navitia_id_geojson%%", extract_geojson_from_navitia(navitia_id))
     template = template.replace("%%OSM_id_code%%", OSM_id  )
-    template = template.replace("%%OSM_nb_stops%%", OSM_nb_stops  )
-    template = template.replace("%%navitia_nb_stops%%", navitia_nb_stops  )
+    template = template.replace("%%OSM_nb_stops%%", str(OSM_nb_stops)  )
+    template = template.replace("%%navitia_nb_stops%%", str(navitia_nb_stops)  )
     template = template.replace("%%date_du_jour%%", now.strftime("%d/%m/%Y %H:%M")  )
 
     mon_fichier = open("rendu/" + OSM_id + ".html", "wb")
@@ -164,7 +180,7 @@ def send_to_html(osm_info, navitia_info, persist=True):
     mon_fichier.close()
 
     if persist :
-        index = [OSM_id, OSM_name.encode('utf-8'), OSM_nb_stops, navitia_nb_stops, navitia_name['code'].encode('utf-8') ]
+        index = [OSM_id, OSM_name.encode('utf-8'), OSM_nb_stops, navitia_nb_stops, OSM_ref ] 
         print index
         mon_csv = csv.writer(open("rendu/liste_routes.csv", "ab"))
         mon_csv.writerow(index)
@@ -242,8 +258,8 @@ def render_all():
         print osm_route[2]
         rapp = [route for route in navitia_csv if route[0] == osm_route[0]] #rapprochement osm navitia
         if rapp != []:
-            current_osm_route = osm_route
-            current_nav_route = [rapp[0][1]]
+            current_osm_route = {'id' : osm_route[0], 'name': osm_route[2], 'ref': osm_route[1], 'nb_stops': osm_route[-1]}
+            current_nav_route = {'id' : rapp[0][1], 'name' : rapp[0][2] }
             send_to_html(current_osm_route, current_nav_route)
 
         else:

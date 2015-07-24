@@ -114,31 +114,33 @@ def save_geojson_to_file(data) :
     file.close()
   
     
-def send_to_html(route_info, persist=True):
+def send_to_html(osm_info, navitia_info, persist=True):
     """
     crée une page html listant les arrêts navitia et OSM d'un parcours
-    route_info = [code_OSM, code_navitia, nom_OSM]
+    osm_info = [code_OSM, junk, nom_OSM, junk, nb_arrêts_OSM]
+    navitia_info = [code_nav, nom_nav, nb_arrêts_nav]  #TODO
+    seuls les codes sont obligatoires  
     Si persist = True, enregistre le nom de la route et les nombres d'arrêts pour générer une page indexant toutes les pages des routes
     """
     #OSM
-    OSM_relation = route_info[0]
-    my_relation_info = route_info[2].decode('utf-8')
-    if my_relation_info == "":
-        my_relation_info = extract_name_from_OSM(OSM_relation)
-    if not my_relation_info :
+    OSM_id = osm_info[0]
+    OSM_name = osm_info[2].decode('utf-8')
+    if OSM_name == "":
+        OSM_name = extract_name_from_OSM(OSM_id)
+    if not OSM_name :
         print "#### échec OSM : parcours ignoré "
         return 
-    OSM_nb_stops = str(extract_nb_stop_from_OSM(OSM_relation))
+    OSM_nb_stops = str(extract_nb_stop_from_OSM(OSM_id))
     if not OSM_nb_stops :
         print "#### échec OSM : parcours ignoré "
         return          
     #navitia
-    navitia_route = route_info[1]
-    my_route_info = extract_name_from_navitia(navitia_route)   
-    if not my_route_info :
+    navitia_id = navitia_info[0]
+    navitia_name = extract_name_from_navitia(navitia_id)   
+    if not navitia_name :
         print "#### échec navitia : parcours ignoré"
         return
-    navitia_nb_stops = str(extract_nb_stop_from_navitia(navitia_route))
+    navitia_nb_stops = str(extract_nb_stop_from_navitia(navitia_id))
     if navitia_nb_stops == "-1" :
         print "#### échec navitia : parcours ignoré"
         return    
@@ -149,20 +151,20 @@ def send_to_html(route_info, persist=True):
     template = mon_fichier.read()
     mon_fichier.close()
 
-    template = template.replace("%%navitia_route_extcode%%", navitia_route  )
-    template = template.replace("%%navitia_route_name%%", my_route_info['code'].encode('utf-8') + ' : ' + my_route_info['name'].encode('utf-8'))
-    template = template.replace("%%navitia_route_geojson%%", extract_geojson_from_navitia(navitia_route))
-    template = template.replace("%%OSM_relation_code%%", OSM_relation  )
+    template = template.replace("%%navitia_id_extcode%%", navitia_id  )
+    template = template.replace("%%navitia_id_name%%", navitia_name['code'].encode('utf-8') + ' : ' + navitia_name['name'].encode('utf-8'))
+    template = template.replace("%%navitia_id_geojson%%", extract_geojson_from_navitia(navitia_id))
+    template = template.replace("%%OSM_id_code%%", OSM_id  )
     template = template.replace("%%OSM_nb_stops%%", OSM_nb_stops  )
     template = template.replace("%%navitia_nb_stops%%", navitia_nb_stops  )
     template = template.replace("%%date_du_jour%%", now.strftime("%d/%m/%Y %H:%M")  )
 
-    mon_fichier = open("rendu/" + OSM_relation + ".html", "wb")
+    mon_fichier = open("rendu/" + OSM_id + ".html", "wb")
     mon_fichier.write(template)
     mon_fichier.close()
 
     if persist :
-        index = [OSM_relation, my_relation_info.encode('utf-8'), OSM_nb_stops, navitia_nb_stops, my_route_info['code'].encode('utf-8') ]
+        index = [OSM_id, OSM_name.encode('utf-8'), OSM_nb_stops, navitia_nb_stops, navitia_name['code'].encode('utf-8') ]
         print index
         mon_csv = csv.writer(open("rendu/liste_routes.csv", "ab"))
         mon_csv.writerow(index)
@@ -240,9 +242,9 @@ def render_all():
         print osm_route[2]
         rapp = [route for route in navitia_csv if route[0] == osm_route[0]] #rapprochement osm navitia
         if rapp != []:
-            print rapp
-            current_route = [osm_route[0], rapp[0][1], osm_route[2]] #[code_OSM, code_navitia, nom_OSM]
-            send_to_html(current_route)
+            current_osm_route = osm_route
+            current_nav_route = [rapp[0][1]]
+            send_to_html(current_osm_route, current_nav_route)
 
         else:
             print "pas de correspondance osm navitia trouvée"
@@ -254,12 +256,3 @@ def render_all():
 
 if __name__ == '__main__':
     render_all()
-
-    #exemples
-    #send_to_html('route:RTP:1250013','1257174') #bus 57, retour
-    #send_to_html('route:RTP:1228417_R','1254000') #bus 68, aller
-    #send_to_html('route:RTP:1227971_R','1250938') #bus 87, aller
-    #send_to_html('route:RTP:1025341_R','306279') #bus 185, retour
-    #send_to_html('route:RTP:1025341','3008944') #bus 185, aller
-
-    #create_html_index_page()

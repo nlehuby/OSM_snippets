@@ -112,13 +112,13 @@ def save_geojson_to_file(data) :
     file = open('route.geosjon', "w")
     file.write(data)
     file.close()
-  
-    
+
+
 def send_to_html(osm_info, navitia_info, persist=True):
     """
     crée une page html listant les arrêts navitia et OSM d'un parcours
     osm_info & navitia_info ~ {id : '', name : '', nb_stops : '', ref: '', junk : junk }
-    seuls les codes sont obligatoires  
+    seuls les codes sont obligatoires
     Si persist = True, enregistre le nom de la route et les nombres d'arrêts pour générer une page indexant toutes les pages des routes
     """
     #OSM
@@ -129,21 +129,21 @@ def send_to_html(osm_info, navitia_info, persist=True):
         OSM_name = extract_name_from_OSM(OSM_id)
     if not OSM_name :
         print "#### échec OSM : parcours ignoré "
-        return 
+        return
     if 'nb_stops' in osm_info :
         OSM_nb_stops = osm_info['nb_stops']
     else :
-        OSM_nb_stops = extract_nb_stop_from_OSM(OSM_id)            
+        OSM_nb_stops = extract_nb_stop_from_OSM(OSM_id)
     if not OSM_nb_stops :
         print "#### échec OSM : parcours ignoré "
-        return 
+        return
     if 'ref' in osm_info :
         OSM_ref = osm_info['ref']
     else :
-        pass #TODO : récupérer le code la ligne            
+        pass #TODO : récupérer le code la ligne
     if not OSM_ref :
         print "#### pas de code de ligne"
-        OSM_ref = 'No code'                  
+        OSM_ref = 'No code'
     #navitia
     navitia_id = navitia_info['id']
     if 'name' in navitia_info :
@@ -152,15 +152,15 @@ def send_to_html(osm_info, navitia_info, persist=True):
         navitia_name = extract_name_from_navitia(navitia_id)
     if not navitia_name :
         print "#### échec navitia : parcours ignoré "
-        return 
+        return
     if 'nb_stops' in navitia_info :
         navitia_nb_stops = navitia_info['nb_stops']
     else :
-        navitia_nb_stops = extract_nb_stop_from_navitia(navitia_id)               
+        navitia_nb_stops = extract_nb_stop_from_navitia(navitia_id)
     if not navitia_nb_stops :
         print "#### échec navitia : parcours ignoré "
-        return    
-    
+        return
+
     ## result to HTML
     now = datetime.datetime.now()
     mon_fichier = open("rendu/assets/template.html", "r")
@@ -180,7 +180,7 @@ def send_to_html(osm_info, navitia_info, persist=True):
     mon_fichier.close()
 
     if persist :
-        index = [OSM_id, OSM_name.encode('utf-8'), OSM_nb_stops, navitia_nb_stops, OSM_ref ] 
+        index = [OSM_id, OSM_name.encode('utf-8'), OSM_nb_stops, navitia_nb_stops, OSM_ref ]
         print index
         mon_csv = csv.writer(open("rendu/liste_routes.csv", "ab"))
         mon_csv.writerow(index)
@@ -251,9 +251,9 @@ def render_all():
     crée la page html de chaque route, puis la page html listant toutes les routes et leur état de complétion
     """
     # /!\ ne pas oublier de vider le fichier temp de création de l'index : liste_routes.csv
-    
+
     osm_csv = csv.reader(open("collecte/relations_routes.csv", "rb"))
-    navitia_csv = list(csv.reader(open("rapprochement/osm_navitia.csv", "rb"))) 
+    navitia_csv = list(csv.reader(open("rapprochement/osm_navitia.csv", "rb")))
     for osm_route in osm_csv:
         print osm_route[2]
         rapp = [route for route in navitia_csv if route[0] == osm_route[0]] #rapprochement osm navitia

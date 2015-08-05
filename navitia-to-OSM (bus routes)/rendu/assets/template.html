@@ -84,7 +84,7 @@
 
 relation_OSM_url = 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];relation('+ osm_relation_code +');(._;>;);out;'
 getJSON(relation_OSM_url , function(data) {
-	 // récupération du nom
+	 // rÃ©cupÃ©ration du nom
 	relation = data.elements.reverse()[0]
 	var route_name=document.getElementById("parcours_OSM");
 	route_name.innerHTML = "parcours OSM : <a  target='_blank' href='http://openstreetmap.org/relation/"+ relation['id'] +"'>" + relation['tags']['name'] + "</a>"
@@ -92,7 +92,7 @@ getJSON(relation_OSM_url , function(data) {
 	//transformation en geosjon
     geo = osmtogeojson(data);  
    
-   // marqueur pour les éléments qu'on ne veut pas voir
+   // marqueur pour les Ã©lÃ©ments qu'on ne veut pas voir
 	var geojsonBlankMarkerOptions = {
 		radius: 8,
 		fillColor: "#ff7800",
@@ -125,7 +125,7 @@ getJSON(relation_OSM_url , function(data) {
 		}
 	}
     
-	//fonction qui affine les propriétés du geosjon
+	//fonction qui affine les propriÃ©tÃ©s du geosjon
     function onEachFeature(feature, layer) {
 		if (feature.properties['type'] == 'node') {
 			if (feature.properties['tags']['highway'] == 'bus_stop'|| feature.properties['tags']['public_transport'] == 'stop_position' ) {	
@@ -145,7 +145,7 @@ getJSON(relation_OSM_url , function(data) {
 	
 }, function(status) {
   console.log(status)
-  alert("Il y a eu un souci dans l'affichage des données osm");
+  alert("Il y a eu un souci dans l'affichage des donnÃ©es osm");
 });
 
 var elements = []
@@ -178,7 +178,7 @@ function getJSON(url, successHandler, errorHandler){
 //centrage de la carte    
 map.fitBounds(latLongCollection) 
 
-//édition OSM
+//Ã©dition OSM
 function add_stop_to_relation(node_id, relation_id){
     var osmXml = get_node_or_way(node_id, 'node');
     edit_tag(osmXml, 'node', "fixme:relation", "add to "+ relation_id); 
@@ -206,7 +206,7 @@ function display_bus_around(){
     user_lat = center.lat;
     user_lon = center.lng;
     //[out:json][timeout:25];(node["highway"="bus_stop"](around:500,48.80423,2.36547);)->.a;rel(bn);out body;.a out body;
-    url_op_bus = 'http://overpass-api.de/api/interpreter?data=[out:json][timeout:25];(node["highway"="bus_stop"](around:500,' + user_lat +',' + user_lon +');)->.a;rel(bn);out body;.a out body;';
+    url_op_bus = 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];(node["highway"="bus_stop"](around:500,' + user_lat +',' + user_lon +');)->.a;rel(bn);out body;.a out body;';
     
     $.getJSON(url_op_bus, function(data) {
 
@@ -235,12 +235,12 @@ function display_bus_around(){
                     
                     if (already_in)
                         {
-                        geo.features[i].properties['popup_content'] += '<a href="#" onClick="remove_stop_from_relation(' + geo.features[i].properties['id'] + ','+ osm_relation_code +')"> Retirer cet arrêt du parcours </a><br>';  
+                        geo.features[i].properties['popup_content'] += '<a href="#" onClick="remove_stop_from_relation(' + geo.features[i].properties['id'] + ','+ osm_relation_code +')"> Retirer cet arrÃªt du parcours </a><br>';  
                         geo.features[i].properties['icon_url'] = 'assets/blue_bus.png';
                         }
                     else
                         {
-                        geo.features[i].properties['popup_content'] += '<a href="#" onClick="add_stop_to_relation(' + geo.features[i].properties['id'] + ','+ osm_relation_code +')"> Ajouter cet arrêt au parcours  </a><br>';  
+                        geo.features[i].properties['popup_content'] += '<a href="#" onClick="add_stop_to_relation(' + geo.features[i].properties['id'] + ','+ osm_relation_code +')"> Ajouter cet arrÃªt au parcours  </a><br>';  
                         geo.features[i].properties['icon_url'] = 'assets/red_bus.png';
                         }
                     
@@ -264,8 +264,7 @@ L.easyButton('fa-bus',
               function (){
                   display_bus_around();
               },
-             'Afficher les arrêts de bus à proximité'
-);  
+             'Afficher les arrÃªts de bus Ã  proximitÃ©;  
   
   </script>
 </body>

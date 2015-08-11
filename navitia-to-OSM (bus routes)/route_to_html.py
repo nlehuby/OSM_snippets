@@ -16,7 +16,7 @@ from params import navitia_API_key as TOKEN
 
 #paramétrage
 navitia_API_key = TOKEN
-navitia_base_url = "http://api.navitia.io/v1/coverage/fr-idf/networks/network:RTP/"
+navitia_base_url = "http://api.navitia.io/v1/coverage/fr-idf"
 overpass_base_url = "http://www.overpass-api.de/api/interpreter"
 
 def extract_name_from_OSM(osm_id):
@@ -68,17 +68,19 @@ def extract_nb_stop_from_OSM(osm_id):
         return None
     return resp.json()['elements'][0]['count']["nodes"]
 
-def extract_geojson_from_navitia(route_extcode):
+def extract_geojson_from_navitia(route_extcode, nb_stops = None):
     """
     appelle navitia et construit un geojson de tous les arrêts d'une route donnée.
     """
-    my_route= route_extcode
+    if nb_stops is None :
+        print "nb de stops navitia à recalculer"
+        nb_stops  = extract_nb_stop_from_navitia(route_extcode)
 
-    nb_result = extract_nb_stop_from_navitia(my_route)
+    if nb_stops is None :
+        print "KO navitia " + route_extcode
+        return  "{}"
 
-    #print  str(nb_result) + " arrêts sur cette route."
-
-    appel_nav = requests.get(navitia_base_url + "/routes/" + my_route + "/stop_points?count=" + str(nb_result), headers={'Authorization': navitia_API_key})
+    appel_nav = requests.get(navitia_base_url + "/routes/" + route_extcode + "/stop_points?count=" + str(nb_stops), headers={'Authorization': navitia_API_key})
     result_nav=appel_nav.json()
 
     names = []
@@ -168,7 +170,7 @@ def send_to_html(osm_info, navitia_info):
 
     template = template.replace("%%navitia_route_extcode%%", navitia_id  )
     template = template.replace("%%navitia_route_name%%", navitia_name.encode("utf-8"))
-    template = template.replace("%%navitia_route_geojson%%", extract_geojson_from_navitia(navitia_id))
+    template = template.replace("%%navitia_route_geojson%%", extract_geojson_from_navitia(navitia_id, navitia_nb_stops))
     template = template.replace("%%OSM_relation_code%%", OSM_id  )
     template = template.replace("%%OSM_nb_stops%%", str(OSM_nb_stops)  )
     template = template.replace("%%navitia_nb_stops%%", str(navitia_nb_stops)  )
@@ -256,9 +258,9 @@ def render_all():
         rapp = [route for route in navitia_csv if route[0] == osm_route[0]] #rapprochement osm navitia
         if rapp != []:
             current_osm_route = {'id' : osm_route[0], 'name': osm_route[2], 'ref': osm_route[1], 'nb_stops': osm_route[-1]}
-            current_nav_route = {'id' : rapp[0][1], 'name' : rapp[0][2] } #TODO : navitia nb stops à pré-calculer
+            current_nav_route = {'id' : rapp[0][1], 'name' : rapp[0][2], 'nb_stops': rapp[0][3]}
             send_to_html(current_osm_route, current_nav_route)
-            persist_for_index.append([osm_route[0],osm_route[2], osm_route[-1], '144', osm_route[1]])
+            persist_for_index.append([osm_route[0],osm_route[2], osm_route[-1], rapp[0][3], osm_route[1]])
              #osm_relation_id, osm_relation_name, osm_nb_stops, navitia_nb_stops, osm_ref
 
         else:

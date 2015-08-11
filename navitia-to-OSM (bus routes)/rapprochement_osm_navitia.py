@@ -86,7 +86,7 @@ def rapprochement_osm_navitia():
     myfile = open('rapprochement/osm_navitia.csv', 'wb')
     wr = csv.writer(myfile)
     for row in rapprochements:
-        wr.writerow(row)
+        wr.writerow(row)  #TODO : attention, c'est le nom osm qui est persisté et non le nom navitia
 
 
 

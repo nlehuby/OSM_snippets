@@ -64,8 +64,8 @@ def rapprochement_osm_navitia():
                 index_max = ratio_noms_potentiels.index(max(ratio_noms_potentiels)) #index du ratio le plus élevé
                 #print index_max
                 print resultat_navitia[0][index_max]
-                #TODO : récupérer aussi le code de ligne, et créer un index de confiance sur l'association osm navitia
-                rapprochements.append([route_osm_id, resultat_navitia[1][index_max], route_name]) ## en déduire le code externe 
+                navitia_nb_stops = get_navitia_nb_stop(resultat_navitia[1][index_max])
+                rapprochements.append([route_osm_id, resultat_navitia[1][index_max], route_name, navitia_nb_stops]) 
             else :
                 routes_inconnues_navitia.append(row)           
         else :
@@ -86,10 +86,20 @@ def rapprochement_osm_navitia():
     myfile = open('rapprochement/osm_navitia.csv', 'wb')
     wr = csv.writer(myfile)
     for row in rapprochements:
-        wr.writerow(row)
+        wr.writerow(row)  #TODO : attention, c'est le nom osm qui est persisté et non le nom navitia
 
 
-
+def get_navitia_nb_stop(extcode):
+    """
+    appelle navitia et récupère le nombre d'arrêts d'une route donnée.
+    """
+    appel_nav = requests.get(navitia_base_url + "/routes/" + extcode + "/stop_points", headers={'Authorization': navitia_API_key})
+    if appel_nav.status_code != 200:
+        print "KO navitia :" + extcode
+        return None
+    nb_result = appel_nav.json()['pagination']['total_result']
+    return nb_result
+    
 def analyse_du_rapprochement():
     """
     pourcentage d'éléments uniques (ceux en doubles sont ceux où le rapprochement est très probablement faux)

@@ -130,7 +130,7 @@ def analyse_relation_list(fichier_a_analyser):
     persist_list_to_csv(routes_sans_colour, "collecte/analyse/routes_sans_colour.csv")
     persist_list_to_csv(routes_sans_name, "collecte/analyse/routes_sans_name.csv")
     persist_list_to_csv(routes_sans_ref, "collecte/analyse/routes_sans_ref.csv")
-    persist_list_to_csv(relations_hors_sujet, "analyse/relations_hors_sujet.csv")
+    persist_list_to_csv(relations_hors_sujet, "collecte/analyse/relations_hors_sujet.csv")
  
     relations_routes_csv = []
     for a in relations_routes:

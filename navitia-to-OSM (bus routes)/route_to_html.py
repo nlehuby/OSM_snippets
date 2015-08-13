@@ -16,7 +16,7 @@ from params import navitia_API_key as TOKEN
 
 #paramétrage
 navitia_API_key = TOKEN
-navitia_base_url = "http://api.navitia.io/v1/coverage/fr-idf/networks/network:RTP/"
+navitia_base_url = "http://api.navitia.io/v1/coverage/fr-idf"
 overpass_base_url = "http://www.overpass-api.de/api/interpreter"
 
 def extract_name_from_OSM(osm_id):
@@ -68,17 +68,19 @@ def extract_nb_stop_from_OSM(osm_id):
         return None
     return resp.json()['elements'][0]['count']["nodes"]
 
-def extract_geojson_from_navitia(route_extcode):
+def extract_geojson_from_navitia(route_extcode, nb_stops = None):
     """
     appelle navitia et construit un geojson de tous les arrêts d'une route donnée.
     """
-    my_route= route_extcode
+    if nb_stops is None :
+        print "nb de stops navitia à recalculer"
+        nb_stops  = extract_nb_stop_from_navitia(route_extcode)
 
-    nb_result = extract_nb_stop_from_navitia(my_route)
+    if nb_stops is None :
+        print "KO navitia " + route_extcode
+        return  "{}"
 
-    #print  str(nb_result) + " arrêts sur cette route."
-
-    appel_nav = requests.get(navitia_base_url + "/routes/" + my_route + "/stop_points?count=" + str(nb_result), headers={'Authorization': navitia_API_key})
+    appel_nav = requests.get(navitia_base_url + "/routes/" + route_extcode + "/stop_points?count=" + str(nb_stops), headers={'Authorization': navitia_API_key})
     result_nav=appel_nav.json()
 
     names = []
@@ -114,12 +116,11 @@ def save_geojson_to_file(data) :
     file.close()
 
 
-def send_to_html(osm_info, navitia_info, persist=True):
+def send_to_html(osm_info, navitia_info):
     """
     crée une page html listant les arrêts navitia et OSM d'un parcours
     osm_info & navitia_info ~ {id : '', name : '', nb_stops : '', ref: '', junk : junk }
     seuls les codes sont obligatoires
-    Si persist = True, enregistre le nom de la route et les nombres d'arrêts pour générer une page indexant toutes les pages des routes
     """
     #OSM
     OSM_id = osm_info['id']
@@ -169,7 +170,7 @@ def send_to_html(osm_info, navitia_info, persist=True):
 
     template = template.replace("%%navitia_route_extcode%%", navitia_id  )
     template = template.replace("%%navitia_route_name%%", navitia_name.encode("utf-8"))
-    template = template.replace("%%navitia_route_geojson%%", extract_geojson_from_navitia(navitia_id))
+    template = template.replace("%%navitia_route_geojson%%", extract_geojson_from_navitia(navitia_id, navitia_nb_stops))
     template = template.replace("%%OSM_relation_code%%", OSM_id  )
     template = template.replace("%%OSM_nb_stops%%", str(OSM_nb_stops)  )
     template = template.replace("%%navitia_nb_stops%%", str(navitia_nb_stops)  )
@@ -178,12 +179,6 @@ def send_to_html(osm_info, navitia_info, persist=True):
     mon_fichier = open("rendu/" + OSM_id + ".html", "wb")
     mon_fichier.write(template)
     mon_fichier.close()
-
-    if persist :
-        index = [OSM_id, OSM_name.encode('utf-8'), OSM_nb_stops, navitia_nb_stops, OSM_ref ]
-        print index
-        mon_csv = csv.writer(open("rendu/liste_routes.csv", "ab"))
-        mon_csv.writerow(index)
 
 
 def comp(v1, v2):
@@ -196,17 +191,13 @@ def comp(v1, v2):
     else:
         return 0
 
-def create_html_index_page():
+def create_html_index_page(liste):
     """
     crée la page d'index listant toutes les pages html des routes déjà créées et persistées'
     """
     template_table = ''
 
-    #récupération des infos à partir du csv
-    mycsv_reader = csv.reader(open("rendu/liste_routes.csv", "rb"))
-
     # retri du csv par code
-    liste = list(mycsv_reader)
     liste.sort(cmp=comp)
 
     #création d'une ligne dans l'index pour chaque ligne du csv
@@ -227,6 +218,7 @@ def create_html_index_page():
                 </td>
             <tr>
         """
+        
         liste_template = liste_template.replace("%%route_code%%", route_info[4]  )
         liste_template = liste_template.replace("%%relation_id%%", route_info[0]  )
         liste_template = liste_template.replace("%%relation_name%%", route_info[1]  )
@@ -244,6 +236,12 @@ def create_html_index_page():
     mon_fichier = open("rendu/index.html", "wb")
     mon_fichier.write(template)
     mon_fichier.close()
+    
+    #création du fichier csv utilisé pour l'autocomplétion
+    myfile = open('rendu/liste_routes.csv', 'wb')
+    wr = csv.writer(myfile)
+    for row in liste:
+        wr.writerow(row)     
 
 
 def render_all():
@@ -254,20 +252,23 @@ def render_all():
 
     osm_csv = csv.reader(open("collecte/relations_routes.csv", "rb"))
     navitia_csv = list(csv.reader(open("rapprochement/osm_navitia.csv", "rb")))
+    persist_for_index = []
     for osm_route in osm_csv:
         print osm_route[2]
         rapp = [route for route in navitia_csv if route[0] == osm_route[0]] #rapprochement osm navitia
         if rapp != []:
             current_osm_route = {'id' : osm_route[0], 'name': osm_route[2], 'ref': osm_route[1], 'nb_stops': osm_route[-1]}
-            current_nav_route = {'id' : rapp[0][1], 'name' : rapp[0][2] }
+            current_nav_route = {'id' : rapp[0][1], 'name' : rapp[0][2], 'nb_stops': rapp[0][3]}
             send_to_html(current_osm_route, current_nav_route)
+            persist_for_index.append([osm_route[0],osm_route[2], osm_route[-1], rapp[0][3], osm_route[1]])
+             #osm_relation_id, osm_relation_name, osm_nb_stops, navitia_nb_stops, osm_ref
 
         else:
             print "pas de correspondance osm navitia trouvée"
 
 
     #créer l'index
-    create_html_index_page()
+    create_html_index_page(persist_for_index)
 
 
 if __name__ == '__main__':

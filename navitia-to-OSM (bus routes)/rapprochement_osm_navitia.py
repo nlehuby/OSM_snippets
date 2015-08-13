@@ -65,7 +65,7 @@ def rapprochement_osm_navitia():
                 #print index_max
                 print resultat_navitia[0][index_max]
                 navitia_nb_stops = get_navitia_nb_stop(resultat_navitia[1][index_max])
-                rapprochements.append([route_osm_id, resultat_navitia[1][index_max], route_name, navitia_nb_stops]) 
+                rapprochements.append([route_osm_id, resultat_navitia[1][index_max], resultat_navitia[0][index_max], navitia_nb_stops]) 
             else :
                 routes_inconnues_navitia.append(row)           
         else :

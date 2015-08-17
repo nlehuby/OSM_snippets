@@ -77,14 +77,15 @@ def rapprochement_osm_navitia():
     for an_osm_route in reader:
         line_code = an_osm_route[1]
         route_name = an_osm_route[2]
+        route_destination = an_osm_route[3]
         route_osm_id = an_osm_route[0] 
         print route_name
         if line_code:
             navitia_potential_matches = get_navitia_info_by_line_code(line_code)
             navitia_matches = list(navitia_potential_matches) #si ça matche pas, on retirera le candidat de cette liste
             for a_nav_route in navitia_potential_matches :
-                is_there_a_match = difflib.get_close_matches(route_name.lower().decode('utf-8'), [a_nav_route['name'].lower().decode('utf-8')]) #match sur le nom
-                #match sur le nom ou sur la destination ou les deux ou l'un si pas l'autre?
+                is_there_a_match = difflib.get_close_matches(route_destination.lower(), [a_nav_route['destination'].lower()]) #match sur la direction
+                #is_there_a_match = difflib.get_close_matches(route_name.lower().decode('utf-8'), [a_nav_route['name'].lower().decode('utf-8')]) #match sur le nom
                 if len(is_there_a_match) == 0:
                     navitia_matches.remove(a_nav_route)          
                 
@@ -93,18 +94,28 @@ def rapprochement_osm_navitia():
                 navitia_nb_stops = get_navitia_nb_stop(navitia_matches[0]['id'])
                 rapprochements_ok.append([route_osm_id, navitia_matches[0]['id'], navitia_matches[0]['name'].encode('utf-8'), navitia_nb_stops, navitia_matches[0]['destination'].encode('utf-8')]) 
             elif len(navitia_matches) == 0: #cas où rien ne matche
-                pas_de_match_navitia.append([route_osm_id])
+                pas_de_match_navitia.append([route_osm_id, route_name])
             else : #cas où il y a plusieurs solutions
-                trop_de_solutions_navitia.append([route_osm_id] + navitia_matches)
+                trop_de_solutions_navitia.append([route_osm_id] + [elem['id'] + u' ; ' + elem['destination'].encode('utf-8') for elem in navitia_matches])
         else :        
-            pas_de_match_navitia.append([route_osm_id])
+            pas_de_match_navitia.append([route_osm_id, route_name])
 
     ifile.close()
 
     myfile = open('rapprochement/osm_navitia.csv', 'wb')
     wr = csv.writer(myfile)
     for row in rapprochements_ok:
-        wr.writerow(row)                   
+        wr.writerow(row)      
+                     
+    myfile = open('rapprochement/pas_assez.csv', 'wb')
+    wr = csv.writer(myfile)
+    for row in pas_de_match_navitia:
+        wr.writerow(row)
+
+#    myfile = open('rapprochement/trop.csv', 'wb')
+#    wr = csv.writer(myfile)
+#    for row in trop_de_solutions_navitia:
+#        wr.writerow(row)
     
 def rapprochement_osm_navitia_with_fuzzywuzzy():
     """
@@ -185,5 +196,5 @@ if __name__ == '__main__':
     
     #rapprochement_osm_navitia_with_fuzzywuzzy() > 385 / 396 matches, mais 88% de cas a priori ok
     #rapprochement_osm_navitia() sur le name > 275 / 396 mais 100 % a priori ok
-    rapprochement_osm_navitia() #sur la direction > TODO/396 mais TODO a priori ok
+    rapprochement_osm_navitia() #sur la direction > 193/396 mais 99.5 % a priori ok
     print analyse_du_rapprochement()

@@ -35,8 +35,8 @@ def collect_relations_from_overpass(overpass_query):
         print "échec de l'appel overpass de collecte des relations"
         return []
     return [str(a_relation['id']) for a_relation in resp.json()['elements'] ]
-    
-        
+
+
 
 
 def persist_list_to_csv(liste, nom_fichier):
@@ -47,7 +47,7 @@ def persist_list_to_csv(liste, nom_fichier):
     for elem in liste :
         mon_fichier.write(str(elem) + '\n')
     mon_fichier.close()
-    
+
 def analyse_relation_list(fichier_a_analyser):
     """
     parcourt un fichier contenant des id de relations
@@ -55,7 +55,7 @@ def analyse_relation_list(fichier_a_analyser):
     crée des listes de données nécessitant des corrections
     crée une liste avec numéro de ligne, nom et id
     """
-       
+
     relations_lignes = []
     relations_routes = []
     relations_hors_sujet = []
@@ -84,7 +84,7 @@ def analyse_relation_list(fichier_a_analyser):
                 print "KO"
                 continue
                 relations_hors_sujet.append(int(elem))
-        if 'type' in ma_relation: 
+        if 'type' in ma_relation:
             if ma_relation['type'] == "route":
                 ma_route = {}
                 if not 'from' in ma_relation:
@@ -93,19 +93,19 @@ def analyse_relation_list(fichier_a_analyser):
                     routes_sans_to.append(int(elem))
                     ma_route['destination'] = ''
                 else :
-                    ma_route['destination'] = ma_relation['to'].encode('utf-8')                    
+                    ma_route['destination'] = ma_relation['to'].encode('utf-8')
                 if not 'operator' in ma_relation:
-                    routes_sans_operator.append(int(elem)) 
+                    routes_sans_operator.append(int(elem))
                 if not 'network' in ma_relation:
-                    routes_sans_network.append(int(elem)) 
+                    routes_sans_network.append(int(elem))
                 if not 'colour' in ma_relation:
-                    routes_sans_colour.append(int(elem))  
+                    routes_sans_colour.append(int(elem))
                 if not 'name' in ma_relation:
-                    routes_sans_name.append(int(elem)) 
+                    routes_sans_name.append(int(elem))
                 else :
                     ma_route['name'] = ma_relation['name'].encode('utf-8')
                 if not 'ref' in ma_relation:
-                    routes_sans_ref.append(int(elem)) 
+                    routes_sans_ref.append(int(elem))
                 else :
                     ma_route['code'] = ma_relation['ref']
                 stop_count = 0
@@ -115,14 +115,14 @@ def analyse_relation_list(fichier_a_analyser):
                 ma_route['stop_count'] = stop_count
                 ma_route['osm_id'] = int(elem)
                 relations_routes.append(ma_route)
-                
+
                 print ma_route
-                
+
             else :
                 relations_hors_sujet.append(int(elem))
         else :
-            relations_hors_sujet.append(int(elem))   
-         
+            relations_hors_sujet.append(int(elem))
+
     persist_list_to_csv(routes_sans_from, "collecte/analyse/routes_sans_from.csv")
     persist_list_to_csv(routes_sans_to, "collecte/analyse/routes_sans_to.csv")
     persist_list_to_csv(routes_sans_network, "collecte/analyse/routes_sans_network.csv")
@@ -131,7 +131,7 @@ def analyse_relation_list(fichier_a_analyser):
     persist_list_to_csv(routes_sans_name, "collecte/analyse/routes_sans_name.csv")
     persist_list_to_csv(routes_sans_ref, "collecte/analyse/routes_sans_ref.csv")
     persist_list_to_csv(relations_hors_sujet, "collecte/analyse/relations_hors_sujet.csv")
- 
+
     relations_routes_csv = []
     for a in relations_routes:
         relations_routes_csv.append([str(a['osm_id']) + u',' + a['code'] + u"," + a['name'].decode('utf-8') + u"," + a['destination'].decode('utf-8') + u"," + str(a['stop_count']) ])
@@ -140,7 +140,7 @@ def analyse_relation_list(fichier_a_analyser):
         mon_fichier.write(elem[0].encode('utf-8') + '\n')
     mon_fichier.close()
 
-if __name__ == '__main__': 
+if __name__ == '__main__':
      #noctiliens_ov = collect_relations_from_overpass('[out:json][timeout:25];(relation["network"="Noctilien"]["route"="bus"](48.68098749511622,2.1258544921875,48.9220480811836,2.6126861572265625););out ids;' )
 
 
@@ -148,4 +148,4 @@ if __name__ == '__main__':
     autres_bus = collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_RATP')
     #autres_bus = [] #collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_RATP')
     persist_list_to_csv(list(set(noctiliens + autres_bus)), "collecte/liste_relations.csv")
-    analyse_relation_list("collecte/liste_relations.csv") 
+    analyse_relation_list("collecte/liste_relations.csv")

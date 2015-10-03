@@ -37,7 +37,7 @@ def get_navitia_info_by_line_code(line_code):
         route_info = {'id' : '','name':'', 'destination':''}
         route_info['id'] = un_parcours['route']['id']
         route_info['name'] = un_parcours['route']['name']
-        route_info['destination'] = un_parcours['route']['direction']['name']
+        route_info['destination'] = un_parcours['route']['direction']['stop_area']['name']
         navitia_info.append(route_info)
     
     return navitia_info
@@ -84,8 +84,8 @@ def rapprochement_osm_navitia():
             navitia_potential_matches = get_navitia_info_by_line_code(line_code)
             navitia_matches = list(navitia_potential_matches) #si ça matche pas, on retirera le candidat de cette liste
             for a_nav_route in navitia_potential_matches :
-                is_there_a_match = difflib.get_close_matches(route_destination.lower(), [a_nav_route['destination'].lower()]) #match sur la direction
-                #is_there_a_match = difflib.get_close_matches(route_name.lower().decode('utf-8'), [a_nav_route['name'].lower().decode('utf-8')]) #match sur le nom
+                #is_there_a_match = difflib.get_close_matches(route_destination.lower(), [a_nav_route['destination'].lower()]) #match sur la direction
+                is_there_a_match = difflib.get_close_matches(route_name.lower().decode('utf-8'), [a_nav_route['name'].lower().decode('utf-8')]) #match sur le nom
                 if len(is_there_a_match) == 0:
                     navitia_matches.remove(a_nav_route)          
                 
@@ -95,8 +95,9 @@ def rapprochement_osm_navitia():
                 rapprochements_ok.append([route_osm_id, navitia_matches[0]['id'], navitia_matches[0]['name'].encode('utf-8'), navitia_nb_stops, navitia_matches[0]['destination'].encode('utf-8')]) 
             elif len(navitia_matches) == 0: #cas où rien ne matche
                 pas_de_match_navitia.append([route_osm_id, route_name])
-            else : #cas où il y a plusieurs solutions
-                trop_de_solutions_navitia.append([route_osm_id] + [elem['id'] + u' ; ' + elem['destination'].encode('utf-8') for elem in navitia_matches])
+            else : #cas où il y a plusieurs solutions  
+                print route_osm_id
+                trop_de_solutions_navitia.append([route_osm_id] + [elem['id'] + u' ; ' + elem['destination'] for elem in navitia_matches])
         else :        
             pas_de_match_navitia.append([route_osm_id, route_name])
 

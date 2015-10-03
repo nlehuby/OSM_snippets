@@ -9,6 +9,7 @@
 # -*- coding: utf-8 -*-
 
 import geojson
+import json
 import requests
 import datetime
 import csv
@@ -121,6 +122,7 @@ def send_to_html(osm_info, navitia_info):
     crée une page html listant les arrêts navitia et OSM d'un parcours
     osm_info & navitia_info ~ {id : '', name : '', nb_stops : '', ref: '', junk : junk }
     seuls les codes sont obligatoires
+    #TODO : à réécrire en tirant parti de ce qui a été fait dans 126953 (copie).html et de la fonction generate_navitia_json_file
     """
     #OSM
     OSM_id = osm_info['id']
@@ -162,6 +164,7 @@ def send_to_html(osm_info, navitia_info):
         print "#### échec navitia : parcours ignoré "
         return
 
+    #TODO : appeler ici generate_navitia_json_file
     ## result to HTML
     now = datetime.datetime.now()
     mon_fichier = open("rendu/assets/template.html", "r")
@@ -193,7 +196,7 @@ def comp(v1, v2):
 
 def create_html_index_page(liste):
     """
-    crée la page d'index listant toutes les pages html des routes déjà créées et persistées'
+    crée la page d'index listant toutes les pages html listant tous les parcours osm rapprochés
     """
     template_table = ''
 
@@ -218,7 +221,7 @@ def create_html_index_page(liste):
                 </td>
             <tr>
         """
-        
+
         liste_template = liste_template.replace("%%route_code%%", route_info[4]  )
         liste_template = liste_template.replace("%%relation_id%%", route_info[0]  )
         liste_template = liste_template.replace("%%relation_name%%", route_info[1]  )
@@ -236,19 +239,36 @@ def create_html_index_page(liste):
     mon_fichier = open("rendu/index.html", "wb")
     mon_fichier.write(template)
     mon_fichier.close()
-    
+
     #création du fichier csv utilisé pour l'autocomplétion
     myfile = open('rendu/liste_routes.csv', 'wb')
     wr = csv.writer(myfile)
     for row in liste:
-        wr.writerow(row)     
+        wr.writerow(row)
 
+def generate_navitia_json_file(osm_info, navitia_info):
+    file_name = 'rendu/navitia.json'
+    try:
+        my_json = json.load(open(file_name))
+    except IOError:
+        print "on crée le fichier"
+        my_json = {"junk":"junk"}
+        json.dump(my_json, open(file_name, "w"), indent=4)
+    my_json = json.load(open(file_name))
+    my_json[osm_info["id"]] = {}
+    my_json[osm_info["id"]]['navitia_nb_arrets'] = navitia_info['nb_stops']
+    my_json[osm_info["id"]]['navitia_id'] = navitia_info['id']
+    my_json[osm_info["id"]]['navitia_name'] = navitia_info['name']
+    my_json[osm_info["id"]]['osm_nb_arrets'] = osm_info['nb_stops']
+    now = datetime.datetime.now()
+    my_json[osm_info["id"]]['date_gen'] = now.strftime("%d/%m/%Y %H:%M")
+
+    json.dump(my_json, open(file_name, "w"), indent=4)
 
 def render_all():
     """
     crée la page html de chaque route, puis la page html listant toutes les routes et leur état de complétion
     """
-    # /!\ ne pas oublier de vider le fichier temp de création de l'index : liste_routes.csv
 
     osm_csv = csv.reader(open("collecte/relations_routes.csv", "rb"))
     navitia_csv = list(csv.reader(open("rapprochement/osm_navitia.csv", "rb")))
@@ -260,11 +280,13 @@ def render_all():
             current_osm_route = {'id' : osm_route[0], 'name': osm_route[2], 'ref': osm_route[1], 'nb_stops': osm_route[-1]}
             current_nav_route = {'id' : rapp[0][1], 'name' : rapp[0][2], 'nb_stops': rapp[0][3]}
             send_to_html(current_osm_route, current_nav_route)
+            generate_navitia_json_file(current_osm_route, current_nav_route)
             persist_for_index.append([osm_route[0],osm_route[2], osm_route[-1], rapp[0][3], osm_route[1]])
              #osm_relation_id, osm_relation_name, osm_nb_stops, navitia_nb_stops, osm_ref
 
         else:
             print "pas de correspondance osm navitia trouvée"
+            #TODO : créer la page osm sans navitia
 
 
     #créer l'index
@@ -272,4 +294,5 @@ def render_all():
 
 
 if __name__ == '__main__':
+    #save_geojson_to_file(extract_geojson_from_navitia('route:RTP:1330511_R'))
     render_all()

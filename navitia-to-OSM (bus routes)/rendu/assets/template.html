@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
   <script src="assets/OverPassLayer.js"></script>
-  <script src="assets/auth.js"></script>  
-  <script src="assets/api.js"></script>  
-  <script src="assets/osmtogeojson.js"></script>  
-  <script src="assets/easy-button.js"></script> 
+  <script src="assets/auth.js"></script>
+  <script src="assets/api.js"></script>
+  <script src="assets/osmtogeojson.js"></script>
+  <script src="assets/easy-button.js"></script>
   <style>
     body {
       padding: 0;
@@ -28,19 +28,18 @@
   </style>
 </head>
 <body>
-<div id="info"> 
+<div id="info">
 <table>
 
 <tr>
     <td>
-        <div>parcours navitia : <a href='http://api.navitia.io/v1/coverage/fr-idf/routes/%%navitia_route_extcode%%' target='_blank'> %%navitia_route_name%%</a>
-        </div> 
+      <div id="parcours_OSM">parcours OSM ... </div>
     </td>
     <td rowspan=2>
-        <progress value="%%OSM_nb_stops%%" max="%%navitia_nb_stops%%">état de la carto de la route</progress> <br/> <small>mis à jour le %%date_du_jour%%</small>
+      <div id="progress_bar"></div>
     </td>
 </tr>
-<tr><td><div id="parcours_OSM">parcours OSM ... </div></td> </tr>
+<tr><td><div id="parcours_navitia">Pas de parcours navitia associé <br></div></td> </tr>
 
 </table>
 
@@ -52,35 +51,55 @@
     var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {opacity: 0.7, attribution: [attr_osm, attr_overpass].join(', ')});
 
 		var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(48.84702,2.37705), 14);
-		
+
 		var osm_relation_code = %%OSM_relation_code%%
 
-    
-//navitia layer
-  var latLongCollection = []; 
-  var geojson =   [%%navitia_route_geojson%%];
-  
-  var locations_navitia = L.geoJson(geojson);
-  
-    locations_navitia.eachLayer(function(locale) {
-
-    // Shorten locale.feature.properties to just `prop` so we're not
-    // writing this long form over and over again.
-    var prop = locale.feature.properties;
-
-    // Each marker on the map.
-    var popup = '<h3>'+prop.name+'</h3><div><a href="http://api.navitia.io/v1/coverage/fr-idf/stop_points/' + prop.code + '" target="_blank"> voir le détail</a></div>';
-
-    locale.bindPopup(popup);
-    latLongCollection.push(locale._latlng)
-
-    locale.setIcon(L.icon({
-      iconUrl: 'assets/navitia_bus.png',
-      popupAnchor: [0, 0]
-    }));
-
+$(document).ready(function() {
+  $.ajax({
+    type: "GET",
+    url: "navitia.json",
+    dataType: "json",
+    success: function(data) {process_navitia_info(data);}
+  });
 });
 
+function process_navitia_info(data){
+  nav_info = data[osm_relation_code]
+  if (nav_info){
+
+    var nav_route_name=document.getElementById("parcours_navitia");
+    nav_route_name.innerHTML = "parcours navitia : <a href='http://api.navitia.io/v1/coverage/fr-idf/routes/"+nav_info['navitia_id']+"' target='_blank'> "+ nav_info['navitia_name'] +"</a>";
+
+    var prog_bar=document.getElementById("progress_bar");
+    prog_bar.innerHTML = "<progress value="+nav_info['osm_nb_arrets']+" max="+nav_info['navitia_nb_arrets']+">état de la carto de la route</progress> <br/> <small>mis à jour le "+nav_info['date_gen']+"</small>";
+    //navitia layer
+      var geojson = [%%navitia_route_geojson%%];
+
+      var locations_navitia = L.geoJson(geojson);
+
+        locations_navitia.eachLayer(function(locale) {
+
+        // Shorten locale.feature.properties to just `prop` so we're not
+        // writing this long form over and over again.
+        var prop = locale.feature.properties;
+
+        // Each marker on the map.
+        var popup = '<h3>'+prop.name+'</h3><div><a href="http://api.navitia.io/v1/coverage/fr-idf/stop_points/' + prop.code + '" target="_blank"> voir le détail</a></div>';
+
+        locale.bindPopup(popup);
+
+        locale.setIcon(L.icon({
+          iconUrl: 'assets/navitia_bus.png',
+          popupAnchor: [0, 0]
+        }));
+
+      });
+        map.addLayer(locations_navitia);
+  }
+  else {
+    console.log("Pas de rapprochement avec navitia")
+  }
+}
 
 relation_OSM_url = 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];relation('+ osm_relation_code +');(._;>;);out;'
 getJSON(relation_OSM_url , function(data) {
@@ -88,10 +107,10 @@ getJSON(relation_OSM_url , function(data) {
 	relation = data.elements.reverse()[0]
 	var route_name=document.getElementById("parcours_OSM");
 	route_name.innerHTML = "parcours OSM : <a  target='_blank' href='http://openstreetmap.org/relation/"+ relation['id'] +"'>" + relation['tags']['name'] + "</a>"
-	
+
 	//transformation en geosjon
-    geo = osmtogeojson(data);  
-   
+    geo = osmtogeojson(data);
+
    // marqueur pour les éléments qu'on ne veut pas voir
 	var geojsonBlankMarkerOptions = {
 		radius: 8,
@@ -113,7 +132,7 @@ getJSON(relation_OSM_url , function(data) {
 	//fonction qui transforme les points du geojson en qqch d'affichable
 	function DisplayOSMBusStops(feature, latlng){
 		if (feature.properties['type'] == 'node') {
-			if (feature.properties['tags']['highway'] == 'bus_stop' ) {	
+			if (feature.properties['tags']['highway'] == 'bus_stop' ) {
 			//console.log(feature.properties)
 		    var myicon = L.icon({
                       iconUrl: 'assets/blue_bus.png',
@@ -124,25 +143,26 @@ getJSON(relation_OSM_url , function(data) {
 			else { return L.circleMarker(latlng, geojsonBlankMarkerOptions)}
 		}
 	}
-    
+
 	//fonction qui affine les propriétés du geosjon
     function onEachFeature(feature, layer) {
 		if (feature.properties['type'] == 'node') {
-			if (feature.properties['tags']['highway'] == 'bus_stop'|| feature.properties['tags']['public_transport'] == 'stop_position' ) {	
+			if (feature.properties['tags']['highway'] == 'bus_stop'|| feature.properties['tags']['public_transport'] == 'stop_position' ) {
 				layer.bindPopup(feature.properties.tags.name + '<br><a href="http://www.openstreetmap.org/node/'+ feature.properties['id'] +'" target="_blank">Voir sur OSM</a>');
-			} 
+			}
 		}
 		if (feature.properties['type'] == 'way') {
 				layer.setStyle({"color": "blue"});
 		}
     }
-    
+
     //affichage du geojson
     relation_OSM = L.geoJson(geo, {
-        onEachFeature: onEachFeature, 
+        onEachFeature: onEachFeature,
         pointToLayer : DisplayOSMBusStops
     }).addTo(map);
-	
+    map.fitBounds(relation_OSM.getBounds());
+
 }, function(status) {
   console.log(status)
   alert("Il y a eu un souci dans l'affichage des données osm");
@@ -169,19 +189,12 @@ function getJSON(url, successHandler, errorHandler){
     }
   };
   xhr.send();
-};  
-  
-
-	map.addLayer(locations_navitia);
-
-   
-//centrage de la carte    
-map.fitBounds(latLongCollection) 
+};
 
 //édition OSM
 function add_stop_to_relation(node_id, relation_id){
     var osmXml = get_node_or_way(node_id, 'node');
-    edit_tag(osmXml, 'node', "fixme:relation", "add to "+ relation_id); 
+    edit_tag(osmXml, 'node', "fixme:relation", "add to "+ relation_id);
     //Open changeset
     changeset_id = put_changeset();
     //Send new node/way
@@ -193,21 +206,21 @@ function add_stop_to_relation(node_id, relation_id){
 
 function remove_stop_from_relation(node_id, relation_id){
     var osmXml = get_node_or_way(node_id, 'node');
-    edit_tag(osmXml, 'node', "fixme:relation", "remove from "+ relation_id); 
+    edit_tag(osmXml, 'node', "fixme:relation", "remove from "+ relation_id);
     //Open changeset
     changeset_id = put_changeset();
     //Send new node/way
     put_node_or_way(osmXml, changeset_id, node_id, 'node');
     //Close changeset
     close_changeset(changeset_id);
-} 
+}
 function display_bus_around(){
     center = map.getCenter();
     user_lat = center.lat;
     user_lon = center.lng;
     //[out:json][timeout:25];(node["highway"="bus_stop"](around:500,48.80423,2.36547);)->.a;rel(bn);out body;.a out body;
     url_op_bus = 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];(node["highway"="bus_stop"](around:500,' + user_lat +',' + user_lon +');)->.a;rel(bn);out body;.a out body;';
-    
+
     $.getJSON(url_op_bus, function(data) {
 
 // add to map
@@ -216,37 +229,37 @@ function display_bus_around(){
             if (geo.features[i].properties['type'] == 'node' && geo.features[i].properties['tags']['highway'] == 'bus_stop' ){
                     relations_text = '';
                     already_in = false;
-			        for (j = 0; j < geo.features[i].properties['relations'].length; j++) 
+			        for (j = 0; j < geo.features[i].properties['relations'].length; j++)
 			        {
 			         if (geo.features[i].properties['relations'][j]['reltags']['route'] )
 		                {
 		                relations_text += geo.features[i].properties['relations'][j]['reltags']['name'] + " <br> "
 		                if (geo.features[i].properties['relations'][j]['rel'] == osm_relation_code) {already_in = true;}
 		                }
-			        
-                    }  
-                             
+
+                    }
+
                     tags = geo.features[i].properties.tags
                     var tags_text = '<ul>';
                     for (key in tags)
                         {tags_text += '<li> ' + key + ' : ' + tags[key]}
                     tags_text += '<li><a href="http://www.openstreetmap.org/node/'+ geo.features[i].properties['id'] +'" target="_blank">Voir sur OSM</a></ul>'
                     geo.features[i].properties['popup_content'] = geo.features[i].properties.tags.name + "<br>"
-                    
+
                     if (already_in)
                         {
-                        geo.features[i].properties['popup_content'] += '<a href="#" onClick="remove_stop_from_relation(' + geo.features[i].properties['id'] + ','+ osm_relation_code +')"> Retirer cet arrêt du parcours </a><br>';  
+                        geo.features[i].properties['popup_content'] += '<a href="#" onClick="remove_stop_from_relation(' + geo.features[i].properties['id'] + ','+ osm_relation_code +')"> Retirer cet arrêt du parcours </a><br>';
                         geo.features[i].properties['icon_url'] = 'assets/blue_bus.png';
                         }
                     else
                         {
-                        geo.features[i].properties['popup_content'] += '<a href="#" onClick="add_stop_to_relation(' + geo.features[i].properties['id'] + ','+ osm_relation_code +')"> Ajouter cet arrêt au parcours  </a><br>';  
+                        geo.features[i].properties['popup_content'] += '<a href="#" onClick="add_stop_to_relation(' + geo.features[i].properties['id'] + ','+ osm_relation_code +')"> Ajouter cet arrêt au parcours  </a><br>';
                         geo.features[i].properties['icon_url'] = 'assets/red_bus.png';
                         }
-                    
+
                     geo.features[i].properties['popup_content'] += tags_text + '<br>' + relations_text
 
-                
+
             }
         }
         bus_layer = L.geoJson(geo, {
@@ -255,19 +268,18 @@ function display_bus_around(){
                 layer.setIcon(L.icon({
                   iconUrl: feature.properties['icon_url'],
                   popupAnchor: [0, 0]
-                }));                
+                }));
             },
-        }).addTo(map);    
+        }).addTo(map);
     });
-} 
-L.easyButton('fa-bus', 
+}
+L.easyButton('fa-bus',
               function (){
                   display_bus_around();
               },
              'Afficher les arrêts de bus à proximité'
              )
-  
+
   </script>
 </body>
 </html>
-

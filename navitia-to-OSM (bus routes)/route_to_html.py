@@ -122,7 +122,6 @@ def send_to_html(osm_info, navitia_info):
     crée une page html listant les arrêts navitia et OSM d'un parcours
     osm_info & navitia_info ~ {id : '', name : '', nb_stops : '', ref: '', junk : junk }
     seuls les codes sont obligatoires
-    #TODO : à réécrire en tirant parti de ce qui a été fait dans 126953 (copie).html et de la fonction generate_navitia_json_file
     """
     #OSM
     OSM_id = osm_info['id']
@@ -130,6 +129,7 @@ def send_to_html(osm_info, navitia_info):
         OSM_name = osm_info['name'].decode('utf-8')
     else :
         OSM_name = extract_name_from_OSM(OSM_id)
+        osm_info['name'] = OSM_name
     if not OSM_name :
         print "#### échec OSM : parcours ignoré "
         return
@@ -137,6 +137,7 @@ def send_to_html(osm_info, navitia_info):
         OSM_nb_stops = osm_info['nb_stops']
     else :
         OSM_nb_stops = extract_nb_stop_from_OSM(OSM_id)
+        osm_info['nb_stops'] = OSM_nb_stops
     if not OSM_nb_stops :
         print "#### échec OSM : parcours ignoré "
         return
@@ -153,6 +154,7 @@ def send_to_html(osm_info, navitia_info):
         navitia_name = navitia_info['name'].decode('utf-8')
     else :
         navitia_name = extract_name_from_navitia(navitia_id)
+        navitia_info['name'] = navitia_name
     if not navitia_name :
         print "#### échec navitia : parcours ignoré "
         return
@@ -160,24 +162,21 @@ def send_to_html(osm_info, navitia_info):
         navitia_nb_stops = navitia_info['nb_stops']
     else :
         navitia_nb_stops = extract_nb_stop_from_navitia(navitia_id)
+        navitia_info['nb_stops'] = navitia_nb_stops
     if not navitia_nb_stops :
         print "#### échec navitia : parcours ignoré "
         return
 
-    #TODO : appeler ici generate_navitia_json_file
+    generate_navitia_json_file(osm_info, navitia_info)
+
     ## result to HTML
     now = datetime.datetime.now()
     mon_fichier = open("rendu/assets/template.html", "r")
     template = mon_fichier.read()
     mon_fichier.close()
 
-    template = template.replace("%%navitia_route_extcode%%", navitia_id  )
-    template = template.replace("%%navitia_route_name%%", navitia_name.encode("utf-8"))
     template = template.replace("%%navitia_route_geojson%%", extract_geojson_from_navitia(navitia_id, navitia_nb_stops))
     template = template.replace("%%OSM_relation_code%%", OSM_id  )
-    template = template.replace("%%OSM_nb_stops%%", str(OSM_nb_stops)  )
-    template = template.replace("%%navitia_nb_stops%%", str(navitia_nb_stops)  )
-    template = template.replace("%%date_du_jour%%", now.strftime("%d/%m/%Y %H:%M")  )
 
     mon_fichier = open("rendu/" + OSM_id + ".html", "wb")
     mon_fichier.write(template)
@@ -280,7 +279,6 @@ def render_all():
             current_osm_route = {'id' : osm_route[0], 'name': osm_route[2], 'ref': osm_route[1], 'nb_stops': osm_route[-1]}
             current_nav_route = {'id' : rapp[0][1], 'name' : rapp[0][2], 'nb_stops': rapp[0][3]}
             send_to_html(current_osm_route, current_nav_route)
-            generate_navitia_json_file(current_osm_route, current_nav_route)
             persist_for_index.append([osm_route[0],osm_route[2], osm_route[-1], rapp[0][3], osm_route[1]])
              #osm_relation_id, osm_relation_name, osm_nb_stops, navitia_nb_stops, osm_ref
 

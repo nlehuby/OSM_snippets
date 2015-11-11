@@ -192,18 +192,19 @@ def comp(v1, v2):
         return 1
     else:
         return 0
-
-def create_html_index_page(liste):
+        
+def create_html_index_page():
     """
     crée la page d'index listant toutes les pages html listant tous les parcours osm rapprochés
     """
     template_table = ''
-
-    # retri du csv par code
-    liste.sort(cmp=comp)
-
-    #création d'une ligne dans l'index pour chaque ligne du csv
-    for route_info in liste:
+    liste = []
+    
+    
+    osm_csv = csv.reader(open("collecte/relations_routes.csv", "rb"))
+    navitia_json = json.load(open("rendu/navitia.json", "rb"))
+    
+    for osm_route in osm_csv :       
         liste_template = """
             <tr>
                 <td> %%route_code%%
@@ -218,16 +219,18 @@ def create_html_index_page(liste):
 
                     <progress value="%%OSM_nb_stops%%" max="%%navitia_nb_stops%%">état de la carto de la route</progress>
                 </td>
+
             <tr>
         """
 
-        liste_template = liste_template.replace("%%route_code%%", route_info[4]  )
-        liste_template = liste_template.replace("%%relation_id%%", route_info[0]  )
-        liste_template = liste_template.replace("%%relation_name%%", route_info[1]  )
-        liste_template = liste_template.replace("%%OSM_nb_stops%%", route_info[2]  )
-        liste_template = liste_template.replace("%%navitia_nb_stops%%", route_info[3]  )
-        template_table += liste_template
-
+        liste_template = liste_template.replace("%%route_code%%", osm_route[1]  )
+        liste_template = liste_template.replace("%%relation_id%%", osm_route[0]  )
+        liste_template = liste_template.replace("%%relation_name%%", osm_route[2]  )
+        liste_template = liste_template.replace("%%OSM_nb_stops%%", osm_route[-1]  )
+        liste_template = liste_template.replace("%%navitia_nb_stops%%", str(navitia_json[osm_route[0]]['navitia_nb_arrets'])  )
+        template_table += liste_template 
+        liste.append([osm_route[0], osm_route[2]] )
+            
     #ajout dans le template
     now = datetime.datetime.now()
     mon_fichier = open("rendu/assets/template_liste.html", "r")
@@ -244,7 +247,7 @@ def create_html_index_page(liste):
     wr = csv.writer(myfile)
     for row in liste:
         wr.writerow(row)
-
+        
 def generate_navitia_json_file(osm_info, navitia_info):
     file_name = 'rendu/navitia.json'
     try:
@@ -271,7 +274,7 @@ def render_all():
 
     osm_csv = csv.reader(open("collecte/relations_routes.csv", "rb"))
     navitia_csv = list(csv.reader(open("rapprochement/osm_navitia.csv", "rb")))
-    persist_for_index = []
+    #persist_for_index = []
     for osm_route in osm_csv:
         print osm_route[2]
         rapp = [route for route in navitia_csv if route[0] == osm_route[0]] #rapprochement osm navitia
@@ -279,7 +282,7 @@ def render_all():
             current_osm_route = {'id' : osm_route[0], 'name': osm_route[2], 'ref': osm_route[1], 'nb_stops': osm_route[-1]}
             current_nav_route = {'id' : rapp[0][1], 'name' : rapp[0][2], 'nb_stops': rapp[0][3]}
             send_to_html(current_osm_route, current_nav_route)
-            persist_for_index.append([osm_route[0],osm_route[2], osm_route[-1], rapp[0][3], osm_route[1]])
+            #persist_for_index.append([osm_route[0],osm_route[2], osm_route[-1], rapp[0][3], osm_route[1]])
              #osm_relation_id, osm_relation_name, osm_nb_stops, navitia_nb_stops, osm_ref
 
         else:
@@ -288,9 +291,10 @@ def render_all():
 
 
     #créer l'index
-    create_html_index_page(persist_for_index)
+    create_html_index_page()
 
 
 if __name__ == '__main__':
     #save_geojson_to_file(extract_geojson_from_navitia('route:RTP:1330511_R'))
     render_all()
+    

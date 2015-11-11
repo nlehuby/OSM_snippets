@@ -40,7 +40,7 @@ def extract_name_from_navitia(route_extcode):
     appel_nav = requests.get(navitia_base_url + "/routes/" + my_route, headers={'Authorization': navitia_API_key})
     try:
         result_nav=appel_nav.json()['routes'][0]
-        return result_nav["name"].decode('utf-8')
+        return result_nav["name"]#.decode('utf-8')
     except :
         print "navitia - impossible de récupérer le nom de la route " + route_extcode
 
@@ -150,21 +150,21 @@ def send_to_html(osm_info, navitia_info):
         OSM_ref = 'No code'
     #navitia
     navitia_id = navitia_info['id']
-    if 'name' in navitia_info :
+    if 'name' in navitia_info and navitia_info['name'] != "" :
         navitia_name = navitia_info['name'].decode('utf-8')
     else :
         navitia_name = extract_name_from_navitia(navitia_id)
         navitia_info['name'] = navitia_name
-    if not navitia_name :
-        print "#### échec navitia : parcours ignoré "
-        return
-    if 'nb_stops' in navitia_info :
+    if not navitia_info['name'] :
+        print "#### échec navitia (nom): parcours ignoré "
+        #return
+    if 'nb_stops' in navitia_info and navitia_info['nb_stops'] != "":
         navitia_nb_stops = navitia_info['nb_stops']
     else :
-        navitia_nb_stops = extract_nb_stop_from_navitia(navitia_id)
+        navitia_nb_stops = str(extract_nb_stop_from_navitia(navitia_id))
         navitia_info['nb_stops'] = navitia_nb_stops
     if not navitia_nb_stops :
-        print "#### échec navitia : parcours ignoré "
+        print "#### échec navitia (nb stops): parcours ignoré "
         return
 
     generate_navitia_json_file(osm_info, navitia_info)

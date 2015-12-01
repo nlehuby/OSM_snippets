@@ -104,6 +104,7 @@ def analyse_relation_list(fichier_a_analyser):
                     routes_sans_operator.append(int(elem))
                 if not 'network' in ma_relation:
                     routes_sans_network.append(int(elem))
+                    ma_route['network'] = ''
                 else :
                     ma_route['network'] = ma_relation['network'].encode('utf-8')
                 if not 'colour' in ma_relation:
@@ -151,17 +152,16 @@ def analyse_relation_list(fichier_a_analyser):
 def generate_autocomplete_osm_json():
     mon_fichier = open("collecte/relations_routes.csv", "rb")
     reader = csv.reader(mon_fichier)
-    
+
     fichier_json = 'collecte/osm_parcours.json'
     objet_json = {"parcours_osm":[]}
-    
+
     for row in reader :
         print row[0]
         parcours = {}
         parcours['value'] = row [0]
         parcours['label'] = "[{}] {} > {}".format(row[-1], row[1], row[3])
         objet_json['parcours_osm'].append(parcours)
-    print objet_json
     json.dump(objet_json, open(fichier_json, "w"), indent=4)
 
 if __name__ == '__main__':
@@ -173,6 +173,4 @@ if __name__ == '__main__':
     #autres_bus = [] #collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_RATP')
     persist_list_to_csv(list(set(noctiliens + autres_bus)), "collecte/liste_relations.csv")
     analyse_relation_list("collecte/liste_relations.csv")
-    
-
-
+    generate_autocomplete_osm_json()

@@ -81,6 +81,11 @@ def analyse_relation_list(fichier_a_analyser):
         if 'elements' in mon_json:
             if len(mon_json['elements']) > 0 :
                 ma_relation = mon_json['elements'][0]['tags']
+                if "tags" in mon_json['elements'][0]:
+                    ma_relation = mon_json['elements'][0]['tags']
+                else :
+                    relations_hors_sujet.append(int(elem))
+                    continue
             else :
                 print "KO"
                 continue

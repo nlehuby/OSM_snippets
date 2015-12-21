@@ -34,7 +34,7 @@
 
 <tr>
     <td>
-      <span id="parcours_OSM">parcours OSM ... <span id="osm_count"></span></span>
+      <span id="parcours_OSM">parcours OSM ... </span><span id="osm_count"></span>
     </td>
 </tr>
 <tr><td><span id="parcours_navitia">Pas de parcours navitia associé </span><span id="navitia_count"></span><br></td> </tr>
@@ -75,8 +75,7 @@ $(document).ready(function() {
         dataType: 'json',
         global: true,
         error: function(data) {console.log(data)},
-        success: function(data) {console.log(data)
-          // TODO : vérifier le nombre de résultats : quand il n'y a pas de code navitia, on retourne la première route connue aujourd'hui
+        success: function(data) {
             nb_routes = data['pagination']['items_on_page']
             if (nb_routes != '25') {
               var nav_route_name=document.getElementById("parcours_navitia");
@@ -105,6 +104,18 @@ $(document).ready(function() {
         }
     });
 
+    // récupération du nombre d'arrêts OSM
+    $.ajax({
+        url: 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];relation('+ osm_relation_code +');node(r);out count;',
+        dataType: 'json',
+        global: true,
+        error: function(data) {console.log(data)},
+        success: function(data) {
+            var osm_count =document.getElementById("osm_count");
+            osm_count.innerHTML = " - " + data['elements'][0]['count']['nodes'] + " arrêts"
+            }
+        });
+
     //affichage du parcours OSM
     $.ajax({
         url: 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];relation('+ osm_relation_code +');(._;>;);out;',
@@ -112,7 +123,6 @@ $(document).ready(function() {
         global: true,
         error: function(data) {console.log(data); alert("Il y a eu un souci dans l'affichage des données osm");},
         success: function(data) {
-            console.log(data)
             //affichage du nom du parcours OSM
             relation = data.elements.reverse()[0]
 	        var route_name=document.getElementById("parcours_OSM");

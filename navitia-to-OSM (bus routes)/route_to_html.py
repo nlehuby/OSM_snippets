@@ -210,7 +210,7 @@ def create_html_index_page():
                 <td> %%route_code%%
                 </td>
                 <td>
-                <a href="%%relation_id%%.html">%%relation_name%%</a>
+                <a href="bus_route.htm?osm=%%relation_id%%&navitia=%%navitia_id%%">%%relation_name%%</a>
                 </td>
                 <td>
                     %%OSM_nb_stops%%/%%navitia_nb_stops%%
@@ -229,8 +229,10 @@ def create_html_index_page():
         liste_template = liste_template.replace("%%OSM_nb_stops%%", osm_route[4]  )
         if osm_route[0] in navitia_json :
             liste_template = liste_template.replace("%%navitia_nb_stops%%", str(navitia_json[osm_route[0]]['navitia_nb_arrets'])  )
+            liste_template = liste_template.replace("%%navitia_id%%", str(navitia_json[osm_route[0]]['navitia_id'])  )
         else :
-            liste_template = liste_template.replace("%%navitia_nb_stops%%", 'nombre inconnu'  )
+            liste_template = liste_template.replace("%%navitia_nb_stops%%", '0'  )
+            liste_template = liste_template.replace("%%navitia_id%%", ''  )
         template_table += liste_template
         liste.append([osm_route[0], osm_route[2]] )
 

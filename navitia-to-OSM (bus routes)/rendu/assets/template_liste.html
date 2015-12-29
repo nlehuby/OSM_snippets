@@ -15,36 +15,20 @@
 
 
 $(document).ready(function() {
-  $.ajax({
-    type: "GET",
-    url: "liste_routes.csv",
-    dataType: "text",
-    success: function(data) {processData(data);}
- });
+        $.getJSON("osm_parcours.json", function(data){ 
+                    var liste_parcours_json = data['parcours_osm'] ;       
+                    $( "#autocomplete" ).autocomplete({
+                        source: liste_parcours_json,
+                        select: function(event, ui){ 
+                            document.getElementById("autocomplete").value = "";
+                            window.open(ui.item.url);                
+                            }                    
+                    }); 
+                })
+
 });
 
-var temp_list = [];
-var route_list = []
-function processData(myTxt) {
-    var myLines = myTxt.split(/\r\n|\n/);
-    for (var i=0; i<myLines.length -1 ; i++) {
-          temp_list.push(myLines[i]);
-        }
-    for (var i=0; i<temp_list.length; i++) {
-          c = {}
-          asplit = temp_list[i].split(",")
-          c['value'] = asplit[0]
-          c['label'] = asplit[1] + " ( "+ asplit[2] + " / "+ asplit[3] + " ) "
-          route_list.push(c);
-        }
-    $( "#autocomplete" ).autocomplete({
-        source: route_list,
-        select: function(event, ui){
-            document.getElementById("autocomplete").value = "";
-            window.open(ui.item.value +'.html');                             
-                    }        
-    });
-}
+
 </script>
 <table border=1>
 %%tableau_des_routes%%

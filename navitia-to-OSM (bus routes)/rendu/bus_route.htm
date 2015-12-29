@@ -79,7 +79,7 @@ $(document).ready(function() {
             nb_routes = data['pagination']['items_on_page']
             if (nb_routes != '25') {
               var nav_route_name=document.getElementById("parcours_navitia");
-              nav_route_name.innerHTML = "parcours navitia : <a href='http://api.navitia.io/v1/coverage/fr-idf/routes/"+data['routes'][0]['id']+"' target='_blank'> "+ data['routes'][0]['name'] +"</a>";
+              nav_route_name.innerHTML = "parcours navitia : <a href='http://api.navitia.io/v1/coverage/fr-idf/routes/"+data['routes'][0]['id']+"' target='_blank'> "+ data['routes'][0]['line']['code'] + " : "+data['routes'][0]['name'] +"</a>";
               }
             }
         });

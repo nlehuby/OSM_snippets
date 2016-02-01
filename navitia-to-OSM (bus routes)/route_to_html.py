@@ -298,12 +298,65 @@ def render_all():
     #créer l'index
     create_html_index_page()
 
+def prepare_osm_routes():
+    """
+    reconstruit les infos osm nécessaires
+    """
+    source_csv = csv.reader(open("collecte/relations_routes.csv", "rb"))
+    result_list = []
+
+    for an_osm_route in source_csv :
+        if len(an_osm_route) < 6:
+            print ("il faut appeler Overpass pour récupérer les infos manquantes : TODO")
+        else :
+            result_list.append(an_osm_route)
+
+    #tri
+    result_int = []
+    result_other= []
+    for a_route in result_list:
+        try:
+            int(a_route[1])
+            result_int.append(a_route)
+        except ValueError :
+            result_other.append(a_route)
+    result_int.sort(key=lambda osm_route: osm_route[1])
+    result_other.sort(key=lambda osm_route: osm_route[1])
+    result_list = result_int + result_other
+
+
+    with open("rendu/sources/osm_parcours.csv", "wb") as csv_file:
+        writer = csv.writer(csv_file, delimiter=',')
+        for line in sorted(result_list, key=lambda osm_route: osm_route[1]):
+            writer.writerow(line)
+
+def prepare_navitia_routes():
+    """
+    reconstruit les infos navitia nécessaires
+    """
+    source_csv = csv.reader(open("rapprochement/osm_navitia.csv", "rb"))
+    result_list = []
+
+    for a_nav_route in source_csv :
+        if len(a_nav_route) < 5:
+            print ("il faut appeler navitia pour récupérer les infos manquantes : TODO")
+        else :
+            result_list.append(a_nav_route)
+
+    with open("rendu/sources/navitia_parcours.csv", "wb") as csv_file:
+        writer = csv.writer(csv_file, delimiter=',')
+        for line in result_list:
+            writer.writerow(line)
+
+
 def to_html():
     """
     crée la page d'index listant référençant les pages de chaque parcours OSM
     """
 
     #TODO : récréer les fichiers csv à partir des fonctions déjà existantes en complétant les infos manquantes
+    prepare_osm_routes()
+    prepare_navitia_routes()
 
     osm_csv = csv.reader(open("rendu/sources/osm_parcours.csv", "rb"))
     navitia_csv = list(csv.reader(open("rendu/sources/navitia_parcours.csv", "rb")))

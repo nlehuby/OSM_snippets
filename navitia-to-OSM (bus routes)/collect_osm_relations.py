@@ -28,7 +28,7 @@ def collect_relations_from_wiki(wiki_url):
 
 def collect_relations_from_overpass(overpass_query):
     """
-    appelle l'API overpass et extrait tous les id de relations qui vont bien
+    appelle l'API overpass et extrait tous les id de relations qui vont bien. Utilisé uniquement pour vérifier la complétude du wiki
     """
     #[out:json][timeout:25];(relation["network"="Noctilien"]["route"="bus"(48.68098749511622,2.1258544921875,48.9220480811836,2.6126861572265625););out ids;
     resp = requests.get(overpass_base_url, params={'data': overpass_query})
@@ -150,6 +150,7 @@ def analyse_relation_list(fichier_a_analyser):
     mon_fichier.close()
 
 def generate_autocomplete_osm_json():
+    """ depréciée. Cette opération est effectuée directement dans route_to_html """
     mon_fichier = open("collecte/relations_routes.csv", "rb")
     reader = csv.reader(mon_fichier)
 

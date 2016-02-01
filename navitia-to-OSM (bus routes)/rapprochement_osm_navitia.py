@@ -42,27 +42,6 @@ def get_navitia_info_by_line_code(line_code):
 
     return navitia_info
 
-def pt_objects_by_code(route_code):
-    """
-    Déprécié
-    appelle navitia avec un code de route donné, et récupère la liste des routes qui correspondent (nom et extcode)
-    """
-    appel_nav = requests.get(navitia_base_url + "/pt_objects?type[]=route&q=" + route_code, headers={'Authorization': navitia_API_key})
-    mon_json = appel_nav.json()
-    if not 'pt_objects' in mon_json:
-        result_nav = []
-    else :
-        result_nav=mon_json['pt_objects']
-
-    liste_name = []
-    liste_extcode = []
-
-    for une_route in result_nav:
-        liste_extcode.append(une_route['route']['id'])
-        liste_name.append(une_route['route']['name'].encode('utf-8'))
-
-    return  [liste_name, liste_extcode] #tableau des nom, tableau des codes
-
 def rapprochement_osm_navitia():
     """
     parcourt le fichier des relations osm et appelle navitia pour chaque, choisit un parcours pertinent

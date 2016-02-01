@@ -385,6 +385,8 @@ def to_html():
             #ajout dans l'index
             liste_template = """
                 <tr>
+                    <td> %%network%%
+                    </td>
                     <td> %%route_code%%
                     </td>
                     <td>
@@ -404,6 +406,7 @@ def to_html():
             liste_template = liste_template.replace("%%route_code%%", osm_route[1]  )
             liste_template = liste_template.replace("%%relation_id%%", osm_route[0]  )
             liste_template = liste_template.replace("%%relation_name%%", osm_route[2]  )
+            liste_template = liste_template.replace("%%network%%", osm_route[5]  )
             liste_template = liste_template.replace("%%OSM_nb_stops%%", osm_route[4]  )
             liste_template = liste_template.replace("%%navitia_nb_stops%%", rapp[0][3] )
             liste_template = liste_template.replace("%%navitia_id%%", rapp[0][1] )
@@ -414,6 +417,8 @@ def to_html():
             parcours['url'] = "bus_route.htm?osm={}".format(osm_route[0])
             liste_template = """
                 <tr>
+                    <td> %%network%%
+                    </td>
                     <td> %%route_code%%
                     </td>
                     <td>
@@ -427,6 +432,7 @@ def to_html():
             liste_template = liste_template.replace("%%route_code%%", osm_route[1]  )
             liste_template = liste_template.replace("%%relation_id%%", osm_route[0]  )
             liste_template = liste_template.replace("%%relation_name%%", osm_route[2]  )
+            liste_template = liste_template.replace("%%network%%", osm_route[5]  )
             liste_template = liste_template.replace("%%OSM_nb_stops%%", osm_route[4]  )
 
 

@@ -320,14 +320,14 @@ def prepare_osm_routes():
             result_int.append(a_route)
         except ValueError :
             result_other.append(a_route)
-    result_int.sort(key=lambda osm_route: osm_route[1])
+    result_int.sort(key=lambda osm_route: int(osm_route[1]))
     result_other.sort(key=lambda osm_route: osm_route[1])
     result_list = result_int + result_other
 
 
     with open("rendu/sources/osm_parcours.csv", "wb") as csv_file:
         writer = csv.writer(csv_file, delimiter=',')
-        for line in sorted(result_list, key=lambda osm_route: osm_route[1]):
+        for line in result_list:
             writer.writerow(line)
 
 def prepare_navitia_routes():

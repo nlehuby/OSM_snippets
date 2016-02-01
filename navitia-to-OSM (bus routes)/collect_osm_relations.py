@@ -175,6 +175,7 @@ if __name__ == '__main__':
     autres_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_STRAV')
     autres_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_TICE')
     autres_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_SETRA')
+    autres_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_SITUS')
     persist_list_to_csv(list(set(noctiliens + autres_bus)), "collecte/liste_relations.csv")
     analyse_relation_list("collecte/liste_relations.csv")
     #generate_autocomplete_osm_json()

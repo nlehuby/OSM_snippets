@@ -167,16 +167,18 @@ def generate_autocomplete_osm_json():
 
 if __name__ == '__main__':
      #noctiliens_ov = collect_relations_from_overpass('[out:json][timeout:25];(relation["network"="Noctilien"]["route"="bus"](48.68098749511622,2.1258544921875,48.9220480811836,2.6126861572265625););out ids;' )
-#    strav = collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_STRAV')
 
-    noctiliens = collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Noctilien')
-    autres_bus = collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_RATP')
-    #autres_bus = [] #collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_RATP')
-    autres_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_TRA')
-    autres_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_STRAV')
-    autres_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_TICE')
-    autres_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_SETRA')
-    autres_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_SITUS')
-    persist_list_to_csv(list(set(noctiliens + autres_bus)), "collecte/liste_relations.csv")
+    tous_les_bus = []
+    tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Noctilien')
+    tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_RATP')
+    tous_les_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_TRA')
+    tous_les_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_STRAV')
+    tous_les_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_TICE')
+    tous_les_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_SETRA')
+    tous_les_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_SITUS')
+    tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_DM') 
+    tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_Paladin')
+    tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_Mobicaps')
+    persist_list_to_csv(list(set(tous_les_bus)), "collecte/liste_relations.csv")
     analyse_relation_list("collecte/liste_relations.csv")
-    #generate_autocomplete_osm_json()
+

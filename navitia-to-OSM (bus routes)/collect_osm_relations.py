@@ -14,11 +14,11 @@ import csv
 import json
 
 #paramétrage
-overpass_base_url = "http://api.openstreetmap.fr/oapi/interpreter"
+overpass_base_url = "http://overpass-api.de/api/interpreter"
 
 def collect_relations_from_wiki(wiki_url):
     """
-    consulte la page de wiki sur les bus RATP et extrait tous les liens de relations OSM
+    consulte la page de wiki passée en paramètre et extrait tous les liens de relations OSM
     """
     #page = requests.get('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_RATP')
     page = requests.get(wiki_url)
@@ -171,14 +171,15 @@ if __name__ == '__main__':
     tous_les_bus = []
     tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Noctilien')
     tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_RATP')
-    tous_les_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_TRA')
-    tous_les_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_STRAV')
-    tous_les_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_TICE')
-    tous_les_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_SETRA')
-    tous_les_bus += collect_relations_from_wiki('http://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_SITUS')
+    tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_TRA')
+    tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_STRAV')
+    tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_TICE')
+    tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_SETRA')
+    tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_SITUS')
     tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_DM') 
     tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_Paladin')
     tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_Mobicaps')
+    tous_les_bus += collect_relations_from_wiki("https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_Pep's")    
     persist_list_to_csv(list(set(tous_les_bus)), "collecte/liste_relations.csv")
     analyse_relation_list("collecte/liste_relations.csv")
 

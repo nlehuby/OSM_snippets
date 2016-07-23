@@ -18,22 +18,22 @@ Quelques morceaux de scripts autour d'OpenStreetMap
 │   └── assets
 │       ├── api.js
 │       ├── auth.js <-- TODO
+│       ├── nav_auth.js <-- TODO
 │       ├── black_bus.png
 │       ├── default.auth.js
+│       ├── default.nav_auth.js
 │       ├── navitia_bus.png
 │       ├── OverPassLayer.js
 │       ├── red_bus.png
 │       ├── template.html
-│       ├── template.html~
 │       └── template_liste.html
 └── route_to_html.py
 
 Étape 1 - collecter des relations OSM
 fichier collect_osm_relations.py
 
-Étape 2 - trouver les routes navitia correspondantes
+Étape 2 - trouver les parcours navitia correspondantes
 fichier rapprochement_osm_navitia.py
 
 Étape 3 - afficher les deux sur une même page pour analyses et comparaisons
 fichier route_to_html.py
-

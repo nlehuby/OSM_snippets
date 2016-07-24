@@ -1,1 +1,1 @@
-var navitia_auth_key = "get your own key : navitia.io"
+var navitia_api_key = "get your own key : navitia.io"

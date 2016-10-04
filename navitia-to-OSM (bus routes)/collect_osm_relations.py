@@ -20,34 +20,19 @@ def collect_relations_from_wiki(wiki_url):
     """
     consulte la page de wiki passée en paramètre et extrait tous les liens de relations OSM
     """
-    #page = requests.get('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_RATP')
     page = requests.get(wiki_url)
     liste_relations = re.findall(r'href="//www.openstreetmap.org/relation/(\w+)"', page.text)
+    liste_relations += re.findall(r'href="//openstreetmap.org/relation/(\w+)"', page.text)
     liste_relations = list(set(liste_relations))
     return liste_relations
-
-def collect_relations_from_overpass(overpass_query):
-    """
-    appelle l'API overpass et extrait tous les id de relations qui vont bien. Utilisé uniquement pour vérifier la complétude du wiki
-    """
-    #[out:json][timeout:25];(relation["network"="Noctilien"]["route"="bus"(48.68098749511622,2.1258544921875,48.9220480811836,2.6126861572265625););out ids;
-    resp = requests.get(overpass_base_url, params={'data': overpass_query})
-    if resp.status_code != 200:
-        print "échec de l'appel overpass de collecte des relations"
-        return []
-    return [str(a_relation['id']) for a_relation in resp.json()['elements'] ]
-
-
-
 
 def persist_list_to_csv(liste, nom_fichier):
     """
     enregistre une liste au format csv
     """
-    mon_fichier = open(nom_fichier, "wb")
-    for elem in liste :
-        mon_fichier.write(str(elem) + '\n')
-    mon_fichier.close()
+    with open(nom_fichier, 'w') as f:
+        for elem in liste :
+            f.write("{}\n".format(elem))
 
 def analyse_relation_list(fichier_a_analyser):
     """
@@ -68,69 +53,77 @@ def analyse_relation_list(fichier_a_analyser):
     routes_sans_to = []
     routes_sans_colour = []
 
-    mon_fichier = open(fichier_a_analyser, "rb")
-    for elem in mon_fichier :
-        print int(elem)
-        relation_param = '[out:json][timeout:25];relation('+ elem+');out;'
-        resp = requests.get(overpass_base_url, params={'data': relation_param})
-        if resp.status_code != 200:
-            print "KO"
-            continue
-            relations_hors_sujet.append(int(elem))
-        mon_json = resp.json()
-        if 'elements' in mon_json:
-            if len(mon_json['elements']) > 0 :
-                ma_relation = mon_json['elements'][0]['tags']
-                if "tags" in mon_json['elements'][0]:
-                    ma_relation = mon_json['elements'][0]['tags']
-                else :
-                    relations_hors_sujet.append(int(elem))
-                    continue
-            else :
-                print "KO"
+
+    with open(fichier_a_analyser, "r") as mon_fichier:
+        for elem in mon_fichier :
+            print(">> {}".format(elem))
+            relation_param = '[out:json][timeout:25];relation({});out;'.format(elem)
+            resp = requests.get(overpass_base_url, params={'data': relation_param})
+            if resp.status_code != 200:
+                print ("KO à l'appel")
+                relations_hors_sujet.append(int(elem))
                 continue
+            mon_json = resp.json()
+            if not 'elements' in mon_json :
+                print ("KO sur elements")
                 relations_hors_sujet.append(int(elem))
-        if 'type' in ma_relation:
-            if ma_relation['type'] == "route":
-                ma_route = {}
-                if not 'from' in ma_relation:
-                    routes_sans_from.append(int(elem))
-                if not 'to' in ma_relation:
-                    routes_sans_to.append(int(elem))
-                    ma_route['destination'] = ''
-                else :
-                    ma_route['destination'] = ma_relation['to'].encode('utf-8')
-                if not 'operator' in ma_relation:
-                    routes_sans_operator.append(int(elem))
-                if not 'network' in ma_relation:
-                    routes_sans_network.append(int(elem))
-                    ma_route['network'] = ''
-                else :
-                    ma_route['network'] = ma_relation['network'].encode('utf-8')
-                if not 'colour' in ma_relation:
-                    routes_sans_colour.append(int(elem))
-                if not 'name' in ma_relation:
-                    routes_sans_name.append(int(elem))
-                else :
-                    ma_route['name'] = ma_relation['name'].encode('utf-8')
-                if not 'ref' in ma_relation:
-                    routes_sans_ref.append(int(elem))
-                else :
-                    ma_route['code'] = ma_relation['ref']
-                stop_count = 0
-                for a_member in mon_json['elements'][0]['members']:
-                    if a_member['type'] == 'node':
-                        stop_count += 1
-                ma_route['stop_count'] = stop_count
-                ma_route['osm_id'] = int(elem)
-                relations_routes.append(ma_route)
+                continue
+            if len(mon_json['elements']) == 0 :
+                print ("KO sur nb elements")
+                relations_hors_sujet.append(int(elem))
+                continue
 
-                print ma_route
-
+            if "tags" in mon_json['elements'][0]:
+                ma_relation = mon_json['elements'][0]['tags']
             else :
+                print ("KO sur tags")
                 relations_hors_sujet.append(int(elem))
-        else :
-            relations_hors_sujet.append(int(elem))
+                continue
+
+            if not "type" in ma_relation:
+                print ("KO sur type")
+                relations_hors_sujet.append(int(elem))
+                continue
+            if ma_relation['type'] != "route" :
+                print ("KO sur type = route")
+                relations_hors_sujet.append(int(elem))
+                continue
+
+            ma_route = {}
+            if not 'from' in ma_relation:
+                routes_sans_from.append(int(elem))
+            if not 'to' in ma_relation:
+                routes_sans_to.append(int(elem))
+                ma_route['destination'] = ''
+            else :
+                ma_route['destination'] = ma_relation['to']
+            if not 'operator' in ma_relation:
+                routes_sans_operator.append(int(elem))
+            if not 'network' in ma_relation:
+                routes_sans_network.append(int(elem))
+                ma_route['network'] = ''
+            else :
+                ma_route['network'] = ma_relation['network']
+            if not 'colour' in ma_relation:
+                routes_sans_colour.append(int(elem))
+            if not 'name' in ma_relation:
+                routes_sans_name.append(int(elem))
+            else :
+                ma_route['name'] = ma_relation['name']
+            if not 'ref' in ma_relation:
+                routes_sans_ref.append(int(elem))
+            else :
+                ma_route['code'] = ma_relation['ref']
+            stop_count = 0
+            for a_member in mon_json['elements'][0]['members']:
+                if a_member['type'] == 'node':
+                    stop_count += 1
+            ma_route['stop_count'] = stop_count
+            ma_route['osm_id'] = int(elem)
+            relations_routes.append(ma_route)
+
+            print (ma_route)
+
 
     persist_list_to_csv(routes_sans_from, "collecte/analyse/routes_sans_from.csv")
     persist_list_to_csv(routes_sans_to, "collecte/analyse/routes_sans_to.csv")
@@ -141,32 +134,29 @@ def analyse_relation_list(fichier_a_analyser):
     persist_list_to_csv(routes_sans_ref, "collecte/analyse/routes_sans_ref.csv")
     persist_list_to_csv(relations_hors_sujet, "collecte/analyse/relations_hors_sujet.csv")
 
-    relations_routes_csv = []
-    for a in relations_routes:
-        relations_routes_csv.append([str(a['osm_id']) + u',' + a['code'] + u"," + a['name'].decode('utf-8') + u"," + a['destination'].decode('utf-8') + u"," + str(a['stop_count']) + u"," + a['network'].decode('utf-8') ])
-    mon_fichier = open("collecte/relations_routes.csv", "wb")
-    for elem in relations_routes_csv :
-        mon_fichier.write(elem[0].encode('utf-8') + '\n')
-    mon_fichier.close()
+    headers = ['osm_id', 'code', 'name', 'destination', 'stop_count', 'network']
+    with open("collecte/relations_routes.csv",'w') as f:
+        dw = csv.DictWriter(f, delimiter=',', fieldnames=headers)
+        for row in relations_routes:
+            dw.writerow(row)
 
 def generate_autocomplete_osm_json():
     """ depréciée. Cette opération est effectuée directement dans route_to_html """
-    mon_fichier = open("collecte/relations_routes.csv", "rb")
-    reader = csv.reader(mon_fichier)
-
     fichier_json = 'collecte/osm_parcours.json'
     objet_json = {"parcours_osm":[]}
 
-    for row in reader :
-        print row[0]
-        parcours = {}
-        parcours['value'] = row [0]
-        parcours['label'] = "[{}] {} > {}".format(row[-1], row[1], row[3])
-        objet_json['parcours_osm'].append(parcours)
+    with open("collecte/relations_routes.csv",'r') as f:
+        reader = csv.reader(f)
+        for row in reader :
+            print (row[0])
+            parcours = {}
+            parcours['value'] = row[0]
+            parcours['label'] = "[{}] {} > {}".format(row[-1], row[1], row[3])
+            objet_json['parcours_osm'].append(parcours)
+
     json.dump(objet_json, open(fichier_json, "w"), indent=4)
 
 if __name__ == '__main__':
-     #noctiliens_ov = collect_relations_from_overpass('[out:json][timeout:25];(relation["network"="Noctilien"]["route"="bus"](48.68098749511622,2.1258544921875,48.9220480811836,2.6126861572265625););out ids;' )
 
     tous_les_bus = []
     tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Noctilien')
@@ -176,10 +166,10 @@ if __name__ == '__main__':
     tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_TICE')
     tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_SETRA')
     tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_SITUS')
-    tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_DM') 
+    tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_DM')
     tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_Paladin')
     tous_les_bus += collect_relations_from_wiki('https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_Mobicaps')
-    tous_les_bus += collect_relations_from_wiki("https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_Pep's")    
+    tous_les_bus += collect_relations_from_wiki("https://wiki.openstreetmap.org/wiki/WikiProject_France/Bus_Pep's")
+
     persist_list_to_csv(list(set(tous_les_bus)), "collecte/liste_relations.csv")
     analyse_relation_list("collecte/liste_relations.csv")
-

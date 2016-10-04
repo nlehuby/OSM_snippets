@@ -93,63 +93,6 @@ def rapprochement_osm_navitia():
     for row in pas_de_match_navitia:
         wr.writerow(row)
 
-#    myfile = open('rapprochement/trop.csv', 'wb')
-#    wr = csv.writer(myfile)
-#    for row in trop_de_solutions_navitia:
-#        wr.writerow(row)
-
-def rapprochement_osm_navitia_with_fuzzywuzzy():
-    """
-    -- Déprécié --
-    parcourt le fichier des relations osm et appelle navitia pour chaque, choisit une route pertinente, et loggue un tas de trucs
-    """
-    ifile  = open('collecte/relations_routes.csv', "rb")
-    reader = csv.reader(ifile)
-
-    routes_sans_ref = []
-    routes_inconnues_navitia = []
-    rapprochements = []
-
-    for row in reader:
-        route_code = row[1]
-        route_name = row[2]
-        route_osm_id = row[0]
-        if route_code:
-            print route_name
-            resultat_navitia = pt_objects_by_code(route_code)
-            print resultat_navitia
-            if len(resultat_navitia[0]) != 0:
-                noms_potentiels = resultat_navitia[0]
-                ratio_noms_potentiels = [fuzz.partial_ratio(route_name, nom) for nom in noms_potentiels]
-                print ratio_noms_potentiels
-                index_max = ratio_noms_potentiels.index(max(ratio_noms_potentiels)) #index du ratio le plus élevé
-                #print index_max
-                print resultat_navitia[0][index_max]
-                navitia_nb_stops = get_navitia_nb_stop(resultat_navitia[1][index_max])
-                rapprochements.append([route_osm_id, resultat_navitia[1][index_max], resultat_navitia[0][index_max], navitia_nb_stops])
-            else :
-                routes_inconnues_navitia.append(row)
-        else :
-            routes_sans_ref.append(row)
-
-    ifile.close()
-
-#    print rapprochements
-#    print routes_sans_ref
-#    print routes_inconnues_navitia
-
-    #persist to csv
-    myfile = open('rapprochement/relations_sans_ref.csv', 'wb')
-    wr = csv.writer(myfile)
-    for row in routes_sans_ref:
-        wr.writerow(row)
-
-    myfile = open('rapprochement/osm_navitia.csv', 'wb')
-    wr = csv.writer(myfile)
-    for row in rapprochements:
-        wr.writerow(row)
-
-
 def get_navitia_nb_stop(extcode):
     """
     appelle navitia et récupère le nombre d'arrêts d'une route donnée.

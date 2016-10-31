@@ -70,7 +70,6 @@ def to_html():
     crée la page d'index listant référençant les pages de chaque parcours OSM
     """
 
-    #TODO : récréer les fichiers csv à partir des fonctions déjà existantes en complétant les infos manquantes
     prepare_osm_routes()
     prepare_navitia_routes()
 

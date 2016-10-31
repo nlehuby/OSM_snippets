@@ -1,6 +1,7 @@
 *~
 *.pyc
 navitia-to-OSM (bus routes)/rendu/assets/auth.js
+navitia-to-OSM (bus routes)/rendu/assets/OBM_js_editor/auth.js
 navitia-to-OSM (bus routes)/rendu/assets/nav_auth.js
 navitia-to-OSM (bus routes)/params/__init__.py
 navitia-to-OSM (bus routes)/analyse/*

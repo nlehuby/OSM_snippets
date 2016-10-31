@@ -1,13 +1,13 @@
 /*
  OpenBeerMap OSMAPI.js | noemie.lehuby(at)gmail.com | MIT Licensed
 */
-
+ 
+/* pre-process */        
 function get_node_or_way(id, OSM_type)
 {
     var xhr = new XMLHttpRequest();
 
     xhr.open("GET", "https://api.openstreetmap.org/api/0.6/" + OSM_type + "/" + id, false);
-    xhr.setRequestHeader("Authorization", basic_auth());
     xhr.send();
 
     console.log("GET " + OSM_type + "/ with status " + xhr.status);
@@ -49,14 +49,18 @@ function edit_tag(xml, OSM_type, key, value)
     {
         var parentNode = xml.getElementsByTagName("way")[0];
     }
+    if(OSM_type === 'relation')
+    {
+        var parentNode = xml.getElementsByTagName("relation")[0];
+    }    
     parentNode.appendChild(newTag); 
     
     /*
     for (var i in tags)
     {
         console.log(tags[i].getAttribute("k") + ": " + tags[i].getAttribute("v"));
-    }
-    */
+    }*/
+    
     return;
 
 }
@@ -73,7 +77,7 @@ function get_tag(xml, key)
             return tags[i].getAttribute("v");
         }
     }
-    return "undefined";
+    return "undefined"; //seriously ? 
 }
 
 function del_tag(xml, key)
@@ -109,9 +113,15 @@ function xml_to_string(xml_node)
     }
 }
 
-function put_node_or_way(xml, changeset_id, id, OSM_type)
+function prepare_put_changeset(changeset_comment)
 {
-    if(OSM_type != "way" && OSM_type != "node")
+    changeset_comment = changeset_comment || "Modification avec OBM_js_editor";
+    return "<osm><changeset><tag k='created_by' v='OpenBeerMap javascript editor'/><tag k='comment' v='" + changeset_comment + "'/></changeset></osm>"
+}
+
+function prepare_put_node_or_way(xml, changeset_id, id, OSM_type)
+{
+    if(OSM_type != "way" && OSM_type != "node" && OSM_type != "relation")
     {
         console.log("ERROR: wrong OSM type: " + OSM_type);
         return false;
@@ -126,11 +136,45 @@ function put_node_or_way(xml, changeset_id, id, OSM_type)
     for (var i in tags)
     {
         console.log(tags[i].getAttribute("k") + " : " + tags[i].getAttribute("v"));
-    }
-    */
+    }*/
+    
     
     var serialized = xml_to_string(xml);
-    if(serialized !== false)
+    if(serialized !== false) { return serialized;}
+}
+
+/* generic */
+function send_data_to_osm(xml, OSM_id, OSM_type, comment)
+{
+    if (auth.authenticated())
+    { 
+        send_data_to_osm_oauth(xml, OSM_id, OSM_type, comment)
+    }
+    else
+    {
+        send_data_to_osm_basic_auth(xml, OSM_id, OSM_type)
+    }
+}
+
+/* With basic_auth */ 
+function send_data_to_osm_basic_auth(xml, OSM_id, OSM_type)
+{
+    //ouvrir un changeset
+    changeset_id = put_changeset()
+    if (changeset_id != "Couldn't authenticate you")
+    {
+        //envoyer le nouveau node
+        put_node_or_way(xml, changeset_id, OSM_id, OSM_type)
+        
+        //fermer le changeset
+        close_changeset(changeset_id);
+    }
+    else {console.log("auth fail")}
+}
+
+function put_node_or_way(xml, changeset_id, id, OSM_type)
+{
+    serialized = prepare_put_node_or_way(xml, changeset_id, id, OSM_type)
     {
         var xhr = new XMLHttpRequest();
         xhr.open("PUT", "https://api.openstreetmap.org/api/0.6/" + OSM_type + "/" + id, false);
@@ -153,7 +197,7 @@ function close_changeset(id)
 }
 
 function put_changeset(){ 
-    var xml = "<osm><changeset><tag k='created_by' v='OpenBeerMap javascript editor'/><tag k='comment' v='Debug - ligne de bus'/></changeset></osm>";
+    var xml = prepare_put_changeset();
 
     var xhr = new XMLHttpRequest();
     xhr.open("PUT", "https://api.openstreetmap.org/api/0.6/changeset/create", false);
@@ -162,4 +206,60 @@ function put_changeset(){
 
     console.log("PUT changeset with status " + xhr.status);
     return xhr.responseText ;
+}
+
+/* With oauth */ 
+function send_data_to_osm_oauth(xml, OSM_id, OSM_type, comment)
+{ 
+    //open a changeset with oauth
+    var xml_changeset = prepare_put_changeset(comment);                        
+    auth.xhr(
+        {
+            method: 'PUT',
+            path: '/api/0.6/changeset/create', 
+            options: { header: { 'Content-Type': 'text/xml' } }, 
+            content: xml_changeset 
+        },
+        function(err, res){
+            if (err) {
+                console.log('ERROR on put changeset: ' + err.response);
+                return
+                }
+                
+            //prepare put node/way 
+            changeset_id = res;                                   
+            data_to_send = prepare_put_node_or_way(xml, changeset_id, OSM_id, OSM_type)
+            
+            //put new node/ way
+            auth.xhr(
+                {
+                    method: 'PUT',
+                    path: '/api/0.6/' + OSM_type + '/' + OSM_id, 
+                    options: { header: { 'Content-Type': 'text/xml' } }, 
+                    content: data_to_send 
+                },
+                function(err, res){
+                    if (err) {
+                        console.log('ERROR on put node/way : ' + err.response);
+                        return
+                        }
+                        
+                    //close changeset 
+                    auth.xhr(
+                        {
+                            method: 'PUT',
+                            path: '/api/0.6/changeset/' + changeset_id + '/close',  
+                        },
+                        function(err, res){
+                            if (err) {
+                                console.log('ERROR on put changeset/close : ' + err.response);
+                                return
+                                }
+                            else {console.log("Successfully modification of an OSM object !")}
+                        }//end of callback - close changeset
+                    );
+                }//end of callback - put node/way
+            );
+            } //end of callback - open changeset
+    );
 }

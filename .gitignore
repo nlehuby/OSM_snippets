@@ -11,3 +11,6 @@ navitia-to-OSM (bus routes)/rendu/*.html
 navitia-to-OSM (bus routes)/rendu/sources/*.csv
 navitia-to-OSM (bus routes)/rendu/*.csv
 navitia-to-OSM (bus routes)/rendu/*.json
+STIF-to-OSM/assets/third_parties/OBM_js_editor/auth.js
+STIF-to-OSM/assets/third_parties/navitia/nav_auth.js
+STIF-to-OSM/snippets/*

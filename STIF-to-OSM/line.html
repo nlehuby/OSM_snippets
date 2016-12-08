@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!--
+	Intensify by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Intégration du référentiel lignes du STIF</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/intensify/css/main.css" />
+        <link rel="stylesheet" href="assets/bus_lines.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">Lignes d'Île-de-France</a>
+			</header>
+
+		<!-- Tags -->
+			<section id="one" class="wrapper">
+				<div class="inner flex flex-2">
+					<div class="flex-item right">
+                        <div>
+                            <img src="assets/img/blue_bus.png" alt="OpenStreetMap : bleu"/>
+							<h3 id=osm_line_name>Nom de la ligne</h3>
+                            <p id=osm_line_mode>mode</p>
+							<p id=osm_line_network>réseau</p> <p id=osm_line_operator>opérateur</p><br>
+						</div>
+						<div>
+							<h4 id=osm_ref_match>association ?</h4>
+						</div>
+
+					</div>
+					<div class="flex-item right">
+						<div>
+                            <img src="assets/img/black_bus.png" alt="OpenData : noir"/>
+							<h3><span id=navitia_line_code>code</span> - <span id=navitia_line_name> ligne</span></h3>
+                            <p id=navitia_line_route>directions</p>
+                            <p id=navitia_line_mode>mode</p>
+							<p id=navitia_line_network>réseau </p>
+                            <br/>
+						</div>
+						<div>
+                            <a href="#" class="button special fit" id="add_navitia_ref_to_osm">Associer cette ligne</a>
+                            <a class="button alt fit small" id='next_navitia_candidate_button'>Proposition de ligne suivante</a>
+                            <p><span id="navitia_current_line">1</span>/<span id="navitia_lines_count">0</span> lignes</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <!-- Map -->
+    			<section id="banner_map">
+                    <div id="map"></div>
+    			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<h2>Plus d'info</h2>
+					<ul class="actions">
+						<li><span class="icon fa-envelope"></span> <a href="#">information@untitled.tld</a></li>
+						<li><span class="icon fa-map-marker"></span> wiki OSM</li>
+                        <li><span class="icon fa-github"></span> <a href="#">Github</a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					 <a href="https://nlehuby.5apps.com">nlehuby</a>. &copy; Design <a href="https://templated.co">TEMPLATED</a>. &copy; les contributeurs <a href="http://openstreetmap.org/">OSM</a> /  <a href="http://navitia.io">navitia.io</a>. / <a href="http://opendata.stif.info/">opendata STIF</a>.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/intensify/js/jquery.min.js"></script>
+			<script src="assets/intensify/js/jquery.scrolly.min.js"></script>
+			<script src="assets/intensify/js/skel.min.js"></script>
+			<script src="assets/intensify/js/util.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+			<script src="assets/intensify/js/main.js"></script>
+            <script src="assets/third_parties/osmtogeojson.js"></script>
+            <script src="assets/third_parties/navitia/nav_auth.js"></script>
+            <script src="assets/third_parties/OBM_js_editor/osmauth.min.js"></script>
+            <script src="assets/third_parties/OBM_js_editor/auth.js"></script>
+            <script src="assets/third_parties/OBM_js_editor/OSMAPI.js"></script>
+            <script src="assets/bus_lines.js"></script>
+
+	</body>
+</html>

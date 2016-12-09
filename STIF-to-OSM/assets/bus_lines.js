@@ -8,8 +8,11 @@ var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 
 var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(48.84702,2.37705), 14);
 
-var osm_relation_code = 3315943; // TODO
-var line_commercial_code = '12'; // TODO
+//var osm_relation_code = 3315943;
+//var line_commercial_code = '12';
+
+var osm_relation_code = getParameterByName('osm_relation');
+var line_commercial_code = getParameterByName('line_code');
 
 var tag_to_match = "fixme:ref:FR:STIF"; // TODO
 var selected_navitia_line_index = 0;
@@ -56,7 +59,12 @@ $(document).ready(function() {
 
 });
 
-
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.href);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
 
 function send_navitia_ref_to_openstreetmap(navitia_ref, osm_relation_id){
     var relation_xml = get_node_or_way(osm_relation_id, 'relation'); //mouais, va ptet falloir changer le nom de la fonction dans la lib quand même ...
@@ -70,7 +78,7 @@ function get_navitia_lines_candidates(line_code){
         url: "https://api.navitia.io/v1/coverage/fr-idf/lines?filter=line.code%3D"+ line_commercial_code,
         dataType: 'json',
         global: true,
-        error: function(data) {console.log(data)},
+        error: function(data) {console.log(data);alert("Il y a eu un souci dans l'affichage des données opendata candidates")},
         success: function(data) {
             on_navitia_lines_candidates(data);
             }
@@ -82,7 +90,7 @@ function get_navitia_lines_by_ref_id(ref_id){
         url: "https://api.navitia.io/v1/coverage/fr-idf/lines?filter=line.has_code(source,"+ ref_id+")",
         dataType: 'json',
         global: true,
-        error: function(data) {console.log(data)},
+        error: function(data) {console.log(data);alert("Il y a eu un souci dans l'affichage des données opendata correspondantes")},
         success: function(data) {
             on_navitia_lines_candidates(data);
             }

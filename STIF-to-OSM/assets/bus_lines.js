@@ -14,7 +14,7 @@ var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(48.84702,2.37705),
 var osm_relation_code = getParameterByName('osm_relation');
 var line_commercial_code = getParameterByName('line_code');
 
-var tag_to_match = "fixme:ref:FR:STIF"; // TODO
+var tag_to_match = "ref:FR:STIF:ExternalCode_Line";
 var selected_navitia_line_index = 0;
 var navitia_lines_data = "";
 var navitia_line_geojson = []

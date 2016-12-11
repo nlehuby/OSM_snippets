@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="assets/intensify/css/main.css" />
+        <link href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
 	</head>
 	<body class="subpage">
 
@@ -27,20 +28,22 @@
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h1>TODO</h1>
-						<p>ici, un tableau et une date de mise à jour</p>
+						<h1>Tableau mis à jour le 9 décembre 2016</h1>
+						<p>choisissez votre numéro ou votre réseau préféré, et dégommez du rouge !</p>
 					</header>
+                    <!-- Oauth message - utilisateur pas connecté -->
+                    <div class="inner" id="alert_no_auth">Vous n'êtes pas connecté à OpenStreetMap, vous ne pourrez donc pas effectuer de modifications.</div>
+                    <!-- Oauth message - utilisateur connecté -->
+                    <div class="inner" id="alert_auth">
+                        Vous êtes connecté à OpenStreetMap en tant que <span id=OSM_user>...</span>.
+                        <a id='OSM_logout'>Se déconnecter</a>
+                    </div>
 
-					<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-				</div>
-
-                <!-- Oauth message - utilisateur pas connecté -->
-                <div class="inner" id="alert_no_auth">Vous n'êtes pas connecté à OpenStreetMap, vous ne pourrez donc pas effectuer de modifications.</div>
-                <!-- Oauth message - utilisateur connecté -->
-                <div class="inner" id="alert_auth">
-                    Vous êtes connecté à OpenStreetMap en tant que <span id=OSM_user>...</span>.
-                    <a id='OSM_logout'>Se déconnecter</a>
+                    <table id="data_table" class="display" width="100%" cellspacing="0">
+                    </table>
                 </div>
+
+
 			</section>
 
 
@@ -50,9 +53,8 @@
     				<div class="inner">
     					<h2>Plus d'info</h2>
     					<ul class="actions">
-    						<li><span class="icon fa-envelope"></span> <a href="#">information@untitled.tld</a></li>
-    						<li><span class="icon fa-map-marker"></span> wiki OSM</li>
-                            <li><span class="icon fa-github"></span> <a href="#">Github</a></li>
+    						<li><span class="icon fa-wikipedia-w"></span> <a href="https://wiki.openstreetmap.org/wiki/Talk:WikiProject_France/Transports_en_%C3%8Ele-de-France">wiki OSM</a></li>
+                            <li><span class="icon fa-github"></span> <a href="https://github.com/nlehuby/OSM_snippets/tree/master/STIF-to-OSM">Github</a></li>
     					</ul>
     				</div>
     				<div class="copyright">
@@ -66,6 +68,8 @@
     			<script src="assets/intensify/js/skel.min.js"></script>
     			<script src="assets/intensify/js/util.js"></script>
     			<script src="assets/intensify/js/main.js"></script>
+                <script src="assets/third_parties/papaparse.min.js"></script>
+                <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
                 <script src="assets/third_parties/OBM_js_editor/osmauth.min.js"></script>
                 <script src="assets/third_parties/OBM_js_editor/auth.js"></script>
                 <script src="assets/third_parties/OBM_js_editor/OSMAPI.js"></script>

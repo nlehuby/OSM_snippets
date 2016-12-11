@@ -2,6 +2,61 @@
 	nlehuby
 */
 
+var table;
+//datatables
+$(document).ready(function() {
+    function parseData(url, callBack) {
+        Papa.parse(url, {
+            download: true,
+            dynamicTyping: true,
+            complete: function(results) {
+                callBack(results.data);
+            }
+        });
+    }
+
+    parseData("data/lignes.csv", display_lines_in_table);
+
+
+    function display_lines_in_table(data_lines) {
+        data_lines.splice(0, 1);
+        data_lines.splice(-1, 1);
+
+        table = $('#data_table').DataTable( {
+            data: data_lines,
+            columns:[ //@id,ref,name,network,operator,colour,type,route_master,ref:FR:STIF
+                {title: "id"},
+                {title: "code"},
+                {title: "nom"},
+                {title: "réseau"},
+                {title: "opérateur"},
+                {title: "colour", visible: false},
+                {title: "type", visible: false},
+                {title: "mode"},
+                {title: "ref:FR:STIF"},
+                {title: "Associer", data: function ( row, type, set ) {
+                    button_color = ""
+                    if (row[8] != "") {
+                        button_color = "alt"
+                    }
+                    return "<a class='button "+button_color +" small' target='_blank' href='./line.html?osm_relation=" + row[0] + "&line_code="+row[1]+"'> Voir </a>";
+                    }
+                }
+            ]
+        });
+    }
+
+    //rendre le bouton utilisable
+    $('#data_table tbody').on( 'click', 'button', function () {
+        var data = table.row( $(this).parents('tr') ).data();
+        console.log(data)
+        alert( data[0] +"'s salary is: "+ data[1] );
+    } );
+});
+
+
+
+
 
 //connexion Oauth
 document.getElementById('OSM_authenticate').onclick = function() {

@@ -24,7 +24,7 @@ $(document).ready(function() {
 
         table = $('#data_table').DataTable( {
             data: data_lines,
-            columns:[ //@id,ref,name,network,operator,colour,type,route_master,ref:FR:STIF
+            columns:[ //@id,ref,name,network,operator,colour,type,route_master,ref:FR:STIF:ExternalCode_Line
                 {title: "id"},
                 {title: "code"},
                 {title: "nom"},
@@ -33,7 +33,7 @@ $(document).ready(function() {
                 {title: "colour", visible: false},
                 {title: "type", visible: false},
                 {title: "mode"},
-                {title: "ref:FR:STIF"},
+                {title: "code STIF"},
                 {title: "Associer", data: function ( row, type, set ) {
                     button_color = ""
                     if (row[8] != "") {

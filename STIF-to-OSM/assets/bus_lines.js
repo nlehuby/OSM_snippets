@@ -157,7 +157,7 @@ function get_osm_line_info(relation_id){
             }
             //affichage des tags OSM
             document.getElementById("osm_line_name").innerHTML = relation['tags']['name']?relation['tags']['name']:"<i>Pas de nom renseigné</i>";
-            document.getElementById("osm_line_mode").innerHTML = relation['tags']['route']?relation['tags']['route']:"<i style='color:red;'>Pas de mode renseigné</i>";
+            document.getElementById("osm_line_mode").innerHTML = relation['tags']['route_master']?relation['tags']['route_master']:"<i style='color:red;'>Pas de mode renseigné</i>";
             document.getElementById("osm_line_network").innerHTML = relation['tags']['network']?relation['tags']['network']:"<i style='color:red;'>tag network non renseigné</i>";
             document.getElementById("osm_line_operator").innerHTML = relation['tags']['operator']?relation['tags']['operator']:"<i style='color:red;'>tag operator non renseigné</i>";
             //TODO : mettre des liens OSM

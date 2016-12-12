@@ -134,7 +134,7 @@ function display_navitia_stops(navitia_line_id){
                 stop_code = data['stop_points'][i]['id'];
                 stop_marker = L.marker([data['stop_points'][i]['coord']['lat'], data['stop_points'][i]['coord']['lon']], {icon: nav_img});
                 navitia_line_geojson.push(stop_marker);
-                stop_marker.addTo(map).bindPopup('<h3>'+stop_name+'</h3><div><a href="http://api.navitia.io/v1/coverage/fr-idf/stop_points/' + stop_code + '" target="_blank"> voir le détail</a></div>');
+                stop_marker.addTo(map).bindPopup('<h3>'+stop_name+'</h3><div><a href="http://canaltp.github.io/navitia-playground/play.html?request=api.navitia.io/v1/coverage/fr-idf/stop_points/' + stop_code + '" target="_blank"> voir le détail</a></div>');
             }
         }
     });
@@ -156,10 +156,10 @@ function get_osm_line_info(relation_id){
                 }
             }
             //affichage des tags OSM
-            document.getElementById("osm_line_name").innerHTML = relation['tags']['name'];
-            document.getElementById("osm_line_mode").innerHTML = relation['tags']['route'];
-            document.getElementById("osm_line_network").innerHTML = relation['tags']['network'];
-            document.getElementById("osm_line_operator").innerHTML = relation['tags']['operator'];
+            document.getElementById("osm_line_name").innerHTML = relation['tags']['name']?relation['tags']['name']:"<i>Pas de nom renseigné</i>";
+            document.getElementById("osm_line_mode").innerHTML = relation['tags']['route']?relation['tags']['route']:"<i style='color:red;'>Pas de mode renseigné</i>";
+            document.getElementById("osm_line_network").innerHTML = relation['tags']['network']?relation['tags']['network']:"<i style='color:red;'>tag network non renseigné</i>";
+            document.getElementById("osm_line_operator").innerHTML = relation['tags']['operator']?relation['tags']['operator']:"<i style='color:red;'>tag operator non renseigné</i>";
             //TODO : mettre des liens OSM
             var is_there_a_match = document.getElementById("osm_ref_match");
             is_there_a_match.innerHTML = "Pas d'association"

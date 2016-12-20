@@ -2,8 +2,6 @@
 	nlehuby
 */
 
-//TODO : tester avec un arrêt qui a plusieurs ref
-
 var attr_osm = 'Map data &copy; <a href="http://openstreetmap.org/">OpenStreetMap</a> contributors',
 attr_overpass = 'stops from <a href="http://www.overpass-api.de/">Overpass API</a> and <a href="http://navitia.io/">navitia.io</a>';
 var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {opacity: 0.7, attribution: [attr_osm, attr_overpass].join(', ')});
@@ -11,7 +9,8 @@ var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(48.84702,2.37705), 14);
 
 var osm_stop_id = getParameterByName('osm_stop_id');
-//var osm_stop_id = 472985886;
+//var osm_stop_id = 472985886; //cas simple
+//var osm_stop_id = 928458342; //cas avec plusieurs arrêts opendata
 
 var tag_to_match = "ref:FR:STIF";
 
@@ -120,8 +119,15 @@ function getParameterByName(name) {
 }
 
 function on_navitia_stop(whole_navitia_info){
-  stop_name = whole_navitia_info['stop_points'][0]['name']
-  stop_id = whole_navitia_info['stop_points'][0]['id']
+  stop_name = whole_navitia_info['stop_points'][0]['name'];
+  stop_id = whole_navitia_info['stop_points'][0]['id'];
+  stop_codes = whole_navitia_info['stop_points'][0]['codes'];
+  for (j = 0; j < stop_codes.length; j++) {
+      if (stop_codes[j]['type'] == "ZDEr_ID_REF_A"){
+          stop_ref_opendata = stop_codes[j]['value']
+      }
+  }
+  stop_name += " - ref : " + stop_ref_opendata;
 
   get_navitia_routes_at_this_stop(stop_id, stop_name)
 

@@ -16,7 +16,7 @@
       class: refer to <class id="" />
       subclass: group the same kind of issue (optional)
       -->
-    <error class="1" subclass="1">
+    <error class="1">
       <!-- Issue location marker -->
       <location lat="43.2899342" lon="5.3618622" />
       <!-- erroneous object (none or many), all details are optional -->
@@ -42,7 +42,7 @@
         </fix>
       </fixes>
     </error>
-    <error class="1" subclass="1">
+    <error class="1">
       <location lat="43.2899342" lon="5.3618622" />
       <node version="3" user="FrançoiseR" lat="43.2899342" lon="5.3618622" id="33806225">
         <tag k="noexit" v="yes" />

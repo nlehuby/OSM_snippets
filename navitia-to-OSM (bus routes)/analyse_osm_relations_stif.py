@@ -27,6 +27,11 @@ def get_opendata_info(code_type, code_value):
     navitia_info['network'] = appel_nav.json()['lines'][0]['network']['name']
     navitia_info['mode'] = appel_nav.json()['lines'][0]['commercial_mode']['name']
     navitia_info['color'] = appel_nav.json()['lines'][0]['color']
+    navitia_info['navitia_id'] = appel_nav.json()['lines'][0]['id']
+    # on récupère les coordonnées d'un arrêt de la ligne au hasard
+    appel_nav = requests.get(navitia_base_url + "/lines/{}/stop_points?count=1".format(navitia_info['navitia_id']), headers={'Authorization': navitia_API_key})
+    navitia_info['latitude'] = appel_nav.json()['stop_points'][0]['coord']['lat']
+    navitia_info['longitude'] = appel_nav.json()['stop_points'][0]['coord']['lon']
     return (navitia_info)
 
 def create_opendata_csv():
@@ -39,7 +44,7 @@ def create_opendata_csv():
                 navitia_line['osm_id'] = row['@id']
                 navitia_lines.append(navitia_line)
 
-    headers = ['osm_id', 'mode', 'network', 'color']
+    headers = ['osm_id', 'mode', 'network', 'color', 'navitia_id', 'latitude', 'longitude']
     with open("collecte/analyse/route_master_opendata.csv",'w') as f:
         dw = csv.DictWriter(f, delimiter=',', fieldnames=headers)
         dw.writeheader()
@@ -77,7 +82,7 @@ def get_errors ():
     # get_most_common_value(stats, "network", "Noctilien")
     # get_most_common_value(stats, "operator", "Noctilien")
 
-    with open('collecte/analyse/relations_route_master.csv', 'r') as f:
+    with open('collecte/analyse/route_master_opendata.csv', 'r') as f:
         reader = csv.DictReader(f)
         opendata_lines = list(reader)
 
@@ -85,20 +90,21 @@ def get_errors ():
         with open('../STIF-to-OSM/data/lignes.csv', 'r') as f:
             reader = csv.DictReader(f)
             for an_osm_line in reader :
-                if an_osm_line['ref:FR:STIF:ExternalCode_Line']:
-                    opendata_line = [a_line for a_line in opendata_lines if an_osm_line['@id'] == a_line['osm_id']][0]
+                if not an_osm_line['ref:FR:STIF:ExternalCode_Line']:
+                    continue
+                opendata_line = [a_line for a_line in opendata_lines if an_osm_line['@id'] == a_line['osm_id']][0]
                 if not an_osm_line['network']:
                     fix = get_most_common_value(stats, "network", opendata_line['network'])
-                    errors.append([an_osm_line['@id'],'network',fix,"la relation n'a pas de tag network. Valeur probable : " + fix])
+                    errors.append([an_osm_line['@id'],'network',fix,"la relation n'a pas de tag network. Valeur probable : " + fix,opendata_line['latitude'], opendata_line['longitude']])
                 if not an_osm_line['operator']:
                     fix = get_most_common_value(stats, "operator", opendata_line['network'])
-                    errors.append([an_osm_line['@id'],'operator',fix,"la relation n'a pas de tag operator. Valeur probable : " + fix])
+                    errors.append([an_osm_line['@id'],'operator',fix,"la relation n'a pas de tag operator. Valeur probable : " + fix,opendata_line['latitude'], opendata_line['longitude']])
                 if not an_osm_line['colour'] and opendata_line['color'] != "000000":
                     fix = '#' + opendata_line['color']
-                    errors.append([an_osm_line['@id'],'colour',fix,"la relation n'a pas de tag colour. Valeur probable : " + fix])
+                    errors.append([an_osm_line['@id'],'colour',fix,"la relation n'a pas de tag colour. Valeur probable : " + fix,opendata_line['latitude'], opendata_line['longitude']])
                 if not an_osm_line['route_master']:
                     fix = map_modes(opendata_line['mode'])
-                    errors.append([an_osm_line['@id'],'route_master',fix,"la relation n'a pas de tag route_master. Valeur probable : " + fix])
+                    errors.append([an_osm_line['@id'],'route_master',fix,"la relation n'a pas de tag route_master. Valeur probable : " + fix,opendata_line['latitude'], opendata_line['longitude']])
 
         return errors
 
@@ -109,7 +115,7 @@ def create_osmose_xml(errors):
     now = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
     doc['analysers']['@timestamp'] = now
     doc['analysers']['analyser']['@timestamp'] = now
-    doc['analysers']['analyser']['class']['@item'] = "9999"
+    doc['analysers']['analyser']['class']['@item'] = "1140"
     doc['analysers']['analyser']['class']['@tag'] = "transport en commun"
     doc['analysers']['analyser']['class']['@id'] = "1"
     doc['analysers']['analyser']['class']['@level'] = "3"
@@ -119,7 +125,8 @@ def create_osmose_xml(errors):
     for error in errors :
         current_osmose_error = deepcopy(doc['analysers']['analyser']['error'][0])
         current_osmose_error['relation']['@id'] = error[0]
-        current_osmose_error['location']['@fixme'] = "TODO : recalculer une position à partir de la relation"
+        current_osmose_error['location']['@lat'] = error[4]
+        current_osmose_error['location']['@lon'] = error[5]
         current_osmose_error['text']['@lang'] = "fr"
         current_osmose_error['text']['@value'] = error[3]
         current_osmose_error['fixes']['fix']['relation']['@id'] = error[0]
@@ -137,7 +144,7 @@ def create_osmose_xml(errors):
 
 if __name__ == '__main__':
 
-    create_opendata_csv()
+    #create_opendata_csv()
 
     errors = get_errors()
     xml = create_osmose_xml(errors)

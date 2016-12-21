@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Intégration du référentiel arrêts du STIF</title>
+		<title>Intégration du référentiel lignes du STIF</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/intensify/css/main.css" />
@@ -21,30 +21,35 @@
 			</header>
 
 		<!-- Tags -->
-			<section id="one" class="wrapper">
-				<div class="inner flex flex-2">
-					<div class="flex-item right">
-                        <div>
-                            <img src="assets/img/blue_bus.png" alt="OpenStreetMap : bleu"/> OpenStreetMap (en bleu sur la carte)
-														<div id="osm_stop_info"> Ici, les données OSM vont s'afficher</div><br>
+		<section id="one" class="wrapper">
+			<div class="inner flex flex-2">
+				<div class="flex-item right">
+											<div>
+													<img src="assets/img/blue_bus.png" alt="OpenStreetMap : bleu"/> OpenStreetMap (en bleu sur la carte)
+													<div id="osm_stop_info"> Ici, les données OSM vont s'afficher</div><br>
 
-							ref:FR:STIF : <h4 id=osm_ref_match>association ?</h4>
-						</div>
-
+						ref:FR:STIF déjà renseignées: <h4 id=osm_ref_match> <i>aucune ref pour le moment</i> </h4>
 					</div>
-					<div class="flex-item right">
-						<div>
-                    <img src="assets/img/black_bus.png" alt="OpenData : noir"/> Opendata (en noir sur la carte)
-										<div id="opendata_stop_info"></div><br>
-						</div>
+
+				</div>
+				<div class="flex-item right">
+					<div>
+									<img src="assets/img/black_bus.png" alt="OpenData : noir"/> Opendata (en noir sur la carte)
+									<div id="opendata_stop_info">Ici, les candidats opendata vont s'afficher</div><br>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
-            <!-- Map -->
-    			<section id="banner_map">
-                    <div id="map"></div>
-    			</section>
+			<!-- Skpi -->
+		<section id="skip">
+							<a class="button alt fit small" id='next_osm_stop_button'>Proposition d'arrêt suivante</a>
+		</section>
+
+      <!-- Map -->
+		<section id="banner_map">
+              <div id="map"></div>
+		</section>
 
             <!-- Footer -->
                 <footer id="footer">
@@ -72,7 +77,7 @@
                 <script src="assets/third_parties/OBM_js_editor/osmauth.min.js"></script>
                 <script src="assets/third_parties/OBM_js_editor/auth.js"></script>
                 <script src="assets/third_parties/OBM_js_editor/OSMAPI.js"></script>
-                <script src="assets/already_mapped_stop.js"></script>
+                <script src="assets/stops_by_line.js"></script>
 
 	</body>
 </html>

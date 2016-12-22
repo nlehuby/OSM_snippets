@@ -1,5 +1,5 @@
 @id,ref,name,network,operator,colour,type,route_master,ref:FR:STIF:ExternalCode_Line
-107352,33,Bus 33 : Les Noues RER (Circulaire),CIF,Les Courriers de l'Île-de-France,#007AC2,route_master,,014014033:33
+107352,33,Bus 33 : Les Noues RER (Circulaire),CIF,Les Courriers de l'Île-de-France,#007AC2,route_master,bus,014014033:33
 107354,11,Bus 11 : Victor Basch (Goussainville) ↔ Saint-Denis Porte de Paris,Les Courriers de l'Île-de-France,Keolis CIF,#B456A1,route_master,bus,014014011:11
 107356,32,"Bus 32 : Goussainville, Victor Basch - Roissypole",Les Courriers de l'Île-de-France,Keolis CIF,#B2CE40,route_master,bus,014014032:32
 109875,830 000,Ligne de Paris à Marseille,,SNCF Réseau,,route_master,train,
@@ -108,7 +108,7 @@
 1549912,N34,Noctilien N34: Gare de Lyon ↔ Torcy RER,Noctilien,RATP,#D2D200,route_master,bus,100987757:N34
 1549913,127,Bus 127: Montreuil - Croix de Chavaux ↔ Neuilly-sur-Marne - Place de la Résistance,RATP,RATP,#F68F4B,route_master,bus,100100127:127
 1553162,173,Bus 173: Porte de Clichy ↔ La Courneuve–8 mai 1945,RATP,RATP,#006DB8,route_master,bus,100100173:173
-1553375,341,Bus 341: Mairie de Clichy-Landy-Martre ↔ Porte de Clignancourt,RATP,RATP,#FFCD01,route_master,bus,
+1553375,341,Bus 341: Mairie de Clichy-Landy-Martre ↔ Porte de Clignancourt,RATP,RATP,#FFCD01,route_master,bus,100100341:341
 1553501,N51,Noctilien N51: Gare d’Enghien ↔ Gare Saint-Lazare,Noctilien,RATP,#FFCD02,route_master,bus,100987753:N51
 1555878,325,Bus 325: Bibliothèque François Mitterrand ↔ Château de Vincennes,RATP,RATP,#87D3DF,route_master,bus,100100325:325
 1555879,118,Bus 118: Château de Vincennes ↔ Van Derheyden (Rosny-sous-bois),RATP,RATP,#E0B03B,route_master,bus,100100118:118

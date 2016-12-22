@@ -145,11 +145,11 @@ function prepare_put_node_or_way(xml, changeset_id, id, OSM_type)
 }
 
 /* generic */
-function send_data_to_osm(xml, OSM_id, OSM_type, comment)
+function send_data_to_osm(xml, OSM_id, OSM_type, comment, callback)
 {
     if (auth.authenticated())
     {
-        send_data_to_osm_oauth(xml, OSM_id, OSM_type, comment)
+        send_data_to_osm_oauth(xml, OSM_id, OSM_type, comment, callback)
     }
     else
     {
@@ -210,7 +210,7 @@ function put_changeset(){
 }
 
 /* With oauth */
-function send_data_to_osm_oauth(xml, OSM_id, OSM_type, comment)
+function send_data_to_osm_oauth(xml, OSM_id, OSM_type, comment, callback)
 {
     //open a changeset with oauth
     var xml_changeset = prepare_put_changeset(comment);
@@ -256,7 +256,12 @@ function send_data_to_osm_oauth(xml, OSM_id, OSM_type, comment)
                                 console.log('ERROR on put changeset/close : ' + err.response);
                                 return
                                 }
-                            else {console.log("Successful modification of an OSM object !"); document.location.href="https://www.openstreetmap.org/changeset/" + changeset_id}
+                            else {
+                                console.log("Successful modification of an OSM object !");
+                                if(callback !== undefined) {
+                                    callback(changeset_id, res);
+                                }
+                            }
                         }//end of callback - close changeset
                     );
                 }//end of callback - put node/way

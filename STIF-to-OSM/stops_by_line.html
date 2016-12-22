@@ -28,7 +28,7 @@
 													<img src="assets/img/blue_bus.png" alt="OpenStreetMap : bleu"/> OpenStreetMap (en bleu sur la carte)
 													<div id="osm_stop_info"> Ici, les données OSM vont s'afficher</div><br>
 
-						ref:FR:STIF déjà renseignées: <h4 id=osm_ref_match> <i>aucune ref pour le moment</i> </h4>
+						ref:FR:STIF déjà renseignées: <span id=osm_ref_match> <i>aucune ref pour le moment</i> </span>
 					</div>
 
 				</div>
@@ -36,7 +36,11 @@
 					<div>
 									<img src="assets/img/black_bus.png" alt="OpenData : noir"/> Opendata (en noir sur la carte)
 									<div id="opendata_stop_info">Ici, les candidats opendata vont s'afficher</div><br>
-					</div>
+
+                        <a href="#" class="button special fit" id="add_navitia_ref_to_osm">Associer cet arrêt</a>
+                        <a class="button alt fit small" id='next_navitia_candidate_button'>Proposition d'arrêt suivant</a>
+                        <p><span id="navitia_current_stop">1</span>/<span id="navitia_stop_count">0</span> arrêts</p>
+                    </div>
 				</div>
 			</div>
 		</section>
@@ -77,6 +81,7 @@
                 <script src="assets/third_parties/OBM_js_editor/osmauth.min.js"></script>
                 <script src="assets/third_parties/OBM_js_editor/auth.js"></script>
                 <script src="assets/third_parties/OBM_js_editor/OSMAPI.js"></script>
+                <script src='assets/third_parties/turf-3.0.11/turf.min.js'></script>
                 <script src="assets/stops_by_line.js"></script>
 
 	</body>

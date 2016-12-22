@@ -19,6 +19,7 @@ var selected_navitia_line_index = 0;
 var navitia_lines_data = "";
 var navitia_line_geojson = []
 
+document.getElementById("link_to_stop").style.display = 'none';
 var next_navitia_candidate_button = document.getElementById("next_navitia_candidate_button");
 next_navitia_candidate_button.onclick = function(){
     selected_navitia_line_index += 1;
@@ -41,11 +42,10 @@ add_navitia_ref_to_osm.onclick = function(){
     }
 
     if (navitia_ref != undefined){
-        send_navitia_ref_to_openstreetmap(navitia_ref, osm_relation_code);
+        send_navitia_ref_to_openstreetmap(navitia_ref, osm_relation_code, after_osm_modif);
     } else {
         console.log("impossible de trouver le code à envoyer à OSM")
     }
-
 }
 
 $(document).ready(function() {
@@ -66,11 +66,16 @@ function getParameterByName(name) {
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
-function send_navitia_ref_to_openstreetmap(navitia_ref, osm_relation_id){
+function send_navitia_ref_to_openstreetmap(navitia_ref, osm_relation_id, after_osm_modif){
     var relation_xml = get_node_or_way(osm_relation_id, 'relation'); //mouais, va ptet falloir changer le nom de la fonction dans la lib quand même ...
     edit_tag(relation_xml, 'relation', tag_to_match, navitia_ref)
-    send_data_to_osm(relation_xml, osm_relation_id, "relation", "Ajout de référence opendata STIF sur les lignes")
+    send_data_to_osm(relation_xml, osm_relation_id, "relation", "Ajout de référence opendata STIF sur les lignes",after_osm_modif)
 }
+
+function after_osm_modif(changeset_id, junk){
+    document.location.href="https://www.openstreetmap.org/changeset/" + changeset_id
+}
+
 
 
 function get_navitia_lines_candidates(line_code){
@@ -105,6 +110,9 @@ function on_navitia_lines_candidates(whole_navitia_info){
     document.getElementById("navitia_lines_count").innerHTML = whole_navitia_info['pagination']['total_result'];
     if (whole_navitia_info['pagination']['total_result'] == "1"){
         document.getElementById('next_navitia_candidate_button').style.display = 'none';
+        var link_to_stop = document.getElementById('link_to_stop')
+        link_to_stop.style.display = 'block';
+        link_to_stop.href = "./stops_by_line.html?osm_line_id=" +osm_relation_code+ "&navitia_line_id=" + whole_navitia_info['lines'][0]['id']
     }
 }
 

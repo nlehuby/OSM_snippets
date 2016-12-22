@@ -42,15 +42,25 @@ add_navitia_ref_to_osm.onclick = function(){
     var navitia_ref = navitia_stop_list[current_navitia_stop_index]['ref'];
     var osm_stop_id = osm_stop_list[current_osm_stop_index]['id']
 
-    //on vérifie si la ref n'est pas déjà dans OSM
-    var toAdd = true
-    var osm_refs = osm_stop_list[current_osm_stop_index]['ref'] ? osm_stop_list[current_osm_stop_index]['ref'].split(';') : []
-    if (osm_refs.indexOf(navitia_ref) != -1){
-        toAdd = false;
+
+    var osm_refs_to_contribute = navitia_ref;
+
+    if (osm_stop_list[current_osm_stop_index]['ref']){
+        var osm_refs = osm_stop_list[current_osm_stop_index]['ref'].split(';')
+
+        if (osm_refs.indexOf(navitia_ref) != -1){ // si la nvelle ref est déjà dans OSM
+            console.log( "cette ref est déjà dans OSM")
+            skip_to_next_osm();
+            return ;
+        }
+        osm_refs.push(navitia_ref);
+
+        osm_refs_to_contribute = osm_refs.join(';');
+
     }
 
-    if (navitia_ref != undefined && toAdd){
-        send_navitia_ref_to_openstreetmap(navitia_ref, osm_stop_id, skip_to_next_osm);
+    if (navitia_ref != undefined){
+        send_navitia_ref_to_openstreetmap(osm_refs_to_contribute, osm_stop_id, skip_to_next_osm);
     } else {
         console.log("impossible de trouver le code à envoyer à OSM / code déjà dans OSM, pas de modif")
         skip_to_next_osm()

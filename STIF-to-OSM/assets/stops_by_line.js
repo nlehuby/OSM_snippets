@@ -6,7 +6,7 @@ var attr_osm = 'Map data &copy; <a href="http://openstreetmap.org/">OpenStreetMa
 attr_overpass = 'stops from <a href="http://www.overpass-api.de/">Overpass API</a> and <a href="http://navitia.io/">navitia.io</a>';
 var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {opacity: 0.7, attribution: [attr_osm, attr_overpass].join(', ')});
 
-var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(48.84702,2.37705), 14);
+var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(48.84702,2.37705), 18);
 
 var osm_line_id = getParameterByName('osm_line_id');
 var navitia_line_id = getParameterByName('navitia_line_id');
@@ -225,12 +225,12 @@ function display_one_navitia_stop(stop_index) {
     //récupère les parcours desservis, puis affiche les infos
     navitia_stop = navitia_stop_list[stop_index]
     $.ajax({
-        url: "https://api.navitia.io/v1/coverage/fr-idf/stop_points/"+ navitia_stop.id + "/routes?depth=2",
+        url: "https://api.navitia.io/v1/coverage/fr-idf/lines/"+ navitia_line_id +"/stop_points/"+ navitia_stop.id + "/routes?depth=2",
         dataType: 'json',
         global: true,
         error: function(data) {console.log(data);alert("Il y a eu un souci dans l'affichage des données opendata correspondant à cet arrêt")},
         success: function(data) {
-            var to_html = "<h3>" + navitia_stop.name + "</h3>";
+            var to_html = "<h3>" + navitia_stop.name + " ("+ navitia_stop.ref + ")</h3>";
 
             for (j = 0; j < data['routes'].length; j++) {
               var network = data['routes'][j]['line']['network']['name'];

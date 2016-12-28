@@ -17,55 +17,16 @@ var tag_to_match = "ref:FR:STIF";
 
 var osm_stop_list = []
 var navitia_stop_list = []
-var navitia_stop_geojson = []
-var osm_stop_geojson = []
 
-var current_navitia_stop_index = 0;
 var current_osm_stop_index = 0;
-//next_osm_stop_button
 
 var next_osm_stop_button = document.getElementById("next_osm_stop_button");
-next_osm_stop_button.onclick = function(){skip_to_next_osm()};
+next_osm_stop_button.onclick = skip_to_next_osm;
 
-var next_navitia_candidate_button = document.getElementById("next_navitia_candidate_button");
-next_navitia_candidate_button.onclick = function(){
-    current_navitia_stop_index += 1;
-    if (navitia_stop_list[current_navitia_stop_index] == undefined){
-        current_navitia_stop_index = 0;
-    }
-    document.getElementById("navitia_current_stop").innerHTML = current_navitia_stop_index + 1;
-    display_one_navitia_stop(current_navitia_stop_index);
-}
-
-var add_navitia_ref_to_osm = document.getElementById("add_navitia_ref_to_osm");
-add_navitia_ref_to_osm.onclick = function(){
-    var navitia_ref = navitia_stop_list[current_navitia_stop_index]['ref'];
-    var osm_stop_id = osm_stop_list[current_osm_stop_index]['id']
-
-
-    var osm_refs_to_contribute = navitia_ref;
-
-    if (osm_stop_list[current_osm_stop_index]['ref']){
-        var osm_refs = osm_stop_list[current_osm_stop_index]['ref'].split(';')
-
-        if (osm_refs.indexOf(navitia_ref) != -1){ // si la nvelle ref est déjà dans OSM
-            console.log( "cette ref est déjà dans OSM")
-            skip_to_next_osm();
-            return ;
-        }
-        osm_refs.push(navitia_ref);
-
-        osm_refs_to_contribute = osm_refs.join(';');
-
-    }
-
-    if (navitia_ref != undefined){
-        send_navitia_ref_to_openstreetmap(osm_refs_to_contribute, osm_stop_id, skip_to_next_osm);
-    } else {
-        console.log("impossible de trouver le code à envoyer à OSM / code déjà dans OSM, pas de modif")
-        skip_to_next_osm()
-    }
-}
+var add_one_navitia_ref_to_osm = document.getElementById("add_navitia_one_ref_to_osm");
+add_one_navitia_ref_to_osm.onclick = function() {add_navitia_ref_to_osm("one");}
+var add_two_navitia_ref_to_osm = document.getElementById("add_navitia_two_ref_to_osm");
+add_two_navitia_ref_to_osm.onclick = function() {add_navitia_ref_to_osm("two");}
 
 $(document).ready(function() {
     //authentification navitia
@@ -155,7 +116,6 @@ function get_stops_from_navitia_line(navitia_line_id){
         global: true,
         error: function(data) {console.log(data)},
         success: function(data) {
-            document.getElementById("navitia_stop_count").innerHTML = data['pagination']['total_result'];
 
             for (i = 0; i < data['stop_points'].length; i++) {
                 var stop_content = {}
@@ -192,11 +152,9 @@ function display_one_osm_stop(stop_index) {
         document.getElementById("osm_ref_match").innerHTML = "<i>Pas encore de ref</i>";
     }
 
-    for (var i in osm_stop_geojson){map.removeLayer(osm_stop_geojson[i]);}
-    osm_stop_geojson=[];
+
     stop_img = L.icon({iconUrl: 'assets/img/blue_bus.png', popupAnchor: [0, 0]});
     stop_marker = L.marker([osm_stop['lat'], osm_stop['lon']], {icon: stop_img});
-    osm_stop_geojson.push(stop_marker);
     stop_marker.addTo(map).bindPopup(to_html);
     map.panTo([osm_stop['lat'], osm_stop['lon']]);
 
@@ -216,20 +174,22 @@ function display_navitia_candidates_for_this_stop(osm_stop_info) {
       return distanceA - distanceB;
     });
 
-    //afficher le premier
-    current_navitia_stop_index = 0;
-    display_one_navitia_stop(current_navitia_stop_index)
+    //afficher les deux plus proches
+    display_one_navitia_stop(0,"opendata_stop_one_info" );
+    display_one_navitia_stop(1, "opendata_stop_two_info");
 }
 
-function display_one_navitia_stop(stop_index) {
+function display_one_navitia_stop(stop_index, placeholder) {
     //récupère les parcours desservis, puis affiche les infos
-    navitia_stop = navitia_stop_list[stop_index]
+    var navitia_stop = navitia_stop_list[stop_index]
+    console.log(navitia_stop)
     $.ajax({
         url: "https://api.navitia.io/v1/coverage/fr-idf/lines/"+ navitia_line_id +"/stop_points/"+ navitia_stop.id + "/routes?depth=2",
         dataType: 'json',
         global: true,
         error: function(data) {console.log(data);alert("Il y a eu un souci dans l'affichage des données opendata correspondant à cet arrêt")},
         success: function(data) {
+            console.log(navitia_stop)
             var to_html = "<h3>" + navitia_stop.name + " ("+ navitia_stop.ref + ")</h3>";
 
             for (j = 0; j < data['routes'].length; j++) {
@@ -241,13 +201,10 @@ function display_one_navitia_stop(stop_index) {
               to_html += route_name + "<br>"
             }
 
-            document.getElementById("opendata_stop_info").innerHTML = to_html;
-
-            for (var i in navitia_stop_geojson){map.removeLayer(navitia_stop_geojson[i]);}
-            navitia_stop_geojson=[];
+            document.getElementById(placeholder).innerHTML = to_html;
+          
             stop_img = L.icon({iconUrl: 'assets/img/black_bus.png', popupAnchor: [0, 0]});
             stop_marker = L.marker([navitia_stop['lat'], navitia_stop['lon']], {icon: stop_img});
-            navitia_stop_geojson.push(stop_marker);
             stop_marker.addTo(map).bindPopup(to_html);
             }
         });
@@ -269,12 +226,44 @@ function send_navitia_ref_to_openstreetmap(navitia_ref, osm_node_id, callback){
 
 function skip_to_next_osm(changeset_id, junk){
     current_osm_stop_index += 1;
-    current_navitia_stop_index = 0;
     if (osm_stop_list[current_osm_stop_index] == undefined){
         current_osm_stop_index = 0;
         notify_user()
     }
     display_one_osm_stop(current_osm_stop_index);
+}
+
+function add_navitia_ref_to_osm(one_or_two){
+  var current_navitia_stop_index = 1;
+  if (one_or_two == "one") {
+    current_navitia_stop_index = 0;
+  }
+  var navitia_ref = navitia_stop_list[current_navitia_stop_index]['ref'];
+  var osm_stop_id = osm_stop_list[current_osm_stop_index]['id']
+
+
+  var osm_refs_to_contribute = navitia_ref;
+
+  if (osm_stop_list[current_osm_stop_index]['ref']){
+      var osm_refs = osm_stop_list[current_osm_stop_index]['ref'].split(';')
+
+      if (osm_refs.indexOf(navitia_ref) != -1){ // si la nvelle ref est déjà dans OSM
+          console.log( "cette ref est déjà dans OSM")
+          skip_to_next_osm();
+          return ;
+      }
+      osm_refs.push(navitia_ref);
+
+      osm_refs_to_contribute = osm_refs.join(';');
+
+  }
+
+  if (navitia_ref != ""){
+      send_navitia_ref_to_openstreetmap(osm_refs_to_contribute, osm_stop_id, skip_to_next_osm);
+  } else {
+      console.log("impossible de trouver le code à envoyer à OSM / code déjà dans OSM, pas de modif")
+      skip_to_next_osm()
+  }
 }
 
 function notify_user(){

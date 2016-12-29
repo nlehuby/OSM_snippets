@@ -12,7 +12,6 @@ from collections import Counter
 from copy import deepcopy
 
 #paramétrage
-overpass_base_url = "http://overpass-api.de/api/interpreter"
 navitia_API_key = TOKEN
 navitia_base_url = "http://api.navitia.io/v1/coverage/fr-idf"
 
@@ -20,14 +19,17 @@ def get_opendata_info(code_type, code_value):
     navitia_info = {}
     appel_nav = requests.get(navitia_base_url + "/lines?filter=line.has_code({},{})".format(code_type, code_value), headers={'Authorization': navitia_API_key})
     if appel_nav.status_code != 200:
-        print ("KO navitia")
+        print ("KO navitia " + code_value)
+        return navitia_info
     nb_result = appel_nav.json()['pagination']['total_result']
     if nb_result != 1:
-        print ("/!\on a plusieurs lignes qui pourraient correspondre")
+        print ("/!\ on a plusieurs lignes qui pourraient correspondre")
+        return navitia_info
     navitia_info['network'] = appel_nav.json()['lines'][0]['network']['name']
     navitia_info['mode'] = appel_nav.json()['lines'][0]['commercial_mode']['name']
     navitia_info['color'] = appel_nav.json()['lines'][0]['color']
     navitia_info['navitia_id'] = appel_nav.json()['lines'][0]['id']
+    
     # on récupère les coordonnées d'un arrêt de la ligne au hasard
     appel_nav = requests.get(navitia_base_url + "/lines/{}/stop_points?count=1".format(navitia_info['navitia_id']), headers={'Authorization': navitia_API_key})
     navitia_info['latitude'] = appel_nav.json()['stop_points'][0]['coord']['lat']
@@ -41,11 +43,12 @@ def create_opendata_csv():
         for row in reader:
             if row['ref:FR:STIF:ExternalCode_Line']:
                 navitia_line = get_opendata_info("source", row['ref:FR:STIF:ExternalCode_Line'])
+                if navitia_line == {}: continue
                 navitia_line['osm_id'] = row['@id']
                 navitia_lines.append(navitia_line)
 
     headers = ['osm_id', 'mode', 'network', 'color', 'navitia_id', 'latitude', 'longitude']
-    with open("collecte/analyse/route_master_opendata.csv",'w') as f:
+    with open("analyse/route_master_opendata.csv",'w') as f:
         dw = csv.DictWriter(f, delimiter=',', fieldnames=headers)
         dw.writeheader()
         for row in navitia_lines:
@@ -144,9 +147,9 @@ def create_osmose_xml(errors):
 
 if __name__ == '__main__':
 
-    #create_opendata_csv()
+    create_opendata_csv()
 
-    errors = get_errors()
-    xml = create_osmose_xml(errors)
-
-    print(xml)
+    # errors = get_errors()
+    # xml = create_osmose_xml(errors)
+    #
+    # print(xml)

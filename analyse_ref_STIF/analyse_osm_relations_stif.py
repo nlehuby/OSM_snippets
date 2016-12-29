@@ -112,7 +112,8 @@ def get_errors ():
                 if not an_osm_line['operator']:
                     fix = get_most_common_value(stats, "operator", opendata_line['network'])
                     errors.append([an_osm_line['@id'],'operator',fix,"la relation n'a pas de tag operator. Valeur probable : " + fix,opendata_line['latitude'], opendata_line['longitude']])
-                if not an_osm_line['colour'] and opendata_line['color'] != "000000":
+                if not an_osm_line['colour'] and opendata_line['color'] not in ["000000", "0",""]:
+                    # TODO : faire quelque chose de plus flexible : on doit pouvoir proposer une erreur mais pas de fix
                     fix = '#' + opendata_line['color']
                     errors.append([an_osm_line['@id'],'colour',fix,"la relation n'a pas de tag colour. Valeur probable : " + fix,opendata_line['latitude'], opendata_line['longitude']])
                 if not an_osm_line['route_master']:

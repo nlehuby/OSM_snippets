@@ -19,31 +19,33 @@ def get_opendata_info(code_type, code_value):
     navitia_info = {}
     appel_nav = requests.get(navitia_base_url + "/lines?filter=line.has_code({},{})".format(code_type, code_value), headers={'Authorization': navitia_API_key})
     if appel_nav.status_code != 200:
-        print ("KO navitia " + code_value)
-        return navitia_info
+        return "échec à l'appel navitia", navitia_info
     nb_result = appel_nav.json()['pagination']['total_result']
     if nb_result != 1:
-        print ("/!\ on a plusieurs lignes qui pourraient correspondre")
-        return navitia_info
+        return "plusieurs lignes correspondent dans l'opendata", navitia_info
     navitia_info['network'] = appel_nav.json()['lines'][0]['network']['name']
     navitia_info['mode'] = appel_nav.json()['lines'][0]['commercial_mode']['name']
     navitia_info['color'] = appel_nav.json()['lines'][0]['color']
     navitia_info['navitia_id'] = appel_nav.json()['lines'][0]['id']
-    
+
     # on récupère les coordonnées d'un arrêt de la ligne au hasard
     appel_nav = requests.get(navitia_base_url + "/lines/{}/stop_points?count=1".format(navitia_info['navitia_id']), headers={'Authorization': navitia_API_key})
     navitia_info['latitude'] = appel_nav.json()['stop_points'][0]['coord']['lat']
     navitia_info['longitude'] = appel_nav.json()['stop_points'][0]['coord']['lon']
-    return (navitia_info)
+    return "ok", navitia_info
 
 def create_opendata_csv():
     navitia_lines = []
+    osm_lines_with_errors = []
     with open('../STIF-to-OSM/data/lignes.csv', 'r') as f:
         reader = csv.DictReader(f)
         for row in reader:
             if row['ref:FR:STIF:ExternalCode_Line']:
-                navitia_line = get_opendata_info("source", row['ref:FR:STIF:ExternalCode_Line'])
-                if navitia_line == {}: continue
+                status, navitia_line = get_opendata_info("source", row['ref:FR:STIF:ExternalCode_Line'])
+                if status != "ok":
+                    row["error"] = status
+                    row['osm_id'] = row['@id']
+                    osm_lines_with_errors.append(row)
                 navitia_line['osm_id'] = row['@id']
                 navitia_lines.append(navitia_line)
 
@@ -54,11 +56,19 @@ def create_opendata_csv():
         for row in navitia_lines:
             dw.writerow(row)
 
+    headers = ['osm_id', 'name', 'ref', 'error']
+    osm_lines = [ dict((k, result.get(k, None)) for k in headers) for result in osm_lines_with_errors]
+    with open("analyse/route_master_opendata_errors.csv",'w') as f:
+        dw = csv.DictWriter(f, delimiter=',', fieldnames=headers)
+        dw.writeheader()
+        for row in osm_lines:
+            dw.writerow(row)
+
 def extract_common_values_by_networks():
     with open('../STIF-to-OSM/data/lignes.csv', 'r') as f:
         reader = csv.DictReader(f)
         osm_lines = list(reader)
-    with open('collecte/analyse/route_master_opendata.csv', 'r') as f:
+    with open('analyse/route_master_opendata.csv', 'r') as f:
         reader = csv.DictReader(f)
         opendata_lines = list(reader)
 
@@ -85,7 +95,7 @@ def get_errors ():
     # get_most_common_value(stats, "network", "Noctilien")
     # get_most_common_value(stats, "operator", "Noctilien")
 
-    with open('collecte/analyse/route_master_opendata.csv', 'r') as f:
+    with open('analyse/route_master_opendata.csv', 'r') as f:
         reader = csv.DictReader(f)
         opendata_lines = list(reader)
 
@@ -147,9 +157,9 @@ def create_osmose_xml(errors):
 
 if __name__ == '__main__':
 
-    create_opendata_csv()
+    #create_opendata_csv()
 
-    # errors = get_errors()
-    # xml = create_osmose_xml(errors)
-    #
-    # print(xml)
+    errors = get_errors()
+    xml = create_osmose_xml(errors)
+
+    print(xml)

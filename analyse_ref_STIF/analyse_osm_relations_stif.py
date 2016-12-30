@@ -27,6 +27,8 @@ def get_opendata_info(code_type, code_value):
     navitia_info['mode'] = appel_nav.json()['lines'][0]['commercial_mode']['name']
     navitia_info['color'] = appel_nav.json()['lines'][0]['color']
     navitia_info['navitia_id'] = appel_nav.json()['lines'][0]['id']
+    navitia_info['name'] = appel_nav.json()['lines'][0]['name']
+    navitia_info['code'] = appel_nav.json()['lines'][0]['code']
 
     # on récupère les coordonnées d'un arrêt de la ligne au hasard
     appel_nav = requests.get(navitia_base_url + "/lines/{}/stop_points?count=1".format(navitia_info['navitia_id']), headers={'Authorization': navitia_API_key})
@@ -49,7 +51,7 @@ def create_opendata_csv():
                 navitia_line['osm_id'] = row['@id']
                 navitia_lines.append(navitia_line)
 
-    headers = ['osm_id', 'mode', 'network', 'color', 'navitia_id', 'latitude', 'longitude']
+    headers = ['osm_id', 'mode', 'network', 'color', 'navitia_id', 'name', 'code', 'latitude', 'longitude']
     with open("analyse/route_master_opendata.csv",'w') as f:
         dw = csv.DictWriter(f, delimiter=',', fieldnames=headers)
         dw.writeheader()
@@ -111,11 +113,15 @@ def get_errors ():
                     errors.append([an_osm_line['@id'],'network',fix,"la relation n'a pas de tag network. Valeur probable : " + fix,opendata_line['latitude'], opendata_line['longitude']])
                 if not an_osm_line['operator']:
                     fix = get_most_common_value(stats, "operator", opendata_line['network'])
-                    errors.append([an_osm_line['@id'],'operator',fix,"la relation n'a pas de tag operator. Valeur probable : " + fix,opendata_line['latitude'], opendata_line['longitude']])
+                    if fix != "":
+                        errors.append([an_osm_line['@id'],'operator',fix,"la relation n'a pas de tag operator. Valeur probable : " + fix,opendata_line['latitude'], opendata_line['longitude']])
                 if not an_osm_line['colour'] and opendata_line['color'] not in ["000000", "0",""]:
                     # TODO : faire quelque chose de plus flexible : on doit pouvoir proposer une erreur mais pas de fix
                     fix = '#' + opendata_line['color']
                     errors.append([an_osm_line['@id'],'colour',fix,"la relation n'a pas de tag colour. Valeur probable : " + fix,opendata_line['latitude'], opendata_line['longitude']])
+                if not an_osm_line['ref']:
+                    fix =  opendata_line['code']
+                    errors.append([an_osm_line['@id'],'ref',fix,"la relation n'a pas de tag ref. Valeur probable : " + fix,opendata_line['latitude'], opendata_line['longitude']])
                 if not an_osm_line['route_master']:
                     fix = map_modes(opendata_line['mode'])
                     errors.append([an_osm_line['@id'],'route_master',fix,"la relation n'a pas de tag route_master. Valeur probable : " + fix,opendata_line['latitude'], opendata_line['longitude']])
@@ -161,6 +167,8 @@ if __name__ == '__main__':
     #create_opendata_csv()
 
     errors = get_errors()
-    xml = create_osmose_xml(errors)
-
-    print(xml)
+    for elem in errors :
+        print(elem)
+    # xml = create_osmose_xml(errors)
+    #
+    # print(xml)

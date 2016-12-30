@@ -109,22 +109,46 @@ def get_errors ():
                     continue
                 opendata_line = [a_line for a_line in opendata_lines if an_osm_line['@id'] == a_line['osm_id']][0]
                 if not an_osm_line['network']:
+                    error = {"id" : an_osm_line['@id'] }
                     fix = get_most_common_value(stats, "network", opendata_line['network'])
-                    errors.append([an_osm_line['@id'],'network',fix,"la relation n'a pas de tag network. Valeur probable : " + fix,opendata_line['latitude'], opendata_line['longitude']])
-                if not an_osm_line['operator']:
-                    fix = get_most_common_value(stats, "operator", opendata_line['network'])
+                    error['label'] = "la relation n'a pas de tag network."
                     if fix != "":
-                        errors.append([an_osm_line['@id'],'operator',fix,"la relation n'a pas de tag operator. Valeur probable : " + fix,opendata_line['latitude'], opendata_line['longitude']])
+                        error['fix'] = [{"key": "network", "value": fix}]
+                        error['label'] = "la relation n'a pas de tag network. Valeur probable : " + fix
+                    error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
+                    errors.append(error)
+                if not an_osm_line['operator']:
+                    error = {"id" : an_osm_line['@id'] }
+                    fix = get_most_common_value(stats, "operator", opendata_line['network'])
+                    error['label'] = "la relation n'a pas de tag operator."
+                    if fix != "":
+                        error['fix'] = [{"key": "operator", "value": fix}]
+                        error['label'] = "la relation n'a pas de tag operator. Valeur probable : " + fix
+                    error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
+                    errors.append(error)
                 if not an_osm_line['colour'] and opendata_line['color'] not in ["000000", "0",""]:
-                    # TODO : faire quelque chose de plus flexible : on doit pouvoir proposer une erreur mais pas de fix
+                    error = {"id" : an_osm_line['@id'] }
+                    error['label'] = "la relation n'a pas de tag colour."
                     fix = '#' + opendata_line['color']
-                    errors.append([an_osm_line['@id'],'colour',fix,"la relation n'a pas de tag colour. Valeur probable : " + fix,opendata_line['latitude'], opendata_line['longitude']])
+                    if opendata_line['color'] not in ["", "0", "000000"]:
+                        error['fix'] = [{"key": "colour", "value": fix}]
+                        error['label'] = "la relation n'a pas de tag colour. Valeur probable : " + fix
+                    error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
+                    errors.append(error)
                 if not an_osm_line['ref']:
+                    error = {"id" : an_osm_line['@id'] }
                     fix =  opendata_line['code']
-                    errors.append([an_osm_line['@id'],'ref',fix,"la relation n'a pas de tag ref. Valeur probable : " + fix,opendata_line['latitude'], opendata_line['longitude']])
+                    error['label'] = "la relation n'a pas de tag ref. Valeur probable : " + fix
+                    error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
+                    error['fix'] = [{"key": "ref", "value": fix}]
+                    errors.append(error)
                 if not an_osm_line['route_master']:
+                    error = {"id" : an_osm_line['@id'] }
                     fix = map_modes(opendata_line['mode'])
-                    errors.append([an_osm_line['@id'],'route_master',fix,"la relation n'a pas de tag route_master. Valeur probable : " + fix,opendata_line['latitude'], opendata_line['longitude']])
+                    error['label'] = "la relation n'a pas de tag route_master. Valeur probable : " + fix
+                    error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
+                    error['fix'] = [{"key": "route_master", "value": fix}]
+                    errors.append(error)
 
         return errors
 
@@ -144,14 +168,17 @@ def create_osmose_xml(errors):
 
     for error in errors :
         current_osmose_error = deepcopy(doc['analysers']['analyser']['error'][0])
-        current_osmose_error['relation']['@id'] = error[0]
-        current_osmose_error['location']['@lat'] = error[4]
-        current_osmose_error['location']['@lon'] = error[5]
+        current_osmose_error['relation']['@id'] = error['id']
+        current_osmose_error['location']['@lat'] = error['lat']
+        current_osmose_error['location']['@lon'] = error['lon']
         current_osmose_error['text']['@lang'] = "fr"
-        current_osmose_error['text']['@value'] = error[3]
-        current_osmose_error['fixes']['fix']['relation']['@id'] = error[0]
-        current_osmose_error['fixes']['fix']['relation']['tag']['@k'] = error[1]
-        current_osmose_error['fixes']['fix']['relation']['tag']['@v'] = error[2]
+        current_osmose_error['text']['@value'] = error['label']
+        current_osmose_error['fixes']['fix']['relation']['@id'] = error['id']
+        if 'fix' in error :
+            current_osmose_error['fixes']['fix']['relation']['tag']['@k'] = error['fix'][0]['key'] if 'key' in error['fix'][0] else ''
+            current_osmose_error['fixes']['fix']['relation']['tag']['@v'] = error['fix'][0]['value'] if 'key' in error['fix'][0] else ''
+        else :
+            del current_osmose_error['fixes']
 
         doc['analysers']['analyser']['error'].append(current_osmose_error)
 
@@ -167,8 +194,6 @@ if __name__ == '__main__':
     #create_opendata_csv()
 
     errors = get_errors()
-    for elem in errors :
-        print(elem)
-    # xml = create_osmose_xml(errors)
-    #
-    # print(xml)
+    xml = create_osmose_xml(errors)
+
+    print(xml)

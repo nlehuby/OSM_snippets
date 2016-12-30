@@ -8,9 +8,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
   <script src="assets/OverPassLayer.js"></script>
-  <script src="assets/OBM_js_editor/osmauth.min.js"></script>
-  <script src="assets/OBM_js_editor/auth.js"></script>
-  <script src="assets/OBM_js_editor/OSMAPI.js"></script>
   <script src="assets/osmtogeojson.js"></script>
   <script src="assets/nav_auth.js"></script>
   <script src="assets/easy-button.js"></script>
@@ -192,29 +189,6 @@ $(document).ready(function() {
 });
 
 
-//édition OSM
-function add_stop_to_relation(node_id, relation_id){
-    var osmXml = get_node_or_way(node_id, 'node');
-    edit_tag(osmXml, 'node', "fixme:relation", "add to "+ relation_id);
-    //Open changeset
-    changeset_id = put_changeset();
-    //Send new node/way
-    put_node_or_way(osmXml, changeset_id, node_id, 'node');
-    //Close changeset
-    close_changeset(changeset_id);
-    console.log("arrêt " + node_id.toString() + " marqué comme à ajouter à la relation " + relation_id)
-}
-
-function remove_stop_from_relation(node_id, relation_id){
-    var osmXml = get_node_or_way(node_id, 'node');
-    edit_tag(osmXml, 'node', "fixme:relation", "remove from "+ relation_id);
-    //Open changeset
-    changeset_id = put_changeset();
-    //Send new node/way
-    put_node_or_way(osmXml, changeset_id, node_id, 'node');
-    //Close changeset
-    close_changeset(changeset_id);
-}
 function display_bus_around(){
     center = map.getCenter();
     user_lat = center.lat;
@@ -249,12 +223,12 @@ function display_bus_around(){
 
                     if (already_in)
                         {
-                        geo.features[i].properties['popup_content'] += '<a href="#" onClick="remove_stop_from_relation(' + geo.features[i].properties['id'] + ','+ osm_relation_code +')"> Retirer cet arrêt du parcours </a><br>';
+                        geo.features[i].properties['popup_content'] += '<a target="_blank" href="http://localhost:8111/import?url=http://api.openstreetmap.org/api/0.6/node/'+geo.features[i].properties['id']+'"> Retirer cet arrêt du parcours dans JOSM</a><br>';
                         geo.features[i].properties['icon_url'] = 'assets/blue_bus.png';
                         }
                     else
                         {
-                        geo.features[i].properties['popup_content'] += '<a href="#" onClick="add_stop_to_relation(' + geo.features[i].properties['id'] + ','+ osm_relation_code +')"> Ajouter cet arrêt au parcours  </a><br>';
+                        geo.features[i].properties['popup_content'] += '<a target="_blank" href="http://localhost:8111/import?url=http://api.openstreetmap.org/api/0.6/node/'+geo.features[i].properties['id']+'"> Ajouter cet arrêt au parcours dans JOSM </a><br>';
                         geo.features[i].properties['icon_url'] = 'assets/red_bus.png';
                         }
 

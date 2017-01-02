@@ -8,10 +8,10 @@ var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 
 var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(48.84702,2.37705), 18);
 
-var osm_line_id = getParameterByName('osm_line_id');
-var navitia_line_id = getParameterByName('navitia_line_id');
-// var osm_line_id = 6116962;
-// var navitia_line_id = 'line:OIF:051051013:13OIF377';
+var osm_route_id = getParameterByName('osm_route_id');
+var navitia_route_id = getParameterByName('navitia_route_id');
+ var osm_route_id = 1103965;
+ var navitia_route_id = 'route:OIF:014014011:11';
 
 var tag_to_match = "ref:FR:STIF";
 
@@ -202,7 +202,7 @@ function display_one_navitia_stop(stop_index, placeholder) {
             }
 
             document.getElementById(placeholder).innerHTML = to_html;
-          
+
             stop_img = L.icon({iconUrl: 'assets/img/black_bus.png', popupAnchor: [0, 0]});
             stop_marker = L.marker([navitia_stop['lat'], navitia_stop['lon']], {icon: stop_img});
             stop_marker.addTo(map).bindPopup(to_html);

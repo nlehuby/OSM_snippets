@@ -74,6 +74,10 @@ function display_info(){
             redirect.href="https://parcours-bus.5apps.com/bus_route.htm?osm="+osm_route_list[i]['id']+"&navitia=" +navitia_route_list[j]['id']
             redirect.text=" Rattacher des arrêts"
             redirect.className="button alt small"
+            var redirect = link.appendChild(document.createElement('a'));
+            redirect.href="./stops_by_route.html?osm_route_id="+osm_route_list[i]['id']+"&navitia_route_id=" +navitia_route_list[j]['id']
+            redirect.text=" Ajouter des ref STIF"
+            redirect.className="button small"
             var opendata_route_name = link.appendChild(document.createElement('span'));
             opendata_route_name.innerHTML = " >> opendata : " + navitia_route_list[j]['name'];
         }

@@ -10,8 +10,8 @@ var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(48.84702,2.37705),
 
 var osm_route_id = getParameterByName('osm_route_id');
 var navitia_route_id = getParameterByName('navitia_route_id');
- var osm_route_id = 1103965;
- var navitia_route_id = 'route:OIF:014014011:11';
+// var osm_route_id = 1103965;
+// var navitia_route_id = 'route:OIF:014014011:11';
 
 var tag_to_match = "ref:FR:STIF";
 
@@ -34,14 +34,13 @@ $(document).ready(function() {
            beforeSend: function(xhr) { xhr.setRequestHeader("Authorization", "Basic " + btoa(navitia_api_key + ":" )); }
           });
 
-   get_osm_info_for_this_line(osm_line_id);
+   get_osm_info_for_this_route(osm_route_id);
 });
 
-function get_osm_info_for_this_line(osm_relation_line_id){
-  // on récupère les relations enfants de la relation ligne : ce sont les parcours
+function get_osm_info_for_this_route(osm_relation_route_id){
+  // on vérifie si c'est du transport v1 ou v2
   $.ajax({
-      // [out:json][timeout:25]; relation(107352);rel(r);out tags;
-      url: 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25]; relation('+ osm_relation_line_id +');rel(r);out tags;',
+      url: 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25]; relation('+ osm_relation_route_id +');out tags;',
       dataType: 'json',
       global: true,
       error: function(data) {console.log(data)},
@@ -54,7 +53,8 @@ function get_osm_info_for_this_line(osm_relation_line_id){
             } else if (relation_data['tags']['public_transport:version'] == "1") {
                 params_appel.push({'id':relation_data['id'], 'role': 'stop'})
             } else {
-                alert ('tag public_transport:version manquant')
+                alert ("Le tag public_transport:version n'est pas renseigné. Il est pourtant nécessaire pour récupérer les arrêts de ce parcours !");
+                document.location.href="http://makinacorpus.github.io/osm-transport-editor/#/" + osm_route_id;
             }
           }
           get_stops_from_osm_routes(params_appel )
@@ -103,15 +103,15 @@ function get_stops_from_osm_routes(array_with_routes_and_roles){
       console.log(osm_stop_list)
       //maintenant qu'on a les arrêts OSM, on récupère les arrêts navitia
 
-      get_stops_from_navitia_line(navitia_line_id)
+      get_stops_from_navitia_route(navitia_route_id)
   });
 
 }
 
-function get_stops_from_navitia_line(navitia_line_id){
-    //on récupère tous les arrêts de la ligne navitia
+function get_stops_from_navitia_route(navitia_route_id){
+    //on récupère tous les arrêts du parcours navitia
    $.ajax({
-        url: "https://api.navitia.io/v1/coverage/fr-idf/lines/"+ navitia_line_id +"/stop_points?count=500",
+        url: "https://api.navitia.io/v1/coverage/fr-idf/routes/"+ navitia_route_id +"/stop_points?count=500",
         dataType: 'json',
         global: true,
         error: function(data) {console.log(data)},
@@ -184,7 +184,7 @@ function display_one_navitia_stop(stop_index, placeholder) {
     var navitia_stop = navitia_stop_list[stop_index]
     console.log(navitia_stop)
     $.ajax({
-        url: "https://api.navitia.io/v1/coverage/fr-idf/lines/"+ navitia_line_id +"/stop_points/"+ navitia_stop.id + "/routes?depth=2",
+        url: "https://api.navitia.io/v1/coverage/fr-idf/routes/"+ navitia_route_id +"/stop_points/"+ navitia_stop.id + "/routes?depth=2",
         dataType: 'json',
         global: true,
         error: function(data) {console.log(data);alert("Il y a eu un souci dans l'affichage des données opendata correspondant à cet arrêt")},

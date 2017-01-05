@@ -15,5 +15,6 @@ STIF-to-OSM/assets/third_parties/OBM_js_editor/auth.js
 STIF-to-OSM/assets/third_parties/navitia/nav_auth.js
 STIF-to-OSM/snippets/*
 STIF-to-OSM/TODO
+STIF-to-OSM/data/.factotum
 analyse_ref_STIF/params/*
 analyse_ref_STIF/analyse/*

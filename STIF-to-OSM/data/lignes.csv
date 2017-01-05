@@ -2,7 +2,7 @@
 107352,33,Bus 33 : Les Noues RER (Circulaire),CIF,Les Courriers de l'Île-de-France,#007AC2,route_master,bus,014014033:33
 107354,11,Bus 11 : Victor Basch (Goussainville) ↔ Saint-Denis Porte de Paris,Les Courriers de l'Île-de-France,Keolis CIF,#B456A1,route_master,bus,014014011:11
 107356,32,"Bus 32 : Goussainville, Victor Basch - Roissypole",Les Courriers de l'Île-de-France,Keolis CIF,#B2CE40,route_master,bus,014014032:32
-109875,830000,Ligne de Paris à Marseille,,SNCF Réseau,,route_master,train,
+109875,830 000,Ligne de Paris à Marseille,,SNCF Réseau,,route_master,train,
 122886,C,Train RER C,RER,SNCF,#FCD946,route_master,train,800:C
 225665,170,Bus 170 : Saint-Denis RER ↔ Porte des Lilas,RATP,RATP,#87d3df,route_master,bus,100100170:170
 225800,PC3,PC3 - Bus 99 : Porte Maillot - Pershing ↔ Porte de la Chapelle,RATP,RATP,#ED1B2A,route_master,bus,100100099:PC3
@@ -147,7 +147,7 @@
 1857145,129,Bus 129 : Mairie de Montreuil - Métro ↔ Porte des Lilas - Métro,RATP,RATP,#9B993B,route_master,bus,100100129:129
 1866830,351,Bus 351: Paris-Nation ↔ Roissypole,RATP,RATP,#E0B03B,route_master,bus,100100351:351
 1908344,TGV 101;ICE83,,SNCF TGV;DB InterCityExpress,Alleo GmbH,#5bc109,route_master,train,
-1942584,8,Montmartrobus : Pigalle ↔ Mairie du 18e - Jules Joffrin,RATP,RATP,#98dade,route_master,bus,100100008:MONTMAR
+1942584,08,Montmartrobus : Pigalle ↔ Mairie du 18e - Jules Joffrin,RATP,RATP,#98dade,route_master,bus,100100008:MONTMAR
 1973045,125,Bus 125 : Porte d'Orléans ↔ École vétérinaire de Maisons-Alfort,RATP,RATP,#006CB8,route_master,bus,100100125:125
 1981724,323,Bus 323 : Ivry-Gambetta ↔ Issy-Val de Seine RER,RATP,RATP,#CEC92A,route_master,bus,100100323:323
 1987589,289,Bus 289 : Porte de Saint-Cloud ↔ Clamart - Georges Pompidou,RATP,RATP,#BB4B9C,route_master,bus,100100289:289
@@ -159,7 +159,7 @@
 2198226,,Bus 346 : Rosny 2 – Nord ↔ Le Blanc-Mesnil – Place de la Libération,RATP,RATP,#CEC92B,route_master,bus,100100346:346
 2203904,347,Bus 347 : Pont de Bondy — Avenue de Rosny ↔ Hôtel de Ville de Montfermeil ↔ Hôpital de Montfermeil,RATP,RATP,#BB4B9C,route_master,bus,100100347:347
 2206548,251,Bus 251 : Bobigny — Benoît Frachon ↔ Bobigny — Pablo Picasso ↔ Gare d'Aulnay-sous-Bois RER,RATP,RATP,#ED1B2C,route_master,bus,100100251:251
-2206807,8,Bus 08 : Bobigny — Pablo Picasso ↔ Gare de Meaux,TVF,Veolia Transport,#30BF00,route_master,bus,054054008:8
+2206807,08,Bus 08 : Bobigny — Pablo Picasso ↔ Gare de Meaux,TVF,Veolia Transport,#30BF00,route_master,bus,054054008:8
 2206991,301,Bus 301 : Bobigny — Pablo Picasso ↔ Val de Fontenay RER,RATP,RATP,#CEC92A,route_master,bus,100100301:301
 2207006,148,Bus 148 : Bobigny — Pablo Picasso ↔ Dugny — Musée de l'Air et de l'Espace,RATP,RATP,#8D6539,route_master,bus,100100148:148
 2207036,322,Bus 322 : Mairie de Montreuil ↔ Bobigny — Pablo Picasso,RATP,RATP,#87D3DF,route_master,bus,100100322:322
@@ -226,7 +226,7 @@
 3256314,22,Bus 22 : Villiers-le-Bel RER - Roissypole RER,TransVO,STIF,yellow,route_master,,050050022:22
 3256315,31,Bus 31 : Villiers-le-Bel RER - Aulnay-sous-Bois PSA,TransVO,STIF,white,route_master,,
 3256316,23,Bus 23 : Villiers-le-Bel RER - Parc des Expositions RER,TransVO,STIF,blue,route_master,,050050023:23
-3264340,752000,Ligne de Combs-la-Ville à Saint-Louis,rail,SNCF Réseau,,route_master,train,
+3264340,752 000,Ligne de Combs-la-Ville à Saint-Louis,rail,SNCF Réseau,,route_master,train,
 3281400,TGV 522,TGV 522 : Paris − Dole − Besançon − Mulhouse − Belfort − Freibourg,TGV,SNCF,,route_master,train,
 3286442,408,Bus 408 : Evry - Mairie ↔ Evry - Bras-de-Fer,Tice,Tice,#00FF00,route_master,bus,400400408:408
 3307569,241,Bus 241 : Rueil-Malmaison RER ↔ Porte d'Auteuil,RATP,RATP,#8D653A,route_master,bus,100100241:241
@@ -302,7 +302,7 @@
 5852775,132,Bus 132 : Vitry-sur-Seine - Moulin Vert ↔ Bibliothèque François Mitterrand,RATP,RATP,,route_master,bus,100100132:132
 5865410,196,Bus 196 : Massy–Palaiseau RER ↔ Antony RER,RATP,RATP,,route_master,bus,100100196:196
 5865473,119,Bus 119 : Vauhallan–Abbaye–Cimetière ↔ Les Baconnets RER,RATP,RATP,,route_master,bus,100100119:119
-5873533,,Bus 44 : Gare de Versailles Rive-Gauche ↔ Valibout (Plaisir),,STAVO,,route_master,bus,044044001:44
+5873533,44,Bus 44 : Gare de Versailles Rive-Gauche ↔ Valibout (Plaisir),,STAVO,,route_master,bus,044044001:44
 5890965,95-20,,Valoise,Cars Lacroix,,route_master,bus,030195020:95-20
 5899903,163,Bus 163 : Rueil–Ville ↔ Porte de Champerret,RATP,RATP,#ED1B29,route_master,bus,100100163:163
 5899969,141,Bus 141 : Lycée de Rueil-Malmaison ↔ La Défense,RATP,RATP,#e0b03b,route_master,bus,100100141:141
@@ -344,7 +344,7 @@
 6048347,380,Bus 380 : Villejuif - Louis Aragon ↔ Arcueil - Vache Noire - Centre Commercial,RATP,RATP,,route_master,bus,100100380:380
 6049045,182,Bus 182 : Mairie d'Ivry ↔ Villeneuve–Triage RER,RATP,RATP,#BA4C9B,route_master,bus,100100182:182
 6099640,211,Bus 211 : Chelles 2 ↔ Torcy RER,RATP,RATP,#FFCC01,route_master,bus,100100211:211
-6101989,2,Ligne 02,Pep's,Transdev AMV,,route_master,bus,051051002:02
+6101989,02,Ligne 02,Pep's,Transdev AMV,,route_master,bus,051051002:02
 6116962,13,Ligne 13 : Ozoir-la-Ferrière - Torcy RER,Pep's,Transdev AMV,,route_master,bus,051051013:13
 6116990,15,Ligne 15 : Poincaré SNCF - Mairie de Claye,Pep's,Transdev AMV,,route_master,bus,051051015:15
 6117019,21,Ligne 21 : Torcy RER - Gare de Lagny,Pep's,Transdev AMV,,route_master,bus,051051021:21
@@ -383,7 +383,7 @@
 6744031,37,Bus 37 : Savigny-le-Temple - Nandy Gare RER ↔ Turquoises (Nandy),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487037:37
 6744094,36,Bus 36 : Savigny-le-Temple Gare RER ↔ Cesson Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487036:36
 6744103,41,Bus 41 : Cesson Gare RER ↔ Aubépine (Cesson),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487041:41
-6744194,4,Bus 04 : Le Fresne (Saint-Pierre-du-Perray) ↔ Mairie (Morsang-sur-Seine),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
+6744194,04,Bus 04 : Le Fresne (Saint-Pierre-du-Perray) ↔ Mairie (Morsang-sur-Seine),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
 6744247,DO,Bus DO : Les Grès (Moissy-Cramayel) ↔ Porte de Paris (Lieusaint),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487122:DO
 6744258,DO,Bus DO : Combs Gare RER ↔ Serpentine (Combs-la-Ville),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487122:DO
 6744271,MI,Bus MI : Lieusaint Moissy Gare RER ↔ Lieusaint Moissy Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487129:MI
@@ -402,3 +402,14 @@
 6795568,T1,Tram 1 : Les Courtilles (Asnières – Gennevilliers) ↔ Gare de Noisy-le-Sec,RATP,RATP,#216EB4,route_master,tram,100112011:T1
 6795574,208b,Bus 208b : Champigny–Saint-Maur RER ↔ Le Plessis-Trévise–Place de Verdun,RATP,RATP,#B43C95,route_master,bus,100100208:208B
 6795575,208a,Bus 208a : Champigny–Place de la Résistance ↔ Champigny–Saint-Maur RER,RATP,RATP,#B43C95,route_master,bus,100100208:208A
+6827371,238,Bus 238 : Saint-Gratien RER ↔ Pont de Levallois,RATP,RATP,#FF82B4,route_master,bus,
+6835726,361,Bus 361 : Gare d'Argenteuil ↔ Pierrefitte–Stains RER,RATP,RATP,#3445C6,route_master,bus,
+6839230,7,Bus 7 : Droits de l’Homme ↔ Rû de Gally,Phébus,Keolis Yvelines,#F5777B,route_master,bus,
+6839258,6,Bus 6 : Gare de Saint-Cyr ↔ Gare de Saint-Cyr,Phébus,Keolis Yvelines,#7A1D90,route_master,bus,
+6839305,FA,Bus FA : Clos Salibert (Saint-Nom la Breteche) ↔ Lycée Franco-Allemand (Buc),STAVO,STAVO,,route_master,bus,
+6839321,1,Bus 1 : Gare de Saint-Cyr ↔ Gare de Saint-Cyr,Phébus,Keolis Yvelines,#AED4A6,route_master,bus,
+6839342,2,Bus 2 : Gare de Saint-Cyr ↔ Gare de Saint-Cyr,Phébus,Keolis Yvelines,#96A0C8,route_master,bus,
+6839430,4,Bus 4 : Gare de Saint-Cyr ↔ Gare de Saint-Cyr,Phébus,Keolis Yvelines,#F89D0E,route_master,bus,
+6839434,5,Bus 5 : Gare de Saint-Cyr ↔ Gare de Saint-Cyr,Phébus,Keolis Yvelines,#F89D0E,route_master,bus,
+6839477,3,Bus 3 : Gare de Saint-Cyr ↔ Gare de Saint-Cyr,Phébus,Keolis Yvelines,#F89D0E,route_master,bus,
+6839504,DF,Bus DF : Plaisir-Grignon ↔ Gare de Versailles Rive Gauche,Hourtoule,Cars Hourtoule,,route_master,bus,

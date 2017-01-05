@@ -1,0 +1,85 @@
+{
+    "schema": "iglu:com.snowplowanalytics.factotum/factfile/jsonschema/1-0-0",
+    "data": {
+        "name": "get all lines of idf",
+        "tasks": [
+            {
+                "name": "download",
+                "executor": "shell",
+                "command": "wget http://download.geofabrik.de/europe/france/ile-de-france-latest.osm.pbf --no-verbose 2>&1",
+                "arguments": [ ],
+                "dependsOn": [],
+                "onResult": {
+                    "terminateJobWithSuccess": [ ],
+                    "continueJob": [ 0 ]
+                }
+            },
+            {
+                "name": "rename",
+                "executor": "shell",
+                "command": "mv ile-de-france-latest.osm.pbf fr-idf.osm.pbf",
+                "arguments": [ ],
+                "dependsOn": ["download"],
+                "onResult": {
+                    "terminateJobWithSuccess": [ ],
+                    "continueJob": [ 0 ]
+                }
+            },
+            {
+                "name": "extract route master",
+                "executor": "shell",
+                "command": "/home/pclf/app/osmosis/bin/osmosis --read-pbf fr-idf.osm.pbf --tf accept-relations type=route_master --used-way --used-node --write-pbf lignes.osm.pbf 2>&1",
+                "arguments": [ ],
+                "dependsOn": [ "rename" ],
+                "onResult": {
+                    "terminateJobWithSuccess": [ ],
+                    "continueJob": [ 0 ]
+                }
+            },
+            {
+                "name": "csv",
+                "executor": "shell",
+                "command": "/home/pclf/app/osmconvert64 lignes.osm.pbf --csv='@id ref name network operator colour type route_master ref:FR:STIF:ExternalCode_Line' --csv-headline > lignes_tofilter.csv",
+                "arguments": [ ],
+                "dependsOn": [ "extract route master" ],
+                "onResult": {
+                    "terminateJobWithSuccess": [ ],
+                    "continueJob": [ 0 ]
+                }
+            },
+            {
+                "name": "filter csv",
+                "executor": "shell",
+                "command": "cat lignes_tofilter.csv |/home/pclf/app/xsv/xsv search -s type route_master -d '\t'>lignes.csv ",
+                "arguments": [ ],
+                "dependsOn": [ "csv" ],
+                "onResult": {
+                    "terminateJobWithSuccess": [ ],
+                    "continueJob": [ 0 ]
+                }
+            },
+            {
+                "name": "clean temp pbf",
+                "executor": "shell",
+                "command": "rm *.osm.pbf",
+                "arguments": [ ],
+                "dependsOn": [ "csv" ],
+                "onResult": {
+                    "terminateJobWithSuccess": [ ],
+                    "continueJob": [ 0 ]
+                }
+            },
+            {
+                "name": "clean temp csv",
+                "executor": "shell",
+                "command": "rm lignes_tofilter.csv",
+                "arguments": [ ],
+                "dependsOn": [ "filter csv" ],
+                "onResult": {
+                    "terminateJobWithSuccess": [ ],
+                    "continueJob": [ 0 ]
+                }
+            }
+        ]
+    }
+}

@@ -154,7 +154,7 @@ function display_one_osm_stop(stop_index) {
 
     stop_img = L.icon({iconUrl: 'assets/img/blue_bus.png', popupAnchor: [0, 0]});
     stop_marker = L.marker([osm_stop['lat'], osm_stop['lon']], {icon: stop_img});
-    stop_marker.addTo(map).bindPopup("OSM "+to_html + to_html_);
+    stop_marker.addTo(map).bindPopup("OSM "+to_html + "<br>ref:FR:STIF : " + to_html_);
     map.panTo([osm_stop['lat'], osm_stop['lon']]);
 
     display_navitia_candidates_for_this_stop(osm_stop)
@@ -189,7 +189,7 @@ function display_one_navitia_stop(stop_index, placeholder) {
         error: function(data) {console.log(data);alert("Il y a eu un souci dans l'affichage des données opendata correspondant à cet arrêt")},
         success: function(data) {
             console.log(navitia_stop)
-            var to_html = "<h3>" + navitia_stop.name + " ("+ navitia_stop.ref + ")</h3>";
+            var to_html = "<h3>" + navitia_stop.name + "<br>(ref:FR:STIF : "+ navitia_stop.ref + ")</h3>";
 
             for (j = 0; j < data['routes'].length; j++) {
               var network = data['routes'][j]['line']['network']['name'];

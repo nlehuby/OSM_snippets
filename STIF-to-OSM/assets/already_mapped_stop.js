@@ -127,7 +127,7 @@ function on_navitia_stop(whole_navitia_info){
           stop_ref_opendata = stop_codes[j]['value']
       }
   }
-  stop_name += " - ref : " + stop_ref_opendata;
+  stop_name += " - ref:FR:STIF : " + stop_ref_opendata;
 
   get_navitia_routes_at_this_stop(stop_id, stop_name)
 

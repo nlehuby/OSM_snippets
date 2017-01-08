@@ -147,15 +147,14 @@ function display_one_osm_stop(stop_index) {
 
     if (osm_stop.ref){
         to_html_ = "<a href='./stop.html?osm_stop_id="+osm_stop.id+"' target='_blank'> " + osm_stop.ref + "</a>"
-        document.getElementById("osm_ref_match").innerHTML = to_html_;
     } else {
-        document.getElementById("osm_ref_match").innerHTML = "<i>Pas encore de ref</i>";
+        to_html_ = "<i>Pas encore de ref</i>";
     }
-
+    document.getElementById("osm_ref_match").innerHTML = to_html_;
 
     stop_img = L.icon({iconUrl: 'assets/img/blue_bus.png', popupAnchor: [0, 0]});
     stop_marker = L.marker([osm_stop['lat'], osm_stop['lon']], {icon: stop_img});
-    stop_marker.addTo(map).bindPopup(to_html);
+    stop_marker.addTo(map).bindPopup("OSM "+to_html + to_html_);
     map.panTo([osm_stop['lat'], osm_stop['lon']]);
 
     display_navitia_candidates_for_this_stop(osm_stop)
@@ -166,12 +165,12 @@ function display_navitia_candidates_for_this_stop(osm_stop_info) {
     //trier les arrêts navitia par distance par rapport au point osm
     var position = turf.point([osm_stop_info.lon, osm_stop_info.lat]);
     navitia_stop_list.sort(function(a,b){
-      var locA  = turf.point([a.lon, a.lat]);
-      var locB  = turf.point([b.lon, b.lat]);
+    var locA  = turf.point([a.lon, a.lat]);
+    var locB  = turf.point([b.lon, b.lat]);
 
-      var distanceA = turf.distance(position, locA, 'kilometers');
-      var distanceB = turf.distance(position, locB, 'kilometers');
-      return distanceA - distanceB;
+    var distanceA = turf.distance(position, locA, 'kilometers');
+    var distanceB = turf.distance(position, locB, 'kilometers');
+    return distanceA - distanceB;
     });
 
     //afficher les deux plus proches
@@ -205,7 +204,7 @@ function display_one_navitia_stop(stop_index, placeholder) {
 
             stop_img = L.icon({iconUrl: 'assets/img/black_bus.png', popupAnchor: [0, 0]});
             stop_marker = L.marker([navitia_stop['lat'], navitia_stop['lon']], {icon: stop_img});
-            stop_marker.addTo(map).bindPopup(to_html);
+            stop_marker.addTo(map).bindPopup('opendata' + to_html);
             }
         });
 

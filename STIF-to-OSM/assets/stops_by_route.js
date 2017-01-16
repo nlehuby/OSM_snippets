@@ -7,6 +7,7 @@ attr_overpass = 'stops from <a href="http://www.overpass-api.de/">Overpass API</
 var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {opacity: 0.7, attribution: [attr_osm, attr_overpass].join(', ')});
 
 var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(48.84702,2.37705), 18);
+L.control.scale().addTo(map);
 
 var osm_route_id = getParameterByName('osm_route_id');
 var navitia_route_id = getParameterByName('navitia_route_id');

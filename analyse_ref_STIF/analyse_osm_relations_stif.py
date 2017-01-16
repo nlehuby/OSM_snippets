@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import requests
-import re
 import csv
 import json
 import xmltodict

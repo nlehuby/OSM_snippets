@@ -1,0 +1,107 @@
+{
+    "schema": "iglu:com.snowplowanalytics.factotum/factfile/jsonschema/1-0-0",
+    "data": {
+        "name": "get all nodes with ref:FR:STIF in idf",
+        "tasks": [
+            {
+                "name": "download OSM",
+                "executor": "shell",
+                "command": "wget http://download.geofabrik.de/europe/france/ile-de-france-latest.osm.pbf --no-verbose 2>&1",
+                "arguments": [ ],
+                "dependsOn": [],
+                "onResult": {
+                    "terminateJobWithSuccess": [ ],
+                    "continueJob": [ 0 ]
+                }
+            },
+            {
+                "name": "rename OSM",
+                "executor": "shell",
+                "command": "mv ile-de-france-latest.osm.pbf fr-idf.osm.pbf",
+                "arguments": [ ],
+                "dependsOn": ["download OSM"],
+                "onResult": {
+                    "terminateJobWithSuccess": [ ],
+                    "continueJob": [ 0 ]
+                }
+            },
+            {
+                "name": "extract ref:FR:STIF from OSM",
+                "executor": "shell",
+                "command": "/home/pclf/app/osmosis/bin/osmosis --read-pbf fr-idf.osm.pbf --nk keyList='ref:FR:STIF' --write-pbf ref_nodes.osm.pbf 2>&1",
+                "arguments": [ ],
+                "dependsOn": [ "rename OSM" ],
+                "onResult": {
+                    "terminateJobWithSuccess": [ ],
+                    "continueJob": [ 0 ]
+                }
+            },
+            {
+                "name": "csv OSM",
+                "executor": "shell",
+                "command": "/home/pclf/app/osmconvert64 ref_nodes.osm.pbf --csv='@oname @id @lat @lon name ref:FR:STIF' --csv-headline --csv-separator=',' -o=ref_stif.csv",
+                "arguments": [ ],
+                "dependsOn": [ "extract ref:FR:STIF from OSM" ],
+                "onResult": {
+                    "terminateJobWithSuccess": [ ],
+                    "continueJob": [ 0 ]
+                }
+            },
+            {
+                "name": "clean temp pbf",
+                "executor": "shell",
+                "command": "rm *.osm.pbf",
+                "arguments": [ ],
+                "dependsOn": [ "csv OSM" ],
+                "onResult": {
+                    "terminateJobWithSuccess": [ ],
+                    "continueJob": [ 0 ]
+                }
+            },
+            {
+                "name": "download opendata",
+                "executor": "shell",
+                "command": "wget https://navitia.opendatasoft.com/api/datasets/1.0/fr-idf/images/14bd1111dd3d3e845924bb0876e175b1 --no-verbose -O fr-idf_oif_stif.zip 2>&1",
+                "arguments": [ ],
+                "dependsOn": [  ],
+                "onResult": {
+                    "terminateJobWithSuccess": [ ],
+                    "continueJob": [ 0 ]
+                }
+            },
+            {
+                "name": "unzip opendata",
+                "executor": "shell",
+                "command": "unzip fr-idf_oif_stif.zip -d fr_idf",
+                "arguments": [ ],
+                "dependsOn": [ "download opendata" ],
+                "onResult": {
+                    "terminateJobWithSuccess": [ ],
+                    "continueJob": [ 0 ]
+                }
+            },
+            {
+                "name": "get stop_extensions",
+                "executor": "shell",
+                "command": "mv fr_idf/stop_extensions.txt stop_extensions.txt",
+                "arguments": [ ],
+                "dependsOn": [ "unzip opendata" ],
+                "onResult": {
+                    "terminateJobWithSuccess": [ ],
+                    "continueJob": [ 0 ]
+                }
+            },
+            {
+                "name": "rm temp files opendata",
+                "executor": "shell",
+                "command": "rm fr-idf_oif_stif.zip && rm -R fr_idf",
+                "arguments": [ ],
+                "dependsOn": [ "get stop_extensions" ],
+                "onResult": {
+                    "terminateJobWithSuccess": [ ],
+                    "continueJob": [ 0 ]
+                }
+            }
+        ]
+    }
+}

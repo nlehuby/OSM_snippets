@@ -44,9 +44,7 @@
     </error>
     <error class="1">
       <location lat="43.2899342" lon="5.3618622" />
-      <node version="3" user="FrançoiseR" lat="43.2899342" lon="5.3618622" id="33806225">
-        <tag k="noexit" v="yes" />
-      </node>
+      <node id="33806225"></node>
       <text lang="en" value="Tag power_source is deprecated: generator:source" />
       <fixes>
         <fix>

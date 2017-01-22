@@ -12,43 +12,49 @@ var osm_route_list = [];
 
 $(document).ready(function() {
     //authentification navitia
-    $.ajaxSetup( {
-           beforeSend: function(xhr) { xhr.setRequestHeader("Authorization", "Basic " + btoa(navitia_api_key + ":" )); }
-          });
+    $.ajaxSetup({
+        beforeSend: function(xhr) {
+            xhr.setRequestHeader("Authorization", "Basic " + btoa(navitia_api_key + ":"));
+        }
+    });
 
-   get_osm_routes_for_this_line(osm_line_id);
+    get_osm_routes_for_this_line(osm_line_id);
 });
 
-function get_osm_routes_for_this_line(osm_relation_line_id){
-  // on récupère les relations enfants de la relation ligne : ce sont les parcours
-  $.ajax({
-      // [out:json][timeout:25]; relation(107352);rel(r);out tags;
-      url: 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25]; relation('+ osm_relation_line_id +');rel(r);out tags;',
-      dataType: 'json',
-      global: true,
-      error: function(data) {console.log(data)},
-      success: function(data) {
-          for (i = 0; i < data['elements'].length; i++) {
-            relation_data = data['elements'][i]
-            osm_route_list.push(relation_data)
-          }
-          get_navitia_routes_for_this_line(navitia_line_id)
-      }
-  });
-}
-
-function get_navitia_routes_for_this_line(navitia_line_id){
-    //on récupère les parcours de la ligne navitia
-   $.ajax({
-        url: "https://api.navitia.io/v1/coverage/fr-idf/lines/"+ navitia_line_id +"/routes?depth=2",
+function get_osm_routes_for_this_line(osm_relation_line_id) {
+    // on récupère les relations enfants de la relation ligne : ce sont les parcours
+    $.ajax({
+        // [out:json][timeout:25]; relation(107352);rel(r);out tags;
+        url: 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25]; relation(' + osm_relation_line_id + ');rel(r);out tags;',
         dataType: 'json',
         global: true,
-        error: function(data) {console.log(data)},
+        error: function(data) {
+            console.log(data)
+        },
+        success: function(data) {
+            for (i = 0; i < data['elements'].length; i++) {
+                relation_data = data['elements'][i]
+                osm_route_list.push(relation_data)
+            }
+            get_navitia_routes_for_this_line(navitia_line_id)
+        }
+    });
+}
+
+function get_navitia_routes_for_this_line(navitia_line_id) {
+    //on récupère les parcours de la ligne navitia
+    $.ajax({
+        url: "https://api.navitia.io/v1/coverage/fr-idf/lines/" + navitia_line_id + "/routes?depth=2",
+        dataType: 'json',
+        global: true,
+        error: function(data) {
+            console.log(data)
+        },
         success: function(data) {
             for (i = 0; i < data['routes'].length; i++) {
                 var route_content = {}
                 route_content['id'] = data['routes'][i]['id'];
-                route_content['name'] = data['routes'][i]['line']['commercial_mode']['name'] + " " + data['routes'][i]['line']['code'] ;
+                route_content['name'] = data['routes'][i]['line']['commercial_mode']['name'] + " " + data['routes'][i]['line']['code'];
                 route_content['name'] += " : " + data['routes'][i]['name'] + "  "
                 navitia_route_list.push(route_content)
             }
@@ -57,7 +63,7 @@ function get_navitia_routes_for_this_line(navitia_line_id){
     });
 }
 
-function display_info(){
+function display_info() {
     var listings = document.getElementById('osm_route_list');
 
     for (i = 0; i < osm_route_list.length; i++) {
@@ -71,15 +77,12 @@ function display_info(){
             console.log(navitia_route_list[j])
             var link = osm_route.appendChild(document.createElement('p'));
             var redirect = link.appendChild(document.createElement('a'));
-            redirect.href="https://parcours-bus.5apps.com/bus_route.htm?osm="+osm_route_list[i]['id']+"&navitia=" +navitia_route_list[j]['id']
-            redirect.text=" Rattacher des arrêts"
-            redirect.className="button alt small"
-            var redirect = link.appendChild(document.createElement('a'));
-            redirect.href="./stops_by_route.html?osm_route_id="+osm_route_list[i]['id']+"&navitia_route_id=" +navitia_route_list[j]['id']
-            redirect.text=" Ajouter des ref STIF"
-            redirect.className="button small"
+            redirect.href = "./stops_by_route.html?osm_route_id=" + osm_route_list[i]['id'] + "&navitia_route_id=" + navitia_route_list[j]['id']
+            redirect.text = " Ajouter des ref STIF"
+            redirect.className = "button small"
             var opendata_route_name = link.appendChild(document.createElement('span'));
-            opendata_route_name.innerHTML = " >> opendata : " + navitia_route_list[j]['name'];
+            parcours_bus_link = "https://parcours-bus.5apps.com/bus_route.htm?osm=" + osm_route_list[i]['id'] + "&navitia=" + navitia_route_list[j]['id'];
+            opendata_route_name.innerHTML = " >> opendata : <a href='" + parcours_bus_link + "' target='_blank'>" + navitia_route_list[j]['name'] + "<a>";
         }
     }
 }

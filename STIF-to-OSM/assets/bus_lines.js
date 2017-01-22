@@ -122,6 +122,9 @@ function on_navitia_lines_candidates(whole_navitia_info) {
     document.getElementById("navitia_lines_count").innerHTML = whole_navitia_info['pagination']['total_result'];
     if (whole_navitia_info['pagination']['total_result'] == "1") {
         document.getElementById('next_navitia_candidate_button').style.display = 'none';
+        var link_to_route_choose = document.getElementById('link_to_route_choose')
+        link_to_route_choose.style.display = 'block';
+        link_to_route_choose.href = "./route_choose.html?osm_line_id=" + osm_relation_code + "&navitia_line_id=" + whole_navitia_info['lines'][0]['id']
     }
 }
 
@@ -196,11 +199,6 @@ function get_osm_line_info(relation_id) {
                 is_there_a_match.innerHTML = "Association OK"
                 get_navitia_lines_by_ref_id(relation['tags'][tag_to_match]);
                 document.getElementById('add_navitia_ref_to_osm').style.display = 'none';
-                var link_to_route_choose = document.getElementById('link_to_route_choose')
-                link_to_route_choose.style.display = 'block';
-                link_to_route_choose.href = "./route_choose.html?osm_line_id=" + osm_relation_code + "&navitia_line_id=" + whole_navitia_info['lines'][0]['id']
-                    //link_to_stop.href = "./stops_by_line.html?osm_line_id=" +osm_relation_code+ "&navitia_line_id=" + whole_navitia_info['lines'][0]['id']
-
             }
             //transformation en geojson
             geo = osmtogeojson(data);

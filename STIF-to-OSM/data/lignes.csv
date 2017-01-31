@@ -2,7 +2,6 @@
 107352,33,Bus 33 : Les Noues RER (Circulaire),CIF,Les Courriers de l'Île-de-France,#007AC2,route_master,bus,014014033:33
 107354,11,Bus 11 : Victor Basch (Goussainville) ↔ Saint-Denis Porte de Paris,Les Courriers de l'Île-de-France,Keolis CIF,#B456A1,route_master,bus,014014011:11
 107356,32,"Bus 32 : Goussainville, Victor Basch - Roissypole",Les Courriers de l'Île-de-France,Keolis CIF,#B2CE40,route_master,bus,014014032:32
-109875,830 000,Ligne de Paris à Marseille,,SNCF Réseau,,route_master,train,
 122886,C,Train RER C,RER,SNCF,#FCD946,route_master,train,800:C
 225665,170,Bus 170 : Saint-Denis RER ↔ Porte des Lilas,RATP,RATP,#87d3df,route_master,bus,100100170:170
 225800,PC3,PC3 - Bus 99 : Porte Maillot - Pershing ↔ Porte de la Chapelle,RATP,RATP,#ED1B2A,route_master,bus,100100099:PC3
@@ -27,7 +26,7 @@
 1057567,43,Bus 43 : Neuilly-sur-Seine — Bagatelle ↔ Gare du Nord,RATP,RATP,#EB1B26,route_master,bus,100100043:43
 1057570,42,Bus 42 : Hôpital Européen Georges Pompidou − Gare du Nord,RATP,RATP,#0163B1,route_master,bus,100100042:42
 1057573,47,Bus 47 : Gare de l'Est ↔ Le Kremlin-Bicêtre - Fort du Kremlin-Bicêtre,RATP,RATP,#F496AB,route_master,bus,100100047:47
-1057577,39,Bus 39 : Issy-les-Moulineaux — Frères Voisin ↔ Gare du Nord,RATP,RATP,#BB4A9B,route_master,bus,100100039:39
+1057577,39,Bus 39 : Frères Voisin (Issy-les-Moulineaux) ↔ Gare du Nord,RATP,RATP,#BB4A9B,route_master,bus,100100039:39
 1066570,67,Bus 67 : Pigalle ↔ Stade Charléty - Porte de Gentilly,RATP,RATP,#F59EB3,route_master,bus,100100067:67
 1066571,75,Bus 75 : Pont Neuf ↔ Porte de Pantin,RATP,RATP,#FCCA06,route_master,bus,100100075:75
 1066572,20,Bus 20 : Gare Saint-Lazare ↔ Gare de Lyon,RATP,RATP,#F78F4B,route_master,bus,100100020:20
@@ -146,13 +145,12 @@
 1842753,,Bus 4 : Gare d'Argenteuil ↔ Gare de Houilles Carrières-sur-Seine,R'bus,Véolia Transport,#97bf0c,route_master,,016016004:4
 1857145,129,Bus 129 : Mairie de Montreuil - Métro ↔ Porte des Lilas - Métro,RATP,RATP,#9B993B,route_master,bus,100100129:129
 1866830,351,Bus 351: Paris-Nation ↔ Roissypole,RATP,RATP,#E0B03B,route_master,bus,100100351:351
-1908344,TGV 101;ICE83,,SNCF TGV;DB InterCityExpress,Alleo GmbH,#5bc109,route_master,train,
 1942584,08,Montmartrobus : Pigalle ↔ Mairie du 18e - Jules Joffrin,RATP,RATP,#98dade,route_master,bus,100100008:MONTMAR
 1973045,125,Bus 125 : Porte d'Orléans ↔ École vétérinaire de Maisons-Alfort,RATP,RATP,#006CB8,route_master,bus,100100125:125
 1981724,323,Bus 323 : Ivry-Gambetta ↔ Issy-Val de Seine RER,RATP,RATP,#CEC92A,route_master,bus,100100323:323
 1987589,289,Bus 289 : Porte de Saint-Cloud ↔ Clamart - Georges Pompidou,RATP,RATP,#BB4B9C,route_master,bus,100100289:289
 1991746,162,Bus 162 : Meudon val fleury RER ↔ Villejuif Louis Aragon Métro,,RATP,#0064B1,route_master,bus,100100162:162
-2070287,PAN,,icn,,,route_master,bicycle,
+2070287,PAN,Route Paris-Prague,icn,,,route_master,bicycle,
 2171714,146,Bus 146 : Montfermeil - Les Bosquets ↔ Le Bourget,RATP,RATP,#C5A3CC,route_master,bus,100100146:146
 2171896,303,Bus 303 : Noisy-le-Grand RER ↔ Bobigny — Pablo Picasso,RATP,RATP,#9B993B,route_master,bus,100100303:303
 2196022,701,Bus 701 : Le Chênay Gagny RER ↔ Sainte-Clotilde,Autobus du Fort,Veolia Transport,#005AA1,route_master,bus,233233701:701
@@ -178,7 +176,6 @@
 2390087,10,Bus 10: Gif ↔ Buc,,Mobicaps,,route_master,bus,039039004:10
 2415100,1,Bus 1 :Gare d’Igny RER ↔ Gare d’Orsay-Ville RER,Mobicaps,Cars d'Orsay - Transdev,#DF213B,route_master,bus,006006010:1
 2440114,14,Bus 14 : Gare de Massy-Palaiseau RER ↔ Gare de Palaiseau-Villebon RER ↔ Ecole Polytechnique,Mobicaps,Cars d'Orsay - Transdev,#65C1ED,route_master,bus,006006014:14
-2445543,ICE82,ICE82 Frankfurt - Saarbrücken - Paris,DB InterCityExpress,DB Fernverkehr,,route_master,train,
 2454326,6,Bus 6 : Campus d’Orsay - Jean Monet ↔ Gare d’Orsay-Ville RER,Mobicaps,Cars d'Orsay - Transdev,#986AAD,route_master,bus,006006007:6
 2506803,M,Bus M : Vaucresson Gare ↔ Le Chesnay Passy,Phébus,SVTU,#B98545,route_master,bus,056356009:M
 2531065,22,Bus 22 : Villiers-le-Bel ↔ Gonesse ↔ Roissypole,TransVO,TransVO,,route_master,bus,050050022:22
@@ -225,8 +222,6 @@
 3256314,22,Bus 22 : Villiers-le-Bel RER - Roissypole RER,TransVO,STIF,yellow,route_master,,050050022:22
 3256315,31,Bus 31 : Villiers-le-Bel RER - Aulnay-sous-Bois PSA,TransVO,STIF,white,route_master,,
 3256316,23,Bus 23 : Villiers-le-Bel RER - Parc des Expositions RER,TransVO,STIF,blue,route_master,,050050023:23
-3264340,752 000,Ligne de Combs-la-Ville à Saint-Louis,rail,SNCF Réseau,,route_master,train,
-3281400,TGV 522,TGV 522 : Paris − Dole − Besançon − Mulhouse − Belfort − Freibourg,TGV,SNCF,,route_master,train,
 3286442,408,Bus 408 : Evry - Mairie ↔ Evry - Bras-de-Fer,Tice,Tice,#00FF00,route_master,bus,400400408:408
 3307569,241,Bus 241 : Rueil-Malmaison RER ↔ Porte d'Auteuil,RATP,RATP,#8D653A,route_master,bus,100100241:241
 3315045,156,Bus 156 : Gare d'Epinay–Villetaneuse ↔ Villetaneuse - Université Paris XIII,RATP,RATP,#FFCD02,route_master,bus,100100156:156
@@ -269,7 +264,6 @@
 4772628,133,Bus 133 : Le Bourget RER ↔ Sarcelles–Bois d’Écouen,RATP,RATP,#77C695,route_master,,100100133:133
 4779679,143,Bus 143 : La Courneuve–Aubervilliers RER ↔ Rosny-sous-Bois RER,RATP,RATP,#006EB8,route_master,bus,100100143:143
 4799452,134,Bus 134 : Fort d'Aubervilliers ↔ Bondy–Jouhaux Blum,RATP,RATP,#F59FB3,route_master,,100100134:134
-5189990,Thalys,Thalys : Paris − Amsterdam,Thalys,Thalys International,#aa2135,route_master,train,
 5226660,255,Bus 255 : Porte de Clignancourt ↔ Stains–Les Prévoyants,RATP,,#6B7105,route_master,bus,100100255:255
 5256555,188,Bus 188 : Bagneux - Rosenberg ↔ Porte d'Orléans,RATP,RATP,#BF9BC7,route_master,bus,100100188:188
 5312582,391,Bus 391 : Gare de Vanves–Malakoff <-> Pont Royal RER,RATP,RATP,#CEC92B,route_master,bus,100100391:391
@@ -312,10 +306,6 @@
 5931478,4,Bus 4 : Gare RER Sucy-Bonneuil ↔ Lycée de Sucy-en-Brie,SITUS,Transdev SETRA,,route_master,bus,040240004:4
 5931514,3,Bus 3 : Gare RER Sucy-Bonneuil ↔ Jacques Prévert (Noiseau),SITUS,Transdev SETRA,,route_master,bus,040240003:3
 5931547,10,Bus 10 : Gare RER Sucy-Bonneuil ↔ Les Cantoux (Ormesson-sur-Marne),SITUS,Transdev SETRA,,route_master,bus,040240010:10
-5936749,TGV 726,TGV 726 : Bruxelles − Lille − Lyon/Mulhouse,TGV,SNCF,#e55c00,route_master,train,
-5950575,Thalys;DB InterCityExpress,Thalys : Paris − Dortmund,Thalys;DB InterCityExpress,Thalys International,#aa2135,route_master,train,
-5951793,ES,Eurostar : Londres − Disneyland Paris,Eurostar,Eurostar International Ltd,#011633,route_master,train,
-5951794,ES,Eurostar : Paris − Londres,Eurostar,Eurostar International Ltd,#011633,route_master,train,
 5953338,140,Bus 140 : Gare d'Argenteuil ↔ Asnières-Gennevilliers - Gabriel Péri,RATP,RATP,#ED1B2A,route_master,bus,100100140:140
 5953399,108,Bus 108 : Champigny - Jeanne Vacher ↔ Joinville-Le-Pont,RATP,RATP,#F59EB3,route_master,bus,100100108:108
 5954679,189,Bus 189 : Clamart–Georges Pompidou ↔ Porte de Saint-Cloud,RATP,RATP,#F78F4B,route_master,bus,100100189:189
@@ -361,9 +351,6 @@
 6161018,43,bus 43 : Gare de Sevran Livry ↔ Aéroport CDG1 RER B,Courriers de l'Île-de-France,Keolis CIF,#980D7D,route_master,bus,014014043:43
 6163294,15,Bus 15 : Gare RER d'Aulnay-sous-Bois ↔ Jaurès (Tremblay-en-France),Les Courriers de l'Île-de-France,Keolis CIF,#0054A0,route_master,bus,014014015:15
 6163356,19,Bus 19 : Marché (Villeparisis) ↔ Clos Marchais (Le Pin),Les Courriers de l'Île-de-France,Keolis CIF,#009036,route_master,bus,014014019:19
-6166349,TGV Lyria: Paris - Genève - Lausanne,,TGV Lyria,SNCF,,route_master,train,
-6166350,TGV Lyria: Paris - Lausanne,,TGV Lyria,SNCF,,route_master,train,
-6166722,IC 102,,Intercités,SNCF,,route_master,train,
 6355936,321,Bus 321 : Aérodrome de Lognes ↔ Croissy-Beaubourg,RATP,RATP,#FFCD02,route_master,bus,100100321:321
 6434505,N53,Noctilien N53 : Gare Saint-Lazare ↔ Nanterre-Université RER,Noctilien,RATP, #77C695,route_master,,100987770:N53
 6520401,10,Bus 10 : Victor Hugo (Brie-Comte-Robert) ↔ Gare de Noisiel,Arlequin,SETRA,,route_master,bus,040040010:10
@@ -396,14 +383,13 @@
 6785380,108,Bus 108 : ZI Croix Blanche ↔ Porte d'Orléans,Génovébus,Transdev CEAT,,route_master,bus,010010007:108
 6785512,402,Bus 402 : Terminal David Douillet (Le Coudray-Montceaux) ↔ La Treille (Viry-Châtillon),TICE,TICE,,route_master,bus,400400402:402
 6785602,420,Bus 420 : Grigny - Centre RER ↔ Gare RER d'Épinay-sur-Orge,TICE,TICE,,route_master,bus,400400420:420
-6786094,TGV 715,TGV 715 : Bordeaux/Rennes/Nantes ⇆ Strasbourg,TGV,SNCF,#e55c00,route_master,train,
 6789691,N21,Noctilien N21 : Châtelet ↔ Chilly-Mazarin,Noctilien,RATP,#77C695,route_master,bus,100987760:N21
 6795568,T1,Tram 1 : Les Courtilles (Asnières – Gennevilliers) ↔ Gare de Noisy-le-Sec,RATP,RATP,#216EB4,route_master,tram,100112011:T1
 6795574,208b,Bus 208b : Champigny–Saint-Maur RER ↔ Le Plessis-Trévise–Place de Verdun,RATP,RATP,#B43C95,route_master,bus,100100208:208B
 6795575,208a,Bus 208a : Champigny–Place de la Résistance ↔ Champigny–Saint-Maur RER,RATP,RATP,#B43C95,route_master,bus,100100208:208A
-6827371,238,Bus 238 : Saint-Gratien RER ↔ Pont de Levallois,RATP,RATP,#FF82B4,route_master,bus,
-6835726,361,Bus 361 : Gare d'Argenteuil ↔ Pierrefitte–Stains RER,RATP,RATP,#3445C6,route_master,bus,
-6839230,7,Bus 7 : Droits de l’Homme ↔ Rû de Gally,Phébus,Keolis Yvelines,#F5777B,route_master,bus,
+6827371,238,Bus 238 : Saint-Gratien RER ↔ Pont de Levallois,RATP,RATP,#FF82B4,route_master,bus,100100238:238
+6835726,361,Bus 361 : Gare d'Argenteuil ↔ Pierrefitte–Stains RER,RATP,RATP,#3445C6,route_master,bus,100100361:361
+6839230,7,Bus 7 : Droits de l’Homme ↔ Rû de Gally,Phébus,Keolis Yvelines,#F5777B,route_master,bus,078078007:7
 6839258,6,Bus 6 : Gare de Saint-Cyr ↔ Gare de Saint-Cyr,Phébus,Keolis Yvelines,#7A1D90,route_master,bus,
 6839305,FA,Bus FA : Clos Salibert (Saint-Nom la Breteche) ↔ Lycée Franco-Allemand (Buc),STAVO,STAVO,,route_master,bus,
 6839321,1,Bus 1 : Gare de Saint-Cyr ↔ Gare de Saint-Cyr,Phébus,Keolis Yvelines,#AED4A6,route_master,bus,
@@ -428,8 +414,21 @@
 6883314,Licorne,Bus Licorne : La Fresnaie ↔ Foyer Jean Rostand,Athis Cars,Keolis Seine Val-de-Marne,#D6188A,route_master,bus,
 6883352,Centaure,Bus Centaure : Gare de Villeneuve-le-Roi ↔ Gare de Villeneuve-le-Roi,Athis Cars,Keolis Seine Val-de-Marne,#79AF9A,route_master,bus,
 6883353,Bord de l'Eau,Bus Bord de l'Eau : Gare de Villeneuve-le-Roi ↔ Gare de Villeneuve-le-Roi,Athis Cars,Keolis Seine Val-de-Marne,#6F268E,route_master,bus,
-6885970,R104,Bus R104 : Sécurité Sociale (Goussainville) ↔ Institut St-Dominique (Mortefontaine),CIF,Les Courriers de l'Île-de-France,#0072BC,route_master,bus,
+6885970,R104,Bus R104 : Sécurité Sociale (Goussainville) ↔ Institut Saint-Dominique (Mortefontaine),CIF,Les Courriers de l'Île-de-France,#0072BC,route_master,bus,
 6886051,Express A14,Bus Express A14 : La Défense ↔ Les Mureaux,STILE Express,STILE Express,,route_master,bus,
 6886090,41,Ligne 41 : La Ferté sous Jouarre ↔ Coulommiers,Réseau de bus Pays Fertois,Transdev Darche Gros,#FF0000,route_master,bus,
 6886101,412,Bus 412 : Gare de La Verrière ↔ Élancourt France Miniature,SqyBus,SqyBus,,route_master,bus,
-6886129,414,Bus 414 : Gare de Trappes ↔ Pas du Lac,SQYBus,SQYBus,#d69a57,route_master,bus,
+6886129,414,Bus 414 : Gare de Trappes ↔ Pas du Lac,SQYBus,SQYBus,#d69a57,route_master,bus,230410414:414
+6904183,J,Transilien J,Transilien,SNCF,#C6CC00,route_master,train,
+6907402,T3a,Tram T3a : Pont du Garigliano ↔ Porte de Vincennes,RATP,RATP,#F68C59,route_master,tram,100112013:T3A
+6910344,T4,Tram 4 : Aulnay-sous-Bois ↔ Bondy,Transilien,SNCF,#F2AF00,route_master,tram,
+6910410,T5,Tram 5 : Marché de Saint-Denis ↔ Gare de Garges - Sarcelles RER,RATP,RATP,#B156A1,route_master,tram,
+6910437,T6,Tramway T6 : Châtillon–Montrouge ↔ Viroflay Rive Droite,RATP,RATP,#E85426,route_master,tram,
+6910465,T7,T7 : Villejuif - Louis Aragon ↔ Porte de l'Essonne (Athis-Mons),RATP,RATP,#B98B59,route_master,tram,
+6915922,283 (Orlybus),Bus 283 : Paris–Denfert–Rochereau ↔ Aéroport d'Orly–Orly Sud,RATP,RATP,#F2FE98,route_master,bus,
+6928902,OrlyVAL,OrlyVAL : Antony ↔ Orly Sud,,RATP,#FFCF00,route_master,light_rail,
+6928933,CDGVAL,CDGVAL : Terminal 1 ↔ Terminal 2 - Gare,CDGVAL,Aéroports de Paris,,route_master,light_rail,
+6928970,Funiculaire,Funiculaire de Montmartre : Gare Basse ↔ Gare Haute,RATP,RATP,#622282,route_master,funicular,
+6929043,3,Bus 3 : Gare de Choisy-Le-Roi ↔ Gare de Villeneuve-Saint-Georges,Keolis Seine Val-De-Marne,Athis Cars,#D59433,route_master,bus,
+6929582,274,Bus 274 : Voltaire - Villiers (Levallois) ↔ Saint-Denis RER,RATP,RATP,#F50024,route_master,bus,
+6929704,360,Bus 360 : Hôpital de Garches ↔ La Défense,RATP,RATP,,route_master,bus,

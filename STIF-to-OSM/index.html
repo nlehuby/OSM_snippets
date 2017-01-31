@@ -5,75 +5,78 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
-	<head>
-		<title>Intégration du référentiel lignes du STIF</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="assets/intensify/css/main.css" />
-        <link href="assets/third_parties/datatables_1.10.12/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
-	</head>
-	<body class="subpage">
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="logo">Lignes d'Île-de-France</a>
-				<nav class="right">
-					<a class="button" id="OSM_authenticate">Connexion OSM</a>
-				</nav>
-			</header>
+<head>
+    <title>Intégration du référentiel lignes du STIF</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/intensify/css/main.css" />
+    <link href="assets/third_parties/datatables_1.10.12/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
+</head>
 
+<body class="subpage">
 
-
-		<!-- Main -->
-			<section id="main" class="wrapper">
-				<div class="inner">
-					<header class="align-center">
-						<h1>Tableau mis à jour le 20 janvier 2017</h1>
-						<p>choisissez votre numéro ou votre réseau préféré, et dégommez du rouge !</p>
-					</header>
-                    <!-- Oauth message - utilisateur pas connecté -->
-                    <div class="inner" id="alert_no_auth">Vous n'êtes pas connecté à OpenStreetMap, vous ne pourrez donc pas effectuer de modifications.</div>
-                    <!-- Oauth message - utilisateur connecté -->
-                    <div class="inner" id="alert_auth">
-                        Vous êtes connecté à OpenStreetMap en tant que <span id=OSM_user>...</span>.
-                        <a id='OSM_logout'>Se déconnecter</a>
-                    </div>
-
-                    <table id="data_table" class="display" width="100%" cellspacing="0">
-                    </table>
-                </div>
-
-
-			</section>
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="logo">Lignes d'Île-de-France</a>
+        <nav class="right">
+            <a class="button" id="OSM_authenticate">Connexion OSM</a>
+        </nav>
+    </header>
 
 
 
-            <!-- Footer -->
-    			<footer id="footer">
-    				<div class="inner">
-    					<h2>Plus d'info</h2>
-    					<ul class="actions">
-    						<li><span class="icon fa-wikipedia-w"></span> <a href="https://wiki.openstreetmap.org/wiki/Talk:WikiProject_France/Transports_en_%C3%8Ele-de-France">wiki OSM</a></li>
-                            <li><span class="icon fa-github"></span> <a href="https://github.com/nlehuby/OSM_snippets/tree/master/STIF-to-OSM">Github</a></li>
-    					</ul>
-    				</div>
-    				<div class="copyright">
-    					 <a href="https://nlehuby.5apps.com">nlehuby</a>. &copy; Design <a href="https://templated.co">TEMPLATED</a>. &copy; les contributeurs <a href="http://openstreetmap.org/">OSM</a> /  <a href="http://navitia.io">navitia.io</a>. / <a href="http://opendata.stif.info/">opendata STIF</a>.
-    				</div>
-    			</footer>
+    <!-- Main -->
+    <section id="main" class="wrapper">
+        <div class="inner">
+            <header class="align-center">
+                <h1>Tableau mis à jour le 30 janvier 2017</h1>
+                <p>choisissez votre numéro ou votre réseau préféré, et dégommez du rouge !</p>
+            </header>
+            <!-- Oauth message - utilisateur pas connecté -->
+            <div class="inner" id="alert_no_auth">Vous n'êtes pas connecté à OpenStreetMap, vous ne pourrez donc pas effectuer de modifications.</div>
+            <!-- Oauth message - utilisateur connecté -->
+            <div class="inner" id="alert_auth">
+                Vous êtes connecté à OpenStreetMap en tant que <span id=OSM_user>...</span>.
+                <a id='OSM_logout'>Se déconnecter</a>
+            </div>
 
-    		<!-- Scripts -->
-    			<script src="assets/intensify/js/jquery.min.js"></script>
-    			<script src="assets/intensify/js/jquery.scrolly.min.js"></script>
-    			<script src="assets/intensify/js/skel.min.js"></script>
-    			<script src="assets/intensify/js/util.js"></script>
-    			<script src="assets/intensify/js/main.js"></script>
-                <script src="assets/third_parties/papaparse.min.js"></script>
-                <script type="text/javascript" src="assets/third_parties/datatables_1.10.12/jquery.dataTables.min.js"></script>
-                <script src="assets/third_parties/OBM_js_editor/osmauth.min.js"></script>
-                <script src="assets/third_parties/OBM_js_editor/auth.js"></script>
-                <script src="assets/third_parties/OBM_js_editor/OSMAPI.js"></script>
-                <script src="assets/index.js"></script>
+            <table id="data_table" class="display" width="100%" cellspacing="0">
+            </table>
+        </div>
 
-	</body>
+
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <h2>Plus d'info</h2>
+            <ul class="actions">
+                <li><span class="icon fa-wikipedia-w"></span> <a href="https://wiki.openstreetmap.org/wiki/Talk:WikiProject_France/Transports_en_%C3%8Ele-de-France">wiki OSM</a></li>
+                <li><span class="icon fa-github"></span> <a href="https://github.com/nlehuby/OSM_snippets/tree/master/STIF-to-OSM">Github</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <a href="https://nlehuby.5apps.com">nlehuby</a>. &copy; Design <a href="https://templated.co">TEMPLATED</a>. &copy; les contributeurs <a href="http://openstreetmap.org/">OSM</a> / <a href="http://navitia.io">navitia.io</a>. / <a href="http://opendata.stif.info/">opendata STIF</a>.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/intensify/js/jquery.min.js"></script>
+    <script src="assets/intensify/js/jquery.scrolly.min.js"></script>
+    <script src="assets/intensify/js/skel.min.js"></script>
+    <script src="assets/intensify/js/util.js"></script>
+    <script src="assets/intensify/js/main.js"></script>
+    <script src="assets/third_parties/papaparse.min.js"></script>
+    <script type="text/javascript" src="assets/third_parties/datatables_1.10.12/jquery.dataTables.min.js"></script>
+    <script src="assets/third_parties/OBM_js_editor/osmauth.min.js"></script>
+    <script src="assets/third_parties/OBM_js_editor/auth.js"></script>
+    <script src="assets/third_parties/OBM_js_editor/OSMAPI.js"></script>
+    <script src="assets/index.js"></script>
+
+</body>
+
 </html>

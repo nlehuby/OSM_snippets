@@ -22,24 +22,40 @@ $(document).ready(function() {
         data_lines.splice(0, 1);
         data_lines.splice(-1, 1);
 
-        table = $('#data_table').DataTable( {
+        table = $('#data_table').DataTable({
             data: data_lines,
-            columns:[ //@id,ref,name,network,operator,colour,type,route_master,ref:FR:STIF:ExternalCode_Line
-                {title: "id"},
-                {title: "code"},
-                {title: "nom"},
-                {title: "réseau"},
-                {title: "opérateur"},
-                {title: "colour", visible: false},
-                {title: "type", visible: false},
-                {title: "mode"},
-                {title: "code STIF"},
-                {title: "Associer", data: function ( row, type, set ) {
-                    button_color = ""
-                    if (row[8] != "") {
-                        button_color = "alt"
-                    }
-                    return "<a class='button "+button_color +" small' target='_blank' href='./line.html?osm_relation=" + row[0] + "&line_code="+row[1]+"'> Voir </a>";
+            order: [
+                [0, 'code STIF']
+            ],
+            columns: [ //@id,ref,name,network,operator,colour,type,route_master,ref:FR:STIF:ExternalCode_Line
+                {
+                    title: "id"
+                }, {
+                    title: "code"
+                }, {
+                    title: "nom"
+                }, {
+                    title: "réseau"
+                }, {
+                    title: "opérateur"
+                }, {
+                    title: "colour",
+                    visible: false
+                }, {
+                    title: "type",
+                    visible: false
+                }, {
+                    title: "mode"
+                }, {
+                    title: "code STIF"
+                }, {
+                    title: "Associer",
+                    data: function(row, type, set) {
+                        button_color = ""
+                        if (row[8] != "") {
+                            button_color = "alt"
+                        }
+                        return "<a class='button " + button_color + " small' target='_blank' href='./line.html?osm_relation=" + row[0] + "&line_code=" + row[1] + "'> Voir </a>";
                     }
                 }
             ]
@@ -47,11 +63,11 @@ $(document).ready(function() {
     }
 
     //rendre le bouton utilisable
-    $('#data_table tbody').on( 'click', 'button', function () {
-        var data = table.row( $(this).parents('tr') ).data();
+    $('#data_table tbody').on('click', 'button', function() {
+        var data = table.row($(this).parents('tr')).data();
         console.log(data)
-        alert( data[0] +"'s salary is: "+ data[1] );
-    } );
+        alert(data[0] + "'s salary is: " + data[1]);
+    });
 });
 
 
@@ -61,9 +77,9 @@ $(document).ready(function() {
 //connexion Oauth
 document.getElementById('OSM_authenticate').onclick = function() {
     auth.authenticate(function() {
-            console.log("authenfication terminée")
-            update_auth_visual_return()
-        });
+        console.log("authenfication terminée")
+        update_auth_visual_return()
+    });
 };
 document.getElementById('OSM_logout').onclick = function() {
     auth.logout();
@@ -80,6 +96,7 @@ function show_OSM_username() {
         path: '/api/0.6/user/details'
     }, OSM_user_name_done);
 }
+
 function OSM_user_name_done(err, res) {
     if (err) {
         console.log(err);
@@ -91,17 +108,14 @@ function OSM_user_name_done(err, res) {
 
 }
 
-function update_auth_visual_return(){
+function update_auth_visual_return() {
     //affichage des bandeaux d'avertissement
-    if (auth.authenticated())
-    {
+    if (auth.authenticated()) {
         document.getElementById('alert_no_auth').style.display = 'none';
         document.getElementById('OSM_authenticate').style.display = 'none';
         document.getElementById('alert_auth').style.display = 'block';
         show_OSM_username();
-    }
-    else
-    {
+    } else {
         document.getElementById('alert_auth').style.display = 'none';
         document.getElementById('alert_no_auth').style.display = 'block';
         document.getElementById('OSM_authenticate').style.display = 'block';

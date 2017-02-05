@@ -182,6 +182,7 @@
 2531075,93,Bus 93 : Bobigny – Pablo Picasso ↔ Parinor ↔ Aéroport CDG – Roissypole,Les Courriers de l'Île-de-France,Keolis CIF,#a3653d,route_master,bus,014014093:93
 2531082,23,Bus 23 : Roissypole ↔ Mitry-le-Neuf – Villeparisis,CIF,CIF,#00aeef,route_master,bus,014014223:23
 2531207,,Villiers-le-Bel – Espace Marcel Pagnol ↔ Roissypole,Filéo,CIF (Kéolis),,route_master,bus,116295004:FILEOVB
+2531208,Filéo Othis,Bus Filéo Othis : Othis – Beaupré ↔ Roissypole,Filéo,Keolis Mobilité Roissy,,route_master,bus,
 2531225,,Tremblay-en-France – Place des Marronniers ↔ Vert-Galant ↔ Roissypole,Filéo,CIF (Kéolis),,route_master,bus,116931002:FILEOT
 2531226,,Villeparisis – Marché ↔ Roissypole,Filéo,CIF (Kéolis),,route_master,bus,116277005:FileoV
 2532567,190,Bus 190: Petit Clamart–RD906 ↔ Issy-les-Moulineaux — Mairie d'Issy,RATP,RATP,#845B32,route_master,bus,100100190:190
@@ -283,7 +284,7 @@
 5728884,L,Bus L : Gare de Villeneuve-Saint-Georges ↔ Pont TVM - Choisy-le-Roi,STRAV,Transdev STRAV,,route_master,,
 5728903,X,Bus X : Gare de Yerres ↔ Bois Cerdon - Crosne,VyBus,Transdev STRAV,,route_master,,045302034:X
 5736934,Q,Bus Q : Gare de Brunoy ↔ Gare de Montgeron,VyBus,Transdev STRAV,,route_master,,
-5739372,B,Bus B : Créteil L'Échat ↔ Cimetière de Yerres,STRAV,Transdev STRAV,,route_master,,045045011:B
+5739372,B,Bus B : Créteil L'Échat ↔ Cimetière de Yerres,STRAV,Transdev STRAV,,route_master,bus,045045011:B
 5752558,F,Bus F : Yerres - Rond-Point Pasteur ↔ Yerres - Gros Bois,VyBus,Transdev STRAV,,route_master,bus,045045007:F
 5754922,A,Bus A : Pyramide - Brunoy ↔ Gare de Villeneuve-Saint-Georges,VyBus,Transdev STRAV,,route_master,bus,045045010:A
 5757909,191,Bus 191 : Porte de Vanves ↔ Clamart - Place du Garde,RATP,RATP,#F59FB4,route_master,bus,100100191:191
@@ -428,7 +429,11 @@
 6915922,283 (Orlybus),Bus 283 : Paris–Denfert–Rochereau ↔ Aéroport d'Orly–Orly Sud,RATP,RATP,#F2FE98,route_master,bus,
 6928902,OrlyVAL,OrlyVAL : Antony ↔ Orly Sud,,RATP,#FFCF00,route_master,light_rail,
 6928933,CDGVAL,CDGVAL : Terminal 1 ↔ Terminal 2 - Gare,CDGVAL,Aéroports de Paris,,route_master,light_rail,
-6928970,Funiculaire,Funiculaire de Montmartre : Gare Basse ↔ Gare Haute,RATP,RATP,#622282,route_master,funicular,
+6928970,Funiculaire,Funiculaire de Montmartre : Gare Basse ↔ Gare Haute,RATP,RATP,#622282,route_master,funicular,100110100:FUN
 6929043,3,Bus 3 : Gare de Choisy-Le-Roi ↔ Gare de Villeneuve-Saint-Georges,Keolis Seine Val-De-Marne,Athis Cars,#D59433,route_master,bus,
-6929582,274,Bus 274 : Voltaire - Villiers (Levallois) ↔ Saint-Denis RER,RATP,RATP,#F50024,route_master,bus,
-6929704,360,Bus 360 : Hôpital de Garches ↔ La Défense,RATP,RATP,,route_master,bus,
+6929582,274,Bus 274 : Voltaire - Villiers (Levallois) ↔ Saint-Denis RER,RATP,RATP,#F50024,route_master,bus,100100274:274
+6929704,360,Bus 360 : Hôpital de Garches ↔ La Défense,RATP,RATP,,route_master,bus,100100360:360
+6940386,91-07,Bus 91-07 : Dourdan ↔ Étampes,TransEssonne,Albatrans,,route_master,bus,
+6940387,91-02,Bus 91-02 : Gare de Dourdan ↔ Pacifique (Villebon),TransEssonne,Albatrans,,route_master,bus,
+6940421,91.05,Bus 91.05 : Évry ↔ Massy,TransEssonne,Albatrans,,route_master,bus,
+6940422,91.04,Bus 91.04 : Évry ↔ Arpajon,TransEssonne,Albatrans,,route_master,bus,

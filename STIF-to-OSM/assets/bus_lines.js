@@ -91,7 +91,7 @@ function get_navitia_lines_candidates(line_code) {
         global: true,
         error: function(data) {
             console.log(data);
-            alert("Il y a eu un souci dans l'affichage des données opendata candidates")
+            console.log("Il y a eu un souci dans l'affichage des données opendata candidates")
         },
         success: function(data) {
             on_navitia_lines_candidates(data);

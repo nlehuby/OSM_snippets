@@ -411,13 +411,13 @@
 6880695,95-11,Bus 95-11 : Aincourt ↔ Mantes-la-Jolie,Bus Val d'Oise,Tim Bus,,route_master,bus,251195011:95-11
 6881771,95-24,Bus 95-24 : Moussy ↔ Vigny,Bus Val d'Oise,Transdev,#998eb8,route_master,bus,011195024:95-24
 6883259,305,Bus 305 : Henri Barbusse - Gare RER de Corbeil Essonnes ↔ Notre-Dame - République (Soisy-sur-Seine),Seine Essonne Bus,Keolis Seine Essonne,,route_master,bus,024309305:305
-6883314,Licorne,Bus Licorne : La Fresnaie ↔ Foyer Jean Rostand,Athis Cars,Keolis Seine Val-de-Marne,#D6188A,route_master,bus,
+6883314,Licorne,Bus Licorne : La Fresnaie ↔ Foyer Jean Rostand,Athis Cars,Keolis Seine Val-de-Marne,#D6188A,route_master,bus,002002002:LIC
 6883352,Centaure,Bus Centaure : Gare de Villeneuve-le-Roi ↔ Gare de Villeneuve-le-Roi,Athis Cars,Keolis Seine Val-de-Marne,#79AF9A,route_master,bus,
 6883353,Bord de l'Eau,Bus Bord de l'Eau : Gare de Villeneuve-le-Roi ↔ Gare de Villeneuve-le-Roi,Athis Cars,Keolis Seine Val-de-Marne,#6F268E,route_master,bus,
 6885970,R104,Bus R104 : Sécurité Sociale (Goussainville) ↔ Institut Saint-Dominique (Mortefontaine),CIF,Les Courriers de l'Île-de-France,#0072BC,route_master,bus,014014915:R104
 6886051,Express A14,Bus Express A14 : La Défense ↔ Les Mureaux,STILE Express,STILE Express,,route_master,bus,
 6886090,41,Ligne 41 : La Ferté sous Jouarre ↔ Coulommiers,Réseau de bus Pays Fertois,Transdev Darche Gros,#FF0000,route_master,bus,
-6886101,412,Bus 412 : Gare de La Verrière ↔ Élancourt France Miniature,SqyBus,SqyBus,,route_master,bus,
+6886101,412,Bus 412 : Gare de La Verrière ↔ Élancourt France Miniature,SqyBus,SqyBus,,route_master,bus,230410412:412
 6886129,414,Bus 414 : Gare de Trappes ↔ Pas du Lac,SQYBus,SQYBus,#d69a57,route_master,bus,230410414:414
 6904183,J,Transilien J,Transilien,SNCF,#C6CC00,route_master,train,800:J
 6907402,T3a,Tram T3a : Pont du Garigliano ↔ Porte de Vincennes,RATP,RATP,#F68C59,route_master,tram,100112013:T3A
@@ -438,7 +438,7 @@
 6940422,91.04,Bus 91.04 : Évry ↔ Arpajon,TransEssonne,Albatrans,,route_master,bus,
 6949223,95-02,Bus 95-02 : Roissypole RER ↔ Montmorency,Busval d'Oise,Keolis CIF,#1AC7FF,route_master,bus,014195002:95-02
 6949602,E2,Bus E2 : Collège Pompidou ↔ Plaine Haute (Crosne),VyBus,Transdev STRAV,,route_master,bus,
-6949604,V,Bus V : Gare de Montgeron ↔ Clos de la Régale (Vigneux-sur-Seine),,Transdev STRAV,,route_master,bus,
+6949604,V,Bus V : Gare de Montgeron ↔ Clos de la Régale (Vigneux-sur-Seine),,Transdev STRAV,,route_master,bus,045045008:V
 6949654,N135,Noctilien N135: Gare de Villeneuve-Saint-Georges ↔ Corbeil Essonnes,Noctilien,Transilien SNCF,,route_master,bus,
 6950503,N153,Noctilien N153: Gare Saint-Lazare ↔ Gare de Saint-Germain-en-Laye,Noctilien,SNCF Transilien,,route_master,bus,
 6950504,N151,Noctilien N151: Gare Saint-Lazare ↔ Gare de Mantes la Jolie,Noctilien,SNCF Transilien,,route_master,bus,
@@ -447,3 +447,25 @@
 6953807,N142,Bus N142: Gare de l’Est ↔ Tournan RER,Noctilien,RATP,#D17FB5,route_master,bus,
 6954049,95-06,Bus 95-06 : Arronville ↔ Cergy Préfecture / RER,Busval d'Oise,,#00A6FF,route_master,bus,
 6954593,128,Porte d'Orléans <-> Robinson RER,RATP,RATP,#8D653A,route_master,bus,100100128:128
+6955407,N41,Noctilien N41: Gare de l’Est ↔ Villeparisis - Mitry-le-Neuf RER,Noctilien,RATP,#F59EB3,route_master,bus,
+6955494,N42,Noctilien N42: Gare de l’Est ↔ Aulnay–Garonor,Noctilien,RATP,#E0B03A,route_master,bus,
+6955549,N43,Noctilien N43: Gare de l’Est ↔ Gare de Sarcelles–St-Brice,Noctilien,RATP,#F78F4B,route_master,bus,
+6955630,N44,Noctilien N44: Gare de l’Est ↔ Garges-Sarcelles RER,Noctilien,RATP,#77C695,route_master,bus,
+6955761,N45,Noctilien N45: Hôpital de Montfermeil ↔ Gare de l’Est,Noctilien,RATP,#FFCD02,route_master,bus,
+6955813,N35,Noctilien N35: Gare de Lyon ↔ Nogent–Le Perreux RER,Noctilien,RATP,#FFCD02,route_master,bus,
+6955909,N66,Noctilien N66 : Gare Montparnasse ↔ Vélizy–Robert Wagner,Noctilien,RATP,#DC143C,route_master,bus,
+6956211,N71,Noctilien N71: Marché de Rungis ↔ St-Maur–Créteil RER,Noctilien,RATP,#BB4A9B,route_master,bus,
+6956361,N63,Noctilien N63 : Gare Montparnasse ↔ Massy–Palaiseau RER,Noctilien,RATP,#CEC92A,route_master,bus,
+6956562,N122,Noctilien N122: Châtelet ↔ St-Rémy-lès-Chevreuse RER,Noctilien,Transilien SNCF,#4D90CD,route_master,bus,
+6956787,N131,Noctilien N131: Gare de Lyon ↔ Brétigny RER,Noctilien,Transilien SNCF,#FFDC1C,route_master,bus,
+6956807,N133,Noctilien N133: Gare de Lyon ↔ Juvisy RER,Noctilien,Transilien SNCF,#FFDC1C,route_master,bus,
+6956998,N140,Noctilien N140: Gare de l’Est ↔ Aéroport Ch. de Gaulle,Noctilien,Transilien,#4D90CD,route_master,bus,
+6957009,N143,Noctilien N143: Gare de l’Est ↔ Aéroport Ch. de Gaulle,Noctilien,Transilien,#4D90CD,route_master,bus,
+6957037,N144,Noctilien N144: Gare de l’Est ↔ Corbeil-Essonnes RER,Noctilien,Transilien,#00AB66,route_master,bus,
+6957057,N145,Noctilien N145: Gare de l’Est ↔ Gare de La Verrière,Noctilien,Transilien,#19BAAB,route_master,bus,
+6957244,19,Bus 19 : Aéroport de Roissy ↔ Torcy RER,Seine-et-Marne Express,Transdev AMV,#ff0000,route_master,bus,
+6957245,18,Bus 18 : Gare de Melun → Gare de Meaux,Seine-et-Marne Express,Transdev AMV,,route_master,bus,
+6957303,17,Bus 17 : Chessy RER ↔ Coulommiers ↔ La Ferté Gaucher,Seine-et-Marne Express,Transdev Darche Gros,#66B5E0,route_master,bus,
+6957305,34,Bus 34 : Gare de Melun ↔ Place Verdun (Chateau-Landon),Seine-et-Marne Express,Transdev Ile-de-France Nemours,,route_master,bus,
+6957317,01,Bus 01 : Melun ↔ Rebais (via Coulommiers),Seine-et-Marne Express,Transdev Darche Gros,,route_master,bus,
+6957343,18,Bus 18 : Gare de Torcy ↔ Gare de Tournan,Stigo,Transdev N4 Mobilités,,route_master,bus,

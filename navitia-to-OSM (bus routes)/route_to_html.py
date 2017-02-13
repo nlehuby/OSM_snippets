@@ -85,7 +85,7 @@ def to_html():
         #création de l'objet pour l'autocomplétion
         parcours = {}
         parcours['value'] = osm_route [0]
-        parcours['label'] = "[{}] {} > {}".format(osm_route[-1], osm_route[1], osm_route[3])
+        parcours['label'] = "[{}] {} > {}".format(osm_route[5], osm_route[1], osm_route[3])
 
         rapp = [route for route in navitia_csv if route[0] == osm_route[0]] #rapprochement osm navitia
 

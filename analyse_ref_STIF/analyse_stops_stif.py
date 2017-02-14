@@ -80,3 +80,7 @@ if __name__ == '__main__':
     #on écrit ça au format Osmose
     xml = create_osmose_xml(errors)
     print (xml)
+
+    #print(len(errors))
+
+    #TODO : aussi supprimer le tag source:ref:FR:STIF voire source si ça a du sens

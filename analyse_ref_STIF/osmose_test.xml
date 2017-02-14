@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<analysers timestamp="2017-02-14T20:51:12Z">
+	<analyser timestamp="2017-02-14T20:51:12Z">
+		<class item="8042" tag="transport en commun" id="1" level="3">
+			<classtext lang="fr" title="tag manquant sur une relation route_master (ligne de transport en commun)"></classtext>
+		</class>
+		<error class="1">
+			<location lat="48.777715" lon="2.463191"></location>
+			<relation id="1534904"></relation>
+			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
+			<fixes>
+				<fix>
+					<relation id="1534904">
+						<tag action="create" k="route_master" v="bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.93732" lon="2.206739"></location>
+			<relation id="1842753"></relation>
+			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : 4"></text>
+			<fixes>
+				<fix>
+					<relation id="1842753">
+						<tag action="create" k="ref" v="4"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.93732" lon="2.206739"></location>
+			<relation id="1842753"></relation>
+			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
+			<fixes>
+				<fix>
+					<relation id="1842753">
+						<tag action="create" k="route_master" v="bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.801646" lon="2.271856"></location>
+			<relation id="1991746"></relation>
+			<text lang="fr" value="la relation n'a pas de tag network. Valeur probable : RATP"></text>
+			<fixes>
+				<fix>
+					<relation id="1991746">
+						<tag action="create" k="network" v="RATP"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.885841" lon="2.474901"></location>
+			<relation id="2198226"></relation>
+			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : 346"></text>
+			<fixes>
+				<fix>
+					<relation id="2198226">
+						<tag action="create" k="ref" v="346"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.89825" lon="2.477497"></location>
+			<relation id="2214088"></relation>
+			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : 616"></text>
+			<fixes>
+				<fix>
+					<relation id="2214088">
+						<tag action="create" k="ref" v="616"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.715654" lon="2.13988"></location>
+			<relation id="2390087"></relation>
+			<text lang="fr" value="la relation n'a pas de tag network. Valeur probable : Mobicaps"></text>
+			<fixes>
+				<fix>
+					<relation id="2390087">
+						<tag action="create" k="network" v="Mobicaps"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="49.001878" lon="2.528042"></location>
+			<relation id="2531207"></relation>
+			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : FILEO VB"></text>
+			<fixes>
+				<fix>
+					<relation id="2531207">
+						<tag action="create" k="ref" v="FILEO VB"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.955415" lon="2.600223"></location>
+			<relation id="2531226"></relation>
+			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : Fileo V"></text>
+			<fixes>
+				<fix>
+					<relation id="2531226">
+						<tag action="create" k="ref" v="Fileo V"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.93732" lon="2.206739"></location>
+			<relation id="2653031"></relation>
+			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
+			<fixes>
+				<fix>
+					<relation id="2653031">
+						<tag action="create" k="route_master" v="bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.785294" lon="2.452423"></location>
+			<relation id="2853923"></relation>
+			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
+			<fixes>
+				<fix>
+					<relation id="2853923">
+						<tag action="create" k="route_master" v="bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.763213" lon="2.400914"></location>
+			<relation id="3008945"></relation>
+			<text lang="fr" value="la relation n'a pas de tag network. Valeur probable : RATP"></text>
+			<fixes>
+				<fix>
+					<relation id="3008945">
+						<tag action="create" k="network" v="RATP"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.763213" lon="2.400914"></location>
+			<relation id="3008945"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator. Valeur probable : RATP"></text>
+			<fixes>
+				<fix>
+					<relation id="3008945">
+						<tag action="create" k="operator" v="RATP"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.763213" lon="2.400914"></location>
+			<relation id="3008945"></relation>
+			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : 185"></text>
+			<fixes>
+				<fix>
+					<relation id="3008945">
+						<tag action="create" k="ref" v="185"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.783761" lon="2.224887"></location>
+			<relation id="3186411"></relation>
+			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : 15"></text>
+			<fixes>
+				<fix>
+					<relation id="3186411">
+						<tag action="create" k="ref" v="15"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.981596" lon="2.429214"></location>
+			<relation id="3253655"></relation>
+			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
+			<fixes>
+				<fix>
+					<relation id="3253655">
+						<tag action="create" k="route_master" v="bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.965118" lon="2.494671"></location>
+			<relation id="3253656"></relation>
+			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : 32A"></text>
+			<fixes>
+				<fix>
+					<relation id="3253656">
+						<tag action="create" k="ref" v="32A"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="49.066416" lon="2.322272"></location>
+			<relation id="3253980"></relation>
+			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
+			<fixes>
+				<fix>
+					<relation id="3253980">
+						<tag action="create" k="route_master" v="bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="49.001038" lon="2.424099"></location>
+			<relation id="3256314"></relation>
+			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
+			<fixes>
+				<fix>
+					<relation id="3256314">
+						<tag action="create" k="route_master" v="bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.98628" lon="2.437592"></location>
+			<relation id="3256316"></relation>
+			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
+			<fixes>
+				<fix>
+					<relation id="3256316">
+						<tag action="create" k="route_master" v="bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.703248" lon="2.545046"></location>
+			<relation id="3315927"></relation>
+			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
+			<fixes>
+				<fix>
+					<relation id="3315927">
+						<tag action="create" k="route_master" v="bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.703248" lon="2.545046"></location>
+			<relation id="3315943"></relation>
+			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
+			<fixes>
+				<fix>
+					<relation id="3315943">
+						<tag action="create" k="route_master" v="bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.885474" lon="2.259172"></location>
+			<relation id="3546204"></relation>
+			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
+			<fixes>
+				<fix>
+					<relation id="3546204">
+						<tag action="create" k="route_master" v="bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.88865" lon="2.228762"></location>
+			<relation id="3695203"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator. Valeur probable : RATP"></text>
+			<fixes>
+				<fix>
+					<relation id="3695203">
+						<tag action="create" k="operator" v="RATP"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.902833" lon="2.359181"></location>
+			<relation id="3997212"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator. Valeur probable : RATP"></text>
+			<fixes>
+				<fix>
+					<relation id="3997212">
+						<tag action="create" k="operator" v="RATP"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.971578" lon="2.398332"></location>
+			<relation id="4772628"></relation>
+			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
+			<fixes>
+				<fix>
+					<relation id="4772628">
+						<tag action="create" k="route_master" v="bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.91169" lon="2.48101"></location>
+			<relation id="4799452"></relation>
+			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
+			<fixes>
+				<fix>
+					<relation id="4799452">
+						<tag action="create" k="route_master" v="bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.948119" lon="2.357222"></location>
+			<relation id="5426315"></relation>
+			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
+			<fixes>
+				<fix>
+					<relation id="5426315">
+						<tag action="create" k="route_master" v="bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.773055" lon="2.496441"></location>
+			<relation id="5557347"></relation>
+			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
+			<fixes>
+				<fix>
+					<relation id="5557347">
+						<tag action="create" k="route_master" v="bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.897964" lon="2.32889"></location>
+			<relation id="5662181"></relation>
+			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : 518"></text>
+			<fixes>
+				<fix>
+					<relation id="5662181">
+						<tag action="create" k="ref" v="518"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.723992" lon="2.471238"></location>
+			<relation id="5728903"></relation>
+			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
+			<fixes>
+				<fix>
+					<relation id="5728903">
+						<tag action="create" k="route_master" v="bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.37458" lon="2.935523"></location>
+			<relation id="5763997"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="48.37458" lon="2.935523"></location>
+			<relation id="5763997"></relation>
+			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : B"></text>
+			<fixes>
+				<fix>
+					<relation id="5763997">
+						<tag action="create" k="ref" v="B"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.830115" lon="1.954549"></location>
+			<relation id="5873533"></relation>
+			<text lang="fr" value="la relation n'a pas de tag network."></text>
+		</error>
+		<error class="1">
+			<location lat="48.645956" lon="2.353156"></location>
+			<relation id="6001282"></relation>
+			<text lang="fr" value="la relation n'a pas de tag network. Valeur probable : Daniel Meyer"></text>
+			<fixes>
+				<fix>
+					<relation id="6001282">
+						<tag action="create" k="network" v="Daniel Meyer"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.754498" lon="2.300788"></location>
+			<relation id="6928902"></relation>
+			<text lang="fr" value="la relation n'a pas de tag network."></text>
+		</error>
+		<error class="1">
+			<location lat="48.702392" lon="2.463754"></location>
+			<relation id="6949604"></relation>
+			<text lang="fr" value="la relation n'a pas de tag network."></text>
+		</error>
+	</analyser>
+</analysers>

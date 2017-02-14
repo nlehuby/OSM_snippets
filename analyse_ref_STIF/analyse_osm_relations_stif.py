@@ -133,7 +133,7 @@ def get_errors ():
                         error['fix'] = [{"key": "colour", "value": fix}]
                         error['label'] = "la relation n'a pas de tag colour. Valeur probable : " + fix
                     error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
-                    errors.append(error)
+                    #errors.append(error)
                 if not an_osm_line['ref']:
                     error = {"id" : an_osm_line['@id'] }
                     fix =  opendata_line['code']
@@ -158,7 +158,7 @@ def create_osmose_xml(errors):
     now = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
     doc['analysers']['@timestamp'] = now
     doc['analysers']['analyser']['@timestamp'] = now
-    doc['analysers']['analyser']['class']['@item'] = "1140"
+    doc['analysers']['analyser']['class']['@item'] = "8042"
     doc['analysers']['analyser']['class']['@tag'] = "transport en commun"
     doc['analysers']['analyser']['class']['@id'] = "1"
     doc['analysers']['analyser']['class']['@level'] = "3"
@@ -193,6 +193,7 @@ if __name__ == '__main__':
     #create_opendata_csv()
 
     errors = get_errors()
+
     xml = create_osmose_xml(errors)
 
     print(xml)

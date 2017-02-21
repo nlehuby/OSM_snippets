@@ -360,19 +360,19 @@
 6660662,524,Bus 524: La Navette de Fontenay-sous-Bois,RATP,RATP,,route_master,bus,100100524:524
 6682682,AS (544),Autobus Suresnois,Autobus Suresnois,RATP,,route_master,bus,100100544:544
 6706981,487,Bus 487 : Athis-Mons - Porte de l'Essonne ↔ Marché de Juvisy,RATP,RATP,,route_master,bus,100100487:487
-6741325,RÉ,Bus RÉ : Savigny-le-Temple / Nandy Gare RER ↔ Carré - Trait d'Union (Lieusaint),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487011:RE
-6741346,RÉ,Bus RÉ : Savigny-le-Temple - Nandy Gare RER ↔ Cesson Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487011:RE
-6741397,MI,Bus MI : Savigny-le-Temple - Nandy Gare RER ↔ La Grange (Savigny-le-Temple),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487129:MI
-6741557,DO,Bus DO : Savigny-le-Temple - Nandy Gare RER ↔ La Grange (Savigny-le-Temple),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487122:DO
+6741325,RÉ,Bus RÉ : Savigny-le-Temple / Nandy Gare RER ↔ Carré - Trait d'Union (Lieusaint),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
+6741346,RÉ,Bus RÉ : Savigny-le-Temple - Nandy Gare RER ↔ Cesson Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
+6741397,MI,Bus MI : Savigny-le-Temple - Nandy Gare RER ↔ La Grange (Savigny-le-Temple),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
+6741557,DO,Bus DO : Savigny-le-Temple - Nandy Gare RER ↔ La Grange (Savigny-le-Temple),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
 6744021,34,Bus 34 : Savigny-le-Temple - Nandy Gare RER ↔ Pavillon Royal (Nandy),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487034:34
 6744031,37,Bus 37 : Savigny-le-Temple - Nandy Gare RER ↔ Turquoises (Nandy),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487037:37
 6744094,36,Bus 36 : Savigny-le-Temple Gare RER ↔ Cesson Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487036:36
 6744103,41,Bus 41 : Cesson Gare RER ↔ Aubépine (Cesson),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487041:41
 6744194,04,Bus 04 : Le Fresne (Saint-Pierre-du-Perray) ↔ Mairie (Morsang-sur-Seine),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487004:04
 6744247,DO,Bus DO : Les Grès (Moissy-Cramayel) ↔ Porte de Paris (Lieusaint),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487122:DO
-6744258,DO,Bus DO : Combs Gare RER ↔ Serpentine (Combs-la-Ville),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487122:DO
+6744258,DO,Bus DO : Combs Gare RER ↔ Serpentine (Combs-la-Ville),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
 6744271,MI,Bus MI : Lieusaint Moissy Gare RER ↔ Lieusaint Moissy Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487129:MI
-6751698,RÉ,Bus RÉ : Saint-Michel (Moissy-Cramayel) ↔ Lieusaint - Moissy Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487011:RE
+6751698,RÉ,Bus RÉ : Saint-Michel (Moissy-Cramayel) ↔ Lieusaint - Moissy Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
 6751736,SI,Bus SI : Couture (Combs-la-Ville) ↔ Lycée Jacques Prévert (Combs-la-Ville),Sénart Bus,Transdev Île-de-France Combs,,route_master,bus,065487109:SI
 6751789,SOL,Bus SOL : Gare RER (Combs-la-Ville) ↔ Lieusaint Moissy Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487110:SOL
 6751813,RÉ,Bus RÉ : Gare RER (Combs-la-Ville) ↔ Marrache (Combs-la-Ville),Sénart Bus,Transdev Île-de-France Combs,,route_master,bus,065487011:RE
@@ -441,8 +441,8 @@
 6949654,N135,Noctilien N135: Gare de Villeneuve-Saint-Georges ↔ Corbeil Essonnes,Noctilien,Transilien SNCF,,route_master,bus,800:N135
 6950503,N153,Noctilien N153: Gare Saint-Lazare ↔ Gare de Saint-Germain-en-Laye,Noctilien,Transilien,,route_master,bus,100987791:N153
 6950504,N151,Noctilien N151: Gare Saint-Lazare ↔ Gare de Mantes la Jolie,Noctilien,Transilien,,route_master,bus,800:N151
-6952110,95-01,Bus 95-01 : Roissypole (RER) ↔ Luzarches,Busval d'Oise,Keolis CIF,#4DEDFF,route_master,bus,
-6953405,95-05,Bus 95-05 : Frouville ↔ Cergy (RER A - SNCF),Busval d'Oise,CeoBus,#00FFFF,route_master,bus,
+6952110,95-01,Bus 95-01 : Roissypole (RER) ↔ Luzarches,Busval d'Oise,Keolis CIF,#4DEDFF,route_master,bus,014195001:95-01
+6953405,95-05,Bus 95-05 : Frouville ↔ Cergy (RER A - SNCF),Busval d'Oise,CeoBus,#00FFFF,route_master,bus,025195005:95-05
 6953807,N142,Bus N142: Gare de l’Est ↔ Tournan RER,Noctilien,RATP,#D17FB5,route_master,bus,
 6954049,95-06,Bus 95-06 : Arronville ↔ Cergy Préfecture / RER,Busval d'Oise,,#00A6FF,route_master,bus,
 6954593,128,Bus 128 : Porte d'Orléans ↔ Robinson RER,RATP,RATP,#8D653A,route_master,bus,100100128:128
@@ -479,3 +479,9 @@
 6972327,100,Bus 100 : Rond-Point des Sciences ↔ Gare d'Aéroport Charles de Gaulle,TRA,Transdev,,route_master,bus,
 6980341,37,Gare d'Epinay-sur-Seine ↔ Les Flanades,VALMY,Transdev,,route_master,bus,016016037:037
 6985621,91.08,Bus 91.08,TransEssonne,Albatrans,#55BEE9,route_master,bus,
+6991408,623,Bus 623 : Gare de Sevran - Livry ↔ Gare de Gagny,TRA,Transdev,#87d3df,route_master,bus,
+6991440,12,Bus 12 : Poincaré SNCF ↔ Cornilliot SNCF,Pep's,Transdev AMV,,route_master,bus,
+6991441,07,Bus 07 : Cornilliot SNCF ↔ Poincaré SNCF,Pep's,Transdev AMV,,route_master,bus,
+6991442,04,Bus 04 : Poincaré SNCF ↔ Cornilliot SNCF,Pep's,Transdev AMV,,route_master,bus,
+6993738,95-07,Bus 95-07 : Jouy le Comte Eglise ↔ Préfecture / RER,Busval d'Oise,,#00FF00,route_master,bus,025195007:95-07
+6994039,32,Bus 32 : Gare de Tournan ↔ Gare de Val d'Europe,Pep's,Transdev AMV,,route_master,bus,

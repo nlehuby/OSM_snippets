@@ -438,7 +438,7 @@
 6949223,95-02,Bus 95-02 : Roissypole RER ↔ Montmorency,Busval d'Oise,Keolis CIF,#1AC7FF,route_master,bus,014195002:95-02
 6949602,E2,Bus E2 : Collège Pompidou ↔ Plaine Haute (Crosne),VyBus,Transdev STRAV,,route_master,bus,045045006:E2
 6949604,V,Bus V : Gare de Montgeron ↔ Clos de la Régale (Vigneux-sur-Seine),,Transdev STRAV,,route_master,bus,045045008:V
-6949654,N135,Noctilien N135: Gare de Villeneuve-Saint-Georges ↔ Corbeil Essonnes,Noctilien,Transilien SNCF,,route_master,bus,800:N135
+6949654,N135,Noctilien N135: Gare de Villeneuve-Saint-Georges ↔ Corbeil Essonnes,Noctilien,Transilien,,route_master,bus,800:N135
 6950503,N153,Noctilien N153: Gare Saint-Lazare ↔ Gare de Saint-Germain-en-Laye,Noctilien,Transilien,,route_master,bus,100987791:N153
 6950504,N151,Noctilien N151: Gare Saint-Lazare ↔ Gare de Mantes la Jolie,Noctilien,Transilien,,route_master,bus,800:N151
 6952110,95-01,Bus 95-01 : Roissypole (RER) ↔ Luzarches,Busval d'Oise,Keolis CIF,#4DEDFF,route_master,bus,014195001:95-01
@@ -475,13 +475,14 @@
 6972206,644,Bus 644 : Corot (Coubron) ↔ Collège Henri IV (Vaujours),TRA,Transdev,#76c695,route_master,bus,
 6972217,640,Bus 640 : Parc des Expositions ↔ Parc des Expositions,TRA,Transdev,,route_master,bus,
 6972224,637,Bus 637 : Gare d'Aulnay-sous-Bois ↔ Gare d'Aulnay-sous-Bois,TRA,Transdev,,route_master,bus,
-6972324,613,Bus 613 : Gare d'Aulnay-sous-Bois ↔ Gare de Chelles-Gournay,TRA,Transdev,#097A47,route_master,bus,
-6972327,100,Bus 100 : Rond-Point des Sciences ↔ Gare d'Aéroport Charles de Gaulle,TRA,Transdev,,route_master,bus,
+6972324,613,Bus 613 : Gare d'Aulnay-sous-Bois ↔ Gare de Chelles-Gournay,TRA,Transdev,#097A47,route_master,bus,293193613:613
+6972327,100,Bus 100 : Rond-Point des Sciences ↔ Gare d'Aéroport Charles de Gaulle,TRA,Transdev,,route_master,bus,293193100:100
 6980341,37,Gare d'Epinay-sur-Seine ↔ Les Flanades,VALMY,Transdev,,route_master,bus,016016037:037
 6985621,91.08,Bus 91.08,TransEssonne,Albatrans,#55BEE9,route_master,bus,
 6991408,623,Bus 623 : Gare de Sevran - Livry ↔ Gare de Gagny,TRA,Transdev,#87d3df,route_master,bus,
-6991440,12,Bus 12 : Poincaré SNCF ↔ Cornilliot SNCF,Pep's,Transdev AMV,,route_master,bus,
+6991440,12,Bus 12 : Poincaré SNCF ↔ Cornilliot SNCF,Pep's,Transdev AMV,,route_master,bus,051051012:12
 6991441,07,Bus 07 : Cornilliot SNCF ↔ Poincaré SNCF,Pep's,Transdev AMV,,route_master,bus,
 6991442,04,Bus 04 : Poincaré SNCF ↔ Cornilliot SNCF,Pep's,Transdev AMV,,route_master,bus,
 6993738,95-07,Bus 95-07 : Jouy le Comte Eglise ↔ Préfecture / RER,Busval d'Oise,,#00FF00,route_master,bus,025195007:95-07
-6994039,32,Bus 32 : Gare de Tournan ↔ Gare de Val d'Europe,Pep's,Transdev AMV,,route_master,bus,
+6994039,32,Bus 32 : Gare de Tournan ↔ Gare de Val d'Europe,Pep's,Transdev AMV,,route_master,bus,051051032:32
+7003010,23,Bus 23 : Gare de Lagny ↔ Gare de Marne-la-Vallée Chessy,Pep's,Transdev AMV,,route_master,bus,

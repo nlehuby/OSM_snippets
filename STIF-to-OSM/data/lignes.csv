@@ -141,7 +141,7 @@
 1782907,123,Bus 123 : Porte d'Auteuil ↔ Mairie d'Issy,RATP,RATP,#008B5A,route_master,bus,100100123:123
 1802059,181,Bus 181 : École Vétérinaire de Maisons-Alfort ↔ Créteil-La Gaîté,RATP,RATP,#845B32,route_master,bus,100100181:181
 1810272,272,Bus 272 : Sartrouville RER ↔ Gare d'Argenteuil,RATP,RATP,#F68F4A,route_master,bus,100100272:272
-1842753,,Bus 4 : Gare d'Argenteuil ↔ Gare de Houilles Carrières-sur-Seine,R'bus,Véolia Transport,#97bf0c,route_master,,016016004:4
+1842753,4,Bus 4 : Gare d'Argenteuil ↔ Gare de Houilles Carrières-sur-Seine,R'bus,Transdev TVO,#97bf0c,route_master,,016016004:4
 1857145,129,Bus 129 : Mairie de Montreuil - Métro ↔ Porte des Lilas - Métro,RATP,RATP,#9B993B,route_master,bus,100100129:129
 1866830,351,Bus 351: Paris-Nation ↔ Roissypole,RATP,RATP,#E0B03B,route_master,bus,100100351:351
 1942584,08,Montmartrobus : Pigalle ↔ Mairie du 18e - Jules Joffrin,RATP,RATP,#98dade,route_master,bus,100100008:MONTMAR
@@ -188,11 +188,11 @@
 2532600,290,Bus 290 : Meudon-la-Forêt ↔ Issy-Val de Seine (RER) (T),RATP,RATP,#C9A3CD,route_master,bus,100100290:290
 2554103,7 bis,Métro 7 bis,RATP,RATP,#50CC7E,route_master,subway,100110107:7B
 2572573,T1,Tram 1,RATP,RATP,#216EB4,route_master,tram,100112011:T1
-2625885,6,Bus 6 : Gare d'Argenteuil ↔ Gare de Houilles Carrières-sur-Seine,R'bus,Véolia Transport,#952594,route_master,bus,016016006:6
+2625885,6,Bus 6 : Gare d'Argenteuil ↔ Gare de Houilles Carrières-sur-Seine,R'bus,Transdev TVO,#952594,route_master,bus,016016006:6
 2644951,35,Bus 35 : Gare de l'Est ↔ Aubervilliers — Mairie d'Aubervilliers,RATP,RATP,#77C696,route_master,bus,100100035:35
 2647711,165,Bus 165 : Porte de Champerret ↔ Asnières - 18 juin 1940,RATP,RATP,#F78D4A,route_master,bus,100100165:165
 2647712,164,Bus 164 : Argenteuil - Collège Claude Monet ↔ Porte de Champerret,RATP,RATP,#BB4A9D,route_master,bus,100100164:164
-2653031,3,Bus 3 : Sureaux ↔ Pont de Bezons,R'bus,Véolia Transport,#26a22c,route_master,,016016003:3
+2653031,3,Bus 3 : Sureaux ↔ Pont de Bezons,R'bus,Transdev TVO,#26a22c,route_master,,016016003:3
 2654565,179,Bus 179 : Robinson RER ↔ Pont de Sèvres,RATP,RATP,#00643C,route_master,bus,100100179:179
 2670163,S,Bus S : Vaucresson Gare ↔ Versailles Gare Rive Droite,Phébus,SVTU,#F24DA7,route_master,bus,056356015:S
 2675337,220,Bus 220 : Bry-sur-Marne RER ↔ Torcy RER,RATP,RATP,#BB489D,route_master,bus,100100220:220
@@ -243,7 +243,7 @@
 3349465,334,Bus 334 : Les Pavillons-sous-Bois - Robert Schuman (circulaire),RATP,RATP,#FFCD01,route_master,bus,100100334:334
 3389342,TUVIM,Bus TUVIM,RATP,RATP,,route_master,bus,100100589:TUVIM
 3399270,603,Bus 603 : Gare du Raincy–Villemomble–Montfermeil ↔ Coubron - Corot,TRA,Veolia Transport,#8D5E24,route_master,bus,293193603:603
-3490811,17,Bus TVF 17 : Gare RER de Mitry-Claye ↔ Gare Routière de Charny,TVF,TVF,#D5C901,route_master,bus,054054017:17
+3490811,17,Bus TVF 17 : Gare RER de Mitry-Claye ↔ Gare Routière de Charny,Trans Val de France,Transdev TVF,#D5C901,route_master,bus,054054017:17
 3546204,158,Bus 158 : Rueil-Malmaison RER ↔ Pont de Neuilly,STIF,RATP,,route_master,,100100158:158
 3638709,6,Bus 6 : Boissy-Saint-Léger RER ↔ Le Havre,SITUS,Transdev SETRA,,route_master,bus,040240006:6
 3662457,T3b,Tram T3b : Porte de Vincennes ↔ Porte de la Chapelle,RATP,RATP,#009641,route_master,tram,100112003:T3B
@@ -486,3 +486,21 @@
 6993738,95-07,Bus 95-07 : Jouy le Comte Eglise ↔ Préfecture / RER,Busval d'Oise,,#00FF00,route_master,bus,025195007:95-07
 6994039,32,Bus 32 : Gare de Tournan ↔ Gare de Val d'Europe,Pep's,Transdev AMV,,route_master,bus,051051032:32
 7003010,23,Bus 23 : Gare de Lagny ↔ Gare de Marne-la-Vallée Chessy,Pep's,Transdev AMV,,route_master,bus,
+7011211,N02,Noctilien N02 : Circulaire Extérieure,Noctilien,RATP,#ED1C2A,route_master,bus,
+7011212,N01,Noctilien N01 : Circulaire Intérieure,Noctilien,RATP,#BB4A9B,route_master,bus,
+7011231,v6,Bus v6 : circulaire Leclerc Thomas,Valouette,RATP,,route_master,bus,
+7011232,v7,Bus v7 (585) : Villejuif – Louis Aragon Métro,Valouette,RATP,,route_master,bus,
+7011233,v3,Bus v3 : Service de Cachan,Valouette,RATP,,route_master,bus,
+7011253,CDGVAL Ligne 2 LISA,CDGVAL Ligne 2 LISA,CDGVAL,Aéroports de Paris,,route_master,light_rail,
+7011257,C1-C2-C3,"Bus C1, C2, C3 : Gare de Brunoy ↔ Gare de Brunoy",VyBus,Transdev STRAV,#8BC443,route_master,bus,
+7011260,D,Bus D : Gare de Brunoy ↔ Gare de Brunoy,VyBus,Transdev STRAV,,route_master,bus,
+7011261,U,Bus U : Service Urbain de Villecresnes,VyBus,Transdev STRAV,,route_master,bus,
+7011271,12,Bus 12 : Lycée Van Gogh (Aubergenville) ↔ Gare (Les Mureaux),Val de Seine,Transdev Île-de-France Ecquevilly,,route_master,bus,
+7011277,7,Bus 7 : Gare d'Argenteuil ↔ Gare d'Enghien-les-Bains,R'Bus,Transdev TVO,,route_master,bus,
+7011303,8,Bus 8 : Gare de Villeneuve-Saint-Georges ↔ Aéroport Orly Ouest,Athis Cars,Keolis Seine Val-De-Marne,,route_master,bus,
+7011364,21,Bus 21 : Gare de Le Vésinet-Le Pecq ↔ Bèque SNCF (Marly-le-Roi),Entre Seine et Forêt,Transdev Île-de-France Montesson Les Rabaux,,route_master,bus,
+7011365,10,Bus 10 : Gare de Saint-Germain ↔ Gare de Marly-le-Roi,Entre Seine et Forêt,Transdev Île-de-France Montesson Les Rabaux,,route_master,bus,
+7011367,Direct 4,Bus Direct 4 : Montparnasse ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,#FF9B00,route_master,bus,
+7011368,Direct 3,Bus Direct 3 : Aéroport Orly ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,,route_master,bus,
+7011369,Direct 2,Bus Direct 2 : Champ de Mars ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,,route_master,bus,
+7011370,Direct 1,Bus Direct 1 : Charles de Gaulle Étoile ↔ Aéroport Orly,Le Bus Direct,Keolis Aerolis,,route_master,bus,

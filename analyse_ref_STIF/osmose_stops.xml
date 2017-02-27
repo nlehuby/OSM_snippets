@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<analysers timestamp="2017-02-14T21:13:31Z">
-	<analyser timestamp="2017-02-14T21:13:31Z">
+<analysers timestamp="2017-02-27T21:17:35Z">
+	<analyser timestamp="2017-02-27T21:17:35Z">
 		<class item="8041" tag="transport en commun" id="1" level="3">
 			<classtext lang="fr" title="tag erroné sur un arrêt de transport en commun d'Île-de-France"></classtext>
 		</class>
@@ -47,6 +47,18 @@
 			<fixes>
 				<fix>
 					<node id="305897890">
+						<tag action="delete" k="ref:FR:STIF"></tag>
+					</node>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.8375382" lon="2.2971355"></location>
+			<node id="309963671"></node>
+			<text lang="fr" value="La ref:FR:STIF 41282 n'existe pas ou plus"></text>
+			<fixes>
+				<fix>
+					<node id="309963671">
 						<tag action="delete" k="ref:FR:STIF"></tag>
 					</node>
 				</fix>

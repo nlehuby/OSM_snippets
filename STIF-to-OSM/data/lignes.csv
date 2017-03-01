@@ -128,7 +128,7 @@
 1673421,D,Train RER D,RER,SNCF,#5E9620,route_master,train,800:D
 1687240,10.20,Bus 10.20,Transdev CEAT,Transdev CEAT,,route_master,bus,010010020:10-20
 1687241,10.21,Bus 10.21,Transdev CEAT,Transdev CEAT,,route_master,bus,010010021:10-21
-1687242,30.01,Bus 30.01,Transdev CEAT,Transdev CEAT,,route_master,bus,
+1687242,330,Bus 330 : Brigeollet (Angerville) ↔ Gare d'Étampes,Transdev CEAT,Transdev CEAT,,route_master,bus,010303001:330
 1687243,Bus RER C,Bus RER C,Transilien,Transilien,,route_master,bus,
 1687459,10.18,Bus 10.18,Transdev CEAT,Transdev CEAT,,route_master,bus,010010018:10-18
 1687460,10.16,Bus 10.16,Transdev CEAT,Transdev CEAT,,route_master,bus,
@@ -360,7 +360,7 @@
 6660662,524,Bus 524: La Navette de Fontenay-sous-Bois,RATP,RATP,,route_master,bus,100100524:524
 6682682,AS (544),Autobus Suresnois,Autobus Suresnois,RATP,,route_master,bus,100100544:544
 6706981,487,Bus 487 : Athis-Mons - Porte de l'Essonne ↔ Marché de Juvisy,RATP,RATP,,route_master,bus,100100487:487
-6741325,RÉ,Bus RÉ : Savigny-le-Temple / Nandy Gare RER ↔ Carré - Trait d'Union (Lieusaint),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
+6741325,RÉ,Bus RÉ : Savigny-le-Temple / Nandy Gare RER ↔ Carré - Trait d'Union (Lieusaint),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487132:RE
 6741346,RÉ,Bus RÉ : Savigny-le-Temple - Nandy Gare RER ↔ Cesson Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
 6741397,MI,Bus MI : Savigny-le-Temple - Nandy Gare RER ↔ La Grange (Savigny-le-Temple),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
 6741557,DO,Bus DO : Savigny-le-Temple - Nandy Gare RER ↔ La Grange (Savigny-le-Temple),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
@@ -462,18 +462,18 @@
 6957009,N143,Noctilien N143: Gare de l’Est ↔ Aéroport Ch. de Gaulle,Noctilien,Transilien,#4D90CD,route_master,bus,800:N143
 6957037,N144,Noctilien N144: Gare de l’Est ↔ Corbeil-Essonnes RER,Noctilien,Transilien,#00AB66,route_master,bus,800:N144
 6957057,N145,Noctilien N145: Gare de l’Est ↔ Gare de La Verrière,Noctilien,Transilien,#19BAAB,route_master,bus,800:N145
-6957244,19,Bus 19 : Aéroport de Roissy ↔ Torcy RER,Seine-et-Marne Express,Transdev AMV,#ff0000,route_master,bus,
-6957245,18,Bus 18 : Gare de Melun → Gare de Meaux,Seine-et-Marne Express,Transdev AMV,,route_master,bus,
-6957303,17,Bus 17 : Chessy RER ↔ Coulommiers ↔ La Ferté Gaucher,Seine-et-Marne Express,Transdev Darche Gros,#66B5E0,route_master,bus,
-6957305,34,Bus 34 : Gare de Melun ↔ Place Verdun (Chateau-Landon),Seine-et-Marne Express,Transdev Ile-de-France Nemours,,route_master,bus,
+6957244,19,Bus 19 : Aéroport de Roissy ↔ Torcy RER,Seine-et-Marne Express,Transdev AMV,#ff0000,route_master,bus,051377019:19
+6957245,18,Bus 18 : Gare de Melun ↔ Gare de Meaux,Seine-et-Marne Express,Transdev AMV,,route_master,bus,051177018:18
+6957303,17,Bus 17 : Chessy RER ↔ Coulommiers ↔ La Ferté Gaucher,Seine-et-Marne Express,Transdev Darche Gros,#66B5E0,route_master,bus,097177017:17
+6957305,34,Bus 34 : Gare de Melun ↔ Place Verdun (Chateau-Landon),Seine-et-Marne Express,Transdev Ile-de-France Nemours,,route_master,bus,064177034:34
 6957317,01,Bus 01 : Melun ↔ Rebais (via Coulommiers),Seine-et-Marne Express,Transdev Darche Gros,,route_master,bus,
 6957343,18,Bus 18 : Gare de Torcy ↔ Gare de Tournan,Stigo,Transdev N4 Mobilités,,route_master,bus,
 6958361,N150,Noctilien N150: Gare St-Lazare ↔ Cergy-le-Haut RER,Noctilien,Transilien,#ED1C29,route_master,bus,800:N150
 6958366,N152,Noctilien N152: Gare St-Lazare ↔ Cergy RER,Noctilien,Transilien,#ED1C29,route_master,bus,800:N152
 6958414,N154,Noctilien N154: Gare St-Lazare ↔ Montigny–Beauchamp RER,Noctilien,Transilien,,route_master,bus,800:N154
-6970689,95-08,Bus 95-08 : Chars↔ Marines ↔ Cergy (RER A / SNCF),Busval d'Oise,Ceobus,#8FBF00,route_master,bus,
-6972206,644,Bus 644 : Corot (Coubron) ↔ Collège Henri IV (Vaujours),TRA,Transdev,#76c695,route_master,bus,
-6972217,640,Bus 640 : Parc des Expositions ↔ Parc des Expositions,TRA,Transdev,,route_master,bus,
+6970689,95-08,Bus 95-08 : Chars↔ Marines ↔ Cergy (RER A / SNCF),Busval d'Oise,Ceobus,#8FBF00,route_master,bus,025195008:95-08
+6972206,644,Bus 644 : Corot (Coubron) ↔ Collège Henri IV (Vaujours),TRA,Transdev,#76c695,route_master,bus,293193644:644
+6972217,640,Bus 640 : Parc des Expositions ↔ Parc des Expositions,TRA,Transdev,,route_master,bus,293193640:640
 6972224,637,Bus 637 : Gare d'Aulnay-sous-Bois ↔ Gare d'Aulnay-sous-Bois,TRA,Transdev,,route_master,bus,
 6972324,613,Bus 613 : Gare d'Aulnay-sous-Bois ↔ Gare de Chelles-Gournay,TRA,Transdev,#097A47,route_master,bus,293193613:613
 6972327,100,Bus 100 : Rond-Point des Sciences ↔ Gare d'Aéroport Charles de Gaulle,TRA,Transdev,,route_master,bus,293193100:100

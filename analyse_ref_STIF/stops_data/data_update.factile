@@ -61,7 +61,7 @@
             {
                 "name": "download opendata",
                 "executor": "shell",
-                "command": "wget https://navitia.opendatasoft.com/api/datasets/1.0/fr-idf/images/14bd1111dd3d3e845924bb0876e175b1 --no-verbose -O fr-idf_oif_stif.zip 2>&1",
+                "command": "wget https://opendata.stif.info/explore/dataset/offre-horaires-tc-gtfs-idf/files/f24cf9dbf6f80c28b8edfdd99ea16aad/download/ --no-verbose -O fr-idf_oif_stif.zip 2>&1",
                 "arguments": [ ],
                 "dependsOn": [  ],
                 "onResult": {

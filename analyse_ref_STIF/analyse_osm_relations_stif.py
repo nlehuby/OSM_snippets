@@ -190,7 +190,7 @@ def create_osmose_xml(errors):
 
 if __name__ == '__main__':
 
-    #create_opendata_csv()
+    create_opendata_csv()
 
     errors = get_errors()
 

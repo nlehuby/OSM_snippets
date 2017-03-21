@@ -400,7 +400,7 @@
 6851661,17,Bus 17 : Rue des Prés (Trilbardou) ↔ Gare SNCF d'Esbly,Pays de Meaux,Transdev Marne et Morin,,route_master,bus,067067017:17
 6860109,H,Bus H : Gare de Villeneuve-Saint-Georges ↔ Gare de Villeneuve-Saint-Georges,VyBus,Transdev STRAV,,route_master,bus,045045005:H
 6860181,E,Bus E : Centre Hospitalier de Villeneuve-Saint-Georges ↔ Gare de Montgeron,VyBus,Transdev STRAV,,route_master,bus,045045006:E
-6860541,DM11 C,Bus DM11 C : Gare de Massy-Palaiseau ↔ Laboratoires - Marcoussis,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,
+6860541,DM11 C,Bus DM11 C : Gare de Massy-Palaiseau ↔ Laboratoires - Marcoussis,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,055055025:DM11C
 6860557,216,Bus 216 : Denfert-Rochereau ↔ Marché International de Rungis,RATP,RATP,#ed1b2a,route_master,bus,100100216:216
 6860704,TVM,Bus TVM : La Croix de Berny RER ↔ Saint-Maur - Créteil RER,RATP,RATP,#006DB7,route_master,bus,100100014:TVM
 6867537,191.100,Bus Express 191.100 : Gare de Yerres ↔ M.I.N. (Chevilly-Larue - Rungis),Keolis Orly Rungis,Keolis Orly Rungis,,route_master,bus,
@@ -489,8 +489,8 @@
 7011211,N02,Noctilien N02 : Circulaire Extérieure,Noctilien,RATP,#ED1C2A,route_master,bus,100987776:N02
 7011212,N01,Noctilien N01 : Circulaire Intérieure,Noctilien,RATP,#BB4A9B,route_master,bus,100987775:N01
 7011231,v6,Bus v6 : circulaire Leclerc Thomas,Valouette,RATP,,route_master,bus,
-7011232,v7,Bus v7 (585) : Villejuif – Louis Aragon Métro,Valouette,RATP,,route_master,bus,
-7011233,v3,Bus v3 : Service de Cachan,Valouette,RATP,,route_master,bus,
+7011232,v7,Bus v7 (585) : Villejuif – Louis Aragon Métro,Valouette,RATP,,route_master,bus,100100585:V7
+7011233,v3,Bus v3 : Service de Cachan,Valouette,RATP,,route_master,bus,100100581:V3
 7011253,CDGVAL Ligne 2 LISA,CDGVAL Ligne 2 LISA,CDGVAL,Aéroports de Paris,,route_master,light_rail,
 7011257,C1-C2-C3,"Bus C1, C2, C3 : Gare de Brunoy ↔ Gare de Brunoy",VyBus,Transdev STRAV,#8BC443,route_master,bus,
 7011260,D,Bus D : Gare de Brunoy ↔ Gare de Brunoy,VyBus,Transdev STRAV,,route_master,bus,045045009:D
@@ -500,9 +500,9 @@
 7011303,8,Bus 8 : Gare de Villeneuve-Saint-Georges ↔ Aéroport Orly Ouest,Athis Cars,Keolis Seine Val-De-Marne,,route_master,bus,002002008:8
 7011364,21,Bus 21 : Gare de Le Vésinet-Le Pecq ↔ Bèque SNCF (Marly-le-Roi),Entre Seine et Forêt,Transdev Île-de-France Montesson Les Rabaux,,route_master,bus,012012021:21
 7011365,10,Bus 10 : Gare de Saint-Germain ↔ Gare de Marly-le-Roi,Entre Seine et Forêt,Transdev Île-de-France Montesson Les Rabaux,,route_master,bus,012012010:10
-7011367,Direct 4,Bus Direct 4 : Montparnasse ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,#FF9B00,route_master,bus,
-7011368,Direct 3,Bus Direct 3 : Aéroport Orly ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,,route_master,bus,
-7011369,Direct 2,Bus Direct 2 : Champ de Mars ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,,route_master,bus,
-7011370,Direct 1,Bus Direct 1 : Charles de Gaulle Étoile ↔ Aéroport Orly,Le Bus Direct,Keolis Aerolis,,route_master,bus,
-7073416,DM151,Bus DM151 :  Paris - Porte d'Orléans ↔ Arpajon — Porte d'Étampes,Daniel Meyer,,,route_master,bus,
-7074022,352 (Roissybus),Bus 352 : Paris–Opéra ↔ Aéroport Charles de Gaulle,RATP,RATP,,route_master,bus,
+7011367,Direct 4,Bus Direct 4 : Montparnasse ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,#FF9B00,route_master,bus,098098004:DIRECT4
+7011368,Direct 3,Bus Direct 3 : Aéroport Orly ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,,route_master,bus,098098003:DIRECT3
+7011369,Direct 2,Bus Direct 2 : Champ de Mars ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,,route_master,bus,098098002:DIRECT2
+7011370,Direct 1,Bus Direct 1 : Charles de Gaulle Étoile ↔ Aéroport Orly,Le Bus Direct,Keolis Aerolis,,route_master,bus,098098001:DIRECT1
+7073416,DM151,Bus DM151 :  Paris - Porte d'Orléans ↔ Arpajon — Porte d'Étampes,Daniel Meyer,,,route_master,bus,055155001:DM151
+7074022,352 (Roissybus),Bus 352 : Paris–Opéra ↔ Aéroport Charles de Gaulle,RATP,RATP,,route_master,bus,100100352:ROISSYB

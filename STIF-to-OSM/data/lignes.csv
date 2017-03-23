@@ -345,7 +345,7 @@
 6147733,46,Ligne 46 : Val d'Europe - Torcy,Pep's,Transdev AMV,,route_master,bus,051051046:46
 6147762,43,Ligne 43 : Val d'Europe - Chessy Gares,Pep's,Transdev AMV,,route_master,bus,051051043:43
 6147928,42,Ligne 42 : Val d'Europe - Lagny,Pep's,Transdev AMV,,route_master,bus,051051042:42
-6156507,100,Bus Express 100 : Torcy RER ↔ Créteil - L'Échat,Courriers de l'Île-de-France,Keolis CIF,#0db0af,route_master,bus,014177100:100
+6156507,100,Bus Express 100 : Torcy RER ↔ Créteil - L'Échat,Courriers de l'Île-de-France,Keolis CIF,#0db0af,route_master,coach,014177100:100
 6158847,1,Bus 1 : Le Blanc Mesnil ↔ Villeparisis Mitry le Neuf,Les Courriers de l'Île-de-France,Keolis CIF,#60BB47,route_master,bus,014014001:1
 6161018,43,bus 43 : Gare de Sevran Livry ↔ Aéroport CDG1 RER B,Courriers de l'Île-de-France,Keolis CIF,#980D7D,route_master,bus,014014043:43
 6163294,15,Bus 15 : Gare RER d'Aulnay-sous-Bois ↔ Jaurès (Tremblay-en-France),Les Courriers de l'Île-de-France,Keolis CIF,#0054A0,route_master,bus,014014015:15
@@ -463,7 +463,7 @@
 6957037,N144,Noctilien N144: Gare de l’Est ↔ Corbeil-Essonnes RER,Noctilien,Transilien,#00AB66,route_master,bus,800:N144
 6957057,N145,Noctilien N145: Gare de l’Est ↔ Gare de La Verrière,Noctilien,Transilien,#19BAAB,route_master,bus,800:N145
 6957244,19,Bus 19 : Aéroport de Roissy ↔ Torcy RER,Seine-et-Marne Express,Transdev AMV,#ff0000,route_master,bus,051377019:19
-6957245,18,Bus 18 : Gare de Melun ↔ Gare de Meaux,Seine-et-Marne Express,Transdev AMV,,route_master,bus,051177018:18
+6957245,18,Bus 18 : Gare de Melun ↔ Gare de Meaux,Seine-et-Marne Express,Transdev AMV,,route_master,coach,051177018:18
 6957303,17,Bus 17 : Chessy RER ↔ Coulommiers ↔ La Ferté Gaucher,Seine-et-Marne Express,Transdev Darche Gros,#66B5E0,route_master,bus,097177017:17
 6957305,34,Bus 34 : Gare de Melun ↔ Place Verdun (Chateau-Landon),Seine-et-Marne Express,Transdev Ile-de-France Nemours,,route_master,bus,064177034:34
 6957317,01,Bus 01 : Melun ↔ Rebais (via Coulommiers),Seine-et-Marne Express,Transdev Darche Gros,,route_master,bus,
@@ -500,9 +500,14 @@
 7011303,8,Bus 8 : Gare de Villeneuve-Saint-Georges ↔ Aéroport Orly Ouest,Athis Cars,Keolis Seine Val-De-Marne,,route_master,bus,002002008:8
 7011364,21,Bus 21 : Gare de Le Vésinet-Le Pecq ↔ Bèque SNCF (Marly-le-Roi),Entre Seine et Forêt,Transdev Île-de-France Montesson Les Rabaux,,route_master,bus,012012021:21
 7011365,10,Bus 10 : Gare de Saint-Germain ↔ Gare de Marly-le-Roi,Entre Seine et Forêt,Transdev Île-de-France Montesson Les Rabaux,,route_master,bus,012012010:10
-7011367,Direct 4,Bus Direct 4 : Montparnasse ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,#FF9B00,route_master,bus,098098004:DIRECT4
-7011368,Direct 3,Bus Direct 3 : Aéroport Orly ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,,route_master,bus,098098003:DIRECT3
-7011369,Direct 2,Bus Direct 2 : Champ de Mars ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,,route_master,bus,098098002:DIRECT2
-7011370,Direct 1,Bus Direct 1 : Charles de Gaulle Étoile ↔ Aéroport Orly,Le Bus Direct,Keolis Aerolis,,route_master,bus,098098001:DIRECT1
-7073416,DM151,Bus DM151 :  Paris - Porte d'Orléans ↔ Arpajon — Porte d'Étampes,Daniel Meyer,,,route_master,bus,055155001:DM151
+7011367,Direct 4,Bus Direct 4 : Montparnasse ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,#FF9B00,route_master,coach,098098004:DIRECT4
+7011368,Direct 3,Bus Direct 3 : Aéroport Orly ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,,route_master,coach,098098003:DIRECT3
+7011369,Direct 2,Bus Direct 2 : Champ de Mars ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,,route_master,coach,098098002:DIRECT2
+7011370,Direct 1,Bus Direct 1 : Charles de Gaulle Étoile ↔ Aéroport Orly,Le Bus Direct,Keolis Aerolis,,route_master,coach,098098001:DIRECT1
+7073416,DM151,Bus DM151 : Paris - Porte d'Orléans ↔ Arpajon - Porte d'Étampes,Daniel Meyer,,,route_master,bus,055155001:DM151
 7074022,352 (Roissybus),Bus 352 : Paris–Opéra ↔ Aéroport Charles de Gaulle,RATP,RATP,,route_master,bus,100100352:ROISSYB
+7095879,486,Bus 486 : Marché de Juvisy ↔ Athis-Mons - Porte de l'Essonne,RATP,Keolis,,route_master,bus,
+7095936,292,Bus 292 : Savigny-sur-Orge - ZAC Les Gâtines - Capitaine Jean d'Hers ↔ Athis-Mons - Porte de l'Essonne,RATP,Keolis,,route_master,bus,
+7097513,30B,Bus 30B : Circulaire de Goussainville,CIF,Les Courriers de l'Île-de-France,#00BDF3,route_master,bus,
+7097520,30D,Bus 30D : Circulaire de Goussainville,CIF,Les Courriers de l'Île-de-France,#9AA223,route_master,bus,
+7097563,12,Bus 12 : Chaumontel ↔ Goussainville,Les Courriers de l'Île-de-France,Keolis CIF,#007AC2,route_master,bus,

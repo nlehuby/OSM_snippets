@@ -405,7 +405,7 @@
 6860704,TVM,Bus TVM : La Croix de Berny RER ↔ Saint-Maur - Créteil RER,RATP,RATP,#006DB7,route_master,bus,100100014:TVM
 6867537,191.100,Bus Express 191.100 : Gare de Yerres ↔ M.I.N. (Chevilly-Larue - Rungis),Keolis Orly Rungis,Keolis Orly Rungis,,route_master,bus,
 6867541,191.100,Bus Express 191.100 : Gare de Yerres ↔ M.I.N. (Chevilly-Larue - Rungis),Keolis Orly Rungis,Keolis Orly Rungis,,route_master,bus,
-6867574,91.09,Bus Express 91.09 : Gare Routière de Yerres ↔ Gare Routière d'Évry,Albatrans,Albatrans,,route_master,bus,291191009:91-09
+6867574,91.09,Bus Express 91.09 : Gare Routière de Yerres ↔ Gare Routière d'Évry,TransEssonne,Albatrans,,route_master,bus,291191009:91-09
 6880011,95-04,Bus 95-04 : Bray et Lû ↔ Pontoise,Bus Val d'Oise,Tim Bus,#1AC7FF,route_master,bus,251195004:95-04
 6880695,95-11,Bus 95-11 : Aincourt ↔ Mantes-la-Jolie,Bus Val d'Oise,Tim Bus,,route_master,bus,251195011:95-11
 6881771,95-24,Bus 95-24 : Moussy ↔ Vigny,Bus Val d'Oise,Transdev,#998eb8,route_master,bus,011195024:95-24
@@ -483,7 +483,7 @@
 6991440,12,Bus 12 : Poincaré SNCF ↔ Cornilliot SNCF,Pep's,Transdev AMV,,route_master,bus,051051012:12
 6991441,07,Bus 07 : Cornilliot SNCF ↔ Poincaré SNCF,Pep's,Transdev AMV,,route_master,bus,
 6991442,04,Bus 04 : Poincaré SNCF ↔ Cornilliot SNCF,Pep's,Transdev AMV,,route_master,bus,
-6993738,95-07,Bus 95-07 : Jouy le Comte Eglise ↔ Préfecture / RER,Busval d'Oise,,#00FF00,route_master,bus,025195007:95-07
+6993738,95-07,Bus 95-07 : Jouy le Comte Eglise ↔ Préfecture / RER,Busval d'Oise,CeoBus,#00FF00,route_master,bus,025195007:95-07
 6994039,32,Bus 32 : Gare de Tournan ↔ Gare de Val d'Europe,Pep's,Transdev AMV,,route_master,bus,051051032:32
 7003010,23,Bus 23 : Gare de Lagny ↔ Gare de Marne-la-Vallée Chessy,Pep's,Transdev AMV,,route_master,bus,051051023:23
 7011211,N02,Noctilien N02 : Circulaire Extérieure,Noctilien,RATP,#ED1C2A,route_master,bus,100987776:N02
@@ -506,8 +506,12 @@
 7011370,Direct 1,Bus Direct 1 : Charles de Gaulle Étoile ↔ Aéroport Orly,Le Bus Direct,Keolis Aerolis,,route_master,coach,098098001:DIRECT1
 7073416,DM151,Bus DM151 : Paris - Porte d'Orléans ↔ Arpajon - Porte d'Étampes,Daniel Meyer,,,route_master,bus,055155001:DM151
 7074022,352 (Roissybus),Bus 352 : Paris–Opéra ↔ Aéroport Charles de Gaulle,RATP,RATP,,route_master,bus,100100352:ROISSYB
-7095879,486,Bus 486 : Marché de Juvisy ↔ Athis-Mons - Porte de l'Essonne,RATP,Keolis,,route_master,bus,
-7095936,292,Bus 292 : Savigny-sur-Orge - ZAC Les Gâtines - Capitaine Jean d'Hers ↔ Athis-Mons - Porte de l'Essonne,RATP,Keolis,,route_master,bus,
+7095879,486,Bus 486 : Marché de Juvisy ↔ Porte de l'Essonne (Athis-Mons),RATP,RATP,,route_master,bus,
+7095936,292,Bus 292 : ZAC Les Gâtines - Capitaine Jean d'Hers (Savigny-sur-Orge) ↔ Porte de l'Essonne (Athis-Mons),RATP,RATP,,route_master,bus,
 7097513,30B,Bus 30B : Circulaire de Goussainville,CIF,Les Courriers de l'Île-de-France,#00BDF3,route_master,bus,
 7097520,30D,Bus 30D : Circulaire de Goussainville,CIF,Les Courriers de l'Île-de-France,#9AA223,route_master,bus,
 7097563,12,Bus 12 : Chaumontel ↔ Goussainville,Les Courriers de l'Île-de-France,Keolis CIF,#007AC2,route_master,bus,
+7101485,407,Bus 407 : Évry → Ris-Orangis,Tice,Keolis Tice,,route_master,bus,
+7101486,414D,Bus 414D : Évry-Courcouronnes Centre ↔ Parc de Tréville,Tice,Keolis Tice,#F094BB,route_master,bus,
+7105179,91.03,Bus 91.03 : Gare RER de Dourdan ↔ Gare RER B de Massy,TransEssonne,Albatrans,,route_master,bus,
+7105212,91.10,Bus 91.10 : Orly ↔ Massy ↔ Saint-Quentin-en-Yvelines,TransEssonne,Albatrans,#FC86BF,route_master,bus,

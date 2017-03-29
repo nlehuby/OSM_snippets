@@ -414,7 +414,7 @@
 6883352,Centaure,Bus Centaure : Gare de Villeneuve-le-Roi ↔ Gare de Villeneuve-le-Roi,Athis Cars,Keolis Seine Val-de-Marne,#79AF9A,route_master,bus,002002002:CEN
 6883353,Bord de l'Eau,Bus Bord de l'Eau : Gare de Villeneuve-le-Roi ↔ Gare de Villeneuve-le-Roi,Athis Cars,Keolis Seine Val-de-Marne,#6F268E,route_master,bus,002002002:BDE
 6885970,R104,Bus R104 : Sécurité Sociale (Goussainville) ↔ Institut Saint-Dominique (Mortefontaine),CIF,Les Courriers de l'Île-de-France,#0072BC,route_master,bus,014014915:R104
-6886051,Express A14,Bus Express A14 : La Défense ↔ Les Mureaux,STILE Express,STILE Express,,route_master,bus,244244001:ExpA14
+6886051,Express A14,Bus Express A14 : La Défense ↔ Les Mureaux,STILE Express,STILE Express,,route_master,coach,244244001:ExpA14
 6886090,41,Ligne 41 : La Ferté sous Jouarre ↔ Coulommiers,Réseau de bus Pays Fertois,Transdev Darche Gros,#FF0000,route_master,bus,097097041:41
 6886101,412,Bus 412 : Gare de La Verrière ↔ Élancourt France Miniature,SqyBus,SqyBus,,route_master,bus,230410412:412
 6886129,414,Bus 414 : Gare de Trappes ↔ Pas du Lac,SQYBus,SQYBus,#d69a57,route_master,bus,230410414:414
@@ -462,7 +462,7 @@
 6957009,N143,Noctilien N143: Gare de l’Est ↔ Aéroport Ch. de Gaulle,Noctilien,Transilien,#4D90CD,route_master,bus,800:N143
 6957037,N144,Noctilien N144: Gare de l’Est ↔ Corbeil-Essonnes RER,Noctilien,Transilien,#00AB66,route_master,bus,800:N144
 6957057,N145,Noctilien N145: Gare de l’Est ↔ Gare de La Verrière,Noctilien,Transilien,#19BAAB,route_master,bus,800:N145
-6957244,19,Bus 19 : Aéroport de Roissy ↔ Torcy RER,Seine-et-Marne Express,Transdev AMV,#ff0000,route_master,bus,051377019:19
+6957244,19,Bus 19 : Aéroport de Roissy ↔ Torcy RER,Seine-et-Marne Express,Transdev AMV,#ff0000,route_master,coach,051377019:19
 6957245,18,Bus 18 : Gare de Melun ↔ Gare de Meaux,Seine-et-Marne Express,Transdev AMV,,route_master,coach,051177018:18
 6957303,17,Bus 17 : Chessy RER ↔ Coulommiers ↔ La Ferté Gaucher,Seine-et-Marne Express,Transdev Darche Gros,#66B5E0,route_master,bus,097177017:17
 6957305,34,Bus 34 : Gare de Melun ↔ Place Verdun (Chateau-Landon),Seine-et-Marne Express,Transdev Ile-de-France Nemours,,route_master,bus,064177034:34
@@ -515,3 +515,8 @@
 7101486,414D,Bus 414D : Évry-Courcouronnes Centre ↔ Parc de Tréville,Tice,Keolis Tice,#F094BB,route_master,bus,
 7105179,91.03,Bus 91.03 : Gare RER de Dourdan ↔ Gare RER B de Massy,TransEssonne,Albatrans,,route_master,bus,
 7105212,91.10,Bus 91.10 : Orly ↔ Massy ↔ Saint-Quentin-en-Yvelines,TransEssonne,Albatrans,#FC86BF,route_master,bus,
+7111337,503,Bus 503 : Roissy RER ↔ Roissy RER,Sit'Bus,Transdev N4 Mobilités,#a4529c,route_master,bus,
+7111338,505,Bus 505 : Centre Commercial de Pontault Combault ↔ Gare routière de Roissy-En-Brie,Sit'bus,Transdev N4 Mobilités,#DA3029,route_master,bus,
+7111365,508,Bus 508 : Manoir ↔ Roissy RER,Sit'Bus,Transdev N4 Mobilités,#00A5C5,route_master,bus,
+7111374,506,Bus 506 : Gare de Pontault-Combault ↔ Les 4 Chênes (Pontault-Combault),Sit'Bus,Transdev N4 Mobilités,,route_master,bus,
+7114025,627,Bus 627 : Gare d'Aulnay-sous-Bois ↔ Garonor (Aulnay-sous-Bois),TRA,Transdev,,route_master,bus,

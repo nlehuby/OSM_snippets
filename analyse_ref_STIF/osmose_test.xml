@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<analysers timestamp="2017-03-21T20:41:17Z">
-	<analyser timestamp="2017-03-21T20:41:17Z">
+<analysers timestamp="2017-03-30T20:56:22Z">
+	<analyser timestamp="2017-03-30T20:56:22Z">
 		<class item="8042" tag="transport en commun" id="1" level="3">
 			<classtext lang="fr" title="tag manquant sur une relation route_master (ligne de transport en commun)"></classtext>
 		</class>
@@ -305,7 +305,7 @@
 			</fixes>
 		</error>
 		<error class="1">
-			<location lat="48.914311" lon="2.483527"></location>
+			<location lat="48.91169" lon="2.48101"></location>
 			<relation id="4799452"></relation>
 			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
 			<fixes>
@@ -336,6 +336,18 @@
 				<fix>
 					<relation id="5557347">
 						<tag action="create" k="route_master" v="bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="" lon=""></location>
+			<relation id="5662181"></relation>
+			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : "></text>
+			<fixes>
+				<fix>
+					<relation id="5662181">
+						<tag action="create" k="ref" v=""></tag>
 					</relation>
 				</fix>
 			</fixes>
@@ -403,18 +415,6 @@
 			<fixes>
 				<fix>
 					<relation id="6954049">
-						<tag action="create" k="operator" v="Tim Bus"></tag>
-					</relation>
-				</fix>
-			</fixes>
-		</error>
-		<error class="1">
-			<location lat="49.036191" lon="2.084206"></location>
-			<relation id="6993738"></relation>
-			<text lang="fr" value="la relation n'a pas de tag operator. Valeur probable : Tim Bus"></text>
-			<fixes>
-				<fix>
-					<relation id="6993738">
 						<tag action="create" k="operator" v="Tim Bus"></tag>
 					</relation>
 				</fix>

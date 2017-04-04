@@ -174,7 +174,7 @@
 2389881,91.06,Bus 91.06,TransEssonne,Albatrans,,route_master,bus,291191006:91-06
 2390087,10,Bus 10: Gif ↔ Buc,,Mobicaps,,route_master,bus,039039004:10
 2415100,1,Bus 1 :Gare d’Igny RER ↔ Gare d’Orsay-Ville RER,Mobicaps,Cars d'Orsay - Transdev,#DF213B,route_master,bus,006006010:1
-2440114,14,Bus 14 : Gare de Massy-Palaiseau RER ↔ Gare de Palaiseau-Villebon RER ↔ Ecole Polytechnique,Mobicaps,Cars d'Orsay - Transdev,#65C1ED,route_master,bus,006006014:14
+2440114,14,Bus 14 : Gare de Massy-Palaiseau RER ↔ Gare de Palaiseau-Villebon RER ↔ École Polytechnique,Mobicaps,Cars d'Orsay - Transdev,#65C1ED,route_master,bus,006006014:14
 2454326,6,Bus 6 : Campus d’Orsay - Jean Monet ↔ Gare d’Orsay-Ville RER,Mobicaps,Cars d'Orsay - Transdev,#986AAD,route_master,bus,006006007:6
 2506803,M,Bus M : Vaucresson Gare ↔ Le Chesnay Passy,Phébus,SVTU,#B98545,route_master,bus,056356009:M
 2531065,22,Bus 22 : Villiers-le-Bel ↔ Gonesse ↔ Roissypole,TransVO,TransVO,,route_master,bus,050050022:22
@@ -213,15 +213,15 @@
 3081886,B,Bus ligne B: Gare SNCF/RER (CHELLES) ↔ College Corot (CHELLES),Apolo 7,STBC,#97BF0D,route_master,bus,101261021:B
 3134153,221,Bus 221 : Bagnolet - Gallieni ↔ Gagny - Pointe de Gournay,RATP,RATP,#f49eb2,route_master,bus,100100221:221
 3186411,,Bus 15 : Gare de Massy-Palaiseau ↔ Vélizy-Villacoublay,Mobicaps,Les Cars d'Orsay,#313188,route_master,bus,006006015:15
-3253655,95.02,Bus 95.02,Busval d'Oise,Busval d'Oise,#004494,route_master,,014195002:95-02
+3253655,95.02,Bus 95.02,Busval d'Oise,Busval d'Oise,#004494,route_master,bus,014195002:95-02
 3253656,,Bus 32A : Aulnay-Sous-Bois Parinor - Goussainville La Charmeuse,Les Courriers de l'Île-de-France,Keolis CIF,#B2CE40,route_master,bus,014014032:32A
 3253657,11.5,Bus 11.5 : Le Moulin / Avenue Bocquet ↔ Collège Philippe Auguste,Les Courriers de l'Île-de-France,Keolis CIF,#007AC2,route_master,bus,014014011:115
 3253980,95.18,Bus 95.18,Mobilien,Transdev IDF,#f3dd02,route_master,,212195018:9518
 3256022,37,Bus 37 : Villiers-le-Bel RER - Gonesse Hôpital via les Marroniers,TransVO,STIF,green,route_master,bus,050050037:37
 3256023,23ZI,Bus 23ZI : Villiers-le-Bel RER - Gonesse Zone Industrielle,TransVO,STIF,blue,route_master,bus,
-3256314,22,Bus 22 : Villiers-le-Bel RER - Roissypole RER,TransVO,STIF,yellow,route_master,,050050022:22
+3256314,22,Bus 22 : Villiers-le-Bel RER - Roissypole RER,TransVO,STIF,yellow,route_master,bus,050050022:22
 3256315,31,Bus 31 : Villiers-le-Bel RER - Aulnay-sous-Bois PSA,TransVO,STIF,white,route_master,,
-3256316,23,Bus 23 : Villiers-le-Bel RER - Parc des Expositions RER,TransVO,STIF,blue,route_master,,050050023:23
+3256316,23,Bus 23 : Villiers-le-Bel RER - Parc des Expositions RER,TransVO,STIF,blue,route_master,bus,050050023:23
 3286442,408,Bus 408 : Evry - Mairie ↔ Evry - Bras-de-Fer,Tice,Tice,#00FF00,route_master,bus,400400408:408
 3307569,241,Bus 241 : Rueil-Malmaison RER ↔ Porte d'Auteuil,RATP,RATP,#8D653A,route_master,bus,100100241:241
 3315045,156,Bus 156 : Gare d'Epinay–Villetaneuse ↔ Villetaneuse - Université Paris XIII,RATP,RATP,#FFCD02,route_master,bus,100100156:156
@@ -261,7 +261,7 @@
 4226214,95-41,Bus 95-41 : Magny en Vexin ↔ Pontoise,Bus Val d'Oise,Tim Bus,#005568,route_master,bus,251195041:95-41
 4594987,317,Bus 317 : Hôtel de Ville de Créteil ↔ Nogent Le Perreux RER,RATP,RATP,#C8D134,route_master,bus,100100317:317
 4610190,103,Bus 103 : Rungis - Marché International ↔ École Vétérinaire de Maisons-Alfort,RATP,RATP,#F68F4D,route_master,bus,100100103:103
-4772628,133,Bus 133 : Le Bourget RER ↔ Sarcelles–Bois d’Écouen,RATP,RATP,#77C695,route_master,,100100133:133
+4772628,133,Bus 133 : Le Bourget RER ↔ Sarcelles–Bois d’Écouen,RATP,RATP,#77C695,route_master,bus,100100133:133
 4779679,143,Bus 143 : La Courneuve–Aubervilliers RER ↔ Rosny-sous-Bois RER,RATP,RATP,#006EB8,route_master,bus,100100143:143
 4799452,134,Bus 134 : Fort d'Aubervilliers ↔ Bondy–Jouhaux Blum,RATP,RATP,#F59FB3,route_master,,100100134:134
 5226660,255,Bus 255 : Porte de Clignancourt ↔ Stains–Les Prévoyants,RATP,RATP,#6B7105,route_master,bus,100100255:255
@@ -275,7 +275,7 @@
 5557347,393,Bus 393 : Thiais - Carrefour de la Résistance ↔ Sucy - Bonneuil RER,RATP,RATP,#87D2DE,route_master,,100100393:393
 5569622,171,Bus 171 : Château de Versailles ↔ Pont de Sèvres,RATP,RATP,#FF1300,route_master,bus,100100171:171
 5594143,615,Bus 615 : Gare de Villepinte ↔ Bobigny - Pablo Picasso,TRA,Transdev,,route_master,bus,293193615:615
-5662181,,Bus 518 : La Traverse Batignolles - Bichat,RATP,RATP,#4B2795,route_master,bus,100100518:518
+5662181,518,Bus 518 : La Traverse Batignolles - Bichat,RATP,RATP,#4B2795,route_master,bus,100100518:518
 5673870,8,Bus 8 : Couturier ↔ Orsay-Ville RER ↔ Bois Persan,Mobicaps,Cars d'Orsay - Transdev,#F19FC1,route_master,bus,006006008:8
 5694051,2,Bus 2 : Centre Commercial Ulis 2 ↔ P.A. Courtabeuf ↔ Gare de Massy-Palaiseau,Mobicaps,Transdev,#EEE33A,route_master,bus,006006002:2
 5694438,22,Bus 22 : Centre Commercial Ulis 2 ↔ P.A. Courtabeuf ↔ Gare de Massy-Palaiseau,Mobicaps,Transdev,#DFE571,route_master,bus,006006024:22
@@ -520,3 +520,7 @@
 7111365,508,Bus 508 : Manoir ↔ Roissy RER,Sit'Bus,Transdev N4 Mobilités,#00A5C5,route_master,bus,
 7111374,506,Bus 506 : Gare de Pontault-Combault ↔ Les 4 Chênes (Pontault-Combault),Sit'Bus,Transdev N4 Mobilités,,route_master,bus,
 7114025,627,Bus 627 : Gare d'Aulnay-sous-Bois ↔ Garonor (Aulnay-sous-Bois),TRA,Transdev,,route_master,bus,
+7119043,54,Ligne 54 : Gare de Poissy ↔ Technoparc - Lycée Charles De Gaulle,CSO,Transdev CSO,,route_master,bus,
+7119057,10,Ligne 10 : Gare de Poissy ↔ Gare de Poissy,CSO,Transdev CSO,#97bf0d,route_master,bus,
+7119161,25,Ligne 25 : Gare de Poissy ↔ Les Ouches (Chanteloup-les-Vignes),CSO,Transdev CSO,#e75294,route_master,bus,
+7119164,50,Ligne 50 : Saint-Exupery (Poissy) ↔ La Coudraie (Poissy),CSO,Transdev CSO,,route_master,bus,

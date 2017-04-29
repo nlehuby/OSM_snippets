@@ -281,7 +281,6 @@
 5694438,22,Bus 22 : Centre Commercial Ulis 2 ↔ P.A. Courtabeuf ↔ Gare de Massy-Palaiseau,Mobicaps,Transdev,#DFE571,route_master,bus,006006024:22
 5717042,DM2 B,Bus DM2 B : Gare de Saint-Michel-sur-Orge ↔ Gare de Saint-Michel-sur-Orge via Rue Lecoq / Rue Bizet,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,055055002:DM02B
 5728903,X,Bus X : Gare de Yerres ↔ Bois Cerdon - Crosne,VyBus,Transdev STRAV,,route_master,,045302034:X
-5736934,Q,Bus Q : Gare de Brunoy ↔ Gare de Montgeron,VyBus,Transdev STRAV,,route_master,bus,
 5739372,B,Bus B : Créteil L'Échat ↔ Cimetière de Yerres,STRAV,Transdev STRAV,,route_master,bus,045045011:B
 5752558,F,Bus F : Yerres - Rond-Point Pasteur ↔ Yerres - Gros Bois,VyBus,Transdev STRAV,,route_master,bus,045045007:F
 5754922,A,Bus A : Pyramide (Brunoy) ↔ Pont TVM (Choisy-le-Roi),VyBus,Transdev STRAV,,route_master,bus,045045010:A
@@ -370,12 +369,12 @@
 6744103,41,Bus 41 : Cesson Gare RER ↔ Aubépine (Cesson),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487041:41
 6744194,04,Bus 04 : Le Fresne (Saint-Pierre-du-Perray) ↔ Mairie (Morsang-sur-Seine),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487004:04
 6744247,DO,Bus DO : Les Grès (Moissy-Cramayel) ↔ Porte de Paris (Lieusaint),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487122:DO
-6744258,DO,Bus DO : Combs Gare RER ↔ Serpentine (Combs-la-Ville),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487012:DO
+6744258,DO,Bus DO : Combs-la-Ville - Quincy Gare RER ↔ Serpentine (Combs-la-Ville),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487012:DO
 6744271,MI,Bus MI : Lieusaint Moissy Gare RER ↔ Lieusaint Moissy Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487129:MI
 6751698,RÉ,Bus RÉ : Saint-Michel (Moissy-Cramayel) ↔ Lieusaint - Moissy Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487123:RE
-6751736,SI,Bus SI : Couture (Combs-la-Ville) ↔ Lycée Jacques Prévert (Combs-la-Ville),Sénart Bus,Transdev Île-de-France Combs,,route_master,bus,065487109:SI
-6751789,SOL,Bus SOL : Gare RER (Combs-la-Ville) ↔ Lieusaint Moissy Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487110:SOL
-6751813,RÉ,Bus RÉ : Gare RER (Combs-la-Ville) ↔ Marrache (Combs-la-Ville),Sénart Bus,Transdev Île-de-France Combs,,route_master,bus,065487011:RE
+6751736,SI,Bus SI : Couture (Combs-la-Ville) ↔ Lycée J. Prévert (Combs-la-Ville),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487109:SI
+6751789,SOL,Bus SOL : Combs-la-Ville - Quincy Gare RER ↔ Lieusaint - Moissy Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487110:SOL
+6751813,RÉ,Bus RÉ : Combs-la-Ville - Quincy Gare RER ↔ Combs-la-Ville - Quincy Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487011:RE
 6762268,S3,Bus S3 : Lycée Albert Einstein (Sainte-Geneviève-des-Bois) ↔ Gare de Sainte-Geneviève-des-Bois,Génovébus,Transdev CEAT,,route_master,bus,010010005:S3
 6785275,2,Bus 2 : Gare de Sainte-Geneviève-des-Bois ↔ ZI Croix Blanche,Génovébus,Transdev CEAT,,route_master,bus,010010005:2
 6785331,4,Bus 4 : Gare RER ↔ ZI Croix Blanche,Génovébus,Transdev CEAT,,route_master,bus,010010005:4
@@ -448,14 +447,14 @@
 6954593,128,Bus 128 : Porte d'Orléans ↔ Robinson RER,RATP,RATP,#8D653A,route_master,bus,100100128:128
 6955407,N41,Noctilien N41: Gare de l’Est ↔ Villeparisis - Mitry-le-Neuf RER,Noctilien,RATP,#F59EB3,route_master,bus,100987772:N41
 6955494,N42,Noctilien N42: Gare de l’Est ↔ Aulnay–Garonor,Noctilien,RATP,#E0B03A,route_master,bus,100987755:N42
-6955549,N43,Noctilien N43: Gare de l’Est ↔ Gare de Sarcelles–St-Brice,Noctilien,RATP,#F78F4B,route_master,bus,100987766:N43
+6955549,N43,Noctilien N43: Gare de l’Est ↔ Gare de Sarcelles–Saint-Brice,Noctilien,RATP,#F78F4B,route_master,bus,100987766:N43
 6955630,N44,Noctilien N44: Gare de l’Est ↔ Garges-Sarcelles RER,Noctilien,RATP,#77C695,route_master,bus,100987754:N44
 6955761,N45,Noctilien N45: Hôpital de Montfermeil ↔ Gare de l’Est,Noctilien,RATP,#FFCD02,route_master,bus,100987765:N45
 6955813,N35,Noctilien N35: Gare de Lyon ↔ Nogent–Le Perreux RER,Noctilien,RATP,#FFCD02,route_master,bus,100987773:N35
 6955909,N66,Noctilien N66 : Gare Montparnasse ↔ Vélizy–Robert Wagner,Noctilien,RATP,#DC143C,route_master,bus,100987796:N66
-6956211,N71,Noctilien N71: Marché de Rungis ↔ St-Maur–Créteil RER,Noctilien,RATP,#BB4A9B,route_master,bus,100987771:N71
+6956211,N71,Noctilien N71: Marché de Rungis ↔ Saint-Maur–Créteil RER,Noctilien,RATP,#BB4A9B,route_master,bus,100987771:N71
 6956361,N63,Noctilien N63 : Gare Montparnasse ↔ Massy–Palaiseau RER,Noctilien,RATP,#CEC92A,route_master,bus,100987769:N63
-6956562,N122,Noctilien N122: Châtelet ↔ St-Rémy-lès-Chevreuse RER,Noctilien,Transilien,#4D90CD,route_master,bus,100987790:N122
+6956562,N122,Noctilien N122: Châtelet ↔ Saint-Rémy-lès-Chevreuse RER,Noctilien,Transilien,#4D90CD,route_master,bus,100987790:N122
 6956787,N131,Noctilien N131: Gare de Lyon ↔ Brétigny RER,Noctilien,Transilien,#FFDC1C,route_master,bus,800:N131
 6956807,N133,Noctilien N133: Gare de Lyon ↔ Juvisy RER,Noctilien,Transilien,#FFDC1C,route_master,bus,800:N133
 6956998,N140,Noctilien N140: Gare de l’Est ↔ Aéroport Ch. de Gaulle,Noctilien,Transilien,#4D90CD,route_master,bus,800:N140
@@ -468,9 +467,9 @@
 6957305,34,Bus 34 : Gare de Melun ↔ Place Verdun (Chateau-Landon),Seine-et-Marne Express,Transdev Ile-de-France Nemours,,route_master,bus,064177034:34
 6957317,01,Bus 01 : Melun ↔ Rebais (via Coulommiers),Seine-et-Marne Express,Transdev Darche Gros,,route_master,bus,
 6957343,18,Bus 18 : Gare de Torcy ↔ Gare de Tournan,Stigo,Transdev N4 Mobilités,,route_master,bus,003003018:18
-6958361,N150,Noctilien N150: Gare St-Lazare ↔ Cergy-le-Haut RER,Noctilien,Transilien,#ED1C29,route_master,bus,800:N150
-6958366,N152,Noctilien N152: Gare St-Lazare ↔ Cergy RER,Noctilien,Transilien,#ED1C29,route_master,bus,800:N152
-6958414,N154,Noctilien N154: Gare St-Lazare ↔ Montigny–Beauchamp RER,Noctilien,Transilien,,route_master,bus,800:N154
+6958361,N150,Noctilien N150: Gare Saint-Lazare ↔ Cergy-le-Haut RER,Noctilien,Transilien,#ED1C29,route_master,bus,800:N150
+6958366,N152,Noctilien N152: Gare Saint-Lazare ↔ Cergy RER,Noctilien,Transilien,#ED1C29,route_master,bus,800:N152
+6958414,N154,Noctilien N154: Gare Saint-Lazare ↔ Montigny–Beauchamp RER,Noctilien,Transilien,,route_master,bus,800:N154
 6970689,95-08,Bus 95-08 : Chars↔ Marines ↔ Cergy (RER A / SNCF),Busval d'Oise,Ceobus,#8FBF00,route_master,bus,025195008:95-08
 6972206,644,Bus 644 : Corot (Coubron) ↔ Collège Henri IV (Vaujours),TRA,Transdev,#76c695,route_master,bus,293193644:644
 6972217,640,Bus 640 : Parc des Expositions ↔ Parc des Expositions,TRA,Transdev,,route_master,bus,293193640:640
@@ -517,7 +516,7 @@
 7105212,91.10,Bus 91.10 : Orly ↔ Massy ↔ Saint-Quentin-en-Yvelines,TransEssonne,Albatrans,#FC86BF,route_master,bus,
 7111337,503,Bus 503 : Roissy RER ↔ Roissy RER,Sit'Bus,Transdev N4 Mobilités,#a4529c,route_master,bus,
 7111338,505,Bus 505 : Centre Commercial de Pontault Combault ↔ Gare routière de Roissy-En-Brie,Sit'bus,Transdev N4 Mobilités,#DA3029,route_master,bus,
-7111365,508,Bus 508 : Manoir ↔ Roissy RER,Sit'Bus,Transdev N4 Mobilités,#00A5C5,route_master,bus,
+7111365,508,Bus 508 : Manoir ↔ Roissy RER,Sit'Bus,Transdev N4 Mobilités,#00A5C5,route_master,bus,003351508:508
 7111374,506,Bus 506 : Gare de Pontault-Combault ↔ Les 4 Chênes (Pontault-Combault),Sit'Bus,Transdev N4 Mobilités,,route_master,bus,
 7114025,627,Bus 627 : Gare d'Aulnay-sous-Bois ↔ Garonor (Aulnay-sous-Bois),TRA,Transdev,,route_master,bus,
 7119043,54,Ligne 54 : Gare de Poissy ↔ Technoparc - Lycée Charles De Gaulle,CSO,Transdev CSO,,route_master,bus,
@@ -538,3 +537,10 @@
 7177156,E,Ligne E,Probus,Procars,#FABB00,route_master,bus,
 7177169,Bleue,Chavilbus Bleue,Chavilbus,Keolis Yvelines,,route_master,bus,
 7177170,Rouge,Chavilbus Rouge,Chavilbus,Keolis Yvelines,,route_master,bus,
+7194122,617,Bus 617 : Gare d'Aulnay-sous-Bois ↔ Gare de Villepinte,TRA,Transdev,,route_master,bus,
+7194158,112,Bus 112 : Fontaineroux (Héricy) ↔ Stade de la Faisanderie (Fontainebleau),Aérial,Transdev Ile-de-France Vulaines,,route_master,bus,
+7194163,14,Bus 14 : Gare de Conflans Fin d'Oise ↔ Gare de Neuville Université,Conflans Achères,Transdev Île-de-France Conflans,#FFFF00,route_master,bus,
+7194182,22,Bus 22 : Dourdan ↔ Paray-Douaville,Dourdanais,Transdev Île-de-France Rambouillet,,route_master,bus,
+7194183,06,Bus 06 : Dourdan ↔ Limours,Dourdanais,Transdev Île-de-France Rambouillet,,route_master,bus,
+7194184,18,Bus 18 : Gare de Dourdan ↔ Champarts (Ablis),Dourdanais,Transdev Île-de-France Rambouillet,,route_master,bus,
+7199517,MI,Bus MI : Combs-la-Ville - Quincy Gare RER ↔ Serpentine (Combs-la-Ville),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,

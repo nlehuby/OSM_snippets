@@ -65,6 +65,39 @@ def make_kml_stop_orphan(overpass_base_url, kml_wrapper) :
     with open("bussansligne.kml", "w") as xml_out_file :
         xml_out_file.write(kml_wrapper)
 
+def make_kml_stop_fixme(overpass_base_url, kml_wrapper) :
+    overpass_url = overpass_base_url + '[out:json][timeout:125];area(3600008649)->.area;node["highway"="bus_stop"]["FIXME"](area.area);out body;'
+    #overpass_url = overpass_base_url + '[out:json][timeout:125];area(3600402773)->.area;node["highway"="bus_stop"]["FIXME"](area.area);out body;'
+
+    overpass_call = requests.get(overpass_url)
+    if overpass_call.status_code != 200:
+        print ("KO à l'appel Overpass des bus avec FIXME")
+        exit(1)
+    overpass_result = overpass_call.json()
+
+    for elem in overpass_result['elements']:
+        kml_template = """
+      <Placemark>
+        <name>Vérifier cet arrêt de bus</name>
+        <styleUrl>#placemark-brown</styleUrl>
+        <Point><coordinates>%%kml_lon%%,%%kml_lat%%</coordinates></Point>
+        <description><![CDATA[FIXME : %%FIXME%%<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/%%kml_lat%%/%%kml_lon%%">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>"""
+
+        kml_template = kml_template.replace("%%kml_lat%%", str(elem['lat']))
+        kml_template = kml_template.replace("%%kml_lon%%", str(elem['lon']))
+        kml_template = kml_template.replace("%%FIXME%%", elem['tags']['FIXME'])
+        kml_wrapper += kml_template
+
+    kml_wrapper += """
+</Document>
+</kml>
+    """
+    kml_wrapper = kml_wrapper.replace("%%kml_name%%", "Arrêts de bus à vérifier")
+
+    with open("busfixme.kml", "w") as xml_out_file :
+        xml_out_file.write(kml_wrapper)
+
 if __name__ == '__main__':
     overpass_base_url = 'http://overpass-api.de/api/interpreter?data='
 
@@ -133,3 +166,4 @@ if __name__ == '__main__':
 
     make_kml_stop_without_names(overpass_base_url, kml_wrapper)
     make_kml_stop_orphan(overpass_base_url, kml_wrapper)
+    make_kml_stop_fixme(overpass_base_url, kml_wrapper)

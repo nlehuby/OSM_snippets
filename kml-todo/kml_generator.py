@@ -7,14 +7,6 @@ import json
 
 if __name__ == '__main__':
     overpass_base_url = 'http://overpass-api.de/api/interpreter?data='
-    overpass_url = overpass_base_url + '[out:json][timeout:125];area(3600008649)->.area;node["highway"="bus_stop"][!"name"](area.area);out skel;'
-    #overpass_url = overpass_base_url + '[out:json][timeout:125];area(3600402773)->.area;node["highway"="bus_stop"][!"name"](area.area);out skel;'
-
-    overpass_call = requests.get(overpass_url)
-    if overpass_call.status_code != 200:
-        print ("KO à l'appel Overpass")
-        exit(1)
-    overpass_result = overpass_call.json()
 
     kml_wrapper = """<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
@@ -75,9 +67,18 @@ if __name__ == '__main__':
       </Icon>
     </IconStyle>
   </Style>
-  <name>Arrêts de bus sans nom</name>
+  <name>%%kml_name%%</name>
   <visibility>1</visibility>
     """
+
+    overpass_url = overpass_base_url + '[out:json][timeout:125];area(3600008649)->.area;node["highway"="bus_stop"][!"name"](area.area);out skel;'
+    #overpass_url = overpass_base_url + '[out:json][timeout:125];area(3600402773)->.area;node["highway"="bus_stop"][!"name"](area.area);out skel;'
+
+    overpass_call = requests.get(overpass_url)
+    if overpass_call.status_code != 200:
+        print ("KO à l'appel Overpass")
+        exit(1)
+    overpass_result = overpass_call.json()
 
     for elem in overpass_result['elements']:
         kml_template = """
@@ -95,4 +96,7 @@ if __name__ == '__main__':
 </Document>
 </kml>
     """
-    print (kml_wrapper)
+    kml_wrapper = kml_wrapper.replace("%%kml_name%%", "Arrêts de bus sans nom")
+
+    with open("bussansnom.kml", "w") as xml_out_file :
+        xml_out_file.write(kml_wrapper)

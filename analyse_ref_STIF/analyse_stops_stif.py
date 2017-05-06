@@ -79,8 +79,9 @@ if __name__ == '__main__':
 
     #on écrit ça au format Osmose
     xml = create_osmose_xml(errors)
-    print (xml)
+    with open("osmose_stops.xml", "w") as xml_out_file :
+        xml_out_file.write(xml)
 
-    #print(len(errors))
+    print("Il y a {} erreurs".format(len(errors)))
 
     #TODO : aussi supprimer le tag source:ref:FR:STIF voire source si ça a du sens

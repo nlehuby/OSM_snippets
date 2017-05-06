@@ -195,5 +195,7 @@ if __name__ == '__main__':
     errors = get_errors()
 
     xml = create_osmose_xml(errors)
+    print("Il y a {} erreurs".format(len(errors)))
 
-    print(xml)
+    with open("osmose_test.xml", "w") as xml_out_file :
+        xml_out_file.write(xml)

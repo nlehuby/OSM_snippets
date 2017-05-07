@@ -1,260 +1,295 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
-  <title>OSM & navitia bus route comparing tools</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
-  <script src="assets/OverPassLayer.js"></script>
-  <script src="assets/osmtogeojson.js"></script>
-  <script src="assets/nav_auth.js"></script>
-  <script src="assets/easy-button.js"></script>
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-    }
-    html, body, #map {
-      height: 97%;
-      width: 100%;
-    }
-    #info {
-      height: 8%;
-      width: 100%;
-    }
-  </style>
+    <title>OSM & navitia bus route comparing tools</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+    <script src="assets/OverPassLayer.js"></script>
+    <script src="assets/osmtogeojson.js"></script>
+    <script src="assets/nav_auth.js"></script>
+    <script src="assets/easy-button.js"></script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body,
+        #map {
+            height: 97%;
+            width: 100%;
+        }
+
+        #info {
+            height: 8%;
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
-<div id="info">
-<table>
+    <div id="info">
+        <table>
 
-<tr>
-    <td>
-      <span id="parcours_OSM">parcours OSM ... </span><span id="osm_count"></span>
-    </td>
-</tr>
-<tr><td><span id="parcours_navitia">Pas de parcours navitia associé </span><span id="navitia_count"></span><br></td> </tr>
+            <tr>
+                <td>
+                    <span id="parcours_OSM">parcours OSM ... </span><span id="osm_count"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><span id="parcours_navitia">Pas de parcours navitia associé </span><span id="navitia_count"></span><br></td>
+            </tr>
 
-</table>
+        </table>
 
-</div>
-  <div id="map"></div>
-  <script>
-function getParameterByName(name) {
-    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-        results = regex.exec(location.href);
-    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
+    </div>
+    <div id="map"></div>
+    <script>
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.href);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
 
 
 
-	  var attr_osm = 'Map data &copy; <a href="http://openstreetmap.org/">OpenStreetMap</a> contributors',
-      attr_overpass = 'POI via <a href="http://www.overpass-api.de/">Overpass API</a> and <a href="http://navitia.io/">navitia.io</a>';
-    var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {opacity: 0.7, attribution: [attr_osm, attr_overpass].join(', ')});
-
-		var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(48.84702,2.37705), 14);
-
-		//var osm_relation_code = 3828100
-		var osm_relation_code = getParameterByName('osm');
-		var navitia_route_code = getParameterByName('navitia');
-
-$(document).ready(function() {
-    //authentification navitia
-    $.ajaxSetup( {
-           beforeSend: function(xhr) { xhr.setRequestHeader("Authorization", "Basic " + btoa(navitia_api_key + ":" )); }
-           });
-
-    // récupération du nom du parcours navitia
-    $.ajax({
-        url: "https://api.navitia.io/v1/coverage/fr-idf/routes/"+ navitia_route_code,
-        dataType: 'json',
-        global: true,
-        error: function(data) {console.log(data)},
-        success: function(data) {
-            nb_routes = data['pagination']['items_on_page']
-            if (nb_routes != '25') {
-              var nav_route_name=document.getElementById("parcours_navitia");
-              nav_route_name.innerHTML = "parcours navitia : <a href='http://api.navitia.io/v1/coverage/fr-idf/routes/"+data['routes'][0]['id']+"' target='_blank'> "+ data['routes'][0]['line']['code'] + " : "+data['routes'][0]['name'] +"</a>";
-              }
-            }
+        var attr_osm = 'Map data &copy; <a href="http://openstreetmap.org/">OpenStreetMap</a> contributors',
+            attr_overpass = 'POI via <a href="http://www.overpass-api.de/">Overpass API</a> and <a href="http://navitia.io/">navitia.io</a>';
+        var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            opacity: 0.7,
+            attribution: [attr_osm, attr_overpass].join(', ')
         });
 
-    //affichage des arrêts navitia
-   $.ajax({
-        url: "https://api.navitia.io/v1/coverage/fr-idf/routes/"+ navitia_route_code +"/stop_points?count=500",
-        dataType: 'json',
-        global: true,
-        error: function(data) {console.log(data)},
-        success: function(data) {
-            var navitia_count =document.getElementById("navitia_count");
-            navitia_count.innerHTML = " - " + data['pagination']['total_result'] + " arrêts"
+        var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(48.84702, 2.37705), 14);
 
-            nav_img = L.icon({iconUrl: 'assets/navitia_bus.png', popupAnchor: [0, 0]});
+        //var osm_relation_code = 3828100
+        var osm_relation_code = getParameterByName('osm');
+        var navitia_route_code = getParameterByName('navitia');
 
-            for (i = 0; i < data['stop_points'].length; i++) {
-                stop_name = data['stop_points'][i]['name']
-                stop_code = data['stop_points'][i]['id']
-                L.marker([data['stop_points'][i]['coord']['lat'], data['stop_points'][i]['coord']['lon']], {icon: nav_img}).addTo(map).bindPopup('<h3>'+stop_name+'</h3><div><a href="http://api.navitia.io/v1/coverage/fr-idf/stop_points/' + stop_code + '" target="_blank"> voir le détail</a></div>');
-            }
-        }
-    });
+        $(document).ready(function() {
+            //authentification navitia
+            $.ajaxSetup({
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader("Authorization", "Basic " + btoa(navitia_api_key + ":"));
+                }
+            });
 
-    // récupération du nombre d'arrêts OSM
-    $.ajax({
-        url: 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];relation('+ osm_relation_code +');node(r);out count;',
-        dataType: 'json',
-        global: true,
-        error: function(data) {console.log(data)},
-        success: function(data) {
-            var osm_count =document.getElementById("osm_count");
-            osm_count.innerHTML = " - " + data['elements'][0]['count']['nodes'] + " arrêts"
-            }
-        });
+            // récupération du nom du parcours navitia
+            $.ajax({
+                url: "https://api.navitia.io/v1/coverage/fr-idf/routes/" + navitia_route_code,
+                dataType: 'json',
+                global: true,
+                error: function(data) {
+                    console.log(data)
+                },
+                success: function(data) {
+                    nb_routes = data['pagination']['items_on_page']
+                    if (nb_routes != '25') {
+                        var nav_route_name = document.getElementById("parcours_navitia");
+                        nav_route_name.innerHTML = "parcours navitia : <a href='http://api.navitia.io/v1/coverage/fr-idf/routes/" + data['routes'][0]['id'] + "' target='_blank'> " + data['routes'][0]['line']['code'] + " : " +
+                            data['routes'][0]['name'] + "</a>";
+                    }
+                }
+            });
 
-    //affichage du parcours OSM
-    $.ajax({
-        url: 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];relation('+ osm_relation_code +');(._;>;);out;',
-        dataType: 'json',
-        global: true,
-        error: function(data) {console.log(data); alert("Il y a eu un souci dans l'affichage des données osm");},
-        success: function(data) {
-            //affichage du nom du parcours OSM
-            relation = data.elements.reverse()[0]
-	        var route_name=document.getElementById("parcours_OSM");
-            route_name.innerHTML = "parcours OSM : <a  target='_blank' href='http://openstreetmap.org/relation/"+ relation['id'] +"'>" + relation['tags']['name'] + "</a>"
+            //affichage des arrêts navitia
+            $.ajax({
+                url: "https://api.navitia.io/v1/coverage/fr-idf/routes/" + navitia_route_code + "/stop_points?count=500",
+                dataType: 'json',
+                global: true,
+                error: function(data) {
+                    console.log(data)
+                },
+                success: function(data) {
+                    var navitia_count = document.getElementById("navitia_count");
+                    navitia_count.innerHTML = " - " + data['pagination']['total_result'] + " arrêts"
 
-            //transformation en geojson
-            geo = osmtogeojson(data);
+                    nav_img = L.icon({
+                        iconUrl: 'assets/navitia_bus.png',
+                        popupAnchor: [0, 0]
+                    });
 
-            // marqueur pour les éléments qu'on ne veut pas voir
-            var geojsonBlankMarkerOptions = {
-	            radius: 8,
-	            fillColor: "#ff7800",
-	            color: "#000",
-	            weight: 0,
-	            opacity: 0,
-	            fillOpacity: 0
-            };
+                    for (i = 0; i < data['stop_points'].length; i++) {
+                        stop_name = data['stop_points'][i]['name']
+                        stop_code = data['stop_points'][i]['id']
+                        L.marker([data['stop_points'][i]['coord']['lat'], data['stop_points'][i]['coord']['lon']], {
+                            icon: nav_img
+                        }).addTo(map).bindPopup('<h3>' + stop_name + '</h3><div><a href="http://api.navitia.io/v1/coverage/fr-idf/stop_points/' + stop_code + '" target="_blank"> voir le détail</a></div>');
+                    }
+                }
+            });
 
-            // marqueur pour les stop_position
-            var geojsonMarkerOptions = {
-	            radius: 10,
-	            fillColor: "blue",
-	            color: "blue",
-	            weight: 1,
-	            opacity: 1,
-	            fillOpacity: 0.8
-            };
+            // récupération du nombre d'arrêts OSM
+            $.ajax({
+                url: 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];relation(' + osm_relation_code + ');node(r:"platform");out count;',
+                dataType: 'json',
+                global: true,
+                error: function(data) {
+                    console.log(data)
+                },
+                success: function(data) {
+                    var osm_count = document.getElementById("osm_count");
+                    console.log(data['elements'])
+                    osm_count.innerHTML = " - " + data['elements'][0]['tags']['nodes'] + " arrêts OK"
+                }
+            });
 
-            //fonction qui transforme les points du geojson en qqch d'affichable
-            function DisplayOSMBusStops(feature, latlng){
-	            if (feature.properties['type'] == 'node') {
-		            if (feature.properties['tags']['highway'] == 'bus_stop' ) {
-		            //console.log(feature.properties)
-	                var myicon = L.icon({
-                              iconUrl: 'assets/blue_bus.png',
-                          });
-		            return L.marker(latlng, {icon: myicon})
-		            }
-		            else if (feature.properties['tags']['public_transport'] == 'stop_position') {return L.circleMarker(latlng, geojsonMarkerOptions)}
-		            else { return L.circleMarker(latlng, geojsonBlankMarkerOptions)}
-	            }
-            }
+            //affichage du parcours OSM
+            $.ajax({
+                url: 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];relation(' + osm_relation_code + ');(._;>;);out;',
+                dataType: 'json',
+                global: true,
+                error: function(data) {
+                    console.log(data);
+                    alert("Il y a eu un souci dans l'affichage des données osm");
+                },
+                success: function(data) {
+                    //affichage du nom du parcours OSM
+                    relation = data.elements.reverse()[0]
+                    var route_name = document.getElementById("parcours_OSM");
+                    route_name.innerHTML = "parcours OSM : <a  target='_blank' href='http://openstreetmap.org/relation/" + relation['id'] + "'>" + relation['tags']['name'] + "</a>"
 
-            //fonction qui affine les propriétés du geosjon
-            function onEachFeature(feature, layer) {
-	            if (feature.properties['type'] == 'node') {
-		            if (feature.properties['tags']['highway'] == 'bus_stop'|| feature.properties['tags']['public_transport'] == 'stop_position' ) {
-			            layer.bindPopup(feature.properties.tags.name + '<br><a href="http://www.openstreetmap.org/node/'+ feature.properties['id'] +'" target="_blank">Voir sur OSM</a>');
-		            }
-	            }
-	            if (feature.properties['type'] == 'way') {
-			            layer.setStyle({"color": "blue"});
-	            }
-            }
+                    //transformation en geojson
+                    geo = osmtogeojson(data);
 
-            //affichage du geojson
-            relation_OSM = L.geoJson(geo, {
-                onEachFeature: onEachFeature,
-                pointToLayer : DisplayOSMBusStops
-            }).addTo(map);
-            map.fitBounds(relation_OSM.getBounds());
+                    // marqueur pour les éléments qu'on ne veut pas voir
+                    var geojsonBlankMarkerOptions = {
+                        radius: 8,
+                        fillColor: "#ff7800",
+                        color: "#000",
+                        weight: 0,
+                        opacity: 0,
+                        fillOpacity: 0
+                    };
 
-        }
-    });
+                    // marqueur pour les stop_position
+                    var geojsonMarkerOptions = {
+                        radius: 10,
+                        fillColor: "blue",
+                        color: "blue",
+                        weight: 1,
+                        opacity: 1,
+                        fillOpacity: 0.8
+                    };
 
-});
-
-
-function display_bus_around(){
-    center = map.getCenter();
-    user_lat = center.lat;
-    user_lon = center.lng;
-    //[out:json][timeout:25];(node["highway"="bus_stop"](around:500,48.80423,2.36547);)->.a;rel(bn);out body;.a out body;
-    url_op_bus = 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];(node["highway"="bus_stop"](around:500,' + user_lat +',' + user_lon +');)->.a;rel(bn);out body;.a out body;';
-
-    $.getJSON(url_op_bus, function(data) {
-
-    // add to map
-        geo = osmtogeojson(data);
-        for (i = 0; i < geo.features.length; i++) {
-            if (geo.features[i].properties['type'] == 'node' && geo.features[i].properties['tags']['highway'] == 'bus_stop' ){
-                    relations_text = '';
-                    already_in = false;
-			        for (j = 0; j < geo.features[i].properties['relations'].length; j++)
-			        {
-			         if (geo.features[i].properties['relations'][j]['reltags']['route'] )
-		                {
-		                relations_text += geo.features[i].properties['relations'][j]['reltags']['name'] + " <br> "
-		                if (geo.features[i].properties['relations'][j]['rel'] == osm_relation_code) {already_in = true;}
-		                }
-
+                    //fonction qui transforme les points du geojson en qqch d'affichable
+                    function DisplayOSMBusStops(feature, latlng) {
+                        if (feature.properties['type'] == 'node') {
+                            if (feature.properties['tags']['highway'] == 'bus_stop') {
+                                //console.log(feature.properties)
+                                var myicon = L.icon({
+                                    iconUrl: 'assets/blue_bus.png',
+                                });
+                                return L.marker(latlng, {
+                                    icon: myicon
+                                })
+                            } else if (feature.properties['tags']['public_transport'] == 'stop_position') {
+                                return L.circleMarker(latlng, geojsonMarkerOptions)
+                            } else {
+                                return L.circleMarker(latlng, geojsonBlankMarkerOptions)
+                            }
+                        }
                     }
 
-                    tags = geo.features[i].properties.tags
-                    var tags_text = '<ul>';
-                    for (key in tags)
-                        {tags_text += '<li> ' + key + ' : ' + tags[key]}
-                    tags_text += '<li><a href="http://www.openstreetmap.org/node/'+ geo.features[i].properties['id'] +'" target="_blank">Voir sur OSM</a></ul>'
-                    geo.features[i].properties['popup_content'] = geo.features[i].properties.tags.name + "<br>"
-
-                    if (already_in)
-                        {
-                        geo.features[i].properties['popup_content'] += '<a target="_blank" href="http://localhost:8111/import?url=http://api.openstreetmap.org/api/0.6/node/'+geo.features[i].properties['id']+'"> Retirer cet arrêt du parcours dans JOSM</a><br>';
-                        geo.features[i].properties['icon_url'] = 'assets/blue_bus.png';
+                    //fonction qui affine les propriétés du geosjon
+                    function onEachFeature(feature, layer) {
+                        if (feature.properties['type'] == 'node') {
+                            if (feature.properties['tags']['highway'] == 'bus_stop' || feature.properties['tags']['public_transport'] == 'stop_position') {
+                                layer.bindPopup(feature.properties.tags.name + '<br><a href="http://www.openstreetmap.org/node/' + feature.properties['id'] + '" target="_blank">Voir sur OSM</a>');
+                            }
                         }
-                    else
-                        {
-                        geo.features[i].properties['popup_content'] += '<a target="_blank" href="http://localhost:8111/import?url=http://api.openstreetmap.org/api/0.6/node/'+geo.features[i].properties['id']+'"> Ajouter cet arrêt au parcours dans JOSM </a><br>';
-                        geo.features[i].properties['icon_url'] = 'assets/red_bus.png';
+                        if (feature.properties['type'] == 'way') {
+                            layer.setStyle({
+                                "color": "blue"
+                            });
+                        }
+                    }
+
+                    //affichage du geojson
+                    relation_OSM = L.geoJson(geo, {
+                        onEachFeature: onEachFeature,
+                        pointToLayer: DisplayOSMBusStops
+                    }).addTo(map);
+                    map.fitBounds(relation_OSM.getBounds());
+
+                }
+            });
+
+        });
+
+
+        function display_bus_around() {
+            center = map.getCenter();
+            user_lat = center.lat;
+            user_lon = center.lng;
+            //[out:json][timeout:25];(node["highway"="bus_stop"](around:500,48.80423,2.36547);)->.a;rel(bn);out body;.a out body;
+            url_op_bus = 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];(node["highway"="bus_stop"](around:500,' + user_lat + ',' + user_lon + ');)->.a;rel(bn);out body;.a out body;';
+
+            $.getJSON(url_op_bus, function(data) {
+
+                // add to map
+                geo = osmtogeojson(data);
+                for (i = 0; i < geo.features.length; i++) {
+                    if (geo.features[i].properties['type'] == 'node' && geo.features[i].properties['tags']['highway'] == 'bus_stop') {
+                        relations_text = '';
+                        already_in = false;
+                        for (j = 0; j < geo.features[i].properties['relations'].length; j++) {
+                            if (geo.features[i].properties['relations'][j]['reltags']['route']) {
+                                relations_text += geo.features[i].properties['relations'][j]['reltags']['name'] + " <br> "
+                                if (geo.features[i].properties['relations'][j]['rel'] == osm_relation_code) {
+                                    already_in = true;
+                                }
+                            }
+
                         }
 
-                    geo.features[i].properties['popup_content'] += tags_text + '<br>' + relations_text
+                        tags = geo.features[i].properties.tags
+                        var tags_text = '<ul>';
+                        for (key in tags) {
+                            tags_text += '<li> ' + key + ' : ' + tags[key]
+                        }
+                        tags_text += '<li><a href="http://www.openstreetmap.org/node/' + geo.features[i].properties['id'] + '" target="_blank">Voir sur OSM</a></ul>'
+                        geo.features[i].properties['popup_content'] = geo.features[i].properties.tags.name + "<br>"
+
+                        if (already_in) {
+                            geo.features[i].properties['popup_content'] += '<a target="_blank" href="http://localhost:8111/import?url=http://api.openstreetmap.org/api/0.6/node/' + geo.features[i].properties['id'] +
+                                '"> Retirer cet arrêt du parcours dans JOSM</a><br>';
+                            geo.features[i].properties['icon_url'] = 'assets/blue_bus.png';
+                        } else {
+                            geo.features[i].properties['popup_content'] += '<a target="_blank" href="http://localhost:8111/import?url=http://api.openstreetmap.org/api/0.6/node/' + geo.features[i].properties['id'] +
+                                '"> Ajouter cet arrêt au parcours dans JOSM </a><br>';
+                            geo.features[i].properties['icon_url'] = 'assets/red_bus.png';
+                        }
+
+                        geo.features[i].properties['popup_content'] += tags_text + '<br>' + relations_text
 
 
-            }
+                    }
+                }
+                bus_layer = L.geoJson(geo, {
+                    onEachFeature: function(feature, layer) {
+                        layer.bindPopup(feature.properties['popup_content']);
+                        layer.setIcon(L.icon({
+                            iconUrl: feature.properties['icon_url'],
+                            popupAnchor: [0, 0]
+                        }));
+                    },
+                }).addTo(map);
+            });
         }
-        bus_layer = L.geoJson(geo, {
-            onEachFeature: function(feature, layer) {
-                layer.bindPopup(feature.properties['popup_content']);
-                layer.setIcon(L.icon({
-                  iconUrl: feature.properties['icon_url'],
-                  popupAnchor: [0, 0]
-                }));
+        L.easyButton('fa-bus',
+            function() {
+                display_bus_around();
             },
-        }).addTo(map);
-    });
-}
-L.easyButton('fa-bus',
-              function (){
-                  display_bus_around();
-              },
-             'Afficher les arrêts de bus à proximité'
-             )
-
-  </script>
+            'Afficher les arrêts de bus à proximité'
+        )
+    </script>
 </body>
+
 </html>

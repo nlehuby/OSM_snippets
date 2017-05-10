@@ -1,0 +1,3 @@
+[submodule "STIF-to-OSM/assets/third_parties/osm_js_editor"]
+	path = STIF-to-OSM/assets/third_parties/osm_js_editor
+	url = https://github.com/nlehuby/osm_js_editor

@@ -3,8 +3,8 @@ import json
 
 
 def make_kml_stop_without_names(overpass_base_url, kml_wrapper) :
-    overpass_url = overpass_base_url + '[out:json][timeout:125];area(3600008649)->.area;node["highway"="bus_stop"][!"name"](area.area);out skel;'
-    #overpass_url = overpass_base_url + '[out:json][timeout:125];area(3600402773)->.area;node["highway"="bus_stop"][!"name"](area.area);out skel;'
+    overpass_url = overpass_base_url + '[out:json][timeout:125];area(3600008649)->.area;node["highway"="bus_stop"][!"name"][!"disused"](area.area);out skel;'
+    #overpass_url = overpass_base_url + '[out:json][timeout:125];area(3600402773)->.area;node["highway"="bus_stop"][!"name"][!"disused"](area.area);out skel;'
 
     overpass_call = requests.get(overpass_url)
     if overpass_call.status_code != 200:
@@ -34,8 +34,8 @@ def make_kml_stop_without_names(overpass_base_url, kml_wrapper) :
         xml_out_file.write(kml_wrapper)
 
 def make_kml_stop_orphan(overpass_base_url, kml_wrapper) :
-    overpass_url = overpass_base_url + '[out:json][timeout:225];area(3600008649);node(area)["highway"="bus_stop"]->.all;relation(bn.all);node(r);( .all; - ._; );out skel;'
-    #overpass_url = overpass_base_url + '[out:json][timeout:125];area(3600402773);node(area)["highway"="bus_stop"]->.all;relation(bn.all);node(r);( .all; - ._; );out skel;'
+    overpass_url = overpass_base_url + '[out:json][timeout:225];area(3600008649);node(area)["highway"="bus_stop"][!"disused"]->.all;relation(bn.all);node(r);( .all; - ._; );out skel;'
+    #overpass_url = overpass_base_url + '[out:json][timeout:125];area(3600402773);node(area)["highway"="bus_stop"][!"disused"]->.all;relation(bn.all);node(r);( .all; - ._; );out skel;'
 
     overpass_call = requests.get(overpass_url)
     if overpass_call.status_code != 200:
@@ -66,8 +66,8 @@ def make_kml_stop_orphan(overpass_base_url, kml_wrapper) :
         xml_out_file.write(kml_wrapper)
 
 def make_kml_stop_fixme(overpass_base_url, kml_wrapper) :
-    overpass_url = overpass_base_url + '[out:json][timeout:125];area(3600008649)->.area;node["highway"="bus_stop"]["FIXME"](area.area);out body;'
-    #overpass_url = overpass_base_url + '[out:json][timeout:125];area(3600402773)->.area;node["highway"="bus_stop"]["FIXME"](area.area);out body;'
+    overpass_url = overpass_base_url + '[out:json][timeout:125];area(3600008649)->.area;node["highway"="bus_stop"]["FIXME"][!"disused"](area.area);out body;'
+    #overpass_url = overpass_base_url + '[out:json][timeout:125];area(3600402773)->.area;node["highway"="bus_stop"]["FIXME"][!"disused"](area.area);out body;'
 
     overpass_call = requests.get(overpass_url)
     if overpass_call.status_code != 200:

@@ -550,8 +550,6 @@
 7208739,Eb,,Siyonne,Transdev Interval,blue,route_master,bus,208208013:Eb
 7208740,Ea,,Siyonne,Transdev Interval,blue,route_master,bus,208208007:Ea
 7214891,15 - Traverse Brancion-Commerce,Traverse Brancion-Commerce,STIF,B.E.-Green,#ABCF38,route_master,,333575515:TRAVERSE
-7224864,37,Ligne 37 : Le P'tit bus de Lagny,Pep's,Transdev AMV,,route_master,bus,
-7226920,800,Flixbus 800,Flixbus,Flixbus,,route_master,bus,
+7224864,37,Ligne 37 : Le P'tit bus de Lagny,Pep's,Transdev AMV,,route_master,bus,051051037:37
 7227705,2,Métro 2,RATP,RATP,#216EB4,route_master,subway,100110002:2
 7227818,3,Métro 3,RATP,RATP,#9A9940,route_master,subway,100110003:3
-7229017,N800,Flixbus N800,Flixbus,Flixbus,,route_master,bus,

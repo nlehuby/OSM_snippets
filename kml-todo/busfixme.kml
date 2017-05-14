@@ -117,12 +117,6 @@
       <Placemark>
         <name>Vérifier cet arrêt de bus</name>
         <styleUrl>#placemark-brown</styleUrl>
-        <Point><coordinates>2.3231876,48.8756587</coordinates></Point>
-        <description><![CDATA[FIXME : position à préciser<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8756587/2.3231876">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Vérifier cet arrêt de bus</name>
-        <styleUrl>#placemark-brown</styleUrl>
         <Point><coordinates>2.3236261,48.8755046</coordinates></Point>
         <description><![CDATA[FIXME : position à préciser<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8755046/2.3236261">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -153,18 +147,6 @@
       <Placemark>
         <name>Vérifier cet arrêt de bus</name>
         <styleUrl>#placemark-brown</styleUrl>
-        <Point><coordinates>2.3245306,48.8332241</coordinates></Point>
-        <description><![CDATA[FIXME : position à préciser<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8332241/2.3245306">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Vérifier cet arrêt de bus</name>
-        <styleUrl>#placemark-brown</styleUrl>
-        <Point><coordinates>2.3264674,48.8284741</coordinates></Point>
-        <description><![CDATA[FIXME : position à préciser<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8284741/2.3264674">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Vérifier cet arrêt de bus</name>
-        <styleUrl>#placemark-brown</styleUrl>
         <Point><coordinates>2.3501015,48.8386026</coordinates></Point>
         <description><![CDATA[FIXME : position à préciser<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8386026/2.3501015">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -179,12 +161,6 @@
         <styleUrl>#placemark-brown</styleUrl>
         <Point><coordinates>2.3884744,48.8411428</coordinates></Point>
         <description><![CDATA[FIXME : position à préciser<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8411428/2.3884744">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Vérifier cet arrêt de bus</name>
-        <styleUrl>#placemark-brown</styleUrl>
-        <Point><coordinates>2.3863883,48.8476942</coordinates></Point>
-        <description><![CDATA[FIXME : vérifier si arrêt du bus 46<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8476942/2.3863883">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Vérifier cet arrêt de bus</name>
@@ -459,12 +435,6 @@
       <Placemark>
         <name>Vérifier cet arrêt de bus</name>
         <styleUrl>#placemark-brown</styleUrl>
-        <Point><coordinates>2.3267243,48.8285493</coordinates></Point>
-        <description><![CDATA[FIXME : position à préciser<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8285493/2.3267243">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Vérifier cet arrêt de bus</name>
-        <styleUrl>#placemark-brown</styleUrl>
         <Point><coordinates>2.3122623,48.8471902</coordinates></Point>
         <description><![CDATA[FIXME : position à préciser<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8471902/2.3122623">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -521,6 +491,12 @@
         <styleUrl>#placemark-brown</styleUrl>
         <Point><coordinates>2.3640599,48.8582705</coordinates></Point>
         <description><![CDATA[FIXME : position à préciser<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8582705/2.3640599">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Vérifier cet arrêt de bus</name>
+        <styleUrl>#placemark-brown</styleUrl>
+        <Point><coordinates>2.3373975,48.8527013</coordinates></Point>
+        <description><![CDATA[FIXME : cet arrêt existe-t-il toujours ?<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8527013/2.3373975">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Vérifier cet arrêt de bus</name>
@@ -653,6 +629,24 @@
         <styleUrl>#placemark-brown</styleUrl>
         <Point><coordinates>2.2506059,48.9231259</coordinates></Point>
         <description><![CDATA[FIXME : 164, 304<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9231259/2.2506059">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Vérifier cet arrêt de bus</name>
+        <styleUrl>#placemark-brown</styleUrl>
+        <Point><coordinates>2.3871084,48.8872983</coordinates></Point>
+        <description><![CDATA[FIXME : position approximative à affiner sur le terrain<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8872983/2.3871084">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Vérifier cet arrêt de bus</name>
+        <styleUrl>#placemark-brown</styleUrl>
+        <Point><coordinates>2.3864941,48.8870294</coordinates></Point>
+        <description><![CDATA[FIXME : position approximative à affiner sur le terrain<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8870294/2.3864941">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Vérifier cet arrêt de bus</name>
+        <styleUrl>#placemark-brown</styleUrl>
+        <Point><coordinates>2.338661,48.853841</coordinates></Point>
+        <description><![CDATA[FIXME : position à préciser<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.853841/2.338661">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
 </Document>
 </kml>

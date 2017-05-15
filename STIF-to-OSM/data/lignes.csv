@@ -540,7 +540,7 @@
 7194122,617,Bus 617 : Gare d'Aulnay-sous-Bois ↔ Gare de Villepinte,TRA,Transdev,,route_master,bus,293193617:617
 7194158,112,Bus 112 : Fontaineroux (Héricy) ↔ Stade de la Faisanderie (Fontainebleau),Aérial,Transdev Ile-de-France Vulaines,#F74C00,route_master,bus,062062112:112
 7194163,14,Bus 14 : Gare de Conflans Fin d'Oise ↔ Gare de Neuville Université,Conflans Achères,Transdev Île-de-France Conflans,#FFFF00,route_master,bus,212212014:14
-7194182,22,Bus 22 : Dourdan ↔ Paray-Douaville,Dourdanais,Transdev Île-de-France Rambouillet,,route_master,bus,
+7194182,22,Bus 22 : Dourdan ↔ Paray-Douaville,Dourdanais,Transdev Île-de-France Rambouillet,,route_master,bus,013013022:22
 7194183,06,Bus 06 : Dourdan ↔ Limours,Dourdanais,Transdev Île-de-France Rambouillet,,route_master,bus,013013006:06
 7194184,18,Bus 18 : Gare de Dourdan ↔ Champarts (Ablis),Dourdanais,Transdev Île-de-France Rambouillet,,route_master,bus,013013018:18
 7199517,MI,Bus MI : Combs-la-Ville - Quincy Gare RER ↔ Serpentine (Combs-la-Ville),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487013:MI
@@ -556,3 +556,7 @@
 7234663,203,Stigo 203,Stigo,TransDev,#0040FF,route_master,bus,003003203:203
 7234666,08,Stigo 08,Stigo,TransDev,#94FF54,route_master,bus,003003008:08
 7234686,5,Saint-Quentin en Yvelines - Les Mesnuls,Hourtoule,Hourtoule,#644C18,route_master,bus,027027005:5
+7244705,LA,Bus LA : circulaire Chanteloup,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
+7244706,LA,Bus LA : circulaire Claude Bernard,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
+7244792,208s,Bus 208s : Champigny–Saint-Maur RER → Champigny–Saint-Maur RER via Paul Venzac,RATP,RATP,#000080,route_master,bus,100100208:208S
+7245040,,Bus DM3,,Transports Daniel Meyer,,route_master,bus,

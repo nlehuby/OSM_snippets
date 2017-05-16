@@ -25,7 +25,7 @@ $(document).ready(function() {
         table = $('#data_table').DataTable({
             data: data_lines,
             order: [
-                [0, 'code STIF']
+                [8  , 'asc']
             ],
             columns: [ //@id,ref,name,network,operator,colour,type,route_master,ref:FR:STIF:ExternalCode_Line
                 {

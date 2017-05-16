@@ -21,6 +21,13 @@ $(document).ready(function() {
     function display_lines_in_table(data_lines) {
         data_lines.splice(0, 1);
         data_lines.splice(-1, 1);
+        var mapping_needed = 0;
+        for (i=0; i<data_lines.length; i++){
+            if (!data_lines[i][8]){
+                mapping_needed += 1;
+            }
+        }
+        $('#statistics').html("Il reste encore " + mapping_needed + " lignes sur " + data_lines.length + " à associer.");
 
         table = $('#data_table').DataTable({
             data: data_lines,

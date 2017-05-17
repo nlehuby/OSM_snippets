@@ -21,15 +21,26 @@ $(document).ready(function() {
     function display_lines_in_table(data_lines) {
         data_lines.splice(0, 1);
         data_lines.splice(-1, 1);
+        var mapping_needed = 0;
+        for (i=0; i<data_lines.length; i++){
+            if (!data_lines[i][8]){
+                mapping_needed += 1;
+            }
+        }
+        $('#statistics').html("Il reste encore " + mapping_needed + " lignes sur " + data_lines.length + " à associer.");
 
         table = $('#data_table').DataTable({
             data: data_lines,
             order: [
-                [0, 'code STIF']
+                [8  , 'asc']
             ],
             columns: [ //@id,ref,name,network,operator,colour,type,route_master,ref:FR:STIF:ExternalCode_Line
                 {
-                    title: "id"
+                    title: "id",
+                    data: function(row, type, set) {
+                        var link_url = "http://www.openstreetmap.org/relation/" + row[0];
+                        return "<a target='_blank' href='" + link_url + "'>" + row[0] + "</a>";
+                    }
                 }, {
                     title: "code"
                 }, {
@@ -47,7 +58,11 @@ $(document).ready(function() {
                 }, {
                     title: "mode"
                 }, {
-                    title: "code STIF"
+                    title: "code STIF",
+                    data: function(row, type, set) {
+                        var link_url = "https://canaltp.github.io/navitia-playground/play.html?request=https%3A%2F%2Fapi.navitia.io%2Fv1%2Fcoverage%2Ffr-idf%2Flines%3Ffilter%3Dline.has_code%28source%2C"+ row[8]+ "%29" ;
+                        return "<a target='_blank' href='" + link_url + "'>" + row[8] + "</a>";
+                    }
                 }, {
                     title: "Associer",
                     data: function(row, type, set) {

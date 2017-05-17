@@ -36,7 +36,11 @@ $(document).ready(function() {
             ],
             columns: [ //@id,ref,name,network,operator,colour,type,route_master,ref:FR:STIF:ExternalCode_Line
                 {
-                    title: "id"
+                    title: "id",
+                    data: function(row, type, set) {
+                        var link_url = "http://www.openstreetmap.org/relation/" + row[0];
+                        return "<a target='_blank' href='" + link_url + "'>" + row[0] + "</a>";
+                    }
                 }, {
                     title: "code"
                 }, {
@@ -54,7 +58,11 @@ $(document).ready(function() {
                 }, {
                     title: "mode"
                 }, {
-                    title: "code STIF"
+                    title: "code STIF",
+                    data: function(row, type, set) {
+                        var link_url = "https://canaltp.github.io/navitia-playground/play.html?request=https%3A%2F%2Fapi.navitia.io%2Fv1%2Fcoverage%2Ffr-idf%2Flines%3Ffilter%3Dline.has_code%28source%2C"+ row[8]+ "%29" ;
+                        return "<a target='_blank' href='" + link_url + "'>" + row[8] + "</a>";
+                    }
                 }, {
                     title: "Associer",
                     data: function(row, type, set) {

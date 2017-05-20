@@ -122,7 +122,7 @@
 1635139,T2,Tram T2 : Pont de Bezons ↔ Porte de Versailles,RATP,RATP,#BB4A9B,route_master,tram,100112012:T2
 1648058,407,Bus 407 : Évry ↔ Ris-Orangis,Tice,Tice,#8BD0EF,route_master,bus,400400407:407
 1648952,405,Bus 405 : Ris-Orangis ↔ Corbeil-Essonnes,Tice,Tice,#0088C6,route_master,bus,400400405:405
-1650713,1,TZen 1 : Lieusaint - Moissy RER ↔ Corbeil-Essonnes RER,TZen,Transdev,,route_master,bus,065487100:Tzen1
+1650713,TZen 1,TZen 1 : Lieusaint - Moissy Gare RER ↔ Corbeil-Essonnes Gare RER,TZen,Transdev Île-de-France Lieusaint,,route_master,bus,065487100:Tzen1
 1658281,N141,Bus N141: Gare de l'Est ↔ Gare de Meaux,Noctilien,Transilien,#FCB131,route_master,bus,800:N141
 1667801,N24,Noctilien N24: Grand Cerf (Bezons) ↔ Châtelet,Noctilien,RATP,#F78F4B,route_master,bus,100987751:N24
 1673421,D,Train RER D,RER,SNCF,#5E9620,route_master,train,800:D
@@ -177,7 +177,6 @@
 2440114,14,Bus 14 : Gare de Massy-Palaiseau RER ↔ Gare de Palaiseau-Villebon RER ↔ École Polytechnique,Mobicaps,Cars d'Orsay - Transdev,#65C1ED,route_master,bus,006006014:14
 2454326,6,Bus 6 : Campus d’Orsay - Jean Monet ↔ Gare d’Orsay-Ville RER,Mobicaps,Cars d'Orsay - Transdev,#986AAD,route_master,bus,006006007:6
 2506803,M,Bus M : Vaucresson Gare ↔ Le Chesnay Passy,Phébus,SVTU,#B98545,route_master,bus,056356009:M
-2531065,22,Bus 22 : Villiers-le-Bel ↔ Gonesse ↔ Roissypole,TransVO,TransVO,,route_master,bus,050050022:22
 2531075,93,Bus 93 : Bobigny – Pablo Picasso ↔ Parinor ↔ Aéroport CDG – Roissypole,Les Courriers de l'Île-de-France,Keolis CIF,#a3653d,route_master,bus,014014093:93
 2531082,23,Bus 23 : Roissypole ↔ Mitry-le-Neuf – Villeparisis,CIF,CIF,#00aeef,route_master,bus,014014223:23
 2531207,,Bus Fileo : Villiers-le-Bel – Espace Marcel Pagnol ↔ Roissypole,Filéo,CIF (Kéolis),,route_master,bus,116295004:FILEOVB
@@ -217,11 +216,11 @@
 3253656,32A,Bus 32A : Aulnay-Sous-Bois Parinor - Goussainville La Charmeuse,Les Courriers de l'Île-de-France,Keolis CIF,#B2CE40,route_master,bus,014014032:32A
 3253657,11.5,Bus 11.5 : Le Moulin / Avenue Bocquet ↔ Collège Philippe Auguste,Les Courriers de l'Île-de-France,Keolis CIF,#007AC2,route_master,bus,014014011:115
 3253980,95.18,Bus 95.18,Mobilien,Transdev IDF,#f3dd02,route_master,bus,212195018:9518
-3256022,37,Bus 37 : Villiers-le-Bel RER - Gonesse Hôpital via les Marroniers,TransVO,STIF,green,route_master,bus,050050037:37
+3256022,37,Bus 37 : Villiers-le-Bel RER - Gonesse Hôpital via les Marroniers,TransVO,Transdev Trans Val d'Oise,green,route_master,bus,050050037:37
 3256023,23ZI,Bus 23ZI : Villiers-le-Bel RER - Gonesse Zone Industrielle,TransVO,STIF,blue,route_master,bus,
-3256314,22,Bus 22 : Villiers-le-Bel RER - Roissypole RER,TransVO,STIF,yellow,route_master,bus,050050022:22
-3256315,31,Bus 31 : Villiers-le-Bel RER - Aulnay-sous-Bois PSA,TransVO,STIF,white,route_master,bus,
-3256316,23,Bus 23 : Villiers-le-Bel RER - Parc des Expositions RER,TransVO,STIF,blue,route_master,bus,050050023:23
+3256314,22,Bus 22 : Villiers-le-Bel RER - Roissypole RER,TransVO,Transdev Trans Val d'Oise,yellow,route_master,bus,050050022:22
+3256315,31,Bus 31 : Villiers-le-Bel RER - Aulnay-sous-Bois PSA,TransVO,Transdev Trans Val d'Oise,white,route_master,bus,
+3256316,23,Bus 23 : Villiers-le-Bel RER - Parc des Expositions RER,TransVO,Transdev Trans Val d'Oise,blue,route_master,bus,050050023:23
 3286442,408,Bus 408 : Evry - Mairie ↔ Evry - Bras-de-Fer,Tice,Tice,#00FF00,route_master,bus,400400408:408
 3307569,241,Bus 241 : Rueil-Malmaison RER ↔ Porte d'Auteuil,RATP,RATP,#8D653A,route_master,bus,100100241:241
 3315045,156,Bus 156 : Gare d'Epinay–Villetaneuse ↔ Villetaneuse - Université Paris XIII,RATP,RATP,#FFCD02,route_master,bus,100100156:156
@@ -370,7 +369,7 @@
 6744194,04,Bus 04 : Le Fresne (Saint-Pierre-du-Perray) ↔ Mairie (Morsang-sur-Seine),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487004:04
 6744247,DO,Bus DO : Les Grès (Moissy-Cramayel) ↔ Porte de Paris (Lieusaint),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487122:DO
 6744258,DO,Bus DO : Combs-la-Ville - Quincy Gare RER ↔ Serpentine (Combs-la-Ville),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487012:DO
-6744271,MI,Bus MI : Lieusaint Moissy Gare RER ↔ Lieusaint Moissy Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487129:MI
+6744271,MI,Bus MI : circulaire de Moissy,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487129:MI
 6751698,RÉ,Bus RÉ : Saint-Michel (Moissy-Cramayel) ↔ Lieusaint - Moissy Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487123:RE
 6751736,SI,Bus SI : Couture (Combs-la-Ville) ↔ Lycée J. Prévert (Combs-la-Ville),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487109:SI
 6751789,SOL,Bus SOL : Combs-la-Ville - Quincy Gare RER ↔ Lieusaint - Moissy Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487110:SOL
@@ -556,7 +555,9 @@
 7234663,203,Stigo 203,Stigo,TransDev,#0040FF,route_master,bus,003003203:203
 7234666,08,Stigo 08,Stigo,TransDev,#94FF54,route_master,bus,003003008:08
 7234686,5,Saint-Quentin en Yvelines - Les Mesnuls,Hourtoule,Hourtoule,#644C18,route_master,bus,027027005:5
-7244705,LA,Bus LA : circulaire Chanteloup,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
-7244706,LA,Bus LA : circulaire Claude Bernard,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
+7244705,LA,Bus LA : circulaire Chanteloup,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487128:LA
+7244706,LA,Bus LA : circulaire Claude Bernard,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487126:LA
 7244792,208s,Bus 208s : Champigny–Saint-Maur RER → Champigny–Saint-Maur RER via Paul Venzac,RATP,RATP,#000080,route_master,bus,100100208:208S
-7245040,,Bus DM3,,Transports Daniel Meyer,,route_master,bus,
+7245040,,Bus DM3,,Transports Daniel Meyer,,route_master,bus,055055003:DM03
+7248309,MI,Bus MI : circulaire de Lieusaint,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487127:MI
+7249260,,,,Batobus,no,route_master,ferry,

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<analysers timestamp="2017-05-14T18:47:17Z">
-	<analyser timestamp="2017-05-14T18:47:17Z">
+<analysers timestamp="2017-05-20T18:29:20Z">
+	<analyser timestamp="2017-05-20T18:29:20Z">
 		<class item="8042" tag="transport en commun" id="1" level="3">
 			<classtext lang="fr" title="tag manquant sur une relation route_master (ligne de transport en commun)"></classtext>
 		</class>
@@ -75,6 +75,30 @@
 				<fix>
 					<relation id="7214891">
 						<tag action="create" k="route_master" v="bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.654718" lon="2.364121"></location>
+			<relation id="7245040"></relation>
+			<text lang="fr" value="la relation n'a pas de tag network. Valeur probable : Daniel Meyer"></text>
+			<fixes>
+				<fix>
+					<relation id="7245040">
+						<tag action="create" k="network" v="Daniel Meyer"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.654718" lon="2.364121"></location>
+			<relation id="7245040"></relation>
+			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : DM03"></text>
+			<fixes>
+				<fix>
+					<relation id="7245040">
+						<tag action="create" k="ref" v="DM03"></tag>
 					</relation>
 				</fix>
 			</fixes>

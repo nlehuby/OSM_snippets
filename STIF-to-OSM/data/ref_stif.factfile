@@ -65,7 +65,7 @@
         }, {
             "name": "remove bicycle and ferry",
             "executor": "shell",
-            "command": "mv lignes.csv lignes_.csv && cat lignes_.csv |xsv search -s type bicycle -v | xsv search -s type ferry -v  > lignes.csv",
+            "command": "mv lignes.csv lignes_.csv && cat lignes_.csv |xsv search -s route_master bicycle -v | xsv search -s route_master ferry -v  > lignes.csv",
             "arguments": [],
             "dependsOn": ["remove national trains"],
             "onResult": {

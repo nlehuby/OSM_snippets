@@ -58,19 +58,18 @@ $(document).ready(function() {
                 }, {
                     title: "mode"
                 }, {
-                    title: "code STIF",
-                    data: function(row, type, set) {
-                        var link_url = "https://canaltp.github.io/navitia-playground/play.html?request=https%3A%2F%2Fapi.navitia.io%2Fv1%2Fcoverage%2Ffr-idf%2Flines%3Ffilter%3Dline.has_code%28source%2C"+ row[8]+ "%29" ;
-                        return "<a target='_blank' href='" + link_url + "'>" + row[8] + "</a>";
-                    }
+                    title: "code STIF"
                 }, {
                     title: "Associer",
                     data: function(row, type, set) {
-                        button_color = ""
                         if (row[8] != "") {
-                            button_color = "alt"
+                            button_color = "alt";
+                            navitia_url_suffix = "";
+                        } else {
+                            button_color = "";
+                            navitia_url_suffix = "&line_code=" + row[1];
                         }
-                        return "<a class='button " + button_color + " small' target='_blank' href='./line.html?osm_relation=" + row[0] + "&line_code=" + row[1] + "'> Voir </a>";
+                        return "<a class='button " + button_color + " small' target='_blank' href='./line.html?osm_relation=" + row[0] + navitia_url_suffix + "'> Voir </a>";
                     }
                 }
             ]

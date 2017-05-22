@@ -61,8 +61,9 @@ $(document).ready(function() {
     });
 
     get_osm_line_info(osm_relation_code);
-    get_navitia_lines_candidates(line_commercial_code);
-
+    if (line_commercial_code) {
+      get_navitia_lines_candidates(line_commercial_code);
+    }
 });
 
 function getParameterByName(name) {
@@ -90,7 +91,6 @@ function get_navitia_lines_candidates(line_code) {
         dataType: 'json',
         global: true,
         error: function(data) {
-            console.log(data);
             console.log("Il y a eu un souci dans l'affichage des données opendata candidates")
         },
         success: function(data) {

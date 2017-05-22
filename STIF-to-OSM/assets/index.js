@@ -63,7 +63,7 @@ $(document).ready(function() {
                     title: "Associer",
                     data: function(row, type, set) {
                         if (row[8] != "") {
-                            button_color = "alt";
+                            button_color = "special";
                             navitia_url_suffix = "";
                         } else {
                             button_color = "";

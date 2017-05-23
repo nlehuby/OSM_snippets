@@ -559,5 +559,5 @@
 7244792,208s,Bus 208s : Champigny–Saint-Maur RER → Champigny–Saint-Maur RER via Paul Venzac,RATP,RATP,#000080,route_master,bus,100100208:208S
 7245040,,Bus DM3,,Transports Daniel Meyer,,route_master,bus,055055003:DM03
 7248309,MI,Bus MI : circulaire de Lieusaint,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487127:MI
-7261212,389,Bus 389 : Pont de Sèvres ↔ Clamart–Georges Pompidou,RATP,RATP,#006CB8,route_master,bus,
-7263065,02,Bus 02 : Les Prés Hauts (Saint-Pierre-du-Perray) ↔ Petit Sénart (Tigery),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
+7261212,389,Bus 389 : Pont de Sèvres ↔ Clamart–Georges Pompidou,RATP,RATP,#006CB8,route_master,bus,100100389:389
+7263065,02,Bus 02 : Les Prés Hauts (Saint-Pierre-du-Perray) ↔ Petit Sénart (Tigery),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487002:02

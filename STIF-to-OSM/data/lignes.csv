@@ -561,3 +561,4 @@
 7248309,MI,Bus MI : circulaire de Lieusaint,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487127:MI
 7261212,389,Bus 389 : Pont de Sèvres ↔ Clamart–Georges Pompidou,RATP,RATP,#006CB8,route_master,bus,100100389:389
 7263065,02,Bus 02 : Les Prés Hauts (Saint-Pierre-du-Perray) ↔ Petit Sénart (Tigery),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487002:02
+7271953,E,RER E,RER,SNCF,#BD76A1,route_master,train,

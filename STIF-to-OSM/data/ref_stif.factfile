@@ -55,7 +55,7 @@
         }, {
             "name": "remove national trains",
             "executor": "shell",
-            "command": "cat lignes_.csv |xsv search -s network TGV -v | xsv search -s network Eurostar -v |xsv search -s network Thalys -v |xsv search -s network Flixbus -v |xsv search -s network Intercités -v|xsv search -s operator 'SNCF Réseau' -v |xsv search -s operator 'DB Fernverkehr' -v > lignes.csv",
+            "command": "cat lignes_.csv |xsv search -s network TGV -v | xsv search -s network Eurostar -v |xsv search -s network Thalys -v |xsv search -s network Flixbus -v |xsv search -s network Intercités -v|xsv search -s operator 'SNCF Réseau' -v |xsv search -s operator 'DB Fernverkehr' -v > lignes_without_train.csv",
             "arguments": [],
             "dependsOn": ["filter csv"],
             "onResult": {
@@ -63,11 +63,21 @@
                 "continueJob": [0]
             }
         }, {
-            "name": "remove bicycle and ferry",
+            "name": "remove touristic lines",
             "executor": "shell",
-            "command": "mv lignes.csv lignes_.csv && cat lignes_.csv |xsv search -s route_master bicycle -v | xsv search -s route_master ferry -v  > lignes.csv",
+            "command": "cat lignes_without_train.csv |xsv search -s network 'Open Tour' -v | xsv search -s network Balabus -v |xsv search -s network 'Big Bus' -v > lignes_without_touristic.csv",
             "arguments": [],
             "dependsOn": ["remove national trains"],
+            "onResult": {
+                "terminateJobWithSuccess": [],
+                "continueJob": [0]
+            }
+        }, {
+            "name": "remove bicycle and ferry",
+            "executor": "shell",
+            "command": "cat lignes_without_touristic.csv |xsv search -s route_master bicycle -v | xsv search -s route_master ferry -v  > lignes.csv",
+            "arguments": [],
+            "dependsOn": ["remove touristic lines"],
             "onResult": {
                 "terminateJobWithSuccess": [],
                 "continueJob": [0]

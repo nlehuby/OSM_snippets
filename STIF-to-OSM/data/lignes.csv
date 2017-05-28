@@ -357,10 +357,10 @@
 6660662,524,Bus 524: La Navette de Fontenay-sous-Bois,RATP,RATP,,route_master,bus,100100524:524
 6682682,AS (544),Autobus Suresnois,Autobus Suresnois,RATP,,route_master,bus,100100544:544
 6706981,487,Bus 487 : Athis-Mons - Porte de l'Essonne ↔ Marché de Juvisy,RATP,RATP,,route_master,bus,100100487:487
-6741325,RÉ,Bus RÉ : Savigny-le-Temple / Nandy Gare RER ↔ Carré - Trait d'Union (Lieusaint),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487132:RE
+6741325,RÉ,Bus RÉ : Savigny - Nandy Gare RER ↔ Carré Trait d'Union (Lieusaint),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487132:RE
 6741346,RÉ,Bus RÉ : Savigny-le-Temple - Nandy Gare RER ↔ Cesson Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487135:RE
-6741397,MI,Bus MI : Savigny-le-Temple - Nandy Gare RER ↔ La Grange (Savigny-le-Temple),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487131:MI
-6741557,DO,Bus DO : Savigny-le-Temple - Nandy Gare RER ↔ La Grange (Savigny-le-Temple),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487139:DO
+6741397,MI,Bus MI : Savigny - Nandy Gare RER ↔ La Grange (Savigny-le-Temple),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487131:MI
+6741557,DO,Bus DO : Savigny - Nandy Gare RER ↔ La Grange (Savigny-le-Temple),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487139:DO
 6744021,34,Bus 34 : Savigny-le-Temple - Nandy Gare RER ↔ Pavillon Royal (Nandy),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487034:34
 6744031,37,Bus 37 : Savigny-le-Temple - Nandy Gare RER ↔ Turquoises (Nandy),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487037:37
 6744094,36,Bus 36 : Savigny-le-Temple Gare RER ↔ Cesson Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487036:36
@@ -561,4 +561,5 @@
 7248309,MI,Bus MI : circulaire de Lieusaint,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487127:MI
 7261212,389,Bus 389 : Pont de Sèvres ↔ Clamart–Georges Pompidou,RATP,RATP,#006CB8,route_master,bus,100100389:389
 7263065,02,Bus 02 : Les Prés Hauts (Saint-Pierre-du-Perray) ↔ Petit Sénart (Tigery),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487002:02
-7271953,E,RER E,RER,SNCF,#BD76A1,route_master,train,
+7271953,E,RER E,RER,SNCF,#BD76A1,route_master,train,800:E
+7280948,Citalien,Bus Citalien : Carré Citoyenneté (Lieusaint) ↔ Gare Routière Mail (Melun),MELIBUS,Transdev Île-de-France Vaux-le-Pénil,,route_master,bus,

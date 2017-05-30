@@ -171,7 +171,7 @@
 2337724,7,Bus 7 : Orsay-Ville RER - L'Yvette ↔ Corbeville - Plateau du Moulon,Mobicaps,Cars d'Orsay - Transdev,#FBD813,route_master,bus,006006007:7
 2343189,34,Bus 34 : Lycée de Carrières-sur-Seine ↔ Marché des Coteaux (Argenteuil),R'bus,Transdev TVO,#C9A2CD,route_master,bus,016016034:34
 2389881,91.06,Bus 91.06,TransEssonne,Albatrans,,route_master,bus,291191006:91-06
-2390087,10,Bus 10: Gif ↔ Buc,,Mobicaps,,route_master,bus,039039004:10
+2390087,10,Bus 10: Gif ↔ Buc,Mobicaps,Services automobiles de la vallée de Chevreuse,,route_master,bus,039039004:10
 2415100,1,Bus 1 :Gare d’Igny RER ↔ Gare d’Orsay-Ville RER,Mobicaps,Cars d'Orsay - Transdev,#DF213B,route_master,bus,006006010:1
 2440114,14,Bus 14 : Gare de Massy-Palaiseau RER ↔ Gare de Palaiseau-Villebon RER ↔ École Polytechnique,Mobicaps,Cars d'Orsay - Transdev,#65C1ED,route_master,bus,006006014:14
 2454326,6,Bus 6 : Campus d’Orsay - Jean Monet ↔ Gare d’Orsay-Ville RER,Mobicaps,Cars d'Orsay - Transdev,#986AAD,route_master,bus,006006007:6
@@ -291,7 +291,7 @@
 5852775,132,Bus 132 : Vitry-sur-Seine - Moulin Vert ↔ Bibliothèque François Mitterrand,RATP,RATP,,route_master,bus,100100132:132
 5865410,196,Bus 196 : Massy–Palaiseau RER ↔ Antony RER,RATP,RATP,,route_master,bus,100100196:196
 5865473,119,Bus 119 : Vauhallan–Abbaye–Cimetière ↔ Les Baconnets RER,RATP,RATP,,route_master,bus,100100119:119
-5873533,44,Bus 44 : Gare de Versailles Rive-Gauche ↔ Valibout (Plaisir),,STAVO,,route_master,bus,044044001:44
+5873533,44,Bus 44 : Gare de Versailles Rive-Gauche ↔ Valibout (Plaisir),STAVO,STAVO,,route_master,bus,044044001:44
 5890965,95-20,Bus 95-20 : Cergy Préfecture ↔ Val d'Argenteuil,Valoise,Lacroix,,route_master,bus,030195020:95-20
 5899903,163,Bus 163 : Rueil–Ville ↔ Porte de Champerret,RATP,RATP,#ED1B29,route_master,bus,100100163:163
 5899969,141,Bus 141 : Lycée de Rueil-Malmaison ↔ La Défense,RATP,RATP,#e0b03b,route_master,bus,100100141:141
@@ -547,7 +547,7 @@
 7204064,FA,Bus FA : Combs-la-Ville - Quincy Gare RER ↔ 14 Juillet (Vaux-le-Pénil),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487020:FA
 7208739,Eb,,Siyonne,Transdev Interval,blue,route_master,bus,208208013:Eb
 7208740,Ea,,Siyonne,Transdev Interval,blue,route_master,bus,208208007:Ea
-7214891,15 - Traverse Brancion-Commerce,Traverse Brancion-Commerce,STIF,B.E.-Green,#ABCF38,route_master,,333575515:TRAVERSE
+7214891,15 - Traverse Brancion-Commerce,Traverse Brancion-Commerce,STIF,B.E.-Green,#ABCF38,route_master,bus,333575515:TRAVERSE
 7224864,37,Ligne 37 : Le P'tit bus de Lagny,Pep's,Transdev AMV,,route_master,bus,051051037:37
 7227705,2,Métro 2,RATP,RATP,#216EB4,route_master,subway,100110002:2
 7227818,3,Métro 3,RATP,RATP,#9A9940,route_master,subway,100110003:3
@@ -562,4 +562,6 @@
 7261212,389,Bus 389 : Pont de Sèvres ↔ Clamart–Georges Pompidou,RATP,RATP,#006CB8,route_master,bus,100100389:389
 7263065,02,Bus 02 : Les Prés Hauts (Saint-Pierre-du-Perray) ↔ Petit Sénart (Tigery),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487002:02
 7271953,E,RER E,RER,SNCF,#BD76A1,route_master,train,800:E
-7280948,Citalien,Bus Citalien : Carré Citoyenneté (Lieusaint) ↔ Gare Routière Mail (Melun),MELIBUS,Transdev Île-de-France Vaux-le-Pénil,,route_master,bus,
+7280948,Citalien,Bus Citalien : Carré Citoyenneté (Lieusaint) ↔ Gare Routière Mail (Melun),MELIBUS,Transdev Île-de-France Vaux-le-Pénil,,route_master,bus,066487077:CITA
+7292361,39.12,Bus 39.12 : Versailles — Gare des Chantiers ↔ Guyancourt — Technocentre - Trou Berger / Magny-les-Hameaux — Mérantais,SAVAC,SAVAC,,route_master,bus,039039012:39-12
+7292418,9,Bus 9 : Centre Commercial Ulis 2 <-> Jouy-en-Josas RER,Mobicaps,Les Cars d'Orsay,#DC2185,route_master,bus,269269002:9

@@ -3,10 +3,12 @@
 107354,11,Bus 11 : Victor Basch (Goussainville) ↔ Saint-Denis Porte de Paris,Les Courriers de l'Île-de-France,Keolis CIF,#B456A1,route_master,bus,014014011:11
 107356,32,"Bus 32 : Goussainville, Victor Basch - Roissypole",Les Courriers de l'Île-de-France,Keolis CIF,#B2CE40,route_master,bus,014014032:32
 122886,C,Train RER C,RER,SNCF,#FCD946,route_master,train,800:C
+215565,U,Transilien U,Transilien,SNCF,#ED0677,route_master,train,
 225665,170,Bus 170 : Saint-Denis RER ↔ Porte des Lilas,RATP,RATP,#87d3df,route_master,bus,100100170:170
 225800,PC3,PC3 - Bus 99 : Porte Maillot - Pershing ↔ Porte de la Chapelle,RATP,RATP,#ED1B2A,route_master,bus,100100099:PC3
 225801,115,Bus 115: Château de Vincennes ↔ Porte des Lilas,RATP,RATP,#008B5A,route_master,bus,100100115:115
 226276,96,Bus 96 : Gare Montparnasse ↔ Porte des Lilas,RATP,RATP,#DFB03A,route_master,bus,100100096:96
+253357,K,Transilien K,Transilien,SNCF,#C7B300,route_master,train,800:K
 255442,61,Bus 61 : Gare d'Austerlitz ↔ Pantin — Église de Pantin,RATP,RATP,#008C5A,route_master,bus,100100061:61
 332709,147,Bus 147 : Église de Pantin ↔ Sevran – Avenue Ronsard,RATP,RATP,#F50024,route_master,bus,100100147:147
 387064,86,Bus 86 : Saint-Germain-des-Prés ↔ Saint-Mandé — Demi-Lune - Parc Zoologique,RATP,RATP,#ED1B2A,route_master,bus,100100086:86
@@ -211,7 +213,7 @@
 3081886,B,Bus ligne B: Gare SNCF/RER (CHELLES) ↔ College Corot (CHELLES),Apolo 7,STBC,#97BF0D,route_master,bus,101261021:B
 3134153,221,Bus 221 : Bagnolet - Gallieni ↔ Gagny - Pointe de Gournay,RATP,RATP,#f49eb2,route_master,bus,100100221:221
 3186411,15,Bus 15 : Gare de Massy-Palaiseau ↔ Vélizy-Villacoublay,Mobicaps,Les Cars d'Orsay,#313188,route_master,bus,006006015:15
-3253655,95.02,Bus 95.02,Busval d'Oise,Busval d'Oise,#004494,route_master,bus,014195002:95-02
+3253655,95.02,Bus 95.02,Busval d'Oise,Les Courriers d'Île-de-France;Les Cars Rose,#004494,route_master,bus,014195002:95-02
 3253656,32A,Bus 32A : Aulnay-Sous-Bois Parinor - Goussainville La Charmeuse,Les Courriers de l'Île-de-France,Keolis CIF,#B2CE40,route_master,bus,014014032:32A
 3253657,11.5,Bus 11.5 : Le Moulin / Avenue Bocquet ↔ Collège Philippe Auguste,Les Courriers de l'Île-de-France,Keolis CIF,#007AC2,route_master,bus,014014011:115
 3253980,95.18,Bus 95.18,Mobilien,Transdev IDF,#f3dd02,route_master,bus,212195018:9518
@@ -242,7 +244,7 @@
 3389342,TUVIM,Bus TUVIM,RATP,RATP,,route_master,bus,100100589:TUVIM
 3399270,603,Bus 603 : Gare du Raincy–Villemomble–Montfermeil ↔ Coubron - Corot,TRA,Veolia Transport,#8D5E24,route_master,bus,293193603:603
 3490811,17,Bus TVF 17 : Gare RER de Mitry-Claye ↔ Gare Routière de Charny,Trans Val de France,Transdev TVF,#D5C901,route_master,bus,054054017:17
-3546204,158,Bus 158 : Rueil-Malmaison RER ↔ Pont de Neuilly,STIF,RATP,,route_master,bus,100100158:158
+3546204,158,Bus 158 : Rueil-Malmaison RER ↔ Pont de Neuilly,RATP,RATP,,route_master,bus,100100158:158
 3638709,6,Bus 6 : Boissy-Saint-Léger RER ↔ Le Havre,SITUS,Transdev SETRA,,route_master,bus,040240006:6
 3662457,T3b,Tram T3b : Porte de Vincennes ↔ Porte de la Chapelle,RATP,RATP,#009641,route_master,tram,100112003:T3B
 3686355,104,Bus 104 : École Vétérinaire de Maisons-Alfort ↔ Bonneuil - Place des Libertés,RATP,RATP,#ED1B2A,route_master,bus,100100104:104
@@ -342,7 +344,7 @@
 6147733,46,Ligne 46 : Val d'Europe - Torcy,Pep's,Transdev AMV,,route_master,bus,051051046:46
 6147762,43,Ligne 43 : Val d'Europe - Chessy Gares,Pep's,Transdev AMV,,route_master,bus,051051043:43
 6147928,42,Ligne 42 : Val d'Europe - Lagny,Pep's,Transdev AMV,,route_master,bus,051051042:42
-6156507,100,Express 100 : Torcy RER ↔ Créteil - L'Échat,Transdev LYS,Transdev LYS,#0db0af,route_master,coach,254177100:100
+6156507,100,Express 100 : Torcy RER ↔ Créteil - L'Échat,Mobilien,Transdev Lys,#0db0af,route_master,coach,254177100:100
 6158847,1,Bus 1 : Le Blanc Mesnil ↔ Villeparisis Mitry le Neuf,Les Courriers de l'Île-de-France,Keolis CIF,#60BB47,route_master,bus,014014001:1
 6161018,43,bus 43 : Gare de Sevran Livry ↔ Aéroport CDG1 RER B,Courriers de l'Île-de-France,Keolis CIF,#980D7D,route_master,bus,014014043:43
 6163294,15,Bus 15 : Gare RER d'Aulnay-sous-Bois ↔ Jaurès (Tremblay-en-France),Les Courriers de l'Île-de-France,Keolis CIF,#0054A0,route_master,bus,014014015:15
@@ -361,9 +363,9 @@
 6741346,RÉ,Bus RÉ : Savigny-le-Temple - Nandy Gare RER ↔ Cesson Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487135:RE
 6741397,MI,Bus MI : Savigny - Nandy Gare RER ↔ La Grange (Savigny-le-Temple),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487131:MI
 6741557,DO,Bus DO : Savigny - Nandy Gare RER ↔ La Grange (Savigny-le-Temple),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487139:DO
-6744021,34,Bus 34 : Savigny-le-Temple - Nandy Gare RER ↔ Pavillon Royal (Nandy),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487034:34
-6744031,37,Bus 37 : Savigny-le-Temple - Nandy Gare RER ↔ Turquoises (Nandy),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487037:37
-6744094,36,Bus 36 : Savigny-le-Temple Gare RER ↔ Cesson Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487036:36
+6744021,34,Bus 34 : Savigny - Nandy Gare RER ↔ Pavillon Royal (Nandy),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487034:34
+6744031,37,Bus 37 : Savigny - Nandy Gare RER ↔ Turquoises (Nandy),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487037:37
+6744094,36,Bus 36 : Savigny - Nandy Gare RER ↔ Cesson Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487036:36
 6744103,41,Bus 41 : Cesson Gare RER ↔ Aubépine (Cesson),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487041:41
 6744194,04,Bus 04 : Le Fresne (Saint-Pierre-du-Perray) ↔ Mairie (Morsang-sur-Seine),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487004:04
 6744247,DO,Bus DO : Les Grès (Moissy-Cramayel) ↔ Porte de Paris (Lieusaint),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487122:DO
@@ -405,7 +407,7 @@
 6867574,91.09,Bus Express 91.09 : Gare Routière de Yerres ↔ Gare Routière d'Évry,TransEssonne,Albatrans,,route_master,bus,291191009:91-09
 6880011,95-04,Bus 95-04 : Bray et Lû ↔ Pontoise,Bus Val d'Oise,Tim Bus,#1AC7FF,route_master,bus,251195004:95-04
 6880695,95-11,Bus 95-11 : Aincourt ↔ Mantes-la-Jolie,Bus Val d'Oise,Tim Bus,,route_master,bus,251195011:95-11
-6881771,95-24,Bus 95-24 : Moussy ↔ Vigny,Bus Val d'Oise,Transdev,#998eb8,route_master,bus,011195024:95-24
+6881771,95-24,Bus 95-24 : Moussy ↔ Vigny,Busval d'Oise,Transdev,#998eb8,route_master,bus,011195024:95-24
 6883259,305,Bus 305 : Henri Barbusse - Gare RER de Corbeil Essonnes ↔ Notre-Dame - République (Soisy-sur-Seine),Seine Essonne Bus,Keolis Seine Essonne,,route_master,bus,024309305:305
 6883314,Licorne,Bus Licorne : La Fresnaie ↔ Foyer Jean Rostand,Athis Cars,Keolis Seine Val-de-Marne,#D6188A,route_master,bus,002002002:LIC
 6883352,Centaure,Bus Centaure : Gare de Villeneuve-le-Roi ↔ Gare de Villeneuve-le-Roi,Athis Cars,Keolis Seine Val-de-Marne,#79AF9A,route_master,bus,002002002:CEN
@@ -523,7 +525,7 @@
 7119164,50,Ligne 50 : Saint-Exupery (Poissy) ↔ La Coudraie (Poissy),CSO,Transdev CSO,,route_master,bus,015015050:50
 7136184,582,Choisybus - Bus 582 : Service urbain de Choisy-le-Roi (circulaire),RATP,RATP,#E0B03B,route_master,bus,100100582:CHOISYB
 7140481,6,Bus 6 : circulaire de Camberwell (Sceaux),Paladin,Bièvre Bus Mobilités,,route_master,bus,020149006:6
-7141723,95-34,Bus 95-34 : Sagy - Marines,,Tim Bus,#00E84F,route_master,bus,025195034:95-34
+7141723,95-34,Bus 95-34 : Sagy - Marines,Busval d'Oise,Tim Bus,#00E84F,route_master,bus,025195034:95-34
 7142127,14,Bus 14 : Circulaire de Robinson (via Division Leclerc),Paladin,Bièvre Bus Mobilités,,route_master,bus,020149014:14
 7142158,A,Bus ligne A : Gare de Chelles ↔ Rond-Point des Sciences (Chelles),Apolo 7,STBC,#ffb814,route_master,bus,101261020:A
 7142189,T11,Tram T11 : Épinay-sur-Seine ↔ Le Bourget,Transilien,Transkeo,#E65E37,route_master,tram,800850012:T11Express
@@ -554,8 +556,8 @@
 7234663,203,Stigo 203,Stigo,TransDev,#0040FF,route_master,bus,003003203:203
 7234666,08,Stigo 08,Stigo,TransDev,#94FF54,route_master,bus,003003008:08
 7234686,5,Saint-Quentin en Yvelines - Les Mesnuls,Hourtoule,Hourtoule,#644C18,route_master,bus,027027005:5
-7244705,LA,Bus LA : circulaire Chanteloup,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487128:LA
-7244706,LA,Bus LA : circulaire Claude Bernard,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487126:LA
+7244705,LA,Bus LA : Circulaire Chanteloup,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487128:LA
+7244706,LA,Bus LA : Circulaire Claude Bernard,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487126:LA
 7244792,208s,Bus 208s : Champigny–Saint-Maur RER → Champigny–Saint-Maur RER via Paul Venzac,RATP,RATP,#000080,route_master,bus,100100208:208S
 7245040,,Bus DM3,,Transports Daniel Meyer,,route_master,bus,055055003:DM03
 7248309,MI,Bus MI : circulaire de Lieusaint,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487127:MI
@@ -565,3 +567,4 @@
 7280948,Citalien,Bus Citalien : Carré Citoyenneté (Lieusaint) ↔ Gare Routière Mail (Melun),MELIBUS,Transdev Île-de-France Vaux-le-Pénil,,route_master,bus,066487077:CITA
 7292361,39.12,Bus 39.12 : Versailles — Gare des Chantiers ↔ Guyancourt — Technocentre - Trou Berger / Magny-les-Hameaux — Mérantais,SAVAC,SAVAC,,route_master,bus,039039012:39-12
 7292418,9,Bus 9 : Centre Commercial Ulis 2 <-> Jouy-en-Josas RER,Mobicaps,Les Cars d'Orsay,#DC2185,route_master,bus,269269002:9
+7301947,FA Lycée,Bus FA Lycée : Savigny - Nandy Gare RER ↔ Lycée S. Delaunay (Vert-Saint-Denis),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,

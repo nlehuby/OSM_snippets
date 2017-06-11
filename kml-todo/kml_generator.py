@@ -33,6 +33,8 @@ def make_kml_stop_without_names(overpass_base_url, kml_wrapper) :
     with open("bussansnom.kml", "w") as xml_out_file :
         xml_out_file.write(kml_wrapper)
 
+    print("il y a {} arrêts de bus sans nom".format(len(overpass_result['elements'])))
+
 def make_kml_stop_orphan(overpass_base_url, kml_wrapper) :
     overpass_url = overpass_base_url + '[out:json][timeout:225];area(3600008649);node(area)["highway"="bus_stop"][!"disused"]->.all;relation(bn.all)[type=route];node(r);( .all; - ._; );out skel;'
     #overpass_url = overpass_base_url + '[out:json][timeout:125];area(3600402773);node(area)["highway"="bus_stop"][!"disused"]->.all;relation(bn.all)[type=route];node(r);( .all; - ._; );out skel;'

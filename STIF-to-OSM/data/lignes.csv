@@ -3,7 +3,7 @@
 107354,11,Bus 11 : Victor Basch (Goussainville) ↔ Saint-Denis Porte de Paris,Les Courriers de l'Île-de-France,Keolis CIF,#B456A1,route_master,bus,014014011:11
 107356,32,"Bus 32 : Goussainville, Victor Basch - Roissypole",Les Courriers de l'Île-de-France,Keolis CIF,#B2CE40,route_master,bus,014014032:32
 122886,C,Train RER C,RER,SNCF,#FCD946,route_master,train,800:C
-215565,U,Transilien U,Transilien,SNCF,#ED0677,route_master,train,
+215565,U,Transilien U,Transilien,SNCF,#ED0677,route_master,train,800:U
 225665,170,Bus 170 : Saint-Denis RER ↔ Porte des Lilas,RATP,RATP,#87d3df,route_master,bus,100100170:170
 225800,PC3,PC3 - Bus 99 : Porte Maillot - Pershing ↔ Porte de la Chapelle,RATP,RATP,#ED1B2A,route_master,bus,100100099:PC3
 225801,115,Bus 115: Château de Vincennes ↔ Porte des Lilas,RATP,RATP,#008B5A,route_master,bus,100100115:115
@@ -360,13 +360,13 @@
 6682682,AS (544),Autobus Suresnois,Autobus Suresnois,RATP,,route_master,bus,100100544:544
 6706981,487,Bus 487 : Athis-Mons - Porte de l'Essonne ↔ Marché de Juvisy,RATP,RATP,,route_master,bus,100100487:487
 6741325,RÉ,Bus RÉ : Savigny - Nandy Gare RER ↔ Carré Trait d'Union (Lieusaint),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487132:RE
-6741346,RÉ,Bus RÉ : Savigny-le-Temple - Nandy Gare RER ↔ Cesson Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487135:RE
+6741346,RÉ,Bus RÉ : Savigny - Nandy Gare RER ↔ Cesson Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487135:RE
 6741397,MI,Bus MI : Savigny - Nandy Gare RER ↔ La Grange (Savigny-le-Temple),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487131:MI
 6741557,DO,Bus DO : Savigny - Nandy Gare RER ↔ La Grange (Savigny-le-Temple),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487139:DO
-6744021,34,Bus 34 : Savigny - Nandy Gare RER ↔ Pavillon Royal (Nandy),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487034:34
-6744031,37,Bus 37 : Savigny - Nandy Gare RER ↔ Turquoises (Nandy),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487037:37
+6744021,34,Bus 34 : Savigny - Nandy Gare RER ↔ Savigny - Nandy Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487034:34
+6744031,37,Bus 37 : Savigny - Nandy Gare RER ↔ Savigny - Nandy Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487037:37
 6744094,36,Bus 36 : Savigny - Nandy Gare RER ↔ Cesson Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487036:36
-6744103,41,Bus 41 : Cesson Gare RER ↔ Aubépine (Cesson),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487041:41
+6744103,41,Bus 41 : Cesson Gare RER ↔ Cesson Gare RER,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487041:41
 6744194,04,Bus 04 : Le Fresne (Saint-Pierre-du-Perray) ↔ Mairie (Morsang-sur-Seine),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487004:04
 6744247,DO,Bus DO : Les Grès (Moissy-Cramayel) ↔ Porte de Paris (Lieusaint),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487122:DO
 6744258,DO,Bus DO : Combs-la-Ville - Quincy Gare RER ↔ Serpentine (Combs-la-Ville),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487012:DO
@@ -567,4 +567,9 @@
 7280948,Citalien,Bus Citalien : Carré Citoyenneté (Lieusaint) ↔ Gare Routière Mail (Melun),MELIBUS,Transdev Île-de-France Vaux-le-Pénil,,route_master,bus,066487077:CITA
 7292361,39.12,Bus 39.12 : Versailles — Gare des Chantiers ↔ Guyancourt — Technocentre - Trou Berger / Magny-les-Hameaux — Mérantais,SAVAC,SAVAC,,route_master,bus,039039012:39-12
 7292418,9,Bus 9 : Centre Commercial Ulis 2 <-> Jouy-en-Josas RER,Mobicaps,Les Cars d'Orsay,#DC2185,route_master,bus,269269002:9
-7301947,FA Lycée,Bus FA Lycée : Savigny - Nandy Gare RER ↔ Lycée S. Delaunay (Vert-Saint-Denis),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
+7301947,FA Lycée,Bus FA Lycée : Savigny - Nandy Gare RER ↔ Lycée S. Delaunay (Vert-Saint-Denis),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487060:FA-LYCEE
+7318440,C,Bus ligne C : Gare de Chelles Gournay ↔ Paul Algis (Chelles),Apolo 7,STBC,,route_master,bus,
+7323910,42,Bus 42 : Cesson Gare RER ↔ Hautes Billes (Vert-Saint-Denis),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
+7323911,43,Bus 43 : Cesson Gare RER ↔ Hautes Billes (Vert-Saint-Denis),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
+7324303,SOL#,Bus SOL# : Médiathèque (Savigny-le-Temple) ↔ Collège Nazareth (Voisenon),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
+7324496,FA#,Bus FA# : Les Ormes (Savigny-le-Temple) ↔ Collège Nazareth (Voisenon),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,

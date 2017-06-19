@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<analysers timestamp="2017-05-28T15:08:32Z">
-	<analyser timestamp="2017-05-28T15:08:32Z">
+<analysers timestamp="2017-06-19T19:59:56Z">
+	<analyser timestamp="2017-06-19T19:59:56Z">
 		<class item="8042" tag="transport en commun" id="1" level="3">
 			<classtext lang="fr" title="tag manquant sur une relation route_master (ligne de transport en commun)"></classtext>
 		</class>
-		<error class="1">
-			<location lat="48.715654" lon="2.13988"></location>
-			<relation id="2390087"></relation>
-			<text lang="fr" value="la relation n'a pas de tag network. Valeur probable : Mobicaps"></text>
-			<fixes>
-				<fix>
-					<relation id="2390087">
-						<tag action="create" k="network" v="Mobicaps"></tag>
-					</relation>
-				</fix>
-			</fixes>
-		</error>
 		<error class="1">
 			<location lat="49.001878" lon="2.528042"></location>
 			<relation id="2531207"></relation>
@@ -41,11 +29,6 @@
 			</fixes>
 		</error>
 		<error class="1">
-			<location lat="48.830115" lon="1.954549"></location>
-			<relation id="5873533"></relation>
-			<text lang="fr" value="la relation n'a pas de tag network."></text>
-		</error>
-		<error class="1">
 			<location lat="48.754498" lon="2.300788"></location>
 			<relation id="6928902"></relation>
 			<text lang="fr" value="la relation n'a pas de tag network."></text>
@@ -54,30 +37,6 @@
 			<location lat="48.702392" lon="2.463754"></location>
 			<relation id="6949604"></relation>
 			<text lang="fr" value="la relation n'a pas de tag network."></text>
-		</error>
-		<error class="1">
-			<location lat="49.115908" lon="2.018014"></location>
-			<relation id="7141723"></relation>
-			<text lang="fr" value="la relation n'a pas de tag network. Valeur probable : Busval d'Oise"></text>
-			<fixes>
-				<fix>
-					<relation id="7141723">
-						<tag action="create" k="network" v="Busval d'Oise"></tag>
-					</relation>
-				</fix>
-			</fixes>
-		</error>
-		<error class="1">
-			<location lat="48.829267" lon="2.29574"></location>
-			<relation id="7214891"></relation>
-			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
-			<fixes>
-				<fix>
-					<relation id="7214891">
-						<tag action="create" k="route_master" v="bus"></tag>
-					</relation>
-				</fix>
-			</fixes>
 		</error>
 		<error class="1">
 			<location lat="48.654718" lon="2.364121"></location>

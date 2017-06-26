@@ -15,7 +15,7 @@
         }, {
             "name": "rename",
             "executor": "shell",
-            "command": "mv ile-de-france-latest.osm.pbf fr-idf.osm.pbf & exit 1",
+            "command": "mv ile-de-france-latest.osm.pbf fr-idf.osm.pbf",
             "arguments": [],
             "dependsOn": ["download"],
             "onResult": {

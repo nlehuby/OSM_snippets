@@ -573,4 +573,7 @@
 7323911,43,Bus 43 : Cesson Gare RER ↔ Hautes Billes (Vert-Saint-Denis),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487043:43
 7324303,SOL#,Bus SOL# : Médiathèque (Savigny-le-Temple) ↔ Collège Nazareth (Voisenon),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
 7324496,FA#,Bus FA# : Les Ormes (Savigny-le-Temple) ↔ Collège Nazareth (Voisenon),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
-7331862,D,Bus ligne D : Vaires-sur-Marne ↔ Villevaudé - Poitou,Apolo 7,STBC,#e1021d,route_master,bus,
+7331862,D,Bus ligne D : Vaires-sur-Marne ↔ Villevaudé - Poitou,Apolo 7,STBC,#e1021d,route_master,bus,101261027:D
+7346820,45,Bus 45 : Pontoise Gare ↔ Jules Verne,STIVO,,#C6BBDD,route_master,bus,059440045:45
+7353488,60,Bus 60 : Préfecture RER ↔ Clini. Ste Marie,STIVO,,#A50344,route_master,bus,059440060:60
+7353808,592,Amibus (592) : Mairie de Châtillon ↔ Châtillon - Montrouge,RATP,RATP,,route_master,bus,

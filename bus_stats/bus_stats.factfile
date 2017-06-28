@@ -2,62 +2,76 @@
     "schema": "iglu:com.snowplowanalytics.factotum/factfile/jsonschema/1-0-0",
     "data": {
         "name": "Mise à jour des données de la BATO",
-        "tasks": [
-            {
-                "name": "téléchargement du fichier OSM France",
-                "executor": "shell",
-                "command": "wget 'http://download.geofabrik.de/europe/france-latest.osm.pbf' -O ./work.osm.pbf--no-verbose 2>&1",
-                "arguments": [],
-                "dependsOn": [],
-                "onResult": {
-                    "terminateJobWithSuccess": [ ],
-                    "continueJob": [ 0 ]
-                }
-            },
-            {
-                "name": "filtre OSM sur bus stop",
-                "executor": "shell",
-                "command": "osmosis --read-pbf file='work.osm.pbf' --nkv keyValueList='highway.bus_stop' --write-pbf bus.osm.pbf 2>&1",
-                "arguments": [],
-                "dependsOn": [ "téléchargement du fichier OSM France"],
-                "onResult": {
-                    "terminateJobWithSuccess": [ ],
-                    "continueJob": [ 0 ]
-                }
-            },
-            {
-                "name": "extraction OSM en csv",
-                "executor": "shell",
-                "command": "osmconvert64 bus.osm.pbf --csv='@oname @id @lat @lon name FIXME' --csv-headline --csv-separator=',' -o=bus_stops.csv 2>&1",
-                "arguments": [],
-                "dependsOn": ["filtre OSM sur bus stop"],
-                "onResult": {
-                    "terminateJobWithSuccess": [ ],
-                    "continueJob": [ 0 ]
-                }
-            },
-            {
-                "name": "clean up OSM",
-                "executor": "shell",
-                "command": "rm *.pbf",
-                "arguments": [ ],
-                "dependsOn": ["extraction OSM en csv"],
-                "onResult": {
-                    "terminateJobWithSuccess": [ ],
-                    "continueJob": [ 0 ]
-                }
-            },
-            {
-                "name": "Show Stop Count",
-                "executor": "shell",
-                "command": "cat bus_stops.csv | sed \"1 d\" | wc -l ",
-                "arguments": [ ],
-                "dependsOn": [ "clean up OSM" ],
-                "onResult": {
-                    "terminateJobWithSuccess": [],
-                    "continueJob": [ 0 ]
-                }
+        "tasks": [{
+            "name": "téléchargement du fichier OSM France",
+            "executor": "shell",
+            "command": "wget 'http://download.geofabrik.de/europe/france-latest.osm.pbf' -O ./work.osm.pbf--no-verbose 2>&1",
+            "arguments": [],
+            "dependsOn": [],
+            "onResult": {
+                "terminateJobWithSuccess": [],
+                "continueJob": [0]
             }
-        ]
+        }, {
+            "name": "filtre OSM sur bus stop",
+            "executor": "shell",
+            "command": "osmosis --read-pbf file='work.osm.pbf' --nkv keyValueList='highway.bus_stop' --write-pbf bus.osm.pbf 2>&1",
+            "arguments": [],
+            "dependsOn": ["téléchargement du fichier OSM France"],
+            "onResult": {
+                "terminateJobWithSuccess": [],
+                "continueJob": [0]
+            }
+        }, {
+            "name": "extraction OSM en csv",
+            "executor": "shell",
+            "command": "osmconvert64 bus.osm.pbf --csv='@oname @id @lat @lon name FIXME' --csv-headline --csv-separator=',' -o=bus_stops.csv 2>&1",
+            "arguments": [],
+            "dependsOn": ["filtre OSM sur bus stop"],
+            "onResult": {
+                "terminateJobWithSuccess": [],
+                "continueJob": [0]
+            }
+        }, {
+            "name": "clean up OSM",
+            "executor": "shell",
+            "command": "rm *.pbf",
+            "arguments": [],
+            "dependsOn": ["extraction OSM en csv"],
+            "onResult": {
+                "terminateJobWithSuccess": [],
+                "continueJob": [0]
+            }
+        }, {
+            "name": "show total bus_stop count",
+            "executor": "shell",
+            "command": "cat bus_stops.csv | sed \"1 d\" | wc -l ",
+            "arguments": [],
+            "dependsOn": ["clean up OSM"],
+            "onResult": {
+                "terminateJobWithSuccess": [],
+                "continueJob": [0]
+            }
+        }, {
+            "name": "show no name bus_stop count",
+            "executor": "shell",
+            "command": "cat bus_stops.csv |xsv search -s name '^$' | sed \"1 d\" | wc -l ",
+            "arguments": [],
+            "dependsOn": ["show total bus_stop count"],
+            "onResult": {
+                "terminateJobWithSuccess": [],
+                "continueJob": [0]
+            }
+        }, {
+            "name": "show fixme bus_stop count",
+            "executor": "shell",
+            "command": "cat bus_stops.csv |xsv search -s FIXME '^$' -v | sed \"1 d\" | wc -l ",
+            "arguments": [],
+            "dependsOn": ["show total bus_stop count"],
+            "onResult": {
+                "terminateJobWithSuccess": [],
+                "continueJob": [0]
+            }
+        }]
     }
 }

@@ -576,4 +576,6 @@
 7331862,D,Bus ligne D : Vaires-sur-Marne ↔ Villevaudé - Poitou,Apolo 7,STBC,#e1021d,route_master,bus,101261027:D
 7346820,45,Bus 45 : Pontoise Gare ↔ Jules Verne,STIVO,,#C6BBDD,route_master,bus,059440045:45
 7353488,60,Bus 60 : Préfecture RER ↔ Clini. Ste Marie,STIVO,,#A50344,route_master,bus,059440060:60
-7353808,592,Amibus (592) : Mairie de Châtillon ↔ Châtillon - Montrouge,RATP,RATP,,route_master,bus,
+7353808,592,Amibus (592) : Mairie de Châtillon ↔ Châtillon - Montrouge,RATP,RATP,,route_master,bus,100100592:AMIBUS
+7359261,59,Bus 59 : Préfecture RER ↔ Fond de Vaux,STIVO,,#E6057F,route_master,bus,059440059:59
+7364631,57,Bus 57 : Stade C. Léon ↔ Lycée J. Perrin,STIVO,,#00795D,route_master,bus,059440057:57

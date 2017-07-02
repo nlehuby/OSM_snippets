@@ -5,7 +5,7 @@
         "tasks": [{
             "name": "téléchargement du fichier OSM France",
             "executor": "shell",
-            "command": "wget 'http://download.geofabrik.de/europe/france-latest.osm.pbf' -O ./work.osm.pbf--no-verbose 2>&1",
+            "command": "wget 'http://download.geofabrik.de/europe/france-latest.osm.pbf' -O ./work.osm.pbf --no-verbose 2>&1",
             "arguments": [],
             "dependsOn": [],
             "onResult": {

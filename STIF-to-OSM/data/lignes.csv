@@ -224,7 +224,6 @@
 3256316,23,Bus 23 : Villiers-le-Bel RER - Parc des Expositions RER,TransVO,Transdev Trans Val d'Oise,blue,route_master,bus,050050023:23
 3286442,408,Bus 408 : Evry - Mairie ↔ Evry - Bras-de-Fer,Tice,Tice,#00FF00,route_master,bus,400400408:408
 3307569,241,Bus 241 : Rueil-Malmaison RER ↔ Porte d'Auteuil,RATP,RATP,#8D653A,route_master,bus,100100241:241
-3315045,156,Bus 156 : Gare d'Epinay–Villetaneuse ↔ Villetaneuse - Université Paris XIII,RATP,RATP,#FFCD02,route_master,bus,100100156:156
 3315927,23,Bus 23 : Brie-comte-Robert Piscine ↔ Créteil Préfécture,Plateau de Brie,SETRA,,route_master,bus,040040023:23
 3315942,BRIEBRUS,Bus BRIEBUS : Brie-comte-Robert Galilée ↔ Brie-comte-Robert Galilée,BrieBus,SETRA,,route_master,bus,040040013:BRIEBUS
 3315943,12,Bus 12 : RN Santeny ↔ Créteil Préfecture,Arlequin,SETRA,,route_master,bus,040040012:12
@@ -568,6 +567,7 @@
 7292361,39.12,Bus 39.12 : Versailles — Gare des Chantiers ↔ Guyancourt — Technocentre - Trou Berger / Magny-les-Hameaux — Mérantais,SAVAC,SAVAC,,route_master,bus,039039012:39-12
 7292418,9,Bus 9 : Centre Commercial Ulis 2 <-> Jouy-en-Josas RER,Mobicaps,Les Cars d'Orsay,#DC2185,route_master,bus,269269002:9
 7301947,FA Lycée,Bus FA Lycée : Savigny - Nandy Gare RER ↔ Lycée S. Delaunay (Vert-Saint-Denis),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487060:FA-LYCEE
+7304704,52,Bus 52 : Gare de Mantes la Jolie ↔ Pôle Lafarge (Limay),Com'Bus,STILE;CTVMI,,route_master,bus,
 7318440,C,Bus ligne C : Gare de Chelles Gournay ↔ Paul Algis (Chelles),Apolo 7,STBC,,route_master,bus,101261026:C
 7323910,42,Bus 42 : Cesson Gare RER ↔ Hautes Billes (Vert-Saint-Denis),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487042:42
 7323911,43,Bus 43 : Cesson Gare RER ↔ Hautes Billes (Vert-Saint-Denis),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487043:43
@@ -579,3 +579,6 @@
 7353808,592,Amibus (592) : Mairie de Châtillon ↔ Châtillon - Montrouge,RATP,RATP,,route_master,bus,100100592:AMIBUS
 7359261,59,Bus 59 : Préfecture RER ↔ Fond de Vaux,STIVO,,#E6057F,route_master,bus,059440059:59
 7364631,57,Bus 57 : Stade C. Léon ↔ Lycée J. Perrin,STIVO,,#00795D,route_master,bus,059440057:57
+7370851,58,Bus 58 : Pontoise Gare ↔ Av. de la Mare,STIVO,,#0098D8,route_master,bus,059440058:58
+7372176,56,Bus 56 : Pontoise Gare ↔ Méry Gare SNCF,STIVO,,#B35E00,route_master,bus,059440056:56
+7373447,49,Bus 49 : Préfecture RER ↔ Neuville RER,STIVO,,#06A68A,route_master,bus,059440049:49

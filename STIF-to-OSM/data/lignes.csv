@@ -567,7 +567,7 @@
 7292361,39.12,Bus 39.12 : Versailles — Gare des Chantiers ↔ Guyancourt — Technocentre - Trou Berger / Magny-les-Hameaux — Mérantais,SAVAC,SAVAC,,route_master,bus,039039012:39-12
 7292418,9,Bus 9 : Centre Commercial Ulis 2 <-> Jouy-en-Josas RER,Mobicaps,Les Cars d'Orsay,#DC2185,route_master,bus,269269002:9
 7301947,FA Lycée,Bus FA Lycée : Savigny - Nandy Gare RER ↔ Lycée S. Delaunay (Vert-Saint-Denis),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487060:FA-LYCEE
-7304704,52,Bus 52 : Gare de Mantes la Jolie ↔ Pôle Lafarge (Limay),Com'Bus,STILE;CTVMI,,route_master,bus,
+7304704,52,Bus 52 : Gare de Mantes la Jolie ↔ Pôle Lafarge (Limay),Com'Bus,STILE;CTVMI,,route_master,bus,057057052:52
 7318440,C,Bus ligne C : Gare de Chelles Gournay ↔ Paul Algis (Chelles),Apolo 7,STBC,,route_master,bus,101261026:C
 7323910,42,Bus 42 : Cesson Gare RER ↔ Hautes Billes (Vert-Saint-Denis),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487042:42
 7323911,43,Bus 43 : Cesson Gare RER ↔ Hautes Billes (Vert-Saint-Denis),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487043:43
@@ -582,3 +582,4 @@
 7370851,58,Bus 58 : Pontoise Gare ↔ Av. de la Mare,STIVO,,#0098D8,route_master,bus,059440058:58
 7372176,56,Bus 56 : Pontoise Gare ↔ Méry Gare SNCF,STIVO,,#B35E00,route_master,bus,059440056:56
 7373447,49,Bus 49 : Préfecture RER ↔ Neuville RER,STIVO,,#06A68A,route_master,bus,059440049:49
+7387039,12 ZI,Bus 12 ZI : gare de Goussainville ↔ ZAE Moinon,Les Courriers de l'île-de-France,Keolis CIF,#00B353,route_master,bus,

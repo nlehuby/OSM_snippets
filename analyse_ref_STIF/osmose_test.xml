@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<analysers timestamp="2017-07-10T09:44:29Z">
-	<analyser timestamp="2017-07-10T09:44:29Z">
+<analysers timestamp="2017-07-16T21:02:32Z">
+	<analyser timestamp="2017-07-16T21:02:32Z">
 		<class item="8042" tag="transport en commun" id="1" level="3">
 			<classtext lang="fr" title="tag manquant sur une relation route_master (ligne de transport en commun)"></classtext>
 		</class>

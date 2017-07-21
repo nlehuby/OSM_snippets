@@ -18,3 +18,4 @@ STIF-to-OSM/TODO
 STIF-to-OSM/data/.factotum
 analyse_ref_STIF/params/*
 analyse_ref_STIF/analyse/*
+*.gpx

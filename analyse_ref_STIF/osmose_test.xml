@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<analysers timestamp="2017-07-16T21:02:32Z">
-	<analyser timestamp="2017-07-16T21:02:32Z">
+<analysers timestamp="2017-07-28T08:43:38Z">
+	<analyser timestamp="2017-07-28T08:43:38Z">
 		<class item="8042" tag="transport en commun" id="1" level="3">
 			<classtext lang="fr" title="tag manquant sur une relation route_master (ligne de transport en commun)"></classtext>
 		</class>
@@ -96,6 +96,18 @@
 			<location lat="49.036398" lon="2.080501"></location>
 			<relation id="7373447"></relation>
 			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="" lon=""></location>
+			<relation id="7419766"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator. Valeur probable : RATP"></text>
+			<fixes>
+				<fix>
+					<relation id="7419766">
+						<tag action="create" k="operator" v="RATP"></tag>
+					</relation>
+				</fix>
+			</fixes>
 		</error>
 	</analyser>
 </analysers>

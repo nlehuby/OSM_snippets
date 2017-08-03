@@ -14,7 +14,7 @@
 387064,86,Bus 86 : Saint-Germain-des-Prés ↔ Saint-Mandé — Demi-Lune - Parc Zoologique,RATP,RATP,#ED1B2A,route_master,bus,100100086:86
 611648,157,Bus 157 : Nanterre - Boulevard de la Seine ↔ Pont de Neuilly,RATP,RATP,#B34A9B,route_master,bus,100100157:157
 901462,160,Bus 160 : Pont de Sèvres ↔ Nanterre–Préfecture RER,RATP,RATP,#008C5A,route_master,bus,100100160:160
-937383,174,Bus 174 : Saint-Ouen RER ↔ La Défense,RATP,RATP,#00643C,route_master,bus,
+937383,174,Bus 174 : Saint-Ouen RER ↔ La Défense,RATP,RATP,#00643C,route_master,bus,100100174:174
 937390,74,Bus 74 : Clichy-la-Garenne – Berges de Seine ↔ Hôtel de Ville,RATP,RATP,#CEC92A,route_master,bus,100100074:74
 949582,177,Bus 177 : Asnières-Gennevilliers - Gabriel Péri ↔ Villeneuve-La-Garenne - ZI,RATP,RATP,#85E271,route_master,bus,100100177:177
 949583,137,Bus 137 : Porte de Clignancourt ↔ Villeneuve-la-Garenne ZI Nord,RATP,RATP,#F55323,route_master,bus,100100137:137
@@ -327,7 +327,7 @@
 6006672,356,Bus 356 : Marché des Mortefontaines (Deuil-la-Barre) ↔ ZAC Landy Nord (Saint-Denis),RATP,RATP,#F55323,route_master,bus,100100356:356
 6010903,DM5,Bus DM5 : Croix Blanche - Sainte-Geneviève-des-Bois ↔ Gare de Juvisy-sur-Orge,Daniel Meyer,Transports Daniel Meyer,#006DB7,route_master,bus,055055005:DM05
 6010927,169,Bus 169 : Pont de Sevres ↔ Hopital Georges Pompidou,RATP,RATP,#82DC73,route_master,bus,100100169:169
-6010966,167,Bus 167 : Pont de Levallois ↔ Colombes - Audra,RATP,RATP,#79bb92,route_master,bus,
+6010966,167,Bus 167 : Pont de Levallois ↔ Colombes - Audra,RATP,RATP,#79bb92,route_master,bus,100100167:167
 6040778,v1,Bus v1 (542) : Mairie de L'Hay-les-Roses ↔ Leclerc Thomas,Valouette,RATP,,route_master,bus,100100542:V1
 6048347,380,Bus 380 : Villejuif - Louis Aragon ↔ Arcueil - Vache Noire - Centre Commercial,RATP,RATP,,route_master,bus,100100380:380
 6049045,182,Bus 182 : Mairie d'Ivry ↔ Villeneuve–Triage RER,RATP,RATP,#BA4C9B,route_master,bus,100100182:182
@@ -529,7 +529,7 @@
 7141723,95-34,Bus 95-34 : Sagy - Marines,Busval d'Oise,Tim Bus,#00E84F,route_master,bus,025195034:95-34
 7142127,14,Bus 14 : Circulaire de Robinson (via Division Leclerc),Paladin,Bièvre Bus Mobilités,,route_master,bus,020149014:14
 7142158,A,Bus ligne A : Gare de Chelles ↔ Rond-Point des Sciences (Chelles),Apolo 7,STBC,#ffb814,route_master,bus,101261020:A
-7142189,T11,Tram T11 : Épinay-sur-Seine ↔ Le Bourget,Transilien,Transkeo,#E65E37,route_master,tram,
+7142189,T11,Tram T11 : Épinay-sur-Seine ↔ Le Bourget,Transilien,Transkeo,#E65E37,route_master,tram,800:T11
 7147174,9,Bus 9 : Levasseur (Thiais) ↔ Centre Commercial - Pont de Vitry,Athis Cars,Keolis Seine Val-De-Marne,#30A849,route_master,bus,002002009:9
 7147185,30-43,Ligne 30-43 : Ermont La Tour ↔ Gare de Cernay (Ermont),Valbus,Lacroix,#008000,route_master,bus,030030043:30-43
 7176897,A,Ligne A,Probus,Procars,#DC0077,route_master,bus,228771009:PROBUSA
@@ -602,8 +602,17 @@
 7420699,L,Transilien L,Transilien,SNCF,#7584BC,route_master,train,800:L
 7420700,N,Transilien N,Transilien,SNCF,#00a090,route_master,train,800:N
 7420701,B,RER B,RER,RATP/SNCF,#427DBD,route_master,train,810:B
-7423788,399,Bus 399 : Marché de Juvisy ↔ Massy–Palaiseau RER,RATP,RATP,,route_master,bus,
-7423789,319,Bus 319 : Marché International de Rungis ↔ Massy-Palaiseau RER,RATP,RATP,#008B5A,route_master,bus,
-7423790,199,Bus 199 : Massy–Palaiseau RER ↔ La Rocade - Lycée (Longjumeau),RATP,RATP,,route_master,bus,
-7423843,DM153,Bus DM153 : Gare de Massy-Palaiseau ↔ Porte d'Étampes - Arpajon,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,
-7423844,DM12,Bus DM12 : Gare de Massy-Palaiseau ↔ Gare de Gravigny Balizy,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,
+7423788,399,Bus 399 : Marché de Juvisy ↔ Massy–Palaiseau RER,RATP,RATP,,route_master,bus,100100399:399
+7423789,319,Bus 319 : Marché International de Rungis ↔ Massy-Palaiseau RER,RATP,RATP,#008B5A,route_master,bus,100100319:319
+7423790,199,Bus 199 : Massy–Palaiseau RER ↔ La Rocade - Lycée (Longjumeau),RATP,RATP,,route_master,bus,100100199:199
+7423843,DM153,Bus DM153 : Gare de Massy-Palaiseau ↔ Porte d'Étampes - Arpajon,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,055155003:DM153
+7423844,DM12,Bus DM12 : Gare de Massy-Palaiseau ↔ Gare de Gravigny Balizy,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,055055012:DM12
+7426172,48,Bus 48 : Préfecture RER ↔ Les Toupets,STIVO,,#F7A824,route_master,bus,059440048:48
+7427861,275,Bus 275 : La Défense ↔ Pont de Levallois,RATP,RATP,#f2c931,route_master,bus,
+7430094,44,Bus 44 : Préfecture RER ↔ St Christ. RER,STIVO,,#F6AF8E,route_master,bus,059440044:44
+7433093,43,Bus 43 : Pontoise Gare ↔ Les Pâtis,STIVO,,#978F00,route_master,bus,059440043:43
+7434957,,Château de Vincennes → Avenue du Tremblay,,,,route_master,bus,
+7435393,7,Bus 7 : Gare de Pontault-Combault ↔ Champigny,Situs,CEA Transports,,route_master,bus,
+7435462,504,Bus 504 : Gare de Noisiel ↔ Gare de Roissy-En-Brie,Sit'bus,Transdev N4 Mobilités,,route_master,bus,
+7435571,42,Bus 42 : Préfecture RER ↔ Les Beurriers,STIVO,,#F07E12,route_master,bus,059440042:42
+7435863,40,Bus 40 : St Christ. RER ↔ La Siaule,STIVO,,#005FAB,route_master,bus,059440040:40

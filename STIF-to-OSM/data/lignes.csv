@@ -270,7 +270,7 @@
 5415945,217,Bus 217 : Hôtel de Ville de Créteil ↔ Vitry-sur-Seine RER,RATP,RATP,#622D91,route_master,bus,100100217:217
 5426315,256,Bus 256 : Lycée d'Enghien ↔ Saint-Denis–Université,RATP,RATP,#5A2209,route_master,bus,100100256:256
 5426450,183,Bus 183 : Porte de Choisy ↔ Mairie d'Orly - Aéroport d'Orly-Sud,RATP,RATP,#ED222E,route_master,bus,100100183:183
-5471765,95-46,95-46 : Magny en Vexin ↔ Char (Marines),Bus Val d'Oise,Tim Bus,#908e29,route_master,bus,251195046:95-46
+5471765,95-46,95-46 : Magny en Vexin ↔ Char (Marines),Bus Val d'Oise,Tim Bus,#73800D,route_master,bus,251195046:95-46
 5540004,N62,Noctilien N62 : Gare Montparnasse ↔ Robinson RER,Noctilien,RATP,#F59EB3,route_master,bus,100987762:N62
 5557347,393,Bus 393 : Thiais - Carrefour de la Résistance ↔ Sucy - Bonneuil RER,RATP,RATP,#87D2DE,route_master,bus,100100393:393
 5569622,171,Bus 171 : Château de Versailles ↔ Pont de Sèvres,RATP,RATP,#FF1300,route_master,bus,100100171:171
@@ -347,7 +347,7 @@
 6147928,42,Ligne 42 : Val d'Europe - Lagny,Pep's,Transdev AMV,,route_master,bus,051051042:42
 6156507,100,Express 100 : Torcy RER ↔ Créteil - L'Échat,Mobilien,Transdev Lys,#0db0af,route_master,coach,254177100:100
 6158847,1,Bus 1 : Le Blanc Mesnil ↔ Villeparisis Mitry le Neuf,Les Courriers de l'Île-de-France,Keolis CIF,#60BB47,route_master,bus,014014001:1
-6161018,43,bus 43 : Gare de Sevran Livry ↔ Aéroport CDG1 RER B,Courriers de l'Île-de-France,Keolis CIF,#980D7D,route_master,bus,014014043:43
+6161018,43,bus 43 : Gare de Sevran Livry ↔ Aéroport CDG1 RER B,Les Courriers de l'Île-de-France,Keolis CIF,#980D7D,route_master,bus,014014043:43
 6163294,15,Bus 15 : Gare RER d'Aulnay-sous-Bois ↔ Jaurès (Tremblay-en-France),Les Courriers de l'Île-de-France,Keolis CIF,#0054A0,route_master,bus,014014015:15
 6163356,19,Bus 19 : Marché (Villeparisis) ↔ Clos Marchais (Le Pin),Les Courriers de l'Île-de-France,Keolis CIF,#009036,route_master,bus,014014019:19
 6355936,321,Bus 321 : Aérodrome de Lognes ↔ Croissy-Beaubourg,RATP,RATP,#FFCD02,route_master,bus,100100321:321
@@ -584,7 +584,7 @@
 7370851,58,Bus 58 : Pontoise Gare ↔ Av. de la Mare,STIVO,,#0098D8,route_master,bus,059440058:58
 7372176,56,Bus 56 : Pontoise Gare ↔ Méry Gare SNCF,STIVO,,#B35E00,route_master,bus,059440056:56
 7373447,49,Bus 49 : Préfecture RER ↔ Neuville RER,STIVO,,#06A68A,route_master,bus,059440049:49
-7387039,12 ZI,Bus 12 ZI : gare de Goussainville ↔ ZAE Moinon,Les Courriers de l'île-de-France,Keolis CIF,#00B353,route_master,bus,
+7387039,12 ZI,Bus 12 ZI : gare de Goussainville ↔ ZAE Moinon,Les Courriers de l'Île-de-France,Keolis CIF,#00B353,route_master,bus,
 7399969,15A,15A: Argenteuil Gare -> Saint-Gratien Gare,15A,TVO,,route_master,bus,
 7413474,3,Bus 3 : Centre Commercial Ulis 2 ↔ Gare d'Orsay Ville,Mobicaps,Les Cars d'Orsay,#007733,route_master,bus,006006003:3
 7413493,40,Bus 40 : Inovel Parc Nord ↔ Pont de Sèvres,Phébus,Keolis Vélizy,#F69238,route_master,bus,004004040:40
@@ -608,7 +608,7 @@
 7423843,DM153,Bus DM153 : Gare de Massy-Palaiseau ↔ Porte d'Étampes - Arpajon,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,055155003:DM153
 7423844,DM12,Bus DM12 : Gare de Massy-Palaiseau ↔ Gare de Gravigny Balizy,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,055055012:DM12
 7426172,48,Bus 48 : Préfecture RER ↔ Les Toupets,STIVO,,#F7A824,route_master,bus,059440048:48
-7427861,275,Bus 275 : La Défense ↔ Pont de Levallois,RATP,RATP,#f2c931,route_master,bus,
+7427861,275,Bus 275 : La Défense ↔ Pont de Levallois,RATP,RATP,#f2c931,route_master,bus,100100275:275
 7430094,44,Bus 44 : Préfecture RER ↔ St Christ. RER,STIVO,,#F6AF8E,route_master,bus,059440044:44
 7433093,43,Bus 43 : Pontoise Gare ↔ Les Pâtis,STIVO,,#978F00,route_master,bus,059440043:43
 7434957,,Château de Vincennes → Avenue du Tremblay,,,,route_master,bus,
@@ -616,3 +616,12 @@
 7435462,504,Bus 504 : Gare de Noisiel ↔ Gare de Roissy-En-Brie,Sit'bus,Transdev N4 Mobilités,,route_master,bus,
 7435571,42,Bus 42 : Préfecture RER ↔ Les Beurriers,STIVO,,#F07E12,route_master,bus,059440042:42
 7435863,40,Bus 40 : St Christ. RER ↔ La Siaule,STIVO,,#005FAB,route_master,bus,059440040:40
+7441248,39,Bus 39 : St Christ. RER ↔ Croix du Jubilé,STIVO,,#CAD401,route_master,bus,059440039:39
+7442593,38,Bus 38 : Préfecture RER ↔ La Taillette,STIVO,,#FED300,route_master,bus,059440038:38
+7444602,105,Bus 105 : Porte des Lilas ↔ Mairie des Pavillons-sous-Bois,RATP,RATP,#f68b4b,route_master,bus,
+7447451,30,Bus 30 : Pontoise Gare ↔ Pontoise Gare,STIVO,,#ED7FB1,route_master,bus,059440030:30
+7447656,107,Bus 107 : ZI Croix Blanche ↔ Massy,Génovébus,Transdev CEAT,,route_master,bus,
+7447705,237,Bus 237 : Épinay-sur-Seine RER ↔ Mairie de Saint-Ouen,RATP,RATP,#CD78BD,route_master,bus,
+7447787,6,Ligne 6 : Chessy Gares ↔ Gare d'Esbly,Pep's,Transdev Marne et Morin,,route_master,bus,
+7448624,95-47,Bus 95-47 : St-Cyr-en-Arthies ↔ Bray et Lû Collège,Busval d'Oise,,#408040,route_master,bus,251195047:95-47
+7449948,95-17,Bus 95-17 : Gendarmerie ↔ Préfecture / RER,Busval d'Oise,,#FF80FF,route_master,bus,025195017:95-17

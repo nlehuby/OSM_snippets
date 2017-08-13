@@ -550,7 +550,7 @@
 7204064,FA,Bus FA : Combs-la-Ville - Quincy Gare RER ↔ 14 Juillet (Vaux-le-Pénil),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487020:FA
 7208739,Eb,,Siyonne,Transdev Interval,blue,route_master,bus,208208013:Eb
 7208740,Ea,,Siyonne,Transdev Interval,blue,route_master,bus,208208007:Ea
-7214891,15 - Traverse Brancion-Commerce,Traverse Brancion-Commerce,STIF,B.E.-Green,#ABCF38,route_master,bus,333575515:TRAVERSE
+7214891,Traverse,Traverse Brancion-Commerce,Autocars Dominique,B.E.-Green,#ABCF38,route_master,bus,333575515:TRAVERSE
 7224864,37,Ligne 37 : Le P'tit bus de Lagny,Pep's,Transdev AMV,,route_master,bus,051051037:37
 7227705,2,Métro 2,RATP,RATP,#216EB4,route_master,subway,100110002:2
 7227818,3,Métro 3,RATP,RATP,#9A9940,route_master,subway,100110003:3
@@ -612,16 +612,21 @@
 7430094,44,Bus 44 : Préfecture RER ↔ St Christ. RER,STIVO,,#F6AF8E,route_master,bus,059440044:44
 7433093,43,Bus 43 : Pontoise Gare ↔ Les Pâtis,STIVO,,#978F00,route_master,bus,059440043:43
 7434957,,Château de Vincennes → Avenue du Tremblay,,,,route_master,bus,
-7435393,7,Bus 7 : Gare de Pontault-Combault ↔ Champigny,Situs,CEA Transports,,route_master,bus,
-7435462,504,Bus 504 : Gare de Noisiel ↔ Gare de Roissy-En-Brie,Sit'bus,Transdev N4 Mobilités,,route_master,bus,
+7435393,7,Bus 7 : Gare de Pontault-Combault ↔ Champigny,Situs,CEA Transports,,route_master,bus,010010003:7
+7435462,504,Bus 504 : Gare de Noisiel ↔ Gare de Roissy-En-Brie,Sit'bus,Transdev N4 Mobilités,,route_master,bus,003351504:504
 7435571,42,Bus 42 : Préfecture RER ↔ Les Beurriers,STIVO,,#F07E12,route_master,bus,059440042:42
 7435863,40,Bus 40 : St Christ. RER ↔ La Siaule,STIVO,,#005FAB,route_master,bus,059440040:40
 7441248,39,Bus 39 : St Christ. RER ↔ Croix du Jubilé,STIVO,,#CAD401,route_master,bus,059440039:39
-7442593,38,Bus 38 : Préfecture RER ↔ La Taillette,STIVO,,#FED300,route_master,bus,059440038:38
-7444602,105,Bus 105 : Porte des Lilas ↔ Mairie des Pavillons-sous-Bois,RATP,RATP,#f68b4b,route_master,bus,
-7447451,30,Bus 30 : Pontoise Gare ↔ Pontoise Gare,STIVO,,#ED7FB1,route_master,bus,059440030:30
-7447656,107,Bus 107 : ZI Croix Blanche ↔ Massy,Génovébus,Transdev CEAT,,route_master,bus,
-7447705,237,Bus 237 : Épinay-sur-Seine RER ↔ Mairie de Saint-Ouen,RATP,RATP,#CD78BD,route_master,bus,
-7447787,6,Ligne 6 : Chessy Gares ↔ Gare d'Esbly,Pep's,Transdev Marne et Morin,,route_master,bus,
+7442593,38,Bus 38 : Cergy Préfecture ↔ Menucourt La Taillette,STIVO,,#FED300,route_master,bus,059440038:38
+7444602,105,Bus 105 : Porte des Lilas ↔ Mairie des Pavillons-sous-Bois,RATP,RATP,#f68b4b,route_master,bus,100100105:105
+7447451,30,Bus 30 : Pontoise Canrobert ↔ Pontoise Canrobert,STIVO,,#ED7FB1,route_master,bus,059440030:30
+7447656,107,Bus 107 : ZI Croix Blanche ↔ Massy,Génovébus,Transdev CEAT,,route_master,bus,010010007:107
+7447705,237,Bus 237 : Épinay-sur-Seine RER ↔ Mairie de Saint-Ouen,RATP,RATP,#CD78BD,route_master,bus,100100237:237
+7447787,6,Ligne 6 : Chessy Gares ↔ Gare d'Esbly,Pep's,Transdev Marne et Morin,,route_master,bus,067067006:6
 7448624,95-47,Bus 95-47 : St-Cyr-en-Arthies ↔ Bray et Lû Collège,Busval d'Oise,,#408040,route_master,bus,251195047:95-47
 7449948,95-17,Bus 95-17 : Gendarmerie ↔ Préfecture / RER,Busval d'Oise,,#FF80FF,route_master,bus,025195017:95-17
+7451164,34 Nord,Bus 34 Nord : Pontoise Gare ↔ Cergy Le Ht RER,STIVO,,#FED300,route_master,bus,059440035:34Nord
+7457086,34 Sud,Bus 34 Sud : Cergy Le Ht RER ↔ Pontoise Gare,STIVO,,#FED300,route_master,bus,059440034:34Sud
+7460875,36,Bus 36 : Pontoise Gare ↔ Les Croizettes,STIVO,,#AD1380,route_master,bus,059440036:36
+7466920,F,Bus ligne F : Vaires Gare SNCF ↔ Chelles Gare SNCF/RER,Apolo 7,STBC,#895913,route_master,bus,
+7466937,350,Bus 350 : Roissypole ↔ Gare de l'Est,RATP,RATP,#640082,route_master,bus,

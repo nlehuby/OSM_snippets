@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<analysers timestamp="2017-07-28T08:43:38Z">
-	<analyser timestamp="2017-07-28T08:43:38Z">
+<analysers timestamp="2017-08-16T21:07:08Z">
+	<analyser timestamp="2017-08-16T21:07:08Z">
 		<class item="8042" tag="transport en commun" id="1" level="3">
 			<classtext lang="fr" title="tag manquant sur une relation route_master (ligne de transport en commun)"></classtext>
 		</class>
@@ -100,14 +100,79 @@
 		<error class="1">
 			<location lat="" lon=""></location>
 			<relation id="7419766"></relation>
-			<text lang="fr" value="la relation n'a pas de tag operator. Valeur probable : RATP"></text>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.036398" lon="2.080501"></location>
+			<relation id="7426172"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.050797" lon="2.031814"></location>
+			<relation id="7430094"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.047232" lon="2.09595"></location>
+			<relation id="7433093"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.036066" lon="2.080475"></location>
+			<relation id="7435571"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.049964" lon="2.033227"></location>
+			<relation id="7435863"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.050046" lon="2.033432"></location>
+			<relation id="7441248"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.031674" lon="2.069058"></location>
+			<relation id="7442593"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.030615" lon="2.082183"></location>
+			<relation id="7447451"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="" lon=""></location>
+			<relation id="7448624"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.074907" lon="2.162541"></location>
+			<relation id="7449948"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator. Valeur probable : Tim Bus"></text>
 			<fixes>
 				<fix>
-					<relation id="7419766">
-						<tag action="create" k="operator" v="RATP"></tag>
+					<relation id="7449948">
+						<tag action="create" k="operator" v="Tim Bus"></tag>
 					</relation>
 				</fix>
 			</fixes>
+		</error>
+		<error class="1">
+			<location lat="49.063635" lon="2.089063"></location>
+			<relation id="7451164"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.030983" lon="2.021777"></location>
+			<relation id="7457086"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="" lon=""></location>
+			<relation id="7460875"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
 		</error>
 	</analyser>
 </analysers>

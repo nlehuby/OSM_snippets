@@ -106,10 +106,10 @@ def get_errors ():
             for an_osm_line in reader :
                 if not an_osm_line['ref:FR:STIF:ExternalCode_Line']:
                     continue
-                opendata_lines = [a_line for a_line in opendata_lines if an_osm_line['@id'] == a_line['osm_id']]
-                if not opendata_lines:
+                opendata_matching_lines = [a_line for a_line in opendata_lines if an_osm_line['@id'] == a_line['osm_id']]
+                if not opendata_matching_lines:
                     continue
-                opendata_line = opendata_lines[0]
+                opendata_line = opendata_matching_lines[0]
                 if not an_osm_line['network']:
                     error = {"id" : an_osm_line['@id'] }
                     fix = get_most_common_value(stats, "network", opendata_line['network'])

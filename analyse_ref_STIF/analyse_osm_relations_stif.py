@@ -47,6 +47,7 @@ def create_opendata_csv():
                     row["error"] = status
                     row['osm_id'] = row['@id']
                     osm_lines_with_errors.append(row)
+                else :
                     navitia_line['osm_id'] = row['@id']
                     navitia_lines.append(navitia_line)
 

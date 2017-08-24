@@ -47,8 +47,8 @@ def create_opendata_csv():
                     row["error"] = status
                     row['osm_id'] = row['@id']
                     osm_lines_with_errors.append(row)
-                navitia_line['osm_id'] = row['@id']
-                navitia_lines.append(navitia_line)
+                    navitia_line['osm_id'] = row['@id']
+                    navitia_lines.append(navitia_line)
 
     headers = ['osm_id', 'mode', 'network', 'color', 'navitia_id', 'name', 'code', 'latitude', 'longitude']
     with open("analyse/route_master_opendata.csv",'w') as f:
@@ -106,7 +106,10 @@ def get_errors ():
             for an_osm_line in reader :
                 if not an_osm_line['ref:FR:STIF:ExternalCode_Line']:
                     continue
-                opendata_line = [a_line for a_line in opendata_lines if an_osm_line['@id'] == a_line['osm_id']][0]
+                opendata_lines = [a_line for a_line in opendata_lines if an_osm_line['@id'] == a_line['osm_id']]
+                if not opendata_lines:
+                    continue
+                opendata_line = opendata_lines[0]
                 if not an_osm_line['network']:
                     error = {"id" : an_osm_line['@id'] }
                     fix = get_most_common_value(stats, "network", opendata_line['network'])

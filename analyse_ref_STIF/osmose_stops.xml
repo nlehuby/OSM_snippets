@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<analysers timestamp="2017-08-16T21:05:22Z">
-	<analyser timestamp="2017-08-16T21:05:22Z">
+<analysers timestamp="2017-08-25T21:59:24Z">
+	<analyser timestamp="2017-08-25T21:59:24Z">
 		<class item="8041" tag="transport en commun" id="1" level="3">
 			<classtext lang="fr" title="tag erroné sur un arrêt de transport en commun d'Île-de-France"></classtext>
 		</class>

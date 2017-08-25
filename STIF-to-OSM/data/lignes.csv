@@ -114,7 +114,7 @@
 1555878,325,Bus 325: Bibliothèque François Mitterrand ↔ Château de Vincennes,RATP,RATP,#87D3DF,route_master,bus,100100325:325
 1555879,118,Bus 118: Château de Vincennes ↔ Van Derheyden (Rosny-sous-bois),RATP,RATP,#E0B03B,route_master,bus,100100118:118
 1555880,124,Bus 124: Château de Vincennes ↔ Val de Fontenay RER,RATP,RATP,#F59FB3,route_master,bus,100100124:124
-1555939,318,Bus 318: Château de Vincennes ↔ Pantin – Raymond Queneau,RATP,RATP,#006CB8,route_master,bus,100100318:318
+1555939,318,Bus 318: Château de Vincennes ↔ Raymond Queneau (Pantin),RATP,RATP,#006CB8,route_master,bus,100100318:318
 1555940,114,Bus 114 : Château de Vincennes ↔ Le Raincy – Villemomble – Montfermeil RER ↔ Villemomble - Les Coquetiers,RATP,RATP,#77C695,route_master,bus,100100114:114
 1555941,N33,Noctilien N33: Gare de Lyon ↔ Villiers-sur-Marne—Le Plessis-Trévise RER,Noctilien,RATP,#F78F4B,route_master,bus,100987758:N33
 1574080,175,Bus 175 : Porte de Saint-Cloud ↔ Asnières—Gennevilliers,RATP,RATP,#006EB8,route_master,bus,100100175:175
@@ -465,7 +465,7 @@
 6957244,19,Bus 19 : Aéroport de Roissy ↔ Torcy RER,Seine-et-Marne Express,Transdev AMV,#ff0000,route_master,coach,051377019:19
 6957245,18,Bus 18 : Gare de Melun ↔ Gare de Meaux,Seine-et-Marne Express,Transdev AMV,,route_master,coach,051177018:18
 6957303,17,Bus 17 : Chessy RER ↔ Coulommiers ↔ La Ferté Gaucher,Seine-et-Marne Express,Transdev Darche Gros,#66B5E0,route_master,bus,097177017:17
-6957304,46,Bus 46 : Gare de Montereau ↔ Gare de Melun,Seine-et-Marne Express,Transdev Île-de-France Vulaines,,route_master,bus,
+6957304,46,Bus 46 : Gare de Montereau ↔ Gare de Melun,Seine-et-Marne Express,Transdev Île-de-France Vulaines,,route_master,bus,062177046:46
 6957305,34,Bus 34 : Gare de Melun ↔ Place Verdun (Chateau-Landon),Seine-et-Marne Express,Transdev Ile-de-France Nemours,,route_master,bus,064177034:34
 6957317,01,Bus 01 : Melun ↔ Rebais (via Coulommiers),Seine-et-Marne Express,Transdev Darche Gros,,route_master,bus,097177001:01
 6957343,18,Bus 18 : Gare de Torcy ↔ Gare de Tournan,Stigo,Transdev N4 Mobilités,,route_master,bus,003003018:18
@@ -633,5 +633,10 @@
 7466937,350,Bus 350 : Roissypole ↔ Gare de l'Est,RATP,RATP,#640082,route_master,bus,100100350:350
 7470484,320,Bus 320 : circulaire intérieure de Noisy-le-Grand - Mont d'Est RER,RATP,RATP,#FFCD02,route_master,bus,
 7471869,DM13,Bus DM13 : Linas ↔ Brétigny-sur-Orge RER,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,
-7474293,215,Bus 215 : Porte de Montreuil ↔ Vincennes RER – République,RATP,RATP,#77C694,route_master,bus,
-7475032,253,Bus 253 : La Courneuve - Aubervilliers RER ↔ Mairie de Stains,RATP,RATP,,route_master,bus,
+7474293,215,Bus 215 : Porte de Montreuil ↔ Vincennes RER – République,RATP,RATP,#77C694,route_master,bus,100100215:215
+7475032,253,Bus 253 : La Courneuve - Aubervilliers RER ↔ Mairie de Stains,RATP,RATP,,route_master,bus,100100253:253
+7479245,310,Bus 310 : Noisy-Champs RER ↔ Les Yvris - Noisy-le-Grand RER,RATP,RATP,#CDC92B,route_master,bus,
+7482557,Olfi,Navette municipale Olfi,local,Mairie d'Ozoir-la-Ferrière,#019a32,route_master,bus,
+7483890,J,Bus J : Mairie de Vélizy → Jouy-en-Josas - Saclay,Phébus,SVTU,#E8515F,route_master,bus,
+7483894,N,Bus N : Gare de Jouy-en-Josas ↔ Gare de Jouy-en-Josas,Phébus,SVTU,,route_master,bus,
+7483908,B,Bus B : Porchefontaine ↔ Rocquencourt INRIA,Phébus,SVTU,,route_master,bus,

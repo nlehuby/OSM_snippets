@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<analysers timestamp="2017-08-24T17:10:11Z">
-	<analyser timestamp="2017-08-24T17:10:11Z">
+<analysers timestamp="2017-08-25T21:56:37Z">
+	<analyser timestamp="2017-08-25T21:56:37Z">
 		<class item="8042" tag="transport en commun" id="1" level="3">
 			<classtext lang="fr" title="tag manquant sur une relation route_master (ligne de transport en commun)"></classtext>
 		</class>
@@ -98,6 +98,11 @@
 			<text lang="fr" value="la relation n'a pas de tag operator."></text>
 		</error>
 		<error class="1">
+			<location lat="49.033271" lon="2.020437"></location>
+			<relation id="7419766"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
 			<location lat="49.036398" lon="2.080501"></location>
 			<relation id="7426172"></relation>
 			<text lang="fr" value="la relation n'a pas de tag operator."></text>
@@ -138,6 +143,18 @@
 			<text lang="fr" value="la relation n'a pas de tag operator."></text>
 		</error>
 		<error class="1">
+			<location lat="49.08294" lon="1.735723"></location>
+			<relation id="7448624"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator. Valeur probable : Tim Bus"></text>
+			<fixes>
+				<fix>
+					<relation id="7448624">
+						<tag action="create" k="operator" v="Tim Bus"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
 			<location lat="49.074907" lon="2.162541"></location>
 			<relation id="7449948"></relation>
 			<text lang="fr" value="la relation n'a pas de tag operator. Valeur probable : Tim Bus"></text>
@@ -157,6 +174,11 @@
 		<error class="1">
 			<location lat="49.030983" lon="2.021777"></location>
 			<relation id="7457086"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.044182" lon="2.085384"></location>
+			<relation id="7460875"></relation>
 			<text lang="fr" value="la relation n'a pas de tag operator."></text>
 		</error>
 	</analyser>

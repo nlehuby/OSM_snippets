@@ -217,7 +217,7 @@
 3253655,95.02,Bus 95.02,Busval d'Oise,Les Courriers d'Île-de-France;Les Cars Rose,#004494,route_master,bus,014195002:95-02
 3253656,32A,Bus 32A : Aulnay-Sous-Bois Parinor - Goussainville La Charmeuse,Les Courriers de l'Île-de-France,Keolis CIF,#B2CE40,route_master,bus,014014032:32A
 3253657,11.5,Bus 11.5 : Le Moulin / Avenue Bocquet ↔ Collège Philippe Auguste,Les Courriers de l'Île-de-France,Keolis CIF,#007AC2,route_master,bus,014014011:115
-3253980,95.18,Bus 95.18,Mobilien,Transdev IDF,#f3dd02,route_master,bus,212195018:9518
+3253980,95-18,Bus 95-18 : Cergy-Pontoise Gare ↔ Roissypole RER,Mobilien,Transdev Île-de-France Conflans,#f3dd02,route_master,bus,212195018:9518
 3256022,37,Bus 37 : Villiers-le-Bel RER - Gonesse Hôpital via les Marroniers,TransVO,Transdev Trans Val d'Oise,green,route_master,bus,050050037:37
 3256023,23ZI,Bus 23ZI : Villiers-le-Bel RER - Gonesse Zone Industrielle,TransVO,STIF,blue,route_master,bus,
 3256314,22,Bus 22 : Villiers-le-Bel RER - Roissypole RER,TransVO,Transdev Trans Val d'Oise,yellow,route_master,bus,050050022:22
@@ -236,7 +236,7 @@
 3328717,9,Métro 9,RATP,RATP,#BAD33C,route_master,subway,100110009:9
 3328741,10,Métro 10,RATP,RATP,#E1A731,route_master,subway,100110010:10
 3328765,6,Métro 6,RATP,RATP,#50CC7E,route_master,subway,100110006:6
-3328805,7,Métro 7,RATP,RATP,#F77AA8,route_master,subway,100110007:7
+3328805,7,Métro 7,RATP,RATP,#FA9ABA,route_master,subway,100110007:7
 3334641,131,Bus 131 : Porte d'Italie ↔ L'Haÿ-les-Roses - Les Dahlias (Rungis - La Fraternelle RER),RATP,RATP,#8D653A,route_master,bus,100100131:131
 3336398,214,Bus 214 : Neuilly-Plaisance RER ↔ Gagny - Roger Salengro,RATP,RATP,#C9A3CD,route_master,bus,100100214:214
 3347023,J1J2,Bus J1-J2 : Gare de Villeneuve-Saint-Georges ↔ Gare de Villeneuve-Saint-Georges,STRAV,Transdev STRAV,,route_master,bus,
@@ -324,7 +324,7 @@
 5989121,DM4,Bus DM4 : La Treille - Viry-Châtillon → Gare de Juvisy-sur-Orge,Daniel Meyer,Transports Daniel Meyer,3fc8f4,route_master,bus,055055004:DM04
 5998406,DM22,Bus DM22 : Tuileries - Grigny ↔ Gare de Savigny-sur-Orge,Daniel Meyer,Transports Daniel Meyer,#FE360E,route_master,bus,055055022:DM22
 6001282,DM8,Bus DM8 : Libération - Morsang-sur-Orge ↔ Porte de L'Essonne - Paray-Vieille-Poste,Daniel Meyer,Transports Daniel Meyer,#F89C1C,route_master,bus,055055008:DM08
-6006672,356,Bus 356 : Marché des Mortefontaines (Deuil-la-Barre) ↔ ZAC Landy Nord (Saint-Denis),RATP,RATP,#F55323,route_master,bus,100100356:356
+6006672,356,Bus 356 : Marché des Mortefontaines (Deuil-la-Barre) ↔ Cité Floréal (Saint-Denis),RATP,RATP,#F55323,route_master,bus,100100356:356
 6010903,DM5,Bus DM5 : Croix Blanche - Sainte-Geneviève-des-Bois ↔ Gare de Juvisy-sur-Orge,Daniel Meyer,Transports Daniel Meyer,#006DB7,route_master,bus,055055005:DM05
 6010927,169,Bus 169 : Pont de Sevres ↔ Hopital Georges Pompidou,RATP,RATP,#82DC73,route_master,bus,100100169:169
 6010966,167,Bus 167 : Pont de Levallois ↔ Colombes - Audra,RATP,RATP,#79bb92,route_master,bus,100100167:167
@@ -635,8 +635,20 @@
 7471869,DM13,Bus DM13 : Linas ↔ Brétigny-sur-Orge RER,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,
 7474293,215,Bus 215 : Porte de Montreuil ↔ Vincennes RER – République,RATP,RATP,#77C694,route_master,bus,100100215:215
 7475032,253,Bus 253 : La Courneuve - Aubervilliers RER ↔ Mairie de Stains,RATP,RATP,,route_master,bus,100100253:253
-7479245,310,Bus 310 : Noisy-Champs RER ↔ Les Yvris - Noisy-le-Grand RER,RATP,RATP,#CDC92B,route_master,bus,
+7479245,310,Bus 310 : Noisy-Champs RER ↔ Les Yvris - Noisy-le-Grand RER,RATP,RATP,#CDC92B,route_master,bus,100100310:310
 7482557,Olfi,Navette municipale Olfi,local,Mairie d'Ozoir-la-Ferrière,#019a32,route_master,bus,
-7483890,J,Bus J : Mairie de Vélizy → Jouy-en-Josas - Saclay,Phébus,SVTU,#E8515F,route_master,bus,
-7483894,N,Bus N : Gare de Jouy-en-Josas ↔ Gare de Jouy-en-Josas,Phébus,SVTU,,route_master,bus,
-7483908,B,Bus B : Porchefontaine ↔ Rocquencourt INRIA,Phébus,SVTU,,route_master,bus,
+7483890,J,Bus J : Mairie de Vélizy → Jouy-en-Josas - Saclay,Phébus,SVTU,#E8515F,route_master,bus,056356116:J
+7483894,N,Bus N : Gare de Jouy-en-Josas ↔ Gare de Jouy-en-Josas,Phébus,SVTU,,route_master,bus,056356016:N
+7483908,B,Bus B : Porchefontaine ↔ Rocquencourt INRIA,Phébus,SVTU,,route_master,bus,056356002:B
+7517220,23,Bus 23 : Gare de Houilles Carrières-sur-Seine ↔ Gare de Sartrouville,Bus en Seine,Transdev TVO,,route_master,bus,
+7517221,25H,Bus 25 : Plateau (Bezons) ↔ Gare de Houilles Carrières-sur-Seine,Bus en Seine,Transdev TVO,,route_master,bus,
+7517222,19,Bus 19 : Gare du Vésinet Le Pecq ↔ Gare de Houilles Carrières-sur-Seine,Bus en Seine,Transdev Île-de-France Montesson La Boucle,,route_master,bus,
+7517223,3,Bus 3 : Gare de Houilles Carrières-sur-Seine ↔ Gare du Vésinet Le Pecq,Bus en Seine,Transdev Île-de-France Montesson La Boucle,,route_master,bus,
+7517252,26,Bus 26 : Lycée les Pierres Vives ↔ Martyrs (Houilles),Bus en Seine,Transdev,,route_master,bus,
+7517253,10,Bus 10 : Gare de Houilles Carrières-sur-Seine ↔ Gare de Houilles Carrières-sur-Seine,Bus en Seine,Transdev,,route_master,bus,
+7529344,TER,TER : Caen - Bernay - Evreux - Paris,TER Haute-Normandie,SNCF,#ff6500,route_master,train,
+7532322,10,Bus 10 : Plaisir Grignon - St Quentin en Yvelines ↔ Versailles Rive-Gauche,Hourtoule,Cars Hourtoule,,route_master,bus,
+7537818,197,Bus 197 : Porte d'Orléans <-> Massy–Opéra-Théâtre,RATP,RATP,#ED1B29,route_master,bus,
+7537834,297,Bus 297 : Porte d'Orléans <-> Longjumeau–Place Charles Steber,RATP,RATP,#BB4B9D,route_master,bus,
+7573289,V2,Bus V2 : L'Haÿ-les-Roses Domaine Chérioux <-> Fresnes Pasteur,Valouette,RATP,,route_master,bus,
+7592991,526,Montbus,RATP,RATP,,route_master,bus,

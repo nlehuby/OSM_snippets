@@ -31,6 +31,8 @@ def get_opendata_info(code_type, code_value):
 
     # on récupère les coordonnées d'un arrêt de la ligne au hasard
     appel_nav = requests.get(navitia_base_url + "/lines/{}/stop_points?count=1".format(navitia_info['navitia_id']), headers={'Authorization': navitia_API_key})
+    if appel_nav.status_code != 200:
+        return "échec à l'appel navitia sur les arrêts", navitia_info
     navitia_info['latitude'] = appel_nav.json()['stop_points'][0]['coord']['lat']
     navitia_info['longitude'] = appel_nav.json()['stop_points'][0]['coord']['lon']
     return "ok", navitia_info

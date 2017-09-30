@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<analysers timestamp="2017-09-23T21:42:53Z">
-	<analyser timestamp="2017-09-23T21:42:53Z">
+<analysers timestamp="2017-09-30T17:20:10Z">
+	<analyser timestamp="2017-09-30T17:20:10Z">
 		<class item="8042" tag="transport en commun" id="1" level="3">
 			<classtext lang="fr" title="tag manquant sur une relation route_master (ligne de transport en commun)"></classtext>
 		</class>
@@ -17,6 +17,57 @@
 			</fixes>
 		</error>
 		<error class="1">
+			<location lat="48.986037" lon="2.537842"></location>
+			<relation id="2531226"></relation>
+			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : Fileo V"></text>
+			<fixes>
+				<fix>
+					<relation id="2531226">
+						<tag action="create" k="ref" v="Fileo V"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.754498" lon="2.300788"></location>
+			<relation id="6928902"></relation>
+			<text lang="fr" value="la relation n'a pas de tag network."></text>
+		</error>
+		<error class="1">
+			<location lat="48.702392" lon="2.463754"></location>
+			<relation id="6949604"></relation>
+			<text lang="fr" value="la relation n'a pas de tag network."></text>
+		</error>
+		<error class="1">
+			<location lat="48.654718" lon="2.364121"></location>
+			<relation id="7245040"></relation>
+			<text lang="fr" value="la relation n'a pas de tag network. Valeur probable : Daniel Meyer"></text>
+			<fixes>
+				<fix>
+					<relation id="7245040">
+						<tag action="create" k="network" v="Daniel Meyer"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.654718" lon="2.364121"></location>
+			<relation id="7245040"></relation>
+			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : DM03"></text>
+			<fixes>
+				<fix>
+					<relation id="7245040">
+						<tag action="create" k="ref" v="DM03"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="49.050797" lon="2.031814"></location>
+			<relation id="7346820"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
 			<location lat="49.036801" lon="2.079515"></location>
 			<relation id="7353488"></relation>
 			<text lang="fr" value="la relation n'a pas de tag operator."></text>
@@ -24,6 +75,31 @@
 		<error class="1">
 			<location lat="49.036801" lon="2.079515"></location>
 			<relation id="7359261"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.049404" lon="2.081667"></location>
+			<relation id="7364631"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.046166" lon="2.093357"></location>
+			<relation id="7370851"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.046166" lon="2.093357"></location>
+			<relation id="7372176"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.036398" lon="2.080501"></location>
+			<relation id="7373447"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.033271" lon="2.020437"></location>
+			<relation id="7419766"></relation>
 			<text lang="fr" value="la relation n'a pas de tag operator."></text>
 		</error>
 		<error class="1">
@@ -49,6 +125,21 @@
 		<error class="1">
 			<location lat="49.049964" lon="2.033227"></location>
 			<relation id="7435863"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.050046" lon="2.033432"></location>
+			<relation id="7441248"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.031674" lon="2.069058"></location>
+			<relation id="7442593"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.030615" lon="2.082183"></location>
+			<relation id="7447451"></relation>
 			<text lang="fr" value="la relation n'a pas de tag operator."></text>
 		</error>
 		<error class="1">
@@ -78,6 +169,11 @@
 		<error class="1">
 			<location lat="49.063635" lon="2.089063"></location>
 			<relation id="7451164"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator."></text>
+		</error>
+		<error class="1">
+			<location lat="49.030983" lon="2.021777"></location>
+			<relation id="7457086"></relation>
 			<text lang="fr" value="la relation n'a pas de tag operator."></text>
 		</error>
 		<error class="1">

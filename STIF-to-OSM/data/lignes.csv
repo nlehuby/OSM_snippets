@@ -384,7 +384,7 @@
 6785602,420,Bus 420 : Grigny - Centre RER ↔ Gare RER d'Épinay-sur-Orge,TICE,TICE,,route_master,bus,400400420:420
 6789691,N21,Noctilien N21 : Châtelet ↔ Chilly-Mazarin,Noctilien,RATP,#77C695,route_master,bus,100987760:N21
 6795568,T1,Tram 1 : Les Courtilles (Asnières – Gennevilliers) ↔ Gare de Noisy-le-Sec,RATP,RATP,#216EB4,route_master,tram,100112011:T1
-6795574,208b,Bus 208b : Champigny–Saint-Maur RER ↔ Le Plessis-Trévise–Place de Verdun,RATP,RATP,#B43C95,route_master,bus,100100208:208B
+6795574,208b,Bus 208b : Champigny–Saint-Maur RER ↔ Place de Verdun (Le Plessis-Trévise),RATP,RATP,#B43C95,route_master,bus,100100208:208B
 6795575,208a,Bus 208a : Champigny–Place de la Résistance ↔ Champigny–Saint-Maur RER,RATP,RATP,#B43C95,route_master,bus,100100208:208A
 6827371,238,Bus 238 : Saint-Gratien RER ↔ Pont de Levallois,RATP,RATP,#FF82B4,route_master,bus,100100238:238
 6835726,361,Bus 361 : Gare d'Argenteuil ↔ Pierrefitte–Stains RER,RATP,RATP,#3445C6,route_master,bus,100100361:361
@@ -424,7 +424,7 @@
 6910410,T5,Tram 5 : Marché de Saint-Denis ↔ Gare de Garges - Sarcelles RER,RATP,RATP,#B156A1,route_master,tram,100112015:T5
 6910437,T6,Tramway T6 : Châtillon–Montrouge ↔ Viroflay Rive Droite,RATP,RATP,#E85426,route_master,tram,100112016:T6
 6910465,T7,T7 : Villejuif - Louis Aragon ↔ Porte de l'Essonne (Athis-Mons),RATP,RATP,#B98B59,route_master,tram,100112017:T7
-6915922,283 (Orlybus),Bus 283 : Paris–Denfert–Rochereau ↔ Aéroport d'Orly–Orly Sud,RATP,RATP,#F2FE98,route_master,bus,100100283:ORLYBUS
+6915922,283 (Orlybus),Orlybus : Paris - Denfert–Rochereau ↔ Aéroport d'Orly - Orly Sud,RATP,RATP,#F2FE98,route_master,bus,100100283:ORLYBUS
 6928902,OrlyVAL,OrlyVAL : Antony ↔ Orly Sud,,RATP,#FFCF00,route_master,light_rail,100110200:ORLYVAL
 6928933,CDGVAL,CDGVAL : Terminal 1 ↔ Terminal 2 - Gare,CDGVAL,Aéroports de Paris,,route_master,light_rail,043043100:CDGVAL
 6928970,Funiculaire,Funiculaire de Montmartre : Gare Basse ↔ Gare Haute,RATP,RATP,#622282,route_master,funicular,100110100:FUN
@@ -443,7 +443,7 @@
 6950504,N151,Noctilien N151: Gare Saint-Lazare ↔ Gare de Mantes la Jolie,Noctilien,Transilien,,route_master,bus,800:N151
 6952110,95-01,Bus 95-01 : Roissypole (RER) ↔ Luzarches,Busval d'Oise,Keolis CIF,#4DEDFF,route_master,bus,014195001:95-01
 6953405,95-05,Bus 95-05 : Frouville ↔ Cergy (RER A - SNCF),Busval d'Oise,CeoBus,#00FFFF,route_master,bus,025195005:95-05
-6953807,N142,Bus N142: Gare de l’Est ↔ Tournan RER,Noctilien,RATP,#D17FB5,route_master,bus,800:N142
+6953807,N142,Bus N142: Gare de l’Est ↔ Tournan RER,Noctilien,Transilien,#D17FB5,route_master,bus,800:N142
 6954049,95-06,Bus 95-06 : Arronville ↔ Cergy Préfecture / RER,Busval d'Oise,CeoBus,#00A6FF,route_master,bus,025195006:95-06
 6954593,128,Bus 128 : Porte d'Orléans ↔ Robinson RER,RATP,RATP,#8D653A,route_master,bus,100100128:128
 6955407,N41,Noctilien N41: Gare de l’Est ↔ Villeparisis - Mitry-le-Neuf RER,Noctilien,RATP,#F59EB3,route_master,bus,100987772:N41
@@ -563,7 +563,7 @@
 7244792,208s,Bus 208s : Champigny–Saint-Maur RER → Champigny–Saint-Maur RER via Paul Venzac,RATP,RATP,#000080,route_master,bus,100100208:208S
 7245040,,Bus DM3,,Transports Daniel Meyer,,route_master,bus,055055003:DM03
 7248309,MI,Bus MI : circulaire de Lieusaint,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487127:MI
-7261212,389,Bus 389 : Pont de Sèvres ↔ Clamart–Georges Pompidou,RATP,RATP,#006CB8,route_master,bus,100100389:389
+7261212,389,Bus 389 : Pont de Sèvres ↔ Georges Pompidou (Clamart),RATP,RATP,#006CB8,route_master,bus,100100389:389
 7263065,02,Bus 02 : Les Prés Hauts (Saint-Pierre-du-Perray) ↔ Petit Sénart (Tigery),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487002:02
 7271953,E,RER E,RER,SNCF,#BD76A1,route_master,train,800:E
 7280948,Citalien,Bus Citalien : Carré Citoyenneté (Lieusaint) ↔ Gare Routière Mail (Melun),MELIBUS,Transdev Île-de-France Vaux-le-Pénil,,route_master,bus,066487077:CITA

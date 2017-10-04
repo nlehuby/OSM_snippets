@@ -55,7 +55,7 @@
         }, {
             "name": "remove national trains",
             "executor": "shell",
-            "command": "cat lignes_.csv |xsv search -s network TGV -v | xsv search -s network Eurostar -v |xsv search -s network Thalys -v |xsv search -s network Flixbus -v |xsv search -s network Intercités -v|xsv search -s operator 'SNCF Réseau' -v |xsv search -s operator 'DB Fernverkehr' -v > lignes_without_train.csv",
+            "command": "cat lignes_.csv |xsv search -s network TGV -v | xsv search -s network Eurostar -v |xsv search -s network Thalys -v |xsv search -s network Flixbus -v |xsv search -s network Intercités -v|xsv search -s operator 'SNCF Réseau' -v |xsv search -s network 'TER ' -v |xsv search -s operator 'DB Fernverkehr' -v > lignes_without_train.csv",
             "arguments": [],
             "dependsOn": ["filter csv"],
             "onResult": {

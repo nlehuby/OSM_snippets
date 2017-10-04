@@ -646,7 +646,6 @@
 7517223,3,Bus 3 : Gare de Houilles Carrières-sur-Seine ↔ Gare du Vésinet Le Pecq,Bus en Seine,Transdev Île-de-France Montesson La Boucle,,route_master,bus,
 7517252,26,Bus 26 : Lycée les Pierres Vives ↔ Martyrs (Houilles),Bus en Seine,Transdev,,route_master,bus,019248026:26
 7517253,10,Bus 10 : Gare de Houilles Carrières-sur-Seine ↔ Gare de Houilles Carrières-sur-Seine,Bus en Seine,Transdev,,route_master,bus,
-7529344,TER,TER : Caen - Bernay - Evreux - Paris,TER Haute-Normandie,SNCF,#ff6500,route_master,train,
 7532322,10,Bus 10 : Plaisir Grignon - St Quentin en Yvelines ↔ Versailles Rive-Gauche,Hourtoule,Cars Hourtoule,,route_master,bus,
 7537818,197,Bus 197 : Porte d'Orléans <-> Massy–Opéra-Théâtre,RATP,RATP,#ED1B29,route_master,bus,
 7537834,297,Bus 297 : Porte d'Orléans <-> Longjumeau–Place Charles Steber,RATP,RATP,#BB4B9D,route_master,bus,

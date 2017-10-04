@@ -540,7 +540,7 @@
 7177169,Bleue,Chavilbus Bleue,Chavilbus,Keolis Yvelines,,route_master,bus,078192003:ChavilB
 7177170,Rouge,Chavilbus Rouge,Chavilbus,Keolis Yvelines,,route_master,bus,078192001:ChavilR
 7194122,617,Bus 617 : Gare d'Aulnay-sous-Bois ↔ Gare de Villepinte,TRA,Transdev,,route_master,bus,293193617:617
-7194158,112,Bus 112 : Fontaineroux (Héricy) ↔ Stade de la Faisanderie (Fontainebleau),Aérial,Transdev Ile-de-France Vulaines,#F74C00,route_master,bus,062062112:112
+7194158,112,Bus 112 : Fontaineroux (Héricy) ↔ Stade de la Faisanderie (Fontainebleau),Aérial,Transdev Île-de-France Vulaines,#F74C00,route_master,bus,062062112:112
 7194163,14,Bus 14 : Gare de Conflans Fin d'Oise ↔ Gare de Neuville Université,Conflans Achères,Transdev Île-de-France Conflans,#FFFF00,route_master,bus,212212014:14
 7194182,22,Bus 22 : Dourdan ↔ Paray-Douaville,Dourdanais,Transdev Île-de-France Rambouillet,,route_master,bus,013013022:22
 7194183,06,Bus 06 : Dourdan ↔ Limours,Dourdanais,Transdev Île-de-France Rambouillet,,route_master,bus,013013006:06
@@ -642,9 +642,9 @@
 7483908,B,Bus B : Porchefontaine ↔ Rocquencourt INRIA,Phébus,SVTU,,route_master,bus,056356002:B
 7517220,23,Bus 23 : Gare de Houilles Carrières-sur-Seine ↔ Gare de Sartrouville,Bus en Seine,Transdev TVO,,route_master,bus,
 7517221,25H,Bus 25 : Plateau (Bezons) ↔ Gare de Houilles Carrières-sur-Seine,Bus en Seine,Transdev TVO,,route_master,bus,
-7517222,19,Bus 19 : Gare du Vésinet Le Pecq ↔ Gare de Houilles Carrières-sur-Seine,Bus en Seine,Transdev Île-de-France Montesson La Boucle,,route_master,bus,
+7517222,19,Bus 19 : Gare du Vésinet Le Pecq ↔ Gare de Houilles Carrières-sur-Seine,Bus en Seine,Transdev Île-de-France Montesson La Boucle,,route_master,bus,019248019:19
 7517223,3,Bus 3 : Gare de Houilles Carrières-sur-Seine ↔ Gare du Vésinet Le Pecq,Bus en Seine,Transdev Île-de-France Montesson La Boucle,,route_master,bus,
-7517252,26,Bus 26 : Lycée les Pierres Vives ↔ Martyrs (Houilles),Bus en Seine,Transdev,,route_master,bus,
+7517252,26,Bus 26 : Lycée les Pierres Vives ↔ Martyrs (Houilles),Bus en Seine,Transdev,,route_master,bus,019248026:26
 7517253,10,Bus 10 : Gare de Houilles Carrières-sur-Seine ↔ Gare de Houilles Carrières-sur-Seine,Bus en Seine,Transdev,,route_master,bus,
 7529344,TER,TER : Caen - Bernay - Evreux - Paris,TER Haute-Normandie,SNCF,#ff6500,route_master,train,
 7532322,10,Bus 10 : Plaisir Grignon - St Quentin en Yvelines ↔ Versailles Rive-Gauche,Hourtoule,Cars Hourtoule,,route_master,bus,
@@ -652,3 +652,10 @@
 7537834,297,Bus 297 : Porte d'Orléans <-> Longjumeau–Place Charles Steber,RATP,RATP,#BB4B9D,route_master,bus,
 7573289,V2,Bus V2 : L'Haÿ-les-Roses Domaine Chérioux <-> Fresnes Pasteur,Valouette,RATP,,route_master,bus,
 7592991,526,Montbus,RATP,RATP,,route_master,bus,
+7618243,8,Bus 8 : Gare routière de Fontainebleau Avon ↔ Crevat Jaurès (Fontainebleau),Aérial,Transdev Île-de-France Vulaines,blue,route_master,bus,
+7618269,1,Bus 1 : Gare routière de Fontainebleau Avon ↔ Les Lilas (Fontainebleau),Aérial,Transdev Île-de-France Vulaines,,route_master,bus,
+7618295,4,Bus 4 : Gare routière de Fontainebleau Avon ↔ Stade de la Faisanderie (Fontainebleau),Aérial,Transdev Île-de-France Vulaines,green,route_master,bus,
+7618345,6,Bus 6 : Gare routière de Fontainebleau Avon → Vulaines-sur-Seine,Aérial,Transdev Île-de-France Vulaines,,route_master,bus,
+7618346,5,Bus 5 : Gare routière de Fontainebleau Avon ↔ Croix de Fer (Héricy),Aérial,Transdev Île-de-France Vulaines,,route_master,bus,
+7618347,3,Bus 3 : Gare routière de Fontainebleau Avon ↔ Crevat Jaurès (Fontainebleau),Aérial,Transdev Île-de-France Vulaines,orange,route_master,bus,
+7618348,7,Bus 7 : Gare routière de Fontainebleau Avon ↔ Samois-sur-Seine,Aérial,Losay Voyages,yellow,route_master,bus,

@@ -111,8 +111,8 @@
       <Placemark>
         <name>Vérifier cet arrêt de bus</name>
         <styleUrl>#placemark-brown</styleUrl>
-        <Point><coordinates>2.3315999,48.8711264</coordinates></Point>
-        <description><![CDATA[FIXME : position à préciser<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8711264/2.3315999">AJOUTER DES LIGNES</a>]]></description>
+        <Point><coordinates>2.3315597,48.8711529</coordinates></Point>
+        <description><![CDATA[FIXME : position à préciser<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8711529/2.3315597">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Vérifier cet arrêt de bus</name>
@@ -485,12 +485,6 @@
         <styleUrl>#placemark-brown</styleUrl>
         <Point><coordinates>2.4695634,48.6298932</coordinates></Point>
         <description><![CDATA[FIXME : not visible during survey 2017-08 (see mapillary)<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6298932/2.4695634">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Vérifier cet arrêt de bus</name>
-        <styleUrl>#placemark-brown</styleUrl>
-        <Point><coordinates>2.3735142,48.893516</coordinates></Point>
-        <description><![CDATA[FIXME : vérifier si le nom est Curial - Crimée ou Crimée - Curial<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.893516/2.3735142">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Vérifier cet arrêt de bus</name>

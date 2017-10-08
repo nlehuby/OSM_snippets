@@ -631,7 +631,7 @@
 7460875,36,Bus 36 : Pontoise Gare ↔ Les Croizettes,STIVO,,#AD1380,route_master,bus,059440036:36
 7466920,F,Bus ligne F : Vaires Gare SNCF ↔ Chelles Gare SNCF/RER,Apolo 7,STBC,#895913,route_master,bus,101261028:F
 7466937,350,Bus 350 : Roissypole ↔ Gare de l'Est,RATP,RATP,#640082,route_master,bus,100100350:350
-7470484,320,Bus 320 : circulaire intérieure de Noisy-le-Grand - Mont d'Est RER,RATP,RATP,#FFCD02,route_master,bus,
+7470484,320,Bus 320 : circulaire intérieure de Noisy-le-Grand - Mont d'Est RER,RATP,RATP,#FFCD02,route_master,bus,100100320:320
 7471869,DM13,Bus DM13 : Linas ↔ Brétigny-sur-Orge RER,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,
 7474293,215,Bus 215 : Porte de Montreuil ↔ Vincennes RER – République,RATP,RATP,#77C694,route_master,bus,100100215:215
 7475032,253,Bus 253 : La Courneuve - Aubervilliers RER ↔ Mairie de Stains,RATP,RATP,,route_master,bus,100100253:253
@@ -658,3 +658,4 @@
 7618346,5,Bus 5 : Gare routière de Fontainebleau Avon ↔ Croix de Fer (Héricy),Aérial,Transdev Île-de-France Vulaines,,route_master,bus,
 7618347,3,Bus 3 : Gare routière de Fontainebleau Avon ↔ Crevat Jaurès (Fontainebleau),Aérial,Transdev Île-de-France Vulaines,orange,route_master,bus,
 7618348,7,Bus 7 : Gare routière de Fontainebleau Avon ↔ Samois-sur-Seine,Aérial,Losay Voyages,yellow,route_master,bus,
+7634948,248,Bus 248 : Fort d'Aubervilliers ↔ Drancy RER,RATP,RATP,,route_master,bus,

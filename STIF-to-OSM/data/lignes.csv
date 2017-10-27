@@ -213,7 +213,7 @@
 3079254,203,Bus 203: Neuilly-Plaisance RER ↔ Neuilly-sur-Marne – Île-de-France,RATP,RATP,,route_master,bus,100100203:203
 3081886,B,Bus ligne B: Gare SNCF/RER (CHELLES) ↔ College Corot (CHELLES),Apolo 7,STBC,#97BF0D,route_master,bus,101261021:B
 3134153,221,Bus 221 : Bagnolet - Gallieni ↔ Gagny - Pointe de Gournay,RATP,RATP,#f49eb2,route_master,bus,100100221:221
-3186411,15,Bus 15 : Gare de Massy-Palaiseau ↔ Vélizy-Villacoublay,Mobicaps,Les Cars d'Orsay,#313188,route_master,bus,006006015:15
+3186411,15,Bus 15 : Gare de Massy-Palaiseau ↔ Vélizy-Villacoublay,Mobicaps,Les Cars d'Orsay,#313187,route_master,bus,006006015:15
 3253655,95.02,Bus 95.02,Busval d'Oise,Les Courriers d'Île-de-France;Les Cars Rose,#004494,route_master,bus,014195002:95-02
 3253656,32A,Bus 32A : Aulnay-Sous-Bois Parinor - Goussainville La Charmeuse,Les Courriers de l'Île-de-France,Keolis CIF,#B2CE40,route_master,bus,014014032:32A
 3253657,11.5,Bus 11.5 : Le Moulin / Avenue Bocquet ↔ Collège Philippe Auguste,Les Courriers de l'Île-de-France,Keolis CIF,#007AC2,route_master,bus,014014011:115
@@ -413,7 +413,7 @@
 6883314,Licorne,Bus Licorne : La Fresnaie ↔ Foyer Jean Rostand,Athis Cars,Keolis Seine Val-de-Marne,#D6188A,route_master,bus,002002002:LIC
 6883352,Centaure,Bus Centaure : Gare de Villeneuve-le-Roi ↔ Gare de Villeneuve-le-Roi,Athis Cars,Keolis Seine Val-de-Marne,#79AF9A,route_master,bus,002002002:CEN
 6883353,Bord de l'Eau,Bus Bord de l'Eau : Gare de Villeneuve-le-Roi ↔ Gare de Villeneuve-le-Roi,Athis Cars,Keolis Seine Val-de-Marne,#6F268E,route_master,bus,002002002:BDE
-6885970,R104,Bus R104 : Sécurité Sociale (Goussainville) ↔ Institut Saint-Dominique (Mortefontaine),CIF,Les Courriers de l'Île-de-France,#0072BC,route_master,bus,014014915:R104
+6885970,R104,Bus R104 : Sécurité Sociale (Goussainville) ↔ Institut Saint-Dominique (Mortefontaine),Keolis CIF,Les Courriers de l'Île-de-France,#0072BC,route_master,bus,014014915:R104
 6886051,ExpA14,Bus Express A14 : La Défense ↔ Les Mureaux,Express A14,STILE Express,,route_master,coach,244244001:ExpA14
 6886090,41,Ligne 41 : La Ferté sous Jouarre ↔ Coulommiers,Réseau de bus Pays Fertois,Transdev Darche Gros,#FF0000,route_master,bus,097097041:41
 6886101,412,Bus 412 : Gare de La Verrière ↔ Élancourt France Miniature,SqyBus,SqyBus,,route_master,bus,230410412:412
@@ -658,9 +658,19 @@
 7618346,5,Bus 5 : Gare routière de Fontainebleau Avon ↔ Croix de Fer (Héricy),Aérial,Transdev Île-de-France Vulaines,,route_master,bus,
 7618347,3,Bus 3 : Gare routière de Fontainebleau Avon ↔ Crevat Jaurès (Fontainebleau),Aérial,Transdev Île-de-France Vulaines,orange,route_master,bus,
 7618348,7,Bus 7 : Gare routière de Fontainebleau Avon ↔ Samois-sur-Seine,Aérial,Losay Voyages,yellow,route_master,bus,
-7634948,248,Bus 248 : Fort d'Aubervilliers ↔ Drancy RER,RATP,RATP,,route_master,bus,
+7634948,248,Bus 248 : Fort d'Aubervilliers ↔ Drancy RER,RATP,RATP,,route_master,bus,100100248:248
 7668788,,Bus 4,,,,route_master,bus,
 7670510,,Bus 20,,,,route_master,bus,
 7670803,,Bus 12,,,,route_master,bus,
 7673346,,Bus Mobicaps 13,,,,route_master,bus,
 7673721,Unique,Chavilbus Unique,Chavilbus,,,route_master,bus,
+7677900,01-605,,local,Scol'R,,route_master,bus,
+7677901,01-604,,local,Scol'R,,route_master,bus,
+7677902,01-603,,local,Scol'R,,route_master,bus,
+7677999,R114,Bus R114 : Treize Saules (Saint-Witz) ↔ Collège Anne-Marie Javouhey (Senlis),Keolis CIF,Les Courriers de l'Île-de-France,,route_master,bus,
+7678000,R2,Bus R2 : Mairie Annexe (Fosses) → Vergers (Plailly),Keolis CIF,Les Courriers de l'Île-de-France,,route_master,bus,
+7678060,R1,Bus R1 : Gare de Survilliers – Fosses ↔ Gare de Louvres,Keolis CIF,Les Courriers de l'Île-de-France,,route_master,bus,
+7678061,R3,Bus R3 : Gare de Survilliers – Fosses ↔ Central Space Bâtiment C (Marly-la-Ville),Keolis CIF,Les Courriers de l'Île-de-France,,route_master,bus,
+7678062,R108,Bus R108 : Mairie Annexe (Fosses) ↔ Institut Saint-Dominique (Mortefontaine),Keolis CIF,Les Courriers de l'Île-de-France,,route_master,bus,
+7678074,R117,Bus R117 : Centre-ville (Survilliers) ↔ Collège de Noailles - Lycée de Nerval (Luzarches),Keolis CIF,Les Courriers de l'Île-de-France,,route_master,bus,
+7678094,Filéo FO,Bus Filéo FO : Gare de Survilliers – Fosses ↔ Zone Industrielle Périchet (Le Mesnil-Amelot),Filéo,Keolis Mobilité Roissy,,route_master,bus,

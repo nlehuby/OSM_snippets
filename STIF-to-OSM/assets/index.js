@@ -32,7 +32,8 @@ $(document).ready(function() {
         table = $('#data_table').DataTable({
             data: data_lines,
             order: [
-                [8  , 'asc']
+                [8  , 'asc'],
+                [1  , 'desc']
             ],
             columns: [ //@id,ref,name,network,operator,colour,type,route_master,ref:FR:STIF:ExternalCode_Line
                 {

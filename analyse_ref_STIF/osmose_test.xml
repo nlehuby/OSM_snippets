@@ -1,33 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<analysers timestamp="2017-10-24T19:33:00Z">
-	<analyser timestamp="2017-10-24T19:33:00Z">
+<analysers timestamp="2017-11-05T21:17:06Z">
+	<analyser timestamp="2017-11-05T21:17:06Z">
 		<class item="8042" tag="transport en commun" id="1" level="3">
 			<classtext lang="fr" title="tag manquant sur une relation route_master (ligne de transport en commun)"></classtext>
 		</class>
-		<error class="1">
-			<location lat="49.001878" lon="2.528042"></location>
-			<relation id="2531207"></relation>
-			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : FILEO VB"></text>
-			<fixes>
-				<fix>
-					<relation id="2531207">
-						<tag action="create" k="ref" v="FILEO VB"></tag>
-					</relation>
-				</fix>
-			</fixes>
-		</error>
-		<error class="1">
-			<location lat="48.986037" lon="2.537842"></location>
-			<relation id="2531226"></relation>
-			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : Fileo V"></text>
-			<fixes>
-				<fix>
-					<relation id="2531226">
-						<tag action="create" k="ref" v="Fileo V"></tag>
-					</relation>
-				</fix>
-			</fixes>
-		</error>
 		<error class="1">
 			<location lat="48.754498" lon="2.300788"></location>
 			<relation id="6928902"></relation>

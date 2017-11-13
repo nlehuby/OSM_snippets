@@ -170,7 +170,6 @@
 2227713,601,Bus 601 : Gare du Raincy—Villemomble—Montfermeil ↔ Montfermeil,TRA,Veolia Transport,#DDB031,route_master,bus,293193601:601
 2261502,403,Bus 403 : Bondoufle ↔ Soisy-sur-Seine,Tice,Tice,#F39900,route_master,bus,400400403:403
 2261638,401,Bus 401 : Corbeil-Essonnes ↔ Saint-Michel-sur-Orge,Tice,Tice,#BFB4D6,route_master,bus,400400401:401
-2294232,,Ancienne Route Nationale 6,,,,route_master,road,
 2333448,A,Train RER A,RER,RATP;SNCF,#D1302F,route_master,train,810:A
 2337724,7,Bus 7 : Orsay-Ville RER - L'Yvette ↔ Corbeville - Plateau du Moulon,Mobicaps,Les Cars d'Orsay,#FBD813,route_master,bus,006006007:7
 2343189,34,Bus 34 : Lycée de Carrières-sur-Seine ↔ Marché des Coteaux (Argenteuil),R'bus,Transdev TVO,#C9A2CD,route_master,bus,016016034:34
@@ -426,7 +425,7 @@
 6910437,T6,Tramway T6 : Châtillon–Montrouge ↔ Viroflay Rive Droite,RATP,RATP,#E85426,route_master,tram,100112016:T6
 6910465,T7,T7 : Villejuif - Louis Aragon ↔ Porte de l'Essonne (Athis-Mons),RATP,RATP,#B98B59,route_master,tram,100112017:T7
 6915922,283 (Orlybus),Orlybus : Paris - Denfert–Rochereau ↔ Aéroport d'Orly - Orly Sud,RATP,RATP,#F2FE98,route_master,bus,100100283:ORLYBUS
-6928902,OrlyVAL,OrlyVAL : Antony ↔ Orly Sud,,RATP,#FFCF00,route_master,light_rail,100110200:ORLYVAL
+6928902,OrlyVAL,OrlyVAL : Antony ↔ Orly Sud,local,RATP,#FFCF00,route_master,light_rail,100110200:ORLYVAL
 6928933,CDGVAL,CDGVAL : Terminal 1 ↔ Terminal 2 - Gare,CDGVAL,Aéroports de Paris,,route_master,light_rail,043043100:CDGVAL
 6928970,Funiculaire,Funiculaire de Montmartre : Gare Basse ↔ Gare Haute,RATP,RATP,#622282,route_master,funicular,100110100:FUN
 6929043,3,Bus 3 : Gare de Choisy-Le-Roi ↔ Gare de Villeneuve-Saint-Georges,Athis Cars,Keolis Seine Val-De-Marne,#D59433,route_master,bus,002002003:3
@@ -438,7 +437,7 @@
 6940422,91.04,Bus 91.04 : Évry ↔ Arpajon,TransEssonne,Albatrans,,route_master,bus,291191004:91-04
 6949223,95-02,Bus 95-02 : Roissypole RER ↔ Montmorency,Busval d'Oise,Keolis CIF,#1AC7FF,route_master,bus,014195002:95-02
 6949602,E2,Bus E2 : Collège Pompidou ↔ Plaine Haute (Crosne),VyBus,Transdev STRAV,,route_master,bus,045045006:E2
-6949604,V,Bus V : Gare de Montgeron ↔ Clos de la Régale (Vigneux-sur-Seine),,Transdev STRAV,,route_master,bus,045045008:V
+6949604,V,Bus V : Gare de Montgeron ↔ Clos de la Régale (Vigneux-sur-Seine),STRAV,Transdev STRAV,,route_master,bus,045045008:V
 6949654,N135,Noctilien N135: Gare de Villeneuve-Saint-Georges ↔ Corbeil Essonnes,Noctilien,Transilien,,route_master,bus,800:N135
 6950503,N153,Noctilien N153: Gare Saint-Lazare ↔ Gare de Saint-Germain-en-Laye,Noctilien,Transilien,,route_master,bus,100987791:N153
 6950504,N151,Noctilien N151: Gare Saint-Lazare ↔ Gare de Mantes la Jolie,Noctilien,Transilien,,route_master,bus,800:N151
@@ -659,11 +658,11 @@
 7618347,3,Bus 3 : Gare routière de Fontainebleau Avon ↔ Crevat Jaurès (Fontainebleau),Aérial,Transdev Île-de-France Vulaines,orange,route_master,bus,
 7618348,7,Bus 7 : Gare routière de Fontainebleau Avon ↔ Samois-sur-Seine,Aérial,Losay Voyages,yellow,route_master,bus,
 7634948,248,Bus 248 : Fort d'Aubervilliers ↔ Drancy RER,RATP,RATP,,route_master,bus,100100248:248
-7668788,4,Bus 4 : Guyonnerie / Gare de Bures sur Yvette ↔ Centre Commercial Ulis 2,Mobicaps,Les Cars d'Orsay,,route_master,bus,
+7668788,4,Bus 4 : Guyonnerie / Gare de Bures sur Yvette ↔ Centre Commercial Ulis 2,Mobicaps,Les Cars d'Orsay,,route_master,bus,006006004:4
 7670510,20,Bus scolaire 20 : Guyonnerie et Campus ↔ Briand,Mobicaps,Les Cars d'Orsay,,route_master,bus,
 7670803,12,Bus 12 : Courcelle RER et Lycée de la Vallée ↔ Gif-sur-Yvette ↔ CC Ulis 2,Mobicaps,SAVAC,,route_master,bus,
 7673346,13,Bus 13 : Gif-sur-Yvette ↔ Lycée de la Vallée et Collège Juliette Adam,Mobicaps,SAVAC,,route_master,bus,
-7673721,Unique,Chavilbus Unique,Chavilbus,,,route_master,bus,078192004:ChavilU
+7673721,Unique,Chavilbus Unique,Chavilbus,Keolis Yvelines,,route_master,bus,078192004:ChavilU
 7677900,01-605,,local,Scol'R,,route_master,bus,
 7677901,01-604,,local,Scol'R,,route_master,bus,
 7677902,01-603,,local,Scol'R,,route_master,bus,
@@ -677,7 +676,9 @@
 7699451,13,Bus 13 : Gare de Chelles Gournay ↔ Gare de Villeparisis Mitry-le-Neuf,Apolo 7,STBC,,route_master,bus,014361013:13
 7699452,La Navette,La Navette : transport à la demande dans le bassin chellois,local,STBC,,route_master,bus,
 7704305,11,Bus 11 : Gif ↔ Gif via Chevry,Mobicaps,SAVAC,,route_master,bus,
-7707602,,Bus 16 Saclay - Igny,,,,route_master,bus,006006016:16
+7707602,16,Bus 16 : Saclay ↔ Igny,Mobicaps,Les Cars d'Orsay,,route_master,bus,006006016:16
 7721711,02,Ligne 02 : Meaux-Melun direct,Seine-et-Marne Express,ViaMo-Melun,orange,route_master,bus,
-7724674,23,Bus 23 Les Ulis ↔ Massy-Palaiseau,Mobicaps,Les Cars d'Orsay,,route_master,bus,
-7724675,21,Bus 21 Les Ulis ↔ Courtaboeuf,Mobicaps,Les Cars d'Orsay,,route_master,bus,
+7724674,23,Bus 23 Les Ulis ↔ Massy-Palaiseau,Mobicaps,Les Cars d'Orsay,,route_master,bus,006006025:23
+7724675,21,Bus 21 Les Ulis ↔ Courtaboeuf,Mobicaps,Les Cars d'Orsay,,route_master,bus,006006023:21
+7728377,E,Bus ligne E : Chelles Gare RER-SNCF ↔ Centre Commercial Claye-Souilly,Apolo 7,STBC,,route_master,bus,
+7728420,44,Bus 44 : Jacqueline Auriol (Bussy-Saint-Georges) ↔ La Haye (Bussy-Saint-Georges),Pep's,Transdev AMV,,route_master,bus,

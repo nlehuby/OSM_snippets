@@ -75,7 +75,7 @@
         }, {
             "name": "remove bicycle and ferry",
             "executor": "shell",
-            "command": "cat lignes_without_touristic.csv |xsv search -s route_master bicycle -v | xsv search -s route_master ferry -v  > lignes.csv",
+            "command": "cat lignes_without_touristic.csv |xsv search -s route_master road -v |xsv search -s route_master bicycle -v | xsv search -s route_master ferry -v  > lignes.csv",
             "arguments": [],
             "dependsOn": ["remove touristic lines"],
             "onResult": {

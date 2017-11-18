@@ -1,66 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<analysers timestamp="2017-11-12T11:26:44Z">
-	<analyser timestamp="2017-11-12T11:26:44Z">
+<analysers timestamp="2017-11-18T17:41:27Z">
+	<analyser timestamp="2017-11-18T17:41:27Z">
 		<class item="8042" tag="transport en commun" id="1" level="3">
 			<classtext lang="fr" title="tag manquant sur une relation route_master (ligne de transport en commun)"></classtext>
 		</class>
-		<error class="1">
-			<location lat="48.754498" lon="2.300788"></location>
-			<relation id="6928902"></relation>
-			<text lang="fr" value="la relation n'a pas de tag network."></text>
-		</error>
-		<error class="1">
-			<location lat="48.702392" lon="2.463754"></location>
-			<relation id="6949604"></relation>
-			<text lang="fr" value="la relation n'a pas de tag network."></text>
-		</error>
-		<error class="1">
-			<location lat="48.81345" lon="2.19359"></location>
-			<relation id="7673721"></relation>
-			<text lang="fr" value="la relation n'a pas de tag operator. Valeur probable : Keolis Yvelines"></text>
-			<fixes>
-				<fix>
-					<relation id="7673721">
-						<tag action="create" k="operator" v="Keolis Yvelines"></tag>
-					</relation>
-				</fix>
-			</fixes>
-		</error>
-		<error class="1">
-			<location lat="48.73095" lon="2.173939"></location>
-			<relation id="7707602"></relation>
-			<text lang="fr" value="la relation n'a pas de tag network. Valeur probable : Mobicaps"></text>
-			<fixes>
-				<fix>
-					<relation id="7707602">
-						<tag action="create" k="network" v="Mobicaps"></tag>
-					</relation>
-				</fix>
-			</fixes>
-		</error>
-		<error class="1">
-			<location lat="48.73095" lon="2.173939"></location>
-			<relation id="7707602"></relation>
-			<text lang="fr" value="la relation n'a pas de tag operator. Valeur probable : Les Cars d'Orsay"></text>
-			<fixes>
-				<fix>
-					<relation id="7707602">
-						<tag action="create" k="operator" v="Les Cars d'Orsay"></tag>
-					</relation>
-				</fix>
-			</fixes>
-		</error>
-		<error class="1">
-			<location lat="48.73095" lon="2.173939"></location>
-			<relation id="7707602"></relation>
-			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : 16"></text>
-			<fixes>
-				<fix>
-					<relation id="7707602">
-						<tag action="create" k="ref" v="16"></tag>
-					</relation>
-				</fix>
-			</fixes>
-		</error>
 	</analyser>
 </analysers>

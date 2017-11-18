@@ -123,12 +123,6 @@
       <Placemark>
         <name>Vérifier cet arrêt de bus</name>
         <styleUrl>#placemark-brown</styleUrl>
-        <Point><coordinates>2.3891647,48.8281405</coordinates></Point>
-        <description><![CDATA[FIXME : position à préciser<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8281405/2.3891647">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Vérifier cet arrêt de bus</name>
-        <styleUrl>#placemark-brown</styleUrl>
         <Point><coordinates>2.452086,48.7215464</coordinates></Point>
         <description><![CDATA[FIXME : position à vérifier... maintenant qu'il y a l'extension de l'hôpital<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.7215464/2.452086">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -167,12 +161,6 @@
         <styleUrl>#placemark-brown</styleUrl>
         <Point><coordinates>2.305645,48.8747342</coordinates></Point>
         <description><![CDATA[FIXME : position à vérifier<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8747342/2.305645">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Vérifier cet arrêt de bus</name>
-        <styleUrl>#placemark-brown</styleUrl>
-        <Point><coordinates>2.2683127,48.8499128</coordinates></Point>
-        <description><![CDATA[FIXME : position à vérifier<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8499128/2.2683127">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Vérifier cet arrêt de bus</name>

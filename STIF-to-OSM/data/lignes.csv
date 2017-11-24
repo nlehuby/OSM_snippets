@@ -21,7 +21,7 @@
 949583,137,Bus 137 : Porte de Clignancourt ↔ Villeneuve-la-Garenne ZI Nord,RATP,RATP,#F55323,route_master,bus,100100137:137
 949585,178,Bus 178 : Grande Arche ↔ Gennevilliers RER ↔ Vieux Chemin de Saint-Denis–Centre Commercial,RATP,RATP,#3445C6,route_master,bus,100100178:178
 952693,166,Bus 166 : Gennevilliers ZAC des Louvresses ↔ Porte de la Chapelle,RATP,RATP,#652B91,route_master,bus,100100166:166
-952830,85,Bus 85 : Saint-Ouen - Mairie de Saint-Ouen ↔ Luxembourg,RATP,RATP,#79b51d,route_master,bus,100100085:85
+952830,85,Bus 85 : Saint-Ouen - Mairie de Saint-Ouen ↔ Luxembourg,RATP,RATP,#7c562f,route_master,bus,100100085:85
 954976,139,Bus 139 : Saint-Ouen RER ↔ Porte de la Villette,RATP,RATP,#F55323,route_master,bus,100100139:139
 954977,65,Bus 65 : Gare de Lyon ↔ Porte de la Chapelle,RATP,RATP,#008C5A,route_master,bus,100100065:65
 968720,144,Bus 144 : Rueil Malmaison RER ↔ La Défense,RATP,RATP,,route_master,bus,100100144:144
@@ -682,3 +682,5 @@
 7741077,G'bus,Bus G'bus : Goussainville RER (Circulaire),Les Courriers de l'Île-de-France,Keolis CIF,#FFDD00,route_master,bus,014014099:Gbus
 7743343,34,Bus 34 : Chaville (Gare Chaville Rive Droite) - Vélizy Villacoublay (Vélizy 2),Phébus,Phébus,,route_master,bus,004004014:34
 7743345,36-12,36-12,SQYBus,SQYBus,,route_master,bus,230410432:36-12
+7752065,45,Bus 45 : Blanc-Mesnil ↔ Vert Galant,Les Courriers de l'Île-de-France,Keolis CIF,,route_master,bus,
+7753791,192,Bus 192 : Marché International de Rungis ↔ Robinson RER,RATP,RATP,#77C694,route_master,bus,

@@ -134,6 +134,7 @@ function display_navitia_info(navitia_line_info) {
     document.getElementById("navitia_line_route").innerHTML = navitia_line_info['routes'][0]['name'];
     document.getElementById("navitia_line_mode").innerHTML = navitia_line_info['commercial_mode']['name'];
     document.getElementById("navitia_line_network").innerHTML = navitia_line_info['network']['name'];
+    document.getElementById("navitia_line_color").style = "width:20px;height:20px;background:#" + navitia_line_info['color'] +";";
     //TODO : mettre des liens navitia playground
 }
 
@@ -192,6 +193,8 @@ function get_osm_line_info(relation_id) {
             document.getElementById("osm_line_mode").innerHTML = relation['tags']['route_master'] ? relation['tags']['route_master'] : "<i style='color:red;'>Pas de mode renseigné</i>";
             document.getElementById("osm_line_network").innerHTML = relation['tags']['network'] ? relation['tags']['network'] : "<i style='color:red;'>tag network non renseigné</i>";
             document.getElementById("osm_line_operator").innerHTML = relation['tags']['operator'] ? relation['tags']['operator'] : "<i style='color:red;'>tag operator non renseigné</i>";
+            document.getElementById("osm_line_color").style = "width:20px;height:20px;background:" + relation['tags']['colour'] +";";
+
             //TODO : mettre des liens OSM
             var is_there_a_match = document.getElementById("osm_ref_match");
             is_there_a_match.innerHTML = "Pas d'association"

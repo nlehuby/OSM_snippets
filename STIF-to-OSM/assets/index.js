@@ -43,7 +43,10 @@ $(document).ready(function() {
                         return "<a target='_blank' href='" + link_url + "'>" + row[0] + "</a>";
                     }
                 }, {
-                    title: "code"
+                    title: "code",
+                    data: function(row, type, set) {
+                        return row['1'] + "<div style='width:20px;height:20px;background:"+row[5]+";'></div>";
+                    }
                 }, {
                     title: "nom"
                 }, {
@@ -52,7 +55,7 @@ $(document).ready(function() {
                     title: "opérateur"
                 }, {
                     title: "colour",
-                    visible: false
+                    visible:false
                 }, {
                     title: "type",
                     visible: false

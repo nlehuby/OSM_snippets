@@ -1,5 +1,5 @@
 @id,ref,name,network,operator,colour,type,route_master,ref:FR:STIF:ExternalCode_Line
-36997,34,Bus 34 : Les Noues RER (Circulaire),Les Courriers de l'Île-de-France,Keolis CIF,#00B353,route_master,,014014034:34
+36997,34,Bus 34 : Les Noues RER (Circulaire),Les Courriers de l'Île-de-France,Keolis CIF,#00B353,route_master,bus,014014034:34
 107352,33,Bus 33 : Les Noues RER (Circulaire),Les Courriers de l'Île-de-France,Keolis CIF,#007AC2,route_master,bus,014014033:33
 107354,11,Bus 11 : Victor Basch (Goussainville) ↔ Saint-Denis Porte de Paris,Les Courriers de l'Île-de-France,Keolis CIF,#B456A1,route_master,bus,014014011:11
 107356,32,"Bus 32 : Goussainville, Victor Basch - Roissypole",Les Courriers de l'Île-de-France,Keolis CIF,#B2CE40,route_master,bus,014014032:32
@@ -219,11 +219,10 @@
 3253656,32A,Bus 32A : Aulnay-Sous-Bois Parinor - Goussainville La Charmeuse,Les Courriers de l'Île-de-France,Keolis CIF,#B2CE40,route_master,bus,014014032:32A
 3253657,11.5,Bus 11.5 : Le Moulin / Avenue Bocquet ↔ Collège Philippe Auguste,Les Courriers de l'Île-de-France,Keolis CIF,#007AC2,route_master,bus,014014011:115
 3253980,95-18,Bus 95-18 : Cergy-Pontoise Gare ↔ Roissypole RER,Mobilien,Transdev Île-de-France Conflans,#f3dd02,route_master,bus,212195018:9518
-3256022,37,Bus 37 : Villiers-le-Bel RER - Gonesse Hôpital via les Marroniers,TransVO,Transdev Trans Val d'Oise,green,route_master,bus,050050037:37
-3256023,23ZI,Bus 23ZI : Villiers-le-Bel RER - Gonesse Zone Industrielle,TransVO,STIF,blue,route_master,bus,
-3256314,22,Bus 22 : Villiers-le-Bel RER - Roissypole RER,TransVO,Transdev Trans Val d'Oise,yellow,route_master,bus,050050022:22
+3256022,37,Bus 37 : Villiers-le-Bel RER - Rond-Point de Bonneuil,TransVO,Transdev Trans Val d'Oise,green,route_master,bus,050050037:37
+3256314,22,Bus 22 : Villiers-le-Bel RER ↔ Roissypole,TransVO,Transdev Trans Val d'Oise,yellow,route_master,bus,050050022:22
 3256315,31,Bus 31 : Villiers-le-Bel RER - Aulnay-sous-Bois PSA,TransVO,Transdev Trans Val d'Oise,white,route_master,bus,
-3256316,23,Bus 23 : Villiers-le-Bel RER - Parc des Expositions RER,TransVO,Transdev Trans Val d'Oise,blue,route_master,bus,050050023:23
+3256316,23,Bus 23 : Gare de Villiers-le-Bel ↔ Gare d'Aulnay-sous-Bois,TransVO,Transdev Trans Val d'Oise,blue,route_master,bus,050050023:23
 3286442,408,Bus 408 : Evry - Mairie ↔ Evry - Bras-de-Fer,Tice,Tice,#00FF00,route_master,bus,400400408:408
 3307569,241,Bus 241 : Rueil-Malmaison RER ↔ Porte d'Auteuil,RATP,RATP,#8D653A,route_master,bus,100100241:241
 3315927,23,Bus 23 : Brie-comte-Robert Piscine ↔ Créteil Préfécture,Plateau de Brie,SETRA,,route_master,bus,040040023:23
@@ -682,5 +681,6 @@
 7741077,G'bus,Bus G'bus : Goussainville RER (Circulaire),Les Courriers de l'Île-de-France,Keolis CIF,#FFDD00,route_master,bus,014014099:Gbus
 7743343,34,Bus 34 : Chaville (Gare Chaville Rive Droite) - Vélizy Villacoublay (Vélizy 2),Phébus,Phébus,,route_master,bus,004004014:34
 7743345,36-12,36-12,SQYBus,SQYBus,,route_master,bus,230410432:36-12
-7752065,45,Bus 45 : Blanc-Mesnil ↔ Vert Galant,Les Courriers de l'Île-de-France,Keolis CIF,,route_master,bus,
-7753791,192,Bus 192 : Marché International de Rungis ↔ Robinson RER,RATP,RATP,#77C694,route_master,bus,
+7752065,45,Bus 45 : Blanc-Mesnil ↔ Vert Galant,Les Courriers de l'Île-de-France,Keolis CIF,,route_master,bus,014014045:45
+7753791,192,Bus 192 : Marché International de Rungis ↔ Robinson RER,RATP,RATP,#77C694,route_master,bus,100100192:192
+7757955,25,Bus 25 : Villiers-le-Bel RER ↔ Zone Industrielle,TransVO,STIF,#80a317,route_master,bus,

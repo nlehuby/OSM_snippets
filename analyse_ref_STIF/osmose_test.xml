@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<analysers timestamp="2017-11-24T20:50:51Z">
-	<analyser timestamp="2017-11-24T20:50:51Z">
+<analysers timestamp="2017-11-28T21:19:25Z">
+	<analyser timestamp="2017-11-28T21:19:25Z">
 		<class item="8042" tag="transport en commun" id="1" level="3">
 			<classtext lang="fr" title="tag manquant sur une relation route_master (ligne de transport en commun)"></classtext>
 		</class>
-		<error class="1">
-			<location lat="49.028274" lon="2.481103"></location>
-			<relation id="36997"></relation>
-			<text lang="fr" value="la relation n'a pas de tag route_master. Valeur probable : bus"></text>
-			<fixes>
-				<fix>
-					<relation id="36997">
-						<tag action="create" k="route_master" v="bus"></tag>
-					</relation>
-				</fix>
-			</fixes>
-		</error>
 	</analyser>
 </analysers>

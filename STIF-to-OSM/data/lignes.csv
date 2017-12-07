@@ -255,7 +255,7 @@
 3906360,212,Bus 212 : Noisy – Champs RER – Descartes ↔ Émerainville Pontault-Combault RER,RATP,RATP,#87D4DF,route_master,bus,100100212:212
 3906369,213,Bus 213 : Chelles – Gournay RER ↔ Noisy – Champs RER – Descartes ↔ Lognes – Le Village,RATP,RATP,#9B983B,route_master,bus,100100213:213
 3908505,312,Bus 312 : Noisy – Champs RER – Descartes [Circulaire],RATP,RATP,#F68F4B,route_master,bus,100100312:312
-3997212,153,Bus 153 : Porte de la Chapelle ↔ Saint-Denis-Cité Floréal,RATP,RATP,,route_master,bus,100100153:153
+3997212,153,Bus 153 : Porte de la Chapelle ↔ Saint-Denis-Cité Floréal,RATP,RATP,#00643C,route_master,bus,100100153:153
 4007734,T8,Tram 8,RATP,RATP,#B1A245,route_master,tram,100112018:T8
 4021770,50,Ligne 50 : Provins ↔ Chessy,Seine-et-Marne Express,Procars,#EE7F00,route_master,bus,228177050:50
 4030054,39.10,Ligne 39.10 : Navette Domaine de Saint-Paul,SAVAC,SAVAC,,route_master,bus,039039010:39-10
@@ -329,7 +329,7 @@
 6010903,DM5,Bus DM5 : Croix Blanche - Sainte-Geneviève-des-Bois ↔ Gare de Juvisy-sur-Orge,Daniel Meyer,Transports Daniel Meyer,#006DB7,route_master,bus,055055005:DM05
 6010927,169,Bus 169 : Pont de Sevres ↔ Hopital Georges Pompidou,RATP,RATP,#82DC73,route_master,bus,100100169:169
 6010966,167,Bus 167 : Pont de Levallois ↔ Colombes - Audra,RATP,RATP,#79bb92,route_master,bus,100100167:167
-6040778,v1,Bus v1 (542) : Mairie de L'Hay-les-Roses ↔ Leclerc Thomas,Valouette,RATP,,route_master,bus,100100542:V1
+6040778,v1,Bus v1 : Mairie de L'Hay-les-Roses ↔ Leclerc Thomas,Valouette,RATP,,route_master,bus,100100542:V1
 6048347,380,Bus 380 : Villejuif - Louis Aragon ↔ Arcueil - Vache Noire - Centre Commercial,RATP,RATP,,route_master,bus,100100380:380
 6049045,182,Bus 182 : Mairie d'Ivry ↔ Villeneuve–Triage RER,RATP,RATP,#BA4C9B,route_master,bus,100100182:182
 6099640,211,Bus 211 : Chelles 2 ↔ Torcy RER,RATP,RATP,#FFCC01,route_master,bus,100100211:211
@@ -338,7 +338,7 @@
 6116990,15,Ligne 15 : Poincaré SNCF - Mairie de Claye,Pep's,Transdev AMV,,route_master,bus,051051015:15
 6117019,21,Ligne 21 : Torcy RER - Gare de Lagny,Pep's,Transdev AMV,,route_master,bus,051051021:21
 6120285,22,Ligne 22 : Val d'Europe - Bussy RER,Pep's,Transdev AMV,,route_master,bus,051051022:22
-6130402,24,Ligne 24 : Base de Loisirs - Chessy,Pep's,Transdev AMV,,route_master,bus,051267024:24
+6130402,24,Ligne 24 : Île de Loisirs ↔ Gare de Marne la Vallée Chessy,Pep's,Transdev AMV,,route_master,bus,051267024:24
 6138428,25,Ligne 25 : Gare de Lagny - Torcy RER,Pep's,Transdev AMV,,route_master,bus,051051025:25
 6144402,26,Ligne 26 : Gare de Lagny - Gare de Bussy,Pep's,Transdev AMV,,route_master,bus,051051026:26
 6145087,29,Ligne 29 : Gare de Lagny - Torcy RER,Pep's,Transdev AMV,,route_master,bus,051051029:29
@@ -559,7 +559,7 @@
 7244792,208s,Bus 208s : Champigny–Saint-Maur RER → Champigny–Saint-Maur RER via Paul Venzac,RATP,RATP,#000080,route_master,bus,100100208:208S
 7245040,DM3A - DM3B,Bus DM3,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,055055003:DM03
 7248309,MI,Bus MI : circulaire de Lieusaint,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487127:MI
-7261212,389,Bus 389 : Pont de Sèvres ↔ Georges Pompidou (Clamart),RATP,RATP,#006CB8,route_master,bus,100100389:389
+7261212,389,Bus 389 : Hôtel de Ville Boulogne-Billancourt ↔ Clamart - Georges Pompidou,RATP,RATP,#006CB8,route_master,bus,100100389:389
 7263065,02,Bus 02 : Les Prés Hauts (Saint-Pierre-du-Perray) ↔ Petit Sénart (Tigery),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487002:02
 7271953,E,RER E,RER,SNCF,#BD76A1,route_master,train,800:E
 7280948,Citalien,Bus Citalien : Carré Citoyenneté (Lieusaint) ↔ Gare Routière Mail (Melun),MELIBUS,Transdev Île-de-France Vaux-le-Pénil,,route_master,bus,066487077:CITA
@@ -683,3 +683,10 @@
 7753791,192,Bus 192 : Marché International de Rungis ↔ Robinson RER,RATP,RATP,#77C694,route_master,bus,100100192:192
 7757955,25,Bus 25 : Villiers-le-Bel RER ↔ Zone Industrielle,TransVO,STIF,#80a317,route_master,bus,050050025:25
 7765508,Q,Bus Q : Gare de Montgeron ↔ Gare de Brunoy,VyBus,Transdev STRAV,,route_master,bus,
+7779421,330,Bus 330 : Fort d’Aubervilliers ↔ Raymond Queneau - Anatole France (Bobigny),RATP,RATP,,route_master,bus,
+7781376,254,Bus 254 : Gare d'Enghien-Les-Bains ↔ Gare de Saint-Denis RER,RATP,RATP,#CEC92A,route_master,bus,
+7781895,512,Bus 512 : Front Populaire-Gardinoux ↔ Mairie d'Aubervilliers,RATP,RATP,,route_master,bus,
+7782316,333,Bus 333 : Garges-Sarcelles RER ↔ Garges L'Argentière,RATP,RATP,#006EB8,route_master,bus,
+7783242,,Bus 340 : Clichy-Berges de Seine ↔ Asnières-Gennevilliers-Les Courtilles ↔ Gare d'Argenteuil,RATP,RATP,#F59EB3,route_master,bus,
+7783262,,Bus 349 : Parc des Expositions RER ↔ Route de l'Arpenteur-ADP,RATP,RATP,#77C695,route_master,bus,
+7784991,,Bus 426 : Gare de La Celle-Saint-Cloud ↔ Pont de Sèvres / Hôtel de Ville de Boulogne-Billancourt,Traverciel,RATP,#8D653A,route_master,bus,

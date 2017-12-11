@@ -250,7 +250,7 @@
 3662457,T3b,Tram T3b : Porte de Vincennes ↔ Porte de la Chapelle,RATP,RATP,#009641,route_master,tram,100112003:T3B
 3686355,104,Bus 104 : École Vétérinaire de Maisons-Alfort ↔ Bonneuil - Place des Libertés,RATP,RATP,#ED1B2A,route_master,bus,100100104:104
 3695203,159,Bus 159 : La Défense ↔ Cité du Vieux Pont (Nanterre),RATP,RATP,,route_master,bus,100100159:159
-3713597,N66,Noctilien N66 : Gare Montparnasse ↔ Vélizy–Robert Wagner,Noctilien,RATP,#DC143C,route_master,bus,
+3713597,N66,Noctilien N66 : Gare Montparnasse ↔ Vélizy–Robert Wagner,Noctilien,RATP,#DC143C,route_master,bus,100987796:N66
 3847273,,Ligne F : Bad Kissingen ↔ Site d'Essais,TransCape,Transport Val de Seine,#7E461A,route_master,bus,
 3906360,212,Bus 212 : Noisy – Champs RER – Descartes ↔ Émerainville Pontault-Combault RER,RATP,RATP,#87D4DF,route_master,bus,100100212:212
 3906369,213,Bus 213 : Chelles – Gournay RER ↔ Noisy – Champs RER – Descartes ↔ Lognes – Le Village,RATP,RATP,#9B983B,route_master,bus,100100213:213
@@ -649,7 +649,7 @@
 7618295,4,Bus 4 : Gare routière de Fontainebleau Avon ↔ Stade de la Faisanderie (Fontainebleau),Aérial,Transdev Île-de-France Vulaines,green,route_master,bus,062062064:4
 7618345,6,Bus 6 : Gare routière de Fontainebleau Avon → Vulaines-sur-Seine,Aérial,Transdev Île-de-France Vulaines,,route_master,bus,062062012:6
 7618346,5,Bus 5 : Gare routière de Fontainebleau Avon ↔ Croix de Fer (Héricy),Aérial,Transdev Île-de-France Vulaines,,route_master,bus,062062012:5
-7618347,3,Bus 3 : Gare routière de Fontainebleau Avon ↔ Crevat Jaurès (Fontainebleau),Aérial,Transdev Île-de-France Vulaines,orange,route_master,bus,
+7618347,3,Bus 3 : Gare routière de Fontainebleau Avon ↔ Crevat Jaurès (Fontainebleau),Aérial,Transdev Île-de-France Vulaines,orange,route_master,bus,062062066:3
 7618348,7,Bus 7 : Gare routière de Fontainebleau Avon ↔ Samois-sur-Seine,Aérial,Losay Voyages,yellow,route_master,bus,
 7634948,248,Bus 248 : Fort d'Aubervilliers ↔ Drancy RER,RATP,RATP,,route_master,bus,100100248:248
 7668788,4,Bus 4 : Guyonnerie / Gare de Bures sur Yvette ↔ Centre Commercial Ulis 2,Mobicaps,Les Cars d'Orsay,,route_master,bus,006006004:4
@@ -683,13 +683,30 @@
 7753791,192,Bus 192 : Marché International de Rungis ↔ Robinson RER,RATP,RATP,#77C694,route_master,bus,100100192:192
 7757955,25,Bus 25 : Villiers-le-Bel RER ↔ Zone Industrielle,TransVO,STIF,#80a317,route_master,bus,050050025:25
 7765508,Q,Bus Q : Gare de Montgeron ↔ Gare de Brunoy,VyBus,Transdev STRAV,,route_master,bus,
-7779421,330,Bus 330 : Fort d’Aubervilliers ↔ Raymond Queneau - Anatole France (Bobigny),RATP,RATP,,route_master,bus,
-7781376,254,Bus 254 : Gare d'Enghien-Les-Bains ↔ Gare de Saint-Denis RER,RATP,RATP,#CEC92A,route_master,bus,
-7781895,512,Bus 512 : Front Populaire-Gardinoux ↔ Mairie d'Aubervilliers,RATP,RATP,,route_master,bus,
+7779421,330,Bus 330 : Fort d’Aubervilliers ↔ Raymond Queneau - Anatole France (Bobigny),RATP,RATP,,route_master,bus,100100330:330
+7781376,254,Bus 254 : Gare d'Enghien-Les-Bains ↔ Gare de Saint-Denis RER,RATP,RATP,#CEC92A,route_master,bus,100100254:254
+7781895,512,Bus 512 : Front Populaire-Gardinoux ↔ Mairie d'Aubervilliers,RATP,RATP,,route_master,bus,100100512:512
 7782316,333,Bus 333 : Garges-Sarcelles RER ↔ Garges L'Argentière,RATP,RATP,#006EB8,route_master,bus,
-7783242,340,Bus 340 : Clichy-Berges de Seine ↔ Asnières-Gennevilliers-Les Courtilles ↔ Gare d'Argenteuil,RATP,RATP,#F59EB3,route_master,bus,
-7783262,349,Bus 349 : Parc des Expositions RER ↔ Route de l'Arpenteur-ADP,RATP,RATP,#77C695,route_master,bus,
-7784991,426,Bus 426 : Gare de La Celle-Saint-Cloud ↔ Pont de Sèvres / Hôtel de Ville de Boulogne-Billancourt,Traverciel,RATP,#8D653A,route_master,bus,
+7783242,340,Bus 340 : Clichy-Berges de Seine ↔ Asnières-Gennevilliers-Les Courtilles ↔ Gare d'Argenteuil,RATP,RATP,#F59EB3,route_master,bus,100100340:340
+7783262,349,Bus 349 : Parc des Expositions RER ↔ Route de l'Arpenteur-ADP,RATP,RATP,#77C695,route_master,bus,100100349:349
+7784991,426,Bus 426 : Gare de La Celle-Saint-Cloud ↔ Pont de Sèvres / Hôtel de Ville de Boulogne-Billancourt,Traverciel,RATP,#8D653A,route_master,bus,100100426:426
 7790644,62,Bus 62 : La Ferté sous Jouarre ↔ Chessy,Seine-et-Marne Express,Transdev Darche Gros,#66B5DD,route_master,bus,
-7791161,260,Bus 260 : Suzanne Lenglen (Paris) ↔ Gambetta (Boulogne-Billancourt),RATP,RATP,,route_master,bus,
-7791162,460,Bus 460 : Gare de Vaucresson ↔ Gambetta (Boulogne-Billancourt),Traverciel,Transdev Ile-de-France Nanterre,,route_master,bus,
+7791161,260,Bus 260 : Suzanne Lenglen (Paris) ↔ Gambetta (Boulogne-Billancourt),RATP,RATP,,route_master,bus,100100260:260
+7791162,460,Bus 460 : Gare de Vaucresson ↔ Gambetta (Boulogne-Billancourt),Traverciel,Transdev Ile-de-France Nanterre,,route_master,bus,213113460:460
+7792140,385,Bus 385 : Épinay-sur-Orge RER ↔ Marché de Juvisy,RATP,RATP,#DFB03A,route_master,bus,
+7794113,285,Bus 285 : Athis-Mons–Porte de l'Essonne ↔ Marché de Juvisy,RATP,RATP,,route_master,bus,
+7795190,268,Bus 268 : Gare de Villiers-Le-Bel RER ↔ Saint-Denis–Université,RATP,RATP,#DC9600,route_master,bus,
+7796849,469,Bus 469 : Gare de Chaville Rive Droite ↔ Porte des Hauts-de-Seine,STIF,Transdev,,route_master,bus,
+7797072,208,Bus 208 : Gare de Montereau ↔ Cour des Adieux (Fontainebleau),Comète,Transdev Interval,,route_master,bus,
+7797125,202,Bus 202 : Stade (Fontainebleau) ↔ Mairie de Villemaréchal,Comète,Transdev Interval,,route_master,bus,
+7797135,211,Bus 211 : La Roche du Sault (Villecerf) ↔ Collège Sisley,Comète,Transdev Interval,,route_master,bus,
+7797146,207,Bus 207 : École Villemer ↔ Gare de Moret Veneux-les-Sablons,Comète,Transdev Interval,,route_master,bus,
+7797165,206,Bus 206 : Collège Sisley ↔ Collège Fernand Gregh (Champagne-sur-Seine),Comète,Transdev Interval,,route_master,bus,
+7797176,203,Bus 203 : Gare de Champagne-sur-Seine ↔ Gare de Moret Veneux-les-Sablons,Comète,Transdev Interval,,route_master,bus,
+7797177,201,Bus 201 : Église de Ville-Saint-Jacques ↔ Gare de Moret Veneux-les-Sablons,Comète,Transdev Interval,,route_master,bus,
+7797293,204,Bus 204 : Collège Sisley ↔ Rue des Trop Chères (Saint-Mammès),Comète,Transdev Interval,,route_master,bus,
+7797300,205,Bus 205 : Gare de Moret Veneux-les-Sablons ↔ Route de Bougogne (Veneux-les-Sablons),Comète,Transdev Interval,,route_master,bus,
+7797398,209,Bus 209 : Gare d’Avon ↔ Marangis (Vernou),Comète,Transdev Interval,,route_master,bus,
+7797401,210,Bus 210 : Stade (Fontainebleau) ↔ Marangis (Vernou),Comète,Transdev Interval,,route_master,bus,
+7797582,65,Bus 65 : Gare de Meaux ↔ Gare de La Ferté-Milon,Pays de l’Ourcq,Transdev Marne et Morin,#94B3D6,route_master,bus,
+7797759,299,Bus 299 : Porte d'Orléans ↔ Morangis–Place Lucien Boilleau,RATP,RATP,,route_master,bus,

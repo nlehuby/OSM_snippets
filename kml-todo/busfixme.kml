@@ -369,12 +369,6 @@
       <Placemark>
         <name>Vérifier cet arrêt de bus</name>
         <styleUrl>#placemark-brown</styleUrl>
-        <Point><coordinates>2.2566846,48.8032925</coordinates></Point>
-        <description><![CDATA[FIXME : Verifier sur le terrain la position de l'arret<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8032925/2.2566846">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Vérifier cet arrêt de bus</name>
-        <styleUrl>#placemark-brown</styleUrl>
         <Point><coordinates>2.2670031,48.8196881</coordinates></Point>
         <description><![CDATA[FIXME : Verifier sur le terrain la position de l'arret<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8196881/2.2670031">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -389,18 +383,6 @@
         <styleUrl>#placemark-brown</styleUrl>
         <Point><coordinates>2.243075,48.7845705</coordinates></Point>
         <description><![CDATA[FIXME : Verifier sur le terrain la position de l'arret<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.7845705/2.243075">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Vérifier cet arrêt de bus</name>
-        <styleUrl>#placemark-brown</styleUrl>
-        <Point><coordinates>2.2514363,48.9231588</coordinates></Point>
-        <description><![CDATA[FIXME : Ligne: 366, 566, Colomb' Parc<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9231588/2.2514363">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Vérifier cet arrêt de bus</name>
-        <styleUrl>#placemark-brown</styleUrl>
-        <Point><coordinates>2.2506059,48.9231259</coordinates></Point>
-        <description><![CDATA[FIXME : 164, 304<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9231259/2.2506059">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Vérifier cet arrêt de bus</name>

@@ -695,12 +695,12 @@
 7791162,460,Bus 460 : Gare de Vaucresson ↔ Gambetta (Boulogne-Billancourt),Traverciel,Transdev Ile-de-France Nanterre,,route_master,bus,213113460:460
 7792140,385,Bus 385 : Épinay-sur-Orge RER ↔ Marché de Juvisy,RATP,RATP,#DFB03A,route_master,bus,100100385:385
 7794113,285,Bus 285 : Athis-Mons–Porte de l'Essonne ↔ Marché de Juvisy,RATP,RATP,,route_master,bus,
-7795190,268,Bus 268 : Gare de Villiers-Le-Bel RER ↔ Saint-Denis–Université,RATP,RATP,#DC9600,route_master,bus,
+7795190,268,Bus 268 : Gare de Villiers-Le-Bel RER ↔ Saint-Denis–Université,RATP,RATP,#DC9600,route_master,bus,100100268:268
 7796849,469,Bus 469 : Gare de Chaville Rive Droite ↔ Porte des Hauts-de-Seine,STIF,Transdev,,route_master,bus,
 7797072,208,Bus 208 : Gare de Montereau ↔ Cour des Adieux (Fontainebleau),Comète,Transdev Interval,,route_master,bus,
 7797125,202,Bus 202 : Stade (Fontainebleau) ↔ Mairie de Villemaréchal,Comète,Transdev Interval,,route_master,bus,
 7797135,211,Bus 211 : La Roche du Sault (Villecerf) ↔ Collège Sisley,Comète,Transdev Interval,,route_master,bus,
-7797146,207,Bus 207 : École Villemer ↔ Gare de Moret Veneux-les-Sablons,Comète,Transdev Interval,,route_master,bus,
+7797146,207,Bus 207 : École Villemer ↔ Gare de Moret Veneux-les-Sablons,Comète,Transdev Interval,,route_master,bus,064258207:207
 7797165,206,Bus 206 : Collège Sisley ↔ Collège Fernand Gregh (Champagne-sur-Seine),Comète,Transdev Interval,,route_master,bus,
 7797176,203,Bus 203 : Gare de Champagne-sur-Seine ↔ Gare de Moret Veneux-les-Sablons,Comète,Transdev Interval,,route_master,bus,
 7797177,201,Bus 201 : Église de Ville-Saint-Jacques ↔ Gare de Moret Veneux-les-Sablons,Comète,Transdev Interval,,route_master,bus,
@@ -710,12 +710,12 @@
 7797401,210,Bus 210 : Stade (Fontainebleau) ↔ Marangis (Vernou),Comète,Transdev Interval,,route_master,bus,208258210:210
 7797582,65,Bus 65 : Gare de Meaux ↔ Gare de La Ferté-Milon,Pays de l’Ourcq,Transdev Marne et Morin,#94B3D6,route_master,bus,067067065:65
 7797759,299,Bus 299 : Porte d'Orléans ↔ Morangis–Place Lucien Boilleau,RATP,RATP,,route_master,bus,100100299:299
-7798582,262,Bus 262 : Pont de Bezons ↔ Gare de Maisons-Laffitte RER,RATP,RATP,,route_master,bus,
-7798590,,Bus 330 : Raymond Queneau – Anatole France ↔ Fort d'Aubervilliers,,,,route_master,bus,
+7798582,262,Bus 262 : Pont de Bezons ↔ Gare de Maisons-Laffitte RER,RATP,RATP,,route_master,bus,100100262:262
+7798590,,Bus 330 : Raymond Queneau – Anatole France ↔ Fort d'Aubervilliers,,,,route_master,bus,100100330:330
 7799660,566a,Bus Colomb'Parc : Église de Colombes ↔ Piscine - Patinoire,RATP,RATP,,route_master,bus,
-7800092,,Bus 355 : Lycée J.-J. Rousseau Circulaire,RATP,RATP,,route_master,bus,
-7800304,366,Bus 366 : Église de Colombes ↔ Asnières - Bords de Seine,RATP,RATP,,route_master,bus,
-7800445,372,Bus 372 : Maisons-Alfort-Alfortville RER ↔ Louis Fliche,RATP,RATP,#FFCD01,route_master,bus,
+7800092,,Bus 355 : Lycée J.-J. Rousseau Circulaire,RATP,RATP,,route_master,bus,100100355:355
+7800304,366,Bus 366 : Église de Colombes ↔ Asnières - Bords de Seine,RATP,RATP,,route_master,bus,100100366:366
+7800445,372,Bus 372 : Maisons-Alfort-Alfortville RER ↔ Louis Fliche,RATP,RATP,#FFCD01,route_master,bus,100100372:372
 7800857,395,Bus 395 : Le Plessis-Robinson–Pavé Blanc ↔ Antony RER,RATP,RATP,#006CB8,route_master,bus,
 7801058,485,Bus 485 : Noyer Renard ↔ Delalande-Pasteur,RATP,RATP,,route_master,bus,
 7802464,337,Bus 337 : Zone Artisanal du Moutier ↔ Gare de Pierrefitte-Stains RER,RATP,RATP,,route_master,bus,
@@ -725,3 +725,4 @@
 7804907,,Bus 574 : TUC,,,,route_master,bus,
 7804913,577,Bus 577 : Asnières-sur-Seine — Gabriel Péri ↔ Gennevilliers RER,RATP,RATP,#F19043,route_master,bus,
 7804946,595,Bus 595 : La Boursidière ↔ Robinson RER,RATP,RATP,#006CB8,route_master,bus,
+7813672,DM10A,DM10A Orsay ↔ Marcoussis,,Daniel Meyer,,route_master,bus,

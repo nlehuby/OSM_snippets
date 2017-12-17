@@ -1,8 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<analysers timestamp="2017-12-16T15:48:20Z">
-	<analyser timestamp="2017-12-16T15:48:20Z">
+<analysers timestamp="2017-12-17T20:52:31Z">
+	<analyser timestamp="2017-12-17T20:52:31Z">
 		<class item="8042" tag="transport en commun" id="1" level="3">
 			<classtext lang="fr" title="tag manquant sur une relation route_master (ligne de transport en commun)"></classtext>
 		</class>
+		<error class="1">
+			<location lat="48.905967" lon="2.394833"></location>
+			<relation id="7798590"></relation>
+			<text lang="fr" value="la relation n'a pas de tag network. Valeur probable : RATP"></text>
+			<fixes>
+				<fix>
+					<relation id="7798590">
+						<tag action="create" k="network" v="RATP"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.905967" lon="2.394833"></location>
+			<relation id="7798590"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator. Valeur probable : RATP"></text>
+			<fixes>
+				<fix>
+					<relation id="7798590">
+						<tag action="create" k="operator" v="RATP"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.905967" lon="2.394833"></location>
+			<relation id="7798590"></relation>
+			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : 330"></text>
+			<fixes>
+				<fix>
+					<relation id="7798590">
+						<tag action="create" k="ref" v="330"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="49.006636" lon="2.372161"></location>
+			<relation id="7800092"></relation>
+			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : 355"></text>
+			<fixes>
+				<fix>
+					<relation id="7800092">
+						<tag action="create" k="ref" v="355"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
 	</analyser>
 </analysers>

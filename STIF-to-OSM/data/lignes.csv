@@ -326,7 +326,7 @@
 5998406,DM22,Bus DM22 : Tuileries - Grigny ↔ Gare de Savigny-sur-Orge,Daniel Meyer,Transports Daniel Meyer,#FE360E,route_master,bus,055055022:DM22
 6001282,DM8,Bus DM8 : Libération - Morsang-sur-Orge ↔ Porte de L'Essonne - Paray-Vieille-Poste,Daniel Meyer,Transports Daniel Meyer,#F89C1C,route_master,bus,055055008:DM08
 6006672,356,Bus 356 : Marché des Mortefontaines (Deuil-la-Barre) ↔ Cité Floréal (Saint-Denis),RATP,RATP,#F55323,route_master,bus,100100356:356
-6010903,DM5,Bus DM5 : Croix Blanche - Sainte-Geneviève-des-Bois ↔ Gare de Juvisy-sur-Orge,Daniel Meyer,Transports Daniel Meyer,#006DB7,route_master,bus,055055005:DM05
+6010903,DM5,Bus DM5 : ZI Croix Blanche ↔ RER Gare Condorcet,Daniel Meyer,Transports Daniel Meyer,#006DB7,route_master,bus,055055005:DM05
 6010927,169,Bus 169 : Pont de Sevres ↔ Hopital Georges Pompidou,RATP,RATP,#82DC73,route_master,bus,100100169:169
 6010966,167,Bus 167 : Pont de Levallois ↔ Colombes - Audra,RATP,RATP,#79bb92,route_master,bus,100100167:167
 6040778,v1,Bus v1 : Mairie de L'Hay-les-Roses ↔ Leclerc Thomas,Valouette,RATP,,route_master,bus,100100542:V1
@@ -557,7 +557,7 @@
 7244705,LA,Bus LA : Circulaire Chanteloup,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487128:LA
 7244706,LA,Bus LA : Circulaire Claude Bernard,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487126:LA
 7244792,208s,Bus 208s : Champigny–Saint-Maur RER → Champigny–Saint-Maur RER via Paul Venzac,RATP,RATP,#000080,route_master,bus,100100208:208S
-7245040,DM3A - DM3B,Bus DM3,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,055055003:DM03
+7245040,DM3A,Bus DM3A : RER Gare Condorcet ↔ F. Mitterrand - Viry-Châtillon,Daniel Meyer,Transports Daniel Meyer,#d674ba,route_master,bus,055055003:DM03
 7248309,MI,Bus MI : circulaire de Lieusaint,Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487127:MI
 7261212,389,Bus 389 : Hôtel de Ville Boulogne-Billancourt ↔ Clamart - Georges Pompidou,RATP,RATP,#006CB8,route_master,bus,100100389:389
 7263065,02,Bus 02 : Les Prés Hauts (Saint-Pierre-du-Perray) ↔ Petit Sénart (Tigery),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487002:02
@@ -696,7 +696,7 @@
 7792140,385,Bus 385 : Épinay-sur-Orge RER ↔ Marché de Juvisy,RATP,RATP,#DFB03A,route_master,bus,100100385:385
 7794113,285,Bus 285 : Athis-Mons–Porte de l'Essonne ↔ Marché de Juvisy,RATP,RATP,,route_master,bus,
 7795190,268,Bus 268 : Gare de Villiers-Le-Bel RER ↔ Saint-Denis–Université,RATP,RATP,#DC9600,route_master,bus,100100268:268
-7796849,469,Bus 469 : Gare de Chaville Rive Droite ↔ Porte des Hauts-de-Seine,STIF,Transdev,,route_master,bus,
+7796849,469,Bus 469 : Gare de Chaville Rive Droite ↔ Porte des Hauts-de-Seine,STIF,Transdev,,route_master,bus,213113469:469
 7797072,208,Bus 208 : Gare de Montereau ↔ Cour des Adieux (Fontainebleau),Comète,Transdev Interval,,route_master,bus,
 7797125,202,Bus 202 : Stade (Fontainebleau) ↔ Mairie de Villemaréchal,Comète,Transdev Interval,,route_master,bus,
 7797135,211,Bus 211 : La Roche du Sault (Villecerf) ↔ Collège Sisley,Comète,Transdev Interval,,route_master,bus,064258211:211
@@ -727,3 +727,6 @@
 7804913,577,Bus 577 : Asnières-sur-Seine — Gabriel Péri ↔ Gennevilliers RER,RATP,RATP,#F19043,route_master,bus,
 7804946,595,Bus 595 : La Boursidière ↔ Robinson RER,RATP,RATP,#006CB8,route_master,bus,
 7813672,DM10A,DM10A Orsay ↔ Marcoussis,,Daniel Meyer,,route_master,bus,
+7823152,DM3B,Bus DM3B : RER Gare Condorcet ↔ Victor Schoelcher,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,
+7823186,95-19,Bus 95-19 : Argenteuil Gare ↔ Cergy Préfecture,,Cars Lacroix,,route_master,bus,
+7823264,95-21,Bus 95-21 : Herblay Gare ↔ Montigny-Beauchamp Gare,,Cars Lacroix,,route_master,bus,

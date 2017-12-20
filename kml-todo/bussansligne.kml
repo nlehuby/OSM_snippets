@@ -1251,12 +1251,6 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.1274781,49.0333547</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/49.0333547/2.1274781">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>3.0269845,49.0716062</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/49.0716062/3.0269845">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -1881,18 +1875,6 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.2436382,48.9782436</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9782436/2.2436382">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.2433832,48.9783724</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9783724/2.2433832">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.2456227,48.9807007</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9807007/2.2456227">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -2331,6 +2313,12 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
+        <Point><coordinates>2.3709741,48.7132236</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.7132236/2.3709741">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Ajouter les lignes qui passent à cet arrêt</name>
+        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.189049,48.986547</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.986547/2.189049">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -2639,48 +2627,6 @@
         <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.1323392,48.9086868</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9086868/2.1323392">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3155931,48.9530849</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9530849/2.3155931">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3125407,48.9550259</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9550259/2.3125407">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3124119,48.9549554</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9549554/2.3124119">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3155662,48.953173</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.953173/2.3155662">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3108991,48.9565828</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9565828/2.3108991">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.310824,48.9564983</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9564983/2.310824">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3201581,48.9517568</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9517568/2.3201581">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -5187,8 +5133,8 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.2307822,48.9500865</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9500865/2.2307822">AJOUTER DES LIGNES</a>]]></description>
+        <Point><coordinates>2.2308251,48.9501103</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9501103/2.2308251">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -5789,12 +5735,6 @@
         <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.5725867,48.8371224</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8371224/2.5725867">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.2116286,48.8143794</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8143794/2.2116286">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -9549,20 +9489,8 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.1867618,48.9983712</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9983712/2.1867618">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.1820492,48.9905496</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9905496/2.1820492">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.1866438,48.9981822</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9981822/2.1866438">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -12003,12 +11931,6 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.4656337,48.9435202</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9435202/2.4656337">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.0979179,48.8821922</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8821922/2.0979179">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -14429,12 +14351,6 @@
         <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.1594183,48.9992596</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9992596/2.1594183">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.1540002,48.9998508</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9998508/2.1540002">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -20079,12 +19995,6 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.4545068,48.9328761</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9328761/2.4545068">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.4511191,48.9361799</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9361799/2.4511191">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -21395,18 +21305,6 @@
         <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.6425787,48.3476228</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.3476228/2.6425787">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3817475,48.6882282</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6882282/2.3817475">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.381955,48.6883678</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6883678/2.381955">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -23817,12 +23715,6 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3062945,48.8578051</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8578051/2.3062945">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.323027,48.8665714</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8665714/2.323027">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -25947,6 +25839,12 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
+        <Point><coordinates>2.2058815,48.9659069</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9659069/2.2058815">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Ajouter les lignes qui passent à cet arrêt</name>
+        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>1.8090768,48.7008714</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.7008714/1.8090768">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -27549,6 +27447,24 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
+        <Point><coordinates>2.3492822,48.6569493</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6569493/2.3492822">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Ajouter les lignes qui passent à cet arrêt</name>
+        <styleUrl>#placemark-pink</styleUrl>
+        <Point><coordinates>2.3417445,48.6657593</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6657593/2.3417445">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Ajouter les lignes qui passent à cet arrêt</name>
+        <styleUrl>#placemark-pink</styleUrl>
+        <Point><coordinates>2.3394824,48.6659288</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6659288/2.3394824">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Ajouter les lignes qui passent à cet arrêt</name>
+        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>1.9574525,48.7737875</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.7737875/1.9574525">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -28833,12 +28749,6 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3195049,48.9519819</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9519819/2.3195049">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.2376282,48.8969126</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8969126/2.2376282">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -29259,6 +29169,12 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
+        <Point><coordinates>2.3218217,48.7966191</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.7966191/2.3218217">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Ajouter les lignes qui passent à cet arrêt</name>
+        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.2769483,48.8154389</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8154389/2.2769483">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -29267,12 +29183,6 @@
         <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.1300538,48.8047805</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8047805/2.1300538">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.2712734,48.9780051</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9780051/2.2712734">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -29411,12 +29321,6 @@
         <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.2717585,48.9799815</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9799815/2.2717585">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.2715026,48.9800864</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9800864/2.2715026">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -29567,12 +29471,6 @@
         <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>3.0684083,48.9275371</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9275371/3.0684083">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.4154741,48.8795023</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8795023/2.4154741">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -31221,14 +31119,14 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.018839,48.8530832</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8530832/2.018839">AJOUTER DES LIGNES</a>]]></description>
+        <Point><coordinates>2.018839,48.853055</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.853055/2.018839">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.0188471,48.8530461</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8530461/2.0188471">AJOUTER DES LIGNES</a>]]></description>
+        <Point><coordinates>2.0188471,48.8529896</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8529896/2.0188471">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -34077,12 +33975,6 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.1270064,49.0070725</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/49.0070725/2.1270064">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.2957361,48.6640712</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6640712/2.2957361">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -34463,12 +34355,6 @@
         <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.2328935,49.1105593</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/49.1105593/2.2328935">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3000172,48.9653735</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9653735/2.3000172">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -34991,18 +34877,6 @@
         <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>1.9905994,48.9910959</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9910959/1.9905994">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.1777763,49.0029093</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/49.0029093/2.1777763">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.177897,49.0031082</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/49.0031082/2.177897">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -37599,18 +37473,6 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3322212,48.9478342</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9478342/2.3322212">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3320797,48.9477669</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9477669/2.3320797">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>1.8251506,48.6449424</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6449424/1.8251506">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -37743,8 +37605,8 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>1.8617146,48.9634198</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9634198/1.8617146">AJOUTER DES LIGNES</a>]]></description>
+        <Point><coordinates>1.8617146,48.9634242</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9634242/1.8617146">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -38399,12 +38261,6 @@
         <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>1.9831462,48.9769215</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9769215/1.9831462">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3649939,48.659606</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.659606/2.3649939">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -40047,12 +39903,6 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3636687,48.6544823</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6544823/2.3636687">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>1.9189424,49.0128026</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/49.0128026/1.9189424">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -40991,12 +40841,6 @@
         <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>3.3536809,48.5370806</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.5370806/3.3536809">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.1445823,49.0218643</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/49.0218643/2.1445823">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -42255,18 +42099,6 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.1365044,49.0152607</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/49.0152607/2.1365044">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.1364098,49.015105</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/49.015105/2.1364098">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.0623748,48.7716656</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.7716656/2.0623748">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -42467,12 +42299,6 @@
         <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>3.1304524,48.9454332</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9454332/3.1304524">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3805478,48.6405603</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6405603/2.3805478">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -44877,20 +44703,8 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.1314223,49.0119114</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/49.0119114/2.1314223">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.2954069,48.947687</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.947687/2.2954069">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3088382,48.9698491</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9698491/2.3088382">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -45503,12 +45317,6 @@
         <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>1.9807,48.9764853</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9764853/1.9807">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.1302085,49.0110521</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/49.0110521/2.1302085">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -46839,12 +46647,6 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3721364,48.6614987</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6614987/2.3721364">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>3.1369772,48.9674302</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9674302/3.1369772">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -47033,18 +46835,6 @@
         <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.0637257,48.9508433</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9508433/2.0637257">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.2977904,48.9635307</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9635307/2.2977904">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.2971055,48.9631496</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9631496/2.2971055">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -49407,12 +49197,6 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3452171,48.6216098</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6216098/2.3452171">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>1.8658556,48.6483474</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6483474/1.8658556">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -50303,12 +50087,6 @@
         <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.2958541,48.986776</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.986776/2.2958541">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3003673,48.9655385</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9655385/2.3003673">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -54099,12 +53877,6 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3118631,48.9557575</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9557575/2.3118631">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.3674428,48.8691461</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8691461/2.3674428">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -54987,12 +54759,6 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.4115848,48.8785313</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8785313/2.4115848">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.2307909,48.590928</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.590928/2.2307909">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -55221,12 +54987,6 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.2304621,48.9506586</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9506586/2.2304621">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.3488693,48.6216363</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6216363/2.3488693">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -55269,18 +55029,6 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.3822776,48.688586</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.688586/2.3822776">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.382102,48.6884727</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6884727/2.382102">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.4429653,48.63318</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.63318/2.4429653">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -55301,12 +55049,6 @@
         <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>1.8410414,48.9383883</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9383883/1.8410414">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.381024,48.6878614</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6878614/2.381024">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -55809,8 +55551,8 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.1281518,49.0335211</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/49.0335211/2.1281518">AJOUTER DES LIGNES</a>]]></description>
+        <Point><coordinates>2.1280928,49.033471</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/49.033471/2.1280928">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -56037,36 +55779,6 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.1499535,48.9997041</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9997041/2.1499535">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.1500145,48.999801</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.999801/2.1500145">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.1481673,48.9997312</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9997312/2.1481673">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.1461781,49.0002098</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/49.0002098/2.1461781">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.1458509,49.0001853</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/49.0001853/2.1458509">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.1467674,48.9914973</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9914973/2.1467674">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -56081,12 +55793,6 @@
         <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.1609611,48.9911387</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9911387/2.1609611">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Ajouter les lignes qui passent à cet arrêt</name>
-        <styleUrl>#placemark-pink</styleUrl>
-        <Point><coordinates>2.1611155,48.9910467</coordinates></Point>
-        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9910467/2.1611155">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
@@ -58155,6 +57861,18 @@
       <Placemark>
         <name>Ajouter les lignes qui passent à cet arrêt</name>
         <styleUrl>#placemark-pink</styleUrl>
+        <Point><coordinates>2.3807824,48.651127</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.651127/2.3807824">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Ajouter les lignes qui passent à cet arrêt</name>
+        <styleUrl>#placemark-pink</styleUrl>
+        <Point><coordinates>2.3810975,48.6510658</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6510658/2.3810975">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Ajouter les lignes qui passent à cet arrêt</name>
+        <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.12409,48.671456</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.671456/2.12409">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
@@ -59069,6 +58787,60 @@
         <styleUrl>#placemark-pink</styleUrl>
         <Point><coordinates>2.4913918,48.9003802</coordinates></Point>
         <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9003802/2.4913918">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Ajouter les lignes qui passent à cet arrêt</name>
+        <styleUrl>#placemark-pink</styleUrl>
+        <Point><coordinates>2.3720169,48.7145474</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.7145474/2.3720169">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Ajouter les lignes qui passent à cet arrêt</name>
+        <styleUrl>#placemark-pink</styleUrl>
+        <Point><coordinates>2.3721825,48.7147</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.7147/2.3721825">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Ajouter les lignes qui passent à cet arrêt</name>
+        <styleUrl>#placemark-pink</styleUrl>
+        <Point><coordinates>2.355586,48.64938</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.64938/2.355586">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Ajouter les lignes qui passent à cet arrêt</name>
+        <styleUrl>#placemark-pink</styleUrl>
+        <Point><coordinates>2.3556328,48.6493174</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6493174/2.3556328">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Ajouter les lignes qui passent à cet arrêt</name>
+        <styleUrl>#placemark-pink</styleUrl>
+        <Point><coordinates>2.3155083,48.7797608</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.7797608/2.3155083">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Ajouter les lignes qui passent à cet arrêt</name>
+        <styleUrl>#placemark-pink</styleUrl>
+        <Point><coordinates>2.783643,48.8707383</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.8707383/2.783643">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Ajouter les lignes qui passent à cet arrêt</name>
+        <styleUrl>#placemark-pink</styleUrl>
+        <Point><coordinates>2.3409006,48.813853</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.813853/2.3409006">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Ajouter les lignes qui passent à cet arrêt</name>
+        <styleUrl>#placemark-pink</styleUrl>
+        <Point><coordinates>2.1613435,48.9909594</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9909594/2.1613435">AJOUTER DES LIGNES</a>]]></description>
+      </Placemark>
+      <Placemark>
+        <name>Ajouter les lignes qui passent à cet arrêt</name>
+        <styleUrl>#placemark-pink</styleUrl>
+        <Point><coordinates>2.1525391,48.9997783</coordinates></Point>
+        <description><![CDATA[<a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.9997783/2.1525391">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>
 </Document>
 </kml>

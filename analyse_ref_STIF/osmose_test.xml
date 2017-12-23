@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<analysers timestamp="2017-12-20T20:18:59Z">
-	<analyser timestamp="2017-12-20T20:18:59Z">
+<analysers timestamp="2017-12-23T17:39:16Z">
+	<analyser timestamp="2017-12-23T17:39:16Z">
 		<class item="8042" tag="transport en commun" id="1" level="3">
 			<classtext lang="fr" title="tag manquant sur une relation route_master (ligne de transport en commun)"></classtext>
 		</class>
+		<error class="1">
+			<location lat="49.004494" lon="2.190793"></location>
+			<relation id="7823264"></relation>
+			<text lang="fr" value="la relation n'a pas de tag network."></text>
+		</error>
 	</analyser>
 </analysers>

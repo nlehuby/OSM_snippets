@@ -215,7 +215,7 @@
 3079254,203,Bus 203: Neuilly-Plaisance RER ↔ Neuilly-sur-Marne – Île-de-France,RATP,RATP,,route_master,bus,100100203:203
 3081886,B,Bus ligne B: Gare SNCF/RER (CHELLES) ↔ College Corot (CHELLES),Apolo 7,STBC,#97BF0D,route_master,bus,101261021:B
 3134153,221,Bus 221 : Bagnolet - Gallieni ↔ Gagny - Pointe de Gournay,RATP,RATP,#f49eb2,route_master,bus,100100221:221
-3186411,15,Bus 15 : Gare de Massy-Palaiseau ↔ Vélizy-Villacoublay,Mobicaps,Les Cars d'Orsay,#313187,route_master,bus,006006015:15
+3186411,15,Bus 15 : Gare de Massy-Palaiseau ↔ Vélizy-Villacoublay,Mobicaps,Les Cars d'Orsay,#313188,route_master,bus,006006015:15
 3253655,95-02,Bus 95-02 : Roissypole RER ↔ Montmorency,Busval d'Oise,Keolis CIF,#004494,route_master,bus,014195002:95-02
 3253656,32A,Bus 32A : Aulnay-Sous-Bois Parinor - Goussainville La Charmeuse,Les Courriers de l'Île-de-France,Keolis CIF,#B2CE40,route_master,bus,014014032:32A
 3253657,11.5,Bus 11.5 : Le Moulin / Avenue Bocquet ↔ Collège Philippe Auguste,Les Courriers de l'Île-de-France,Keolis CIF,#007AC2,route_master,bus,014014011:115
@@ -451,7 +451,6 @@
 6955630,N44,Noctilien N44: Gare de l’Est ↔ Garges-Sarcelles RER,Noctilien,RATP,#77C695,route_master,bus,100987754:N44
 6955761,N45,Noctilien N45: Hôpital de Montfermeil ↔ Gare de l’Est,Noctilien,RATP,#FFCD02,route_master,bus,100987765:N45
 6955813,N35,Noctilien N35: Gare de Lyon ↔ Nogent–Le Perreux RER,Noctilien,RATP,#FFCD02,route_master,bus,100987773:N35
-6955909,N66,Noctilien N66 : Gare Montparnasse ↔ Vélizy–Robert Wagner,Noctilien,RATP,#DC143C,route_master,bus,100987796:N66
 6956211,N71,Noctilien N71: Marché de Rungis ↔ Saint-Maur–Créteil RER,Noctilien,RATP,#BB4A9B,route_master,bus,100987771:N71
 6956361,N63,Noctilien N63 : Gare Montparnasse ↔ Massy–Palaiseau RER,Noctilien,RATP,#CEC92A,route_master,bus,100987769:N63
 6956562,N122,Noctilien N122: Châtelet ↔ Saint-Rémy-lès-Chevreuse RER,Noctilien,Transilien,#4D90CD,route_master,bus,100987790:N122
@@ -725,8 +724,10 @@
 7803998,546,Bus TUB : La Mare à la Veuve (circulaire),RATP,RATP,,route_master,bus,
 7804907,574,Bus 574 : TUC,RATP,RATP,,route_master,bus,100100574:TUC
 7804913,577,Bus 577 : Asnières-sur-Seine — Gabriel Péri ↔ Gennevilliers RER,RATP,RATP,#F19043,route_master,bus,
-7804946,595,Bus 595 : La Boursidière ↔ Robinson RER,RATP,RATP,#006CB8,route_master,bus,
+7804946,595,Bus 595 : La Boursidière ↔ Robinson RER,RATP,RATP,#006CB8,route_master,bus,100100595:595
 7813672,DM10A,DM10A Orsay ↔ Marcoussis,,Daniel Meyer,,route_master,bus,
 7823152,DM3B,Bus DM3B : RER Gare Condorcet ↔ Victor Schoelcher,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,
 7823186,95-19,Bus 95-19 : Argenteuil Gare ↔ Cergy Préfecture,,Cars Lacroix,,route_master,bus,
 7823264,95-21,Bus 95-21 : Herblay Gare ↔ Montigny-Beauchamp Gare,,Cars Lacroix,,route_master,bus,030195021:95-21
+7835489,DM17B,Bus DM17B Nozay - Epanay,Transports Daniel Meyer,Daniel Meyer,,route_master,bus,
+7838629,,DM10S Les Ulis - Montlhéry,,Daniel Meyer,,route_master,bus,

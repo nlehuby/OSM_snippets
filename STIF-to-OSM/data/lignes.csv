@@ -261,6 +261,7 @@
 4021770,50,Ligne 50 : Provins ↔ Chessy,Seine-et-Marne Express,Procars,#EE7F00,route_master,bus,228177050:50
 4030054,39.10,Ligne 39.10 : Navette Domaine de Saint-Paul,SAVAC,SAVAC,,route_master,bus,039039010:39-10
 4226214,95-41,Bus 95-41 : Magny en Vexin ↔ Pontoise,Bus Val d'Oise,Tim Bus,#005568,route_master,bus,251195041:95-41
+4289192,194,Bus 194 : Lycée de Châtenay-Malabry ↔ Porte d'Orléans,RATP,RATP,#F78D4A,route_master,bus,
 4594987,317,Bus 317 : Hôtel de Ville de Créteil ↔ Nogent Le Perreux RER,RATP,RATP,#C8D134,route_master,bus,100100317:317
 4610190,103,Bus 103 : Rungis - Marché International ↔ École Vétérinaire de Maisons-Alfort,RATP,RATP,#F68F4D,route_master,bus,100100103:103
 4772628,133,Bus 133 : Le Bourget RER ↔ Sarcelles–Bois d’Écouen,RATP,RATP,#77C695,route_master,bus,100100133:133
@@ -434,7 +435,7 @@
 6940386,91-07,Bus 91-07 : Dourdan ↔ Étampes,TransEssonne,Albatrans,,route_master,bus,291191007:91-07
 6940387,91-02,Bus 91-02 : Gare de Dourdan ↔ Pacifique (Villebon),TransEssonne,Albatrans,,route_master,bus,291191002:91-02
 6940421,91.05,Bus 91.05 : Évry ↔ Massy,TransEssonne,Albatrans,,route_master,bus,291191005:91-05
-6940422,91.04,Bus 91.04 : Évry ↔ Arpajon,TransEssonne,Albatrans,,route_master,bus,291191004:91-04
+6940422,91.04,Bus 91.04 : Évry ↔ Briis-sous-Forges,TransEssonne,Albatrans,,route_master,bus,291191004:91-04
 6949602,E2,Bus E2 : Collège Pompidou ↔ Plaine Haute (Crosne),VyBus,Transdev STRAV,,route_master,bus,045045006:E2
 6949604,V,Bus V : Gare de Montgeron ↔ Clos de la Régale (Vigneux-sur-Seine),STRAV,Transdev STRAV,,route_master,bus,045045008:V
 6949654,N135,Noctilien N135: Gare de Villeneuve-Saint-Georges ↔ Corbeil Essonnes,Noctilien,Transilien,,route_master,bus,800:N135
@@ -729,5 +730,9 @@
 7823152,DM3B,Bus DM3B : RER Gare Condorcet ↔ Victor Schoelcher,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,
 7823186,95-19,Bus 95-19 : Argenteuil Gare ↔ Cergy Préfecture,,Cars Lacroix,,route_master,bus,
 7823264,95-21,Bus 95-21 : Herblay Gare ↔ Montigny-Beauchamp Gare,,Cars Lacroix,,route_master,bus,030195021:95-21
-7835489,DM17B,Bus DM17B Nozay - Epanay,Transports Daniel Meyer,Daniel Meyer,,route_master,bus,
+7835489,DM17B,Bus DM17B Nozay - Epinay,Transports Daniel Meyer,Daniel Meyer,,route_master,bus,
 7838629,,DM10S Les Ulis - Montlhéry,,Daniel Meyer,,route_master,bus,
+7840989,,DM11E Massy ↔ Sainte-Geniève,,,,route_master,bus,
+7841677,21,Bus 21 : Mairie de Solers ↔ Gare de Boissy-Saint-Léger,Transdev SETRA,Arlequin,,route_master,bus,
+7842828,,Paladin 18 Varrières,,Paladin,,route_master,bus,
+7843394,396,Bus 396 : Marché International de Rungis ↔ La Croix de Berny RER,RATP,RATP,#CCD80E,route_master,bus,

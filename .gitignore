@@ -19,3 +19,8 @@ STIF-to-OSM/data/.factotum
 analyse_ref_STIF/params/*
 analyse_ref_STIF/analyse/*
 *.gpx
+conflate_sirene/.ipynb_checkpoints
+conflate_sirene/geo_sirene*
+conflate_sirene/result.json
+conflate_sirene/osm_bakery.osm
+conflate_sirene/bakery.json

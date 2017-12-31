@@ -608,6 +608,7 @@
 7427861,275,Bus 275 : La Défense ↔ Pont de Levallois,RATP,RATP,#f2c931,route_master,bus,100100275:275
 7430094,44,Bus 44 : Cergy Préfecture ↔ Saint-Christophe RER,STIVO,STIVO,#F6AF8E,route_master,bus,059440044:44
 7433093,43,Bus 43 : Pontoise Gare ↔ Les Pâtis,STIVO,STIVO,#978F00,route_master,bus,059440043:43
+7434957,Navette Autonome,Bus Navette Autonome : Château de Vincennes ↔ Avenue du Tremblay,RATP,RATP,,route_master,bus,
 7435393,7,Bus 7 : Gare de Pontault-Combault ↔ Champigny,Situs,CEA Transports,,route_master,bus,010010003:7
 7435462,504,Bus 504 : Gare de Noisiel ↔ Gare de Roissy-En-Brie,Sit'bus,Transdev N4 Mobilités,,route_master,bus,003351504:504
 7435571,42,Bus 42 : Préfecture RER ↔ Les Beurriers,STIVO,STIVO,#F07E12,route_master,bus,059440042:42
@@ -727,12 +728,15 @@
 7804913,577,Bus 577 : Asnières-sur-Seine — Gabriel Péri ↔ Gennevilliers RER,RATP,RATP,#F19043,route_master,bus,
 7804946,595,Bus 595 : La Boursidière ↔ Robinson RER,RATP,RATP,#006CB8,route_master,bus,100100595:595
 7813672,DM10A,DM10A Orsay ↔ Marcoussis,,Daniel Meyer,,route_master,bus,
-7823152,DM3B,Bus DM3B : RER Gare Condorcet ↔ Victor Schoelcher,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,
+7823152,DM3B,Bus DM3B : RER Gare Condorcet ↔ Victor Schoelcher,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,055055003:DM03
 7823186,95-19,Bus 95-19 : Argenteuil Gare ↔ Cergy Préfecture,,Cars Lacroix,,route_master,bus,
 7823264,95-21,Bus 95-21 : Herblay Gare ↔ Montigny-Beauchamp Gare,,Cars Lacroix,,route_master,bus,030195021:95-21
 7835489,DM17B,Bus DM17B Nozay - Epinay,Transports Daniel Meyer,Daniel Meyer,,route_master,bus,
 7838629,,DM10S Les Ulis - Montlhéry,,Daniel Meyer,,route_master,bus,
 7840989,,DM11E Massy ↔ Sainte-Geniève,,,,route_master,bus,
-7841677,21,Bus 21 : Mairie de Solers ↔ Gare de Boissy-Saint-Léger,Transdev SETRA,Arlequin,,route_master,bus,
+7841677,21,Bus 21 : Mairie de Solers ↔ Gare de Boissy-Saint-Léger,Transdev SETRA,Arlequin,,route_master,bus,040040021:21
 7842828,,Paladin 18 Varrières,,Paladin,,route_master,bus,
-7843394,396,Bus 396 : Marché International de Rungis ↔ La Croix de Berny RER,RATP,RATP,#CCD80E,route_master,bus,
+7843394,396,Bus 396 : Marché International de Rungis ↔ La Croix de Berny RER,RATP,RATP,#CCD80E,route_master,bus,100100396:396
+7844609,30-22,Ligne 30-22 : Gare de Cernay ↔ Sannois Résidence du Moulin,Valbus,Lacroix,#95BDE0,route_master,bus,030030022:30-22
+7845781,Navette Autonome,Bus Navette Autonome de La Défense,STIF,Keolis,,route_master,bus,
+7853637,202,Bus 202 : Brétigny-sur-Orge Gare Place ↔ Vert-le-Grand,Val d'Essonne,Transdev Ile-de-France Brétigny,,route_master,bus,

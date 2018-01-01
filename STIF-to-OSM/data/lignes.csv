@@ -195,7 +195,7 @@
 2644951,35,Bus 35 : Gare de l'Est ↔ Aubervilliers — Mairie d'Aubervilliers,RATP,RATP,#77C696,route_master,bus,100100035:35
 2647711,165,Bus 165 : Porte de Champerret ↔ Asnières - 18 juin 1940,RATP,RATP,#F78D4A,route_master,bus,100100165:165
 2647712,164,Bus 164 : Argenteuil - Collège Claude Monet ↔ Porte de Champerret,RATP,RATP,#BB4A9D,route_master,bus,100100164:164
-2653031,3,Bus 3 : Sureaux ↔ Pont de Bezons,R'bus,Transdev TVO,#26a22c,route_master,bus,016016003:3
+2653031,3,Bus 3 : Gare de la Frette-Montigny ↔ Pont de Bezons,R'bus,Transdev TVO,#26a22c,route_master,bus,016016003:3
 2654565,179,Bus 179 : Robinson RER ↔ Pont de Sèvres,RATP,RATP,#00643C,route_master,bus,100100179:179
 2670163,S,Bus S : Vaucresson Gare ↔ Versailles Gare Rive Droite,Phébus,SVTU,#F24DA7,route_master,bus,056356015:S
 2675337,220,Bus 220 : Bry-sur-Marne RER ↔ Torcy RER,RATP,RATP,#BB489D,route_master,bus,100100220:220
@@ -739,4 +739,4 @@
 7843394,396,Bus 396 : Marché International de Rungis ↔ La Croix de Berny RER,RATP,RATP,#CCD80E,route_master,bus,100100396:396
 7844609,30-22,Ligne 30-22 : Gare de Cernay ↔ Sannois Résidence du Moulin,Valbus,Lacroix,#95BDE0,route_master,bus,030030022:30-22
 7845781,Navette Autonome,Bus Navette Autonome de La Défense,STIF,Keolis,,route_master,bus,
-7853637,202,Bus 202 : Brétigny-sur-Orge Gare Place ↔ Vert-le-Grand,Val d'Essonne,Transdev Ile-de-France Brétigny,,route_master,bus,
+7853637,202,Bus 202 : Brétigny-sur-Orge Gare Place ↔ Vert-le-Grand,Val d'Essonne,Transdev Ile-de-France Brétigny,,route_master,bus,018018013:202

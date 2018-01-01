@@ -1,9 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<analysers timestamp="2017-12-31T13:14:11Z">
-	<analyser timestamp="2017-12-31T13:14:11Z">
+<analysers timestamp="2018-01-01T22:06:49Z">
+	<analyser timestamp="2018-01-01T22:06:49Z">
 		<class item="8042" tag="transport en commun" id="1" level="3">
 			<classtext lang="fr" title="tag manquant sur une relation route_master (ligne de transport en commun)"></classtext>
 		</class>
+		<error class="1">
+			<location lat="49.160833" lon="1.802949"></location>
+			<relation id="4594987"></relation>
+			<text lang="fr" value="Il y a plusieurs lignes dans OSM qui ont ce même ref:FR:STIF:ExternalCode_Line (100100317:317)"></text>
+		</error>
+		<error class="1">
+			<location lat="48.727953" lon="2.273891"></location>
+			<relation id="6795568"></relation>
+			<text lang="fr" value="Il y a plusieurs lignes dans OSM qui ont ce même ref:FR:STIF:ExternalCode_Line (100112011:T1)"></text>
+		</error>
+		<error class="1">
+			<location lat="48.901913" lon="2.519644"></location>
+			<relation id="6955813"></relation>
+			<text lang="fr" value="Il y a plusieurs lignes dans OSM qui ont ce même ref:FR:STIF:ExternalCode_Line (100987773:N35)"></text>
+		</error>
+		<error class="1">
+			<location lat="48.70819" lon="2.371348"></location>
+			<relation id="6956807"></relation>
+			<text lang="fr" value="Il y a plusieurs lignes dans OSM qui ont ce même ref:FR:STIF:ExternalCode_Line (800:N133)"></text>
+		</error>
+		<error class="1">
+			<location lat="49.119006" lon="2.423628"></location>
+			<relation id="7101485"></relation>
+			<text lang="fr" value="Il y a plusieurs lignes dans OSM qui ont ce même ref:FR:STIF:ExternalCode_Line (400400407:407)"></text>
+		</error>
+		<error class="1">
+			<location lat="48.930922" lon="2.184877"></location>
+			<relation id="7798590"></relation>
+			<text lang="fr" value="Il y a plusieurs lignes dans OSM qui ont ce même ref:FR:STIF:ExternalCode_Line (100100330:330)"></text>
+		</error>
+		<error class="1">
+			<location lat="48.776803" lon="2.257064"></location>
+			<relation id="7823152"></relation>
+			<text lang="fr" value="Il y a plusieurs lignes dans OSM qui ont ce même ref:FR:STIF:ExternalCode_Line (055055003:DM03)"></text>
+		</error>
 		<error class="1">
 			<location lat="49.004494" lon="2.190793"></location>
 			<relation id="7823264"></relation>

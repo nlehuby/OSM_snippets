@@ -19,7 +19,7 @@
 937390,74,Bus 74 : Clichy-la-Garenne – Berges de Seine ↔ Hôtel de Ville,RATP,RATP,#CEC92A,route_master,bus,100100074:74
 949582,177,Bus 177 : Asnières-Gennevilliers - Gabriel Péri ↔ Villeneuve-La-Garenne - ZI,RATP,RATP,#85E271,route_master,bus,100100177:177
 949583,137,Bus 137 : Porte de Clignancourt ↔ Villeneuve-la-Garenne ZI Nord,RATP,RATP,#F55323,route_master,bus,100100137:137
-949584,261,Bus 261 : Gare de Franconville ↔ Bongarde,RATP,RATP,#FF1300,route_master,bus,
+949584,261,Bus 261 : Gare de Franconville ↔ Bongarde,RATP,RATP,#FF1300,route_master,bus,100100261:261
 949585,178,Bus 178 : Grande Arche ↔ Gennevilliers RER ↔ Vieux Chemin de Saint-Denis–Centre Commercial,RATP,RATP,#3445C6,route_master,bus,100100178:178
 952693,166,Bus 166 : Gennevilliers ZAC des Louvresses ↔ Porte de la Chapelle,RATP,RATP,#652B91,route_master,bus,100100166:166
 952830,85,Bus 85 : Saint-Ouen - Mairie de Saint-Ouen ↔ Luxembourg,RATP,RATP,#7c562f,route_master,bus,100100085:85
@@ -131,10 +131,9 @@
 1658281,N141,Bus N141: Gare de l'Est ↔ Gare de Meaux,Noctilien,Transilien,#FCB131,route_master,bus,800:N141
 1667801,N24,Noctilien N24: Grand Cerf (Bezons) ↔ Châtelet,Noctilien,RATP,#F78F4B,route_master,bus,100987751:N24
 1673421,D,Train RER D,RER,SNCF,#5E9620,route_master,train,800:D
-1687240,10.20,Bus 10.20 : Place du Général de Gaulle (Angerville) ↔ Denfert-Rochereau (Paris),Transdev CEAT,Transdev CEAT,,route_master,bus,010010020:10-20
+1687233,10.20,Bus 10.20 : Place du Général de Gaulle (Angerville) ↔ Denfert-Rochereau (Paris),Transdev CEAT,Transdev CEAT,,route_master,bus,
 1687241,10.21,Bus 10.21 : Gare de Méréville ↔ Denfert-Rochereau (Paris),Transdev CEAT,Transdev CEAT,,route_master,bus,010010021:10-21
 1687242,330,Bus 330 : Brigeollet (Angerville) ↔ Gare d'Étampes,Transdev CEAT,Transdev CEAT,,route_master,bus,010303001:330
-1687243,Bus RER C,Bus RER C,Transilien,Transilien,,route_master,bus,
 1687459,10.18,Bus 10.18,Transdev CEAT,Transdev CEAT,,route_master,bus,010010018:10-18
 1687460,10.16,Bus 10.16,Transdev CEAT,Transdev CEAT,,route_master,bus,
 1687462,10.19,Bus 10.19,Transdev CEAT,Transdev CEAT,,route_master,bus,010010019:10-19
@@ -260,7 +259,7 @@
 4021770,50,Ligne 50 : Provins ↔ Chessy,Seine-et-Marne Express,Procars,#EE7F00,route_master,bus,228177050:50
 4030054,39.10,Ligne 39.10 : Navette Domaine de Saint-Paul,SAVAC,SAVAC,,route_master,bus,039039010:39-10
 4226214,95-41,Bus 95-41 : Magny en Vexin ↔ Pontoise,Bus Val d'Oise,Tim Bus,#005568,route_master,bus,251195041:95-41
-4289192,194,Bus 194 : Lycée de Châtenay-Malabry ↔ Porte d'Orléans,RATP,RATP,#F78D4A,route_master,bus,
+4289192,194,Bus 194 : Lycée de Châtenay-Malabry ↔ Porte d'Orléans,RATP,RATP,#F78D4A,route_master,bus,100100194:194
 4594987,317,Bus 317 : Hôtel de Ville de Créteil ↔ Nogent Le Perreux RER,RATP,RATP,#C8D134,route_master,bus,100100317:317
 4610190,103,Bus 103 : Rungis - Marché International ↔ École Vétérinaire de Maisons-Alfort,RATP,RATP,#F68F4D,route_master,bus,100100103:103
 4772628,133,Bus 133 : Le Bourget RER ↔ Sarcelles–Bois d’Écouen,RATP,RATP,#77C695,route_master,bus,100100133:133
@@ -352,6 +351,7 @@
 6161018,43,bus 43 : Gare de Sevran Livry ↔ Aéroport CDG1 RER B,Les Courriers de l'Île-de-France,Keolis CIF,#980D7D,route_master,bus,014014043:43
 6163294,15,Bus 15 : Gare RER d'Aulnay-sous-Bois ↔ Jaurès (Tremblay-en-France),Les Courriers de l'Île-de-France,Keolis CIF,#0054A0,route_master,bus,014014015:15
 6163356,19,Bus 19 : Marché (Villeparisis) ↔ Clos Marchais (Le Pin),Les Courriers de l'Île-de-France,Keolis CIF,#009036,route_master,bus,014014019:19
+6290750,475,Bus 475 : Porte d'Orléans <> Elancourt,SQYBus,SQYBus,,route_master,bus,
 6355936,321,Bus 321 : Aérodrome de Lognes ↔ Croissy-Beaubourg,RATP,RATP,#FFCD02,route_master,bus,100100321:321
 6434505,N53,Noctilien N53 : Gare Saint-Lazare ↔ Nanterre-Université RER,Noctilien,RATP,#77C695,route_master,bus,100987770:N53
 6520401,10,Bus 10 : Victor Hugo (Brie-Comte-Robert) ↔ Gare de Noisiel,Arlequin,SETRA,,route_master,bus,040040010:10

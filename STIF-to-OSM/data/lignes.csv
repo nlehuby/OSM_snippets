@@ -211,7 +211,7 @@
 3047801,102,Bus 102: Gambetta ↔ Rosny–Bois-Perrier RER - Rosny 2,RATP,RATP,#FFCD01,route_master,bus,100100102:102
 3048889,520,Bus 520 : Bry-sur-Marne RER ↔ Les Hauts de Bry,RATP,RATP,#008c59,route_master,bus,100100520:520
 3079254,203,Bus 203: Neuilly-Plaisance RER ↔ Neuilly-sur-Marne – Île-de-France,RATP,RATP,,route_master,bus,100100203:203
-3081886,B,Bus ligne B: Gare SNCF/RER (CHELLES) ↔ College Corot (CHELLES),Apolo 7,STBC,#97BF0D,route_master,bus,101261021:B
+3081886,B,Bus ligne B: Gare SNCF/RER (CHELLES) ↔ College Corot (CHELLES),Apolo 7,STBC,#97BF0D,route_master,bus,
 3134153,221,Bus 221 : Bagnolet - Gallieni ↔ Gagny - Pointe de Gournay,RATP,RATP,#f49eb2,route_master,bus,100100221:221
 3186411,15,Bus 15 : Gare de Massy-Palaiseau ↔ Vélizy-Villacoublay,Mobicaps,Les Cars d'Orsay,#313188,route_master,bus,006006015:15
 3253655,95-02,Bus 95-02 : Roissypole RER ↔ Montmorency,Busval d'Oise,Keolis CIF,#004494,route_master,bus,014195002:95-02
@@ -472,7 +472,7 @@
 6958414,N154,Noctilien N154: Gare Saint-Lazare ↔ Montigny–Beauchamp RER,Noctilien,Transilien,,route_master,bus,800:N154
 6970689,95-08,Bus 95-08 : Chars↔ Marines ↔ Cergy (RER A / SNCF),Busval d'Oise,Ceobus,#8FBF00,route_master,bus,025195008:95-08
 6972206,644,Bus 644 : Corot (Coubron) ↔ Collège Henri IV (Vaujours),TRA,Transdev,#76c695,route_master,bus,293193644:644
-6972217,640,Bus 640 : Parc des Expositions ↔ Parc des Expositions,TRA,Transdev,,route_master,bus,293193640:640
+6972217,640,Bus 640 : Parc des Expositions (circulaire),TRA,Transdev,,route_master,bus,293193640:640
 6972224,637,Bus 637 : Gare d'Aulnay-sous-Bois ↔ Gare d'Aulnay-sous-Bois,TRA,Transdev,,route_master,bus,293193637:637
 6972324,613,Bus 613 : Gare d'Aulnay-sous-Bois ↔ Gare de Chelles-Gournay,TRA,Transdev,#097A47,route_master,bus,293193613:613
 6972327,100,Bus 100 : Rond-Point des Sciences ↔ Gare d'Aéroport Charles de Gaulle,TRA,Transdev,,route_master,bus,293193100:100
@@ -527,7 +527,7 @@
 7140481,6,Bus 6 : circulaire de Camberwell (Sceaux),Paladin,Bièvre Bus Mobilités,,route_master,bus,020149006:6
 7141723,95-34,Bus 95-34 : Sagy - Marines,Busval d'Oise,Tim Bus,#00E84F,route_master,bus,025195034:95-34
 7142127,14,Bus 14 : Circulaire de Robinson (via Division Leclerc),Paladin,Bièvre Bus Mobilités,,route_master,bus,020149014:14
-7142158,A,Bus ligne A : Gare de Chelles ↔ Rond-Point des Sciences (Chelles),Apolo 7,STBC,#ffb814,route_master,bus,101261020:A
+7142158,A,Bus ligne A : Gare de Chelles ↔ Rond-Point des Sciences (Chelles),Apolo 7,STBC,#ffb814,route_master,bus,
 7147174,9,Bus 9 : Levasseur (Thiais) ↔ Centre Commercial - Pont de Vitry,Athis Cars,Keolis Seine Val-De-Marne,#30A849,route_master,bus,002002009:9
 7147185,30-43,Ligne 30-43 : Ermont La Tour ↔ Gare de Cernay (Ermont),Valbus,Lacroix,#008000,route_master,bus,030030043:30-43
 7176897,A,Ligne A,Probus,Procars,#DC0077,route_master,bus,228771009:PROBUSA
@@ -567,12 +567,12 @@
 7292418,9,Bus 9 : Centre Commercial Ulis 2 ↔ Jouy-en-Josas RER,Mobicaps,Les Cars d'Orsay,#DC2185,route_master,bus,269269002:9
 7301947,FA Lycée,Bus FA Lycée : Savigny - Nandy Gare RER ↔ Lycée S. Delaunay (Vert-Saint-Denis),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487060:FA-LYCEE
 7304704,52,Bus 52 : Gare de Mantes la Jolie ↔ Pôle Lafarge (Limay),Com'Bus,STILE;CTVMI,,route_master,bus,057057052:52
-7318440,C,Bus ligne C : Gare de Chelles Gournay ↔ Paul Algis (Chelles),Apolo 7,STBC,,route_master,bus,101261026:C
+7318440,C,Bus ligne C : Gare de Chelles Gournay ↔ Paul Algis (Chelles),Apolo 7,STBC,,route_master,bus,
 7323910,42,Bus 42 : Cesson Gare RER ↔ Hautes Billes (Vert-Saint-Denis),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487042:42
 7323911,43,Bus 43 : Cesson Gare RER ↔ Hautes Billes (Vert-Saint-Denis),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,065487043:43
 7324303,SOL#,Bus SOL# : Médiathèque (Savigny-le-Temple) ↔ Collège Nazareth (Voisenon),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
 7324496,FA#,Bus FA# : Les Ormes (Savigny-le-Temple) ↔ Collège Nazareth (Voisenon),Sénart Bus,Transdev Île-de-France Lieusaint,,route_master,bus,
-7331862,D,Bus ligne D : Vaires-sur-Marne ↔ Villevaudé - Poitou,Apolo 7,STBC,#e1021d,route_master,bus,101261027:D
+7331862,D,Bus ligne D : Vaires-sur-Marne ↔ Villevaudé - Poitou,Apolo 7,STBC,#e1021d,route_master,bus,
 7346820,45,Bus 45 : Pontoise Gare ↔ Jules Verne,STIVO,STIVO,#C6BBDD,route_master,bus,059440045:45
 7353488,60,Bus 60 : Préfecture RER ↔ Clini. Ste Marie,STIVO,STIVO,#A50344,route_master,bus,059440060:60
 7353808,592,Amibus (592) : Mairie de Châtillon ↔ Châtillon - Montrouge,RATP,RATP,,route_master,bus,100100592:AMIBUS
@@ -624,7 +624,7 @@
 7451164,34 Nord,Bus 34 Nord : Pontoise Gare ↔ Cergy Le Ht RER,STIVO,STIVO,#FED300,route_master,bus,059440035:34Nord
 7457086,34 Sud,Bus 34 Sud : Cergy Le Ht RER ↔ Pontoise Gare,STIVO,STIVO,#FED300,route_master,bus,059440034:34Sud
 7460875,36,Bus 36 : Pontoise Gare ↔ Les Croizettes,STIVO,STIVO,#AD1380,route_master,bus,059440036:36
-7466920,F,Bus ligne F : Vaires Gare SNCF ↔ Chelles Gare SNCF/RER,Apolo 7,STBC,#895913,route_master,bus,101261028:F
+7466920,F,Bus ligne F : Vaires Gare SNCF ↔ Chelles Gare SNCF/RER,Apolo 7,STBC,#895913,route_master,bus,
 7466937,350,Bus 350 : Roissypole ↔ Gare de l'Est,RATP,RATP,#640082,route_master,bus,100100350:350
 7470484,320,Bus 320 : circulaire intérieure de Noisy-le-Grand - Mont d'Est RER,RATP,RATP,#FFCD02,route_master,bus,100100320:320
 7471869,DM13,Bus DM13 : Linas ↔ Brétigny-sur-Orge RER,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,055055013:DM13
@@ -671,7 +671,7 @@
 7721711,02,Ligne 02 : Meaux-Melun direct,Seine-et-Marne Express,ViaMo-Melun,orange,route_master,bus,250177002:002
 7724674,23,Bus 23 Les Ulis ↔ Massy-Palaiseau,Mobicaps,Les Cars d'Orsay,,route_master,bus,006006025:23
 7724675,21,Bus 21 Les Ulis ↔ Courtaboeuf,Mobicaps,Les Cars d'Orsay,,route_master,bus,006006023:21
-7728377,E,Bus ligne E : Chelles Gare RER-SNCF ↔ Centre Commercial Claye-Souilly,Apolo 7,STBC,,route_master,bus,101261024:E
+7728377,E,Bus ligne E : Chelles Gare RER-SNCF ↔ Centre Commercial Claye-Souilly,Apolo 7,STBC,,route_master,bus,
 7728420,44,Bus 44 : Jacqueline Auriol (Bussy-Saint-Georges) ↔ La Haye (Bussy-Saint-Georges),Pep's,Transdev AMV,,route_master,bus,051051044:44
 7733214,3,,RATP,RATP,#9A9940,route_master,subway,100110003:3
 7734523,13,Ligne 13 : Gare routière Seine ↔ Bergeries - St Hubert (Draveil),Seine Sénart Bus,Keolis Seine Sénart,,route_master,bus,021021111:13
@@ -697,14 +697,14 @@
 7794113,285,Bus 285 : Athis-Mons–Porte de l'Essonne ↔ Marché de Juvisy,RATP,RATP,,route_master,bus,100100285:285
 7795190,268,Bus 268 : Gare de Villiers-Le-Bel RER ↔ Saint-Denis–Université,RATP,RATP,#DC9600,route_master,bus,100100268:268
 7796849,469,Bus 469 : Gare de Chaville Rive Droite ↔ Porte des Hauts-de-Seine,STIF,Transdev,,route_master,bus,213113469:469
-7797072,208,Bus 208 : Gare de Montereau ↔ Cour des Adieux (Fontainebleau),Comète,Transdev Interval,,route_master,bus,
+7797072,208,Bus 208 : Gare de Montereau ↔ Cour des Adieux (Fontainebleau),Comète,Transdev Interval,,route_master,bus,208258008:208
 7797125,202,Bus 202 : Stade (Fontainebleau) ↔ Mairie de Villemaréchal,Comète,Transdev Interval,,route_master,bus,
 7797135,211,Bus 211 : La Roche du Sault (Villecerf) ↔ Collège Sisley,Comète,Transdev Interval,,route_master,bus,064258211:211
 7797146,207,Bus 207 : École Villemer ↔ Gare de Moret Veneux-les-Sablons,Comète,Transdev Interval,,route_master,bus,064258207:207
-7797165,206,Bus 206 : Collège Sisley ↔ Collège Fernand Gregh (Champagne-sur-Seine),Comète,Transdev Interval,,route_master,bus,
+7797165,206,Bus 206 : Collège Sisley ↔ Collège Fernand Gregh (Champagne-sur-Seine),Comète,Transdev Interval,,route_master,bus,208258206:206
 7797176,203,Bus 203 : Gare de Champagne-sur-Seine ↔ Gare de Moret Veneux-les-Sablons,Comète,Transdev Interval,,route_master,bus,208258308:203
 7797177,201,Bus 201 : Église de Ville-Saint-Jacques ↔ Gare de Moret Veneux-les-Sablons,Comète,Transdev Interval,,route_master,bus,064258201:201
-7797293,204,Bus 204 : Collège Sisley ↔ Rue des Trop Chères (Saint-Mammès),Comète,Transdev Interval,,route_master,bus,
+7797293,204,Bus 204 : Collège Sisley ↔ Rue des Trop Chères (Saint-Mammès),Comète,Transdev Interval,,route_master,bus,208258204:204
 7797300,205,Bus 205 : Gare de Moret Veneux-les-Sablons ↔ Route de Bougogne (Veneux-les-Sablons),Comète,Transdev Interval,,route_master,bus,208258205:205
 7797398,209,Bus 209 : Gare d’Avon ↔ Marangis (Vernou),Comète,Transdev Interval,,route_master,bus,062258009:209
 7797401,210,Bus 210 : Stade (Fontainebleau) ↔ Marangis (Vernou),Comète,Transdev Interval,,route_master,bus,208258210:210
@@ -734,7 +734,7 @@
 7838629,,DM10S Les Ulis - Montlhéry,,Daniel Meyer,,route_master,bus,
 7840989,,DM11E Massy ↔ Sainte-Geniève,,,,route_master,bus,
 7841677,21,Bus 21 : Mairie de Solers ↔ Gare de Boissy-Saint-Léger,Transdev SETRA,Arlequin,,route_master,bus,040040021:21
-7842828,,Paladin 18 Varrières,,Paladin,,route_master,bus,
+7842828,,Paladin 18 Varrières,,Paladin,,route_master,bus,020149008:18
 7843394,396,Bus 396 : Marché International de Rungis ↔ La Croix de Berny RER,RATP,RATP,#CCD80E,route_master,bus,100100396:396
 7844609,30-22,Ligne 30-22 : Gare de Cernay ↔ Sannois Résidence du Moulin,Valbus,Lacroix,#95BDE0,route_master,bus,030030022:30-22
 7845781,Navette Autonome,Bus Navette Autonome de La Défense,STIF,Keolis,,route_master,bus,

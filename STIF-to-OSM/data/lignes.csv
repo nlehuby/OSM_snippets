@@ -62,7 +62,7 @@
 1086590,70,Bus 70 : Radio France ↔ Hôtel de Ville,RATP,RATP,#F78F4B,route_master,bus,100100070:70
 1102964,106,Bus 106 : Joinville le Pont ↔ Villiers sur Marne,RATP,RATP,#ED1B2A,route_master,bus,100100106:106
 1104709,138,Bus 138: Saint-Gratien ↔ Porte de Clichy,RATP,RATP,#BB4A9B,route_master,bus,100100138:138
-1240537,201,Bus 201,Transdev Ile-de-France Brétigny,Transdev IDF,,route_master,bus,018018010:201
+1240537,201,Bus 201 - Marolles-en H. Gare RER <-> Ballancourt Gare RER,Transdev Ile-de-France Brétigny,Transdev IDF,,route_master,bus,018018010:201
 1245875,88,Bus 88 : Hôpital européen Georges-Pompidou ↔ Montsouris - Tombe Issoire,RATP,RATP,#CEC92A,route_master,bus,100100088:88
 1246520,95,Bus 95 : Porte de Montmartre ↔ Porte de Vanves,RATP,RATP,#8D653A,route_master,bus,100100095:95
 1251039,76,Bus 76 : Louvre-Rivoli ↔ Bagnolet — Louise Michel,RATP,RATP,#652C90,route_master,bus,100100076:76
@@ -500,9 +500,9 @@
 7011364,21,Bus 21 : Gare de Le Vésinet-Le Pecq ↔ Bèque SNCF (Marly-le-Roi),Entre Seine et Forêt,Transdev Île-de-France Montesson Les Rabaux,,route_master,bus,012012021:21
 7011365,10,Bus 10 : Gare de Saint-Germain ↔ Gare de Marly-le-Roi,Entre Seine et Forêt,Transdev Île-de-France Montesson Les Rabaux,,route_master,bus,012012010:10
 7011367,Direct 4,Bus Direct 4 : Montparnasse ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,#FF9B00,route_master,coach,098098004:DIRECT4
-7011368,Direct 3,Bus Direct 3 : Aéroport Orly ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,,route_master,coach,098098003:DIRECT3
+7011368,Direct 3,Bus Direct 3 : Aéroport Orly ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,,route_master,bus,098098003:DIRECT3
 7011369,Direct 2,Bus Direct 2 : Champ de Mars ↔ Aéroport Roissy CDG,Le Bus Direct,Keolis Aerolis,,route_master,coach,098098002:DIRECT2
-7011370,Direct 1,Bus Direct 1 : Charles de Gaulle Étoile ↔ Aéroport Orly,Le Bus Direct,Keolis Aerolis,,route_master,coach,098098001:DIRECT1
+7011370,Direct 1,Bus Direct 1 : Charles de Gaulle Étoile ↔ Aéroport Orly,Le Bus Direct,Keolis Aerolis,,route_master,bus,098098001:DIRECT1
 7073416,DM151,Bus DM151 : Paris - Porte d'Orléans ↔ Arpajon - Porte d'Étampes,Daniel Meyer,Transports Daniel Meyer,,route_master,bus,055155001:DM151
 7074022,Roissybus,Bus 352 : Paris–Opéra ↔ Aéroport Charles de Gaulle,RATP,RATP,,route_master,bus,100100352:ROISSYB
 7095879,486,Bus 486 : Marché de Juvisy ↔ Porte de l'Essonne (Athis-Mons),RATP,RATP,,route_master,bus,100100486:486
@@ -679,7 +679,7 @@
 7734583,J,Navette Ligne J : Rond-Point du Pileu ↔ Languedoc,La Navette Paris-Saclay,MobiCité,yellow,route_master,bus,111591207:J
 7741077,G'bus,Bus G'bus : Goussainville RER (Circulaire),Les Courriers de l'Île-de-France,Keolis CIF,#FFDD00,route_master,bus,014014099:Gbus
 7743343,34,Bus 34 : Chaville (Gare Chaville Rive Droite) - Vélizy Villacoublay (Vélizy 2),Phébus,Phébus,,route_master,bus,004004014:34
-7743345,36-12,36-12,SQYBus,SQYBus,,route_master,bus,230410432:36-12
+7743345,36-12,Bus 36-12 : Maurepas <> La Verrière,SQYBus,SQYBus,,route_master,bus,230410432:36-12
 7752065,45,Bus 45 : Blanc-Mesnil ↔ Vert Galant,Les Courriers de l'Île-de-France,Keolis CIF,,route_master,bus,014014045:45
 7753791,192,Bus 192 : Marché International de Rungis ↔ Robinson RER,RATP,RATP,#77C694,route_master,bus,100100192:192
 7757955,25,Bus 25 : Villiers-le-Bel RER ↔ Zone Industrielle,TransVO,STIF,#80a317,route_master,bus,050050025:25
@@ -739,3 +739,6 @@
 7844609,30-22,Ligne 30-22 : Gare de Cernay ↔ Sannois Résidence du Moulin,Valbus,Lacroix,#95BDE0,route_master,bus,030030022:30-22
 7845781,Navette Autonome,Bus Navette Autonome de La Défense,STIF,Keolis,,route_master,bus,
 7853637,202,Bus 202 : Brétigny-sur-Orge Gare Place ↔ Vert-le-Grand,Val d'Essonne,Transdev Ile-de-France Brétigny,,route_master,bus,018018013:202
+7887299,402,Bus 402 : La Verrière <-> Trappes,SQYBus,SQYBus,,route_master,bus,
+7889073,17,Bus 17 : Conflans Fin d'Oise RER (circulaire),Conflans Achères,Transdev,,route_master,bus,
+7890329,401,Bus 401 : Versailles Rive Gauche <> Maurepas Village,SQYBus,SQYBus,#E2001A,route_master,bus,

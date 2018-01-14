@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<analysers timestamp="2018-01-07T16:35:09Z">
-	<analyser timestamp="2018-01-07T16:35:09Z">
+<analysers timestamp="2018-01-14T17:01:48Z">
+	<analyser timestamp="2018-01-14T17:01:48Z">
 		<class item="8042" tag="transport en commun" id="1" level="3">
 			<classtext lang="fr" title="tag manquant sur une relation route_master (ligne de transport en commun)"></classtext>
 		</class>
@@ -35,7 +35,7 @@
 			<text lang="fr" value="Il y a plusieurs lignes dans OSM qui ont ce même ref:FR:STIF:ExternalCode_Line (100100330:330)"></text>
 		</error>
 		<error class="1">
-			<location lat="48.776803" lon="2.257064"></location>
+			<location lat="48.776893" lon="2.257934"></location>
 			<relation id="7823152"></relation>
 			<text lang="fr" value="Il y a plusieurs lignes dans OSM qui ont ce même ref:FR:STIF:ExternalCode_Line (055055003:DM03)"></text>
 		</error>
@@ -43,6 +43,30 @@
 			<location lat="49.004494" lon="2.190793"></location>
 			<relation id="7823264"></relation>
 			<text lang="fr" value="la relation n'a pas de tag network."></text>
+		</error>
+		<error class="1">
+			<location lat="48.746135" lon="2.270838"></location>
+			<relation id="7842828"></relation>
+			<text lang="fr" value="la relation n'a pas de tag network. Valeur probable : Paladin"></text>
+			<fixes>
+				<fix>
+					<relation id="7842828">
+						<tag action="create" k="network" v="Paladin"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.746135" lon="2.270838"></location>
+			<relation id="7842828"></relation>
+			<text lang="fr" value="la relation n'a pas de tag ref. Valeur probable : 18"></text>
+			<fixes>
+				<fix>
+					<relation id="7842828">
+						<tag action="create" k="ref" v="18"></tag>
+					</relation>
+				</fix>
+			</fixes>
 		</error>
 	</analyser>
 </analysers>

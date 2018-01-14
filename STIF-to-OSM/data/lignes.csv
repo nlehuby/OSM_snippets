@@ -13,6 +13,7 @@
 255442,61,Bus 61 : Gare d'Austerlitz ↔ Pantin — Église de Pantin,RATP,RATP,#008C5A,route_master,bus,100100061:61
 332709,147,Bus 147 : Église de Pantin ↔ Sevran – Avenue Ronsard,RATP,RATP,#F50024,route_master,bus,100100147:147
 387064,86,Bus 86 : Saint-Germain-des-Prés ↔ Saint-Mandé — Demi-Lune - Parc Zoologique,RATP,RATP,#ED1B2A,route_master,bus,100100086:86
+557587,285,Bus 285 : Athis-Mons–Porte de l'Essonne ↔ Marché de Juvisy,RATP,RATP,#bb4a9c,route_master,bus,100100285:285
 611648,157,Bus 157 : Nanterre - Boulevard de la Seine ↔ Pont de Neuilly,RATP,RATP,#B34A9B,route_master,bus,100100157:157
 901462,160,Bus 160 : Pont de Sèvres ↔ Nanterre–Préfecture RER,RATP,RATP,#008C5A,route_master,bus,100100160:160
 937383,174,Bus 174 : Saint-Ouen RER ↔ La Défense,RATP,RATP,#00643C,route_master,bus,100100174:174
@@ -694,7 +695,6 @@
 7791161,260,Bus 260 : Suzanne Lenglen (Paris) ↔ Gambetta (Boulogne-Billancourt),RATP,RATP,,route_master,bus,100100260:260
 7791162,460,Bus 460 : Gare de Vaucresson ↔ Gambetta (Boulogne-Billancourt),Traverciel,Transdev Ile-de-France Nanterre,,route_master,bus,213113460:460
 7792140,385,Bus 385 : Épinay-sur-Orge RER ↔ Marché de Juvisy,RATP,RATP,#DFB03A,route_master,bus,100100385:385
-7794113,285,Bus 285 : Athis-Mons–Porte de l'Essonne ↔ Marché de Juvisy,RATP,RATP,,route_master,bus,100100285:285
 7795190,268,Bus 268 : Gare de Villiers-Le-Bel RER ↔ Saint-Denis–Université,RATP,RATP,#DC9600,route_master,bus,100100268:268
 7796849,469,Bus 469 : Gare de Chaville Rive Droite ↔ Porte des Hauts-de-Seine,STIF,Transdev,,route_master,bus,213113469:469
 7797072,208,Bus 208 : Gare de Montereau ↔ Cour des Adieux (Fontainebleau),Comète,Transdev Interval,,route_master,bus,208258008:208
@@ -739,6 +739,6 @@
 7844609,30-22,Ligne 30-22 : Gare de Cernay ↔ Sannois Résidence du Moulin,Valbus,Lacroix,#95BDE0,route_master,bus,030030022:30-22
 7845781,Navette Autonome,Bus Navette Autonome de La Défense,STIF,Keolis,,route_master,bus,
 7853637,202,Bus 202 : Brétigny-sur-Orge Gare Place ↔ Vert-le-Grand,Val d'Essonne,Transdev Ile-de-France Brétigny,,route_master,bus,018018013:202
-7887299,402,Bus 402 : La Verrière <-> Trappes,SQYBus,SQYBus,,route_master,bus,
+7887299,402,Bus 402 : La Verrière <-> Trappes,SQYBus,SQYBus,,route_master,bus,230410402:402
 7889073,17,Bus 17 : Conflans Fin d'Oise RER (circulaire),Conflans Achères,Transdev,,route_master,bus,
-7890329,401,Bus 401 : Versailles Rive Gauche <> Maurepas Village,SQYBus,SQYBus,#E2001A,route_master,bus,
+7890329,401,Bus 401 : Versailles Rive Gauche ↔ Maurepas Village,SQYBus,SQYBus,#E2001A,route_master,bus,230410401:401

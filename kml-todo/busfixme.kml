@@ -351,12 +351,6 @@
       <Placemark>
         <name>Vérifier cet arrêt de bus</name>
         <styleUrl>#placemark-brown</styleUrl>
-        <Point><coordinates>2.243075,48.7845705</coordinates></Point>
-        <description><![CDATA[FIXME : Verifier sur le terrain la position de l'arret<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.7845705/2.243075">AJOUTER DES LIGNES</a>]]></description>
-      </Placemark>
-      <Placemark>
-        <name>Vérifier cet arrêt de bus</name>
-        <styleUrl>#placemark-brown</styleUrl>
         <Point><coordinates>2.4695634,48.6298932</coordinates></Point>
         <description><![CDATA[FIXME : not visible during survey 2017-08 (see mapillary)<br><a href="https://microcosm.5apps.com/poi.html?poi_type=bus_stop#18/48.6298932/2.4695634">AJOUTER DES LIGNES</a>]]></description>
       </Placemark>

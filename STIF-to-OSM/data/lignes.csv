@@ -742,3 +742,5 @@
 7887299,402,Bus 402 : La Verrière <-> Trappes,SQYBus,SQYBus,,route_master,bus,230410402:402
 7889073,17,Bus 17 : Conflans Fin d'Oise RER (circulaire),Conflans Achères,Transdev,,route_master,bus,
 7890329,401,Bus 401 : Versailles Rive Gauche ↔ Maurepas Village,SQYBus,SQYBus,#E2001A,route_master,bus,230410401:401
+7902022,592,Bus 592 : Amibus : Mairie de Châtillon ↔ Châtillon-Montrouge Métro,RATP,RATP,,route_master,bus,
+7902826,594,Bus 594 : Le petit fontenaisien : Division Leclerc (circulaire),RATP,RATP,,route_master,bus,

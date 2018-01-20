@@ -13,9 +13,9 @@
                 "continueJob": [0]
             }
         }, {
-            "name": "rename",
+            "name": "extract transit data",
             "executor": "shell",
-            "command": "mv ile-de-france-latest.osm.pbf fr-idf.osm.pbf",
+            "command": "osm_transit_extractor -i ile-de-france-latest.osm.pbf",
             "arguments": [],
             "dependsOn": ["download"],
             "onResult": {
@@ -23,31 +23,11 @@
                 "continueJob": [0]
             }
         }, {
-            "name": "extract route master",
+            "name": "select lines",
             "executor": "shell",
-            "command": "osmosis --read-pbf fr-idf.osm.pbf --tf accept-relations type=route_master --used-way --used-node --write-pbf lignes.osm.pbf 2>&1",
+            "command": "cat osm-transit-extractor_lines.csv |xsv select line_id,code,name,network,operator,colour,osm:type,mode,osm:ref:FR:STIF:ExternalCode_Line > lignes_.csv",
             "arguments": [],
-            "dependsOn": ["rename"],
-            "onResult": {
-                "terminateJobWithSuccess": [],
-                "continueJob": [0]
-            }
-        }, {
-            "name": "csv",
-            "executor": "shell",
-            "command": "osmconvert64 lignes.osm.pbf --csv='@id ref name network operator colour type route_master ref:FR:STIF:ExternalCode_Line' --csv-headline > lignes_tofilter.csv",
-            "arguments": [],
-            "dependsOn": ["extract route master"],
-            "onResult": {
-                "terminateJobWithSuccess": [],
-                "continueJob": [0]
-            }
-        }, {
-            "name": "filter csv",
-            "executor": "shell",
-            "command": "cat lignes_tofilter.csv |xsv search -s type route_master -d '\t' > lignes_.csv",
-            "arguments": [],
-            "dependsOn": ["csv"],
+            "dependsOn": ["extract transit data"],
             "onResult": {
                 "terminateJobWithSuccess": [],
                 "continueJob": [0]
@@ -57,7 +37,7 @@
             "executor": "shell",
             "command": "cat lignes_.csv |xsv search -s network TGV -v | xsv search -s network Eurostar -v |xsv search -s network Thalys -v |xsv search -s network Flixbus -v |xsv search -s network Intercités -v|xsv search -s operator 'SNCF Réseau' -v |xsv search -s network 'TER ' -v |xsv search -s operator 'DB Fernverkehr' -v > lignes_without_train.csv",
             "arguments": [],
-            "dependsOn": ["filter csv"],
+            "dependsOn": ["select lines"],
             "onResult": {
                 "terminateJobWithSuccess": [],
                 "continueJob": [0]
@@ -65,7 +45,7 @@
         }, {
             "name": "remove local lines",
             "executor": "shell",
-            "command": "cat lignes_without_train.csv |xsv search -s network 'local' -v > lignes_without_local.csv",
+            "command": "cat lignes_without_train.csv |xsv search -s mode 'ferry' -v |xsv search -s network 'local' -v > lignes_without_local.csv",
             "arguments": [],
             "dependsOn": ["remove national trains"],
             "onResult": {
@@ -75,19 +55,9 @@
         }, {
             "name": "remove touristic lines",
             "executor": "shell",
-            "command": "cat lignes_without_local.csv |xsv search -s network 'Open Tour' -v | xsv search -s network Balabus -v |xsv search -s network 'Big Bus' -v > lignes_without_touristic.csv",
+            "command": "cat lignes_without_local.csv |xsv search -s network 'Open Tour' -v | xsv search -s network Balabus -v |xsv search -s network 'Big Bus' -v > lignes.csv",
             "arguments": [],
             "dependsOn": ["remove local lines"],
-            "onResult": {
-                "terminateJobWithSuccess": [],
-                "continueJob": [0]
-            }
-        }, {
-            "name": "remove bicycle and ferry",
-            "executor": "shell",
-            "command": "cat lignes_without_touristic.csv |xsv search -s route_master road -v |xsv search -s route_master bicycle -v | xsv search -s route_master ferry -v  > lignes.csv",
-            "arguments": [],
-            "dependsOn": ["remove touristic lines"],
             "onResult": {
                 "terminateJobWithSuccess": [],
                 "continueJob": [0]
@@ -97,7 +67,7 @@
             "executor": "shell",
             "command": "rm *.osm.pbf",
             "arguments": [],
-            "dependsOn": ["remove bicycle and ferry"],
+            "dependsOn": ["remove touristic lines"],
             "onResult": {
                 "terminateJobWithSuccess": [],
                 "continueJob": [0]
@@ -107,7 +77,7 @@
             "executor": "shell",
             "command": "rm lignes_*.csv",
             "arguments": [],
-            "dependsOn": ["remove bicycle and ferry"],
+            "dependsOn": ["remove touristic lines"],
             "onResult": {
                 "terminateJobWithSuccess": [],
                 "continueJob": [0]

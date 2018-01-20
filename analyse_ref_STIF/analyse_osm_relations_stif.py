@@ -15,6 +15,11 @@ navitia_API_key = TOKEN
 navitia_base_url = "http://api.navitia.io/v1/coverage/fr-idf"
 
 
+def get_osm_lines(file_name):
+    with open(file_name, 'r') as f:
+        reader = csv.DictReader(f)
+        return list(reader)
+
 def get_opendata_info(code_type, code_value):
     navitia_info = {}
     appel_nav = requests.get(navitia_base_url + "/lines?filter=line.has_code({},{})".format(
@@ -44,22 +49,20 @@ def get_opendata_info(code_type, code_value):
     return "ok", navitia_info
 
 
-def create_opendata_csv():
+def create_opendata_csv(osm_lines):
     navitia_lines = []
     osm_lines_with_errors = []
-    with open('../STIF-to-OSM/data/lignes.csv', 'r') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            if row['ref:FR:STIF:ExternalCode_Line']:
-                status, navitia_line = get_opendata_info(
-                    "source", row['ref:FR:STIF:ExternalCode_Line'])
-                if status != "ok":
-                    row["error"] = status
-                    row['osm_id'] = row['@id']
-                    osm_lines_with_errors.append(row)
-                else:
-                    navitia_line['osm_id'] = row['@id']
-                    navitia_lines.append(navitia_line)
+    for row in osm_lines :
+        if row['osm:ref:FR:STIF:ExternalCode_Line']:
+            status, navitia_line = get_opendata_info(
+                "source", row['osm:ref:FR:STIF:ExternalCode_Line'])
+            if status != "ok":
+                row["error"] = status
+                row['osm_id'] = row['line_id']
+                osm_lines_with_errors.append(row)
+            else:
+                navitia_line['osm_id'] = row['line_id']
+                navitia_lines.append(navitia_line)
 
     headers = ['osm_id', 'mode', 'network', 'color',
                'navitia_id', 'name', 'code', 'latitude', 'longitude']
@@ -78,21 +81,16 @@ def create_opendata_csv():
         for row in osm_lines:
             dw.writerow(row)
 
+    return navitia_lines
 
-def extract_common_values_by_networks():
-    with open('../STIF-to-OSM/data/lignes.csv', 'r') as f:
-        reader = csv.DictReader(f)
-        osm_lines = list(reader)
-    with open('analyse/route_master_opendata.csv', 'r') as f:
-        reader = csv.DictReader(f)
-        opendata_lines = list(reader)
 
+def extract_common_values_by_networks(osm_lines, opendata_lines):
     networks = {}
     operators = {}
     for a_navitia_line in opendata_lines:
         nav_network = networks.setdefault(a_navitia_line['network'], [])
         nav_operator = operators.setdefault(a_navitia_line['network'], [])
-        osm_match = [a_line for a_line in osm_lines if a_line['@id']
+        osm_match = [a_line for a_line in osm_lines if a_line['line_id']
                      == a_navitia_line['osm_id']]
         nav_network.append(osm_match[0]['network'])
         nav_operator.append(osm_match[0]['operator'])
@@ -110,81 +108,76 @@ def map_modes(opendata_mode):
     return mapping[opendata_mode]
 
 
-def get_errors():
-    stats = extract_common_values_by_networks()
+def get_errors(osm_lines, opendata_lines):
+    stats = extract_common_values_by_networks(osm_lines, opendata_lines)
     # get_most_common_value(stats, "network", "Noctilien")
     # get_most_common_value(stats, "operator", "Noctilien")
 
-    with open('analyse/route_master_opendata.csv', 'r') as f:
-        reader = csv.DictReader(f)
-        opendata_lines = list(reader)
+    errors = []
+    opendata_deduplicated = []
+    for an_osm_line in osm_lines:
+        an_osm_line['osm_id'] = an_osm_line['line_id'].split(':')[-1]
+        if not an_osm_line['osm:ref:FR:STIF:ExternalCode_Line']:
+            continue
+        if an_osm_line['osm:ref:FR:STIF:ExternalCode_Line'] not in opendata_deduplicated:
+            opendata_deduplicated.append(
+                an_osm_line['osm:ref:FR:STIF:ExternalCode_Line'])
+        else:
+            error = {"id": an_osm_line['osm_id']}
+            error['label'] = "Il y a plusieurs lignes dans OSM qui ont ce même ref:FR:STIF:ExternalCode_Line ({})".format(
+                an_osm_line['osm:ref:FR:STIF:ExternalCode_Line'])
+            error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
+            errors.append(error)
+        opendata_matching_lines = [
+            a_line for a_line in opendata_lines if an_osm_line['line_id'] == a_line['osm_id']]
+        if not opendata_matching_lines:
+            continue
+        opendata_line = opendata_matching_lines[0]
+        if not an_osm_line['network']:
+            error = {"id": an_osm_line['osm_id']}
+            fix = get_most_common_value(
+                stats, "network", opendata_line['network'])
+            error['label'] = "la relation n'a pas de tag network."
+            if fix != "":
+                error['fix'] = [{"key": "network", "value": fix}]
+                error['label'] = "la relation n'a pas de tag network. Valeur probable : " + fix
+            error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
+            errors.append(error)
+        if not an_osm_line['operator']:
+            error = {"id": an_osm_line['osm_id']}
+            fix = get_most_common_value(
+                stats, "operator", opendata_line['network'])
+            error['label'] = "la relation n'a pas de tag operator."
+            if fix != "":
+                error['fix'] = [{"key": "operator", "value": fix}]
+                error['label'] = "la relation n'a pas de tag operator. Valeur probable : " + fix
+            error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
+            errors.append(error)
+        if not an_osm_line['colour'] and opendata_line['color'] not in ["000000", "0", ""]:
+            error = {"id": an_osm_line['osm_id']}
+            error['label'] = "la relation n'a pas de tag colour."
+            fix = '#' + opendata_line['color']
+            if opendata_line['color'] not in ["", "0", "000000"]:
+                error['fix'] = [{"key": "colour", "value": fix}]
+                error['label'] = "la relation n'a pas de tag colour. Valeur probable : " + fix
+            error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
+            # errors.append(error)
+        if not an_osm_line['code']:
+            error = {"id": an_osm_line['osm_id']}
+            fix = opendata_line['code']
+            error['label'] = "la relation n'a pas de tag ref. Valeur probable : " + fix
+            error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
+            error['fix'] = [{"key": "ref", "value": fix}]
+            errors.append(error)
+        if not an_osm_line['mode']:
+            error = {"id": an_osm_line['osm_id']}
+            fix = map_modes(opendata_line['mode'])
+            error['label'] = "la relation n'a pas de tag route_master. Valeur probable : " + fix
+            error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
+            error['fix'] = [{"key": "route_master", "value": fix}]
+            errors.append(error)
 
-        errors = []
-        opendata_deduplicated = []
-        with open('../STIF-to-OSM/data/lignes.csv', 'r') as f:
-            reader = csv.DictReader(f)
-            for an_osm_line in reader:
-                if not an_osm_line['ref:FR:STIF:ExternalCode_Line']:
-                    continue
-                if an_osm_line['ref:FR:STIF:ExternalCode_Line'] not in opendata_deduplicated:
-                    opendata_deduplicated.append(
-                        an_osm_line['ref:FR:STIF:ExternalCode_Line'])
-                else:
-                    error = {"id": an_osm_line['@id']}
-                    error['label'] = "Il y a plusieurs lignes dans OSM qui ont ce même ref:FR:STIF:ExternalCode_Line ({})".format(
-                        an_osm_line['ref:FR:STIF:ExternalCode_Line'])
-                    error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
-                    errors.append(error)
-                opendata_matching_lines = [
-                    a_line for a_line in opendata_lines if an_osm_line['@id'] == a_line['osm_id']]
-                if not opendata_matching_lines:
-                    continue
-                opendata_line = opendata_matching_lines[0]
-                if not an_osm_line['network']:
-                    error = {"id": an_osm_line['@id']}
-                    fix = get_most_common_value(
-                        stats, "network", opendata_line['network'])
-                    error['label'] = "la relation n'a pas de tag network."
-                    if fix != "":
-                        error['fix'] = [{"key": "network", "value": fix}]
-                        error['label'] = "la relation n'a pas de tag network. Valeur probable : " + fix
-                    error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
-                    errors.append(error)
-                if not an_osm_line['operator']:
-                    error = {"id": an_osm_line['@id']}
-                    fix = get_most_common_value(
-                        stats, "operator", opendata_line['network'])
-                    error['label'] = "la relation n'a pas de tag operator."
-                    if fix != "":
-                        error['fix'] = [{"key": "operator", "value": fix}]
-                        error['label'] = "la relation n'a pas de tag operator. Valeur probable : " + fix
-                    error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
-                    errors.append(error)
-                if not an_osm_line['colour'] and opendata_line['color'] not in ["000000", "0", ""]:
-                    error = {"id": an_osm_line['@id']}
-                    error['label'] = "la relation n'a pas de tag colour."
-                    fix = '#' + opendata_line['color']
-                    if opendata_line['color'] not in ["", "0", "000000"]:
-                        error['fix'] = [{"key": "colour", "value": fix}]
-                        error['label'] = "la relation n'a pas de tag colour. Valeur probable : " + fix
-                    error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
-                    # errors.append(error)
-                if not an_osm_line['ref']:
-                    error = {"id": an_osm_line['@id']}
-                    fix = opendata_line['code']
-                    error['label'] = "la relation n'a pas de tag ref. Valeur probable : " + fix
-                    error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
-                    error['fix'] = [{"key": "ref", "value": fix}]
-                    errors.append(error)
-                if not an_osm_line['route_master']:
-                    error = {"id": an_osm_line['@id']}
-                    fix = map_modes(opendata_line['mode'])
-                    error['label'] = "la relation n'a pas de tag route_master. Valeur probable : " + fix
-                    error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
-                    error['fix'] = [{"key": "route_master", "value": fix}]
-                    errors.append(error)
-
-        return errors
+    return errors
 
 
 def create_osmose_xml(errors):
@@ -226,11 +219,15 @@ def create_osmose_xml(errors):
     return xmltodict.unparse(doc, pretty=True)
 
 
+
+
 if __name__ == '__main__':
 
-    create_opendata_csv()
+    osm_lines = get_osm_lines('../STIF-to-OSM/data/lignes.csv')
 
-    errors = get_errors()
+    opendata_lines = create_opendata_csv(osm_lines)
+
+    errors = get_errors(osm_lines, opendata_lines)
 
     xml = create_osmose_xml(errors)
     print("Il y a {} erreurs".format(len(errors)))

@@ -36,11 +36,13 @@ $(document).ready(function() {
                 [1  , 'desc']
             ],
             columns: [ //@id,ref,name,network,operator,colour,type,route_master,ref:FR:STIF:ExternalCode_Line
+                //line_id,code,name,network,operator,colour,osm:type,mode,osm:ref:FR:STIF:ExternalCode_Line
                 {
                     title: "id",
                     data: function(row, type, set) {
-                        var link_url = "http://www.openstreetmap.org/relation/" + row[0];
-                        return "<a target='_blank' href='" + link_url + "'>" + row[0] + "</a>";
+                        var osm_id = row[0].split(':')[2]
+                        var link_url = "http://www.openstreetmap.org/relation/" + osm_id;
+                        return "<a target='_blank' href='" + link_url + "'>" + osm_id + "</a>";
                     }
                 }, {
                     title: "code",
@@ -73,19 +75,12 @@ $(document).ready(function() {
                             button_color = "";
                             navitia_url_suffix = "&line_code=" + row[1];
                         }
-                        return "<a class='button " + button_color + " small' target='_blank' href='./line.html?osm_relation=" + row[0] + navitia_url_suffix + "'> Voir </a>";
+                        return "<a class='button " + button_color + " small' target='_blank' href='./line.html?osm_relation=" + row[0].split(':')[2] + navitia_url_suffix + "'> Voir </a>";
                     }
                 }
             ]
         });
     }
-
-    //rendre le bouton utilisable
-    $('#data_table tbody').on('click', 'button', function() {
-        var data = table.row($(this).parents('tr')).data();
-        console.log(data)
-        alert(data[0] + "'s salary is: " + data[1]);
-    });
 });
 
 

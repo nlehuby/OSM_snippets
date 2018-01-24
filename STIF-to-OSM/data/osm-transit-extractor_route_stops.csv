@@ -518,8 +518,8 @@ Route:Relation:123792,StopPoint:Node:264795933
 Route:Relation:123799,StopPoint:Node:331524254
 Route:Relation:123799,StopPoint:Node:4606126796
 Route:Relation:123799,StopPoint:Node:331523267
-Route:Relation:123799,StopPoint:Node:313430306
-Route:Relation:123799,StopPoint:Node:313428413
+Route:Relation:123799,StopPoint:Node:5357256569
+Route:Relation:123799,StopPoint:Node:5357256568
 Route:Relation:123799,StopPoint:Node:265060965
 Route:Relation:123799,StopPoint:Node:265060832
 Route:Relation:123799,StopPoint:Node:265060052
@@ -527,7 +527,6 @@ Route:Relation:123799,StopPoint:Node:261612240
 Route:Relation:123799,StopPoint:Node:4317605785
 Route:Relation:123799,StopPoint:Node:331514770
 Route:Relation:123799,StopPoint:Node:3542631393
-Route:Relation:123799,StopPoint:Way:348035135
 Route:Relation:123799,StopPoint:Node:5226630398
 Route:Relation:123799,StopPoint:Node:3703620030
 Route:Relation:123799,StopPoint:Node:264473695
@@ -542,6 +541,9 @@ Route:Relation:123799,StopPoint:Node:2023231831
 Route:Relation:123799,StopPoint:Node:264717964
 Route:Relation:123799,StopPoint:Node:12388534
 Route:Relation:123799,StopPoint:Node:12388528
+Route:Relation:123799,StopPoint:Way:348035135
+Route:Relation:123799,StopPoint:Way:555241906
+Route:Relation:123799,StopPoint:Way:555241918
 Route:Relation:123802,StopPoint:Node:1997626380
 Route:Relation:123802,StopPoint:Node:264796181
 Route:Relation:123802,StopPoint:Node:264796182
@@ -23006,7 +23008,7 @@ Route:Relation:5757902,StopPoint:Node:4705904144
 Route:Relation:5757902,StopPoint:Node:3901878683
 Route:Relation:5757902,StopPoint:Node:4705904153
 Route:Relation:5757902,StopPoint:Node:2124125044
-Route:Relation:5757902,StopPoint:Node:4705904154
+Route:Relation:5757902,StopPoint:Node:5357695347
 Route:Relation:5757902,StopPoint:Node:3089310938
 Route:Relation:5757902,StopPoint:Node:4705904156
 Route:Relation:5757902,StopPoint:Node:2939368540
@@ -23025,6 +23027,7 @@ Route:Relation:5757902,StopPoint:Node:5339928220
 Route:Relation:5757902,StopPoint:Node:4705904165
 Route:Relation:5757902,StopPoint:Node:2628245393
 Route:Relation:5757902,StopPoint:Node:4705904167
+Route:Relation:5757902,StopPoint:Node:4326132538
 Route:Relation:5757902,StopPoint:Node:4705904169
 Route:Relation:5757902,StopPoint:Node:4622150454
 Route:Relation:5757902,StopPoint:Node:4705904171
@@ -23037,9 +23040,8 @@ Route:Relation:5757902,StopPoint:Node:4705922233
 Route:Relation:5757902,StopPoint:Node:3587567678
 Route:Relation:5757902,StopPoint:Node:4705904175
 Route:Relation:5757902,StopPoint:Node:3587567673
-Route:Relation:5757902,StopPoint:Node:4705904176
-Route:Relation:5757902,StopPoint:Node:2437571512
-Route:Relation:5757902,StopPoint:Node:4326132538
+Route:Relation:5757902,StopPoint:Node:3559388344
+Route:Relation:5757902,StopPoint:Node:3559388343
 Route:Relation:5830158,StopPoint:Node:4930327523
 Route:Relation:5830158,StopPoint:Node:4602492274
 Route:Relation:5830158,StopPoint:Node:677174963
@@ -33027,7 +33029,6 @@ Route:Relation:7731233,StopPoint:Node:245250759
 Route:Relation:7731233,StopPoint:Node:264473695
 Route:Relation:7731233,StopPoint:Node:3703620030
 Route:Relation:7731233,StopPoint:Node:5226630398
-Route:Relation:7731233,StopPoint:Way:348035135
 Route:Relation:7731233,StopPoint:Node:3542631393
 Route:Relation:7731233,StopPoint:Node:331514770
 Route:Relation:7731233,StopPoint:Node:4317605785
@@ -33035,11 +33036,14 @@ Route:Relation:7731233,StopPoint:Node:261612240
 Route:Relation:7731233,StopPoint:Node:265060052
 Route:Relation:7731233,StopPoint:Node:265060832
 Route:Relation:7731233,StopPoint:Node:265060965
-Route:Relation:7731233,StopPoint:Node:313428413
-Route:Relation:7731233,StopPoint:Node:313430306
+Route:Relation:7731233,StopPoint:Node:5357256568
+Route:Relation:7731233,StopPoint:Node:5357256569
 Route:Relation:7731233,StopPoint:Node:331523267
 Route:Relation:7731233,StopPoint:Node:4606126796
 Route:Relation:7731233,StopPoint:Node:331524254
+Route:Relation:7731233,StopPoint:Way:348035135
+Route:Relation:7731233,StopPoint:Way:555241905
+Route:Relation:7731233,StopPoint:Way:555241912
 Route:Relation:7731234,StopPoint:Node:12388528
 Route:Relation:7731234,StopPoint:Node:12388534
 Route:Relation:7731234,StopPoint:Node:264717964

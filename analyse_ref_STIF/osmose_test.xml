@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<analysers timestamp="2018-01-24T08:14:46Z">
-	<analyser timestamp="2018-01-24T08:14:46Z">
+<analysers timestamp="2018-01-26T21:23:01Z">
+	<analyser timestamp="2018-01-26T21:23:01Z">
 		<class item="8042" tag="transport en commun" id="1" level="3">
 			<classtext lang="fr" title="tag manquant sur une relation route_master (ligne de transport en commun)"></classtext>
 		</class>
@@ -89,16 +89,33 @@
 			<text lang="fr" value="la relation n'a pas de tag network."></text>
 		</error>
 		<error class="1">
-			<location lat="48.968675" lon="1.833721"></location>
-			<relation id="7921016"></relation>
-			<text lang="fr" value="la relation n'a pas de tag network. Valeur probable : Val de Seine"></text>
+			<location lat="48.704759" lon="2.254092"></location>
+			<relation id="7921008"></relation>
+			<text lang="fr" value="la relation n'a pas de tag network. Valeur probable : Mobicaps"></text>
 			<fixes>
 				<fix>
-					<relation id="7921016">
-						<tag action="create" k="network" v="Val de Seine"></tag>
+					<relation id="7921008">
+						<tag action="create" k="network" v="Mobicaps"></tag>
 					</relation>
 				</fix>
 			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.704759" lon="2.254092"></location>
+			<relation id="7921008"></relation>
+			<text lang="fr" value="la relation n'a pas de tag operator. Valeur probable : Les Cars d'Orsay"></text>
+			<fixes>
+				<fix>
+					<relation id="7921008">
+						<tag action="create" k="operator" v="Les Cars d'Orsay"></tag>
+					</relation>
+				</fix>
+			</fixes>
+		</error>
+		<error class="1">
+			<location lat="48.968675" lon="1.833721"></location>
+			<relation id="7921016"></relation>
+			<text lang="fr" value="la relation n'a pas de tag network."></text>
 		</error>
 	</analyser>
 </analysers>

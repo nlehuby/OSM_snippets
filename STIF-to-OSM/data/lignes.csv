@@ -772,7 +772,7 @@ Line:Relation:7920954,564,Bus 564 : Collège La Malmaison (circulaire),RATP,RATP
 Line:Relation:7920955,572,Bus 572 : Navette Monastère,RATP,RATP,,route_master,bus,
 Line:Relation:7920956,515,Bus: TillBus - Place du Vél' d'Hiv' (circulaire),RATP,RATP,,route_master,bus,100100515:TILLBUS
 Line:Relation:7920957,12,Bus 12 : Cergy-Préfecture RER <> Verneuil Gare SNCF,Poissy Aval - Deux Rives de Seine,Autocars Tourneux,,route_master,bus,
-Line:Relation:7920958,4,Ligne 4 Rambouillet - Limours,,transdev,,route_master,bus,
+Line:Relation:7920958,4,Ligne 4 Rambouillet - Limours,Réseau Interurbain de Rambouillet,Transdev Île-de-France Rambouillet,,route_master,bus,
 Line:Relation:7920959,353,Bus 353 : Saint-Denis–Université ↔ Saint-Denis–ZAC Landy Nord,RATP,RATP,,route_master,bus,
 Line:Relation:7920960,168,Bus 168 : Saint-Denis–Université ↔ Sarcelles–Chantepie,RATP,RATP,,route_master,bus,100100168:168
 Line:Relation:7920961,B,Bus B : Rambouillet - Clairbois ↔ Gazeran - Cutesson,Rambouillet urbain,Transdev,,route_master,bus,
@@ -780,7 +780,7 @@ Line:Relation:7920962,A,Bus A : Rambouillet - Rouget de Lisle ↔ Rambouillet - 
 Line:Relation:7920963,5,Bus 5 : Prunay-en-Yvelines - Gourville ↔ Rambouillet - Gare,Réseau interurbain de Rambouillet,Transdev,,route_master,bus,
 Line:Relation:7920964,7,Bus 7 : Gare de Sartrouville ↔ Gare du Vésinet-Le Pecq,Bus en Seine,Transdev,,route_master,bus,
 Line:Relation:7920965,6,Le Vésinet Centre-Chemin de Ronde,Bus en Seine,Transdev,,route_master,bus,
-Line:Relation:7920966,02,02 Saint-Germain RER <-> Maisons-Laffitte Gare SNCF,,Transdev,#97bf0d,route_master,bus,
+Line:Relation:7920966,02,02 Saint-Germain RER <-> Maisons-Laffitte Gare SNCF,,Transdev Île-de-France Conflans,#97bf0d,route_master,bus,
 Line:Relation:7920967,Still 9B,,,Still,brown,route_master,bus,064608009:9B
 Line:Relation:7920968,Still 9C,,,Still,brown,route_master,bus,064608009:9C
 Line:Relation:7920969,Still 9B,,Transdev-IdF,Still,brown,route_master,bus,
@@ -820,7 +820,7 @@ Line:Relation:7921003,D,Bus D : Vigneux-sur-Seine — Le Petit et Vergeat ↔ Vi
 Line:Relation:7921004,C,Bus C : Montgeron — Valdoly ↔ Vigneux-sur-Seine — Gare,Seine-Sénart bus,Garrel et Navarre,,route_master,bus,
 Line:Relation:7921005,H,Bus H : Vigneux-sur-Seine — Prairie de l'Oly ↔ Vigneux-sur-Seine — Prairie de l'Oly,Seine-Sénart Bus,Garrel et Navarre,,route_master,bus,
 Line:Relation:7921006,G,Bus G : Montgeron — Valdoly ↔ Vigneux-sur-Seine — Maurice Garin,Seine-Sénart Bus,Garrel et Navarre,,route_master,bus,
-Line:Relation:7921007,18,Navette 18 : Gare de Palaiseau-Villebon RER → C.C. Villebon 2,,,green,route_master,bus,
+Line:Relation:7921007,18,Navette 18 : Gare de Palaiseau-Villebon RER → C.C. Villebon 2,Mobicaps,Les Cars d'Orsay,green,route_master,bus,
 Line:Relation:7921008,19,Navette 19 : Gare de Lozère RER → Gare de Palaiseau-Villebon RER,,,brown,route_master,bus,006006019:19
 Line:Relation:7921009,N,Bus N : Vaux-le-Pénil — Mare aux Champs (Mairie) ↔ Dammarie-lès-Lys — Peguy,MELIBUS,Transdev Île-de-France Vaux-le-Pénil,,route_master,bus,
 Line:Relation:7921010,C,Bus C : Melun — Gare de Melun ↔ Vaux-le-Pénil — Vaux Pleins-Vents,MELIBUS,Transdev Île-de-France Vaux-le-Pénil,,route_master,bus,
@@ -845,7 +845,7 @@ Line:Relation:7921028,537,Bus 537 : L'Audonienne,RATP,RATP,#f788b5,route_master,
 Line:Relation:7921029,33,33 (CBA),Phébus,Phébus,,route_master,bus,
 Line:Relation:7921030,32 (CVJ),32 (CVJ),Phébus,Phébus,,route_master,bus,
 Line:Relation:7921031,441,441,SQYBus,SQYBus,,route_master,bus,
-Line:Relation:7921032,39-17,Bus 39-17 : St-Rémy-lès-Chevreuse <> La Verrière,SAVAC,SAVAC,,route_master,bus,
+Line:Relation:7921032,39-17,Bus 39-17 : Saint-Rémy-lès-Chevreuse <> La Verrière,SAVAC,SAVAC,,route_master,bus,
 Line:Relation:7921033,430,Bus 430 : Trappes Gare (circulaire) via ZA Trappes–Élancourt,SQYbus,SQYbus,,route_master,bus,
 Line:Relation:7921034,459,459,STIF,Veolia Transdev,,route_master,bus,
 Line:Relation:7921035,565,Bus 565 : Eglise de Buzenval ↔ Mairie de Rueil,RATP,RATP,#1B673D,route_master,bus,
@@ -854,7 +854,7 @@ Line:Relation:7921038,291,Bus 291 : Pont de Sèvres ↔ Vélizy-La Cheminée,RAT
 Line:Relation:7921039,12,Saint-Germain-de-la-Grange - Beynes - Plaisir-Grignon - Grand Plaisir,Plaine de Versailles,Hourtoule,,route_master,bus,
 Line:Relation:7921040,569,Bus 569 : TIM Bellevue Circulaire,RATP,RATP,,route_master,bus,
 Line:Relation:7921041,85.01,Dourdan intra-muros,Cars Perron,Cars Perron,,route_master,bus,
-Line:Relation:7921042,306-04,Dourdan - Mérobert,,Ormont/Perron,,route_master,bus,
+Line:Relation:7921042,306-04,Dourdan - Mérobert,,Ormont Transport,,route_master,bus,
 Line:Relation:7921043,563,Bus 563 : Suresnes de Gaulle → Place de la Boule,RATP,RATP,#FF1300,route_master,bus,
 Line:Relation:7921044,227-02A,Bus 227-02A : Brétigny-sur-Orge Brèche aux Loups – Gare – Bois de Vétille,Orgebus,Transdev Île-de-France Brétigny,#007ec6,route_master,bus,
 Line:Relation:7921045,59,,Transdev Marne et Morin,Transdev Marne et Morin,,route_master,bus,067067059:59

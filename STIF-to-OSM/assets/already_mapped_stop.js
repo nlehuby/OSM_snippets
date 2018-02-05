@@ -91,8 +91,16 @@ function get_osm_stop_info(stop_id){
                   popup_content += relations_bus[bus_stop_id][j]['name'] + " <br> ";
               }
 
-              geo.features[i].properties['popup_content'] = popup_content;
               document.getElementById("osm_stop_info").innerHTML = popup_content;
+              popup_content += "<a href='http://osm.org/node/"+bus_stop_id+"' target='_blank'>Voir le détail</a>"
+              geo.features[i].properties['popup_content'] = popup_content;
+
+              var microcosm_link = "<a href='https://microcosm.5apps.com/opendata_bus.html?poi_type=bus_stop#18/"
+              microcosm_link += geo.features[i].geometry.coordinates[1] + "/" + geo.features[i].geometry.coordinates[0]
+              microcosm_link +=
+              microcosm_link += "' target='_blank'>Explorer la zone</a>"
+              document.getElementById("microcosm_link").innerHTML = microcosm_link
+
           }
       }
 

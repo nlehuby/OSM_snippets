@@ -2,6 +2,9 @@
 	nlehuby
 */
 
+//mise à jour de la date
+document.getElementById('update_date').innerHTML = update_date
+
 var table;
 //datatables
 $(document).ready(function() {

@@ -73,6 +73,16 @@
                 "continueJob": [0]
             }
         }, {
+            "name": "update date",
+            "executor": "shell",
+            "command": "echo 'var update_date=\"'`date -d yesterday  \"+%d %B %Y\"`'\"' > ../assets/date.js",
+            "arguments": [],
+            "dependsOn": ["remove touristic lines"],
+            "onResult": {
+                "terminateJobWithSuccess": [],
+                "continueJob": [0]
+            }
+        }, {
             "name": "clean temp csv",
             "executor": "shell",
             "command": "rm lignes_*.csv",

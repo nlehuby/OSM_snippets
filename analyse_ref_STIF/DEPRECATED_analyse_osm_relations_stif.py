@@ -10,6 +10,8 @@ from params import navitia_API_key as TOKEN
 from collections import Counter
 from copy import deepcopy
 
+#NB : ce script a été remplacé par https://github.com/Jungle-Bus/ref-fr-STIF/tree/master/osmose
+
 # paramétrage
 navitia_API_key = TOKEN
 navitia_base_url = "http://api.navitia.io/v1/coverage/fr-idf"
@@ -131,6 +133,11 @@ def get_errors(osm_lines, opendata_lines):
         opendata_matching_lines = [
             a_line for a_line in opendata_lines if an_osm_line['line_id'] == a_line['osm_id']]
         if not opendata_matching_lines:
+            error = {"id": an_osm_line['osm_id']}
+            error['label'] = "Ce ref:FR:STIF:ExternalCode_Line ({}) n'existe pas ou plus dans les données opendata du STIF".format(
+                an_osm_line['osm:ref:FR:STIF:ExternalCode_Line'])
+            error['lat'], error['lon'] = opendata_line['latitude'], opendata_line['longitude']
+            errors.append(error)
             continue
         opendata_line = opendata_matching_lines[0]
         if not an_osm_line['network']:
@@ -223,7 +230,7 @@ def create_osmose_xml(errors):
 
 if __name__ == '__main__':
 
-    osm_lines = get_osm_lines('../STIF-to-OSM/data/lignes.csv')
+    osm_lines = get_osm_lines('../../ref-fr-STIF/data/lignes.csv')
 
     opendata_lines = create_opendata_csv(osm_lines)
 

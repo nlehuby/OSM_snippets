@@ -1,91 +1,73 @@
 <!DOCTYPE HTML>
-<!--
-	Intensify by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+<!-- Intensify by TEMPLATED templated.co @templatedco Released for free under the Creative Commons Attribution 3.0 license (templated.co/license) -->
 <html>
 
-<head>
-    <title>Intégration du référentiel lignes du STIF</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/intensify/css/main.css" />
-    <link rel="stylesheet" href="assets/bus_lines.css" />
-    <link rel="stylesheet" href="assets/third_parties/leaflet_1.0.2/leaflet.css" />
-</head>
+    <head>
+        <title>Intégration du référentiel lignes du STIF</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="assets/intensify/css/main.css"/>
+        <link rel="stylesheet" href="assets/bus_lines.css"/>
+        <link rel="stylesheet" href="assets/third_parties/leaflet_1.0.2/leaflet.css"/>
+    </head>
 
-<body>
+    <body>
 
-    <!-- Header -->
-    <header id="header">
-        <a href="index.html" class="logo">Lignes d'Île-de-France</a>
-    </header>
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Lignes d'Île-de-France</a>
+        </header>
 
-    <!-- Tags -->
-    <section id="one" class="wrapper">
-        <div class="inner flex flex-2">
-            <div class="flex-item right">
-                <div>
-                    <img src="assets/img/blue_bus.png" alt="OpenStreetMap : bleu" /> OpenStreetMap (en bleu sur la carte)
-                    <div id="osm_stop_info"> Ici, les données OSM vont s'afficher</div><br>
-
-                    <span id=osm_ref_match> <i>Voir toutes les ref:FR:STIF de cet arrêt</i> </span>
-                </div>
+        <!-- Tags -->
+        <section id="one" class="wrapper">
+            <div class="inner flex flex-2">
+                <dl>
+                    <div id="route_info"></div>
+                    <div id="stops_details"></div>
+                </dl>
 
             </div>
-            <div class="flex-item right">
-                <div>
-                    <img src="assets/img/black_bus.png" alt="OpenData : noir" /> Opendata (en noir sur la carte)
-                    <div id="opendata_stop_one_info">Ici, les candidats opendata vont s'afficher</div><br>
-                    <a href="#" class="button special fit" id="add_navitia_one_ref_to_osm">Associer cet arrêt</a>
-                    <div id="opendata_stop_two_info">Ici, les candidats opendata vont s'afficher</div><br>
-                    <a href="#" class="button special fit" id="add_navitia_two_ref_to_osm">Associer cet arrêt</a>
+        </section>
 
-                </div>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <h2>Plus d'info</h2>
+                <ul class="actions">
+                    <li>
+                        <span class="icon fa-wikipedia-w"></span>
+                        <a href="https://wiki.openstreetmap.org/wiki/WikiProject_France/Transports_en_%C3%8Ele-de-France#R.C3.A9f.C3.A9rences_opendata">wiki OSM</a>
+                    </li>
+                    <li>
+                        <span class="icon fa-github"></span>
+                        <a href="https://github.com/nlehuby/OSM_snippets/tree/master/STIF-to-OSM">Github</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </section>
+            <div class="copyright">
+                <a href="https://nlehuby.5apps.com">nlehuby</a>. &copy; Design
+                <a href="https://templated.co">TEMPLATED</a>. &copy; les contributeurs
+                <a href="http://openstreetmap.org/">OSM</a>
+                /
+                <a href="http://navitia.io">navitia.io</a>. /
+                <a href="http://opendata.stif.info/">opendata STIF</a>.
+            </div>
+        </footer>
 
-    <!-- Skip -->
-    <section id="skip">
-        <a class="button alt fit small" id='next_osm_stop_button'>Proposition d'arrêt suivante</a>
-    </section>
+        <!-- Scripts -->
+        <script src="assets/intensify/js/jquery.min.js"></script>
+        <script src="assets/intensify/js/jquery.scrolly.min.js"></script>
+        <script src="assets/intensify/js/skel.min.js"></script>
+        <script src="assets/intensify/js/util.js"></script>
+        <script src="assets/intensify/js/main.js"></script>
+        <script src="assets/third_parties/osmtogeojson.js"></script>
+        <script src="assets/third_parties/navitia/nav_auth.js"></script>
+        <script src="assets/third_parties/osm_js_editor/osmauth.min.js"></script>
+        <script src="assets/third_parties/osm_js_editor/auth.js"></script>
+        <script src="assets/third_parties/osm_js_editor/OSMAPI.js"></script>
+        <script src='assets/third_parties/turf-3.0.11/turf.min.js'></script>
+        <script src="assets/stops_by_route.js"></script>
 
-    <!-- Map -->
-    <section id="banner_map">
-        <div id="map"></div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="inner">
-            <h2>Plus d'info</h2>
-            <ul class="actions">
-                <li><span class="icon fa-wikipedia-w"></span> <a href="https://wiki.openstreetmap.org/wiki/WikiProject_France/Transports_en_%C3%8Ele-de-France#R.C3.A9f.C3.A9rences_opendata">wiki OSM</a></li>
-                <li><span class="icon fa-github"></span> <a href="https://github.com/nlehuby/OSM_snippets/tree/master/STIF-to-OSM">Github</a></li>
-            </ul>
-        </div>
-        <div class="copyright">
-            <a href="https://nlehuby.5apps.com">nlehuby</a>. &copy; Design <a href="https://templated.co">TEMPLATED</a>. &copy; les contributeurs <a href="http://openstreetmap.org/">OSM</a> / <a href="http://navitia.io">navitia.io</a>. / <a href="http://opendata.stif.info/">opendata STIF</a>.
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="assets/intensify/js/jquery.min.js"></script>
-    <script src="assets/intensify/js/jquery.scrolly.min.js"></script>
-    <script src="assets/intensify/js/skel.min.js"></script>
-    <script src="assets/intensify/js/util.js"></script>
-    <script src="assets/third_parties/leaflet_1.0.2/leaflet.js"></script>
-    <script src="assets/intensify/js/main.js"></script>
-    <script src="assets/third_parties/osmtogeojson.js"></script>
-    <script src="assets/third_parties/navitia/nav_auth.js"></script>
-    <script src="assets/third_parties/osm_js_editor/osmauth.min.js"></script>
-    <script src="assets/third_parties/osm_js_editor/auth.js"></script>
-    <script src="assets/third_parties/osm_js_editor/OSMAPI.js"></script>
-    <script src='assets/third_parties/turf-3.0.11/turf.min.js'></script>
-    <script src="assets/stops_by_route.js"></script>
-
-</body>
+    </body>
 
 </html>

@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Ce script réalise une extraction <<csv>> des arrêts d'un parcours opendata
+# Il a été utisé pour l'article de blog https://nlehuby.5apps.com/analyse-arrets-bus.html
 
 from params import navitia_API_key as TOKEN
 import requests

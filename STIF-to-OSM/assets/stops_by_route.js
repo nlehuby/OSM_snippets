@@ -152,8 +152,8 @@ async function get_navitia_info() {
         var navitia_opposite_route_id = navitia_route_id + '_R'
     }
 
-    var navitia_stop_list = await get_stops_from_navitia_route(navitia_route_id)
-    var navitia_wrong_stop_list = await get_stops_from_navitia_route(navitia_opposite_route_id)
+    var navitia_stop_list = await get_stops_from_navitia_route(navitia_route_id);
+    var navitia_wrong_stop_list = await get_stops_from_navitia_route(navitia_opposite_route_id) || [];
     return {
         'opendata_ok': navitia_stop_list,
         'opendata_ko': navitia_wrong_stop_list

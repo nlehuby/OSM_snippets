@@ -10,7 +10,7 @@ var navitia_route_id = getParameterByName('navitia_route_id');
 //var navitia_route_id = 'route:OIF:014014011:11';
 
 var tag_to_match = "ref:FR:STIF";
-var JOSM_url_base = "http://localhost:8111/load_object?objects="
+var JOSM_url_base = "https://localhost:8112/load_object?objects="
 main()
 
 function find_opendata_closer_stop(osm_stop_pos, opendata_stops) {
@@ -63,7 +63,7 @@ async function main() {
             proposition ${opendata_candidate['opendata_candidate']['name']} à ${opendata_candidate['distance']} mètres
             <span class="icon fa-child"></span>
             <span class="icon fa-child"></span><br/>
-            <a onclick="send_to_josm('${current_osm_stop['id']}','${ref_to_add}')">Charger dans JOSM</a>
+            <a onclick="send_to_josm('${current_osm_stop['id']}','${ref_to_add}')">Ajouter dans JOSM</a>
             </p>
             `
             stops_div.appendChild(balise_ext);

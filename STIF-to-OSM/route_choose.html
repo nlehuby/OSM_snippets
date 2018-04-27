@@ -1,63 +1,74 @@
 <!DOCTYPE HTML>
-<!--
-	Intensify by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+<!-- Intensify by TEMPLATED templated.co @templatedco Released for free under the Creative Commons Attribution 3.0 license (templated.co/license) -->
 <html>
 
-<head>
-    <title>Choix du parcours Opendata</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/intensify/css/main.css" />
-</head>
+    <head>
+        <title>Choix du parcours Opendata</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="assets/intensify/css/main.css"/>
+    </head>
 
-<body>
+    <body>
 
-    <!-- Header -->
-    <header id="header">
-        <a href="index.html" class="logo">Lignes d'Île-de-France</a>
-    </header>
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Lignes d'Île-de-France</a>
+        </header>
 
-    <!-- Tags -->
-    <section id="main" class="wrapper">
-        <div class="inner">
-            <header class="align-center">
-                <h3>Voici les parcours OSM de la ligne.</h3>
-                <p>Choississez le parcours opendata correspondant</p>
-            </header>
+        <!-- Tags -->
+        <section id="main" class="wrapper">
+            <div class="inner">
+                <header class="align-center">
+                    <h3>Choix du parcours</h3>
+                </header>
+                <p>Avant d'associer les arrêts, il nous faut sélectionner, pour chaque parcours OSM, le parcours opendata le plus approprié.<br/>
+                    L'origine et la destination devrait vous permettre de choisir ;)<br>
+                    Cliquez sur le lien pour visualiser les arrêts OSM et opendata et compléter ou corriger dans OSM. Puis cliquez sur le bouton pour importer les codes STIF sur les arrêts du parcours.
 
-            <!-- Content -->
-            <div id='osm_route_list'></div>
+                </p>
 
-        </div>
-    </section>
+                <!-- Content -->
+                <div id='osm_route_list'></div>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="inner">
-            <h2>Plus d'info</h2>
-            <ul class="actions">
-                <li><span class="icon fa-wikipedia-w"></span> <a href="https://wiki.openstreetmap.org/wiki/WikiProject_France/Transports_en_%C3%8Ele-de-France#R.C3.A9f.C3.A9rences_opendata">wiki OSM</a></li>
-                <li><span class="icon fa-github"></span> <a href="https://github.com/nlehuby/OSM_snippets/tree/master/STIF-to-OSM">Github</a></li>
-            </ul>
-        </div>
-        <div class="copyright">
-            <a href="https://nlehuby.5apps.com">nlehuby</a>. &copy; Design <a href="https://templated.co">TEMPLATED</a>. &copy; les contributeurs <a href="http://openstreetmap.org/">OSM</a> / <a href="http://navitia.io">navitia.io</a>. / <a href="http://opendata.stif.info/">opendata STIF</a>.
-        </div>
-    </footer>
+            </div>
+        </section>
 
-    <!-- Scripts -->
-    <script src="assets/intensify/js/jquery.min.js"></script>
-    <script src="assets/intensify/js/jquery.scrolly.min.js"></script>
-    <script src="assets/intensify/js/skel.min.js"></script>
-    <script src="assets/intensify/js/util.js"></script>
-    <script src="assets/intensify/js/main.js"></script>
-    <script src="assets/third_parties/osmtogeojson.js"></script>
-    <script src="assets/third_parties/navitia/nav_auth.js"></script>
-    <script src="assets/route_choose.js"></script>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <h2>Plus d'info</h2>
+                <ul class="actions">
+                    <li>
+                        <span class="icon fa-wikipedia-w"></span>
+                        <a href="https://wiki.openstreetmap.org/wiki/WikiProject_France/Transports_en_%C3%8Ele-de-France#R.C3.A9f.C3.A9rences_opendata">wiki OSM</a>
+                    </li>
+                    <li>
+                        <span class="icon fa-github"></span>
+                        <a href="https://github.com/nlehuby/OSM_snippets/tree/master/STIF-to-OSM">Github</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <a href="https://nlehuby.5apps.com">nlehuby</a>. &copy; Design
+                <a href="https://templated.co">TEMPLATED</a>. &copy; les contributeurs
+                <a href="http://openstreetmap.org/">OSM</a>
+                /
+                <a href="http://navitia.io">navitia.io</a>. /
+                <a href="http://opendata.stif.info/">opendata STIF</a>.
+            </div>
+        </footer>
 
-</body>
+        <!-- Scripts -->
+        <script src="assets/intensify/js/jquery.min.js"></script>
+        <script src="assets/intensify/js/jquery.scrolly.min.js"></script>
+        <script src="assets/intensify/js/skel.min.js"></script>
+        <script src="assets/intensify/js/util.js"></script>
+        <script src="assets/intensify/js/main.js"></script>
+        <script src="assets/third_parties/osmtogeojson.js"></script>
+        <script src="assets/third_parties/navitia/nav_auth.js"></script>
+        <script src="assets/route_choose.js"></script>
+
+    </body>
 
 </html>

@@ -18,6 +18,16 @@
             <a href="index.html" class="logo">Lignes d'Île-de-France</a>
         </header>
 
+        <!-- Blabla -->
+        <div class="inner">
+            <p>
+                Nous recherchons la ligne opendata la plus appropriée pour cette ligne.
+            </p>
+            <p>
+                Une proposition s'affiche sur la droite : comparez ses caractéristiques ainsi que la position de ces arrêts sur la carte. Si elle ne correspond pas, cliquer sur le bouton pour afficher la proposition suivante.
+            </p>
+        </div>
+
         <!-- Tags -->
         <section id="one" class="wrapper">
             <div class="inner flex flex-2">
@@ -27,9 +37,15 @@
                         OpenStreetMap (en bleu sur la carte)
                         <h3 id="osm_line_name">Nom de la ligne ?</h3>
                         <div id="osm_line_color"></div>
-                        <p id="osm_line_mode">Mode ?</p>
-                        <p id="osm_line_network">Réseau ?</p>
-                        <p id="osm_line_operator">Opérateur ?</p><br>
+                        <p>
+                            Mode de transport :
+                            <span id="osm_line_mode">Mode ?</span></p>
+                        <p>
+                            Réseau :
+                            <span id="osm_line_network">Réseau ?</span></p>
+                        <p>
+                            Transporteur :
+                            <span id="osm_line_operator">Opérateur ?</span></p><br>
 
                         <h4 id="osm_ref_match">association ?</h4>
                     </div>
@@ -44,11 +60,17 @@
                             -
                             <span id="navitia_line_name">
                                 Si rien ne vient, essayez de changer dans l'url le code de la ligne (paramètre line_code)</span></h3>
-                        <p id="navitia_line_route">Destinations ?</p>
+                        <p>
+                            Origine / destination :
+                            <span id="navitia_line_route">Destinations ?</span></p>
                         <p id="navitia_line_color"></p>
-                        <p id="navitia_line_mode">Mode ?</p>
-                        <p id="navitia_line_network">Réseau ?</p>
-                        <p>Opérateur inconnu</p>
+                        <p>
+                            Mode de transport :
+                            <span id="navitia_line_mode">Mode ?</span></p>
+                        <p>
+                            Réseau :
+                            <span id="navitia_line_network">Réseau ?</span></p>
+                        <p>Transporteur inconnu</p>
                         <br/>
                     </div>
                     <div>

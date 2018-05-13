@@ -63,7 +63,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4968953,48.9442113</coordinates></Point>
+        <Point><coordinates>2.4968362,48.9441779</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -114,6 +114,11 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.26674,48.767374</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.5973917,48.7168011</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -183,16 +188,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5370825,48.9638118</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5460401,48.9558587</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.2182336,48.9529549</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -229,16 +224,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.3640943,48.7312911</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5246357,48.9649936</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5296123,48.9648998</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -368,17 +353,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.1744667,48.7035179</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.1926496,48.7064276</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0985134,48.8966835</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -453,17 +428,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.1598386,48.9446605</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5246526,48.9650372</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5295373,48.9649266</coordinates></Point>
+        <Point><coordinates>2.5318452,48.9531694</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -474,11 +439,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.2213726,48.9112863</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2283779,48.9143187</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -514,11 +474,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.2142282,48.8494637</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.540405,48.9624652</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -648,11 +603,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3251548,48.8740995</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.3015251,48.9541758</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -683,11 +633,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3049373,48.9782606</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.5415196,48.9664583</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -699,11 +644,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.5557396,48.9815409</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4102168,48.9002403</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -744,46 +684,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>1.9653963,48.9746401</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0467103,48.7880875</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0461584,48.7878145</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0463772,48.7879227</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0455103,48.7874939</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.046487,48.787977</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0452834,48.7873816</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0456185,48.7875474</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0465895,48.7880277</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -1008,11 +908,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5119313,48.752185</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.5179344,48.8268594</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -1029,16 +924,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.506768,48.8150248</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.489219,48.8158296</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.48474,48.8167339</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -1088,17 +973,12 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5964008,48.7166108</coordinates></Point>
+        <Point><coordinates>2.5961433,48.7167948</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.6066572,48.7183482</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5973354,48.7167143</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -1423,11 +1303,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.8265637,48.6289848</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.8876933,48.6314375</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -1464,16 +1339,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.6116731,48.5650902</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6030099,48.5625494</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.301152,48.755682</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -1653,16 +1518,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3244931,48.7586152</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3246144,48.7586926</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4692433,48.6070297</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -1744,11 +1599,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.0864783,48.6531583</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0313751,48.6189999</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -1838,17 +1688,17 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5124225,48.7440149</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.0497529,48.6281782</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.0994376,48.6328328</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.1710676,48.4313981</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -1899,11 +1749,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.6799331,48.5614612</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2927828,48.6973336</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -1988,16 +1833,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>1.7579609,48.8032717</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>1.7580311,48.8033531</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>1.6849983,48.814909</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -2073,16 +1908,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4331871,48.9405997</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4329591,48.9407071</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>1.9029476,48.4841512</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -2104,11 +1929,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.3707966,48.9233091</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3696513,48.9230359</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -2164,16 +1984,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>1.5496989,49.0109646</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6031085,48.7317381</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3643097,48.8566143</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -2523,11 +2333,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.272767,48.8254172</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>3.1449893,48.5053363</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -2714,11 +2519,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.2302808,48.7095547</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4813757,48.9438199</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -2933,6 +2733,11 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3052202,48.8108619</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.1084837,48.6476169</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -3008,26 +2813,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.565986,48.9644132</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5628558,48.9635645</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5650633,48.9642741</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5633199,48.9635133</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.0567282,48.7063958</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -3048,37 +2833,12 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2863487,48.9232769</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2860065,48.9232953</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.8424769,48.6662182</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.842569,48.6663235</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4955811,48.9530435</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4919226,48.9526524</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4913835,48.9517964</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -3104,11 +2864,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.899672,48.9525252</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.8942205,48.9540736</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -3378,11 +3133,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5586787,49.0888422</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.5718287,49.0913871</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -3418,52 +3168,12 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.1522179,48.6464643</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.3390948,48.9347874</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.9839683,48.3588929</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.984972,48.3589706</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.9853441,48.3605916</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.9781016,48.3636976</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.9853485,48.3646092</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.9853154,48.3647045</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.9797583,48.3652365</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.979776,48.3653084</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.9855029,48.3675523</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -3598,32 +3308,12 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4439754,48.9548432</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4448769,48.9562425</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4450187,48.9560426</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4381416,48.9483104</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4405234,48.9509578</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4395956,48.9503088</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -3818,11 +3508,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5180738,48.9447802</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4222383,48.8762178</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -3848,17 +3533,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3464575,48.8599592</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.6759923,49.0778511</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5094636,48.952147</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -3918,11 +3593,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3025437,48.7360586</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.1707189,48.9016731</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -3963,22 +3633,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.174489,48.7034534</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>1.9581076,48.9403655</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.266398,48.7327237</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2698476,48.7343097</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -4059,11 +3714,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.7706959,48.1814723</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5127321,48.9391579</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -4168,11 +3818,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.7635632,48.9180038</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.7176302,48.9308303</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -4203,42 +3848,12 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5171836,48.9628544</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.3315689,48.9358784</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.16436,48.9473088</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.1639858,48.9469953</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3166581,48.9829213</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3217194,48.9846669</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.3961962,48.9851232</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3306228,48.9928713</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -4264,16 +3879,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.8650043,48.1771725</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.508774,48.9395876</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0898428,48.6420425</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -4364,11 +3969,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.6404424,48.7129897</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6525763,48.7219198</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -4479,16 +4079,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.553587,48.9130721</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5127972,48.9399114</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5125338,48.9401135</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -4613,22 +4203,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2906596,48.6869881</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.5328679,48.9616774</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5366123,48.9637541</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5376416,48.9637603</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -4704,11 +4279,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4601757,48.8609035</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2608824,48.8852505</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -4813,17 +4383,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3557554,48.879328</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.2990642,48.8878907</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3238202,48.8759868</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -4833,27 +4393,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.991562,48.2814664</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.991394,48.2818121</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.6383457,48.8731927</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.1562461,48.7947468</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.461177,48.5927391</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -4864,11 +4404,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4694385,48.5933144</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.8266779,48.6288765</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -4939,11 +4474,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4480421,48.8913155</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4540234,48.8783484</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -5043,11 +4573,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5243584,48.9395999</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>3.1089312,48.9365614</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -5113,7 +4638,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3404308,48.8645931</coordinates></Point>
+        <Point><coordinates>2.052643,48.7846899</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -5154,11 +4679,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4203335,48.6268145</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4579012,48.570385</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -5258,11 +4778,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2777668,48.7508168</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.6486551,48.3170937</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -5319,36 +4834,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.587543,49.019492</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5863167,49.0195652</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5877392,49.0200446</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6352397,49.0329894</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6356961,49.0329983</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6395258,49.0337358</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6393321,49.033833</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -5543,16 +5028,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3050509,48.7357226</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.208229,48.6881444</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.3400711,48.5302766</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -5569,16 +5044,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4323609,48.6326854</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2212611,48.8719432</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2298715,48.69959</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -5678,27 +5143,12 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4502595,48.6239058</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4507469,48.6241597</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4528715,48.6341799</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4497857,48.5901071</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4356147,48.5961589</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -5778,16 +5228,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.282634,48.7454448</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2747577,48.7542602</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4532244,48.4012279</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -5833,11 +5273,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.090323,48.6418451</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.2699818,48.7374084</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -5854,6 +5289,11 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.268798,48.7094973</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.0498113,48.6778596</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -5884,16 +5324,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.5331378,48.7823297</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5455309,48.9577142</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5489265,48.958865</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -6013,26 +5443,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0664823,48.9938795</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0629175,49.0029715</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4299823,48.9394669</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4301579,48.9392475</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4832522,48.7063436</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -6058,16 +5468,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3348968,48.7336993</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3356361,48.7343893</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4353468,48.6376447</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -6088,7 +5488,17 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2417509,48.5861593</coordinates></Point>
+        <Point><coordinates>1.9524115,49.0499525</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3082077,48.7004789</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.2901098,48.5648977</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -6158,6 +5568,16 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.1947126,48.9596749</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.6971635,48.2913024</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4154874,48.6539829</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -6198,6 +5618,16 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3259217,48.6131069</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.2962667,48.5872624</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.5836326,48.8749357</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -6233,22 +5663,47 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4431025,48.9400828</coordinates></Point>
+        <Point><coordinates>2.3607586,48.9389065</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4430005,48.9401709</coordinates></Point>
+        <Point><coordinates>2.2182435,48.5873849</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4346803,48.9448324</coordinates></Point>
+        <Point><coordinates>2.2181672,48.587388</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4350322,48.9448314</coordinates></Point>
+        <Point><coordinates>2.2283973,48.5918585</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.2285054,48.5919422</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.22428,48.5933577</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.2344362,48.5939178</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.2252662,48.5940057</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.2344503,48.5940372</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -6259,6 +5714,16 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.500663,48.9612154</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.2464367,48.607943</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.0389724,48.4777585</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -6279,6 +5744,46 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4648332,48.9437525</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.2768799,48.4320409</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.2238816,48.5800576</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.2241374,48.5801807</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.259381,48.4578437</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.2593593,48.4579165</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.2719738,48.4104816</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.355986,48.4889051</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3593559,48.4915308</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -6343,22 +5848,12 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4649288,48.5675524</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4748205,48.575828</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4372894,48.566209</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4741367,48.9354126</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -6469,21 +5964,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.456257,48.9490819</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.455785,48.9491981</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4552163,48.9495998</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4549642,48.9492651</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -6613,11 +6093,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3518604,48.6762959</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.1277436,48.8201587</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -6633,27 +6108,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4475399,48.9554193</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4473789,48.9557081</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4498251,48.9542639</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4501953,48.9541124</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4400092,48.9429451</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -6753,16 +6208,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>1.9822448,48.980833</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>1.9824293,48.9807067</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.556998,48.8368144</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -6813,17 +6258,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3519898,48.8984921</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.2281589,48.7385942</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4303563,48.6059567</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -6938,31 +6373,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4691992,48.9353122</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4042272,48.5490634</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4040463,48.5490914</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.408623,48.5511227</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4090068,48.5512022</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.1688274,48.5033371</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -6988,7 +6398,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5758298,48.8473604</coordinates></Point>
+        <Point><coordinates>2.575229,48.8470021</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -7029,11 +6439,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4923827,48.5664672</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4611842,48.59284</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -7123,7 +6528,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6860249,48.2675249</coordinates></Point>
+        <Point><coordinates>2.6859864,48.2676012</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -7223,22 +6628,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.299701,48.8931548</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.3862023,48.9303564</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2877123,48.9025018</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2874009,48.902504</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -7268,42 +6658,12 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3501612,48.9305835</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3502907,48.9306083</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.3262543,48.9503674</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2945824,48.9552807</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2958365,48.9554064</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3102512,48.9583996</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>3.249766,48.513559</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.7388454,48.3362654</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -7379,6 +6739,16 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>3.012488,48.5610793</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>1.9214806,49.0251973</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>1.9212546,49.0252411</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -7543,7 +6913,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5174506,48.9082319</coordinates></Point>
+        <Point><coordinates>2.1257616,48.6206404</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -7648,16 +7018,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2504105,48.9559153</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2503564,48.9560106</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.3715702,48.9027816</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -7678,17 +7038,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2484731,48.9397465</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4537581,48.7212898</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4938899,48.8149944</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -7714,21 +7064,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.2289961,48.9082174</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6496834,48.7950594</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6499205,48.795152</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.649545,48.7953322</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -7768,22 +7103,22 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3369561,48.8400853</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5238703,48.9466571</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5241173,48.9466702</coordinates></Point>
+        <Point><coordinates>2.5238723,48.9466909</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.5560597,48.7370187</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.5419625,48.5249676</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.1524933,48.6463525</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -7853,11 +7188,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5685094,48.9452198</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.602119,48.6872814</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -7869,16 +7199,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.3385001,49.0513072</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6643444,49.0462992</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6648534,49.0463646</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -7904,26 +7224,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4261702,48.6917044</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3351078,49.0311376</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0703777,48.7029217</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0699688,48.7029957</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0703455,48.7030315</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -7984,16 +7284,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.2197196,48.916414</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.231752,48.8884576</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2318355,48.8885003</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -8068,12 +7358,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6494295,48.7949629</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.8003304,48.4391613</coordinates></Point>
+        <Point><coordinates>2.8001975,48.4391576</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -8084,11 +7369,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.906194,48.9466243</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.9061032,48.946725</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -8168,7 +7448,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5432345,49.0145513</coordinates></Point>
+        <Point><coordinates>2.5432189,49.0145419</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -8258,6 +7538,11 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.6206885,48.700403</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4396594,48.8716292</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -8278,6 +7563,11 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.5553056,48.6824861</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.429106,48.3314238</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -8288,12 +7578,22 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>1.9659581,48.7149467</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.1903273,48.8907127</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.1999948,48.8616807</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3004664,48.7497791</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -8319,6 +7619,11 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.236352,49.0617689</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>1.9489117,48.7216672</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -8359,21 +7664,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.3392786,49.0602639</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.372545,48.7524615</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.372838,48.752608</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.325912,49.024899</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -8468,11 +7758,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0881193,48.8999202</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.064939,48.8905805</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -8504,6 +7789,11 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.237459,48.9176226</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.2057914,48.7769857</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -8549,21 +7839,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.2382773,48.8830278</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.294633,48.961374</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.294387,48.961455</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.27954,48.971999</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -8703,11 +7978,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.368815,48.883571</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.5021157,49.0924723</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -8723,11 +7993,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0279765,48.6160885</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.0190176,48.6299346</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -8739,21 +8004,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.1257314,48.6715248</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.503068,49.0803945</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5026757,49.0800744</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5045404,49.0831123</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -8794,6 +8044,11 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.5293317,48.2790493</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.260581,48.7823963</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -8893,52 +8148,12 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6774261,49.0710606</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6774851,49.0712748</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.1569219,48.9375161</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.2213774,49.025244</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4041981,48.8814022</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4028194,48.8817003</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6245917,49.046888</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6254208,49.0437392</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6253835,49.0436246</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6246966,49.046475</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -9038,11 +8253,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.6003181,49.0149556</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.798,48.6363424</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -9073,11 +8283,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0980171,48.8716649</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>1.5887645,48.9764493</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -9103,16 +8308,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.7890834,48.4073257</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.7953419,48.4407757</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.7557286,48.4258781</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -9128,42 +8323,17 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3108909,48.9767913</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3104311,48.9766151</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.313873,48.9802536</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3139597,48.9804861</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3162357,48.9829162</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4071531,48.9176843</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>1.7638007,48.643574</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.3384561,48.9148844</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3130619,48.909111</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -9213,17 +8383,7 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0429773,48.7874867</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.0688328,48.9685258</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3696789,48.8657105</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -9269,11 +8429,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>1.9952528,48.8208212</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>1.9942961,48.8209344</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -9478,11 +8633,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5298362,48.9372965</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.1124866,48.8796926</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -9503,7 +8653,52 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3802567,48.8688681</coordinates></Point>
+        <Point><coordinates>2.368245,48.8356902</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3656406,48.8357551</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3669583,48.8372615</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3663239,48.8381958</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3651873,48.8375355</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3647575,48.8380811</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3626962,48.836569</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3633239,48.8357516</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3620056,48.8375303</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3615059,48.8382459</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -9519,11 +8714,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.692106,48.6709893</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2368093,48.8470236</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -9593,67 +8783,12 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3675309,48.7801203</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.1467674,48.9914973</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0932783,49.0095654</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0579961,48.9895485</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0577907,48.9894527</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0500658,48.974831</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0499824,48.9746411</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0450765,48.9676233</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0452849,48.9675125</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0445159,48.9649707</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.0177405,48.9817901</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>1.9943475,48.9784849</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>1.9943426,48.9784122</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -9798,41 +8933,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0401855,48.9458049</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0407175,48.9461713</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0421017,48.9486335</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0423299,48.9487078</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0441558,48.9510295</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0444492,48.9514841</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.042796,48.9560287</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.0425364,48.9569557</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -9938,11 +9038,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0356138,48.9122818</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.0361688,48.9119355</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -9964,11 +9059,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>1.9749185,48.8746181</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0128866,48.8576758</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -10238,26 +9328,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.5096694,48.7480266</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.8152372,48.8479319</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.8180508,48.8521034</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.8183714,48.8519517</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.8399833,48.9703631</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -10308,16 +9378,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3893842,48.9064936</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.32517,48.8975786</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.4724764,48.6277278</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -10363,11 +9423,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.0968711,48.871072</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.5104299,48.6378763</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -10388,17 +9443,22 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.2205859,48.6876346</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.2203541,48.6875953</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.1007892,48.7028081</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3550326,48.9180906</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3538879,48.4378277</coordinates></Point>
+        <Point><coordinates>2.3539267,48.4378428</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -10408,27 +9468,12 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.3675557,48.7868633</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.3787046,48.8366527</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4490741,48.9072743</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4494901,48.9068614</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.4498554,48.9068867</coordinates></Point>
+        <Point><coordinates>2.3962989,48.6200865</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -10473,16 +9518,6 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.8005856,48.4390453</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2211999,48.7331419</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>1.8609917,48.6531709</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -10494,6 +9529,11 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.3239633,48.6751642</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.214844,48.4900698</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -10563,12 +9603,12 @@
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.1278525,48.7997801</coordinates></Point>
+        <Point><coordinates>2.1277092,48.7999198</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2415273,48.8914043</coordinates></Point>
+        <Point><coordinates>2.4179873,48.8507639</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -10584,21 +9624,6 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>3.0157927,48.8047048</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2213116,48.7334806</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2069108,48.7789432</coordinates></Point>
-      </Placemark>
-      <Placemark>
-        <name>Compléter le nom de cet arrêt de bus</name>
-        <styleUrl>#placemark-blue</styleUrl>
-        <Point><coordinates>2.2072515,48.7794116</coordinates></Point>
       </Placemark>
       <Placemark>
         <name>Compléter le nom de cet arrêt de bus</name>
@@ -10629,6 +9654,126 @@
         <name>Compléter le nom de cet arrêt de bus</name>
         <styleUrl>#placemark-blue</styleUrl>
         <Point><coordinates>2.5854555,49.0043744</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3187092,48.68908</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3164399,48.6922633</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.6906939,48.94505</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3084024,48.7349277</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.9918706,48.2809525</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.4243696,49.0041507</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3276,48.7362921</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.0919661,48.6438537</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.0920543,48.6438155</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.2962834,48.8547119</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3308624,48.8514434</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3816658,48.8265916</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3812393,48.8275328</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.3807163,48.8275045</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.1571758,48.4357497</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.5323715,48.9526765</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.7342681,48.4196006</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.0067481,48.9742429</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.0818922,49.0357345</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.0968945,48.99716</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.6525747,48.2431803</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.6542904,48.2469237</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.2721052,48.7378518</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Compléter le nom de cet arrêt de bus</name>
+        <styleUrl>#placemark-blue</styleUrl>
+        <Point><coordinates>2.1841941,48.7831538</coordinates></Point>
       </Placemark>
 </Document>
 </kml>

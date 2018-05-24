@@ -75,16 +75,6 @@ function get_osm_stop_info(stop_id) {
                 bus_stop_content = {};
                 bus_stop_content.name = geo.features[i].properties.tags.name || '<i> pas de nom </i>';
 
-                var ref_STIF_brut = geo.features[i].properties.tags[tag_to_match]
-                if (!ref_STIF_brut) {
-                    alert("Pas d'association opendata pour cet arrêt !")
-                }
-                document.getElementById("osm_ref_match").innerHTML = ref_STIF_brut;
-                bus_stop_content.ref_STIF = ref_STIF_brut.split(";")
-                for (var k = 0; k < bus_stop_content.ref_STIF.length; k++) {
-                    get_navitia_stops_by_ref_id(bus_stop_content.ref_STIF[k])
-                }
-
                 //récupération des parcours desservis d'après OSM
                 relations_bus[bus_stop_id] = [];
                 for (j = 0; j < geo.features[i].properties['relations'].length; j++) {
@@ -112,6 +102,13 @@ function get_osm_stop_info(stop_id) {
                 microcosm_link +=
                     microcosm_link += "' target='_blank'>Explorer la zone</a>"
                 document.getElementById("microcosm_link").innerHTML = microcosm_link
+
+                var ref_STIF_brut = geo.features[i].properties.tags[tag_to_match]
+                document.getElementById("osm_ref_match").innerHTML = ref_STIF_brut || "pas encore de ref:FR:STIF";
+                bus_stop_content.ref_STIF = ref_STIF_brut.split(";")
+                for (var k = 0; k < bus_stop_content.ref_STIF.length; k++) {
+                    get_navitia_stops_by_ref_id(bus_stop_content.ref_STIF[k])
+                }
 
             }
         }

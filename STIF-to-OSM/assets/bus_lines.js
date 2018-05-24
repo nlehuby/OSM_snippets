@@ -44,9 +44,10 @@ add_navitia_ref_to_osm.onclick = function() {
             navitia_ref = navitia_lines_data['lines'][selected_navitia_line_index]['codes'][i]['value'];
         }
     }
+    var navitia_line_id = navitia_lines_data['lines'][selected_navitia_line_index]['id']
 
     if (navitia_ref != undefined) {
-        send_navitia_ref_to_openstreetmap(navitia_ref, osm_relation_code, after_osm_modif);
+        send_navitia_ref_to_openstreetmap(navitia_ref, osm_relation_code, navitia_line_id);
     } else {
         console.log("impossible de trouver le code à envoyer à OSM")
     }
@@ -62,7 +63,7 @@ $(document).ready(function() {
 
     get_osm_line_info(osm_relation_code);
     if (line_commercial_code) {
-      get_navitia_lines_candidates(line_commercial_code);
+        get_navitia_lines_candidates(line_commercial_code);
     }
 });
 
@@ -73,17 +74,15 @@ function getParameterByName(name) {
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
-function send_navitia_ref_to_openstreetmap(navitia_ref, osm_relation_id, after_osm_modif) {
+function send_navitia_ref_to_openstreetmap(navitia_ref, osm_relation_id, navitia_line_id) {
     var relation_xml = get_node_or_way(osm_relation_id, 'relation'); //mouais, va ptet falloir changer le nom de la fonction dans la lib quand même ...
     edit_tag(relation_xml, 'relation', tag_to_match, navitia_ref)
+
+    function after_osm_modif() {
+        document.location.href = "./route_choose.html?osm_line_id=" + osm_relation_id + "&navitia_line_id=" + navitia_line_id
+    }
     send_data_to_osm(relation_xml, osm_relation_id, "relation", "Ajout de référence opendata STIF sur les lignes", after_osm_modif)
 }
-
-function after_osm_modif(changeset_id, junk) {
-    document.location.href = "https://www.openstreetmap.org/changeset/" + changeset_id
-}
-
-
 
 function get_navitia_lines_candidates(line_code) {
     $.ajax({
@@ -134,7 +133,7 @@ function display_navitia_info(navitia_line_info) {
     document.getElementById("navitia_line_route").innerHTML = navitia_line_info['routes'][0]['name'];
     document.getElementById("navitia_line_mode").innerHTML = navitia_line_info['commercial_mode']['name'];
     document.getElementById("navitia_line_network").innerHTML = navitia_line_info['network']['name'];
-    document.getElementById("navitia_line_color").style = "width:20px;height:20px;background:#" + navitia_line_info['color'] +";";
+    document.getElementById("navitia_line_color").style = "width:20px;height:20px;background:#" + navitia_line_info['color'] + ";";
     //TODO : mettre des liens navitia playground
 }
 
@@ -193,7 +192,7 @@ function get_osm_line_info(relation_id) {
             document.getElementById("osm_line_mode").innerHTML = relation['tags']['route_master'] ? relation['tags']['route_master'] : "<i style='color:red;'>Pas de mode renseigné</i>";
             document.getElementById("osm_line_network").innerHTML = relation['tags']['network'] ? relation['tags']['network'] : "<i style='color:red;'>tag network non renseigné</i>";
             document.getElementById("osm_line_operator").innerHTML = relation['tags']['operator'] ? relation['tags']['operator'] : "<i style='color:red;'>tag operator non renseigné</i>";
-            document.getElementById("osm_line_color").style = "width:20px;height:20px;background:" + relation['tags']['colour'] +";";
+            document.getElementById("osm_line_color").style = "width:20px;height:20px;background:" + relation['tags']['colour'] + ";";
 
             //TODO : mettre des liens OSM
             var is_there_a_match = document.getElementById("osm_ref_match");

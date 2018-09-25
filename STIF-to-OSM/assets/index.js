@@ -2,9 +2,6 @@
 	nlehuby
 */
 
-//mise à jour de la date
-document.getElementById('update_date').innerHTML = update_date
-
 var table;
 //datatables
 $(document).ready(function() {
@@ -18,7 +15,7 @@ $(document).ready(function() {
         });
     }
 
-    parseData("data/lignes.csv", display_lines_in_table);
+    parseData("https://raw.githubusercontent.com/Jungle-Bus/ref-fr-STIF/gh-pages/data/lignes.csv", display_lines_in_table);
 
 
     function display_lines_in_table(data_lines) {

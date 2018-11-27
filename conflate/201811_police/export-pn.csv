@@ -1,0 +1,7 @@
+service;adresse_geographique;telephone;departement;code_commune_insee;voie;code_postal;commune;geocodage_epsg;geocodage_x;geocodage_y;geocodage_x_GPS;geocodage_y_GPS
+"Commissariat de police d'Oyonnax";"57 Rue Pasteur 01100 OYONNAX";"+33 4 74 77 47 33";"01";"01283";"57 Rue Pasteur";"01100";"OYONNAX";"2154";"904292.38";"6576100.064";"5.65241071";"46.2538898"
+"Commissariat de police de Bourg en Bresse";"4 Rue des Remparts 01000 BOURG EN BRESSE";"+33 4 74 47 20 20";"01";"01053";"4 Rue des Remparts";"01000";"BOURG EN BRESSE";"2154";"871543.203";"6569852.464";"5.22517643";"46.20676468"
+"Commissariat de police de Château Thierry";"Avenue de la Mare aux Canes 02400 CHATEAU THIERRY";"+33 3 23 84 26 26";"02";"02168";"Avenue de la Mare aux Canes";"02400";"CHATEAU THIERRY";"2154";"728457.21";"6883197.171";"3.38927094";"49.04801921"
+"Commissariat de police de Laon";"2 Boulevard Gras Brancourt 02000 LAON";"+33 3 23 27 79 79";"02";"02408";"2 Boulevard Gras Brancourt";"02000";"LAON";"2154";"745326.775";"6941354.585";"3.62633491";"49.56982361"
+"Commissariat de police de Saint Quentin";"7 Avenue du Général de Gaulle 02100 ST QUENTIN";"+33 3 23 06 20 20";"02";"02691";"7 Avenue du Général de Gaulle";"02100";"ST QUENTIN";"2154";"721359.111";"6971576.277";"3.29671879";"49.84262881"
+"Commissariat de police de Nouméa - Secteur Sud-Tuband";"33 Rue Louis Boucher 98800 NOUMEA";"+687 23 26 00";"988";"98818";"33 Rue Louis Boucher";"98800";"NOUMEA";"3163";"446673.934";"212702.208";"166.45292";"-22.28784"

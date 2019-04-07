@@ -4,11 +4,11 @@
 import requests
 import json
 
-#bbox_from_config = "48.817037474819,2.5778388977051,48.884134192869,2.7189445495605"
-#zone_name = "Marne la Vallée, France"
+bbox_from_config = "48.817037474819,2.5778388977051,48.884134192869,2.7189445495605"
+zone_name = "Marne la Vallée, France"
 
-bbox_from_config = "5.4717813427336,-0.45249938964844,5.8776490743906,0.11192321777344"
-zone_name = "Accra, Ghana"
+#bbox_from_config = "5.4717813427336,-0.45249938964844,5.8776490743906,0.11192321777344"
+#zone_name = "Accra, Ghana"
 
 bbox_for_overpass = bbox_from_config
 

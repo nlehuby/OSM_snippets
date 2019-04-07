@@ -1,0 +1,22 @@
+item,cl,titre,error_type
+1260,1,Le trajet de cette route est discontinu,geometry
+1260,2,L’arrêt ou la plateforme est trop éloigné du trajet de cette route,geometry
+1260,5,"Chaque attribut “network”, “operator”, “ref”, “colour” devrait correspondre à l’identique sur les relations “route” et “route_master”",line_metadata
+2140,21402,Missing network tag on a public_transport relation,line_metadata
+2140,21403,Missing operator tag on a public_transport relation,line_metadata
+2140,21404,Missing ref tag for line number on a public_transport relation,line_metadata
+2140,21405,Missing from/to tag on a public_transport route relation,line_metadata
+9014,9014009,"Missing transportation mode, add a tag route = bus/coach/tram/etc",line_metadata
+9014,9014010,"Missing transportation mode, change tag route to route_master",line_metadata
+9014,9014013,Check the operator tag,line_metadata
+9014,9014014,Check the network tag,line_metadata
+8040,*,(intégration de données opendata),opendata
+9014,9014006,Check if the note can be deleted,stop_metadata
+9014,9014007,The network should be on the transport lines and not on the stops,stop_metadata
+9014,9014008,The operator should be on the transport lines and not on the stops,stop_metadata
+1260,3,La relation “route_master” a des membres qui ne sont pas des relations de type “route”,structural
+1260,4,Relation “route” de transport public non incluse dans une relation “route_master”,structural
+2140,21401,Missing public_transport:version tag on a public_transport route relation,structural
+2140,21411,Missing public_transport tag on a public transport stop,structural
+2140,21412,Missing legacy tag on a public transport stop,structural
+9014,9014002,Is it a bus stop or a bus station?,structural

@@ -1,0 +1,1930 @@
+route_short_name,osm_transport_mode,agency_name
+Fs,bus,Pays de Meayx
+F,bus,Pays de Meaux
+G,bus,Pays de Meaux
+J,bus,Pays de Meaux
+I,bus,Pays de Meaux
+Es,bus,Pays de Meaux
+B,bus,Pays de Meaux
+A,bus,Pays de Meaux
+C,bus,Pays de Meaux
+E,bus,Pays de Meaux
+D,bus,Pays de Meaux
+Ns,bus,Pays de Meaux
+N,bus,Pays de Meaux
+O,bus,Pays de Meaux
+Qs,bus,Pays de Meaux
+Os,bus,Pays de Meaux
+M,bus,Pays de Meaux
+K,bus,Pays de Meaux
+Js,bus,Pays de Meaux
+Ks,bus,Pays de Meaux
+Ls,bus,Pays de Meaux
+L,bus,Pays de Meaux
+100,bus,Express 100 Torcy-Créteil
+191-100,bus,Keolis Orly Rungis
+GO Cparis,bus,Keolis Orly Rungis
+Beauvais,bus,Aéroport Paris Beauvais
+100,bus,Express A14
+Exp A14,bus,Express A14
+Exp A14,bus,Express A14
+FILEO FO,bus,Filéo
+FILEO G,bus,Filéo
+FILEO O,bus,Filéo
+32,bus,Filéo
+100C,bus,KMR
+100P,bus,Busval d'Oise
+27,bus,Filéo
+FILEO V,bus,Filéo
+FILEO VB,bus,Filéo
+FILEO VE,bus,Filéo
+FILEO T,bus,Filéo
+FILEO S,bus,Filéo
+FILEO SL,bus,Filéo
+FILEO SP,bus,Filéo
+95-42,bus,Busval d'Oise
+95-43,bus,Busval d'Oise
+95-41,bus,Busval d'Oise
+95-04,bus,Busval d'Oise
+95-11,bus,Busval d'Oise
+95-47,bus,Busval d'Oise
+95-48,bus,Busval d'Oise
+95-46,bus,Busval d'Oise
+95-44,bus,Busval d'Oise
+95-45,bus,Busval d'Oise
+E,bus,TAM
+F,bus,TAM
+G,bus,TAM
+A,bus,TAM
+C,bus,TAM
+D,bus,TAM
+M,bus,TAM
+X,bus,TAM
+Z,bus,TAM
+I,bus,TAM
+J,bus,TAM
+K,bus,TAM
+95-08,bus,Busval d'Oise
+95-12,bus,Busval d'Oise
+95-16,bus,Busval d'Oise
+95-05,bus,Busval d'Oise
+95-06,bus,Busval d'Oise
+95-07,bus,Busval d'Oise
+95-33,bus,Busval d'Oise
+95-34,bus,Busval d'Oise
+95-35,bus,Busval d'Oise
+95-17,bus,Busval d'Oise
+95-31,bus,Busval d'Oise
+95-32,bus,Busval d'Oise
+EXP A14 B,bus,Express A14
+EXP A14 C,bus,Express A14
+EXP A14 M,bus,Express A14
+CDG,bus,MAGICAL SHUTTLE
+Orly,bus,MAGICAL SHUTTLE
+Selected,bus,MAGICAL SHUTTLE
+15,bus,Com'Bus
+16,bus,Com'Bus
+109,bus,Com'Bus
+110,bus,Com'Bus
+19,bus,Com'Bus
+20,bus,Com'Bus
+17,bus,Com'Bus
+18,bus,Com'Bus
+10,bus,Com'Bus
+02B,bus,Com'Bus
+02C,bus,Com'Bus
+01,bus,Com'Bus
+02A,bus,Com'Bus
+07,bus,Com'Bus
+09,bus,Com'Bus
+04,bus,Com'Bus
+05,bus,Com'Bus
+91,bus,Com'Bus
+91,bus,Com'Bus
+89,bus,Com'Bus
+90,bus,Com'Bus
+P,bus,Com'Bus
+R,bus,Com'Bus
+L,bus,Com'Bus
+N,bus,Com'Bus
+88,bus,Actipôles
+26,bus,Com'Bus
+52,bus,Com'Bus
+21,bus,Com'Bus
+22,bus,Com'Bus
+88,bus,Actipôles
+88,bus,Actipôles
+81,bus,Com'Bus
+82,bus,Com'Bus
+31,bus,Phébus
+32,bus,Phébus
+33,bus,Phébus
+22,bus,Phébus
+23,bus,Phébus
+24,bus,Phébus
+34,bus,Phébus
+42,bus,Phébus
+45,bus,Phébus
+60,bus,Phébus
+35,bus,Phébus
+36,bus,Phébus
+40,bus,Phébus
+4,bus,Titus
+40,bus,Aubergenville
+A,bus,Paris-Saclay
+1,bus,Titus
+2,bus,Titus
+3,bus,Titus
+E,bus,Paris-Saclay
+G,bus,Paris-Saclay
+J,bus,Paris-Saclay
+B,bus,Paris-Saclay
+C,bus,Paris-Saclay
+D,bus,Paris-Saclay
+N1,bus,ADP
+N2,bus,ADP
+GDN-CRE,bus,SNCF
+EVN-PBT,bus,SNCF
+EPY-PSB,bus,SNCF
+GDN-GVE,bus,SNCF
+H EMT-PNB,bus,SNCF
+H CRL-PNB,bus,SNCF
+GOU-CRE,bus,SNCF
+D PST-GSV,bus,SNCF
+D PLY-VSG,bus,SNCF
+D MAA-VSG,bus,SNCF
+D VSG-MLU,bus,SNCF
+EPY-PON,bus,SNCF
+EPY-PBT,bus,SNCF
+E VSM-TOU,bus,SNCF
+JVL-SQY,bus,SNCF
+J STV-MLJ,bus,SNCF
+J PSY-MRX,bus,SNCF
+JVL-VRG,bus,SNCF
+LUZ-MNT,bus,SNCF
+LBT-PSF,bus,SNCF/RATP
+LBT-PES,bus,SNCF/RATP
+H-PBE-CRE,bus,SNCF
+H ERM-PST,bus,SNCF
+H EMT-PON,bus,SNCF
+HCS - MLJ,bus,SNCF
+J MRX-MLJ,bus,SNCF
+J GIS-PON,bus,SNCF
+J ARG-PON,bus,SNCF
+C PAZ-JVY,bus,SNCF
+C PAZ-CSY,bus,SNCF
+C DDN-PAZ,bus,SNCF
+C PAZ-MSY,bus,SNCF
+CDG-PES,bus,SNCF/RATP
+C PAZ-SME,bus,SNCF
+C PAZ-PRU,bus,SNCF
+ASB-PES,bus,SNCF/RATP
+ANY-SDF,bus,SNCF/RATP
+A STV-CLG,bus,SNCF/RATP
+B CDG-ANY,bus,SNCF/RATP
+C BTY-DDN,bus,SNCF
+B CDG-PST,bus,SNCF/RATP
+B CDG-PSF,bus,SNCF/RATP
+D CRL-PST,bus,SNCF
+D CBL-PLY,bus,SNCF
+D CBL-MLB,bus,SNCF
+D CRL-SDF,bus,SNCF
+D JSY-FRT,bus,SNCF
+D JSY-CBL,bus,SNCF
+D GSV-SDF,bus,SNCF
+CLH - PSL,bus,SNCF/RATP
+CGY - PES,bus,SNCF
+CDG-PSF,bus,SNCF/RATP
+CLH-PSL,bus,SNCF
+D CBL-JSY,bus,SNCF
+CRE PON,bus,SNCF
+CLH-STV,bus,SNCF
+LUZ-PES,bus,SNCF
+PSF-LBT,bus,SNCF/RATP
+PSF-CDG,bus,SNCF/RATP
+POS - NTP,bus,SNCF/RATP
+PSF-MYC,bus,SNCF/RATP
+RBP - CGY,bus,SNCF
+RAM MON,bus,SNCF
+PVS-PES,bus,SNCF
+PMO - RBT,bus,SNCF
+PMO - PLG,bus,SNCF
+PLY-MEL,bus,SNCF
+PMO - VLC,bus,SNCF
+PON-PAZ,bus,SNCF
+PON - PET,bus,SNCF
+PMO-DRX,bus,SNCF
+VRC-MSY,bus,SNCF
+VLC - RBT,bus,SNCF
+VLC - DRX,bus,SNCF
+VRC-PAZ,bus,SNCF
+VSG-CBE,bus,SNCF
+VSG - MLH,bus,SNCF
+VRG-JVL,bus,SNCF
+STC-SNB,bus,SNCF
+SNB - PSL,bus,SNCF
+SDF-ANY,bus,SNCF/RATP
+STV-CLH,bus,SNCF
+U DEF-LVR,bus,SNCF
+TOU - PST,bus,SNCF
+T4,bus,SNCF
+MTL - PSL,bus,SNCF
+MSY-VRC,bus,SNCF
+MNT-LUZ,bus,SNCF
+MYC-PSF,bus,SNCF/RATP
+N PLG-DRX,bus,SNCF
+N LVR-RBT,bus,SNCF
+N DRX-PMP,bus,SNCF
+MEL - PLY,bus,SNCF
+MEA-PSE,bus,SNCF
+MCE-PES,bus,SNCF/RATP
+MEL-MAU,bus,SNCF
+MLJ - PLG,bus,SNCF
+MGI-GDL,bus,SNCF
+MEL-MGI,bus,SNCF
+PET - CBP,bus,SNCF
+PES-PRO,bus,SNCF
+PES-CLG,bus,SNCF
+PET-CLM,bus,SNCF
+PLY-CBE,bus,SNCF
+PLG - PMT,bus,SNCF
+PLG - MLJ,bus,SNCF
+NTF - CLH,bus,SNCF/RATP
+N VSC-PLG,bus,SNCF
+N PMP-VLC,bus,SNCF
+P CTH-PET,bus,SNCF
+PBT-PES,bus,SNCF
+PAZ - DDN,bus,SNCF
+P PET-MUX,bus,SNCF
+611,bus,Seine-Saint-Denis
+610,bus,Seine-Saint-Denis
+609,bus,Seine-Saint-Denis
+616,bus,Seine-Saint-Denis
+615,bus,Seine-Saint-Denis
+613,bus,Seine-Saint-Denis
+603,bus,Seine-Saint-Denis
+602,bus,Seine-Saint-Denis
+601,bus,Seine-Saint-Denis
+607,bus,Seine-Saint-Denis
+605,bus,Seine-Saint-Denis
+604,bus,Seine-Saint-Denis
+642,bus,Seine-Saint-Denis
+640,bus,Seine-Saint-Denis
+637,bus,Seine-Saint-Denis
+645,bus,Seine-Saint-Denis
+644,bus,Seine-Saint-Denis
+643,bus,Seine-Saint-Denis
+619,bus,Seine-Saint-Denis
+618,bus,Seine-Saint-Denis
+617,bus,Seine-Saint-Denis
+627,bus,Seine-Saint-Denis
+623,bus,Seine-Saint-Denis
+620,bus,Seine-Saint-Denis
+14,bus,TVS
+1,bus,TVS
+4,bus,TVS
+3,bus,TVS
+85-01,bus,CARS PERRON
+7002,bus,CARS SOEUR
+7001 SCO,bus,CARS SOEUR
+7001,bus,CARS SOEUR
+7006,bus,CARS SOEUR
+7005,bus,CARS SOEUR
+7004,bus,CARS SOEUR
+3803,bus,VALBUS
+3802,bus,VALBUS
+3801,bus,VALBUS
+NAVETTE,bus,Commune de Bouffemont
+3805,bus,VALBUS
+3804,bus,VALBUS
+116,bus,CARS MOREAU
+003,bus,CARS MOREAU
+201,bus,CARS MOREAU
+203,bus,CARS MOREAU
+202,bus,CARS MOREAU
+001,bus,CARS MOREAU
+001,bus,CARS MOREAU
+002,bus,CARS MOREAU
+003,bus,CARS MOREAU
+002,bus,VIAMO-MELUN
+204,bus,CARS MOREAU
+4 E,bus,CARS MOREAU
+4 D,bus,CARS MOREAU
+BRAY 11,bus,CARS MOREAU
+BRAY 9,bus,CARS MOREAU
+BRAY 3,bus,CARS MOREAU
+4 A,bus,CARS MOREAU
+211,bus,CARS MOREAU
+4 B,bus,CARS MOREAU
+4 C,bus,CARS MOREAU
+4 B+D,bus,CARS MOREAU
+15,bus,Paladin
+16,bus,Paladin
+17,bus,Paladin
+14,bus,Paladin
+1,bus,Paladin
+11,bus,Paladin
+12,bus,Paladin
+18,bus,Paladin
+7,bus,Paladin
+8,bus,Paladin
+9,bus,Paladin
+6,bus,Paladin
+2,bus,Paladin
+3,bus,Paladin
+4,bus,Paladin
+12,bus,PROCARS
+11,bus,PROCARS
+10,bus,PROCARS
+15,bus,Siyonne
+14,bus,PROCARS
+13,bus,PROCARS
+08,bus,PROCARS
+03,bus,PROCARS
+02,bus,PROCARS
+01,bus,PROCARS
+07,bus,Seine et Marne Express
+06,bus,PROCARS
+05,bus,PROCARS
+16,bus,PROCARS
+PROBUS D,bus,PROCARS
+PROBUS C,bus,PROCARS
+PROBUS B,bus,PROCARS
+VILLEFERM,bus,PROCARS
+PROBUSsco,bus,PROCARS
+PROBUS E,bus,PROCARS
+PROBUS A,bus,PROCARS
+47,bus,Seine et Marne Express
+46,bus,PROCARS
+17,bus,PROCARS
+NANGIBUSV,bus,PROCARS
+NANGIBUSR,bus,PROCARS
+50,bus,Seine et Marne Express
+12,bus,Valmy
+13,bus,Valmy
+10,bus,Valmy
+11,bus,Valmy
+14,bus,Valmy
+37,bus,Valmy
+SOISY BUS,bus,Valmy
+15,bus,Valmy
+16,bus,Valmy
+254,bus,RATP
+253,bus,RATP
+255,bus,RATP
+258,bus,RATP
+256,bus,RATP
+252,bus,RATP
+248,bus,RATP
+247,bus,RATP
+249,bus,RATP
+251,bus,RATP
+250,bus,RATP
+259,bus,RATP
+270,bus,RATP
+27,bus,RATP
+272,bus,RATP
+275,bus,RATP
+274,bus,RATP
+269,bus,RATP
+260,bus,RATP
+26,bus,RATP
+261,bus,RATP
+268,bus,RATP
+262,bus,RATP
+213,bus,RATP
+212,bus,RATP
+214,bus,RATP
+216,bus,RATP
+215,bus,RATP
+211,bus,RATP
+208B,bus,RATP
+208A,bus,RATP
+208S,bus,RATP
+210,bus,RATP
+21,bus,RATP
+217,bus,RATP
+239,bus,RATP
+238,bus,RATP
+24,bus,RATP
+244,bus,RATP
+241,bus,RATP
+237,bus,RATP
+220,bus,RATP
+22,bus,RATP
+221,bus,RATP
+235,bus,RATP
+234,bus,RATP
+276,bus,RATP
+323,bus,RATP
+322,bus,RATP
+325,bus,RATP
+334,bus,RATP
+330,bus,RATP
+321,bus,RATP
+318,bus,RATP
+317,bus,RATP
+319,bus,RATP
+320,bus,RATP
+32,bus,RATP
+337,bus,RATP
+351,bus,RATP
+350,bus,RATP
+353,bus,RATP
+356,bus,RATP
+355,bus,RATP
+35,bus,RATP
+341,bus,RATP
+340,bus,RATP
+346,bus,RATP
+349,bus,RATP
+347,bus,RATP
+290,bus,RATP
+29,bus,RATP
+291,bus,RATP
+294,bus,RATP
+292,bus,RATP
+289,bus,RATP
+28,bus,RATP
+278,bus,RATP
+281,bus,RATP
+286,bus,RATP
+285,bus,RATP
+297,bus,RATP
+308,bus,RATP
+306,bus,RATP
+31,bus,RATP
+312,bus,RATP
+310,bus,RATP
+304,bus,RATP
+30,bus,RATP
+299,bus,RATP
+301,bus,RATP
+303,bus,RATP
+302,bus,RATP
+132,bus,RATP
+131,bus,RATP
+133,bus,RATP
+137,bus,RATP
+134,bus,RATP
+129,bus,RATP
+125,bus,RATP
+124,bus,RATP
+126,bus,RATP
+128,bus,RATP
+127,bus,RATP
+138,bus,RATP
+147,bus,RATP
+146,bus,RATP
+148,bus,RATP
+151,bus,RATP
+150,bus,RATP
+145,bus,RATP
+140,bus,RATP
+139,bus,RATP
+141,bus,RATP
+144,bus,RATP
+143,bus,RATP
+108,bus,RATP
+107,bus,RATP
+109,bus,RATP
+111,bus,RATP
+110,bus,RATP
+106,bus,RATP
+102,bus,RATP
+101,bus,RATP
+103,bus,RATP
+105,bus,RATP
+104,bus,RATP
+112,bus,RATP
+120,bus,RATP
+119,bus,RATP
+121,bus,RATP
+123,bus,RATP
+122,bus,RATP
+118,bus,RATP
+114,bus,RATP
+113,bus,RATP
+115,bus,RATP
+117,bus,RATP
+116,bus,RATP
+152,bus,RATP
+187,bus,RATP
+186,bus,RATP
+188,bus,RATP
+190,bus,RATP
+189,bus,RATP
+185,bus,RATP
+181,bus,RATP
+180,bus,RATP
+182,bus,RATP
+184,bus,RATP
+183,bus,RATP
+191,bus,RATP
+201,bus,RATP
+20,bus,RATP
+203,bus,RATP
+207,bus,RATP
+206,bus,RATP
+199,bus,RATP
+194,bus,RATP
+192,bus,RATP
+195,bus,RATP
+197,bus,RATP
+196,bus,RATP
+164,bus,RATP
+163,bus,RATP
+165,bus,RATP
+167,bus,RATP
+166,bus,RATP
+162,bus,RATP
+157,bus,RATP
+153,bus,RATP
+158,bus,RATP
+160,bus,RATP
+159,bus,RATP
+168,bus,RATP
+176,bus,RATP
+175,bus,RATP
+177,bus,RATP
+179,bus,RATP
+178,bus,RATP
+174,bus,RATP
+170,bus,RATP
+169,bus,RATP
+171,bus,RATP
+173,bus,RATP
+172,bus,RATP
+N41,bus,Noctilien
+N35,bus,Noctilien
+N42,bus,Noctilien
+N44,bus,Noctilien
+N43,bus,Noctilien
+N34,bus,Noctilien
+N24,bus,Noctilien
+N23,bus,Noctilien
+N31,bus,Noctilien
+N33,bus,Noctilien
+N32,bus,Noctilien
+N45,bus,Noctilien
+N71,bus,Noctilien
+N66,bus,Noctilien
+NAVETTE,bus,RATP
+ORLYBUS,bus,RATP
+NEY-FLA,bus,RATP
+N63,bus,Noctilien
+N52,bus,Noctilien
+N51,bus,Noctilien
+N53,bus,Noctilien
+N62,bus,Noctilien
+N61,bus,Noctilien
+EOLIEN,bus,RATP
+COLOMB,bus,RATP
+HIRONDE,bus,RATP
+MONTMAR,bus,RATP
+MONAST,bus,RATP
+CLAMIBU,bus,RATP
+BATIGNO,bus,RATP
+AUDONIE,bus,RATP
+BIEVRES,bus,RATP
+CHOISYB,bus,RATP
+CHARONN,bus,RATP
+N01,bus,Noctilien
+N153,bus,Noctilien
+N15,bus,Noctilien
+N16,bus,Noctilien
+N22,bus,Noctilien
+N21,bus,Noctilien
+N14,bus,Noctilien
+N11,bus,Noctilien
+N02,bus,Noctilien
+N12,bus,Noctilien
+N13,bus,Noctilien
+N122,bus,Noctilien
+PC,bus,RATP
+TILLBUS,bus,RATP
+THIAIS,bus,RATP
+TIM,bus,RATP
+TUC,bus,RATP
+TUB,bus,RATP
+SUBB,bus,RATP
+PORT,bus,RATP
+PETIT-F,bus,RATP
+PTITBUS,bus,RATP
+ROISSYB,bus,RATP
+RIVER,bus,RATP
+TUVIM,bus,RATP
+V7,bus,RATP
+V6,bus,RATP
+V5,bus,RATP
+V1,bus,RATP
+TVM,bus,RATP
+V2,bus,RATP
+V4,bus,RATP
+V3,bus,RATP
+467,bus,RATP
+46,bus,RATP
+47,bus,RATP
+48,bus,RATP
+471,bus,RATP
+459,bus,RATP
+421,bus,RATP
+42,bus,RATP
+426,bus,RATP
+45,bus,RATP
+43,bus,RATP
+485,bus,RATP
+528,bus,RATP
+520,bus,RATP
+53,bus,RATP
+545,bus,RATP
+54,bus,RATP
+52,bus,RATP
+487,bus,RATP
+486,bus,RATP
+488,bus,RATP
+512,bus,RATP
+492,bus,RATP
+378,bus,RATP
+372,bus,RATP
+379,bus,RATP
+380,bus,RATP
+38,bus,RATP
+370,bus,RATP
+361,bus,RATP
+360,bus,RATP
+366,bus,RATP
+368,bus,RATP
+367,bus,RATP
+385,bus,RATP
+395,bus,RATP
+394,bus,RATP
+396,bus,RATP
+40,bus,RATP
+399,bus,RATP
+393,bus,RATP
+389,bus,RATP
+388,bus,RATP
+39,bus,RATP
+391,bus,RATP
+390,bus,RATP
+559A,bus,RATP
+81,bus,RATP
+80,bus,RATP
+82,bus,RATP
+84,bus,RATP
+83,bus,RATP
+77,bus,RATP
+73,bus,RATP
+72,bus,RATP
+74,bus,RATP
+76,bus,RATP
+75,bus,RATP
+85,bus,RATP
+94,bus,RATP
+93,bus,RATP
+95,bus,RATP
+AS-SURE,bus,RATP
+96,bus,RATP
+92,bus,RATP
+87,bus,RATP
+86,bus,RATP
+88,bus,RATP
+91,bus,RATP
+89,bus,RATP
+57,bus,RATP
+565,bus,RATP
+58,bus,RATP
+595,bus,RATP
+59,bus,RATP
+564,bus,RATP
+559C,bus,RATP
+559B,bus,RATP
+559D,bus,RATP
+563,bus,RATP
+56,bus,RATP
+60,bus,RATP
+68,bus,RATP
+67,bus,RATP
+69,bus,RATP
+71,bus,RATP
+70,bus,RATP
+66,bus,RATP
+62,bus,RATP
+61,bus,RATP
+63,bus,RATP
+65,bus,RATP
+64,bus,RATP
+26,bus,Poissy Aval - Deux Rives de Seine
+22,bus,Poissy Aval - Deux Rives de Seine
+3,bus,Poissy Aval - Deux Rives de Seine
+29,bus,Poissy Aval - Deux Rives de Seine
+12,bus,Poissy Aval - Deux Rives de Seine
+1,bus,Poissy Aval - Deux Rives de Seine
+2,bus,Poissy Aval - Deux Rives de Seine
+13,bus,Poissy Aval - Deux Rives de Seine
+37,bus,Poissy Aval - Deux Rives de Seine
+35,bus,Poissy Aval - Deux Rives de Seine
+80,bus,Express 80 - Mantes-Cergy
+39,bus,Poissy Aval - Deux Rives de Seine
+31,bus,Poissy Aval - Deux Rives de Seine
+30,bus,Poissy Aval - Deux Rives de Seine
+33,bus,Poissy Aval - Deux Rives de Seine
+32,bus,Poissy Aval - Deux Rives de Seine
+21,bus,Mobicaps
+20,bus,Mobicaps
+2,bus,Mobicaps
+3,bus,Mobicaps
+23,bus,Mobicaps
+22,bus,Mobicaps
+15,bus,Mobicaps
+14,bus,Mobicaps
+1,bus,Mobicaps
+19,bus,Mobicaps
+18,bus,Mobicaps
+16,bus,Mobicaps
+S2,bus,Mobicaps
+S15,bus,Mobicaps
+S1,bus,Mobicaps
+S9,bus,Mobicaps
+S4,bus,Mobicaps
+S3,bus,Mobicaps
+6,bus,Mobicaps
+5,bus,Mobicaps
+4,bus,Mobicaps
+9,bus,Mobicaps
+8,bus,Mobicaps
+7,bus,Mobicaps
+91-04,bus,Albatrans
+91-05,bus,Albatrans
+91-03,bus,Albatrans
+91-01,bus,Albatrans
+91-02,bus,Albatrans
+91-06,bus,Albatrans
+91-10,bus,Albatrans
+91-11,bus,Albatrans
+91-09,bus,Albatrans
+91-07,bus,Albatrans
+91-08,bus,Albatrans
+18,bus,Trans Val de France
+17,bus,Trans Val de France
+12,bus,Trans Val de France
+19,bus,Trans Val de France
+Express20,bus,Seine et Marne Express
+9,bus,Trans Val de France
+8,bus,Trans Val de France
+184-006,bus,LES CARS BLEUS
+184-008,bus,LES CARS BLEUS
+184-013,bus,LES CARS BLEUS
+184-005,bus,LES CARS BLEUS
+184-001,bus,LES CARS BLEUS
+184-003,bus,LES CARS BLEUS
+184-004,bus,LES CARS BLEUS
+284-004,bus,LES CARS BLEUS
+284-006,bus,LES CARS BLEUS
+284-007,bus,LES CARS BLEUS
+284-003,bus,LES CARS BLEUS
+184-014,bus,LES CARS BLEUS
+284-001,bus,LES CARS BLEUS
+284-002,bus,LES CARS BLEUS
+4,bus,Apolo 7
+4s,bus,Apolo 7
+5,bus,Apolo 7
+3s,bus,Apolo 7
+1,bus,Apolo 7
+2,bus,Apolo 7
+3,bus,Apolo 7
+8s,bus,Apolo 7
+9,bus,Apolo 7
+9s,bus,Apolo 7
+8,bus,Apolo 7
+6,bus,Apolo 7
+7,bus,Apolo 7
+7s,bus,Apolo 7
+17,bus,Seine et Marne Express
+20,bus,Yerres
+24,bus,Yerres
+14,bus,Yerres
+12A,bus,TRAMY
+12B,bus,TRAMY
+12C,bus,TRAMY
+28B,bus,Sol'R
+28C,bus,Sol'R
+29A,bus,TRAMY
+28A,bus,Sol'R
+25,bus,TRAMY
+26,bus,TRAMY
+27,bus,TRAMY
+10,bus,TRAMY
+02D,bus,TRAMY
+02E,bus,TRAMY
+02F,bus,TRAMY
+02C,bus,TRAMY
+01,bus,Seine et Marne Express
+02A,bus,TRAMY
+02B,bus,TRAMY
+09B,bus,TRAMY
+09C,bus,TRAMY
+09M,bus,TRAMY
+09A,bus,TRAMY
+03A,bus,TRAMY
+03B,bus,TRAMY
+03C,bus,TRAMY
+37RPI,bus,Yerres
+38,bus,TRAMY
+39,bus,TRAMY
+37C,bus,Yerres
+35D,bus,Yerres
+37A,bus,Yerres
+37B,bus,Yerres
+A,bus,TRAMY
+B,bus,TRAMY
+D,bus,TRAMY
+42,bus,TRAMY
+40,bus,Pays Fertois
+41A,bus,Pays Fertois
+41B,bus,Pays Fertois
+35C,bus,Yerres
+30C,bus,Arlequin
+31A,bus,TRAMY
+31B,bus,TRAMY
+30B,bus,Arlequin
+29B,bus,TRAMY
+29M,bus,TRAMY
+30A,bus,Arlequin
+34B,bus,Yerres
+35A,bus,Yerres
+35B,bus,Yerres
+34A,bus,Yerres
+31C,bus,TRAMY
+32,bus,Yerres
+33,bus,Sol'R
+30-23,bus,ValBus
+30-25,bus,LACROIX
+30-22,bus,ValBus
+30-21Est,bus,Parisis
+30-21Oues,bus,Parisis
+30-27,bus,LACROIX
+30-32,bus,LACROIX
+30-33,bus,LACROIX
+30-31,bus,LACROIX
+30-28,bus,LACROIX
+30-29,bus,LACROIX
+30-07,bus,Parisis
+30-09,bus,Parisis
+30-05,bus,Parisis
+30-03,bus,ValBus
+30-04,bus,LACROIX
+30-10,bus,Parisis
+30-14,bus,ValBus
+30-18,bus,Parisis
+30-13,bus,LACROIX
+30-11,bus,ValBus
+30-12,bus,Parisis
+30-34,bus,LACROIX
+95-19C,bus,Valoise
+95-20,bus,Valoise
+95-19B,bus,Valoise
+95-03B,bus,Valoise
+95-19A,bus,Valoise
+95-21,bus,Valoise
+CitéVal N,bus,LACROIX
+CitéVal S,bus,LACROIX
+CitéVal F,bus,LACROIX
+95-26,bus,Busval d'Oise
+CitéVal C,bus,LACROIX
+30-39,bus,LACROIX
+30-42,bus,LACROIX
+30-38,bus,Parisis
+30-36,bus,LACROIX
+30-37,bus,ValBus
+30-43,bus,ValBus
+30-49,bus,Parisis
+95-03A,bus,Valoise
+30-48,bus,Parisis
+30-46,bus,Parisis
+30-47,bus,Parisis
+42,bus,STAVO
+43,bus,STAVO
+40,bus,STAVO
+41,bus,HOURTOULE
+5,bus,HOURTOULE
+50,bus,HOURTOULE
+44,bus,STAVO
+45,bus,STAVO
+20,bus,HOURTOULE
+111,bus,HOURTOULE
+12,bus,HOURTOULE
+10,bus,HOURTOULE
+11,bus,HOURTOULE
+17,bus,HOURTOULE
+19,bus,HOURTOULE
+14,bus,HOURTOULE
+15,bus,HOURTOULE
+JV,bus,HOURTOULE
+M,bus,HOURTOULE
+CSP,bus,HOURTOULE
+FA,bus,STAVO
+TG,bus,HOURTOULE
+V,bus,HOURTOULE
+P,bus,HOURTOULE
+Q,bus,HOURTOULE
+BL,bus,HOURTOULE
+7,bus,HOURTOULE
+78 EXPRES,bus,HOURTOULE
+51,bus,STAVO
+6,bus,HOURTOULE
+AQ,bus,HOURTOULE
+B,bus,HOURTOULE
+8,bus,HOURTOULE
+9,bus,HOURTOULE
+205,bus,CEAT
+206A,bus,CEAT
+2,bus,Génovébus
+116,bus,CEAT
+15,bus,CEAT
+223,bus,CEAT
+224,bus,CEAT
+222,bus,CEAT
+206B,bus,CEAT
+221,bus,CEAT
+114,bus,CEAT
+101,bus,CEAT
+102,bus,CEAT
+1001,bus,CEAT
+1,bus,Génovébus
+10,bus,SITUS
+108,bus,CEAT
+109,bus,CEAT
+107,bus,CEAT
+1025,bus,CEAT
+104,bus,CEAT
+7,bus,SITUS
+8,bus,SITUS
+4,bus,Génovébus
+330,bus,CEAT
+331,bus,CEAT
+S4,bus,Génovébus
+S5,bus,Génovébus
+S3,bus,Génovébus
+S1,bus,Génovébus
+S2,bus,Génovébus
+323,bus,CEAT
+316,bus,CEAT
+317,bus,CEAT
+3,bus,Génovébus
+225,bus,CEAT
+226,bus,CEAT
+321,bus,CEAT
+322,bus,CEAT
+320,bus,CEAT
+318,bus,CEAT
+319,bus,CEAT
+16,bus,Seine et Marne Express
+14,bus,Arlequin
+121,bus,Sol'R
+209,bus,Sol'R
+201,bus,Stigo
+18,bus,Stigo
+05,bus,Arlequin
+04,bus,Yerres
+03,bus,Sol'R
+11,bus,Stigo
+10,bus,Sol'R
+07,bus,Sol'R
+B,bus,Sit'bus
+A,bus,Sit'bus
+502,bus,Sit'bus
+E,bus,Sit'bus
+D,bus,Sit'bus
+C,bus,Sit'bus
+309,bus,Sol'R
+23,bus,Yerres
+21,bus,Sol'R
+501,bus,Sit'bus
+500,bus,Sit'bus
+409,bus,Sol'R
+34sco,bus,Pays Fertois
+35,bus,Pays Fertois
+4,bus,Pays Créçois
+34,bus,Pays Fertois
+32,bus,Pays Fertois
+32sco,bus,Pays Fertois
+33,bus,Pays Fertois
+47,bus,Pays de l'Ourcq
+48,bus,Pays Fertois
+49A,bus,Pays Fertois
+46,bus,Pays de l'Ourcq
+40,bus,Pays de l'Ourcq
+41,bus,Pays de l'Ourcq
+42,bus,Pays de l'Ourcq
+13B,bus,Pays Créçois
+14,bus,Pep's
+18,bus,Pays Créçois
+13A,bus,Pays Créçois
+10,bus,Pays de l'Ourcq
+11,bus,Pays de l'Ourcq
+12,bus,Pays Créçois
+23,bus,Pays de l'Ourcq
+31,bus,Pays Fertois
+31sco,bus,Pays Fertois
+22,bus,Pays de l'Ourcq
+19,bus,Pays Créçois
+21,bus,Pays Créçois
+21sco,bus,Pays Créçois
+65,bus,Pays de l'Ourcq
+67,bus,Pays Fertois
+69,bus,Seine et Marne Express
+63,bus,Pays de l'Ourcq
+60,bus,Pays Créçois
+61,bus,Pays de l'Ourcq
+62,bus,Pays Fertois
+8A,bus,Pays Créçois
+8B,bus,Pays Créçois
+8C,bus,Pays Créçois
+73,bus,Pays Créçois
+7,bus,Pays Créçois
+70,bus,Pays Créçois
+71,bus,Pays Créçois
+52,bus,Pays de l'Ourcq
+53,bus,Pays de l'Ourcq
+54,bus,Pays de l'Ourcq
+50,bus,Pays de l'Ourcq
+49B,bus,Pays Fertois
+4A,bus,Pays Créçois
+4B,bus,Pays Créçois
+58,bus,Pays Créçois
+59,bus,Pays Créçois
+6,bus,Pep's
+57,bus,Pays Créçois
+54bis,bus,Pays de l'Ourcq
+56,bus,Pays Fertois
+56sco,bus,Pays Fertois
+68.14,bus,ORMONT TRANSPORT
+68.16,bus,ORMONT TRANSPORT
+913.07,bus,ORMONT TRANSPORT
+68.13,bus,ORMONT TRANSPORT
+68.08,bus,ORMONT TRANSPORT
+68.09,bus,ORMONT TRANSPORT
+68.100,bus,ORMONT TRANSPORT
+DM02 A,bus,TRANSPORTS DANIEL MEYER
+DM02 B,bus,TRANSPORTS DANIEL MEYER
+DM03,bus,TRANSPORTS DANIEL MEYER
+913.50,bus,ORMONT TRANSPORT
+913.08,bus,ORMONT TRANSPORT
+913.10,bus,ORMONT TRANSPORT
+913.17,bus,ORMONT TRANSPORT
+306.12,bus,ORMONT TRANSPORT
+4,bus,ORMONT TRANSPORT
+5,bus,ORMONT TRANSPORT
+306.04,bus,ORMONT TRANSPORT
+1,bus,ORMONT TRANSPORT
+2,bus,ORMONT TRANSPORT
+3,bus,ORMONT TRANSPORT
+68.05 A,bus,ORMONT TRANSPORT
+68.05 B,bus,ORMONT TRANSPORT
+68.06,bus,ORMONT TRANSPORT
+68.02,bus,ORMONT TRANSPORT
+6,bus,ORMONT TRANSPORT
+68.01,bus,ORMONT TRANSPORT
+68.01S,bus,ORMONT TRANSPORT
+DM17 B,bus,TRANSPORTS DANIEL MEYER
+DM17 S,bus,TRANSPORTS DANIEL MEYER
+DM19,bus,TRANSPORTS DANIEL MEYER
+DM17 A,bus,TRANSPORTS DANIEL MEYER
+DM151,bus,TRANSPORTS DANIEL MEYER
+DM153,bus,TRANSPORTS DANIEL MEYER
+DM16,bus,TRANSPORTS DANIEL MEYER
+DM21 S,bus,TRANSPORTS DANIEL MEYER
+DM22,bus,TRANSPORTS DANIEL MEYER
+DM26,bus,TRANSPORTS DANIEL MEYER
+DM21 B,bus,TRANSPORTS DANIEL MEYER
+DM20,bus,TRANSPORTS DANIEL MEYER
+DM20 S,bus,TRANSPORTS DANIEL MEYER
+DM21 A,bus,TRANSPORTS DANIEL MEYER
+DM08,bus,TRANSPORTS DANIEL MEYER
+DM09,bus,TRANSPORTS DANIEL MEYER
+DM10 A,bus,TRANSPORTS DANIEL MEYER
+DM06 B,bus,TRANSPORTS DANIEL MEYER
+DM04,bus,TRANSPORTS DANIEL MEYER
+DM05,bus,TRANSPORTS DANIEL MEYER
+DM06 A,bus,TRANSPORTS DANIEL MEYER
+DM11G,bus,TRANSPORTS DANIEL MEYER
+DM12,bus,TRANSPORTS DANIEL MEYER
+DM13,bus,TRANSPORTS DANIEL MEYER
+DM11E,bus,TRANSPORTS DANIEL MEYER
+DM10 S,bus,TRANSPORTS DANIEL MEYER
+DM11 A,bus,TRANSPORTS DANIEL MEYER
+DM11 C,bus,TRANSPORTS DANIEL MEYER
+701,bus,Autobus du Fort
+702,bus,Autobus du Fort
+703,bus,Autobus du Fort
+501,bus,Seine Sénart Bus
+4,bus,Seine Sénart Bus
+19,bus,Seine Sénart Bus
+BM,bus,Seine Sénart Bus
+B,bus,Seine Sénart Bus
+A,bus,Seine Sénart Bus
+18,bus,Seine Sénart Bus
+13,bus,Seine Sénart Bus
+12,bus,Seine Sénart Bus
+11L,bus,Seine Sénart Bus
+17,bus,Seine Sénart Bus
+16,bus,Seine Sénart Bus
+14,bus,Seine Sénart Bus
+C,bus,Seine Sénart Bus
+LP1,bus,Seine Sénart Bus
+LM3,bus,Seine Sénart Bus
+LM2,bus,Seine Sénart Bus
+RD16,bus,Seine Sénart Bus
+RD15,bus,Seine Sénart Bus
+LP2,bus,Seine Sénart Bus
+LM1,bus,Seine Sénart Bus
+F,bus,Seine Sénart Bus
+E,bus,Seine Sénart Bus
+D,bus,Seine Sénart Bus
+Inter-Val,bus,Seine Sénart Bus
+H,bus,Seine Sénart Bus
+G,bus,Seine Sénart Bus
+36-15,bus,CARS PERRIER
+431,bus,SQYBUS
+439,bus,SQYBUS
+424,bus,SQYBUS
+430,bus,SQYBUS
+440,bus,SQYBUS
+448,bus,SQYBUS
+449,bus,SQYBUS
+441,bus,SQYBUS
+444,bus,SQYBUS
+423,bus,SQYBUS
+414,bus,SQYBUS
+415,bus,SQYBUS
+401,bus,SQYBUS
+402,bus,SQYBUS
+417,bus,SQYBUS
+420,bus,SQYBUS
+422,bus,SQYBUS
+418,bus,SQYBUS
+419,bus,SQYBUS
+463,bus,SQYBUS
+464,bus,SQYBUS
+460,bus,SQYBUS
+461,bus,SQYBUS
+465,bus,SQYBUS
+468,bus,SQYBUS
+475,bus,SQYBUS
+466,bus,SQYBUS
+467,bus,SQYBUS
+459,bus,SQYBUS
+452,bus,SQYBUS
+453,bus,SQYBUS
+450,bus,SQYBUS
+451,bus,SQYBUS
+454,bus,SQYBUS
+457,bus,SQYBUS
+458,bus,SQYBUS
+455,bus,SQYBUS
+456,bus,SQYBUS
+39,bus,STIVO
+38,bus,STIVO
+40,bus,STIVO
+43,bus,STIVO
+42,bus,STIVO
+33,bus,STIVO
+30,bus,STIVO
+34,bus,STIVO
+36,bus,STIVO
+35,bus,STIVO
+44,bus,STIVO
+57,bus,STIVO
+56,bus,STIVO
+58,bus,STIVO
+60,bus,STIVO
+59,bus,STIVO
+47,bus,STIVO
+45,bus,STIVO
+48,bus,STIVO
+55,bus,STIVO
+49,bus,STIVO
+54,bus,Phébus
+53,bus,Phébus
+52,bus,Phébus
+Chavil U,bus,Chavilbus
+Chavil R,bus,Chavilbus
+Chavil B,bus,Chavilbus
+2,bus,SITUS
+3,bus,SITUS
+4,bus,SITUS
+1,bus,SITUS
+102,bus,SITUS
+103,bus,SITUS
+41,bus,SITUS
+45,bus,SITUS
+5,bus,SITUS
+6,bus,SITUS
+42,bus,SITUS
+43,bus,SITUS
+44,bus,SITUS
+37E,bus,Réseau départemental de l'Oise
+G2,bus,VyBus
+G1,bus,VyBus
+F4,bus,VyBus
+H,bus,VyBus
+J2,bus,STRAV
+J1,bus,STRAV
+I,bus,VyBus
+F,bus,VyBus
+C,bus,VyBus
+B,bus,STRAV
+A,bus,VyBus
+D,bus,VyBus
+E2,bus,VyBus
+E1,bus,VyBus
+E,bus,VyBus
+K,bus,STRAV
+R3,bus,VyBus
+R2,bus,VyBus
+R1B,bus,VyBus
+S,bus,VyBus
+X,bus,VyBus
+V,bus,Seine-Senart Bus
+U,bus,Service Urbain de Villecresnes
+R1A,bus,VyBus
+O1,bus,STRAV
+N,bus,STRAV
+M,bus,VyBus
+O2,bus,STRAV
+R1,bus,VyBus
+QBUS,bus,VyBus
+P,bus,Seine-Senart Bus
+3,bus,Aérial
+209,bus,Comète
+4.,bus,Aérial
+4,bus,Aérial
+111,bus,Aérial
+1,bus,Aérial
+2,bus,Aérial
+112,bus,Aérial
+41,bus,TICE
+5,bus,Aérial
+46,bus,Seine et Marne Express
+8,bus,Aérial
+6,bus,Aérial
+43,bus,TICE
+42,bus,TICE
+45,bus,TICE
+44,bus,TICE
+14B,bus,STILL
+17A,bus,STILL
+13C,bus,STILL
+14A,bus,STILL
+17B,bus,STILL
+18C,bus,STILL
+2,bus,STILL
+18A,bus,STILL
+18B,bus,STILL
+11A,bus,STILL
+11B,bus,STILL
+1,bus,STILL
+10,bus,STILL
+11C,bus,STILL
+13A,bus,STILL
+13B,bus,STILL
+11D,bus,STILL
+12,bus,STILL
+8A,bus,STILL
+8B,bus,STILL
+7C,bus,STILL
+7D,bus,STILL
+9A,bus,STILL
+9D,bus,STILL
+EXPRESS34,bus,Seine et Marne Express
+9B,bus,STILL
+9C,bus,STILL
+207,bus,Comète
+211,bus,Comète
+201,bus,Comète
+202,bus,Comète
+3,bus,STILL
+7A,bus,STILL
+7B,bus,STILL
+4,bus,STILL
+5,bus,STILL
+27,bus,Sénart-Bus
+31,bus,Sénart-Bus
+26,bus,Sénart-Bus
+24,bus,Sénart-Bus
+25,bus,Sénart-Bus
+35,bus,Sénart-Bus
+36,bus,Sénart-Bus
+34,bus,Sénart-Bus
+32,bus,Sénart-Bus
+33,bus,Sénart-Bus
+23,bus,Sénart-Bus
+04,bus,Sénart-Bus
+05,bus,Sénart-Bus
+03,bus,Sénart-Bus
+01,bus,Sénart-Bus
+02,bus,Sénart-Bus
+21,bus,Sénart-Bus
+22,bus,Sénart-Bus
+13,bus,Sénart-Bus
+11,bus,Sénart-Bus
+12,bus,Sénart-Bus
+62A,bus,Sénart-Bus
+62B,bus,Sénart-Bus
+61B,bus,Sénart-Bus
+55,bus,Sénart-Express
+61A,bus,Sénart-Bus
+CPSF,bus,Sénart-Bus
+Tzen1,bus,Sénart-Bus
+64,bus,Sénart-Bus
+62C,bus,Sénart-Bus
+63,bus,Sénart-Bus
+54,bus,Sénart-Express
+42P,bus,Sénart-Bus
+43,bus,Sénart-Bus
+42,bus,Sénart-Bus
+37,bus,Sénart-Bus
+41,bus,Sénart-Bus
+52,bus,Sénart-Bus
+53,bus,Sénart-Bus
+51,bus,Sénart-Express
+43P,bus,Sénart-Bus
+50,bus,Sénart-Express
+11 GARE,bus,Réseau du Canton de Perthes
+109,bus,Réseau du Canton de Perthes
+11A,bus,Réseau du Canton de Perthes
+111,bus,Réseau du Canton de Perthes
+06,bus,Arlequin
+01,bus,Réseau du Canton de Perthes
+101,bus,Réseau du Canton de Perthes
+09,bus,Réseau du Canton de Perthes
+11B,bus,Réseau du Canton de Perthes
+22B,bus,Réseau du Canton de Perthes
+22A,bus,Réseau du Canton de Perthes
+9M,bus,Réseau du Canton de Perthes
+9CC,bus,Réseau du Canton de Perthes
+11CC,bus,Réseau du Canton de Perthes
+11C,bus,Réseau du Canton de Perthes
+21CC,bus,Réseau du Canton de Perthes
+21,bus,Réseau du Canton de Perthes
+Fd,bus,MELIBUS
+F,bus,MELIBUS
+E,bus,MELIBUS
+Jd,bus,MELIBUS
+J,bus,MELIBUS
+G,bus,MELIBUS
+C,bus,MELIBUS
+B,bus,MELIBUS
+A,bus,MELIBUS
+D,bus,MELIBUS
+CITA,bus,CITALIEN
+Cd,bus,MELIBUS
+S3,bus,MELIBUS
+S2,bus,MELIBUS
+S1,bus,MELIBUS
+S6,bus,MELIBUS
+S5,bus,MELIBUS
+S4,bus,MELIBUS
+M,bus,MELIBUS
+L,bus,MELIBUS
+K,bus,MELIBUS
+O SCO,bus,MELIBUS
+O,bus,MELIBUS
+N,bus,MELIBUS
+202,bus,Transdev IDF Brétigny
+203,bus,Transdev IDF Brétigny
+201,bus,Transdev IDF Brétigny
+103,bus,Transdev IDF Brétigny
+18-05,bus,Transdev IDF Brétigny
+227-04,bus,Orgebus
+227-06,bus,Orgebus
+227-03,bus,Orgebus
+227-01,bus,Orgebus
+227-02,bus,Orgebus
+18,bus,Dourdanais
+19,bus,Rambouillet Interurbain
+15,bus,Houdanais
+16,bus,Houdanais
+23,bus,Rambouillet Interurbain
+24,bus,Rambouillet Interurbain
+20,bus,Rambouillet Interurbain
+22,bus,Dourdanais
+04,bus,Rambouillet Interurbain
+05,bus,Rambouillet Interurbain
+01,bus,Rambouillet Interurbain
+03,bus,Rambouillet Interurbain
+11,bus,Rambouillet Interurbain
+12,bus,Rambouillet Interurbain
+08,bus,Rambouillet Interurbain
+10,bus,Rambouillet Interurbain
+25,bus,Rambouillet Interurbain
+89,bus,Rambouillet Interurbain
+A,bus,rbus
+63,bus,Dourdanais
+79,bus,Rambouillet Interurbain
+D,bus,rbus
+E,bus,rbus
+B,bus,rbus
+C,bus,rbus
+30,bus,Rambouillet Interurbain
+39,bus,Rambouillet Interurbain
+26,bus,Rambouillet Interurbain
+29,bus,Rambouillet Interurbain
+61,bus,Dourdanais
+62,bus,Dourdanais
+49,bus,Rambouillet Interurbain
+59,bus,Rambouillet Interurbain
+39-103,bus,SAVAC
+39-12,bus,SAVAC
+39-13,bus,SAVAC
+39-10,bus,SAVAC
+39-07 B,bus,SAVAC
+39-07 C,bus,SAVAC
+39-07 D,bus,SAVAC
+39-28 A,bus,SAVAC
+39-28 B,bus,SAVAC
+39-28 C,bus,SAVAC
+39-27,bus,SAVAC
+39-17,bus,SAVAC
+39-18,bus,SAVAC
+39-203,bus,SAVAC
+39-07 A,bus,SAVAC
+260,bus,SAVAC
+261,bus,SAVAC
+262,bus,SAVAC
+13,bus,SAVAC
+10,bus,SAVAC
+11,bus,SAVAC
+12,bus,SAVAC
+39-02,bus,SAVAC
+39-05,bus,SAVAC
+39-07,bus,SAVAC
+39-003,bus,SAVAC
+263,bus,SAVAC
+264,bus,SAVAC
+307,bus,SAVAC
+39-28 D,bus,SAVAC
+39-37 C,bus,SAVAC
+39-37 D,bus,SAVAC
+39-37 E,bus,SAVAC
+39-37 B,bus,SAVAC
+39-36,bus,SAVAC
+39-37 A,bus,SAVAC
+39-37 AB,bus,SAVAC
+39-403,bus,SAVAC
+Vanves,bus,SAVAC
+X,bus,Phébus
+39-38,bus,SAVAC
+39-37 F,bus,SAVAC
+39-37 G,bus,SAVAC
+39-37 H,bus,SAVAC
+39-35 B,bus,SAVAC
+39-29-3,bus,SAVAC
+39-29-4,bus,SAVAC
+39-30 A,bus,SAVAC
+39-29-2,bus,SAVAC
+39-28 E,bus,SAVAC
+39-28 F,bus,SAVAC
+39-29-1,bus,SAVAC
+39-31,bus,SAVAC
+39-34,bus,SAVAC
+39-35 A,bus,SAVAC
+39-303,bus,SAVAC
+39-30 B,bus,SAVAC
+39-30 C,bus,SAVAC
+39-30 D,bus,SAVAC
+21,bus,CSO
+20,bus,CSO
+23,bus,CSO
+25,bus,CSO
+24,bus,CSO
+2,bus,CSO
+10,bus,CSO
+1,bus,CSO
+11,bus,CSO
+16,bus,CSO
+14,bus,CSO
+27,bus,CSO
+6,bus,CSO
+55,bus,CSO
+7,bus,CSO
+98,bus,CSO
+9,bus,CSO
+54,bus,CSO
+4,bus,CSO
+28,bus,CSO
+50,bus,CSO
+52,bus,CSO
+51,bus,CSO
+35,bus,Houdanais
+31,bus,Houdanais
+38,bus,Houdanais
+41,bus,Houdanais
+40,bus,Houdanais
+17,bus,Houdanais
+13,bus,Plaine de Versailles
+2,bus,Houdanais
+22,bus,Houdanais
+21,bus,Houdanais
+61,bus,Houdanais
+60,bus,Houdanais
+65,bus,Houdanais
+9,bus,Houdanais
+67,bus,Houdanais
+48,bus,Houdanais
+45,bus,Houdanais
+501,bus,Tam Limay
+55,bus,Houdanais
+51,bus,Houdanais
+3,bus,Express 19 Les Mureaux - Versailles
+311,bus,Val de Seine
+21,bus,Val de Seine
+2,bus,Val de Seine
+2,bus,Express 19 Les Mureaux - Versailles
+33,bus,Val de Seine
+34,bus,Val de Seine
+32,bus,Val de Seine
+312,bus,Val de Seine
+313,bus,Val de Seine
+19,bus,Val de Seine
+14,bus,Val de Seine
+17,bus,Val de Seine
+13,bus,Val de Seine
+10,bus,Val de Seine
+12,bus,Val de Seine
+17S,bus,Val de Seine
+18,bus,Val de Seine
+172,bus,Val de Seine
+170,bus,Val de Seine
+171,bus,Val de Seine
+77,bus,Val de Seine
+9,bus,Val de Seine
+76,bus,Val de Seine
+71,bus,Val de Seine
+75,bus,Val de Seine
+95-25,bus,Busval d'Oise
+N1,bus,Express 19 Les Mureaux - Versailles
+95-24,bus,Busval d'Oise
+95-22,bus,Busval d'Oise
+95-23,bus,Busval d'Oise
+7,bus,Express 19 Les Mureaux - Versailles
+43,bus,Val de Seine
+5,bus,Val de Seine
+42,bus,Val de Seine
+4,bus,Express 19 Les Mureaux - Versailles
+41,bus,Val de Seine
+512,bus,Val de Seine
+6,bus,Express 19 Les Mureaux - Versailles
+511,bus,Val de Seine
+5,bus,Express 19 Les Mureaux - Versailles
+502,bus,Val de Seine
+11,bus,Transdev Ile-de-France Conflans
+12,bus,Transdev Ile-de-France Conflans
+14,bus,Transdev Ile-de-France Conflans
+06,bus,Transdev Ile-de-France Conflans
+02,bus,Transdev Ile-de-France Conflans
+04,bus,Transdev Ile-de-France Conflans
+05,bus,Transdev Ile-de-France Conflans
+9518,bus,Transdev Ile-de-France Conflans
+A1,bus,Transdev Ile-de-France Conflans
+A2,bus,Transdev Ile-de-France Conflans
+5 S,bus,Transdev Ile-de-France Conflans
+17A,bus,Transdev Ile-de-France Conflans
+17B,bus,Transdev Ile-de-France Conflans
+27,bus,Transdev Ile-de-France Conflans
+4,bus,R'bus
+34,bus,R'bus
+501 Sco,bus,R'bus
+5,bus,R'bus
+3,bus,R'bus
+17,bus,R'bus
+1,bus,R'bus
+2,bus,R'bus
+18,bus,R'bus
+G,bus,Bus en Seine
+9,bus,R'bus
+J,bus,Bus en Seine
+H,bus,Bus en Seine
+8,bus,R'bus
+503 Sco,bus,R'bus
+502 Sco,bus,R'bus
+7,bus,R'bus
+6,bus,R'bus
+29,bus,Traverciel
+30,bus,Traverciel
+28,bus,Traverciel
+06,bus,Scolaire Est Yvelines
+27,bus,Traverciel
+37,bus,Scolaire Est Yvelines
+469,bus,Traverciel
+503,bus,Scolaire Est Yvelines
+460,bus,Traverciel
+38,bus,Scolaire Est Yvelines
+40,bus,Scolaire Est Yvelines
+C,bus,Bus en Seine
+B,bus,Bus en Seine
+D,bus,Bus en Seine
+F,bus,Bus en Seine
+E,bus,Bus en Seine
+A,bus,Bus en Seine
+12,bus,Scolaire Est Yvelines
+01,bus,Scolaire Est Yvelines
+45,bus,R'bus
+55,bus,Scolaire Est Yvelines
+54,bus,Scolaire Est Yvelines
+K,bus,Bus en Seine
+S5,bus,Bus en Seine
+S4,bus,Bus en Seine
+S6,bus,Bus en Seine
+T,bus,Bus en Seine
+S7,bus,Bus en Seine
+S3,bus,Bus en Seine
+M,bus,Bus en Seine
+L,bus,Bus en Seine
+P,bus,Bus en Seine
+S2,bus,Bus en Seine
+S1,bus,Bus en Seine
+18S,bus,Entre Seine et Forêt
+18,bus,Entre Seine et Forêt
+21,bus,Entre Seine et Forêt
+9A,bus,Entre Seine et Forêt
+21M,bus,Entre Seine et Forêt
+1,bus,Express 1
+08,bus,Poissy Aval
+10,bus,Entre Seine et Forêt
+16,bus,Express 16
+15,bus,Entre Seine et Forêt
+9AB,bus,Entre Seine et Forêt
+R3-Sud,bus,Résalys
+R3-Nord,bus,Résalys
+R4,bus,Résalys
+R6,bus,Résalys
+R5,bus,Résalys
+9D,bus,Entre Seine et Forêt
+9B,bus,Entre Seine et Forêt
+R1,bus,Résalys
+R2-Sud,bus,Résalys
+R2-Nord,bus,Résalys
+DIRECT 2,bus,LE BUS DIRECT
+DIRECT 1,bus,LE BUS DIRECT
+25,bus,Rémi
+DIRECT 3,bus,LE BUS DIRECT
+TRAVERSE,bus,AUTOCARS DOMINIQUE
+SAMOIS,bus,LOSAY VOYAGES
+DIRECT 4,bus,LE BUS DIRECT
+13,bus,Brie Bus
+12,bus,Arlequin
+10,bus,Arlequin
+7,bus,Arlequin
+23,bus,Plateau de Brie
+21,bus,Arlequin
+208,bus,Comète
+206,bus,Comète
+A,bus,Siyonne
+210,bus,Comète
+203,bus,Comète
+19,bus,STILL
+205,bus,Comète
+204,bus,Comète
+B,bus,Siyonne
+G,bus,Siyonne
+F,bus,Siyonne
+L,bus,Siyonne
+I,bus,Siyonne
+Ea,bus,Siyonne
+C,bus,Siyonne
+Emplet,bus,Siyonne
+Eb,bus,Siyonne
+23,bus,Trans Val d'Oise
+24,bus,Trans Val d'Oise
+20,bus,Trans Val d'Oise
+22,bus,Trans Val d'Oise
+24sco,bus,Trans Val d'Oise
+36,bus,Trans Val d'Oise
+37,bus,Trans Val d'Oise
+25,bus,Trans Val d'Oise
+35,bus,Trans Val d'Oise
+407,bus,TICE
+406,bus,TICE
+409,bus,TICE
+408,bus,TICE
+405,bus,TICE
+402,bus,TICE
+401,bus,TICE
+404,bus,TICE
+403,bus,TICE
+412,bus,TICE
+420,bus,TICE
+419,bus,TICE
+510,bus,TICE
+453,bus,TICE
+418,bus,TICE
+414,bus,TICE
+413,bus,TICE
+416,bus,TICE
+415,bus,TICE
+19,bus,Seine et Marne Express
+18,bus,Seine et Marne Express
+17,bus,Sol'R
+23,bus,Pep's
+22,bus,Pep's
+21,bus,Pep's
+07,bus,Pep's
+04,bus,Pep's
+02,bus,Pep's
+15,bus,Pep's
+13,bus,Pep's
+12,bus,Pep's
+24,bus,Pep's
+43,bus,Pep's
+42,bus,Pep's
+37,bus,Pep's
+47,bus,Pep's
+46,bus,Pep's
+44,bus,Pep's
+29,bus,Pep's
+26,bus,Pep's
+25,bus,Pep's
+35,bus,Pep's
+34,bus,Pep's
+32,bus,Pep's
+38,bus,CIF
+46,bus,CIF
+34,bus,CIF
+32ZA,bus,CIF
+33,bus,CIF
+47,bus,CIF
+95-02,bus,Busval d'Oise
+FLEXO,bus,CIF
+95-01,bus,Busval d'Oise
+49,bus,CIF
+50,bus,CIF
+32A,bus,CIF
+12.1,bus,CIF
+12ZI,bus,CIF
+12,bus,CIF
+11,bus,CIF
+11.5,bus,CIF
+14,bus,CIF
+31,bus,CIF
+32,bus,CIF
+30D,bus,CIF
+14.1,bus,CIF
+30B,bus,CIF
+R3,bus,CIF
+R4,bus,CIF
+R2,bus,CIF
+R114,bus,CIF
+R117,bus,CIF
+R48,bus,CIF
+R8,bus,CIF
+Vitavil,bus,CIF
+R7,bus,CIF
+R5,bus,CIF
+R6,bus,CIF
+R113,bus,CIF
+R105,bus,CIF
+R106,bus,CIF
+R104,bus,CIF
+G'bus,bus,CIF
+R1,bus,CIF
+R107,bus,CIF
+R111,bus,CIF
+R112,bus,CIF
+R110,bus,CIF
+R108,bus,CIF
+R109,bus,CIF
+19,bus,CIF
+18,bus,CIF
+21,bus,CIF
+23,bus,CIF
+22,bus,CIF
+171,bus,CIF
+116,bus,CIF
+1,bus,CIF
+15,bus,CIF
+17,bus,CIF
+16,bus,CIF
+45,bus,CIF
+44,bus,CIF
+71,bus,CIF
+T'bus,bus,CIF
+93,bus,CIF
+43,bus,CIF
+39,bus,CIF
+24,bus,CIF
+3A,bus,CIF
+40,bus,CIF
+3B,bus,CIF
+708,bus,Goëlys
+707,bus,Goëlys
+709,bus,Goëlys
+711,bus,Goëlys
+710,bus,Goëlys
+702,bus,Goëlys
+701,bus,Goëlys
+703,bus,Goëlys
+705,bus,Goëlys
+704,bus,Goëlys
+714,bus,Goëlys
+753,bus,Goëlys
+752,bus,Goëlys
+755,bus,Goëlys
+777,bus,CIF
+756,bus,Goëlys
+749 B,bus,Goëlys
+715,bus,Goëlys
+749 C,bus,Goëlys
+751,bus,Goëlys
+749 D,bus,Goëlys
+A,bus,Bus Haut Val d'Oise
+B,bus,Bus Haut Val d'Oise
+95-10,bus,Busval d'Oise
+2,bus,KVO
+95-09,bus,Busval d'Oise
+F,bus,Bus Haut Val d'Oise
+G,bus,Bus Haut Val d'Oise
+E,bus,Bus Haut Val d'Oise
+C,bus,Bus Haut Val d'Oise
+DIM,bus,Bus Haut Val d'Oise
+3,bus,Keolis Seine Val-De-Marne
+2,bus,Keolis Seine Val-De-Marne
+10,bus,Keolis Seine Val-De-Marne
+LIC,bus,Keolis Seine Val-De-Marne
+9,bus,Keolis Seine Val-De-Marne
+8,bus,Keolis Seine Val-De-Marne
+230,bus,Trans'Essonne
+229,bus,Trans'Essonne
+231,bus,Trans'Essonne
+24-10,bus,Trans'Essonne
+24-06,bus,Trans'Essonne
+208,bus,Trans'Essonne
+207,bus,Trans'Essonne
+209,bus,Trans'Essonne
+228,bus,Trans'Essonne
+227,bus,Trans'Essonne
+312,bus,Seine Essonne Bus
+305,bus,Seine Essonne Bus
+313,bus,Seine Essonne Bus
+FLEXO,bus,Trans'Essonne
+314,bus,Seine Essonne Bus
+301,bus,Seine Essonne Bus
+300,bus,Seine Essonne Bus
+302,bus,Seine Essonne Bus
+304,bus,Seine Essonne Bus
+303,bus,Seine Essonne Bus
+Hex,bus,Phébus
+I,bus,Phébus
+GHP,bus,Phébus
+H,bus,Phébus
+ISDM,bus,Phébus
+J,bus,Phébus
+ILAB,bus,Phébus
+ILFA,bus,Phébus
+G,bus,Phébus
+B,bus,Phébus
+BAK,bus,Phébus
+A,bus,Phébus
+ARC,bus,Phébus
+E,bus,Phébus
+F,bus,Phébus
+C,bus,Phébus
+D,bus,Phébus
+S,bus,Phébus
+Tex,bus,Phébus
+P,bus,Phébus
+R,bus,Phébus
+W,bus,Phébus
+Z,bus,Phébus
+U,bus,Phébus
+V,bus,Phébus
+O,bus,Phébus
+L,bus,Phébus
+LLFA,bus,Phébus
+JLB,bus,Phébus
+K,bus,Phébus
+Nuit 1,bus,Phébus
+Nuit 3,bus,Phébus
+M,bus,Phébus
+N,bus,Phébus
+N144,bus,Noctilien
+N145,bus,Noctilien
+N142,bus,Noctilien
+N143,bus,Noctilien
+N152,bus,Noctilien
+N154,bus,Noctilien
+N150,bus,Noctilien
+N151,bus,Noctilien
+N132,bus,Noctilien
+N133,bus,Noctilien
+N130,bus,Noctilien
+N131,bus,Noctilien
+N140,bus,Noctilien
+N141,bus,Noctilien
+N134,bus,Noctilien
+N135,bus,Noctilien
+D,bus,RER
+J,bus,TRAIN
+P,bus,TRAIN

@@ -2,8 +2,8 @@
 	nlehuby
 */
 
-var attr_osm = 'Map data &copy; <a href="http://openstreetmap.org/">OpenStreetMap</a> contributors',
-    attr_overpass = 'stops from <a href="http://www.overpass-api.de/">Overpass API</a> and <a href="http://navitia.io/">navitia.io</a>';
+var attr_osm = 'Map &copy; <a href="http://openstreetmap.org/">OpenStreetMap</a> contributors',
+    attr_overpass = 'data from OSM, <a href="http://navitia.io/">navitia.io</a> and <a href="https://opendata.stif.info">Opendata IDF Mobilités</a>';
 var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     opacity: 0.7,
     attribution: [attr_osm, attr_overpass].join(', ')

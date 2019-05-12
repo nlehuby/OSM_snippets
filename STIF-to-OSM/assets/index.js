@@ -35,10 +35,11 @@ $(document).ready(function() {
                 [8  , 'asc'],
                 [1  , 'desc']
             ],
-            columns: [ //@id,ref,name,network,operator,colour,type,route_master,ref:FR:STIF:ExternalCode_Line
+            columns: [
                 //line_id,code,name,network,operator,colour,osm:type,mode,osm:ref:FR:STIF:ExternalCode_Line
                 {
                     title: "id",
+                    searchable: false ,
                     data: function(row, type, set) {
                         var osm_id = row[0].split(':')[2]
                         var link_url = "http://www.openstreetmap.org/relation/" + osm_id;
@@ -47,7 +48,13 @@ $(document).ready(function() {
                 }, {
                     title: "code",
                     data: function(row, type, set) {
-                        return row['1'] + "<div style='width:20px;height:20px;background:"+row[5]+";'></div>";
+                        return `
+                        <transport-thumbnail
+                            data-transport-mode="${row['7']}"
+                            data-transport-line-code="${row['1']}"
+                            data-transport-line-color="${row['5']}">
+                        </transport-thumbnail>
+                        `
                     }
                 }, {
                     title: "nom"

@@ -79,8 +79,15 @@ function get_osm_stop_info(stop_id) {
                 relations_bus[bus_stop_id] = [];
                 for (j = 0; j < geo.features[i].properties['relations'].length; j++) {
                     if (geo.features[i].properties['relations'][j]['reltags']['type'] == 'route') {
-                        rel_name = '[' + (geo.features[i].properties['relations'][j]['reltags']['network'] || '') + '] '
-                        rel_name += geo.features[i].properties['relations'][j]['reltags']['ref'] + ' > ' + geo.features[i].properties['relations'][j]['reltags']['to']
+                        rel_name = `
+                         <transport-thumbnail
+                            data-transport-network="${geo.features[i].properties['relations'][j]['reltags']['network'] || ''}"
+                            data-transport-mode="bus"
+                            data-transport-line-code="${geo.features[i].properties['relations'][j]['reltags']['ref']|| ''}"
+                            data-transport-line-color="${geo.features[i].properties['relations'][j]['reltags']['colour'] || 'white'}"
+                            data-transport-destination="${geo.features[i].properties['relations'][j]['reltags']['to'] || '??'}">
+                         </transport-thumbnail>
+                        `
                         relations_bus[bus_stop_id].push({
                             'id': geo.features[i].properties['relations'][j]['rel'],
                             'name': rel_name
@@ -168,9 +175,17 @@ function on_navitia_routes_at_stop(whole_navitia_info, stop_name) {
     for (j = 0; j < whole_navitia_info['routes'].length; j++) {
         var network = whole_navitia_info['routes'][j]['line']['network']['name'];
         var line_code = whole_navitia_info['routes'][j]['line']['code'];
+        var line_color =  "#" + whole_navitia_info['routes'][j]['line']['color'];
         var line_destination = whole_navitia_info['routes'][j]['direction']['name'];
-
-        var route_name = "[" + network + "] " + line_code + " > " + line_destination;
+        var route_name = `
+         <transport-thumbnail
+            data-transport-network="${ network || ''}"
+            data-transport-mode="bus"
+            data-transport-line-code="${ line_code || ''}"
+            data-transport-line-color="${ line_color || 'white'}"
+            data-transport-destination="${ line_destination || '??'}">
+         </transport-thumbnail>
+        `
         routes_at_stop.push(route_name)
     }
 

@@ -146,10 +146,10 @@ async function get_osm_info() {
 
 async function get_navitia_info() {
 
-    if (navitia_route_id.substr(-2) === "_R" ) {
-        var navitia_opposite_route_id = navitia_route_id.substring(0, navitia_route_id.length - 2)
+    if (navitia_route_id.substr(-1) === "R" ) {
+        var navitia_opposite_route_id = navitia_route_id.substring(0, navitia_route_id.length - 1) + "A"
     } else {
-        var navitia_opposite_route_id = navitia_route_id + '_R'
+        var navitia_opposite_route_id = navitia_route_id.substring(0, navitia_route_id.length - 1) + "R"
     }
 
     var navitia_stop_list = await get_stops_from_navitia_route(navitia_route_id);

@@ -1,0 +1,47 @@
+line_ref,line_id,route_id,route_name
+2,6101989,5470995,Val d'Europe → Lagny
+2,6101989,6101988,Lagny → Val d'Europe
+4,6991442,3936088,Poincaré SNCF → Cornilliot SNCF
+7,6991441,3941999,Cornilliot SNCF → Poincaré SNCF
+12,6991440,3069536,Poincaré SNCF → Cornilliot SNCF
+13,6116962,2545213,Torcy RER → Ozoir-la-Ferrière
+13,6116962,6116961,Ozoir-la-Ferrière → Torcy RER 
+15,6116990,2659171,Poincaré SNCF → Mairie de Claye 
+15,6116990,6116989,Mairie de Claye → Poincaré SNCF 
+21,6117019,3937174,Torcy RER → Gare de Lagny
+21,6117019,6117018,Gare de Lagny → Torcy RER 
+22,6120285,3955545,Val d'Europe → Bussy RER 
+22,6120285,6120284,Bussy RER → Val d'Europe
+23,7003010,7449900,Gare de Marne-la-Vallée Chessy → Gare de Lagny 
+23,7003010,3940843,Gare de Lagny → Gare de Marne-la-Vallée Chessy 
+24,6130402,3936863,Base de Loisirs → Chessy 
+24,6130402,6130401,Chessy → Base de Loisirs 
+24,6130402,7783434,Base de Loisirs → Chessy (via Lesches) 
+24,6130402,7783413,Chessy → Base de Loisirs (via Lesches)
+25,6138428,3936704,Gare de Lagny → Torcy RER 
+25,6138428,6138427,Torcy RER → Gare de Lagny
+25,6138428,7710625,Gare de Lagny → Torcy RER (trajet alternatif) 
+25,6138428,7710776,Torcy RER → Gare de Lagny (trajet alternatif)
+26,6144402,3937529,Gare de Lagny → Gare de Bussy 
+26,6144402,6144401,Gare de Bussy → Gare de Lagny 
+29,6145087,3937116,Gare de Lagny → Torcy RER 
+29,6145087,6145086,Torcy RER → Gare de Lagny
+32,2657536,2657536,Gare de Tournan → Gare de Val d'Europe
+32,2657536,7728547,Gare de Val d'Europe → Gare de Tournan
+34,6145135,3948425,Val d'Europe → Chessy Gares 
+34,6145135,6145134,Chessy Gares → Val d'Europe
+37,7224864,3936208,Le P'tit bus de Lagny 
+42,6147928,6147927,Val d'Europe → Lagny 
+42,6147928,2659188,Lagny → Val d'Europe
+43,6147762,3950998,Val d'Europe → Chessy Gares 
+43,6147762,6147761,Chessy Gares → Val d'Europe
+44,7728420,7524060,Jacqueline Auriol → La Haye
+44,7728420,7728419,La Haye → Jacqueline Auriol
+46,6147733,3957778,Val d'Europe → Torcy
+46,6147733,6147732,Torcy → Val d'Europe
+47,8092298,8092296,Villages Nature → Gare de Marne-la-Vallée Chessy
+47,8092298,8092297,Gare de Marne-la-Vallée Chessy → Villages Nature
+6,7447787, 7380394,Gare d'Esbly SNCF → Chessy Gares 
+6,7447787, 7380393 ,Chessy Gares → Gare d'Esbly 
+14,8108526,8108525,Base de Loisirs → Gare d'Esbly
+14,8108526,8108524,Gare d'Esbly → Base de Loisirs 

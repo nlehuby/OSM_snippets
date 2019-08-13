@@ -5,14 +5,23 @@ verify_ssl = true
 name = "pypi"
 
 
+[dev-packages]
+
+
+
 [packages]
 
+requests = "*"
+pandas = "*"
+jupyter = "*"
+geopandas = "*"
+rtree = "*"
+matplotlib = "*"
+descartes = "*"
 osm-conflate = "*"
+osmium = "*"
 
 
 [requires]
 
-python_version = "3.5"
-
-
-[dev-packages]
+python_version = "3.6"

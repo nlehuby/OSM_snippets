@@ -7,6 +7,7 @@ no_dataset_id = True
 #query = [('railway', 'station', 'halt')] #transport_mode = 2
 query = [('highway', 'bus_stop')] #transport_mode = 3
 max_distance = 800
+duplicate_distance = 400
 max_request_boxes = 300
 overpass_timeout = 850
 
@@ -22,20 +23,20 @@ def dataset(fileobj):
     for row in reader:
         lat = float(row['latitude'])
         lon = float(row['longitude'])
-        if row['transport_mode'] == '1':
+        if row['transport_mode'] == 'metro':
             tags = {
                 'railway': 'station',
                 'station': 'subway'
             }
-        elif row['transport_mode'] == '0':
+        elif row['transport_mode'] == 'tramway':
             tags = {
                 'railway': 'tram_stop'
             }
-        elif row['transport_mode'] == '2':
+        elif row['transport_mode'] == 'train':
             tags = {
                 'railway': 'station'
             }
-        elif row['transport_mode'] == '3':
+        elif row['transport_mode'] == 'bus':
             tags = {
                 'highway': 'bus_stop'
             }
@@ -47,8 +48,6 @@ def dataset(fileobj):
     return data
 
 # Input file extract
-# source,stop_id,latitude,longitude,stop_name,transport_mode
-# opendata_GTFS_fr-nw-ORE,5001,48.121295,-1.710943,J.F. Kennedy,1
-# opendata_GTFS_fr-nw-ORE,5002,48.121197,-1.703882,Villejean-Université,1
-# opendata_GTFS_fr-nw-ORE,5003,48.121535,-1.693350,Pontchaillou,1
-# opendata_GTFS_fr-nw-ORE,5004,48.118050,-1.687529,Anatole France,1
+#,source,stop_id,latitude,longitude,stop_name,transport_mode,geometry,index_right,nom
+#124575,opendata_GTFS_fr-idf-OIF,StopPoint:41:6599,48.800383000000004,2.1280069999999998,Versailles Château - Rive Gauche Gare,bus,POINT (2.128007 48.800383),78,Yvelines
+#119460,opendata_GTFS_fr-idf-OIF,StopPoint:25:123,48.654990000000005,1.8460310000000002,Grange Colombe,bus,POINT (1.846031 48.65499000000001),78,Yvelines

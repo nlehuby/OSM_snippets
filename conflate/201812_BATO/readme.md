@@ -1,36 +1,31 @@
-# Arrêts de transports
+# Arrêts de bus
 
-on partira des données extraites par le projet BATO : https://github.com/BATO-FR/bato_collecte/tree/23365a17fbf9690810620c26dabdd6664971ede8
+L'objectif est d'extraire les arrêts présents dans des fichiers open data mais inexistants dans OpenStreetMap afin d'en faire un challenge maproulette.
 
-on les sépare par mode transports :
-`cat BATO_GTFS.csv|xsv partition --filename BATO_gtfs_{}.csv transport_mode .`
+on part des données open data extraites à l'aide du projet BATO (avec le détail des modes de transport) : https://github.com/nlehuby/bato_collecte/
 
-il faut adapter le profil en précisant les tags OSM à utiliser pour chaque mode.
+on ne considère que les données issues des GTFS.
 
-Puis, pour lancer la conflation: `conflate BATO.py -c results.json -i BATO_gtfs_3.csv --osm bus.osm` ou `conflate BATO.py -c results.json -i BATO_gtfs_1.csv --osm subway.osm`
+on les sépare par mode de transports : `xsv partition transport_mode data BATO_GTFS.csv`
+
+on les regroupe par départements afin d'en faire des fichiers plus digestes (voir le notebook `partition_by_ddtm`)
+
+on les sépare par département : `xsv partition --filename BATO_{}.csv nom . BATO_by_regions.csv`
+
+puis on effectue la conflation département par département (voir le notebook ` conflate_by_dptm_plus_retraitement` )
+
+Le fichier de sortie `results_final.json` peut être envoyé sur Maproulette.
 
 # TODO
-Pour le moment, la requête overpass ne passe pas dès que la volumétrie est un peu grosse (donc pas sur les bus par exemple).
-Il est donc nécessaire de découper le fichier à nouveau (xsv partition sur la source par exemple) ou de trouver un meilleur moyen pour télécharger les données OSM.
 
-conflate BATO.py -c results.json -i BATO_gtfs_idf_3.csv --osm bus.osm
-20:44:07 Dataset points duplicate each other: opendata_GTFS_fr-idf-OIFStopPoint:8760012:800:N1543 and opendata_GTFS_fr-idf-OIFStopPoint:8760012:800:N1503
-20:44:07 Dataset points duplicate each other: opendata_GTFS_fr-idf-OIFStopPoint:8760657:800:N1543 and opendata_GTFS_fr-idf-OIFStopPoint:76:2473
-20:44:07 Dataset points duplicate each other: opendata_GTFS_fr-idf-OIFStopPoint:8760657:800:N1543 and opendata_GTFS_fr-idf-OIFStopPoint:76:2483
-20:44:07 Dataset points duplicate each other: opendata_GTFS_fr-idf-OIFStopPoint:8760656:800:N1543 and opendata_GTFS_fr-idf-OIFStopPoint:76:6683
-20:44:07 Dataset points duplicate each other: opendata_GTFS_fr-idf-OIFStopPoint:8760656:800:N1543 and opendata_GTFS_fr-idf-OIFStopPoint:76:6673
-20:44:21 Found 19809 duplicates in the dataset
-20:44:21 Read 40005 items from the dataset
-20:44:43 Downloaded 31191 objects from OSM
-20:54:10 Matched 29990 points
-20:54:10 Removed 6988 unmatched duplicates
-20:54:10 Adding 3027 unmatched dataset points
-20:54:10 Deleted 0 and retagged 0 unmatched objects from OSM
-20:54:12 Done
+- retirer les arrêts de car TER qui sont vraiment top mal géolocalisés dans les données open data ?
 
+# Volumétries
+## Avril 2019
+6 016 arrêts de bus à retrouver
 
-out_new.py permet de garder que les éléments à créer dans OSM
+https://maproulette.org/browse/challenges/4208
 
-BATO_again.py est un profil conflate pour faire une deuxième conflation du résultats avec OSM (car il reste des doublons d'opendata proposés comme à ajouter dans OSM alors qu'ils existent déjà)
+![image](https://pbs.twimg.com/media/EAbltTfUwAEV9NU?format=jpg&name=large)
 
-puis, pour exploiter ça, on peut importer le fichier dans maproulette (il faut le nettoyer encore un peu pour retirer les tags inutiles) en expliquant bien dans le challenge d'utiliser les imageries à disposition pour vérifier la présence de l'arrêt.
+Les résultats restent mitigés avec cette méthode : près de la moitié des objets proposés ne sont pas visibles sur l'imagerie aérienne ou sur Mapillary et ne peuvent donc être ajoutés.

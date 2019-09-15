@@ -3,7 +3,7 @@
 */
 
 var attr_osm = 'Map &copy; <a href="http://openstreetmap.org/">OpenStreetMap</a> contributors',
-    attr_overpass = 'data from OSM, <a href="http://navitia.io/">navitia.io</a> and <a href="https://opendata.stif.info">Opendata IDF Mobilités</a>';
+    attr_overpass = 'data from OSM, <a href="http://navitia.io/">navitia.io</a> and <a href="https://data.iledefrance-mobilites.fr">Opendata IDF Mobilités</a>';
 var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     opacity: 0.7,
     attribution: [attr_osm, attr_overpass].join(', ')

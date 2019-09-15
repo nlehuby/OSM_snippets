@@ -3,7 +3,7 @@
 */
 
 var attr_osm = 'Map &copy; <a href="http://openstreetmap.org/">OpenStreetMap</a> contributors',
-    attr_overpass = 'data from OSM, <a href="http://navitia.io/">navitia.io</a> and <a href="https://opendata.stif.info">Opendata IDF Mobilités</a>';
+    attr_overpass = 'data from OSM, <a href="http://navitia.io/">navitia.io</a> and <a href="https://data.iledefrance-mobilites.fr">Opendata IDF Mobilités</a>';
 var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     opacity: 0.7,
     attribution: [attr_osm, attr_overpass].join(', ')
@@ -116,13 +116,13 @@ function get_navitia_lines_by_ref_id(ref_id) {
 
 function get_opendata_lines_tracks_by_ref_id(ref_id) {
     //si on utilise $.ajax ici, on passera les clefs d'authentification navitia :(
-    fetch("https://opendata.stif.info/api/v2/catalog/datasets/referentiel-des-lignes-stif/records?rows=1&search=" + ref_id)
+    fetch("https://data.iledefrance-mobilites.fr/api/v2/catalog/datasets/referentiel-des-lignes-stif/records?rows=1&search=" + ref_id)
         .then(function(data) {
             return data.json()
         })
         .then(function(response) {
             other_opendata_ref = response['records'][0]['record']['fields']['id_groupoflines']
-            return fetch("https://opendata.stif.info/api/v2/catalog/datasets/bus_lignes/records?rows=1&search=" + other_opendata_ref)
+            return fetch("https://data.iledefrance-mobilites.fr/api/v2/catalog/datasets/bus_lignes/records?rows=1&search=" + other_opendata_ref)
         })
         .then(function(data) {
             return data.json()

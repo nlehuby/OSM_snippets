@@ -10,7 +10,7 @@ var navitia_route_id = getParameterByName('navitia_route_id');
 //var navitia_route_id = 'route:OIF:014014011:11';
 
 var tag_to_match = "ref:FR:STIF";
-var JOSM_url_base = "https://localhost:8112/load_object?objects="
+var JOSM_url_base = "http://localhost:8111/load_object?objects="
 main()
 
 function find_opendata_closer_stop(osm_stop_pos, opendata_stops) {

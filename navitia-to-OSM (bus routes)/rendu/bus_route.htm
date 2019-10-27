@@ -7,7 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"/>
+        <link rel="stylesheet" href="assets/lrm-mapzen/lrm-mapzen.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-routing-machine/3.2.5/leaflet-routing-machine.min.js"></script>
+        <script src="assets/lrm-mapzen/lrm-mapzen.min.js"></script>
+        <script src="https://unpkg.com/leaflet.icon.glyph@0.2.0/Leaflet.Icon.Glyph.js"></script>
         <script src="assets/OverPassLayer.js"></script>
         <script src="assets/osmtogeojson.js"></script>
         <script src="assets/nav_auth.js"></script>
@@ -167,9 +172,8 @@
                         // récupérer les arrêts dans l'ordre pour lancer le calcul d'iti
                         var members = relation['members'].filter(elem => elem.type == 'node').filter(elem => (elem.role == 'platform' || elem.role == 'platform_exit_only' || elem.role == 'platform_entry_only'));
                         osm_stops_in_order = members.map(member => data.elements.filter(elem => elem['id'] == member['ref'])[0])
-                        console.log(osm_stops_in_order)
-                        var osm_compute_bus_track = document.getElementById("osm_compute_bus_track");
-                        osm_compute_bus_track.innerHTML = " <button onclick='compute_bus_track()'>Calculer un itinéraire en bus entre les arrêts</button>"
+                        /*var osm_compute_bus_track = document.getElementById("osm_compute_bus_track");
+                        osm_compute_bus_track.innerHTML = " <button onclick='compute_bus_track()'>Calculer un itinéraire en bus entre les arrêts</button>"*/
 
                         // marqueur pour les éléments qu'on ne veut pas voir
                         var geojsonBlankMarkerOptions = {
@@ -288,10 +292,73 @@
             }
             L.easyButton('fa-bus', function () {
                 display_bus_around();
-            }, 'Afficher les arrêts de bus à proximité')
+            }, 'Afficher les arrêts de bus à proximité').addTo(map);
+
+            L.easyButton('fa-route', function () {
+                compute_bus_track();
+            }, 'Calculer un itinéraire en bus entre les arrêts OSM')
 
             function compute_bus_track() {
-                console.log("todo")
+                var osm_waypoints = osm_stops_in_order.map(elem => L.latLng(elem['lat'], elem['lon']))
+                var control = L.Routing.control({
+                    waypoints: osm_waypoints,
+                    plan: L.Routing.plan(osm_waypoints, {
+                        createMarker: function (i, wp) {
+                            return L.marker(wp.latLng, {
+                                draggable: true,
+                                icon: L.icon.glyph({
+                                    glyph: String.fromCharCode(65 + i)
+                                })
+                            });
+                        }
+                    }),
+                    fitSelectedRoutes: true,
+                    reverseWaypoints: true,
+                    router: L.Routing.mapzen(valhalla_api_key, {costing: 'bus'}),
+                    formatter: new L.Routing.mapzenFormatter(),
+                    show: false,
+                    summaryTemplate: '<div class="route-info {costing}">{distance}, {time}</div>'
+                }).on('routeselected', function (e) {
+                    bus_track_computed = e.route['coordinates'];
+                    var osm_compute_bus_track = document.getElementById("osm_compute_bus_track");
+                    osm_compute_bus_track.innerHTML = "<a href='#' onclick='mapmatch_bus_track()''>Obtenir un lien JOSM</a>"
+                }).addTo(map);
+
+                L.Routing.errorControl(control).addTo(map);
+            }
+            function mapmatch_bus_track() {
+                var valhalla_mapmatch_attributes_as_json = {
+                    "shape": [],
+                    "costing": "bus",
+                    "directions_options": {
+                        "units": "miles"
+                    },
+                    "shape_match": "map_snap"
+                };
+                valhalla_mapmatch_attributes_as_json.shape = bus_track_computed.map(elem => {
+                    return {'lat': elem['lat'], 'lon': elem['lng']}
+                });
+                fetch("https://route.stadiamaps.com/trace_attributes?api_key=" + valhalla_api_key, {
+                    method: "POST",
+                    body: JSON.stringify(valhalla_mapmatch_attributes_as_json)
+                }).then(r => r.json()).then(function (valhalla_response) {
+                    if (valhalla_response.error_message === "error") {
+                        throw "Error on mapmatching";
+                    }
+                    edges = valhalla_response.edges
+                    var josm_url = "http://localhost:8111/load_object?objects="
+                    for (var i = 0; i < edges.length; i++) {
+                        josm_url += "w" + edges[i]['way_id'].toString() + ","
+                    }
+                    return josm_url;
+                }).then(function (josm) {
+                    var link = document.getElementById('osm_compute_bus_track');
+                    link.innerHTML = `<a href="${josm}" target="_blank">Sélectionner les chemins dans JOSM</a>`
+                }).catch(function (error) {
+                    console.error('Error:', error);
+                    var errors = document.getElementById('errors');
+                    errors.innerText = "Oops, something wrong happens! \n" + error
+                });
             }
         </script>
     </body>

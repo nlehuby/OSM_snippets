@@ -137,9 +137,8 @@
                 });
 
                 // récupération du nombre d'arrêts OSM
-                // TODO : inclure les platform_exit_only et platform_entry_only
                 $.ajax({
-                    url: 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];relation(' + osm_relation_code + ');node(r:"platform");out count;',
+                    url: `https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];relation(${osm_relation_code})->.a;(node(r.a:"platform");node(r.a:"platform_exit_only");node(r.a:"platform_entry_only"););out count;`,
                     dataType: 'json',
                     global: true,
                     error: function (data) {

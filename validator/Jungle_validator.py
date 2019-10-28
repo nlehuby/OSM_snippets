@@ -10,6 +10,9 @@ zone_name = "Marne la Vallée, France"
 #bbox_from_config = "5.4717813427336,-0.45249938964844,5.8776490743906,0.11192321777344"
 #zone_name = "Accra, Ghana"
 
+bbox_from_config = "5.173011321882331,-4.258575439453126,5.544913134097361,-3.572616577148438"
+zone_name = "Abidjan"
+
 bbox_for_overpass = bbox_from_config
 
 bbox = bbox_from_config.split(',')
@@ -60,7 +63,7 @@ def is_line_metata_issue(issue_item, issue_classs):
     return False
 
 def is_stop_metata_issue(issue_item, issue_classs):
-    if issue_item == 9014 and issue_classs in [9014006, 9014007, 9014008]:
+    if issue_item == 9014 and issue_classs in [9014006, 9014007, 9014008, 9014019]:
         return True
     return False
 
@@ -69,7 +72,10 @@ def is_opendata_issue(issue_item, issue_classs):
         return True
     return False
 
-
+def is_issue_to_ignore(issue_item, issue_classs):
+    if issue_item == 2140 and issue_classs == 21404:
+        return True
+    return False
 
 geom_issues = []
 metadata_issues = []
@@ -79,7 +85,9 @@ opendata_issues = []
 structural_issues = []
 
 for issue in all_issues:
-    if is_line_metata_issue(int(issue['item']), issue['classs']):
+    if is_issue_to_ignore(int(issue['item']), issue['classs']):
+        pass
+    elif is_line_metata_issue(int(issue['item']), issue['classs']):
         line_metadata_issues.append(issue)
     elif is_geom_issue(int(issue['item']), issue['classs']):
         geom_issues.append(issue)
@@ -122,6 +130,7 @@ networks_list = list(set(networks_list))
 operators_list = [elem["tags"]["operator"] for elem in all_lines + all_routes if "operator" in elem['tags']]
 operators_list = list(set(operators_list))
 
+print(modes_list)
 
 if 'bus' in modes_list:
     bus_stop_call = requests.get(overpass_base_url + overpass_query_part_for_bus_stop_count)
@@ -129,7 +138,6 @@ if 'bus' in modes_list:
         print("erreur overpass :{}".format(bus_stop_call.status_code))
     stops_count = bus_stop_call.json()['elements'][0]['tags']['nodes']
 
-stops_count
 
 
 

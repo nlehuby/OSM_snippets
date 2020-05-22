@@ -1,0 +1,27 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[dev-packages]
+
+
+
+[packages]
+
+requests = "*"
+pandas = "*"
+jupyter = "*"
+geopandas = "*"
+rtree = "*"
+matplotlib = "*"
+descartes = "*"
+osm-conflate = "*"
+osmium = "*"
+
+
+[requires]
+
+python_version = "3.6"

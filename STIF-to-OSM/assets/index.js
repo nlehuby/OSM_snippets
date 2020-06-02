@@ -42,7 +42,7 @@ $(document).ready(function() {
                     searchable: false ,
                     data: function(row, type, set) {
                         var osm_id = row[0].split(':')[2]
-                        var link_url = "http://www.openstreetmap.org/relation/" + osm_id;
+                        var link_url = "https://jungle-bus.github.io/unroll/route.html?line=" + osm_id;
                         return "<a target='_blank' href='" + link_url + "'>" + osm_id + "</a>";
                     }
                 }, {

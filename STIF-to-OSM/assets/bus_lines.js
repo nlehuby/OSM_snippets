@@ -37,6 +37,9 @@ next_navitia_candidate_button.onclick = function() {
 
 var add_navitia_ref_to_osm = document.getElementById("add_navitia_ref_to_osm");
 add_navitia_ref_to_osm.onclick = function() {
+    if (!auth.authenticated()) {
+        alert("Vous n'êtes pas connecté à OSM ! Utilisez le bouton en haut de la page d'accueil puis réessayez.")
+    }
     var navitia_ref;
     //on retrouve le code à envoyer
     for (i = 0; i < navitia_lines_data['lines'][selected_navitia_line_index]['codes'].length; i++) {

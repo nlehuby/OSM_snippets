@@ -42,7 +42,7 @@ $(document).ready(function() {
                     searchable: false ,
                     data: function(row, type, set) {
                         var osm_id = row[0].split(':')[2]
-                        var link_url = "https://jungle-bus.github.io/unroll/route.html?line=" + osm_id;
+                        var link_url = "https://jungle-bus.github.io/unroll/route.html?qa=yes&line=" + osm_id;
                         return "<a target='_blank' href='" + link_url + "'>" + osm_id + "</a>";
                     }
                 }, {
@@ -70,8 +70,14 @@ $(document).ready(function() {
                     visible: false
                 }, {
                     title: "mode"
-                }, {
-                    title: "code STIF"
+                },{
+                    title: "code STIF",
+                    searchable: false ,
+                    data: function(row, type, set) {
+                        var stif_id = row[8]
+                        var link_url = "https://www.vianavigo.com/fiches-horaires/bus/resultat?line=line:0:" + stif_id;
+                        return "<a target='_blank' href='" + link_url + "'>" + stif_id + "</a>";
+                    }
                 }, {
                     title: "Associer",
                     data: function(row, type, set) {

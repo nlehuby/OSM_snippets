@@ -19,9 +19,9 @@ bbox = bbox_from_config.split(',')
 bbox_for_osmose = "{},{},{},{}".format(bbox[1],bbox[0],bbox[3], bbox[2])
 
 
-osmose_9014 = "http://osmose.openstreetmap.fr/fr/api/0.3beta/issues?full=true&item=9014&bbox={}".format(bbox_for_osmose)
-osmose_1260 = "http://osmose.openstreetmap.fr/fr/api/0.3beta/issues?full=true&item=1260&bbox={}".format(bbox_for_osmose)
-osmose_2140 = "http://osmose.openstreetmap.fr/fr/api/0.3beta/issues?full=true&item=2140&bbox={}".format(bbox_for_osmose)
+osmose_9014 = "http://osmose.openstreetmap.fr/fr/api/0.3/issues?full=true&item=9014&bbox={}".format(bbox_for_osmose)
+osmose_1260 = "http://osmose.openstreetmap.fr/fr/api/0.3/issues?full=true&item=1260&bbox={}".format(bbox_for_osmose)
+osmose_2140 = "http://osmose.openstreetmap.fr/fr/api/0.3/issues?full=true&item=2140&bbox={}".format(bbox_for_osmose)
 
 
 osmose_call = requests.get(osmose_9014)
@@ -85,17 +85,17 @@ opendata_issues = []
 structural_issues = []
 
 for issue in all_issues:
-    if is_issue_to_ignore(int(issue['item']), issue['classs']):
+    if is_issue_to_ignore(int(issue['item']), issue['class']):
         pass
-    elif is_line_metata_issue(int(issue['item']), issue['classs']):
+    elif is_line_metata_issue(int(issue['item']), issue['class']):
         line_metadata_issues.append(issue)
-    elif is_geom_issue(int(issue['item']), issue['classs']):
+    elif is_geom_issue(int(issue['item']), issue['class']):
         geom_issues.append(issue)
-    elif is_structural_issue(int(issue['item']), issue['classs']):
+    elif is_structural_issue(int(issue['item']), issue['class']):
         structural_issues.append(issue)
-    elif is_opendata_issue(int(issue['item']), issue['classs']):
+    elif is_opendata_issue(int(issue['item']), issue['class']):
         opendata.append(issue)
-    elif is_stop_metata_issue(int(issue['item']), issue['classs']):
+    elif is_stop_metata_issue(int(issue['item']), issue['class']):
         stop_metadata_issues.append(issue)
     else :
         print(issue)

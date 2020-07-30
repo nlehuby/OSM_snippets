@@ -1,0 +1,5 @@
+
+différentes approches :
+- Osmose par bbox, en fixant les types d'erreurs recherchée, puis overpass pour stats et liste d'objets complète
+- Overpass pour liste d'objets puis Osmose sur ces objets (permet d'aller d'autres types d'erreurs aussi, mais très consommateur en requêtes osmose)
+

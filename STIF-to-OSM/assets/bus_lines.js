@@ -118,15 +118,9 @@ function get_navitia_lines_by_ref_id(ref_id) {
 }
 
 function get_opendata_lines_tracks_by_ref_id(ref_id) {
+    tt_ref = ref_id.split(':')[0]
     //si on utilise $.ajax ici, on passera les clefs d'authentification navitia :(
-    fetch("https://data.iledefrance-mobilites.fr/api/v2/catalog/datasets/referentiel-des-lignes-stif/records?rows=1&search=" + ref_id)
-        .then(function(data) {
-            return data.json()
-        })
-        .then(function(response) {
-            other_opendata_ref = response['records'][0]['record']['fields']['id_groupoflines']
-            return fetch("https://data.iledefrance-mobilites.fr/api/v2/catalog/datasets/bus_lignes/records?rows=1&search=" + other_opendata_ref)
-        })
+    fetch("https://data.iledefrance-mobilites.fr/api/v2/catalog/datasets/bus_lignes/records?rows=1&search=" + tt_ref)
         .then(function(data) {
             return data.json()
         })

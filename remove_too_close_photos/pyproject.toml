@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "remove-too-close-photos"
+version = "0.1.0"
+description = "un script pour supprimer les photos trop proches"
+authors = ["Noémie Lehuby <noemie.lehuby@zaclys.net>"]
+license = "BSD-2"
+readme = "README.md"
+packages = [{include = "remove_too_close_photos"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ExifRead = "2.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
